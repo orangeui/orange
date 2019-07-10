@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+
+  <link rel="stylesheet" href="../dist/orange.min.css" />
+
+  <style>
+    body {
+      background-color: #ffa941;
+      padding: 20px;
+    }
+
+    /*  https://caniuse.com/#feat=pointer-events */
+    .ui.form label {pointer-events: none;}
+  </style>
+
+  <body>
+    <div class='container'>
+      <div class="card">
+        <div class="card__header">
+          <h2 class="card__title">Example Form</h2>
+          <button type="button" class="button">Save</button>
+        </div>
+        <div class="card__body">
+          <div class='ui form large'>
+
+            <div class="field">
+              <input type='text' class='form-text__input' value='Something'>
+              <label>Text label</label>
+              <div class="input-description">This is the text input description</div>
+            </div>
+
+            <div class="form-dropdown">
+              <label class="form-dropdown__label">
+                Dropdown label
+              </label>
+              <input type="text" name="dropdown_name" class="form-dropdown__input" value='Something'>
+              <div class="form-dropdown__text"></div>
+              <div class="form-dropdown__icon">
+                <svg viewBox="0 0 24 24">
+                  <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+                </svg>
+                <svg viewBox="0 0 24 24">
+                  <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+                </svg>
+              </div>
+              <div class="form-dropdown__content">
+                <ul class="form-dropdown__menu">
+                  <li class="">Option 1</li>
+                  <li class="">Option 2</li>
+                  <li class="">Option 3</li>
+                  <li class="">Option 4</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="application/javascript" src="../dist/orange.js"></script>
+
+  </body>
+</html>
