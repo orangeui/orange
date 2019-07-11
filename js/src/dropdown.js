@@ -3,7 +3,7 @@
 
   var ACTIVE_CLASS = "is-full";
   var DROPDOWN_OPEN_CLASS = "is-open";
-  var MAIN_DROPDOWN_ELEMENT = ".ui.form div.form-dropdown";
+  var MAIN_DROPDOWN_ELEMENT = "div.form-dropdown";
   var DROPDOWN_INPUT = ".form-dropdown__input";
   var DROPDOWN_OPTION = ".form-dropdown__menu li";
   var DROPDOWN_TEXT = ".form-dropdown__text";
