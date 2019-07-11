@@ -1,8 +1,8 @@
 (function() {
   "use strict";
 
-  var CHCEKBOX_ENABLED_DEFAULT = "Enabled";
-  var CHCEKBOX_DISABLED_DEFAULT = "Disabled";
+  var CHCEKBOX_ENABLED_DEFAULT = "On";
+  var CHCEKBOX_DISABLED_DEFAULT = "Off";
   var CHCEKBOX_ENABLED_DATA_SETTING = "data-enabled";
   var CHCEKBOX_DISABLED_DATA_SETTING = "data-disabled";
 
