@@ -22,8 +22,8 @@
       if (typeof current_value === "string" && current_value !== ''){
         dropdown.querySelector(DROPDOWN_TEXT).innerText = current_value;
         dropdown.classList.add(ACTIVE_CLASS);
-        dropdown.addEventListener("click", toggleDropdown, false);
       } 
+      dropdown.addEventListener("click", toggleDropdown, false);
 
       var options = dropdown.querySelectorAll(DROPDOWN_OPTION);
       for (var i = 0; options.length > i; i++) {
