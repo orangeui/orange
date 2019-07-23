@@ -32,7 +32,7 @@ orange/
         └── orange.min.js
 ```
 
-Read the [Docs](https://www..orangecss.com/docs/) for info on the library and examples on how to use Orange in your next project.
+Read the [Docs](https://www.orangecss.com/docs/) for info on the library and examples on how to use Orange in your next project.
 
 ## Contributing
 
