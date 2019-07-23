@@ -28,7 +28,7 @@
 
       var options = dropdown.querySelectorAll(DROPDOWN_OPTION);
       for (var ii = 0; ii < options.length; ii++) {
-        var dropdown_option = options[i];
+        var dropdown_option = options[ii];
         dropdown_option.addEventListener("click", selectDropdownOption, false);
       }
     }
