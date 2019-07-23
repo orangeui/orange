@@ -2,11 +2,11 @@
   "use strict";
 
   var ACTIVE_CLASS = "is-full";
-  var MAIN_INPUT_ELEMENT = ".ui.form input[type='text'].form-text__input";
+  var MAIN_INPUT_ELEMENT = ".form.form--large input.form__input";
   var text_inputs = document.querySelectorAll(MAIN_INPUT_ELEMENT);
 
-  var activateTextInputs = function() {
-    for (var i = 0; text_inputs.length > i; i++) {
+  function activateTextInputs() {
+    for (var i = 0; i < text_inputs.length; i++) {
       var text_input = text_inputs[i];
 
       if (typeof text_input.value === "string" && text_input.value !== ''){
@@ -15,12 +15,10 @@
 
       text_input.addEventListener("focusin", toggleActiveClass, false);
       text_input.addEventListener("focusout", toggleActiveClass, false);
-
-      // text_input.addEventListener('input', toggleActiveClass, false) // might not require this one...
     }    
   }  
   
-  var toggleActiveClass = function(evt) {
+  function toggleActiveClass(evt) {
     var input = evt.target;
     var input_has_text = input.value !== "" && input.value !== null;
     if (input_has_text) {
@@ -34,7 +32,10 @@
     if (evt.type === "focusout" && !input_has_text) {
       input.classList.remove(ACTIVE_CLASS);
     }
-  };
+  }; 
 
-  activateTextInputs();
+  if (text_inputs.length){
+    activateTextInputs();  
+  }
+  
 })();

@@ -3,11 +3,11 @@
 
   var ACTIVE_CLASS = "is-full";
   var TEXTAREA_AUTO_EXPAND_DATA_SETTING = 'data-auto-expand';
-  var MAIN_TEXTAREA_ELEMENT = ".ui.form textarea";
+  var MAIN_TEXTAREA_ELEMENT = ".form textarea.form__textarea";
   var textareas = document.querySelectorAll(MAIN_TEXTAREA_ELEMENT);
 
-  var activateTextareas = function() {
-    for (var i = 0; textareas.length > i; i++) {
+  function activateTextareas() {
+    for (var i = 0; i < textareas.length; i++) {
       var textarea = textareas[i];
 
       if (typeof textarea.value === "string" && textarea.value !== ''){
@@ -24,7 +24,7 @@
     }    
   }  
   
-  var toggleActiveClass = function(evt) {
+  function toggleActiveClass(evt) {
     var textarea = evt.target;
     var textarea_has_text = textarea.value !== "" && textarea.value !== null;
     if (textarea_has_text) {
@@ -40,7 +40,7 @@
     }
   };
 
-  var autoExpandTextarea = function(evt) {
+  function autoExpandTextarea(evt) {
     var el = evt.target;
     if (el.value) {
       el.style.height = '0px';
@@ -50,5 +50,8 @@
     }
   }
 
-  activateTextareas();
+  if (textareas.length) {
+    activateTextareas();  
+  }
+  
 })();

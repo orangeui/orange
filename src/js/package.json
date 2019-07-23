@@ -4,7 +4,7 @@
   "description": "cool stuff here",
   "scripts": {
     "watch": "nodemon --watch js/src/ --ext js --exec \"npm run build\"",
-    "build": "uglifyjs --compress --mangle -o ../dist/orange.min.js -- src/**/*.js src/*.js"
+    "build": "uglifyjs --compress --mangle -o ../../dist/js/orange.min.js -- ./src/**/*.js ./src/*.js"
   },
   "author": "",
   "license": "MIT",

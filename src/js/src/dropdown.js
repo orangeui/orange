@@ -11,22 +11,23 @@
   var dropdowns = document.querySelectorAll(MAIN_DROPDOWN_ELEMENT);
   var dropdown_head = '.form-dropdown__text';
   
-  var isOpen = function(dropdown_el) {
+  function isOpen(dropdown_el) {
     return dropdown_el.classList.contains(DROPDOWN_OPEN_CLASS);
   } 
-   
-  var activateDropdowns = function(){
-    for (var i = 0; dropdowns.length > i; i++) {
+
+  function activateDropdowns() {
+    for (var i = 0; i < dropdowns.length; i++) {
       var dropdown = dropdowns[i];
       var current_value = dropdown.querySelector(DROPDOWN_INPUT).value;
       if (typeof current_value === "string" && current_value !== ''){
         dropdown.querySelector(DROPDOWN_TEXT).innerText = current_value;
         dropdown.classList.add(ACTIVE_CLASS);
       } 
+
       dropdown.addEventListener("click", toggleDropdown, false);
 
       var options = dropdown.querySelectorAll(DROPDOWN_OPTION);
-      for (var i = 0; options.length > i; i++) {
+      for (var i = 0; i < options.length; i++) {
         var dropdown_option = options[i];
         dropdown_option.addEventListener("click", selectDropdownOption, false);
       }
@@ -40,17 +41,17 @@
     });
   }
 
-  var toggleDropdown =  function(evt) {
+  function toggleDropdown(evt) {
     var dropdown = evt.target;
     var current_dropdown = dropdown.closest(MAIN_DROPDOWN_ELEMENT);      
     if (isOpen(current_dropdown)) {
-      current_dropdown.classList.remove(DROPDOWN_OPEN_CLASS); // close dropdown   
+      current_dropdown.classList.remove(DROPDOWN_OPEN_CLASS);
     } else {
-      current_dropdown.classList.add(DROPDOWN_OPEN_CLASS); // close dropdown      
+      current_dropdown.classList.add(DROPDOWN_OPEN_CLASS); 
     }
   }
   
-  var selectDropdownOption = function(evt) {
+  function selectDropdownOption(evt) {
     evt.stopPropagation();
     
     var option = evt.target;
@@ -59,16 +60,19 @@
     current_dropdown.querySelector(DROPDOWN_INPUT).value = option_value;
     current_dropdown.querySelector(DROPDOWN_TEXT).innerText = option_value;
 
-    current_dropdown.classList.add(ACTIVE_CLASS); // is-full class
-    current_dropdown.classList.remove(DROPDOWN_OPEN_CLASS); // close dropdown   
+    current_dropdown.classList.add(ACTIVE_CLASS); 
+    current_dropdown.classList.remove(DROPDOWN_OPEN_CLASS); 
   };
 
-  var closeDropdowns = function() {
-    for (var i = 0; dropdowns.length > i; i++) {
+  function closeDropdowns() {
+    for (var i = 0; i < dropdowns.length; i++) {
       var dropdown = dropdowns[i];
-      dropdown.classList.remove(DROPDOWN_OPEN_CLASS); // close dropdown   
+      dropdown.classList.remove(DROPDOWN_OPEN_CLASS); 
     }
   }  
 
-  activateDropdowns();
+  if (dropdowns.length){
+    activateDropdowns();  
+  }
+  
 })();

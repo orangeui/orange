@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Form Example</title>
 </head>
-
-  <link rel="stylesheet" href="../dist/orange.min.css" />
   
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="../dist/css/orange.min.css" />
+  
   <style>
     body {
       background-color: #ffa941;
       padding: 20px;
     }
-
-    /*  https://caniuse.com/#feat=pointer-events */
-    .ui.form label { pointer-events: none; }
   </style>
 
   <body>
@@ -25,76 +22,105 @@
           <button type="button" class="button">Save</button>
         </div>
         <div class="card__body">
-          <div class='ui form large'>
+          <div class='form form--large'>
 
-            <div class="field">
-              <input type='text' class='form-text__input' value='Something'>
-              <label>Text label</label>
-              <div class="input-description">This is the text input description</div>
-            </div>
-
-            <div class="field">
-              <textarea name="textarea_name">test</textarea>
-              <label for="textarea_name">Textarea label</label>
-            </div>
-
-            <div class="field">
-              <textarea name="textarea_name" data-auto-expand></textarea>
-              <label for="textarea_name">Textarea label - auto expand</label>
-            </div>
-
-            <div class="form-dropdown">
-              <label class="form-dropdown__label">
-                Dropdown label
-              </label>
-              <input type="text" name="dropdown_name" class="form-dropdown__input" >
-              <div class="form-dropdown__text"></div>
-              <div class="form-dropdown__icon">
-                <svg viewBox="0 0 24 24">
-                  <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
-                </svg>
-                <svg viewBox="0 0 24 24">
-                  <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
-                </svg>
-              </div>
-              <div class="form-dropdown__content">
-                <ul class="form-dropdown__menu">
-                  <li class="">Option 1</li>
-                  <li class="">Option 2</li>
-                  <li class="">Option 3</li>
-                  <li class="">Option 4</li>
-                </ul>
+            <div class="form__item">
+              <div class="form__wrapper">
+                <div class="form__input-wrapper">
+                  <input id="form_example_name_large" type="text" name="form_example_name_large" class="form__input">
+                  <label for="form_example_name_large" class="form__label">Some Name</label>
+                </div>
               </div>
             </div>
 
-            <div class="checkbox-wrapper checkbox-wrapper--large">
-              <div class="checkbox checkbox--toggle checkbox--label">
-                <input type="checkbox">
-                <label></label> 
-              </div>
-              <div>
-                <label class="text">Checkbox label</label>
-                <div class="value value--disabled"></div>
-              </div>
-              <div class="input-description">
-                This is the checkbox description
-              </div>
+            <div class="form__item">
+              <textarea name="textarea" id="textarea" class="form__textarea"></textarea>
+              <label for="textarea" class="form__label">Label</label>
+              <div class="form__description">Description text</div>
             </div>
 
-            <div class="checkbox-wrapper checkbox-wrapper--large">
-              <div class="checkbox checkbox--toggle checkbox--label">
-                <input type="checkbox">
-                <!-- do we need label? -->
-                <label></label> 
+            <div class="form__item">
+              <textarea name="textarea" id="textarea_1" class="form__textarea" data-auto-expand></textarea>
+              <label for="textarea_1" class="form__label">Label</label>
+              <div class="form__description">Description text</div>
+            </div>
+
+            <div class="form__item">
+              <div id="form_dropdown" class="form-dropdown">
+                <label for="form_dropdown" class="form-dropdown__label">Label</label>
+                <input id="form_dropdown" type="text" name="form_dropdown" class="form-dropdown__input">
+                <div class="form-dropdown__text">Placeholder</div>
+                <div class="form-dropdown__icon">
+                  <svg viewBox="0 0 24 24">
+                    <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+                  </svg>
+                </div>
+                <div class="form-dropdown__content">
+                  <ul class="form-dropdown__menu">
+                    <li class="">Option 1</li>
+                    <li class="">Option 2</li>
+                    <li class="">Option 3</li>
+                    <li class="">Option 4</li>
+                  </ul>
+                </div>
               </div>
-              <div>
-                <label class="text">Checkbox label - custom text</label>
-                <!-- class='value--disabled' does not do anything -->
-                <div data-enabled='Engaged' data-disabled='Disengaged' class="value value--disabled"></div>
+              <div class="form__description">Description of the dropdown field</div>
+            </div>
+
+            <div class="form__item">
+              <div id="form_dropdown_1" class="form-dropdown">
+                <label for="form_dropdown_1" class="form-dropdown__label">Label</label>
+                <input id="form_dropdown_1" type="text" name="form_dropdown" class="form-dropdown__input">
+                <div class="form-dropdown__text">Placeholder</div>
+                <div class="form-dropdown__icon">
+                  <svg viewBox="0 0 24 24">
+                    <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+                  </svg>
+                </div>
+                <div class="form-dropdown__content">
+                  <ul class="form-dropdown__menu">
+                    <li class="">Option 1</li>
+                    <li class="">Option 2</li>
+                    <li class="">Option 3</li>
+                    <li class="">Option 4</li>
+                  </ul>
+                </div>
               </div>
-              <div class="input-description">
-                This is the checkbox description
+              <div class="form__description">Description of the dropdown field</div>
+            </div>
+
+            <div class="form__item">
+              <div class="toggle toggle--label toggle--large">
+                <div class="toggle__button">
+                  <input type="checkbox" id="toggle_large" class="toggle__input" checked>
+                  <label class="toggle__label"></label>
+                </div>
+                <div>
+                  <label class="toggle__text">Label</label>
+                  <div class="toggle__value">Enabled</div>
+                </div>
               </div>
+              <div class="form__description">Description text</div>
+            </div>
+
+            <div class="form__item">
+              <div class="toggle toggle--label toggle--large">
+                <div class="toggle__button">
+                  <input type="checkbox" id="toggle_large" class="toggle__input">
+                  <label class="toggle__label"></label>
+                </div>
+                <div>
+                  <label class="toggle__text">Label</label>
+                  <div class="toggle__value" data-enabled='Enabled' data-disabled='Disabled'></div>
+                </div>
+              </div>
+              <div class="form__description">Description text</div>
             </div>
 
           </div>
@@ -102,6 +128,6 @@
       </div>
     </div>
 
-    <script src="../dist/orange.min.js"></script>
+    <script src="../dist/js/orange.min.js"></script>
   </body>
 </html>
