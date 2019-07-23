@@ -1,0 +1,11 @@
+[class^="icon-"],
+[class*=" icon-"] {
+	font-size: $spacing-base;
+	line-height: 0;
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+	margin-right: 0;
+	margin-left: 0;
+}

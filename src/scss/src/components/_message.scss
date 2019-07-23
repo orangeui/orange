@@ -1,0 +1,133 @@
+/**
+ * Message
+ */
+
+.message {
+  font-size: fontSize('zeta');
+  padding: $spacing-small;
+  border-radius: $border-radius-main;
+  color: color('gray');
+  background-color: rgba(color('gray'), 0.05);
+  font-style: italic;
+  margin-bottom: $spacing-base / 2;
+  display: flex;
+  align-items: center;
+
+  p {
+    margin-bottom: $spacing-base / 2;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    font-weight: fontWeight('bold');
+    text-decoration: underline;
+    color: color('gray', 'dark');
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .avatar {
+    margin-right: $spacing-small;
+    display: inline-block;
+    vertical-align: middle;
+    color: currentColor;
+    border-color: currentColor;
+  }
+
+  & + & {
+    margin-top: $spacing-base / 2;
+  }
+}
+
+.message__body {
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: fontWeight('bold');
+  }
+}
+
+.message__action {
+  margin-left: auto;
+}
+
+
+/** Colors
+--------------------------------------------------*/
+
+@each $name, $value in $colors {
+  @if $name == 'white' {
+    .message--color-#{$name} {
+      color: color('gray', 'dark');
+      background-color: color('white');
+
+      a {
+        color: color('gray', 'dark');
+      }
+
+      .avatar {
+        border: 1px solid color('gray', 'dark');
+        color: color('gray', 'dark');
+      }
+    }
+  } @else {
+    .message--color-#{$name} {
+      background-color: rgba(color(#{$name}), 0.1);
+      color: color(#{$name});
+      border-width: 0;
+
+      a {
+        color: color(#{$name});
+      }
+
+      .avatar {
+        border: 1px solid color(#{$name});
+        color: color(#{$name});
+      }
+
+      /** Interactive style */
+      &.message--interactive {
+        background-color: color(#{$name});
+        color: color('white');
+      }
+    }
+  }
+}
+
+
+/** Styles
+--------------------------------------------------*/
+
+/** Full width */
+.message--full {
+  border-radius: 0px;
+}
+
+/** With a shadow */
+.message--shadow {
+  box-shadow: shadow('primary');
+}
+
+/** Interactive */
+.message--interactive {
+  min-height: 80px;
+  padding: ($spacing-base / 2) ($spacing-base / 2) ($spacing-base / 2) 120px;
+  background-image: url('https://fomo.com/static/images/app/onboarding/onboarding-avatar.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  border-radius: $border-radius-medium;
+
+  a {
+    font-weight: fontWeight('normal');
+    text-decoration: none;
+    color: color('white');
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

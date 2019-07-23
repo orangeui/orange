@@ -1,0 +1,319 @@
+/**
+ * Button
+ */
+
+
+/** Button
+--------------------------------------------------*/
+
+/** Primary */
+.button,
+a.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: middle;
+
+  height: $button-size-regular;
+  padding: 0 $spacing-small;
+  
+  border-radius: $border-radius-main;
+  border: 1px solid transparent;
+  
+  font-style: normal;
+  font-size: fontSize('epsilon');
+  font-weight: fontWeight('normal');
+  line-height: $spacing-small;
+  
+  text-decoration: none;
+  user-select: none;
+  
+  color: color('white');
+  background-color: color('primary');
+
+  transition: $transition;
+
+  [class^="icon-"], [class*=" icon-"] {
+    margin-left: $spacing-small / 2;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: transparent;
+    background-color: transparentize(color('primary'), 0.33);
+    cursor: pointer;
+    outline: none;
+  }
+
+  /** Disabled state */
+  &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+
+    &:hover,
+    &:focus {
+      cursor: default;
+    }
+  }
+
+  /** Add a margin when buttons are next to each other */
+  & + & {
+    margin-left: $spacing-base / 2;
+  }
+
+  /** Loading state */
+  &.is-loading {
+    &:before {
+      background-color: color('gray', 'lightest');
+    }
+
+    &::after {
+      border-color: color('gray') transparent color('gray') transparent;
+    }
+  }
+
+  /** Inverted modifier */
+  &.button--inverted {
+    color: color('primary');
+    background-color: color('white');
+
+    &:hover,
+    &:focus {
+      color: color('white');
+      background-color: transparentize(color('white'), 0.66);
+    }
+  }
+}
+
+/** Secondary */
+.button--secondary,
+a.button--secondary {
+  background-color: transparent;
+  color: color('primary');
+  border-color: color('primary');
+
+  &:hover,
+  &:focus {
+    border-color: transparent;
+    color: color('white');
+  }
+
+  &.button--inverted {
+    color: color('white');
+    background-color: transparent;
+    border-color: color('white');
+
+    &:hover,
+    &:focus {
+      color: color('white');
+      background-color: transparentize(color('white'), 0.66);
+      border-color: transparent;
+    }
+  }
+}
+
+
+/** Variants
+--------------------------------------------------*/
+
+/** Basic */
+.button--basic,
+a.button--basic {
+  color: color('gray');
+  background-color: color('gray', 'lightest');
+
+  &:hover,
+  &:focus {
+    background-color: transparentize(color('primary'), 0.33);
+    color: color('white');
+  }
+
+  &.button--secondary {
+    background-color: transparent;
+    border-color: color('gray', 'lightest');
+
+    &:hover,
+    &:focus {
+      background-color: transparentize(color('primary'), 0.33);
+      color: color('white');
+      border-color: transparent;
+    } 
+  }
+}
+
+
+/** Colors
+--------------------------------------------------*/
+
+@each $name, $value in $colors {
+  @if $name == 'white' {
+    .button--color-#{$name},
+    a.button--color-#{$name} {
+      color: color('black');
+      background-color: color(#{$name});
+
+      &:hover,
+      &:focus {
+        background-color: transparentize(color(#{$name}), 0.33);
+      }
+
+      &.button--inverted {
+        color: color('white');
+        background-color: color('black');
+
+        &:hover,
+        &:focus {
+          color: color('white');
+          background-color: transparentize(color('black'), 0.66);
+        }
+      }
+
+      &.button--secondary{
+        color: color(#{$name});
+        border-color: color(#{$name});
+        background-color: transparent;
+
+        &:hover,
+        &:focus {
+          color: color('black');
+          background-color: transparentize(color(#{$name}), 0.33);
+          border-color: transparent;
+        }
+
+        &.button--inverted {
+          color: color('black');
+          border-color: color('black');
+
+          &:hover,
+          &:focus {
+            color: color('white');
+            border-color: transparent;
+            background-color: transparentize(color('black'), 0.66);
+          }
+        }
+      }
+    }
+  }
+  @else {
+    .button--color-#{$name},
+    a.button--color-#{$name} {
+      color: color('white');
+      background-color: color(#{$name});
+
+      &:hover,
+      &:focus {
+        background-color: transparentize(color(#{$name}), 0.33);
+      }
+
+      &.button--inverted {
+        color: color(#{$name});
+        background-color: color('white');
+
+        &:hover,
+        &:focus {
+          color: color('white');
+          background-color: transparentize(color('white'), 0.66);
+        }
+      }
+
+      &.button--secondary {
+        color: color(#{$name});
+        background-color: transparent;
+        border-color: color(#{$name});
+
+        &:hover,
+        &:focus {
+          color: color('white');
+          background-color: transparentize(color(#{$name}), 0.33);
+          border-color: transparent;
+        }
+
+        &.button--inverted {
+          color: color('white');
+          border-color: color('white');
+
+          &:hover,
+          &:focus {
+            color: color('white');
+            border-color: transparent;
+            background-color: transparentize(color('white'), 0.66);
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+/** Sizes
+--------------------------------------------------*/
+
+/** Small */
+.button--small,
+a.button--small {
+  padding: ($spacing-small / 4) ($spacing-small / 2);
+  font-size: fontSize('zeta');
+  line-height: fontSize('zeta');
+  height: $button-size-small;
+
+  &.button--icon-only,
+  &a.button--icon-only {
+    width: $button-size-small;
+    padding: 0;
+
+    .button__icon {
+      font-size: 20px;
+      height: 20px;
+    }
+  }
+}
+
+/** Large */
+.button--large,
+a.button--large {
+  padding: $spacing-small $spacing-base;
+  height: $button-size-large;
+
+  &.button--icon-only,
+  &a.button--icon-only {
+    width: $button-size-large;
+    padding: 0;
+
+    .button__icon {
+      font-size: $spacing-base;
+      height: $spacing-base;
+    }
+  }
+}
+
+/** Wide
+--------------------------------------------------*/
+.button--wide,
+a.button--wide {
+  width: 100%;
+  justify-content: center;
+  
+  & + & {
+    margin-left: 0;
+    margin-top: $spacing-small;
+  }
+}
+
+
+/** Icon
+--------------------------------------------------*/
+
+/** Icon only */
+.button--icon-only,
+a.button--icon-only {
+  width: $button-size-regular;
+  padding: 0 1px 0 0;
+  align-items: center;
+  justify-content: center;
+
+  [class^="icon-"],
+  [class*=" icon-"] {
+    margin: auto;
+  }
+}

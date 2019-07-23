@@ -1,0 +1,399 @@
+/**
+ * Breadcrumbs
+ */
+
+.breadcrumbs {
+  display: flex;
+}
+
+
+/** Back button
+--------------------------------------------------*/
+
+.breadcrumbs__button,
+a.breadcrumbs__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 $border-radius-main $border-radius-main 0;
+  padding: 0px ($breadcrumbs-spacing * 1.5) 0px $breadcrumbs-spacing;
+  margin-left: $breadcrumbs-spacing;
+  margin-right: $spacing-base;
+  line-height: 1;
+  height: $breadcrumbs-height;
+  position: relative;
+  background: rgba(color('black'), $breadcrumbs-bg-transperancy);
+  color: rgba(color('black'), $breadcrumbs-color-transperancy);
+  font-size: fontSize('zeta');
+
+  .breadcrumbs__button-arrow-tail {
+    position: absolute;
+    left: -$breadcrumbs-spacing;
+    top: 0;
+    width: $breadcrumbs-spacing;
+    height: $breadcrumbs-height;
+
+    &::before,
+    &::after {
+      position: absolute;
+      right: 0;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  .breadcrumbs__button-arrow-tail {
+    &::before {
+      border-width: 0 0 ($breadcrumbs-height / 2) $breadcrumbs-spacing;
+      border-color: transparent transparent rgba(color('black'), $breadcrumbs-bg-transperancy) transparent;
+    }
+
+    &::after {
+      border-width: 0 $breadcrumbs-spacing ($breadcrumbs-height / 2) 0;
+      border-color: transparent rgba(color('black'), $breadcrumbs-bg-transperancy) transparent transparent;
+    }
+  }
+
+  /** Disabled state */
+  &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+
+    &:hover {
+      cursor: default;
+    }
+  }
+
+  &:hover {
+    color: color('black');
+    background-color: rgba(color('black'), $breadcrumbs-bg-transperancy-active);
+    text-decoration: none;
+
+    .breadcrumbs__button-arrow-tail {
+      &::before {
+        border-color: transparent transparent rgba(color('black'), $breadcrumbs-bg-transperancy-active) transparent;
+      }
+
+      &::after {
+        border-color: transparent rgba(color('black'), $breadcrumbs-bg-transperancy-active) transparent transparent;
+      }
+    }
+  }
+}
+
+
+/** Menu
+--------------------------------------------------*/
+
+.breadcrumbs__menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  user-select: none;
+
+  /** Item
+  --------------------------------------------------*/
+  > li {
+    font-size: fontSize('zeta');
+    margin-right: $breadcrumbs-margin;
+    margin-left: -$breadcrumbs-spacing;
+
+    &:first-child {
+      margin-left: -$spacing-small;
+
+      > a {
+        padding-left: $breadcrumbs-spacing * 2;
+
+        &::before {
+          border-radius: $border-radius-main 0 0 $border-radius-main;
+        }
+      }
+
+      .icon {
+        margin-left: -$breadcrumbs-spacing / 4;
+      }
+
+      .breadcrumbs__link-arrow-tail {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      > a {
+        padding-right: ($breadcrumbs-spacing) + ($breadcrumbs-spacing / 2);
+
+        &::before {
+          border-radius: 0 $border-radius-main $border-radius-main 0;
+          width: calc(100% - #{$breadcrumbs-spacing});
+        }
+      }
+
+      .breadcrumbs__link-arrow-head {
+        display: none;
+      }
+    }
+  }
+
+
+  /** Link
+  --------------------------------------------------*/
+  > li > a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 ($breadcrumbs-spacing * 2);
+    color: rgba(color('black'), $breadcrumbs-color-transperancy);
+    line-height: 1;
+    height: $breadcrumbs-height;
+    cursor: pointer;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: calc(100% - #{$breadcrumbs-spacing} * 2);
+      height: 100%;
+      top: 0;
+      left: $breadcrumbs-spacing;
+      opacity: 1;
+      background-color: rgba(color('black'), $breadcrumbs-bg-transperancy);
+      pointer-events: none;
+    }
+
+    &.is-active,
+    &:hover {
+      color: color('black');
+      text-decoration: none;
+
+      &::before {
+        background-color: rgba(color('black'), $breadcrumbs-bg-transperancy-active);
+      }
+
+      .breadcrumbs__link-arrow-tail {
+        &::after {
+          border-color: transparent rgba(color('black'), $breadcrumbs-bg-transperancy-active) transparent transparent;
+        }
+
+        &::before {
+          border-color: transparent transparent rgba(color('black'), $breadcrumbs-bg-transperancy-active) transparent;
+        }
+      }
+
+      .breadcrumbs__link-arrow-head {
+        &::after {
+          border-color: transparent transparent transparent rgba(color('black'), $breadcrumbs-bg-transperancy-active);
+        }
+
+        &::before {
+          border-color: rgba(color('black'), $breadcrumbs-bg-transperancy-active)  transparent transparent transparent;
+        }
+      }
+    }
+
+    &.is-disabled {
+      cursor: default;
+      pointer-events: none;
+      opacity: 0.5;
+    }
+  }
+
+
+  /** Arrow head & tail
+  --------------------------------------------------*/
+  .breadcrumbs__link-arrow-tail,
+  .breadcrumbs__link-arrow-head {
+    position: absolute;
+    top: 0;
+    width: $breadcrumbs-spacing;
+    height: $breadcrumbs-height;
+
+    &::after,
+    &::before {
+      position: absolute;
+      right: 0;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+
+    &::after {
+      top: 0;
+    }
+
+    &::before {
+      bottom: 0;
+    }
+  }
+
+  .breadcrumbs__link-arrow-tail {
+    left: 0;
+
+    &::after {
+      border-width: 0 $breadcrumbs-spacing ($breadcrumbs-height / 2) 0;
+      border-color: transparent rgba(color('black'), $breadcrumbs-bg-transperancy) transparent transparent;
+    }
+
+    &::before {
+      border-width: 0 0 ($breadcrumbs-height / 2) $breadcrumbs-spacing;
+      border-color: transparent transparent rgba(color('black'), $breadcrumbs-bg-transperancy) transparent;
+    }
+  }
+
+  .breadcrumbs__link-arrow-head {
+    left: calc(100% - #{$breadcrumbs-spacing});
+
+    &::after {
+      border-width: ($breadcrumbs-height / 2) 0 0 $breadcrumbs-spacing;
+      border-color: transparent transparent transparent rgba(color('black'), $breadcrumbs-bg-transperancy) ;
+    }
+
+    &::before {
+      border-width: ($breadcrumbs-height / 2) $breadcrumbs-spacing 0 0;
+      border-color: rgba(color('black'), $breadcrumbs-bg-transperancy)  transparent transparent transparent;
+    }
+  }
+
+
+  /** Icon
+  --------------------------------------------------*/
+  li > a > .icon {
+    margin-right: $spacing-base / 4;
+  }
+}
+
+
+
+/** Colors
+--------------------------------------------------*/
+
+@each $name, $value in $colors {
+  .breadcrumbs--color-#{$name} {
+    .breadcrumbs__menu {
+      > li > a {
+        color: rgba(color(#{$name}), $breadcrumbs-color-transperancy);
+
+        &::before {
+          background-color: rgba(color(#{$name}), $breadcrumbs-bg-transperancy);
+        }
+
+        &.is-active,
+        &:hover {
+          color: color(#{$name});
+
+          &::before {
+            background-color: rgba(color(#{$name}), $breadcrumbs-bg-transperancy-active);
+          }
+
+          .breadcrumbs__link-arrow-tail {
+            &::after {
+              border-color: transparent rgba(color(#{$name}), $breadcrumbs-bg-transperancy-active) transparent transparent;
+            }
+
+            &::before {
+              border-color: transparent transparent rgba(color(#{$name}), $breadcrumbs-bg-transperancy-active) transparent;
+            }
+          }
+
+          .breadcrumbs__link-arrow-head {
+            &::after {
+              border-color: transparent transparent transparent rgba(color(#{$name}), $breadcrumbs-bg-transperancy-active);
+            }
+
+            &::before {
+              border-color: rgba(color(#{$name}), $breadcrumbs-bg-transperancy-active)  transparent transparent transparent;
+            }
+          }
+        }
+
+        .breadcrumbs__link-arrow-tail {
+          &::after {
+            border-color: transparent rgba(color(#{$name}), $breadcrumbs-bg-transperancy) transparent transparent;
+          }
+
+          &::before {
+            border-color: transparent transparent rgba(color(#{$name}), $breadcrumbs-bg-transperancy) transparent;
+          }
+        }
+
+        .breadcrumbs__link-arrow-head {
+          &::after {
+            border-color: transparent transparent transparent rgba(color(#{$name}), $breadcrumbs-bg-transperancy) ;
+          }
+
+          &::before {
+            border-color: rgba(color(#{$name}), $breadcrumbs-bg-transperancy)  transparent transparent transparent;
+          }
+        }
+      }
+    }
+
+    /** Color modifiers */
+    .breadcrumbs__button,
+    a.breadcrumbs__button {
+      background: rgba(color('#{$name}'), $breadcrumbs-bg-transperancy);
+      color: rgba(color('#{$name}'), $breadcrumbs-color-transperancy);
+
+      &:hover {
+        color: color('#{$name}');
+        background: rgba(color('#{$name}'), $breadcrumbs-bg-transperancy-active);
+
+        .breadcrumbs__button-arrow-tail {
+          &::before {
+            border-color: transparent transparent rgba(color('#{$name}'), $breadcrumbs-bg-transperancy-active) transparent;
+          }
+
+          &::after {
+            border-color: transparent rgba(color('#{$name}'), $breadcrumbs-bg-transperancy-active) transparent transparent;
+          }
+        }
+      }
+
+      .breadcrumbs__button-arrow-tail {
+        &::before {
+          border-color: transparent transparent rgba(color('#{$name}'), $breadcrumbs-bg-transperancy) transparent;
+        }
+
+        &::after {
+          border-color: transparent rgba(color('#{$name}'), $breadcrumbs-bg-transperancy) transparent transparent;
+        }
+      }
+    }
+  }
+}
+
+
+/** Sizes
+--------------------------------------------------*/
+
+.breadcrumbs--full {
+
+  .breadcrumbs__menu {
+    width: 100%;
+
+    > li {
+      flex: 1;
+    }
+
+    > li > a {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}

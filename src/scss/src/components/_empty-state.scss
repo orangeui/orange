@@ -1,0 +1,44 @@
+/**
+ * Empty state
+ */
+
+.empty-state {
+  display: flex;
+  align-items: center;
+  margin-left: $spacing-base * 2;
+  margin-right: $spacing-base * 2;
+}
+
+.empty-state__image {
+  flex: 1;
+  pointer-events: none;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.empty-state__content {
+  flex: 1;
+}
+
+.empty-state__title {  }
+
+.empty-state__description {
+  font-size: fontSize('delta');
+  color: color('gray');
+  max-width: $spacing-base * 16;
+
+  p {
+    margin-bottom: $spacing-small;
+  }
+}
+
+.empty-state__buttons {
+  margin-top: $spacing-small;
+}
+
+.empty-state--no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}

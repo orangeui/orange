@@ -1,0 +1,183 @@
+/**
+ * Progress bar
+ */
+
+.progress-bar {
+  position: relative;
+  line-height: 1;
+
+  .progress-bar__text {
+    font-size: fontSize('zeta');
+    color: inherit;
+    line-height: 1;
+  }
+}
+
+.progress-bar__line {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  box-sizing: border-box;
+
+  .progress-bar__line-outer {
+    height: 6px;
+    border-radius: $border-radius-progress-bar;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: currentColor;
+      opacity: 0.12;
+      content: '';
+    }
+  }
+
+  .progress-bar__line-inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: color('secondary');
+    line-height: 1;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .progress-bar__line-innerText {
+    display: inline-block;
+    vertical-align: middle;
+    color: color('white');
+    font-size: fontSize('omega');
+    font-weight: fontWeight('medium');
+    margin: 0 5px;
+
+    &.progress-bar__line-innerText--below {
+      transform: translateX(calc(100% + 10px));
+      color: currentColor;
+    }
+
+    .progress-bar__custom-text {
+      color: color('white');
+    }
+  }
+
+  & + .progress-bar__text {
+    color: color('gray', 'light') !important;
+  }
+}
+
+.progress-bar__custom-text {
+  color: color('gray', 'light');
+}
+
+@keyframes progress {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 32px 0;
+  }
+}
+
+
+/** Styles
+--------------------------------------------------*/
+
+/** Line */
+.progress-bar--line {
+  .progress-bar__text {
+    margin-top: 6px;
+  }
+}
+
+/** Circular */
+.progress-bar--circle {
+  display: inline-block;
+
+  .progress-bar__circle-track {
+    stroke: currentColor;
+    opacity: 0.12;
+  }
+
+  .progress-bar__text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    transform: translate(0, -50%);
+
+    i {
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+
+  .progress-bar__custom-text {
+    display: block;
+  }
+}
+
+.progress-bar--without-text {
+  .progress-bar__text {
+    display: none;
+  }
+
+  .progress-bar__line {
+    padding-right: 0;
+    margin-right: 0;
+    display: block;
+  }
+}
+
+.progress-bar--text-inside {
+  .progress-bar__line {
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+
+
+/** States
+--------------------------------------------------*/
+
+/** Disabled */
+.progress-bar.is-disabled {
+  opacity: 0.5;
+
+  /** Line */
+  .progress-bar__line {
+    .progress-bar__line-outer {
+      &::before {
+        background-color: color('gray');
+      }
+    }
+
+    .progress-bar__line-inner {
+      background-color: color('gray', 'light') !important;
+    }
+  }
+
+  /** Circle */
+  .progress-bar__circle-track {
+    stroke: color('gray');
+  }
+
+  .progress-bar__circle-path {
+    stroke: color('gray', 'light');
+  }
+
+  .progress-bar__text {
+    color: color('gray', 'light');
+  }
+}

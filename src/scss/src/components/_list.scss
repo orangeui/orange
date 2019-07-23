@@ -1,0 +1,155 @@
+/**
+ * List
+ */
+
+.list {}
+
+
+/** Header
+--------------------------------------------------*/
+
+.list__header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  font-size: fontSize('epsilon');
+  color: color('black');
+  padding: 0 $spacing-base;
+}
+
+
+/** Item
+--------------------------------------------------*/
+
+.list__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  padding-left: $spacing-base;
+  padding-right: $spacing-base;
+
+  /** Disabled state */
+  &.is-disabled {
+    background-color: darken(color('white'), 3);
+  }
+
+  .list__item-title {
+    margin-top: 0;
+    font-size: inherit;
+  }
+
+  .list__item-description {
+    margin-bottom: 0;
+    color: color('gray', 'light');
+
+    font-size: 90%; /** set description text to 90% size relative to style's font size */
+  }
+}
+
+
+/** Slot
+--------------------------------------------------*/
+
+.list__slot {
+  &:first-child {
+    flex: 1;
+  }
+}
+
+
+/** Styles
+--------------------------------------------------*/
+
+/** Divide */
+.list--divide {
+  .list__item {
+    border-top: $border;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+}
+
+/** Large */
+.list--large {
+  font-size: fontSize('delta');
+
+  .list__item {
+    padding-top: $spacing-base;
+    padding-bottom: $spacing-base;
+  }
+
+  .list__item-title {
+    margin-bottom: $spacing-base / 4;
+  }
+
+  .list__item-description {
+    font-size: fontSize('epsilon');
+  }
+}
+
+/** Medium */
+.list--medium {
+  font-size: fontSize('epsilon');
+
+  .list__item {
+    padding-top: $spacing-base / 2;
+    padding-bottom: $spacing-base / 2;
+  }
+
+  .list__item-title {
+    margin-bottom: $spacing-base / 8;
+  }
+
+  .list__item-description {
+    font-size: fontSize('zeta');
+  }
+}
+
+/** Small */
+.list--small {
+  font-size: fontSize('zeta');
+
+  .list__item {
+    padding-top: $spacing-base / 4;
+    padding-bottom: $spacing-base / 4;
+  }
+
+  .list__item-title {
+    margin-bottom: 0;
+  }
+
+  .list__item-description {
+    font-size: fontSize('omega');
+  }
+  
+  [class^="icon-"],
+  [class*=" icon-"] {
+    font-size: fontSize('delta');
+  }
+}
+
+/** Without gutter */
+.list--no-gutter {
+  margin: -#{$spacing-base};
+}
+
+/** Hover */
+.list--hover {
+  .list__item {
+    &:hover {
+      background-color: darken(color('white'), 1);
+    }
+  }
+}
+
+/** Pointer */
+.list--pointer {
+  .list__item {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
