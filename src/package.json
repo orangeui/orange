@@ -1,6 +1,6 @@
 {
   "name": "orange",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "cool stuff here",
   "scripts": {
     "watch": "nodemon --watch src/ -e js,scss -x \"npm run build\"",
