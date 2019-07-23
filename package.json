@@ -1,7 +1,8 @@
 {
   "name": "orange",
-  "version": "1.0.0",
   "description": "Open-source UI library by Fomo.",
+  "version": "1.0.0",
+  "version-short": "1.0",
   "author": "Fomo",
   "license": "MIT",
   "repository": {
