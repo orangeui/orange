@@ -1,0 +1,222 @@
+/**
+ * Form
+ */
+
+/** Form item
+--------------------------------------------------*/
+
+.form__item {
+  position: relative;
+  margin-bottom: $spacing-base;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/** Form wrapper
+--------------------------------------------------*/
+
+.form__wrapper {
+  display: flex;
+}
+
+
+/** Form input wrapper
+--------------------------------------------------*/
+
+.form__input-wrapper {
+  position: relative; 
+  flex: 1;
+}
+
+
+/** Form input and textarea
+--------------------------------------------------*/
+
+.form__input,
+.form__textarea {
+  font-size: fontSize('delta');
+  padding: ($spacing-base / 3) ($spacing-base / 2);
+  color: color('secondary');
+  border-radius: $border-radius-main;
+  display: block;
+  width: 100%;
+  border: $border;
+  transition: 0.05s ease-in-out;
+  line-height: $line-height;
+  height: auto;
+
+  &:focus {
+    color: color('secondary');
+    box-shadow: shadow('input');
+    border-color: transparentize(color('secondary'), 0.66);
+    outline: 0;
+  }
+  &::placeholder {
+    opacity: 1;
+    color: color('gray', 'light');
+  }
+
+  &[disabled],
+  &[readonly] {
+    background-color: transparent;
+    opacity: 1;
+    color: color('gray');
+
+    &::placeholder {
+      color: color('gray');
+    }
+
+    &:focus {
+      box-shadow: none;
+      border: $border;
+    }
+  }
+
+  &:-webkit-autofill {
+    border-color: color('gray', 'lightest') !important;
+    -webkit-text-fill-color: color('secondary') !important;
+  }
+
+  + .form__label {
+    display: none;
+  }
+}
+
+/** Remove iOS shadow on input */
+.form__input {
+  &[type=text] {
+    appearance: none;
+  }
+}
+
+
+/** Form label
+--------------------------------------------------*/
+
+.form__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border: 1px solid transparent;
+  font-size: fontSize('delta');
+  font-weight: fontWeight('normal');
+  margin: 0;
+  padding: $spacing-base $spacing-base / 2;
+  color: color('gray', 'light');
+  width: 100%;
+  transition: 0.1s ease-in-out;
+  line-height: $line-height;
+  height: $input-height-large;
+}
+
+
+/** Form extras
+--------------------------------------------------*/
+
+.form__extras {
+  height: $input-height;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-right: $spacing-base / 2;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+
+
+/** Form message
+--------------------------------------------------*/
+
+.form__message {
+  margin-top: $spacing-small;
+  font-size: fontSize('zeta');
+  color: color('red');
+}
+
+
+/** Form description
+--------------------------------------------------*/
+
+.form__description {
+  color: color('gray', 'light');
+  font-size: fontSize('zeta');
+  margin-top: $spacing-small;
+}
+
+
+
+/** States
+--------------------------------------------------*/
+
+.form__item {
+  
+  /** Error */
+  &.has-error {
+    .form__input,
+    .form__textarea {
+      border-color: rgba(color('red'), 0.75);
+    }
+  }
+  
+  /** Extras */
+  &.has-extras {
+    .form__input {
+      &[readonly] {
+        color: color('secondary');
+      }
+    }
+  }
+}
+
+
+
+/** Sizes
+--------------------------------------------------*/
+
+/** Large */
+.form--large {
+  .form__input,
+  .form__textarea {
+    padding: $spacing-base $spacing-base / 2;
+    height: $input-height-large;
+
+    + .form__label {
+      display: block;
+    }
+
+    &.is-full, 
+    &.has-placeholder {
+      padding: ($spacing-base * 1.5) ($spacing-base / 2) ($spacing-base / 2);
+
+      + .form__label {
+        padding: ($spacing-base / 2) ($spacing-base / 2) 0;
+        height: auto;
+        font-size: fontSize('omega');
+        color: color('black');
+      }
+    }
+
+    &::placeholder {
+      opacity: 0;
+      color: transparent;
+    }
+
+    &.has-placeholder::placeholder {
+      opacity: 1;
+      color: color('gray', 'light');
+    }
+  }
+
+  .form__textarea {
+    min-height: $spacing-base * 5;
+  }
+
+  .form__extras {
+    height: $input-height-large;
+  }
+}

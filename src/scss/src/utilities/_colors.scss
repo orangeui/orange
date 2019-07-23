@@ -1,0 +1,31 @@
+/**
+ * Colors
+ */
+
+@each $prefix, $meaning in $colors {
+  @each $colorKey, $colorValue in $meaning {
+    @if ($colorKey == 'base') {
+      .color-#{$prefix} {
+        color: $colorValue;
+      }
+    } @else {
+      .color-#{$prefix}-#{$colorKey} {
+        color: $colorValue;
+      }
+    }
+  }
+}
+
+@each $prefix, $meaning in $colors {
+  @each $colorKey, $colorValue in $meaning {
+    @if ($colorKey == 'base') {
+      .bg-#{$prefix} {
+        background-color: $colorValue;
+      }
+    } @else {
+      .bg-#{$prefix}-#{$colorKey} {
+        background-color: $colorValue;
+      }
+    }
+  }
+}

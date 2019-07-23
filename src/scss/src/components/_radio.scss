@@ -1,0 +1,137 @@
+/**
+ * Radio
+ */
+
+
+/** Radio group
+--------------------------------------------------*/
+
+.radio-group {
+  height: $spacing-base * 3;
+  padding: $spacing-small;
+  border: $border;
+  border-radius: $border-radius-main;
+}
+
+
+/** Radio group label
+--------------------------------------------------*/
+
+.radio-group__label {
+  margin-bottom: $spacing-small;
+  font-size: fontSize('omega');
+  line-height: 1;
+  color: color('black');
+}
+
+
+/** Radio
+--------------------------------------------------*/
+
+.radio {
+  display: inline-block;
+  position: relative;
+  font-size: fontSize('epsilon');
+
+  & + & {
+    margin-left: $spacing-base;
+  }
+}
+
+
+/** Radio Input
+--------------------------------------------------*/
+
+.radio__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+/** Radio label
+--------------------------------------------------*/
+
+.radio__label {
+  font-size: fontSize('epsilon');
+  display: flex;
+  align-items: center;
+  min-height: $radio-width-height;
+  padding-left: $radio-width-height + $spacing-base / 4;
+  position: relative;
+  line-height: 1;
+  cursor: pointer;
+  color: color('secondary');
+  opacity: 0.5;
+
+  &::before {
+    height: $radio-width-height;
+    width: $radio-width-height;
+    border: 1px solid color('secondary');
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: transparent;
+    border-radius: 100%;
+    content: '';
+  }
+
+  &::after {
+    width: $spacing-small;
+    height: $spacing-small;
+    top: $spacing-base / 8;
+    left: $spacing-base / 8;
+    position: absolute;
+    background-color: color('secondary');
+    border-radius: 100%;
+    content: '';
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+
+/** States
+--------------------------------------------------*/
+
+.radio {
+  
+  /** Checked state */
+  &.is-checked {
+    .radio__label {
+      opacity: 1;
+
+      &::after {
+        opacity: 1;
+        visibility: visible;
+        background-color: color('secondary');
+      }
+    }
+  }
+
+  /** Disabled and checked */
+  &.is-disabled {
+    .radio__label {
+      color: color('gray', 'dark');
+
+      &::before {
+        border-color: color('gray', 'dark')
+      }
+
+      &::after {
+        background-color: color('gray', 'dark');
+      }
+    }
+
+    &.is-checked {
+      .radio__label {
+        &::after {
+          background-color: color('gray', 'dark');
+        }
+      }
+    }
+  }
+}

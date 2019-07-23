@@ -1,0 +1,132 @@
+/**
+ * Table
+ */
+
+.table {
+  width: 100%;
+  margin: ($spacing-base / 2) 0;
+  
+  font-size: fontSize('zeta');
+  color: color('gray');
+  text-align: left;
+  
+  border-radius: $border-radius-main;
+  border-collapse: separate;
+  border-spacing: 0;
+
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  th {
+    font-weight: fontWeight('normal');
+    color: color('gray', 'light');
+  }
+
+  th,
+  td {
+    padding: $spacing-small;
+
+    @media #{$small-tablet-and-down} {
+      width: 100% !important;
+      display: block;
+    }
+  }
+
+  th:first-child,
+  td:first-child {
+    padding-left: $spacing-base;
+  }
+
+  td {
+    border-top: $border;
+    padding: $spacing-base $spacing-small;
+  }
+
+  td:first-child {
+    font-size: fontSize('gamma');
+    color: color('black');
+
+    a {
+      color: color('black');
+    }
+  }
+
+  td.collapsing {
+    width: 1px;
+    white-space: nowrap;
+  }
+}
+
+
+/** Styles
+--------------------------------------------------*/
+
+
+/** With a bottom border */
+.table--border-bottom {
+  border-bottom: $border;
+}
+
+/** Equal column widths */
+.table--fixed {
+  table-layout: fixed;
+}
+
+/** Celled */
+.table--celled {
+  border: $border;
+
+  thead th {
+    border-left: $border;
+    background-color: transparentize(color('gray', 'lightest'), 0.5);
+    color: color('black');
+    font-weight: fontWeight('bold');
+  }
+
+  tr td,
+  tr th {
+    border-left: $border;
+
+    &:first-child {
+      border-left-color: transparent;
+    }
+  }
+}
+
+/** Compact */
+.table--compact {
+  color: color('gray', 'dark');
+
+  td {
+    color: color('gray', 'dark');
+    padding: $spacing-small;
+  }
+
+  td:first-child {
+    padding-left: $spacing-base;
+    font-size: fontSize('zeta');
+  }
+}
+
+/** With heads left of the content */
+.table--definition {
+  th {
+    vertical-align: text-top;
+    padding-bottom: $spacing-base;
+    padding-top: $spacing-base;
+  }
+
+  td:nth-child(2) {
+    border-left: 0;
+  }
+
+  td.ignored {
+    color: color('gray', 'light');
+  }
+}

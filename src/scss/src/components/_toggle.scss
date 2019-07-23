@@ -1,0 +1,184 @@
+/**
+ * Toggle
+ */
+
+.toggle {
+  position: relative;
+}
+
+/** Toggle button
+--------------------------------------------------*/
+
+.toggle__button {
+  position: relative;
+  height: $toggle-height;
+}
+
+
+/** Toggle input
+--------------------------------------------------*/
+
+.toggle__input {
+  height: 100%;
+  width: $toggle-width;
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+/** Toggle label
+--------------------------------------------------*/
+
+.toggle__label {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  padding-left: $toggle-width;
+  line-height: $spacing-base;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:before, &:after {
+    display: block;
+    position: absolute;
+  }
+
+  &:before {
+    content: '';
+    border-radius: $spacing-base;
+    height: 100%;
+    width: $toggle-width;
+    background: color('gray', 'light');
+    opacity: .5;
+    top: 0;
+    left: 0;
+    transition: 0.2s ease-in;
+  }
+
+  &:after {
+    content: '';
+    width: $spacing-base;
+    height: $spacing-base;
+    top: $spacing-base / 8;
+    left: $spacing-base / 8;
+    border-radius: $spacing-base;
+    background: color('white');
+    box-shadow: shadow('secondary');
+    transition: 0.2s linear;
+  }
+}
+
+
+
+/** States
+--------------------------------------------------*/
+
+/** Checked */
+.toggle.is-checked {
+  .toggle__label {
+    color: rgba(color('black'), 0.95);
+  }
+
+  .toggle__label:before {
+    background: color('secondary');
+    opacity: 1;
+  }
+
+  .toggle__label:after {
+    left: $spacing-base + $spacing-base / 8;
+  }
+}
+
+/** Disabled */
+.toggle.is-disabled {
+  cursor: default;
+  pointer-events: none;
+
+  .toggle__label::before {
+    opacity: 0.5;
+  }
+}
+
+/** With label */
+.toggle--label {
+  .toggle__label {
+    padding-left: $spacing-base * 3;
+  }
+}
+
+/** Sizes
+--------------------------------------------------*/
+
+/** Large */
+.toggle--large {
+  padding-right: $spacing-base * 3;
+
+  .toggle__value {
+    padding: ($spacing-base * 1.25) ($spacing-base / 2) ($spacing-base * 0.75) ($spacing-base / 2);
+    font-size: fontSize('delta');
+    color: color('secondary');
+    border: 1px solid transparent;
+    width: 100%;
+    transition: 0.05s ease-in-out;
+    line-height: $line-height;
+  }
+
+  .toggle__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: $input-height-large;
+    border: $border;
+    border-radius: $border-radius-main;
+    width: 100%;
+    transition: 0.1s ease-in-out;
+    line-height: $line-height;
+    padding: $spacing-small $spacing-small 0;
+    font-size: fontSize('omega');
+    color: color('black');
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .toggle__button {
+    position: absolute;
+    right: $spacing-small;
+    top: $spacing-base * 1.5;
+    transform: translateY(-50%);
+  }
+
+  .toggle__label {
+    padding-left: $toggle-width;
+  }
+
+  &.is-disabled {
+    cursor: default;
+    pointer-events: none;
+
+    .toggle__value {
+      color: color('gray');
+    }
+  }
+}
+
+
+
+/** Colors
+--------------------------------------------------*/
+
+@each $name, $value in $colors {
+  .toggle--color-#{$name} {
+    &.is-checked {
+      .toggle__label:before {
+        background: color(#{$name});
+      }
+    }
+  }
+}

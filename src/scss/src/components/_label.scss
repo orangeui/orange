@@ -1,0 +1,98 @@
+/**
+ * Label
+ */
+
+.label {
+  border-radius: 30px;
+  color: color('gray');
+  font-size: fontSize('omega');
+  background-color: rgba(color('gray'), 0.1);
+  display: inline-flex;
+  align-items: center;
+  padding: 0 $spacing-base / 2;
+  height: $spacing-base + 4px;
+
+  [class^="icon-"], [class*=" icon-"] {
+    font-size: fontSize('delta');
+    margin-right: -$spacing-base / 4;
+    margin-left: 0;
+  }
+
+  + .label {
+    margin-left: $spacing-base / 4;
+  }
+}
+
+/** Styles
+--------------------------------------------------*/
+
+/** Small */
+.label--small {
+  padding: 0 $spacing-small - 2px;
+  height: $spacing-base - 2px;
+}
+
+/** Dot */
+.label--dot {
+  width: $spacing-small;
+  height: $spacing-small;
+  padding: 0;
+}
+
+/** Pill */
+.label--pill {
+  width: $spacing-base * 3;
+  height: $spacing-base / 2;
+}
+
+
+/** States
+--------------------------------------------------*/
+
+.label--dismiss {
+  [class^="icon-"], [class*=" icon-"] {
+    &:hover {
+      cursor: pointer;
+      color: color('gray', 'dark');
+    }
+  }
+}
+
+/** Colors
+--------------------------------------------------*/
+
+/** Regular style colors */
+@each $prefix, $meaning in $colors {
+  @each $colorKey, $colorValue in $meaning {
+
+    @if ($colorKey == 'base') {
+      .label--#{$prefix} {
+        background-color: rgba($colorValue, 0.1);
+        color: $colorValue;
+      }
+    } @else {
+      .label--#{$prefix}-#{$colorKey} {
+        background-color: rgba($colorValue, 0.1);
+        color: $colorValue;
+      }
+    }
+  }
+}
+
+/** Dot and pill colors */
+@each $prefix, $meaning in $colors {
+  @each $colorKey, $colorValue in $meaning {
+
+    @if ($colorKey == 'base') {
+      .label--dot.label--#{$prefix},
+      .label--pill.label--#{$prefix} {
+        background-color: $colorValue;
+      }
+    } @else {
+      .label--dot.label--#{$prefix}-#{$colorKey},
+      .label--pill.label--#{$prefix}-#{$colorKey} {
+        background-color: $colorValue;
+      }
+    }
+  }
+}

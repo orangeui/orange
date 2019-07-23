@@ -1,0 +1,196 @@
+/**
+ * Variables
+ */
+
+/** Global
+--------------------------------------------------*/
+@import "./variables/grid";
+@import "./variables/breakpoint-sizes";
+@import "./variables/media-queries";
+@import "./variables/spacings";
+
+$transition: 200ms ease-out all;
+
+
+/** Typography
+--------------------------------------------------*/
+
+$include-fonts: true !default;
+$font-url: 'https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i|Roboto+Mono&display=swap';
+$font-primary: "Rubik", arial, sans-serif !default;
+$font-monospace: 'Roboto Mono', monospace !default;
+
+$line-height: 1.5;
+
+$font-sizes: (
+  'giga': 76px,
+  'mega': 54px,
+  'alpha': 36px,
+  'beta': 28px,
+  'gamma': 21px,
+  'delta': 18px,
+  'epsilon': 16px,
+  'zeta': 14px,
+  'omega': 12px
+) !default;
+
+$font-weights: (
+  'thin': 100,
+  'extralight': 200,
+  'light': 300,
+  'normal': 400,
+  'medium': 500,
+  'bold': 600,
+  'extrabold': 700,
+  'black': 800
+) !default;
+
+/** Include fonts */
+@if ($include-fonts) {
+  @import url($font-url);
+}
+
+
+/** Colors
+--------------------------------------------------*/
+$darken: 20%;
+$lighten: 20%;
+$saturate: 20%;
+
+$colors: (
+  'primary': (
+    'base': #ffa941,
+    'dark': adjust-color(#ffa941, $lightness: -$darken, $saturation: $saturate),
+    'light': adjust-color(#ffa941, $lightness: $lighten, $saturation: $saturate),
+  ),
+  'secondary': (
+    'base': #4648d2,
+    'dark': adjust-color(#4648d2, $lightness: -$darken, $saturation: $saturate),
+    'light': adjust-color(#4648d2, $lightness: $lighten, $saturation: $saturate),
+  ),
+
+  'red': (
+    'base': #FA3D49,
+    'dark': adjust-color(#FA3D49, $lightness: -$darken, $saturation: $saturate),
+    'light': adjust-color(#FA3D49, $lightness: $lighten, $saturation: $saturate),
+  ),
+  'orange': (
+    'base': #ffa941,
+    'dark': adjust-color(#ffa941, $lightness: -$darken, $saturation: $saturate),
+    'light': adjust-color(#ffa941, $lightness: $lighten, $saturation: $saturate),
+  ),
+  'yellow': (
+    'base': #ffe433,
+    'dark': adjust-color(#ffe433, $lightness: -$darken, $saturation: $saturate),
+    'light': adjust-color(#ffe433, $lightness: $lighten, $saturation: $saturate),
+  ),
+  'green': (
+    'base': #4BC45F,
+    'dark': adjust-color(#4BC45F, $lightness: -$darken, $saturation: $saturate),
+    'light': adjust-color(#4BC45F, $lightness: $lighten, $saturation: $saturate),
+  ),
+  'blue': (
+    'base': #3333f3,
+    'dark': adjust-color(#3333f3, $lightness: -$darken, $saturation: $saturate),
+    'light': adjust-color(#3333f3, $lightness: $lighten, $saturation: $saturate),
+  ),
+  'indigo': (
+    'base': #178cd6,
+    'dark': adjust-color(#178cd6, $lightness: -$darken, $saturation: $saturate),
+    'light': adjust-color(#178cd6, $lightness: $lighten, $saturation: $saturate),
+  ),
+  'violet': (
+    'base': #8b26f1,
+    'dark': adjust-color(#8b26f1, $lightness: -$darken, $saturation: $saturate),
+    'light': adjust-color(#8b26f1, $lightness: $lighten, $saturation: $saturate),
+  ),
+
+  'black': (
+    'base': adjust-color(#000000, $lightness: 0%),
+  ),
+  'gray': (
+    'darkest': adjust-color(#000000, $lightness: 20%),
+    'dark': adjust-color(#000000, $lightness: 42%),
+    'base': adjust-color(#000000, $lightness: 60%),
+    'light': adjust-color(#000000, $lightness: 80%),
+    'lightest': adjust-color(#000000, $lightness: 92%),
+  ),
+  'white': (
+    'base': adjust-color(#000000, $lightness: 100%),
+  )
+) !default;
+
+/** Shadows
+--------------------------------------------------*/
+
+$shadows: (
+  'primary': (8px 14px 38px transparentize(color('black'), 0.96), 0px 3px 5px transparentize(color('black'), 0.96)),
+  'secondary': (0px 1px 4px transparentize(color('black'), 0.80)),
+  'input': 0 0 12px 6px transparentize(color('secondary'), 0.93),
+) !default;
+
+
+/** Spacings
+--------------------------------------------------*/
+
+$spacing-base: 24px !default;
+$spacing-extra-small: $spacing-base / 3 !default;
+$spacing-small: $spacing-base / 2 !default;
+$spacing-medium: $spacing-base * 1.5 !default;
+$spacing-large: $spacing-base * 2 !default;
+$spacing-extra-large: $spacing-base * 3 !default;
+
+
+/** Global properties
+--------------------------------------------------*/
+
+$border: 1px solid color('gray', 'lightest');
+$border-radius-main: 3px !default;
+$border-radius-medium: 6px !default;
+$border-radius-progress-bar: 9px !default;
+
+
+/** Component properties
+--------------------------------------------------*/
+
+/** Form */
+$input-height: 40px !default;
+$input-height-large: 70px !default;
+
+/** Checkbox */
+$checkbox-width-height: $spacing-base * 0.75 !default;
+
+/** Radio */
+$radio-width-height: $spacing-base * 0.75 !default;
+
+/** Toggle */
+$toggle-width: $spacing-base * 2.25 !default;
+$toggle-height: $spacing-base * 1.25 !default;
+
+/** Button */
+$button-size-large: 60px !default;
+$button-size-regular: 40px !default;
+$button-size-small: 28px !default;
+
+/** Breadcrumbs */
+$breadcrumbs-height: 36px !default;
+$breadcrumbs-spacing: $spacing-small !default;
+$breadcrumbs-margin: 3px !default;
+$breadcrumbs-bg-transperancy: 0.05 !default;
+$breadcrumbs-bg-transperancy-active: 0.12 !default;
+$breadcrumbs-color-transperancy: 0.5 !default;
+
+/** Navigation */
+$nav-link-color-opacity: 0.5 !default;
+$nav-link-color-opacity-hover: 1 !default;
+$nav-link-color-opacity-active: 1 !default;
+$nav-link-bgcolor-opacity: 0.05 !default;
+$nav-link-height: 40px !default;
+
+/** Sidebar */
+$sidebar-width: 243px !default;
+
+/** Avatar */
+$avatar-width-height: $spacing-base * 4 !default;
+$avatar-small-width-height: $spacing-base * 2 !default;
+$avatar-large-width-height: $spacing-base * 8 !default;

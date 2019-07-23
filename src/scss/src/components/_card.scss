@@ -1,0 +1,141 @@
+/**
+ * Card
+ */
+
+.card {
+  border-radius: $border-radius-main;
+  background-color: color('white');
+  box-shadow: shadow('primary');
+}
+
+
+/** Header
+--------------------------------------------------*/
+
+.card__header {
+  border-bottom: $border;
+  border-radius: $border-radius-main $border-radius-main 0 0;
+  padding: $spacing-base / 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $spacing-base + $button-size-regular;
+  // spacing base accounts for 12px top and 12px bottom padding
+  // 40px is large button's size
+
+  .form {
+    min-width: $spacing-base * 10;
+  }
+
+  // Card Title
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: fontWeight('normal');
+    color: color('black');
+    padding-left: $spacing-small;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+/** Body
+--------------------------------------------------*/
+
+.card__body {
+  padding: $spacing-base;
+}
+
+
+/** Section
+--------------------------------------------------*/
+
+.card__section {
+  margin-bottom: $spacing-medium;
+
+  &:first-of-type {
+    margin-top: -#{$spacing-base};
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.card__section-header {
+  padding: ($spacing-base / 2) $spacing-base ;
+  height: $spacing-base + $button-size-regular;
+  margin: 0 -#{$spacing-base} 0 -#{$spacing-base};
+  border-bottom: $border;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & ~ .card__section-header {
+    margin-top: $spacing-medium;
+  }
+}
+
+.card__section-title {
+  margin: auto 0;
+  font-size: fontSize('delta');
+}
+
+.card__section-extras {
+  flex-shrink: 0;
+}
+
+.card__section-body {
+  padding-top: $spacing-base;
+}
+
+
+/** Footer
+--------------------------------------------------*/
+
+.card__footer {
+  border-radius: 0 0 $border-radius-main $border-radius-main;
+  border-top: $border;
+  min-height: $spacing-large;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $spacing-base;
+  transition: 0.15s ease-in-out;
+
+  &:empty {
+    min-height: 0px;
+    height: $spacing-base;
+    padding: 0;
+    border-top: 0;
+  }
+}
+
+.card__footer--click {
+  color: color('gray');
+
+  &:hover {
+    cursor: pointer;
+    background-color: color('gray', 'lightest');
+  }
+}
+
+
+/** Styles
+--------------------------------------------------*/
+
+/** With navigation */
+.card__header .nav {
+  margin-left: $spacing-small;
+}
+
+/** No gutter */
+.card--full {
+  .card__body {
+    padding: 0;
+  }
+
+  .card__section-header {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+}

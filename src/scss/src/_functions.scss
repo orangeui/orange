@@ -1,0 +1,47 @@
+/**
+ * Functions
+ */
+
+/** Helpers
+--------------------------------------------------*/
+
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+
+/** Colors
+--------------------------------------------------*/
+
+@function color($color, $shade...) {
+  @if ($shade == ()) {
+    @return map-deep-get($colors, $color, 'base');
+  } @else {
+    @return map-deep-get($colors, $color, nth($shade, 1));
+  }
+}
+
+
+/** Typography
+--------------------------------------------------*/
+
+/** Font sizes */
+@function fontSize($size) {
+  @return map-get($font-sizes, $size);
+}
+
+/** Font weights */
+@function fontWeight($weight) {
+  @return map-get($font-weights, $weight);
+}
+
+
+/** Shadows
+--------------------------------------------------*/
+
+@function shadow($shadow) {
+  @return map-get($shadows, $shadow);
+}

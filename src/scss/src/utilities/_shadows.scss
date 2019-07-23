@@ -1,0 +1,9 @@
+/**
+ * Shadows
+ */
+
+@each $prefix, $meaning in $shadows {
+  .shadow-#{$prefix} {
+    box-shadow: $meaning;
+  }
+}

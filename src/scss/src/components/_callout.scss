@@ -1,0 +1,93 @@
+/**
+ * Callout
+ */
+
+.callout {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: $spacing-small;
+  border-radius: $border-radius-main;
+  margin-bottom: $spacing-base / 2;
+  transition: 0.2s ease-in-out;
+
+  background-color: color('gray', 'light');
+  color: color('white');
+  text-align: center;
+  font-size: fontSize('zeta');
+  font-style: italic;
+
+  &:hover {
+    cursor: pointer;
+    background-color: lighten(color('gray', 'light'), 2);
+  }
+
+  p {
+    margin-bottom: $spacing-base / 2;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: color('white');
+    font-weight: fontWeight('bold');
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+/** Colors
+--------------------------------------------------*/
+
+@each $name, $value in $colors {
+  @if $name == 'white' {
+    .callout--color-#{$name} {
+      color: color('gray', 'dark');
+      background-color: color('white');
+
+      &:hover {
+        background-color: color('gray', 'lightest');
+      }
+
+      a {
+        color: color('gray', 'dark');
+      }
+    }
+  } @else {
+    .callout--color-#{$name} {
+      background-color: color(#{$name});
+      color: color('white');
+      border-width: 0;
+
+      a {
+        color: color(#{$name});
+      }
+
+      &:hover {
+        background-color: lighten(color(#{$name}), 10);
+      }
+    }
+  }
+}
+
+
+/** Styles
+--------------------------------------------------*/
+
+/** With a shadow */
+.callout--shadow {
+  box-shadow: shadow('primary');
+}
+
+/** With an image */
+.callout__image {
+  padding: ($spacing-base / 2) 0;
+}

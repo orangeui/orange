@@ -1,0 +1,21 @@
+{
+  "name": "orange",
+  "version": "1.0.0",
+  "description": "cool stuff here",
+  "scripts": {
+    "watch": "nodemon --watch src/ -e js,scss -x \"npm run build\"",
+    "build-js": "uglifyjs --compress --mangle -o ../dist/js/orange.min.js -- ./js/src/**/*.js ./js/src/*.js",
+    "build-scss": "node-sass --include-path sass ./scss/src/styles.scss ../dist/css/orange.min.css --output-style compressed",
+    "build": "npm run build-js & npm run build-scss"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "modern-normalize": "^0.5.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "uglify-js": "^3.6.0"
+  }
+}
