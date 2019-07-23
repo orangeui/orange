@@ -1,6 +1,6 @@
 {
   "name": "orange",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Open-source UI library by Fomo.",
   "scripts": {
     "watch": "nodemon --watch src/ -e js,scss -x \"npm run build\"",
