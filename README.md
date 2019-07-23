@@ -30,7 +30,7 @@ Read the [Doc](https://.orangecss.com/docs/) for info on the library and example
 
 ## Contributing
 
-Pull rights and issue welcome!
+Pull rights and github issues welcome!
 
 ### License
 [MIT](https://github.com/orangeui/orange/blob/master/LICENSE)
