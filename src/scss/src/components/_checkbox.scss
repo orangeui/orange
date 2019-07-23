@@ -35,54 +35,50 @@
   & + & {
     margin-left: $spacing-base;
   }
-}
 
-
-/** Checkbox input
---------------------------------------------------*/
-
-.checkbox__input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  visibility: hidden;
-}
-
-
-/** Checkbox label
---------------------------------------------------*/
-
-.checkbox__label {
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-  background: transparent;
-  cursor: pointer;
-  padding-left: $checkbox-width-height + $spacing-base / 3;
-  min-height: $checkbox-width-height;
-  position: relative;
-  color: color('secondary');
-  opacity: 0.5;
-
-  &::before {
+  /** Checkbox input
+  --------------------------------------------------*/
+  > input {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 0;
-    height: $checkbox-width-height;
-    width: $checkbox-width-height;
-    transform: translateY(-50%);
-    border: 1px solid color('secondary');
-    content: '';
-    border-radius: $border-radius-main;
-    display: flex;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /** Checkbox label
+  --------------------------------------------------*/
+  > label {
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    font-family: "fomo-icons";
-    color: color('white');
-    font-size: $spacing-base; /** equals 24px */
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+    padding-left: $checkbox-width-height + $spacing-base / 3;
+    min-height: $checkbox-width-height;
+    position: relative;
+    color: color('secondary');
+    opacity: 0.5;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: $checkbox-width-height;
+      width: $checkbox-width-height;
+      transform: translateY(-50%);
+      border: 1px solid color('secondary');
+      content: '';
+      border-radius: $border-radius-main;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "fomo-icons";
+      color: color('white');
+      font-size: $spacing-base; /** equals 24px */
+    }
   }
 }
 
@@ -94,20 +90,20 @@
 .checkbox {
   
   /** Checked */
-  &.is-checked {
-    .checkbox__label {
+  > input:checked {
+    + label {
       opacity: 1;
     }
 
-    .checkbox__label::before {
+    + label::before {
       content: "\e821";
       background-color: color('secondary');
     }
   }
 
   /** Disabled and checked */
-  &.is-disabled {
-    .checkbox__label {
+  > input:disabled {
+    + label {
       color: color('gray', 'dark');
       cursor: default;
 
@@ -116,8 +112,8 @@
       }
     }
     
-    &.is-checked {
-      .checkbox__label::before {
+    &:checked {
+      > label::before {
         background-color: color('gray', 'dark');
       }
     }

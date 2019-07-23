@@ -36,59 +36,56 @@
   & + & {
     margin-left: $spacing-base;
   }
-}
 
+  /** Radio Input
+  --------------------------------------------------*/
 
-/** Radio Input
---------------------------------------------------*/
-
-.radio__input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
-}
-
-
-/** Radio label
---------------------------------------------------*/
-
-.radio__label {
-  font-size: fontSize('epsilon');
-  display: flex;
-  align-items: center;
-  min-height: $radio-width-height;
-  padding-left: $radio-width-height + $spacing-base / 4;
-  position: relative;
-  line-height: 1;
-  cursor: pointer;
-  color: color('secondary');
-  opacity: 0.5;
-
-  &::before {
-    height: $radio-width-height;
-    width: $radio-width-height;
-    border: 1px solid color('secondary');
+  > input {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: transparent;
-    border-radius: 100%;
-    content: '';
-  }
-
-  &::after {
-    width: $spacing-small;
-    height: $spacing-small;
-    top: $spacing-base / 8;
-    left: $spacing-base / 8;
-    position: absolute;
-    background-color: color('secondary');
-    border-radius: 100%;
-    content: '';
+    top: 0;
+    left: 0;
     opacity: 0;
     visibility: hidden;
+  }
+
+  /** Radio label
+  --------------------------------------------------*/
+  > label {
+    font-size: fontSize('epsilon');
+    display: flex;
+    align-items: center;
+    min-height: $radio-width-height;
+    padding-left: $radio-width-height + $spacing-base / 4;
+    position: relative;
+    line-height: 1;
+    cursor: pointer;
+    color: color('secondary');
+    opacity: 0.5;
+
+    &::before {
+      height: $radio-width-height;
+      width: $radio-width-height;
+      border: 1px solid color('secondary');
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-color: transparent;
+      border-radius: 100%;
+      content: '';
+    }
+
+    &::after {
+      width: $spacing-small;
+      height: $spacing-small;
+      top: $spacing-base / 8;
+      left: $spacing-base / 8;
+      position: absolute;
+      background-color: color('secondary');
+      border-radius: 100%;
+      content: '';
+      opacity: 0;
+      visibility: hidden;
+    }
   }
 }
 
@@ -100,8 +97,8 @@
 .radio {
   
   /** Checked state */
-  &.is-checked {
-    .radio__label {
+  > input:checked {
+    + label {
       opacity: 1;
 
       &::after {
@@ -113,8 +110,9 @@
   }
 
   /** Disabled and checked */
-  &.is-disabled {
-    .radio__label {
+  > input:disabled {
+    + label {
+      pointer-events: none;
       color: color('gray', 'dark');
 
       &::before {
@@ -126,8 +124,8 @@
       }
     }
 
-    &.is-checked {
-      .radio__label {
+    &:checked {
+      + label {
         &::after {
           background-color: color('gray', 'dark');
         }

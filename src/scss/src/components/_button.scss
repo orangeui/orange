@@ -272,7 +272,7 @@ a.button--small {
 /** Large */
 .button--large,
 a.button--large {
-  padding: $spacing-small $spacing-base;
+  padding: $spacing-small ($spacing-base * 0.75);
   height: $button-size-large;
 
   &.button--icon-only,
