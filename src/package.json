@@ -1,7 +1,7 @@
 {
   "name": "orange",
   "version": "0.0.1",
-  "description": "cool stuff here",
+  "description": "Open-source UI library by Fomo.",
   "scripts": {
     "watch": "nodemon --watch src/ -e js,scss -x \"npm run build\"",
     "build-js": "uglifyjs --compress --mangle -o ../dist/js/orange.min.js -- ./js/src/**/*.js ./js/src/*.js",
