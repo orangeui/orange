@@ -17,7 +17,7 @@
 
   function activateDropdowns() {
     for (var i = 0; i < dropdowns.length; i++) {
-      var dropdown = dropdowns[i];
+      var dropdown = dropdowns[i]
       var current_value = dropdown.querySelector(DROPDOWN_INPUT).value;
       if (typeof current_value === "string" && current_value !== ''){
         dropdown.querySelector(DROPDOWN_TEXT).innerText = current_value;
@@ -27,7 +27,7 @@
       dropdown.addEventListener("click", toggleDropdown, false);
 
       var options = dropdown.querySelectorAll(DROPDOWN_OPTION);
-      for (var i = 0; i < options.length; i++) {
+      for (var ii = 0; ii < options.length; ii++) {
         var dropdown_option = options[i];
         dropdown_option.addEventListener("click", selectDropdownOption, false);
       }
