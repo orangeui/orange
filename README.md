@@ -7,12 +7,12 @@ Open-source UI library by [Fomo](https://fomo.com).
 ### CDN
 CSS
 ```
-<link rel="stylesheet" href="https://cdn.orangecss.com/0.0.1/css/orange.min.css" />
+<link rel="stylesheet" href="https://cdn.orangecss.com/1.0.0/css/orange.min.css" />
 ```
 
 JS
 ```
-<script src="https://cdn.orangecss.com/0.0.1/js/orange.min.js"></script>
+<script src="https://cdn.orangecss.com/1.0.0/js/orange.min.js"></script>
 ```
 
 ### Files
