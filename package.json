@@ -2,6 +2,14 @@
   "name": "orange",
   "version": "1.0.0",
   "description": "Open-source UI library by Fomo.",
-  "author": "",
-  "license": "MIT"
+  "author": "Fomo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orangeui/orange.git"
+  },
+  "bugs": {
+    "url": "https://github.com/orangeui/orange/issues"
+  },
+  "homepage": "https://github.com/orangeui/orange#readme"
 }
