@@ -14,7 +14,11 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
     "nuxt": "^2.0.0",
-    "vue-clickaway": "^2.2.2"
+    "cleave.js": "^1.5.0",
+    "highlight.js": "^9.15.8",
+    "lodash": "^4.17.13",
+    "vue-clickaway": "^2.2.2",
+    "vee-validate": "^2.2.10"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
