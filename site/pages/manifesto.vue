@@ -25,7 +25,7 @@
           </li>
         </ul>
         <p>
-          So why are you still using Bootstrap? <router-link :to="{ name: 'install'}">Get started</router-link>.
+          So why are you still using Bootstrap? <router-link :to="{ name: 'docs'}">Get started</router-link>.
         </p>
         <p class="fs-zeta color-gray">
           Orange was imagined by Jan, Matevz, and Lucian.
