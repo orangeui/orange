@@ -2,25 +2,25 @@
  * Landing
  */
 
- .page-landing {
-   
+ .page-index {
+
    .empty-state {
      margin-top: $spacing-base * 2;
      margin-bottom: $spacing-base * 2;
    }
-   
+
    h1 {
      font-size: fontSize('giga');
      line-height: 0.75;
      margin-top: 0;
      margin-bottom: $spacing-base;
    }
-  
+
  	.empty-state__description {
 		color: color('black');
     margin-bottom: $spacing-base;
  	}
-  
+
   .empty-state__image {
     text-align: center;
     img {

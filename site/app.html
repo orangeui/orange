@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }} lang="en">
+  <head {{ HEAD_ATTRS }}>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="static/images/favicon.ico">
+    <title>Orange UI Docs</title>
+    <!-- Fathom - simple website analytics - https://usefathom.com -->
+    <script>
+    (function(f, a, t, h, o, m){
+    a[h]=a[h]||function(){
+        (a[h].q=a[h].q||[]).push(arguments)
+    };
+    o=f.createElement('script'),
+    m=f.getElementsByTagName('script')[0];
+    o.async=1; o.src=t; o.id='fathom-script';
+    m.parentNode.insertBefore(o,m)
+    })(document, window, '//cdn.usefathom.com/tracker.js', 'fathom');
+    fathom('set', 'siteId', 'YLDLHHKB');
+    fathom('trackPageview');
+    </script>
+    <!-- / Fathom -->
+
+    <meta property="og:title" content="Get Orange" />
+    <meta property="og:description" content="Freshly squeezed UI made open-source by Fomo" />
+    <meta property="og:image" content="https://orangecss.com/images/og/landing.png" />
+    <meta property="og:url" content="https://orangecss.com" />
+
+    <meta name="twitter:title" content="Get Orange" />
+    <meta name="twitter:description" content="Freshly squeezed UI made open-source by Fomo" />
+    <meta name="twitter:image" content="https://orangecss.com/images/og/landing.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    {{ HEAD }}
+  </head>
+  <body {{ BODY_ATTRS }}>
+    <noscript>
+      <strong>Sorry, Orange docs requires JavaScript to be enabled. Please enable it to continue.</strong>
+    </noscript>
+    {{ APP }}
+  </body>
+</html>

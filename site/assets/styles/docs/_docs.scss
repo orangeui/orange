@@ -34,7 +34,7 @@ body {
   &-logo {
     line-height: 0;
     margin-right: $spacing-base;
-    
+
     img {
       width: 40px;
       height: 40px;
@@ -52,7 +52,7 @@ body {
   margin: $docs-navigation-height 0 0 0;
 }
 
-.page-landing,
+.page-index,
 .page-changelog,
 .page-manifesto {
   .docs__section {
@@ -89,19 +89,19 @@ body {
   background-color: color('white');
   border-top: $border;
   padding: $spacing-small;
-  
+
   text-align: center;
-  
+
   p {
     font-size: fontSize('zeta');
     color: color('gray');
     margin: 0;
   }
-  
+
   a {
     color: color('gray');
   }
-  
+
   &-links a {
     color: color('gray');
     margin: 0 $spacing-small;
@@ -199,14 +199,14 @@ body {
 
 .docs__sidebar {
   margin-top: $spacing-base;
-  
+
   ul {
     list-style-type: none;
     padding: 0;
     margin-top: 0;
     margin-bottom: $spacing-base;
   }
-  
+
   li {
     margin-top: $spacing-base / 6;
     bottom: $spacing-base / 6;
@@ -313,7 +313,7 @@ body {
     margin-top: 0;
     margin-right: $spacing-small
   }
-  
+
   & + .docs__item {
     margin-top: -$spacing-base;
   }
@@ -328,23 +328,23 @@ body {
   &.explanation > div {
     max-width: $spacing-base * 28;
   }
-  
+
   & h2:first-child {
     margin-top: 0;
   }
-  
+
   &:last-child {
     border: none;
   }
-  
+
   & > div > *:first-child {
     margin-top: 0;
   }
-  
+
   & > div > *:last-child {
     margin-bottom: 0;
   }
-  
+
   & > div > h3 {
     margin-top: $spacing-base * 2;
   }
