@@ -1,4 +1,4 @@
-# orange-site
+# Orange
 
 > Documentation of Orange
 

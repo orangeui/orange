@@ -4,7 +4,8 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    titleTemplate: '%s - Orange',
+    title: 'Documentation', // Backup title if page doesn't have one
     meta: [
       {
         charset: 'utf-8'

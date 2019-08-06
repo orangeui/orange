@@ -52,6 +52,10 @@
 
 <script>
 export default {
-  name: 'Landing'
+  name: 'Landing',
+
+  head: {
+    title: 'Freshly squeezed UI',
+  }
 }
 </script>
