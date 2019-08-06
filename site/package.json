@@ -1,7 +1,7 @@
 {
   "name": "orange-site",
   "version": "1.0.0",
-  "description": "Documentation of Orange",
+  "description": "Orange is a design system, a collection of components and tools that help you build web sites and apps.",
   "author": "Fomo",
   "private": true,
   "scripts": {
