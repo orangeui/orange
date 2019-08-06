@@ -5,6 +5,11 @@
   "version-short": "1.0",
   "author": "Fomo",
   "license": "MIT",
+  "scripts": {
+    "dev": "cd site && yarn dev",
+    "start": "cd site && yarn start",
+    "heroku-postbuild": "cd site && yarn build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/orangeui/orange.git"
@@ -12,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/orangeui/orange/issues"
   },
-  "homepage": "https://github.com/orangeui/orange#readme"
+  "homepage": "https://github.com/orangeui/orange#readme",
+  "engines": {
+    "node": ">=8.6"
+  }
 }
