@@ -34,8 +34,6 @@
       </div>
     </docs-item>
 
-
-
     <!-- Colors -->
     <docs-item title="Colors" :code="message_colors_html" v-if="is_html">
       <ul class="docs__simple-list" slot="body">
@@ -167,14 +165,12 @@
       </ul>
     </docs-item>
 
-
-
     <!-- With an avatar -->
     <docs-item title="With an avatar" :code="message_avatar_html" v-if="is_html">
       <div slot="body">
         <div class="message message--color-secondary">
           <div class="avatar avatar--size-small avatar--circle">
-            <svg viewBox="0 0 80 80" width="80px" height="auto" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 80 80" width="80px" xmlns="http://www.w3.org/2000/svg">
               <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
             </svg>
           </div>
@@ -205,7 +201,6 @@
         </o-message>
       </div>
     </docs-item>
-
 
     <!-- Full width -->
     <docs-item title="No border radius" :code="message_no_border_radius_html" v-if="is_html">
