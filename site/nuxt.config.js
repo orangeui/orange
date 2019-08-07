@@ -40,7 +40,10 @@ export default {
    ** Global CSS
    */
   css: [
-    '@/assets/styles/styles.scss'
+    {
+      src: '@/assets/styles/styles.scss',
+      lang: 'scss'
+    }
   ],
   /*
    ** Plugins to load before mounting the App
@@ -72,7 +75,6 @@ export default {
    ** Build configuration
    */
   build: {
-    optimizeCSS: true,
     /*
      ** You can extend webpack config here
      */
