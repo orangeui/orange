@@ -3,6 +3,13 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: './src/js/src/bundle.js',
+  entry: {
+    main: ['./src/js/src/bundle.js', './src/scss/src/styles.scss'],
+  },
+  output: {
+    filename: 'js/bundle.js',
+    path: path.resolve(__dirname, 'dist')
+  },
   module: {
     rules: [
       {
@@ -28,14 +35,13 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              publicPath: __dirname + '/../../public/css/'
-            }
+            loader: MiniCssExtractPlugin.loader
           },
           {
             loader: 'css-loader',
-            options: {importLoaders: 1},
+            options: {
+              sourceMap: true
+            }
           },
           {
             loader: 'postcss-loader',
@@ -46,14 +52,31 @@ module.exports = {
             },
           },
           {
-            loader: 'sass-loader'
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
           }
         ],
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/',
+              publicPath: '../fonts/',
+            }
+          }
+        ]
       }
     ]
   },
-  output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist/js')
-  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: `css/orange.min.css`
+    }),
+  ],
 };
