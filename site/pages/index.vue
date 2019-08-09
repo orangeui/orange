@@ -12,8 +12,7 @@
             <!-- <o-button text="Get Orange" size="large" /> -->
             <!-- <o-button text="Read docs" role="secondary" size="large" /> -->
 
-            <router-link :to="{ name: 'docs'}" class="button button--large">Get Orange</router-link>
-            <router-link :to="{ name: 'manifesto'}" class="button button--secondary button--large">Read manifesto</router-link>
+            <router-link :to="{ name: 'docs'}" class="button button--large">Get Orange</router-link><router-link :to="{ name: 'manifesto'}" class="button button--secondary button--large">Read manifesto</router-link>
           </template>
         </o-empty-state>
 

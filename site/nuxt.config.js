@@ -39,11 +39,12 @@ export default {
   /*
    ** Global CSS
    */
-  styleResources: {
-    scss: [
-      '@/assets/styles/styles.scss'
-    ]
-  },
+  css: [
+    {
+      src: '@/assets/styles/styles.scss',
+      lang: 'scss'
+    }
+  ],
   /*
    ** Plugins to load before mounting the App
    */
