@@ -23,7 +23,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development",
+    "dev": "webpack-dev-server --mode development",
     "build": "webpack --mode production"
   },
   "devDependencies": {
@@ -43,6 +43,7 @@
     "postcss-preset-env": "^6.7.0",
     "sass-loader": "^7.1.0",
     "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
   }
 }
