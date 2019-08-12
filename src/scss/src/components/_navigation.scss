@@ -44,7 +44,7 @@
         cursor: pointer;
       }
     }
-    
+
     /** Active state */
     &.is-active,
     &.is-exact-active.is-active {
@@ -61,7 +61,7 @@
         z-index: 1;
       }
     }
-    
+
     /** Disabled state */
     &.is-disabled {
       cursor: default;
@@ -125,3 +125,16 @@
   }
 }
 
+/** Alignments
+--------------------------------------------------*/
+.nav--right {
+  > ul {
+    justify-content: flex-end;
+  }
+
+  > ul > li {
+    &:last-child {
+      margin-right: -$spacing-small;
+    }
+  }
+}
