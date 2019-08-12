@@ -27,7 +27,7 @@
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "build:production": "webpack --mode production",
-    "build:bundle": "yarn run build:dev && yarn run build:production"
+    "build:bundle": "rm -rf dist/ && yarn run build:dev && yarn run build:production"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
