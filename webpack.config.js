@@ -7,13 +7,14 @@ module.exports = (env, argv) => {
   
   return {
     entry: {
-      main: ['./src/js/src/bundle.js', './src/scss/src/styles.scss'],
+      main: ['./src/js/src/orange.js', './src/scss/src/styles.scss'],
     },
     output: {
-      filename: is_prod ? 'js/bundle.min.js' : 'js/bundle.js',
-      path: path.resolve(__dirname, 'dist')
+      filename: is_prod ? 'js/orange.min.js' : 'js/orange.js',
+      path: path.resolve(__dirname, 'dist'),
+      publicPath: "/dist"
     },
-    devtool: is_prod ? 'source-map' : false,
+    devtool: 'source-map',
     module: {
       rules: [
         {

@@ -23,8 +23,11 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
+    "dev": "webpack-dev-server --watch --mode development",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "build:production": "webpack --mode production",
+    "build:bundle": "yarn run build:dev && yarn run build:production"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
