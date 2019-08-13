@@ -27,7 +27,10 @@
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "build:production": "webpack --mode production",
-    "build:bundle": "rm -rf dist/ && yarn run build:dev && yarn run build:production"
+    "build:bundle": "rm -rf dist/ && yarn run build:dev && yarn run build:production",
+    "docs:dev": "cd site && yarn dev",
+    "docs:start": "cd site && yarn start",
+    "heroku-postbuild": "cd site && yarn build"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
