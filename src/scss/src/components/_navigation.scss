@@ -127,12 +127,28 @@
 
 /** Alignments
 --------------------------------------------------*/
+.nav--center {
+  > ul {
+    justify-content: center;
+  }
+
+  > ul > li {
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
 .nav--right {
   > ul {
     justify-content: flex-end;
   }
 
   > ul > li {
+    &:first-child {
+      margin-left: 0;
+    }
+
     &:last-child {
       margin-right: -$spacing-small;
     }

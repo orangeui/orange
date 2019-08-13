@@ -108,6 +108,28 @@
       </div>
     </docs-item>
 
+    <!-- Align Center -->
+    <docs-item title="Align center" :code="navigation_center">
+      <div slot="body">
+        <nav class="nav nav--center">
+          <ul>
+            <li>
+              <a href="/docs/navigation" class="is-active">Navigation</a>
+            </li>
+            <li>
+              <a href="/docs/breadcrumbs">Breadcrumbs</a>
+            </li>
+            <li>
+              <a href="/docs/message">Message</a>
+            </li>
+            <li>
+              <a href="/docs/empty-state">Empty State</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </docs-item>
+
     <!-- Align Right -->
     <docs-item title="Align right" :code="navigation_right">
       <div slot="body">
@@ -391,6 +413,22 @@ export default {
   </ul>
 </nav>`,
       navigation_right: `<nav class="nav nav--right">
+  <ul>
+    <li>
+      <a href="/docs/navigation" class="is-active">Navigation</a>
+    </li>
+    <li>
+      <a href="/docs/breadcrumbs">Breadcrumbs</a>
+    </li>
+    <li>
+      <a href="/docs/message">Message</a>
+    </li>
+    <li>
+      <a href="/docs/empty-state">Empty State</a>
+    </li>
+  </ul>
+</nav>`,
+      navigation_center: `<nav class="nav nav--center">
   <ul>
     <li>
       <a href="/docs/navigation" class="is-active">Navigation</a>
