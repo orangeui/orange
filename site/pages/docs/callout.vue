@@ -53,12 +53,47 @@
     <docs-item title="Colors" :code="callout_colors_html" v-if="is_html">
       <ul slot="body" class="docs__simple-list">
         <li>
+          <div class="callout callout--color-white callout--shadow">
+            <p>Click here to claim a free hat</p>
+          </div>
+        </li>
+        <li>
+          <div class="callout callout--color-gray callout--shadow">
+            <p>Click here to claim a free hat</p>
+          </div>
+        </li>
+        <li>
+          <div class="callout callout--color-black callout--shadow">
+            <p>Click here to claim a free hat</p>
+          </div>
+        </li>
+        <li>
           <div class="callout callout--color-primary callout--shadow">
             <p>Click here to claim a free hat</p>
           </div>
         </li>
         <li>
           <div class="callout callout--color-secondary callout--shadow">
+            <p>Click here to claim a free hat</p>
+          </div>
+        </li>
+        <li>
+          <div class="callout callout--color-yellow callout--shadow">
+            <p>Click here to claim a free hat</p>
+          </div>
+        </li>
+        <li>
+          <div class="callout callout--color-green callout--shadow">
+            <p>Click here to claim a free hat</p>
+          </div>
+        </li>
+        <li>
+          <div class="callout callout--color-red callout--shadow">
+            <p>Click here to claim a free hat</p>
+          </div>
+        </li>
+        <li>
+          <div class="callout callout--color-red-light callout--shadow">
             <p>Click here to claim a free hat</p>
           </div>
         </li>

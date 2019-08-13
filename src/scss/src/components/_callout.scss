@@ -57,17 +57,35 @@
       }
     }
   } @else {
-    .callout--color-#{$name} {
-      background-color: color(#{$name});
-      color: color('white');
-      border-width: 0;
+    @each $colorKey, $colorValue in $value {
+      @if ($colorKey == 'base') {
+        .callout--color-#{$name} {
+          background-color: color(#{$name});
+          color: color('white');
+          border-width: 0;
 
-      a {
-        color: color(#{$name});
-      }
+          a {
+            color: color(#{$name});
+          }
 
-      &.callout--action:hover {
-        background-color: lighten(color(#{$name}), 10);
+          &.callout--action:hover {
+            background-color: lighten(color(#{$name}), 5);
+          }
+        }
+      } @else {
+        .callout--color-#{$name}-#{$colorKey} {
+          background-color: #{$colorValue};
+          color: color('white');
+          border-width: 0;
+
+          a {
+            color: #{$colorValue};
+          }
+
+          &.callout--action:hover {
+            background-color: adjust-color($colorValue, $lightness: 5%);
+          }
+        }
       }
     }
   }
