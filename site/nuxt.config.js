@@ -33,6 +33,17 @@ export default {
     ]
   },
   /*
+   ** Router configuration
+   */
+  router: {
+    scrollBehavior (to, from, savedPosition) {
+      return {
+        x: 0,
+        y: 0
+      }
+    }
+  },
+  /*
    ** Customize the progress-bar color
    */
   loading: { color: '#fff' },
