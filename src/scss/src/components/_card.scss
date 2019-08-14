@@ -49,44 +49,20 @@
 --------------------------------------------------*/
 
 .card__section {
-  margin-bottom: $spacing-medium;
-
-  &:first-of-type {
-    margin-top: -#{$spacing-base};
-  }
+  margin-bottom: $spacing-base / 2;
 
   &:last-of-type {
     margin-bottom: 0;
   }
-}
 
-.card__section-header {
-  padding: ($spacing-base / 2) $spacing-base ;
-  height: $spacing-base + $button-size-regular;
-  margin: 0 -#{$spacing-base} 0 -#{$spacing-base};
-  border-bottom: $border;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  .card__header {
+    padding: $spacing-base / 2 $spacing-base;
 
-  & ~ .card__section-header {
-    margin-top: $spacing-medium;
+    h1, h2, h3, h4, h5, h6 {
+      padding-left: 0;
+    }
   }
 }
-
-.card__section-title {
-  margin: auto 0;
-  font-size: fontSize('delta');
-}
-
-.card__section-extras {
-  flex-shrink: 0;
-}
-
-.card__section-body {
-  padding-top: $spacing-base;
-}
-
 
 /** Footer
 --------------------------------------------------*/

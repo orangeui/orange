@@ -44,8 +44,6 @@
       </o-card>
     </docs-item>
 
-
-
     <!-- Card with button -->
     <docs-item title="With a button" :code="card_with_button_html" v-if="is_html">
       <div class="card" slot="body">
@@ -135,8 +133,6 @@
       </o-card>
     </docs-item>
 
-
-
     <!-- Card with navigation and button -->
     <docs-item title="With navigation and button" :code="card_with_nav_button_html" v-if="is_html">
       <div class="card" slot="body">
@@ -193,8 +189,6 @@
         </o-card-footer>
       </o-card>
     </docs-item>
-
-
 
     <!-- Card with a list -->
     <docs-item title="With a list" :code="card_with_list_html" v-if="is_html">
@@ -296,7 +290,6 @@
       </o-card>
     </docs-item>
 
-
     <!-- Card with clickable footer -->
     <docs-item title="Clickable footer" :code="card_click_footer_html" v-if="is_html">
       <div class="card" slot="body">
@@ -332,55 +325,36 @@
       </o-card>
     </docs-item>
 
-
-
     <!-- Multiple sections -->
-    <docs-item title="Multiple sections" :code="card_multiple_sections" v-show="!is_html">
+    <docs-item title="Multiple sections" :code="card_multiple_sections">
       <div class="card" slot="body">
 
         <div class="card__header">
-          <h2 class="card__title">Title</h2>
+          <h2>Title</h2>
           <o-button text="Action" />
         </div>
 
-        <div class="card__body">
+        <section class="card__section">
+          <div class="card__header">
+            <h4>First section</h4>
 
-          <!-- Section #1 -->
-          <section class="card__section">
-            <div class="card__section-header">
-              <h2 class="card__section-title">First section</h2>
+            <o-button text="Action" size="small" color="gray" />
+          </div>
 
-              <!-- Optional -->
-              <div class="card__section-extras">
-                <o-button text="Action" size="small" color="gray" />
-              </div>
-            </div>
+          <div class="card__body">Body of first section</div>
+        </section>
 
-            <div class="card__section-body">
-              Body of first section
-            </div>
-          </section>
+        <section class="card__section">
+          <div class="card__header">
+            <h4>Second section</h4>
 
-          <!-- Section #2 -->
-          <section class="card__section">
-            <div class="card__section-header">
-              <h2 class="card__section-title">Second section</h2>
+            <o-button text="Action" size="small" color="gray" />
+          </div>
 
-              <!-- Optional -->
-              <div class="card__section-extras">
-                <o-button text="Action" size="small" color="gray" />
-              </div>
-            </div>
-
-            <div class="card__section-body">
-              Body of second section
-            </div>
-          </section>
-        </div>
+          <div class="card__body">Body of second section</div>
+        </section>
       </div>
     </docs-item>
-
-
 
     <!-- Card without gutter -->
     <docs-item title="Without gutter" :code="card_full_html" v-if="is_html">
@@ -749,48 +723,31 @@ export default {
   </div>
 </div>`,
 
-      card_multiple_sections: `<div class="card">
-
+      card_multiple_sections: `<div class="card" slot="body">
   <div class="card__header">
-    <h2 class="card__title">Title</h2>
+    <h2>Title</h2>
     <o-button text="Action" />
   </div>
 
-  <div class="card__body">
+  <section class="card__section">
+    <div class="card__header">
+      <h4>First section</h4>
 
-    <!-- Section #1 -->
-    <section class="card__section">
-      <div class="card__section-header">
-        <h2 class="card__section-title">First section</h2>
+      <o-button text="Action" size="small" color="gray" />
+    </div>
 
-        <!-- Optional -->
-        <div class="card__section-extras">
-          <o-button text="Action" size="small" color="gray" />
-        </div>
-      </div>
+    <div class="card__body">Body of first section</div>
+  </section>
 
-      <div class="card__section-body">
-        Body of first section
-      </div>
-    </section>
+  <section class="card__section">
+    <div class="card__header">
+      <h4>Second section</h4>
 
-    <!-- Section #2 -->
-    <section class="card__section">
-      <div class="card__section-header">
-        <h2 class="card__section-title">Second section</h2>
+      <o-button text="Action" size="small" color="gray" />
+    </div>
 
-        <!-- Optional -->
-        <div class="card__section-extras">
-          <o-button text="Action" size="small" color="gray" />
-        </div>
-      </div>
-
-      <div class="card__section-body">
-        Body of second section
-      </div>
-    </section>
-  </div>
-
+    <div class="card__body">Body of second section</div>
+  </section>
 </div>`
     }
   }
