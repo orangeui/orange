@@ -94,8 +94,7 @@
             <div class="form__item">
               <div class="form__wrapper">
                 <div class="form__input-wrapper">
-                  <input class="form__input" id="form_id" type="text" name="form_id">
-                  <label for="form_id" class="form__label">Search</label>
+                  <input class="form__input" id="form_id" type="text" name="form_id" placeholder="Search">
                 </div>
               </div>
             </div>
@@ -541,8 +540,7 @@ export default {
       <div class="form__item">
         <div class="form__wrapper">
           <div class="form__input-wrapper">
-            <input class="form__input" id="form_id" type="text" name="form_id">
-            <label for="form_id" class="form__label">Search</label>
+            <input class="form__input" id="form_id" type="text" name="form_id" placeholder="Search">
           </div>
         </div>
       </div>
