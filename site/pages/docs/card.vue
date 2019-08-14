@@ -328,7 +328,6 @@
     <!-- Multiple sections -->
     <docs-item title="Multiple sections" :code="card_multiple_sections">
       <div class="card" slot="body">
-
         <div class="card__header">
           <h2>Title</h2>
           <o-button text="Action" />
@@ -353,6 +352,10 @@
 
           <div class="card__body">Body of second section</div>
         </section>
+
+        <div class="card__footer">
+          Footer
+        </div>
       </div>
     </docs-item>
 
