@@ -14,11 +14,10 @@
   margin-bottom: $spacing-base / 2;
   transition: 0.2s ease-in-out;
 
-  background-color: color('gray', 'light');
-  color: color('white');
+  background-color: color('gray', 'lightest');
+  color: color('black');
   text-align: center;
   font-size: fontSize('zeta');
-  font-style: italic;
 
   p {
     margin-bottom: $spacing-base / 2;
@@ -29,7 +28,7 @@
   }
 
   a {
-    color: color('white');
+    color: color('black');
     font-weight: fontWeight('bold');
     text-decoration: underline;
 

@@ -12,7 +12,7 @@ export default {
     color: {
       type: String,
       required: false,
-      default: 'primary'
+      default: null
     },
 
     size: {
