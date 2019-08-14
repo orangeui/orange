@@ -326,18 +326,18 @@
     </docs-item>
 
     <!-- Multiple sections -->
-    <docs-item title="Multiple sections" :code="card_multiple_sections">
+    <docs-item title="Multiple sections" :code="card_multiple_sections_html">
       <div class="card" slot="body">
         <div class="card__header">
           <h3>Title</h3>
-          <o-button text="Action" />
+          <button type="button" class="button">Action</button>
         </div>
 
         <section class="card__section">
           <div class="card__header">
             <h4>First section</h4>
 
-            <o-button text="Action" size="small" color="gray" />
+            <button type="button" class="button button--small button--color-gray">Action</button>
           </div>
 
           <div class="card__body">Body of first section</div>
@@ -347,7 +347,7 @@
           <div class="card__header">
             <h4>Second section</h4>
 
-            <o-button text="Action" size="small" color="gray" />
+            <button type="button" class="button button--small button--color-gray">Action</button>
           </div>
 
           <div class="card__body">Body of second section</div>
@@ -726,17 +726,17 @@ export default {
   </div>
 </div>`,
 
-      card_multiple_sections: `<div class="card" slot="body">
+      card_multiple_sections_html: `<div class="card">
   <div class="card__header">
-    <h2>Title</h2>
-    <o-button text="Action" />
+    <h3>Title</h3>
+    <button type="button" class="button">Action</button>
   </div>
 
   <section class="card__section">
     <div class="card__header">
       <h4>First section</h4>
 
-      <o-button text="Action" size="small" color="gray" />
+      <button type="button" class="button button--small button--color-gray">Action</button>
     </div>
 
     <div class="card__body">Body of first section</div>
@@ -746,11 +746,15 @@ export default {
     <div class="card__header">
       <h4>Second section</h4>
 
-      <o-button text="Action" size="small" color="gray" />
+      <button type="button" class="button button--small button--color-gray">Action</button>
     </div>
 
     <div class="card__body">Body of second section</div>
   </section>
+
+  <div class="card__footer">
+    Footer
+  </div>
 </div>`
     }
   }
