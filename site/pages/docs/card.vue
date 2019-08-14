@@ -329,7 +329,7 @@
     <docs-item title="Multiple sections" :code="card_multiple_sections">
       <div class="card" slot="body">
         <div class="card__header">
-          <h2>Title</h2>
+          <h3>Title</h3>
           <o-button text="Action" />
         </div>
 

@@ -49,18 +49,23 @@
 --------------------------------------------------*/
 
 .card__section {
-  margin-bottom: $spacing-base / 2;
+  border-bottom: $border;
+  padding-bottom: $spacing-small;
 
   &:last-of-type {
-    margin-bottom: 0;
+    border: none;
   }
 
   .card__header {
-    padding: $spacing-base / 2 $spacing-base;
-
     h1, h2, h3, h4, h5, h6 {
       padding-left: 0;
     }
+  }
+
+  .card__header, .card__body, .card__footer {
+    margin: 0 $spacing-base;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -78,7 +83,7 @@
   transition: 0.15s ease-in-out;
 
   &:empty {
-    min-height: 0px;
+    min-height: 0;
     height: $spacing-base;
     padding: 0;
     border-top: 0;
