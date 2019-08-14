@@ -31,7 +31,13 @@ export default {
       type: String,
       required: false,
       default: null
-    }
+    },
+    
+    action: {
+      type: Boolean,
+      required: false,
+      default: false
+    },
   },
 
   computed: {
@@ -39,7 +45,8 @@ export default {
       return {
         [`callout--color-${this.color}`]: this.color,
         [`callout--${this.size}`]: this.size,
-        'callout--shadow': this.shadow
+        'callout--shadow': this.shadow,
+        'callout--action': this.action
       }
     }
   },
