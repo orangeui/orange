@@ -1,58 +1,86 @@
+/**
+ * --------------------------------------------------------------------------
+ * Orange (v1.0.0): js//src/toggle.js
+ * Licensed under MIT
+ * --------------------------------------------------------------------------
+ */
+
 (function() {
-  "use strict";
+  /**
+  * ------------------------------------------------------------------------
+  * Constants
+  * ------------------------------------------------------------------------
+  */
+  const TOGGLE_ENABLED_DEFAULT = "On";
+  const TOGGLE_DISABLED_DEFAULT = "Off";
+  const TOGGLE_ENABLED_DATA_SETTING = "data-enabled";
+  const TOGGLE_DISABLED_DATA_SETTING = "data-disabled";
 
-  var TOGGLE_ENABLED_DEFAULT = "On";
-  var TOGGLE_DISABLED_DEFAULT = "Off";
-  var TOGGLE_ENABLED_DATA_SETTING = "data-enabled";
-  var TOGGLE_DISABLED_DATA_SETTING = "data-disabled";
+  const ACTIVE_CLASS = "is-checked";
+  const TOGGLE_CLASS = ".toggle";
+  const TOGGLE_INPUT = "input[type='checkbox']";
+  const TOGGLE_VALUE = ".toggle__value";
 
-  var ACTIVE_CLASS = "is-checked";
-  var MAIN_TOGGLE_ELEMENT = ".form .toggle";
-  var TOGGLE_CLASS = ".toggle";
-  var TOGGLE_INPUT = "input[type='checkbox']"
-  var TOGGLE_VALUE = ".toggle__value"
+  const all_toggles = document.querySelectorAll(TOGGLE_CLASS);
 
-  var toggle_wrappers = document.querySelectorAll(MAIN_TOGGLE_ELEMENT);
-
+  // Activate all toggles
   function activateToggles() {
-    for (var i = 0; toggle_wrappers.length > i; i++) {
-      var toggle_wrapper = toggle_wrappers[i];
-      var toggle_input = toggle_wrapper.querySelector(TOGGLE_INPUT);
-      var value_element = toggle_wrapper.querySelector(TOGGLE_VALUE);
+    for (let i = 0; all_toggles.length > i; i++) {
+      let toggle_wrapper = all_toggles[i];
+      let toggle_input = toggle_wrapper.querySelector(TOGGLE_INPUT);
+      let value_element = toggle_wrapper.querySelector(TOGGLE_VALUE);
 
       assignValue(toggle_input, value_element);
 
       toggle_input.addEventListener("change", toggleValue, false);
-    }    
-  }  
-  
-  function toggleValue(evt) {
-    var toggle = evt.target;
-    var current_wrapper  = toggle.closest(MAIN_TOGGLE_ELEMENT);
-    var value_element = current_wrapper.querySelector(TOGGLE_VALUE);
+    }
+  }
+
+  // Function to change value
+  function toggleValue(event) {
+    const toggle = event.target;
+    const current_wrapper = toggle.closest(TOGGLE_CLASS);
+    const value_element = current_wrapper.querySelector(TOGGLE_VALUE);
 
     assignValue(toggle, value_element);
-  };
+  }
 
+  // Fucntion to assign value to toggle
   function assignValue(toggle, value_element) {
+    let parent_toggle = toggle.closest(TOGGLE_CLASS);
+
     if (toggle.checked){
       if (value_element) {
-        var value_text = value_element.getAttribute(TOGGLE_ENABLED_DATA_SETTING) || TOGGLE_ENABLED_DEFAULT;
-        value_element.innerText = value_text;  
-      }
-      
-      toggle.closest(TOGGLE_CLASS).classList.add(ACTIVE_CLASS); 
-    } else {
-      if (value_element) {
-        var value_text = value_element.getAttribute(TOGGLE_DISABLED_DATA_SETTING) || TOGGLE_DISABLED_DEFAULT;
+        let value_text = value_element.getAttribute(TOGGLE_ENABLED_DATA_SETTING) || TOGGLE_ENABLED_DEFAULT;
         value_element.innerText = value_text;
       }
-      toggle.closest(TOGGLE_CLASS).classList.remove(ACTIVE_CLASS);
-    } 
+
+      parent_toggle.classList.add(ACTIVE_CLASS);
+
+    } else {
+      if (value_element) {
+        let value_text = value_element.getAttribute(TOGGLE_DISABLED_DATA_SETTING) || TOGGLE_DISABLED_DEFAULT;
+        value_element.innerText = value_text;
+      }
+
+      parent_toggle.classList.remove(ACTIVE_CLASS);
+    }
   }
 
-  if (toggle_wrappers.length) {
-    activateToggles();  
+  // On init run activateToggles if they exist
+  if (all_toggles.length) {
+    activateToggles();
   }
-  
+
+  // Add click event
+  document.addEventListener('click', function (event) {
+    // event.preventDefault()
+    // let currentTarget = event.target.tagName.toLowerCase();
+    let isToggleInput = event.target.classList.contains('toggle__input');
+
+    if(isToggleInput) {
+      toggleValue(event)
+    }
+  });
+
 })();
