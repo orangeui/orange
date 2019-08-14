@@ -7,6 +7,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 
   padding: $spacing-small;
   border-radius: $border-radius-main;
@@ -23,7 +24,7 @@
     margin-bottom: $spacing-base / 2;
 
     &:last-of-type {
-      margin-bottom: 0;
+      margin-bottom: auto;
     }
   }
 
