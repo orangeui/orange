@@ -51,7 +51,7 @@
         <h3>Install via CDN</h3>
         <p>If you wish you can link to a production ready version of the library that's hosted on a CDN. The latest release can be found at <mark>https://cdn.address.com/orange-css--latest.min.css</mark>.</p>
 
-        <code-block code='<link rel="stylesheet" href="https://cdn.orangecss.com/1.0.0/orange.min.css">' code_markup="HTML" />
+        <code-block code='<link rel="stylesheet" href="https://cdn.orangecss.com/1.1.1/css/orange.min.css">' code_markup="HTML" />
 
         <p>Reference this page for a list of <a href="https://cdn.orangecss.com/">current and past releases</a>.</p>
 
