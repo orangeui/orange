@@ -39,11 +39,10 @@
     <docs-item title="" class="explanation">
       <div slot="body">
         <h3>Contribute</h3>
-        <p>Write code? You're kindly invited to <a href="https://github.com/usefomo/orange-docs/issues" about="_blank">open an issue</a> on GitHub.</p>
+        <p>Write code? You're kindly invited to <a href="https://github.com/orangeui/orange/issues/new" about="_blank">open an issue</a> on GitHub.</p>
 
         <h3>Team</h3>
         <p>Since launch in July we're regularly checking our inbox. <a href="mailto:orange@fomo.com">Drop us a line</a> with or without a good book recommendation / meme.</p>
-
       </div>
     </docs-item>
   </div>
