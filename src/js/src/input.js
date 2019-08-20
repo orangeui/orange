@@ -25,7 +25,7 @@
     } else {
       input.classList.remove(ACTIVE_CLASS);
     }
-    if (evt.type === "focusin") {
+    if (evt.type === "focusin" && input.getAttribute('readonly') === null) {
       input.classList.add(ACTIVE_CLASS);
     }
     if (evt.type === "focusout" && !input_has_text) {
