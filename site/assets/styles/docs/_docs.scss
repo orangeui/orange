@@ -221,9 +221,9 @@ body {
     position: relative;
     width: 100%;
     z-index: 10;
-
     color: color('secondary');
     font-size: fontSize('zeta');
+    margin-left: $spacing-small;
 
     &:hover {
       text-decoration: none;
