@@ -17,24 +17,6 @@
       </div>
     </docs-item>
 
-    <docs-item title="Basic UL">
-      <ul slot="body">
-        <li>First item</li>
-        <li>Second item</li>
-        <li>Third item</li>
-        <li>Fourth item</li>
-      </ul>
-    </docs-item>
-
-    <docs-item title="Basic OL">
-      <ol slot="body">
-        <li>First item</li>
-        <li>Second item</li>
-        <li>Third item</li>
-        <li>Fourth item</li>
-      </ol>
-    </docs-item>
-
     <!-- Large Size -->
     <docs-item title="Large size" :code="list_large_html" v-if="is_html">
       <div slot="body">
