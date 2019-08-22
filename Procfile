@@ -1,2 +1,2 @@
 web: yarn docs:start
-release: ./deploy/release-tasks.sh
+release: bash deploy/release-tasks.sh
