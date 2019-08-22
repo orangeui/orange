@@ -55,13 +55,11 @@ ul, ol {
 }
 
 
-/** Slot
+/** Action
 --------------------------------------------------*/
 
-.list__slot {
-  &:first-child {
-    flex: 1;
-  }
+.list__action {
+  margin-left: auto;
 }
 
 
