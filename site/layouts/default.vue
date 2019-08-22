@@ -9,7 +9,9 @@
           <!-- <o-navigation-item :to="{ name: 'examples' }">Examples</o-navigation-item> -->
           <o-navigation-item :to="{ name: 'changelog' }">Changelog</o-navigation-item>
           <o-navigation-item :to="{ name: 'manifesto' }">Manifesto</o-navigation-item>
-          <o-navigation-item :to="{ name: 'contribute' }">Contribute</o-navigation-item>
+          <li>
+            <a href="https://github.com/orangeui/orange/issues">Contribute</a>
+          </li>
         </o-navigation>
       </div>
 
