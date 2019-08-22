@@ -205,6 +205,20 @@ body {
     padding: 0;
     margin-top: 0;
     margin-bottom: $spacing-base;
+
+    li {
+      display: none;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  h5.is-active + ul li, h6.is-active + ul li {
+    display: block;
   }
 
   li {
@@ -221,9 +235,9 @@ body {
     position: relative;
     width: 100%;
     z-index: 10;
-
     color: color('secondary');
     font-size: fontSize('zeta');
+    margin-left: $spacing-small;
 
     &:hover {
       text-decoration: none;
