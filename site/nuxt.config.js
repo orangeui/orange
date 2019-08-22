@@ -36,6 +36,7 @@ export default {
    ** Router configuration
    */
   router: {
+    linkActiveClass: 'is-active',
     scrollBehavior (to, from, savedPosition) {
       return {
         x: 0,

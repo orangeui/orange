@@ -415,9 +415,9 @@
 </template>
 
 <script>
-import List from '../../components/List/List'
-import ListItem from '../../components/List/ListItem'
-import ListItemSlot from '../../components/List/ListItemSlot'
+import List from '@/components/List/List'
+import ListItem from '@/components/List/ListItem'
+import ListItemSlot from '@/components/List/ListItemSlot'
 
 export default {
   components: {
