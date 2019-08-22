@@ -20,37 +20,37 @@
     <!-- Large Size -->
     <docs-item title="Large size" :code="list_large_html" v-if="is_html">
       <div slot="body">
-        <div class="list list--large">
-          <div class="list__item">
+        <ul class="list list--large">
+          <li>
             <div class="list__slot">
-              <h3 class="list__item-title">First item</h3>
-              <p class="list__item-description">Description of the first item</p>
+              <h3>First item</h3>
+              <p>Description of the first item</p>
             </div>
             <div class="list__slot">
               <button type="button" class="button button--small">Action</button>
             </div>
-          </div>
+          </li>
 
-          <div class="list__item">
+          <li>
             <div class="list__slot">
-              <h3 class="list__item-title">Second item</h3>
-              <p class="list__item-description">Description of the second item</p>
+              <h3>Second item</h3>
+              <p>Description of the second item</p>
             </div>
             <div class="list__slot">
               <button type="button" class="button button--small">Action</button>
             </div>
-          </div>
+          </li>
 
-          <div class="list__item">
+          <li>
             <div class="list__slot">
-              <h3 class="list__item-title">Third item</h3>
-              <p class="list__item-description">Description of the third item</p>
+              <h3>Third item</h3>
+              <p>Description of the third item</p>
             </div>
             <div class="list__slot">
               <button type="button" class="button button--small">Action</button>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </docs-item>
 

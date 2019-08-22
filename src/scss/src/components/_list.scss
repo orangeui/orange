@@ -2,7 +2,9 @@
  * List
  */
 
-.list {}
+.list {
+  padding: 0;
+}
 
 
 /** Header
@@ -21,7 +23,7 @@
 /** Item
 --------------------------------------------------*/
 
-.list__item {
+.list__item, .list li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -34,12 +36,12 @@
     background-color: darken(color('white'), 3);
   }
 
-  .list__item-title {
+  .list__item-title, h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     font-size: inherit;
   }
 
-  .list__item-description {
+  .list__item-description, p {
     margin-bottom: 0;
     color: color('gray', 'light');
 
@@ -63,7 +65,7 @@
 
 /** Divide */
 .list--divide {
-  .list__item {
+  .list__item, li {
     border-top: $border;
 
     &:first-child {
@@ -76,16 +78,16 @@
 .list--large {
   font-size: fontSize('delta');
 
-  .list__item {
+  .list__item, li {
     padding-top: $spacing-base;
     padding-bottom: $spacing-base;
   }
 
-  .list__item-title {
+  .list__item-title, h1, h2, h3, h4, h5, h6 {
     margin-bottom: $spacing-base / 4;
   }
 
-  .list__item-description {
+  .list__item-description, p {
     font-size: fontSize('epsilon');
   }
 }
@@ -94,16 +96,16 @@
 .list--medium {
   font-size: fontSize('epsilon');
 
-  .list__item {
+  .list__item, li {
     padding-top: $spacing-base / 2;
     padding-bottom: $spacing-base / 2;
   }
 
-  .list__item-title {
+  .list__item-title, h1, h2, h3, h4, h5, h6 {
     margin-bottom: $spacing-base / 8;
   }
 
-  .list__item-description {
+  .list__item-description, p {
     font-size: fontSize('zeta');
   }
 }
@@ -112,19 +114,19 @@
 .list--small {
   font-size: fontSize('zeta');
 
-  .list__item {
+  .list__item, li {
     padding-top: $spacing-base / 4;
     padding-bottom: $spacing-base / 4;
   }
 
-  .list__item-title {
+  .list__item-title, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
   }
 
-  .list__item-description {
+  .list__item-description, p {
     font-size: fontSize('omega');
   }
-  
+
   [class^="icon-"],
   [class*=" icon-"] {
     font-size: fontSize('delta');
@@ -138,7 +140,7 @@
 
 /** Hover */
 .list--hover {
-  .list__item {
+  .list__item, li {
     &:hover {
       background-color: darken(color('white'), 1);
     }
@@ -147,7 +149,7 @@
 
 /** Pointer */
 .list--pointer {
-  .list__item {
+  .list__item, li {
     &:hover {
       cursor: pointer;
     }
