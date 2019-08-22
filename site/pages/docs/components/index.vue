@@ -3,10 +3,10 @@
 
 <script>
   export default {
-    name: 'basic',
+    name: 'components',
 
     beforeCreate () {
-      this.$router.push({ name: 'docs-components-basic-button' })
+      this.$router.push({ name: 'docs-components-basic' })
     }
   }
 </script>
