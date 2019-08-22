@@ -20,37 +20,40 @@
     <!-- Large Size -->
     <docs-item title="Large size" :code="list_large_html" v-if="is_html">
       <div slot="body">
-        <div class="list list--large">
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">First item</h3>
-              <p class="list__item-description">Description of the first item</p>
+        <ul class="list list--large">
+          <li>
+            <div>
+              <h3>First item</h3>
+              <p>Description of the first item</p>
             </div>
-            <div class="list__slot">
-              <button type="button" class="button button--small">Action</button>
-            </div>
-          </div>
 
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">Second item</h3>
-              <p class="list__item-description">Description of the second item</p>
-            </div>
-            <div class="list__slot">
+            <div class="list__action">
               <button type="button" class="button button--small">Action</button>
             </div>
-          </div>
+          </li>
 
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">Third item</h3>
-              <p class="list__item-description">Description of the third item</p>
+          <li>
+            <div>
+              <h3>Second item</h3>
+              <p>Description of the second item</p>
             </div>
-            <div class="list__slot">
+
+            <div class="list__action">
               <button type="button" class="button button--small">Action</button>
             </div>
-          </div>
-        </div>
+          </li>
+
+          <li>
+            <div>
+              <h3>Third item</h3>
+              <p>Description of the third item</p>
+            </div>
+
+            <div class="list__action">
+              <button type="button" class="button button--small">Action</button>
+            </div>
+          </li>
+        </ul>
       </div>
     </docs-item>
 
@@ -59,8 +62,8 @@
         <list>
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">First item</h3>
-              <p class="list__item-description">Description of the first item</p>
+              <h3>First item</h3>
+              <p>Description of the first item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -70,8 +73,8 @@
 
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">Second item</h3>
-              <p class="list__item-description">Description of the second item</p>
+              <h3>Second item</h3>
+              <p>Description of the second item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -81,8 +84,8 @@
 
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">Third item</h3>
-              <p class="list__item-description">Description of the third item</p>
+              <h3>Third item</h3>
+              <p>Description of the third item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -93,40 +96,41 @@
       </div>
     </docs-item>
 
-
-
     <!-- Medium Size -->
     <docs-item title="Medium size" :code="list_medium_html" v-if="is_html">
       <div slot="body">
-        <div class="list list--medium">
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">First item</h3>
-              <p class="list__item-description">Description of the first item</p>
+        <ul class="list list--medium">
+          <li>
+            <div>
+              <h3>First item</h3>
+              <p>Description of the first item</p>
             </div>
-            <div class="list__slot">
+
+            <div class="list__action">
               <button type="button" class="button button--small">Action</button>
             </div>
-          </div>
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">Second item</h3>
-              <p class="list__item-description">Description of the second item</p>
+          </li>
+          <li>
+            <div>
+              <h3>Second item</h3>
+              <p>Description of the second item</p>
             </div>
-            <div class="list__slot">
+
+            <div class="list__action">
               <button type="button" class="button button--small">Action</button>
             </div>
-          </div>
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">Third item</h3>
-              <p class="list__item-description">Description of the third item</p>
+          </li>
+          <li>
+            <div>
+              <h3>Third item</h3>
+              <p>Description of the third item</p>
             </div>
-            <div class="list__slot">
+
+            <div class="list__action">
               <button type="button" class="button button--small">Action</button>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </docs-item>
 
@@ -135,8 +139,8 @@
         <list size="medium">
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">First item</h3>
-              <p class="list__item-description">Description of the first item</p>
+              <h3>First item</h3>
+              <p>Description of the first item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -146,8 +150,8 @@
 
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">Second item</h3>
-              <p class="list__item-description">Description of the second item</p>
+              <h3>Second item</h3>
+              <p>Description of the second item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -157,8 +161,8 @@
 
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">Third item</h3>
-              <p class="list__item-description">Description of the third item</p>
+              <h3>Third item</h3>
+              <p>Description of the third item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -174,37 +178,40 @@
     <!-- Small Size -->
     <docs-item title="Small size" :code="list_small_html" v-if="is_html">
       <div slot="body">
-        <div class="list list--small">
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">First item</h3>
-              <p class="list__item-description">Description of the first item</p>
+        <ul class="list list--small">
+          <li>
+            <div>
+              <h3>First item</h3>
+              <p>Description of the first item</p>
             </div>
-            <div class="list__slot">
-              <button type="button" class="button button--small">Action</button>
-            </div>
-          </div>
 
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">Second item</h3>
-              <p class="list__item-description">Description of the second item</p>
-            </div>
-            <div class="list__slot">
+            <div class="list__action">
               <button type="button" class="button button--small">Action</button>
             </div>
-          </div>
+          </li>
 
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">Third item</h3>
-              <p class="list__item-description">Description of the third item</p>
+          <li>
+            <div>
+              <h3>Second item</h3>
+              <p>Description of the second item</p>
             </div>
-            <div class="list__slot">
+
+            <div class="list__action">
               <button type="button" class="button button--small">Action</button>
             </div>
-          </div>
-        </div>
+          </li>
+
+          <li>
+            <div>
+              <h3>Third item</h3>
+              <p>Description of the third item</p>
+            </div>
+
+            <div class="list__action">
+              <button type="button" class="button button--small">Action</button>
+            </div>
+          </li>
+        </ul>
       </div>
     </docs-item>
 
@@ -213,8 +220,8 @@
         <list size="small">
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">First item</h3>
-              <p class="list__item-description">Description of the first item</p>
+              <h3>First item</h3>
+              <p>Description of the first item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -224,8 +231,8 @@
 
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">Second item</h3>
-              <p class="list__item-description">Description of the second item</p>
+              <h3>Second item</h3>
+              <p>Description of the second item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -235,8 +242,8 @@
 
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">Third item</h3>
-              <p class="list__item-description">Description of the third item</p>
+              <h3>Third item</h3>
+              <p>Description of the third item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -251,37 +258,40 @@
     <!-- Divide style -->
     <docs-item title="Divide style" :code="list_divide_html" v-if="is_html">
       <div slot="body">
-        <div class="list list--large list--divide">
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">First item</h3>
-              <p class="list__item-description">Description of the first item</p>
+        <ul class="list list--large list--divide">
+          <li>
+            <div>
+              <h3>First item</h3>
+              <p>Description of the first item</p>
             </div>
-            <div class="list__slot">
-              <button type="button" class="button button--small">Action</button>
-            </div>
-          </div>
 
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">Second item</h3>
-              <p class="list__item-description">Description of the second item</p>
-            </div>
-            <div class="list__slot">
+            <div class="list__action">
               <button type="button" class="button button--small">Action</button>
             </div>
-          </div>
+          </li>
 
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">Third item</h3>
-              <p class="list__item-description">Description of the third item</p>
+          <li>
+            <div>
+              <h3>Second item</h3>
+              <p>Description of the second item</p>
             </div>
-            <div class="list__slot">
+
+            <div class="list__action">
               <button type="button" class="button button--small">Action</button>
             </div>
-          </div>
-        </div>
+          </li>
+
+          <li>
+            <div>
+              <h3>Third item</h3>
+              <p>Description of the third item</p>
+            </div>
+
+            <div class="list__action">
+              <button type="button" class="button button--small">Action</button>
+            </div>
+          </li>
+        </ul>
       </div>
     </docs-item>
 
@@ -290,8 +300,8 @@
         <list divide>
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">First item</h3>
-              <p class="list__item-description">Description of the first item</p>
+              <h3>First item</h3>
+              <p>Description of the first item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -301,8 +311,8 @@
 
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">Second item</h3>
-              <p class="list__item-description">Description of the second item</p>
+              <h3>Second item</h3>
+              <p>Description of the second item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -312,8 +322,8 @@
 
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">Third item</h3>
-              <p class="list__item-description">Description of the third item</p>
+              <h3>Third item</h3>
+              <p>Description of the third item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -329,37 +339,40 @@
     <!-- Hover style -->
     <docs-item title="Hover style" :code="list_hover_html" v-if="is_html">
       <div slot="body">
-        <div class="list list--large list--hover">
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">First item</h3>
-              <p class="list__item-description">Description of the first item</p>
+        <ul class="list list--large list--hover">
+          <li>
+            <div>
+              <h3>First item</h3>
+              <p>Description of the first item</p>
             </div>
-            <div class="list__slot">
-              <button type="button" class="button button--small">Action</button>
-            </div>
-          </div>
 
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">Second item</h3>
-              <p class="list__item-description">Description of the second item</p>
-            </div>
-            <div class="list__slot">
+            <div class="list__action">
               <button type="button" class="button button--small">Action</button>
             </div>
-          </div>
+          </li>
 
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">Third item</h3>
-              <p class="list__item-description">Description of the third item</p>
+          <li>
+            <div>
+              <h3>Second item</h3>
+              <p>Description of the second item</p>
             </div>
-            <div class="list__slot">
+
+            <div class="list__action">
               <button type="button" class="button button--small">Action</button>
             </div>
-          </div>
-        </div>
+          </li>
+
+          <li>
+            <div>
+              <h3>Third item</h3>
+              <p>Description of the third item</p>
+            </div>
+
+            <div class="list__action">
+              <button type="button" class="button button--small">Action</button>
+            </div>
+          </li>
+        </ul>
       </div>
     </docs-item>
 
@@ -368,8 +381,8 @@
         <list hover>
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">First item</h3>
-              <p class="list__item-description">Description of the first item</p>
+              <h3>First item</h3>
+              <p>Description of the first item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -379,8 +392,8 @@
 
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">Second item</h3>
-              <p class="list__item-description">Description of the second item</p>
+              <h3>Second item</h3>
+              <p>Description of the second item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -390,8 +403,8 @@
 
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">Third item</h3>
-              <p class="list__item-description">Description of the third item</p>
+              <h3>Third item</h3>
+              <p>Description of the third item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -407,37 +420,40 @@
     <!-- Pointer style -->
     <docs-item title="Pointer style" :code="list_pointer_html" v-if="is_html">
       <div slot="body">
-        <div class="list list--large list--pointer">
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">First item</h3>
-              <p class="list__item-description">Description of the first item</p>
+        <ul class="list list--large list--pointer">
+          <li>
+            <div>
+              <h3>First item</h3>
+              <p>Description of the first item</p>
             </div>
-            <div class="list__slot">
-              <button type="button" class="button button--small">Action</button>
-            </div>
-          </div>
 
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">Second item</h3>
-              <p class="list__item-description">Description of the second item</p>
-            </div>
-            <div class="list__slot">
+            <div class="list__action">
               <button type="button" class="button button--small">Action</button>
             </div>
-          </div>
+          </li>
 
-          <div class="list__item">
-            <div class="list__slot">
-              <h3 class="list__item-title">Third item</h3>
-              <p class="list__item-description">Description of the third item</p>
+          <li>
+            <div>
+              <h3>Second item</h3>
+              <p>Description of the second item</p>
             </div>
-            <div class="list__slot">
+
+            <div class="list__action">
               <button type="button" class="button button--small">Action</button>
             </div>
-          </div>
-        </div>
+          </li>
+
+          <li>
+            <div>
+              <h3>Third item</h3>
+              <p>Description of the third item</p>
+            </div>
+
+            <div class="list__action">
+              <button type="button" class="button button--small">Action</button>
+            </div>
+          </li>
+        </ul>
       </div>
     </docs-item>
 
@@ -446,8 +462,8 @@
         <list pointer>
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">First item</h3>
-              <p class="list__item-description">Description of the first item</p>
+              <h3>First item</h3>
+              <p>Description of the first item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -457,8 +473,8 @@
 
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">Second item</h3>
-              <p class="list__item-description">Description of the second item</p>
+              <h3>Second item</h3>
+              <p>Description of the second item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -468,8 +484,8 @@
 
           <list-item>
             <list-item-slot>
-              <h3 class="list__item-title">Third item</h3>
-              <p class="list__item-description">Description of the third item</p>
+              <h3>Third item</h3>
+              <p>Description of the third item</p>
             </list-item-slot>
 
             <list-item-slot>
@@ -487,35 +503,38 @@
           <h3>List title</h3>
         </div>
         <div class="card__body">
-          <div class="list list--large list--divide list--no-gutter list--hover list--pointer">
-            <div class="list__item">
-              <div class="list__slot">
-                <h3 class="list__item-title">First item</h3>
-                <p class="list__item-description">Description of the first item</p>
+          <ul class="list list--large list--divide list--no-gutter list--hover list--pointer">
+            <li>
+              <div>
+                <h3>First item</h3>
+                <p>Description of the first item</p>
               </div>
-              <div class="list__slot">
+
+              <div class="list__action">
                 <button type="button" class="button button--small button--icon-only"><i class="icon-remove"></i></button>
               </div>
-            </div>
-            <div class="list__item">
-              <div class="list__slot">
-                <h3 class="list__item-title">Second item</h3>
-                <p class="list__item-description">Description of the second item</p>
+            </li>
+            <li>
+              <div>
+                <h3>Second item</h3>
+                <p>Description of the second item</p>
               </div>
-              <div class="list__slot">
+
+              <div class="list__action">
                 <button type="button" class="button button--small button--icon-only"><i class="icon-remove"></i></button>
               </div>
-            </div>
-            <div class="list__item">
-              <div class="list__slot">
-                <h3 class="list__item-title">Third item</h3>
-                <p class="list__item-description">Description of the third item</p>
+            </li>
+            <li>
+              <div>
+                <h3>Third item</h3>
+                <p>Description of the third item</p>
               </div>
-              <div class="list__slot">
+
+              <div class="list__action">
                 <button type="button" class="button button--small button--icon-only"><i class="icon-remove"></i></button>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </docs-item>
@@ -530,8 +549,8 @@
           <list no_gutter divide hover pointer>
             <list-item>
               <list-item-slot>
-                <h3 class="list__item-title">First item</h3>
-                <p class="list__item-description">Description of the first item</p>
+                <h3>First item</h3>
+                <p>Description of the first item</p>
               </list-item-slot>
 
               <list-item-slot>
@@ -541,8 +560,8 @@
 
             <list-item>
               <list-item-slot>
-                <h3 class="list__item-title">Second item</h3>
-                <p class="list__item-description">Description of the second item</p>
+                <h3>Second item</h3>
+                <p>Description of the second item</p>
               </list-item-slot>
 
               <list-item-slot>
@@ -552,8 +571,8 @@
 
             <list-item>
               <list-item-slot>
-                <h3 class="list__item-title">Third item</h3>
-                <p class="list__item-description">Description of the third item</p>
+                <h3>Third item</h3>
+                <p>Description of the third item</p>
               </list-item-slot>
 
               <list-item-slot>
@@ -574,9 +593,6 @@
           <th>Attribute</th>
           <th>Description</th>
           <th>Possible values</th>
-          <th>Type</th>
-          <th>Required</th>
-          <th>Default</th>
         </tr>
         </thead>
         <tbody>
@@ -584,32 +600,21 @@
           <td>size</td>
           <td>Set with <code>.list--{size}</code> class</td>
           <td><code>large</code>, <code>medium</code>, <code>small</code></td>
-          <td>String</td>
-          <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
           <td>divide</td>
           <td>Set with <code>.list--divide</code> class</td>
           <td><code>divide</code></td>
-          <td>string</td>
-          <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
           <td>hover</td>
           <td>Set with <code>.list--hover</code> class</td>
           <td><code>hover</code></td>
-          <td>string</td>
-          <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
           <td>no-gutter</td>
           <td>Set with <code>.list--no-gutter</code> class. Add negative margins to side at the <code>$spacing-base</code> size. It's common use in cards.</td>
-          <td>string</td>
-          <td>-</td>
-          <td>-</td>
+          <td><code>no-gutter</code></td>
         </tr>
         </tbody>
       </table>
@@ -721,8 +726,8 @@ export default {
       list_large: `<list>
   <list-item>
     <list-item-slot>
-      <h3 class="list__item-title">First item</h3>
-      <p class="list__item-description">Description of the first item</p>
+      <h3>First item</h3>
+      <p>Description of the first item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -732,8 +737,8 @@ export default {
 
   <list-item>
     <list-item-slot>
-      <h3 class="list__item-title">Second item</h3>
-      <p class="list__item-description">Description of the second item</p>
+      <h3>Second item</h3>
+      <p>Description of the second item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -743,8 +748,8 @@ export default {
 
   <list-item>
     <list-item-slot>
-      <h3 class="list__item-title">Third item</h3>
-      <p class="list__item-description">Description of the third item</p>
+      <h3>Third item</h3>
+      <p>Description of the third item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -753,42 +758,45 @@ export default {
   </list-item>
 </list>`,
       list_large_html: `<div class="list list--large">
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">First item</h3>
-      <p class="list__item-description">Description of the first item</p>
+  <li>
+    <div>
+      <h3>First item</h3>
+      <p>Description of the first item</p>
     </div>
-    <div class="list__slot">
-      <button type="button" class="button button--small">Action</button>
-    </div>
-  </div>
 
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">Second item</h3>
-      <p class="list__item-description">Description of the second item</p>
-    </div>
-    <div class="list__slot">
+    <div class="list__action">
       <button type="button" class="button button--small">Action</button>
     </div>
-  </div>
+  </li>
 
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">Third item</h3>
-      <p class="list__item-description">Description of the third item</p>
+  <li>
+    <div>
+      <h3>Second item</h3>
+      <p>Description of the second item</p>
     </div>
-    <div class="list__slot">
+
+    <div class="list__action">
       <button type="button" class="button button--small">Action</button>
     </div>
-  </div>
+  </li>
+
+  <li>
+    <div>
+      <h3>Third item</h3>
+      <p>Description of the third item</p>
+    </div>
+
+    <div class="list__action">
+      <button type="button" class="button button--small">Action</button>
+    </div>
+  </li>
 </div>`,
 
       list_medium: `<list size="medium">
   <list-item>
     <list-item-slot>
-      <h3 class="list__item-title">First item</h3>
-      <p class="list__item-description">Description of the first item</p>
+      <h3>First item</h3>
+      <p>Description of the first item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -798,8 +806,8 @@ export default {
 
   <list-item>
     <list-item-slot>
-      <h3 class="list__item-title">Second item</h3>
-      <p class="list__item-description">Description of the second item</p>
+      <h3>Second item</h3>
+      <p>Description of the second item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -809,8 +817,8 @@ export default {
 
   <list-item>
     <list-item-slot>
-      <h3 class="list__item-title">Third item</h3>
-      <p class="list__item-description">Description of the third item</p>
+      <h3>Third item</h3>
+      <p>Description of the third item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -819,42 +827,45 @@ export default {
   </list-item>
 </list>`,
       list_medium_html: `<div class="list list--medium">
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">First item</h3>
-      <p class="list__item-description">Description of the first item</p>
+  <li>
+    <div>
+      <h3>First item</h3>
+      <p>Description of the first item</p>
     </div>
-    <div class="list__slot">
-      <button type="button" class="button button--small">Action</button>
-    </div>
-  </div>
 
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">Second item</h3>
-      <p class="list__item-description">Description of the second item</p>
-    </div>
-    <div class="list__slot">
+    <div class="list__action">
       <button type="button" class="button button--small">Action</button>
     </div>
-  </div>
+  </li>
 
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">Third item</h3>
-      <p class="list__item-description">Description of the third item</p>
+  <li>
+    <div>
+      <h3>Second item</h3>
+      <p>Description of the second item</p>
     </div>
-    <div class="list__slot">
+
+    <div class="list__action">
       <button type="button" class="button button--small">Action</button>
     </div>
-  </div>
+  </li>
+
+  <li>
+    <div>
+      <h3>Third item</h3>
+      <p>Description of the third item</p>
+    </div>
+
+    <div class="list__action">
+      <button type="button" class="button button--small">Action</button>
+    </div>
+  </li>
 </div>`,
 
       list_small: `<list>
   <list-item size="small">
     <list-item-slot>
-      <h3 class="list__item-title">First item</h3>
-      <p class="list__item-description">Description of the first item</p>
+      <h3>First item</h3>
+      <p>Description of the first item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -864,8 +875,8 @@ export default {
 
   <list-item>
     <list-item-slot>
-      <h3 class="list__item-title">Second item</h3>
-      <p class="list__item-description">Description of the second item</p>
+      <h3>Second item</h3>
+      <p>Description of the second item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -875,8 +886,8 @@ export default {
 
   <list-item>
     <list-item-slot>
-      <h3 class="list__item-title">Third item</h3>
-      <p class="list__item-description">Description of the third item</p>
+      <h3>Third item</h3>
+      <p>Description of the third item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -885,42 +896,45 @@ export default {
   </list-item>
 </list>`,
       list_small_html: `<div class="list list--small">
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">First item</h3>
-      <p class="list__item-description">Description of the first item</p>
+  <li>
+    <div>
+      <h3>First item</h3>
+      <p>Description of the first item</p>
     </div>
-    <div class="list__slot">
-      <button type="button" class="button button--small">Action</button>
-    </div>
-  </div>
 
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">Second item</h3>
-      <p class="list__item-description">Description of the second item</p>
-    </div>
-    <div class="list__slot">
+    <div class="list__action">
       <button type="button" class="button button--small">Action</button>
     </div>
-  </div>
+  </li>
 
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">Third item</h3>
-      <p class="list__item-description">Description of the third item</p>
+  <li>
+    <div>
+      <h3>Second item</h3>
+      <p>Description of the second item</p>
     </div>
-    <div class="list__slot">
+
+    <div class="list__action">
       <button type="button" class="button button--small">Action</button>
     </div>
-  </div>
+  </li>
+
+  <li>
+    <div>
+      <h3>Third item</h3>
+      <p>Description of the third item</p>
+    </div>
+
+    <div class="list__action">
+      <button type="button" class="button button--small">Action</button>
+    </div>
+  </li>
 </div>`,
 
       list_divide: `<list>
   <list-item divide>
     <list-item-slot>
-      <h3 class="list__item-title">First item</h3>
-      <p class="list__item-description">Description of the first item</p>
+      <h3>First item</h3>
+      <p>Description of the first item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -930,8 +944,8 @@ export default {
 
   <list-item>
     <list-item-slot>
-      <h3 class="list__item-title">Second item</h3>
-      <p class="list__item-description">Description of the second item</p>
+      <h3>Second item</h3>
+      <p>Description of the second item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -941,8 +955,8 @@ export default {
 
   <list-item>
     <list-item-slot>
-      <h3 class="list__item-title">Third item</h3>
-      <p class="list__item-description">Description of the third item</p>
+      <h3>Third item</h3>
+      <p>Description of the third item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -951,42 +965,45 @@ export default {
   </list-item>
 </list>`,
       list_divide_html: `<div class="list list--large list--divide">
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">First item</h3>
-      <p class="list__item-description">Description of the first item</p>
+  <li>
+    <div>
+      <h3>First item</h3>
+      <p>Description of the first item</p>
     </div>
-    <div class="list__slot">
-      <button type="button" class="button button--small">Action</button>
-    </div>
-  </div>
 
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">Second item</h3>
-      <p class="list__item-description">Description of the second item</p>
-    </div>
-    <div class="list__slot">
+    <div class="list__action">
       <button type="button" class="button button--small">Action</button>
     </div>
-  </div>
+  </li>
 
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">Third item</h3>
-      <p class="list__item-description">Description of the third item</p>
+  <li>
+    <div>
+      <h3>Second item</h3>
+      <p>Description of the second item</p>
     </div>
-    <div class="list__slot">
+
+    <div class="list__action">
       <button type="button" class="button button--small">Action</button>
     </div>
-  </div>
+  </li>
+
+  <li>
+    <div>
+      <h3>Third item</h3>
+      <p>Description of the third item</p>
+    </div>
+
+    <div class="list__action">
+      <button type="button" class="button button--small">Action</button>
+    </div>
+  </li>
 </div>`,
 
       list_hover: `<list>
   <list-item hover>
     <list-item-slot>
-      <h3 class="list__item-title">First item</h3>
-      <p class="list__item-description">Description of the first item</p>
+      <h3>First item</h3>
+      <p>Description of the first item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -996,8 +1013,8 @@ export default {
 
   <list-item>
     <list-item-slot>
-      <h3 class="list__item-title">Second item</h3>
-      <p class="list__item-description">Description of the second item</p>
+      <h3>Second item</h3>
+      <p>Description of the second item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -1007,8 +1024,8 @@ export default {
 
   <list-item>
     <list-item-slot>
-      <h3 class="list__item-title">Third item</h3>
-      <p class="list__item-description">Description of the third item</p>
+      <h3>Third item</h3>
+      <p>Description of the third item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -1017,42 +1034,45 @@ export default {
   </list-item>
 </list>`,
       list_hover_html: `<div class="list list--large list--hover">
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">First item</h3>
-      <p class="list__item-description">Description of the first item</p>
+  <li>
+    <div>
+      <h3>First item</h3>
+      <p>Description of the first item</p>
     </div>
-    <div class="list__slot">
-      <button type="button" class="button button--small">Action</button>
-    </div>
-  </div>
 
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">Second item</h3>
-      <p class="list__item-description">Description of the second item</p>
-    </div>
-    <div class="list__slot">
+    <div class="list__action">
       <button type="button" class="button button--small">Action</button>
     </div>
-  </div>
+  </li>
 
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">Third item</h3>
-      <p class="list__item-description">Description of the third item</p>
+  <li>
+    <div>
+      <h3>Second item</h3>
+      <p>Description of the second item</p>
     </div>
-    <div class="list__slot">
+
+    <div class="list__action">
       <button type="button" class="button button--small">Action</button>
     </div>
-  </div>
+  </li>
+
+  <li>
+    <div>
+      <h3>Third item</h3>
+      <p>Description of the third item</p>
+    </div>
+
+    <div class="list__action">
+      <button type="button" class="button button--small">Action</button>
+    </div>
+  </li>
 </div>`,
 
       list_pointer: `<list>
   <list-item pointer>
     <list-item-slot>
-      <h3 class="list__item-title">First item</h3>
-      <p class="list__item-description">Description of the first item</p>
+      <h3>First item</h3>
+      <p>Description of the first item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -1062,8 +1082,8 @@ export default {
 
   <list-item>
     <list-item-slot>
-      <h3 class="list__item-title">Second item</h3>
-      <p class="list__item-description">Description of the second item</p>
+      <h3>Second item</h3>
+      <p>Description of the second item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -1073,8 +1093,8 @@ export default {
 
   <list-item>
     <list-item-slot>
-      <h3 class="list__item-title">Third item</h3>
-      <p class="list__item-description">Description of the third item</p>
+      <h3>Third item</h3>
+      <p>Description of the third item</p>
     </list-item-slot>
 
     <list-item-slot>
@@ -1083,35 +1103,38 @@ export default {
   </list-item>
 </list>`,
       list_pointer_html: `<div class="list list--large list--pointer">
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">First item</h3>
-      <p class="list__item-description">Description of the first item</p>
+  <li>
+    <div>
+      <h3>First item</h3>
+      <p>Description of the first item</p>
     </div>
-    <div class="list__slot">
-      <button type="button" class="button button--small">Action</button>
-    </div>
-  </div>
 
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">Second item</h3>
-      <p class="list__item-description">Description of the second item</p>
-    </div>
-    <div class="list__slot">
+    <div class="list__action">
       <button type="button" class="button button--small">Action</button>
     </div>
-  </div>
+  </li>
 
-  <div class="list__item">
-    <div class="list__slot">
-      <h3 class="list__item-title">Third item</h3>
-      <p class="list__item-description">Description of the third item</p>
+  <li>
+    <div>
+      <h3>Second item</h3>
+      <p>Description of the second item</p>
     </div>
-    <div class="list__slot">
+
+    <div class="list__action">
       <button type="button" class="button button--small">Action</button>
     </div>
-  </div>
+  </li>
+
+  <li>
+    <div>
+      <h3>Third item</h3>
+      <p>Description of the third item</p>
+    </div>
+
+    <div class="list__action">
+      <button type="button" class="button button--small">Action</button>
+    </div>
+  </li>
 </div>`,
 
       list_no_gutter: `<o-card>
@@ -1123,8 +1146,8 @@ export default {
     <list no_gutter divide hover pointer>
       <list-item>
         <list-item-slot>
-          <h3 class="list__item-title">First item</h3>
-          <p class="list__item-description">Description of the first item</p>
+          <h3>First item</h3>
+          <p>Description of the first item</p>
         </list-item-slot>
 
         <list-item-slot>
@@ -1134,8 +1157,8 @@ export default {
 
       <list-item>
         <list-item-slot>
-          <h3 class="list__item-title">Second item</h3>
-          <p class="list__item-description">Description of the second item</p>
+          <h3>Second item</h3>
+          <p>Description of the second item</p>
         </list-item-slot>
 
         <list-item-slot>
@@ -1145,8 +1168,8 @@ export default {
 
       <list-item>
         <list-item-slot>
-          <h3 class="list__item-title">Third item</h3>
-          <p class="list__item-description">Description of the third item</p>
+          <h3>Third item</h3>
+          <p>Description of the third item</p>
         </list-item-slot>
 
         <list-item-slot>
@@ -1162,35 +1185,38 @@ export default {
   </div>
   <div class="card__body">
     <div class="list list--large list--divide list--no-gutter list--hover list--pointer">
-      <div class="list__item">
-        <div class="list__slot">
-          <h3 class="list__item-title">First item</h3>
-          <p class="list__item-description">Description of the first item</p>
+      <li>
+        <div>
+          <h3>First item</h3>
+          <p>Description of the first item</p>
         </div>
-        <div class="list__slot">
-          <button type="button" class="button button--small button--icon-only"><i class="icon-remove"></i></button>
-        </div>
-      </div>
 
-      <div class="list__item">
-        <div class="list__slot">
-          <h3 class="list__item-title">Second item</h3>
-          <p class="list__item-description">Description of the second item</p>
-        </div>
-        <div class="list__slot">
+        <div class="list__action">
           <button type="button" class="button button--small button--icon-only"><i class="icon-remove"></i></button>
         </div>
-      </div>
+      </li>
 
-      <div class="list__item">
-        <div class="list__slot">
-          <h3 class="list__item-title">Third item</h3>
-          <p class="list__item-description">Description of the third item</p>
+      <li>
+        <div>
+          <h3>Second item</h3>
+          <p>Description of the second item</p>
         </div>
-        <div class="list__slot">
+
+        <div class="list__action">
           <button type="button" class="button button--small button--icon-only"><i class="icon-remove"></i></button>
         </div>
-      </div>
+      </li>
+
+      <li>
+        <div>
+          <h3>Third item</h3>
+          <p>Description of the third item</p>
+        </div>
+
+        <div class="list__action">
+          <button type="button" class="button button--small button--icon-only"><i class="icon-remove"></i></button>
+        </div>
+      </li>
     </div>
   </div>
 </div>`
