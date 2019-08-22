@@ -1,0 +1,72 @@
+CDN_URL = 'https://cdn.orangecss.com'
+S3_BUCKET = 'cdn.orangecss.com'
+VERSION_NAME = 'latest'
+ASSETS = ['css/orange.min.css', 'js/orange.min.js', 'fonts/orange-icons.eot','fonts/orange-icons.svg', 'fonts/orange-icons.ttf', 'fonts/orange-icons.woff', 'fonts/orange-icons.woff2'].freeze
+
+def load_gem(name, version=nil)
+  begin
+    gem name, version
+  rescue LoadError
+    version = "--version '#{version}'" unless version.nil?
+    system("gem install #{name} #{version}")
+    Gem.clear_paths
+    retry
+  end
+
+  require name
+end
+
+namespace :deploy do
+  desc "Uploads latest files to s3"
+  task :upload_to_s3 do
+
+    load_gem 'aws-sdk-s3'
+
+    ASSETS.each do |file_name|
+      s3 = Aws::S3::Resource.new
+      obj = s3.bucket(S3_BUCKET).object("/#{VERSION_NAME}/#{file_name}")
+      obj.upload_file("../dist/#{file_name}")
+      puts "Uploaded: #{file_name}"
+    end
+  
+    puts 'Done uploading!'
+  end
+end
+
+namespace :deploy do
+  desc "Clear cache on cloudflare"
+  task :clear_cache do
+
+    require "net/http"
+    require "uri"
+    require "json"
+    require "openssl"
+
+    zone_id = ENV['CLOUDFLARE_ZONE_ID']
+    email = ENV['CLOUDFLARE_EMAIL']
+    token = ENV['CLOUDFLARE_TOKEN']
+
+    uri = URI.parse("https://api.cloudflare.com/client/v4/zones/#{zone_id}/purge_cache")
+    http = Net::HTTP.new(uri.host, uri.port)
+    http.use_ssl = true
+    http.verify_mode = OpenSSL::SSL::VERIFY_PEER
+
+    request = Net::HTTP::Post.new(uri.request_uri)
+    request["X-Auth-Email"] = email
+    request["X-Auth-key"] = token
+
+    request["Content-Type"] = 'application/json'
+
+    assets_array = ASSETS.map { |asset| "#{CDN_URL}/#{VERSION_NAME}/#{asset}" }
+    request.body = { files: assets_array }.to_json
+
+    response = http.request(request)
+
+    if response.body['success']
+      puts 'Done clearing cache!'
+    else
+      puts 'Error clearing cache!'
+    end
+  end
+end
+
