@@ -521,7 +521,7 @@
           <h3>List title</h3>
         </div>
         <div class="card__body">
-          <div class="list list--large list--divide list--no-gutter list--hover list--pointer">
+          <ul class="list list--large list--divide list--no-gutter list--hover list--pointer">
             <li>
               <div>
                 <h3>First item</h3>
@@ -552,7 +552,7 @@
                 <button type="button" class="button button--small button--icon-only"><i class="icon-remove"></i></button>
               </div>
             </li>
-          </div>
+          </ul>
         </div>
       </div>
     </docs-item>
@@ -611,9 +611,6 @@
           <th>Attribute</th>
           <th>Description</th>
           <th>Possible values</th>
-          <th>Type</th>
-          <th>Required</th>
-          <th>Default</th>
         </tr>
         </thead>
         <tbody>
@@ -621,32 +618,21 @@
           <td>size</td>
           <td>Set with <code>.list--{size}</code> class</td>
           <td><code>large</code>, <code>medium</code>, <code>small</code></td>
-          <td>String</td>
-          <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
           <td>divide</td>
           <td>Set with <code>.list--divide</code> class</td>
           <td><code>divide</code></td>
-          <td>string</td>
-          <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
           <td>hover</td>
           <td>Set with <code>.list--hover</code> class</td>
           <td><code>hover</code></td>
-          <td>string</td>
-          <td>-</td>
-          <td>-</td>
         </tr>
         <tr>
           <td>no-gutter</td>
           <td>Set with <code>.list--no-gutter</code> class. Add negative margins to side at the <code>$spacing-base</code> size. It's common use in cards.</td>
-          <td>string</td>
-          <td>-</td>
-          <td>-</td>
+          <td><code>no-gutter</code></td>
         </tr>
         </tbody>
       </table>
