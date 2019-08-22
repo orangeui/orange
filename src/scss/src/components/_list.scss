@@ -2,6 +2,11 @@
  * List
  */
 
+ul, ol {
+  padding-left: $spacing-base;
+  margin: 0;
+}
+
 .list {
   padding: 0;
 }
