@@ -7,33 +7,29 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 
   padding: $spacing-small;
   border-radius: $border-radius-main;
   margin-bottom: $spacing-base / 2;
   transition: 0.2s ease-in-out;
 
-  background-color: color('gray', 'light');
-  color: color('white');
+  background-color: color('gray', 'lightest');
+  color: color('black');
   text-align: center;
   font-size: fontSize('zeta');
-  font-style: italic;
-
-  &:hover {
-    cursor: pointer;
-    background-color: lighten(color('gray', 'light'), 2);
-  }
+  cursor: default;
 
   p {
     margin-bottom: $spacing-base / 2;
 
     &:last-of-type {
-      margin-bottom: 0;
+      margin-bottom: auto;
     }
   }
 
   a {
-    color: color('white');
+    color: color('black');
     font-weight: fontWeight('bold');
     text-decoration: underline;
 
@@ -53,7 +49,7 @@
       color: color('gray', 'dark');
       background-color: color('white');
 
-      &:hover {
+      &.callout--action:hover {
         background-color: color('gray', 'lightest');
       }
 
@@ -62,17 +58,35 @@
       }
     }
   } @else {
-    .callout--color-#{$name} {
-      background-color: color(#{$name});
-      color: color('white');
-      border-width: 0;
+    @each $colorKey, $colorValue in $value {
+      @if ($colorKey == 'base') {
+        .callout--color-#{$name} {
+          background-color: color(#{$name});
+          color: color('white');
+          border-width: 0;
 
-      a {
-        color: color(#{$name});
-      }
+          a {
+            color: color(#{$name});
+          }
 
-      &:hover {
-        background-color: lighten(color(#{$name}), 10);
+          &.callout--action:hover {
+            background-color: lighten(color(#{$name}), 5);
+          }
+        }
+      } @else {
+        .callout--color-#{$name}-#{$colorKey} {
+          background-color: #{$colorValue};
+          color: color('white');
+          border-width: 0;
+
+          a {
+            color: #{$colorValue};
+          }
+
+          &.callout--action:hover {
+            background-color: adjust-color($colorValue, $lightness: 5%);
+          }
+        }
       }
     }
   }
@@ -90,4 +104,12 @@
 /** With an image */
 .callout__image {
   padding: ($spacing-base / 2) 0;
+}
+
+/* Hover action */
+.callout--action {
+  &:hover {
+    cursor: pointer;
+    background-color: lighten(color('gray', 'light'), 2);
+  }
 }

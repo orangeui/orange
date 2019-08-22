@@ -56,8 +56,6 @@
       </div>
     </docs-item>
 
-
-
     <!-- With icons -->
     <docs-item title="With icons" :code="navigation_icons_html" v-if="is_html">
       <div slot="body">
@@ -110,7 +108,49 @@
       </div>
     </docs-item>
 
+    <!-- Align Center -->
+    <docs-item title="Align center" :code="navigation_center">
+      <div slot="body">
+        <nav class="nav nav--center">
+          <ul>
+            <li>
+              <a href="/docs/navigation" class="is-active">Navigation</a>
+            </li>
+            <li>
+              <a href="/docs/breadcrumbs">Breadcrumbs</a>
+            </li>
+            <li>
+              <a href="/docs/message">Message</a>
+            </li>
+            <li>
+              <a href="/docs/empty-state">Empty State</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </docs-item>
 
+    <!-- Align Right -->
+    <docs-item title="Align right" :code="navigation_right">
+      <div slot="body">
+        <nav class="nav nav--right">
+          <ul>
+            <li>
+              <a href="/docs/navigation" class="is-active">Navigation</a>
+            </li>
+            <li>
+              <a href="/docs/breadcrumbs">Breadcrumbs</a>
+            </li>
+            <li>
+              <a href="/docs/message">Message</a>
+            </li>
+            <li>
+              <a href="/docs/empty-state">Empty State</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </docs-item>
 
     <!-- Colors -->
     <docs-item title="Toned in color" :code="navigation_colors_html" v-if="is_html">
@@ -155,8 +195,6 @@
         </o-navigation>
       </div>
     </docs-item>
-
-
 
     <!-- Disabled item -->
     <docs-item title="Disabled item" :code="navigation_disabled_html" v-if="is_html">
@@ -374,7 +412,38 @@ export default {
     </li>
   </ul>
 </nav>`,
-
+      navigation_right: `<nav class="nav nav--right">
+  <ul>
+    <li>
+      <a href="/docs/navigation" class="is-active">Navigation</a>
+    </li>
+    <li>
+      <a href="/docs/breadcrumbs">Breadcrumbs</a>
+    </li>
+    <li>
+      <a href="/docs/message">Message</a>
+    </li>
+    <li>
+      <a href="/docs/empty-state">Empty State</a>
+    </li>
+  </ul>
+</nav>`,
+      navigation_center: `<nav class="nav nav--center">
+  <ul>
+    <li>
+      <a href="/docs/navigation" class="is-active">Navigation</a>
+    </li>
+    <li>
+      <a href="/docs/breadcrumbs">Breadcrumbs</a>
+    </li>
+    <li>
+      <a href="/docs/message">Message</a>
+    </li>
+    <li>
+      <a href="/docs/empty-state">Empty State</a>
+    </li>
+  </ul>
+</nav>`,
       navigation_colors: `<o-navigation color="secondary">
   <o-navigation-item to="navigation">
     Navigation

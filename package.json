@@ -1,15 +1,10 @@
 {
   "name": "@orange-ui/orange",
   "description": "Open-source UI library by Fomo.",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "version-short": "1.0",
   "author": "Fomo",
   "license": "MIT",
-  "scripts": {
-    "dev": "cd site && yarn dev",
-    "start": "cd site && yarn start",
-    "heroku-postbuild": "cd site && yarn build"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/orangeui/orange.git"
@@ -20,5 +15,36 @@
   "homepage": "https://github.com/orangeui/orange#readme",
   "engines": {
     "node": ">=8.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --watch --mode development",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "build:production": "webpack --mode production",
+    "build:bundle": "rm -rf dist/ && yarn run build:dev && yarn run build:production",
+    "docs:dev": "cd site && yarn dev",
+    "docs:start": "cd site && yarn start",
+    "heroku-postbuild": "cd site && yarn build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.1.0",
+    "eslint-loader": "^2.2.1",
+    "file-loader": "^4.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "postcss": "^7.0.17",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
   }
 }
