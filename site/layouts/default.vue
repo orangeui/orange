@@ -10,7 +10,7 @@
           <o-navigation-item :to="{ name: 'changelog' }">Changelog</o-navigation-item>
           <o-navigation-item :to="{ name: 'manifesto' }">Manifesto</o-navigation-item>
           <li>
-            <a href="https://github.com/orangeui/orange/issues">Contribute</a>
+            <a href="https://github.com/orangeui/orange/issues" target="_blank">Contribute</a>
           </li>
         </o-navigation>
       </div>
