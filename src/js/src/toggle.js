@@ -85,7 +85,7 @@ const Toggle = (function() {
 
 })()
 
- // On init run activateToggles if they exist
+// On init run activateToggles if they exist
 if (Toggle.all_toggles.length) {
   Toggle.activateToggles()
 }
