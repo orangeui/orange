@@ -39,16 +39,18 @@ const Input = (function() {
     let input = evt.target;
     let input_has_text = input.value !== "" && input.value !== null;
     
-    if (input_has_text) {
-      input.classList.add(Classes._active_class);
-    } else {
-      input.classList.remove(Classes._active_class);
-    }
-    if (evt.type === "focusin" && input.getAttribute('readonly') === null) {
-      input.classList.add(Classes._active_class);
-    }
-    if (evt.type === "focusout" && !input_has_text) {
-      input.classList.remove(Classes._active_class);
+    if (input.classList.contains('form__input')) {
+      if (input_has_text) {
+        input.classList.add(Classes._active_class);
+      } else {
+        input.classList.remove(Classes._active_class);
+      }
+      if (evt.type === "focusin" && input.getAttribute('readonly') === null) {
+        input.classList.add(Classes._active_class);
+      }
+      if (evt.type === "focusout" && !input_has_text) {
+        input.classList.remove(Classes._active_class);
+      }
     }
   }
 
