@@ -22,14 +22,14 @@
       <div slot="body">
         <p>Orange is a design system, a collection of components and tools that help you build web sites and apps. It offers the design and logic for user interface in a simplified way. You don't have to be front-end to use it.</p>
 
-        <p>Depending on your environment, you can pick <code>Orange CSS</code> written in vanilla JavaScrip, or *drum roll* <code>Orange Vue</code> that's out soon.</p>
+        <p>Depending on your environment, you can pick <code>Orange CSS</code> written in vanilla JavaScript, or *drum roll* <code>Orange Vue</code> that's out soon.</p>
       </div>
     </docs-item>
 
     <docs-item title="" class="explanation">
       <div slot="body">
         <h3>What's it like</h3>
-        <p>Orange is pretty oppinionated in styles of components it features - it tries to provide elements that are easy to place next to each other. It's still very much adjustable - you can tweak fonts, proportions and colors to fit your needs.</p>
+        <p>Orange is pretty opinionated about component styles - it tries to provide elements that are easy to place next to each other. It's also adjustable - tweak fonts, proportions and colors to fit your needs.</p>
 
         <h3>Why Orange</h3>
         <p>We picked orange because making a blue framework was just too damn easy. <br> Okay, we picked it because Fomo is orange 🧡</p>
