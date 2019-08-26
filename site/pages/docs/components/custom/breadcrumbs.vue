@@ -16,34 +16,26 @@
 
       <div slot="body">
         <nav class="breadcrumbs">
-          <ul class="breadcrumbs__menu">
+          <ul>
             <li>
               <a class="is-active">
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 <span class="icon-integrations"></span>
                 First
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Second
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Third
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Fourth
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
           </ul>
@@ -72,39 +64,30 @@
 
       <div slot="body">
         <nav class="breadcrumbs">
-          <a href="/" class="breadcrumbs__button is-active">
-            <span class="breadcrumbs__button-arrow-tail"></span>
+          <a href="/" class="breadcrumbs__button">
             Back
           </a>
 
-          <ul class="breadcrumbs__menu">
+          <ul>
             <li>
               <a class="is-active">
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 <span class="icon-integrations"></span>
                 First
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Second
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Third
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Fourth
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
           </ul>
@@ -134,34 +117,26 @@
 
       <div slot="body">
         <nav class="breadcrumbs breadcrumbs--full">
-          <ul class="breadcrumbs__menu">
+          <ul>
             <li>
               <a class="is-active">
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 <span class="icon-integrations"></span>
                 First
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Second
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Third
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Fourth
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
           </ul>
@@ -183,41 +158,31 @@
 
     </docs-item>
 
-
-
     <!-- Steps -->
     <docs-item title="Steps" :code="breadcrumbs_steps_html" v-if="is_html">
 
       <div slot="body">
         <nav class="breadcrumbs breadcrumbs--full">
-          <ul class="breadcrumbs__menu">
+          <ul>
             <li>
               <a class="is-active">
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 <span class="icon-integrations"></span>
                 First
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a class="is-active">
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Second
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Third
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Fourth
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
           </ul>
@@ -245,34 +210,26 @@
       <ul slot="body" class="docs__simple-list">
         <li>
           <nav class="breadcrumbs breadcrumbs--color-primary">
-            <ul class="breadcrumbs__menu">
+            <ul>
               <li>
                 <a class="is-active">
-                  <span class="breadcrumbs__link-arrow-tail"></span>
                   <span class="icon-integrations"></span>
                   First
-                  <span class="breadcrumbs__link-arrow-head"></span>
                 </a>
               </li>
               <li>
                 <a class="is-active">
-                  <span class="breadcrumbs__link-arrow-tail"></span>
                   Second
-                  <span class="breadcrumbs__link-arrow-head"></span>
                 </a>
               </li>
               <li>
                 <a>
-                  <span class="breadcrumbs__link-arrow-tail"></span>
                   Third
-                  <span class="breadcrumbs__link-arrow-head"></span>
                 </a>
               </li>
               <li>
                 <a>
-                  <span class="breadcrumbs__link-arrow-tail"></span>
                   Fourth
-                  <span class="breadcrumbs__link-arrow-head"></span>
                 </a>
               </li>
             </ul>
@@ -280,34 +237,26 @@
         </li>
         <li>
           <nav class="breadcrumbs breadcrumbs--color-secondary">
-            <ul class="breadcrumbs__menu">
+            <ul>
               <li>
                 <a class="is-active">
-                  <span class="breadcrumbs__link-arrow-tail"></span>
                   <span class="icon-integrations"></span>
                   First
-                  <span class="breadcrumbs__link-arrow-head"></span>
                 </a>
               </li>
               <li>
                 <a class="is-active">
-                  <span class="breadcrumbs__link-arrow-tail"></span>
                   Second
-                  <span class="breadcrumbs__link-arrow-head"></span>
                 </a>
               </li>
               <li>
                 <a>
-                  <span class="breadcrumbs__link-arrow-tail"></span>
                   Third
-                  <span class="breadcrumbs__link-arrow-head"></span>
                 </a>
               </li>
               <li>
                 <a>
-                  <span class="breadcrumbs__link-arrow-tail"></span>
                   Fourth
-                  <span class="breadcrumbs__link-arrow-head"></span>
                 </a>
               </li>
             </ul>
@@ -437,7 +386,7 @@
         </tr>
         <tr>
           <td>color</td>
-          <td>Set with <code>.avatar--color-{color}</code> class</td>
+          <td>Set with <code>.breadcrumbs--color-{color}</code> class</td>
           <td>See <a href="/colors">Colors</a> page</td>
           <td>String</td>
           <td>-</td>
@@ -507,34 +456,26 @@ export default {
   <o-breadcrumbs-item tag="a">Fourth</o-breadcrumbs-item>
 </o-breadcrumbs>`,
       breadcrumbs_html: `<nav class="breadcrumbs">
-  <ul class="breadcrumbs__menu">
+  <ul>
     <li>
       <a class="is-active">
-        <span class="breadcrumbs__link-arrow-tail"></span>
         <span class="icon-integrations"></span>
         First
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Second
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Third
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Fourth
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
   </ul>
@@ -548,38 +489,29 @@ export default {
 </o-breadcrumbs>`,
       breadcrumbs_back_button_html: `<nav class="breadcrumbs">
   <a href="/" class="breadcrumbs__button is-active">
-    <span class="breadcrumbs__button-arrow-tail"></span>
     Back
   </a>
 
-  <ul class="breadcrumbs__menu">
+  <ul>
     <li>
       <a class="is-active">
-        <span class="breadcrumbs__link-arrow-tail"></span>
         <span class="icon-integrations"></span>
         First
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Second
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Third
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Fourth
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
   </ul>
@@ -592,34 +524,26 @@ export default {
   <o-breadcrumbs-item tag="a">Fourth</o-breadcrumbs-item>
 </o-breadcrumbs>`,
       breadcrumbs_full_width_html: `<nav class="breadcrumbs breadcrumbs--full">
-  <ul class="breadcrumbs__menu">
+  <ul>
     <li>
       <a class="is-active">
-        <span class="breadcrumbs__link-arrow-tail"></span>
         <span class="icon-integrations"></span>
         First
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Second
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Third
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Fourth
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
   </ul>
@@ -632,34 +556,26 @@ export default {
   <o-breadcrumbs-item tag="a">Fourth</o-breadcrumbs-item>
 </o-breadcrumbs>`,
       breadcrumbs_steps_html: `<nav class="breadcrumbs breadcrumbs--full">
-  <ul class="breadcrumbs__menu">
+  <ul>
     <li>
       <a class="is-active">
-        <span class="breadcrumbs__link-arrow-tail"></span>
         <span class="icon-integrations"></span>
         First
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a class="is-active">
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Second
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Third
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Fourth
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
   </ul>
@@ -715,34 +631,26 @@ export default {
   ...
 </o-breadcrumbs>`,
       breadcrumbs_colors_html: `<nav class="breadcrumbs breadcrumbs--color-{color}">
-  <ul class="breadcrumbs__menu">
+  <ul>
     <li>
       <a class="is-active">
-        <span class="breadcrumbs__link-arrow-tail"></span>
         <span class="icon-integrations"></span>
         First
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a class="is-active">
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Second
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Third
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Fourth
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
   </ul>
