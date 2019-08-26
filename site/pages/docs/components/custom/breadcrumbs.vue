@@ -106,7 +106,6 @@
       <div slot="body">
         <nav class="breadcrumbs">
           <a href="/" class="breadcrumbs__button is-active">
-            <span class="breadcrumbs__button-arrow-tail"></span>
             Back
           </a>
 
