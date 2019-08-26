@@ -15,39 +15,6 @@
     <docs-item title="Basic" :code="breadcrumbs_html" v-if="is_html">
 
       <div slot="body">
-        <nav class="breadcrumbs breadcrumbs--beta">
-          <ul class="breadcrumbs__menu">
-            <li>
-              <a class="is-active">
-                <span class="icon-integrations"></span>
-                First
-              </a>
-            </li>
-            <li>
-              <a>
-                Second
-              </a>
-            </li>
-            <li>
-              <a>
-                Third
-              </a>
-            </li>
-            <li>
-              <a>
-                Fourth
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-    </docs-item>
-
-    <!-- Default -->
-    <docs-item title="Basic" :code="breadcrumbs_html" v-if="is_html">
-
-      <div slot="body">
         <nav class="breadcrumbs">
           <ul class="breadcrumbs__menu">
             <li>
@@ -190,8 +157,6 @@
       </div>
 
     </docs-item>
-
-
 
     <!-- Steps -->
     <docs-item title="Steps" :code="breadcrumbs_steps_html" v-if="is_html">
@@ -524,7 +489,6 @@ export default {
 </o-breadcrumbs>`,
       breadcrumbs_back_button_html: `<nav class="breadcrumbs">
   <a href="/" class="breadcrumbs__button is-active">
-    <span class="breadcrumbs__button-arrow-tail"></span>
     Back
   </a>
 
