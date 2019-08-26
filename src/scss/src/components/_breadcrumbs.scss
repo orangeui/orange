@@ -181,17 +181,29 @@ a.breadcrumbs__button {
     .breadcrumbs__menu {
       > li > a {
         color: rgba(color(#{$name}), $breadcrumbs-color-transperancy);
+        background-color: rgba(color(#{$name}), $breadcrumbs-bg-transperancy);
 
         &::before {
-          background-color: rgba(color(#{$name}), $breadcrumbs-bg-transperancy);
+          border-top: $breadcrumbs-height / 2 solid rgba(color(#{$name}), $breadcrumbs-bg-transperancy);
+          border-bottom: $breadcrumbs-height / 2 solid rgba(color(#{$name}), $breadcrumbs-bg-transperancy);
+        }
+
+        &::after {
+          border-color: transparent transparent transparent rgba(color(#{$name}), $breadcrumbs-bg-transperancy);
         }
 
         &.is-active,
         &:hover {
           color: color(#{$name});
+          background-color: rgba(color(#{$name}), $breadcrumbs-bg-transperancy-active);
 
           &::before {
-            background-color: rgba(color(#{$name}), $breadcrumbs-bg-transperancy-active);
+            border-top: $breadcrumbs-height / 2 solid rgba(color(#{$name}), $breadcrumbs-bg-transperancy-active);
+            border-bottom: $breadcrumbs-height / 2 solid rgba(color(#{$name}), $breadcrumbs-bg-transperancy-active);
+          }
+
+          &::after {
+            border-color: transparent transparent transparent rgba(color(#{$name}), $breadcrumbs-bg-transperancy-active);
           }
         }
       }
@@ -210,7 +222,6 @@ a.breadcrumbs__button {
     }
   }
 }
-
 
 /** Sizes
 --------------------------------------------------*/
