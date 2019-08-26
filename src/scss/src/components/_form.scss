@@ -27,7 +27,7 @@
 --------------------------------------------------*/
 
 .form__input-wrapper {
-  position: relative; 
+  position: relative;
   flex: 1;
 }
 
@@ -118,10 +118,10 @@
 }
 
 
-/** Form extras
+/** Form action
 --------------------------------------------------*/
 
-.form__extras {
+.form__extras, .form__action {
   height: $input-height;
   position: absolute;
   right: 0;
@@ -158,7 +158,7 @@
 --------------------------------------------------*/
 
 .form__item {
-  
+
   /** Error */
   &.has-error {
     .form__input,
@@ -166,9 +166,9 @@
       border-color: rgba(color('red'), 0.75);
     }
   }
-  
-  /** Extras */
-  &.has-extras {
+
+  /** Action */
+  &.has-extras, &.has-action {
     .form__input {
       &[readonly] {
         color: color('secondary');
@@ -193,7 +193,7 @@
       display: block;
     }
 
-    &.is-full, 
+    &.is-full,
     &.has-placeholder {
       padding: ($spacing-base * 1.5) ($spacing-base / 2) ($spacing-base / 2);
 
@@ -216,7 +216,7 @@
     }
   }
 
-  .form__extras {
+  .form__extras, .form__action {
     height: $input-height-large;
   }
 }

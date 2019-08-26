@@ -21,7 +21,7 @@
             </div>
           </div>
 
-          <div class="form__description">Description text</div>
+          <p class="form__description">Description text</p>
         </div>
       </form>
     </docs-item>
@@ -36,8 +36,6 @@
         />
       </form>
     </docs-item>
-
-
 
     <!-- Validation  -->
     <docs-item title="Validation - required" :code="input_validation_small" v-if="!is_html">
@@ -54,8 +52,6 @@
       </form>
     </docs-item>
 
-
-
     <!-- Validation with rules  -->
     <docs-item title="Validation - required with rules" :code="input_validation_rules_small" v-if="!is_html">
       <form class="form" slot="body">
@@ -69,8 +65,6 @@
         />
       </form>
     </docs-item>
-
-
 
     <!-- Read-only  -->
     <docs-item title="Read-only" :code="input_validation_read_only_html" v-if="!is_html">
@@ -96,8 +90,6 @@
       </form>
     </docs-item>
 
-
-
     <!-- Size Large  -->
     <docs-item title="Large" :code="input_large_html" v-if="!is_html">
       <form class="form form--large" slot="body">
@@ -108,7 +100,7 @@
               <label for="form_large" class="form__label">Label</label>
             </div>
           </div>
-          <div class="form__description">Description text</div>
+          <p class="form__description">Description text</p>
         </div>
       </form>
     </docs-item>
@@ -166,7 +158,7 @@
           validate_name="Email address"
         >
 
-          <o-button text="send message" size="small" slot="extras" />
+          <o-button text="send message" size="small" slot="action" />
 
         </o-input>
       </form>
@@ -180,14 +172,14 @@
             <div class="form__input-wrapper">
               <input id="form_large_button_read_only" type="text" name="form_large_button_read_only" readonly="readonly" class="form__input is-full" value="1231231231231231">
               <label for="form_large_button_read_only" class="form__label">Your API key</label>
-              <div class="form__extras">
+              <div class="form__action">
                 <button type="button" class="button button--small">
                   copy to clipboard
                 </button>
               </div>
             </div>
           </div>
-          <div class="form__description">To change your API key please contact support</div>
+          <p class="form__description">To change your API key please contact support</p>
         </div>
       </form>
     </docs-item>
@@ -202,12 +194,11 @@
           :read_only="true"
         >
 
-          <o-button text="copy to clipboard" size="small" slot="extras" />
+          <o-button text="copy to clipboard" size="small" slot="action" />
 
         </o-input>
       </form>
     </docs-item>
-
 
     <!-- Large with a placeholder  -->
     <docs-item title="Large with a placeholder" :code="input_placeholder_large" v-if="!is_html">
@@ -509,13 +500,9 @@ export default {
 </form>`,
       input_html: `<form class="form">
   <div class="form__item">
-    <div class="form__wrapper">
-      <div class="form__input-wrapper">
-        <input id="form_id" type="text" name="form_id" placeholder="Label" class="form__input">
-      </div>
-    </div>
+    <input id="form_id" type="text" name="form_id" placeholder="Label" class="form__input">
 
-    <div class="form__description">Description text</div>
+    <p class="form__description">Description text</p>
   </div>
 </form>`,
 
@@ -550,11 +537,7 @@ export default {
 </form>`,
       input_validation_read_only_html: `<form class="form">
   <div class="form__item">
-    <div class="form__wrapper">
-      <div class="form__input-wrapper">
-        <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input">
-      </div>
-    </div>
+    <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input">
   </div>
 </form>`,
 
@@ -568,13 +551,9 @@ export default {
 </form>`,
       input_large_html: `<form class="form form--large">
   <div class="form__item">
-    <div class="form__wrapper">
-      <div class="form__input-wrapper">
-        <input id="form_large" type="text" name="form_large" class="form__input">
-        <label for="form_large" class="form__label">Label</label>
-      </div>
-    </div>
-    <div class="form__description">Description text</div>
+    <input id="form_large" type="text" name="form_large" class="form__input">
+    <label for="form_large" class="form__label">Label</label>
+    <p class="form__description">Description text</p>
   </div>
 </form>`,
 
@@ -590,12 +569,8 @@ export default {
 </form>`,
       input_read_only_large: `<form class="form form--large" slot="body">
   <div class="form__item">
-    <div class="form__wrapper">
-      <div class="form__input-wrapper">
-        <input id="form_large_read_only" type="text" name="form_large_read_only" readonly="readonly" class="form__input">
-        <label for="form_large_read_only" class="form__label">Label</label>
-      </div>
-    </div>
+    <input id="form_large_read_only" type="text" name="form_large_read_only" readonly="readonly" class="form__input">
+    <label for="form_large_read_only" class="form__label">Label</label>
   </div>
 </form>`,
 
@@ -610,7 +585,7 @@ export default {
     validate_name="Email address"
   >
 
-    <o-button text="send message" size="small" slot="extras" />
+    <o-button text="send message" size="small" slot="action" />
 
   </o-input>
 </form>`,
@@ -623,24 +598,22 @@ export default {
     :read_only="true"
   >
 
-    <o-button text="copy to clipboard" size="small" slot="extras" />
+    <o-button text="copy to clipboard" size="small" slot="action" />
 
   </o-input>
 </form>`,
       input_large_read_only_button_html: `<form class="form form--large">
   <div class="form__item has-extras">
-    <div class="form__wrapper">
-      <div class="form__input-wrapper">
-        <input id="form_large_button_read_only" type="text" name="form_large_button_read_only" readonly="readonly" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
-        <label for="form_large_button_read_only" class="form__label">Your API key</label>
-        <div class="form__extras">
-          <button type="button" class="button button--small">
-            copy to clipboard
-          </button>
-        </div>
-      </div>
+    <input id="form_large_button_read_only" type="text" name="form_large_button_read_only" readonly="readonly" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+    <label for="form_large_button_read_only" class="form__label">Your API key</label>
+
+    <div class="form__action">
+      <button type="button" class="button button--small">
+        copy to clipboard
+      </button>
     </div>
-    <div class="form__description">To change your API key please contact support</div>
+
+    <p class="form__description">To change your API key please contact support</p>
   </div>
 </form>`,
 

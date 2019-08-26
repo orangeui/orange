@@ -2,30 +2,25 @@
   <div class="form__item"
       :class="{
         'has-error': errors.has(name_default),
-        'has-extras': hasExtrasSlot,
+        'has-extras has-action': hasActionSlot,
         'dropdown-with-input': dropdown_options
     }">
-    <div class="form__wrapper" :class="[ { 'is-loading is-loading--medium': is_loading } ]">
-      <o-dropdown v-if="dropdown_options" :id="dropdown_options.id" :value="dropdown_value" :items="dropdown_options.items" :label="dropdown_options.label" :placeholder="dropdown_options.label" @input="updateDropdownValue" />
+    <!--<o-dropdown v-if="dropdown_options" :id="dropdown_options.id" :value="dropdown_value" :items="dropdown_options.items" :label="dropdown_options.label" :placeholder="dropdown_options.label" @input="updateDropdownValue" />-->
 
-      <div class="form__input-wrapper">
-        <input class="form__input" :id="id" ref="input" v-validate="validate" :type="type"
-               :class="{ 'is-full': input_value || input_value === 0, 'has-placeholder': placeholder }"
-               :name="name_default" :placeholder="placeholder"  :data-vv-delay="validate_delay"
-               :disabled="disabled" :value="input_value" :readonly="read_only" :data-vv-validate-on="validate_on"
-               :data-vv-as="validate_name_default" :min="min" :max="max"
-               autocomplete="off" v-on="input_listeners">
-        <label class="form__label" :for="id">{{ label }}</label>
+    <input class="form__input" :id="id" ref="input" v-validate="validate" :type="type"
+           :class="{ 'is-full': input_value || input_value === 0, 'has-placeholder': placeholder }"
+           :name="name_default" :placeholder="placeholder"  :data-vv-delay="validate_delay"
+           :disabled="disabled" :value="input_value" :readonly="read_only" :data-vv-validate-on="validate_on"
+           :data-vv-as="validate_name_default" :min="min" :max="max"
+           autocomplete="off" v-on="input_listeners">
+    <label class="form__label" :for="id">{{ label }}</label>
 
-        <div v-if="hasExtrasSlot" class="form__extras">
-          <slot name="extras"></slot>
-        </div>
-      </div>
+    <div v-if="hasActionSlot" class="form__action">
+      <slot name="action"></slot>
     </div>
 
-    <div v-if="errors.has(name_default)" class="form__message">{{ errors.first(name_default) }}</div>
-    <div v-if="description" class="form__description">{{ description}}</div>
-
+    <p v-if="errors.has(name_default)" class="form__message">{{ errors.first(name_default) }}</p>
+    <p v-if="description" class="form__description">{{ description}}</p>
   </div>
 </template>
 
@@ -167,8 +162,8 @@ export default {
       )
     },
 
-    hasExtrasSlot () {
-      return this.$slots.extras
+    hasActionSlot () {
+      return this.$slots.action
     }
   },
 
