@@ -52,31 +52,23 @@
           <ul class="breadcrumbs__menu">
             <li>
               <a class="is-active">
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 <span class="icon-integrations"></span>
                 First
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Second
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Third
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Fourth
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
           </ul>
@@ -112,31 +104,23 @@
           <ul class="breadcrumbs__menu">
             <li>
               <a class="is-active">
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 <span class="icon-integrations"></span>
                 First
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Second
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Third
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Fourth
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
           </ul>
@@ -169,31 +153,23 @@
           <ul class="breadcrumbs__menu">
             <li>
               <a class="is-active">
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 <span class="icon-integrations"></span>
                 First
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Second
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Third
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Fourth
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
           </ul>
@@ -225,31 +201,23 @@
           <ul class="breadcrumbs__menu">
             <li>
               <a class="is-active">
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 <span class="icon-integrations"></span>
                 First
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a class="is-active">
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Second
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Third
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
             <li>
               <a>
-                <span class="breadcrumbs__link-arrow-tail"></span>
                 Fourth
-                <span class="breadcrumbs__link-arrow-head"></span>
               </a>
             </li>
           </ul>
@@ -280,31 +248,23 @@
             <ul class="breadcrumbs__menu">
               <li>
                 <a class="is-active">
-                  <span class="breadcrumbs__link-arrow-tail"></span>
                   <span class="icon-integrations"></span>
                   First
-                  <span class="breadcrumbs__link-arrow-head"></span>
                 </a>
               </li>
               <li>
                 <a class="is-active">
-                  <span class="breadcrumbs__link-arrow-tail"></span>
                   Second
-                  <span class="breadcrumbs__link-arrow-head"></span>
                 </a>
               </li>
               <li>
                 <a>
-                  <span class="breadcrumbs__link-arrow-tail"></span>
                   Third
-                  <span class="breadcrumbs__link-arrow-head"></span>
                 </a>
               </li>
               <li>
                 <a>
-                  <span class="breadcrumbs__link-arrow-tail"></span>
                   Fourth
-                  <span class="breadcrumbs__link-arrow-head"></span>
                 </a>
               </li>
             </ul>
@@ -315,31 +275,23 @@
             <ul class="breadcrumbs__menu">
               <li>
                 <a class="is-active">
-                  <span class="breadcrumbs__link-arrow-tail"></span>
                   <span class="icon-integrations"></span>
                   First
-                  <span class="breadcrumbs__link-arrow-head"></span>
                 </a>
               </li>
               <li>
                 <a class="is-active">
-                  <span class="breadcrumbs__link-arrow-tail"></span>
                   Second
-                  <span class="breadcrumbs__link-arrow-head"></span>
                 </a>
               </li>
               <li>
                 <a>
-                  <span class="breadcrumbs__link-arrow-tail"></span>
                   Third
-                  <span class="breadcrumbs__link-arrow-head"></span>
                 </a>
               </li>
               <li>
                 <a>
-                  <span class="breadcrumbs__link-arrow-tail"></span>
                   Fourth
-                  <span class="breadcrumbs__link-arrow-head"></span>
                 </a>
               </li>
             </ul>
@@ -542,31 +494,23 @@ export default {
   <ul class="breadcrumbs__menu">
     <li>
       <a class="is-active">
-        <span class="breadcrumbs__link-arrow-tail"></span>
         <span class="icon-integrations"></span>
         First
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Second
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Third
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Fourth
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
   </ul>
@@ -587,31 +531,23 @@ export default {
   <ul class="breadcrumbs__menu">
     <li>
       <a class="is-active">
-        <span class="breadcrumbs__link-arrow-tail"></span>
         <span class="icon-integrations"></span>
         First
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Second
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Third
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Fourth
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
   </ul>
@@ -627,31 +563,23 @@ export default {
   <ul class="breadcrumbs__menu">
     <li>
       <a class="is-active">
-        <span class="breadcrumbs__link-arrow-tail"></span>
         <span class="icon-integrations"></span>
         First
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Second
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Third
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Fourth
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
   </ul>
@@ -667,31 +595,23 @@ export default {
   <ul class="breadcrumbs__menu">
     <li>
       <a class="is-active">
-        <span class="breadcrumbs__link-arrow-tail"></span>
         <span class="icon-integrations"></span>
         First
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a class="is-active">
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Second
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Third
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Fourth
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
   </ul>
@@ -750,31 +670,23 @@ export default {
   <ul class="breadcrumbs__menu">
     <li>
       <a class="is-active">
-        <span class="breadcrumbs__link-arrow-tail"></span>
         <span class="icon-integrations"></span>
         First
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a class="is-active">
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Second
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Third
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
     <li>
       <a>
-        <span class="breadcrumbs__link-arrow-tail"></span>
         Fourth
-        <span class="breadcrumbs__link-arrow-head"></span>
       </a>
     </li>
   </ul>
