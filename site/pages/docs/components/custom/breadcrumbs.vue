@@ -16,7 +16,7 @@
 
       <div slot="body">
         <nav class="breadcrumbs">
-          <ul class="breadcrumbs__menu">
+          <ul>
             <li>
               <a class="is-active">
                 <span class="icon-integrations"></span>
@@ -64,11 +64,11 @@
 
       <div slot="body">
         <nav class="breadcrumbs">
-          <a href="/" class="breadcrumbs__button is-active">
+          <a href="/" class="breadcrumbs__button">
             Back
           </a>
 
-          <ul class="breadcrumbs__menu">
+          <ul>
             <li>
               <a class="is-active">
                 <span class="icon-integrations"></span>
@@ -117,7 +117,7 @@
 
       <div slot="body">
         <nav class="breadcrumbs breadcrumbs--full">
-          <ul class="breadcrumbs__menu">
+          <ul>
             <li>
               <a class="is-active">
                 <span class="icon-integrations"></span>
@@ -163,7 +163,7 @@
 
       <div slot="body">
         <nav class="breadcrumbs breadcrumbs--full">
-          <ul class="breadcrumbs__menu">
+          <ul>
             <li>
               <a class="is-active">
                 <span class="icon-integrations"></span>
@@ -210,7 +210,7 @@
       <ul slot="body" class="docs__simple-list">
         <li>
           <nav class="breadcrumbs breadcrumbs--color-primary">
-            <ul class="breadcrumbs__menu">
+            <ul>
               <li>
                 <a class="is-active">
                   <span class="icon-integrations"></span>
@@ -237,7 +237,7 @@
         </li>
         <li>
           <nav class="breadcrumbs breadcrumbs--color-secondary">
-            <ul class="breadcrumbs__menu">
+            <ul>
               <li>
                 <a class="is-active">
                   <span class="icon-integrations"></span>
@@ -386,7 +386,7 @@
         </tr>
         <tr>
           <td>color</td>
-          <td>Set with <code>.avatar--color-{color}</code> class</td>
+          <td>Set with <code>.breadcrumbs--color-{color}</code> class</td>
           <td>See <a href="/colors">Colors</a> page</td>
           <td>String</td>
           <td>-</td>
@@ -456,7 +456,7 @@ export default {
   <o-breadcrumbs-item tag="a">Fourth</o-breadcrumbs-item>
 </o-breadcrumbs>`,
       breadcrumbs_html: `<nav class="breadcrumbs">
-  <ul class="breadcrumbs__menu">
+  <ul>
     <li>
       <a class="is-active">
         <span class="icon-integrations"></span>
@@ -492,7 +492,7 @@ export default {
     Back
   </a>
 
-  <ul class="breadcrumbs__menu">
+  <ul>
     <li>
       <a class="is-active">
         <span class="icon-integrations"></span>
@@ -524,7 +524,7 @@ export default {
   <o-breadcrumbs-item tag="a">Fourth</o-breadcrumbs-item>
 </o-breadcrumbs>`,
       breadcrumbs_full_width_html: `<nav class="breadcrumbs breadcrumbs--full">
-  <ul class="breadcrumbs__menu">
+  <ul>
     <li>
       <a class="is-active">
         <span class="icon-integrations"></span>
@@ -556,7 +556,7 @@ export default {
   <o-breadcrumbs-item tag="a">Fourth</o-breadcrumbs-item>
 </o-breadcrumbs>`,
       breadcrumbs_steps_html: `<nav class="breadcrumbs breadcrumbs--full">
-  <ul class="breadcrumbs__menu">
+  <ul>
     <li>
       <a class="is-active">
         <span class="icon-integrations"></span>
@@ -631,7 +631,7 @@ export default {
   ...
 </o-breadcrumbs>`,
       breadcrumbs_colors_html: `<nav class="breadcrumbs breadcrumbs--color-{color}">
-  <ul class="breadcrumbs__menu">
+  <ul>
     <li>
       <a class="is-active">
         <span class="icon-integrations"></span>

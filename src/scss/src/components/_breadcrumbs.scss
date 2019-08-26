@@ -4,8 +4,121 @@
 
 .breadcrumbs {
   display: flex;
-}
 
+  /** Menu
+  --------------------------------------------------*/
+
+  > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    user-select: none;
+
+    /** Item
+    --------------------------------------------------*/
+    > li {
+      font-size: fontSize('zeta');
+      margin-right: $breadcrumbs-margin;
+
+      &:first-child {
+        > a {
+          margin-left: 0;
+          padding-left: $breadcrumbs-spacing;
+
+          &::before {
+            display: none;
+          }
+        }
+
+        .icon {
+          margin-left: -$breadcrumbs-spacing / 4;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        > a {
+          padding-right: ($breadcrumbs-spacing) + ($breadcrumbs-spacing / 2);
+
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+
+    /** Link
+    --------------------------------------------------*/
+    > li > a {
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 0 $breadcrumbs-spacing;
+      background: rgba(color('black'), $breadcrumbs-bg-transperancy);
+      color: rgba(color('black'), $breadcrumbs-color-transperancy);
+      line-height: 1;
+      height: $breadcrumbs-height;
+      cursor: pointer;
+      margin-left: $breadcrumbs-spacing;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -$breadcrumbs-spacing;
+        border-top: $breadcrumbs-height / 2 solid rgba(color('black'), $breadcrumbs-bg-transperancy);
+        border-bottom: $breadcrumbs-height / 2 solid rgba(color('black'), $breadcrumbs-bg-transperancy);
+        border-right: $breadcrumbs-spacing solid transparent;
+        font-size: 0;
+        line-height: 0;
+        width: 0;
+        transform: rotate(180deg);
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: -$breadcrumbs-spacing;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: $breadcrumbs-height / 2 0 $breadcrumbs-height / 2 $breadcrumbs-spacing;
+        border-color: transparent transparent transparent rgba(color('black'), $breadcrumbs-bg-transperancy);
+      }
+
+      &.is-active,
+      &:hover {
+        color: color('black');
+        text-decoration: none;
+        background: rgba(color('black'), $breadcrumbs-bg-transperancy-active);
+
+        &::before {
+          border-top: $breadcrumbs-height / 2 solid rgba(color('black'), $breadcrumbs-bg-transperancy-active);
+          border-bottom: $breadcrumbs-height / 2 solid rgba(color('black'), $breadcrumbs-bg-transperancy-active);
+        }
+
+        &::after {
+          border-color: transparent transparent transparent rgba(color('black'), $breadcrumbs-bg-transperancy-active);
+        }
+      }
+
+      &.is-disabled {
+        cursor: default;
+        pointer-events: none;
+        opacity: 0.5;
+      }
+    }
+
+    /** Icon
+    --------------------------------------------------*/
+    li > a > .icon {
+      margin-right: $spacing-base / 4;
+    }
+  }
+}
 
 /** Back button
 --------------------------------------------------*/
@@ -59,126 +172,13 @@ a.breadcrumbs__button {
   }
 }
 
-/** Menu
---------------------------------------------------*/
-
-.breadcrumbs__menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  user-select: none;
-
-  /** Item
-  --------------------------------------------------*/
-  > li {
-    font-size: fontSize('zeta');
-    margin-right: $breadcrumbs-margin;
-
-    &:first-child {
-      > a {
-        margin-left: 0;
-        padding-left: $breadcrumbs-spacing;
-
-        &::before {
-          display: none;
-        }
-      }
-
-      .icon {
-        margin-left: -$breadcrumbs-spacing / 4;
-      }
-    }
-
-    &:last-child {
-      margin-right: 0;
-
-      > a {
-        padding-right: ($breadcrumbs-spacing) + ($breadcrumbs-spacing / 2);
-
-        &::after {
-          display: none;
-        }
-      }
-    }
-  }
-
-  /** Link
-  --------------------------------------------------*/
-  > li > a {
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: 0 $breadcrumbs-spacing;
-    background: rgba(color('black'), $breadcrumbs-bg-transperancy);
-    color: rgba(color('black'), $breadcrumbs-color-transperancy);
-    line-height: 1;
-    height: $breadcrumbs-height;
-    cursor: pointer;
-    margin-left: $breadcrumbs-spacing;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -$breadcrumbs-spacing;
-      border-top: $breadcrumbs-height / 2 solid rgba(color('black'), $breadcrumbs-bg-transperancy);
-      border-bottom: $breadcrumbs-height / 2 solid rgba(color('black'), $breadcrumbs-bg-transperancy);
-      border-right: $breadcrumbs-spacing solid transparent;
-      font-size: 0;
-      line-height: 0;
-      width: 0;
-      transform: rotate(180deg);
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      right: -$breadcrumbs-spacing;
-      top: 0;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: $breadcrumbs-height / 2 0 $breadcrumbs-height / 2 $breadcrumbs-spacing;
-      border-color: transparent transparent transparent rgba(color('black'), $breadcrumbs-bg-transperancy);
-    }
-
-    &.is-active,
-    &:hover {
-      color: color('black');
-      text-decoration: none;
-      background: rgba(color('black'), $breadcrumbs-bg-transperancy-active);
-
-      &::before {
-        border-top: $breadcrumbs-height / 2 solid rgba(color('black'), $breadcrumbs-bg-transperancy-active);
-        border-bottom: $breadcrumbs-height / 2 solid rgba(color('black'), $breadcrumbs-bg-transperancy-active);
-      }
-
-      &::after {
-        border-color: transparent transparent transparent rgba(color('black'), $breadcrumbs-bg-transperancy-active);
-      }
-    }
-
-    &.is-disabled {
-      cursor: default;
-      pointer-events: none;
-      opacity: 0.5;
-    }
-  }
-
-  /** Icon
-  --------------------------------------------------*/
-  li > a > .icon {
-    margin-right: $spacing-base / 4;
-  }
-}
 
 /** Colors
 --------------------------------------------------*/
 
 @each $name, $value in $colors {
   .breadcrumbs--color-#{$name} {
-    .breadcrumbs__menu {
+    > ul {
       > li > a {
         color: rgba(color(#{$name}), $breadcrumbs-color-transperancy);
         background-color: rgba(color(#{$name}), $breadcrumbs-bg-transperancy);
@@ -223,11 +223,12 @@ a.breadcrumbs__button {
   }
 }
 
+
 /** Sizes
 --------------------------------------------------*/
 
 .breadcrumbs--full {
-  .breadcrumbs__menu {
+  > ul {
     width: 100%;
 
     > li {
