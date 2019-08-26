@@ -2,7 +2,7 @@
   <div class="form__item"
       :class="{
         'has-error': errors.has(name_default),
-        'has-extras': hasExtrasSlot,
+        'has-extras has-action': hasActionSlot,
         'dropdown-with-input': dropdown_options
     }">
     <!--<o-dropdown v-if="dropdown_options" :id="dropdown_options.id" :value="dropdown_value" :items="dropdown_options.items" :label="dropdown_options.label" :placeholder="dropdown_options.label" @input="updateDropdownValue" />-->
@@ -15,8 +15,8 @@
            autocomplete="off" v-on="input_listeners">
     <label class="form__label" :for="id">{{ label }}</label>
 
-    <div v-if="hasExtrasSlot" class="form__extras">
-      <slot name="extras"></slot>
+    <div v-if="hasActionSlot" class="form__action">
+      <slot name="action"></slot>
     </div>
 
     <p v-if="errors.has(name_default)" class="form__message">{{ errors.first(name_default) }}</p>
@@ -162,8 +162,8 @@ export default {
       )
     },
 
-    hasExtrasSlot () {
-      return this.$slots.extras
+    hasActionSlot () {
+      return this.$slots.action
     }
   },
 

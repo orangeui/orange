@@ -158,7 +158,7 @@
           validate_name="Email address"
         >
 
-          <o-button text="send message" size="small" slot="extras" />
+          <o-button text="send message" size="small" slot="action" />
 
         </o-input>
       </form>
@@ -172,7 +172,7 @@
             <div class="form__input-wrapper">
               <input id="form_large_button_read_only" type="text" name="form_large_button_read_only" readonly="readonly" class="form__input is-full" value="1231231231231231">
               <label for="form_large_button_read_only" class="form__label">Your API key</label>
-              <div class="form__extras">
+              <div class="form__action">
                 <button type="button" class="button button--small">
                   copy to clipboard
                 </button>
@@ -194,7 +194,7 @@
           :read_only="true"
         >
 
-          <o-button text="copy to clipboard" size="small" slot="extras" />
+          <o-button text="copy to clipboard" size="small" slot="action" />
 
         </o-input>
       </form>
@@ -585,7 +585,7 @@ export default {
     validate_name="Email address"
   >
 
-    <o-button text="send message" size="small" slot="extras" />
+    <o-button text="send message" size="small" slot="action" />
 
   </o-input>
 </form>`,
@@ -598,7 +598,7 @@ export default {
     :read_only="true"
   >
 
-    <o-button text="copy to clipboard" size="small" slot="extras" />
+    <o-button text="copy to clipboard" size="small" slot="action" />
 
   </o-input>
 </form>`,
@@ -607,7 +607,7 @@ export default {
     <input id="form_large_button_read_only" type="text" name="form_large_button_read_only" readonly="readonly" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
     <label for="form_large_button_read_only" class="form__label">Your API key</label>
 
-    <div class="form__extras">
+    <div class="form__action">
       <button type="button" class="button button--small">
         copy to clipboard
       </button>
