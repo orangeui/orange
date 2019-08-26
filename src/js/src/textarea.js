@@ -1,40 +1,67 @@
-(function() {
-  const ACTIVE_CLASS = "is-full";
-  const TEXTAREA_AUTO_EXPAND_DATA_SETTING = 'data-auto-expand';
-  const MAIN_TEXTAREA_ELEMENT = ".form textarea.form__textarea";
-  const textareas = document.querySelectorAll(MAIN_TEXTAREA_ELEMENT);
+/**
+ * --------------------------------------------------------------------------
+ * Orange (v1.2.0): js//src/textarea.js
+ * Licensed under MIT
+ * --------------------------------------------------------------------------
+ */
 
+const Textarea = (function() {
+  
+  /**
+  * ------------------------------------------------------------------------
+  * Constants
+  * ------------------------------------------------------------------------
+  */
+  const Classes = {
+    _active_class: "is-full"
+  }
+
+  const Selectors = {
+    _textarea: ".form .form__textarea",
+    auto_expand: 'data-auto-expand'
+  }
+
+  const textareas = document.querySelectorAll(Selectors._textarea);
+
+
+
+  /**
+  * ------------------------------------------------------------------------
+  * Methods
+  * ------------------------------------------------------------------------
+  */
   function activateTextareas() {
     for (let i = 0; i < textareas.length; i++) {
       let textarea = textareas[i];
 
       if (typeof textarea.value === "string" && textarea.value !== ''){
-        textarea.classList.add(ACTIVE_CLASS);
+        textarea.classList.add(Classes._active_class);
       } 
 
-      textarea.addEventListener("focusin", toggleActiveClass, false);
-      textarea.addEventListener("focusout", toggleActiveClass, false);
+      // textarea.addEventListener("focusin", toggleActiveClass, false);
+      // textarea.addEventListener("focusout", toggleActiveClass, false);
 
-      let auto_expand_enabled = textarea.hasAttribute(TEXTAREA_AUTO_EXPAND_DATA_SETTING)
-      if (auto_expand_enabled){
-        textarea.addEventListener("input", autoExpandTextarea, false);
-      }
+      // let auto_expand_enabled = textarea.hasAttribute(Selectors._auto_expand)
+      // if (auto_expand_enabled){
+      //   textarea.addEventListener("input", autoExpandTextarea, false);
+      // }
     }    
   }  
   
   function toggleActiveClass(evt) {
+    console.log(evt)
     let textarea = evt.target;
     let textarea_has_text = textarea.value !== "" && textarea.value !== null;
     if (textarea_has_text) {
-      textarea.classList.add(ACTIVE_CLASS);
+      textarea.classList.add(Classes._active_class);
     } else {
-      textarea.classList.remove(ACTIVE_CLASS);
+      textarea.classList.remove(Classes._active_class);
     }
     if (evt.type === "focusin") {
-      textarea.classList.add(ACTIVE_CLASS);
+      textarea.classList.add(Classes._active_class);
     }
     if (evt.type === "focusout" && !textarea_has_text) {
-      textarea.classList.remove(ACTIVE_CLASS);
+      textarea.classList.remove(Classes._active_class);
     }
   }
 
@@ -48,8 +75,43 @@
     }
   }
 
-  if (textareas.length) {
-    activateTextareas();  
+  /**
+  * ------------------------------------------------------------------------
+  * Expose public variables and functions
+  * ------------------------------------------------------------------------
+  */
+  return {
+    textareas: textareas,
+    activateTextareas: activateTextareas,
+    toggleActiveClass: toggleActiveClass,
+    autoExpandTextarea: autoExpandTextarea,
+    auto_expand: Selectors.auto_expand
   }
   
 })();
+
+// // On init run activateTextareas if they exist
+if (Textarea.textareas.length) {
+  Textarea.activateTextareas();  
+}
+
+// Add focusin event
+document.addEventListener('focusin', function (event) {
+  Textarea.toggleActiveClass(event)
+})
+
+// Add focusout event
+document.addEventListener('focusout', function (event) {
+  Textarea.toggleActiveClass(event)
+})
+
+// Add input event (check if typing inside textarea)
+document.addEventListener('input', function (event) {
+  let auto_expand_enabled = event.target.hasAttribute(Textarea.auto_expand)
+
+  if (event.target.classList.contains('form__textarea') && auto_expand_enabled){
+    Textarea.autoExpandTextarea(event)
+  }
+})
+
+export default Textarea
