@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * Orange (v1.2.0): js//src/toggle.js
+ * Orange (v1.2.0): js//src/input.js
  * Licensed under MIT
  * --------------------------------------------------------------------------
  */
@@ -12,6 +12,7 @@ const Input = (function() {
   * Constants
   * ------------------------------------------------------------------------
   */
+
   const Classes = {
     _active_class: "is-full"
   }
@@ -22,6 +23,15 @@ const Input = (function() {
 
   const text_inputs = document.querySelectorAll(Selectors._input);
 
+
+
+  /**
+  * ------------------------------------------------------------------------
+  * Functions
+  * ------------------------------------------------------------------------
+  */
+
+  // Function to activate all inputs
   function activateTextInputs() {
     for (var i = 0; i < text_inputs.length; i++) {
       let text_input = text_inputs[i];
@@ -35,6 +45,7 @@ const Input = (function() {
     }    
   }  
   
+  // Function to toggle active class
   function toggleActiveClass(evt) {
     let input = evt.target;
     let input_has_text = input.value !== "" && input.value !== null;
@@ -54,6 +65,13 @@ const Input = (function() {
     }
   }
 
+
+
+  /**
+  * ------------------------------------------------------------------------
+  * Expose public variables and functions
+  * ------------------------------------------------------------------------
+  */
   return {
     text_inputs: text_inputs,
     activateTextInputs: activateTextInputs,
@@ -62,16 +80,15 @@ const Input = (function() {
   
 })();
 
+// On init run activateTextInputs if they exist
 if (Input.text_inputs.length){
   Input.activateTextInputs();  
 }
 
-document.addEventListener('focusin', function (event) {
-  Input.toggleActiveClass(event)
-})
+// Add focusin event
+document.addEventListener('focusin', Input.toggleActiveClass, false)
 
-document.addEventListener('focusout', function (event) {
-  Input.toggleActiveClass(event)
-})
+// Add focusout event
+document.addEventListener('focusout', Input.toggleActiveClass, false)
 
 export default Input

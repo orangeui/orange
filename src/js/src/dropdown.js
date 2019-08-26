@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * Orange (v1.2.0): js//src/toggle.js
+ * Orange (v1.2.0): js//src/dropdown.js
  * Licensed under MIT
  * --------------------------------------------------------------------------
  */
@@ -28,14 +28,46 @@ const Dropdown = (function() {
 
   let dropdowns;
   
+
+
+  /**
+  * ------------------------------------------------------------------------
+  * Functions
+  * ------------------------------------------------------------------------
+  */
+
+  // Private
+
+  // Function to check if dropdown is opened
+  function _isOpen(dropdown_el) {
+    return dropdown_el.classList.contains(Classes._open_class);
+  }
+
+  // Function to select option
+  function _selectDropdownOption(evt) {
+    evt.stopPropagation();
+    
+    var option = evt.target;
+    var option_value = option.innerText;
+    var current_dropdown = option.closest(Selectors.dropdown);
+    current_dropdown.querySelector(Selectors._input).value = option_value;
+    current_dropdown.querySelector(Selectors._text).innerText = option_value;
+
+    current_dropdown.classList.add(Classes._active_class); 
+    current_dropdown.classList.remove(Classes._open_class);
+
+    // toggleDropdown(evt);
+  }
+
+
+  // Public
+
+  // Function to get all dropdowns
   function getDropdowns() {
     dropdowns = document.querySelectorAll(Selectors.dropdown);
   }
 
-  function isOpen(dropdown_el) {
-    return dropdown_el.classList.contains(Classes._open_class);
-  } 
-
+  // Function to activate all dropdowns
   function activateDropdowns() {
     getDropdowns();
 
@@ -52,7 +84,7 @@ const Dropdown = (function() {
       let options = dropdown.querySelectorAll(Selectors._option);
       for (let ii = 0; ii < options.length; ii++) {
         let dropdown_option = options[ii];
-        dropdown_option.addEventListener("click", selectDropdownOption, false);
+        dropdown_option.addEventListener("click", _selectDropdownOption, false);
       }
     }
 
@@ -64,31 +96,18 @@ const Dropdown = (function() {
     });
   }
 
+  // Function to toggle dropdown active class
   function toggleDropdown(evt) {
     let dropdown = evt.target;
     let current_dropdown = dropdown.closest(Selectors.dropdown);
-    if (isOpen(current_dropdown)) {
+    if (_isOpen(current_dropdown)) {
       current_dropdown.classList.remove(Classes._open_class);
     } else {
       current_dropdown.classList.add(Classes._open_class);
     }
   }
   
-  function selectDropdownOption(evt) {
-    evt.stopPropagation();
-    
-    var option = evt.target;
-    var option_value = option.innerText;
-    var current_dropdown = option.closest(Selectors.dropdown);
-    current_dropdown.querySelector(Selectors._input).value = option_value;
-    current_dropdown.querySelector(Selectors._text).innerText = option_value;
-
-    current_dropdown.classList.add(Classes._active_class); 
-    current_dropdown.classList.remove(Classes._open_class);
-
-    // toggleDropdown(evt);
-  }
-
+  // Function to close dropdowns
   function closeDropdowns() {
     if (dropdowns === undefined || dropdowns.length === 0) {
       getDropdowns();
@@ -100,21 +119,29 @@ const Dropdown = (function() {
     }
   }  
 
+
+
+  /**
+  * ------------------------------------------------------------------------
+  * Expose public variables and functions
+  * ------------------------------------------------------------------------
+  */
   return {
     dropdowns: dropdowns,
+    getDropdowns: getDropdowns,
     activateDropdowns: activateDropdowns,
     toggleDropdown: toggleDropdown,
     closeDropdowns: closeDropdowns,
-    dropdown: Selectors.dropdown,
-    getDropdowns: getDropdowns
+    dropdown: Selectors.dropdown
   }
   
 })()
 
+// On init run getDropdowns
 Dropdown.getDropdowns();
 
 // On init run activateToggles if they exist
-if (Dropdown.dropdowns){
+if (Dropdown.dropdowns) {
   Dropdown.activateDropdowns()
 }
 
@@ -123,6 +150,7 @@ document.addEventListener('click', function (event) {
   if (!Dropdown.dropdowns){
     Dropdown.activateDropdowns()
   }
+
   const isDropdownLabel = event.target.classList.contains('form-dropdown__label') || 
                           event.target.classList.contains('form-dropdown__text')
 
@@ -130,9 +158,9 @@ document.addEventListener('click', function (event) {
     Dropdown.toggleDropdown(event)
   }
 
-  if (!event.target.closest(Dropdown.dropdown)){
-    event.stopPropagation();
-    Dropdown.closeDropdowns();
+  if (!event.target.closest(Dropdown.dropdown)) {
+    event.stopPropagation()
+    Dropdown.closeDropdowns()
   }
 })
 

@@ -12,6 +12,7 @@ const Textarea = (function() {
   * Constants
   * ------------------------------------------------------------------------
   */
+
   const Classes = {
     _active_class: "is-full"
   }
@@ -27,9 +28,13 @@ const Textarea = (function() {
 
   /**
   * ------------------------------------------------------------------------
-  * Methods
+  * Functions
   * ------------------------------------------------------------------------
   */
+
+  // Public
+
+  // Function to activate all textareas
   function activateTextareas() {
     for (let i = 0; i < textareas.length; i++) {
       let textarea = textareas[i];
@@ -48,8 +53,8 @@ const Textarea = (function() {
     }    
   }  
   
+  // Function to toggle active class
   function toggleActiveClass(evt) {
-    console.log(evt)
     let textarea = evt.target;
     let textarea_has_text = textarea.value !== "" && textarea.value !== null;
     if (textarea_has_text) {
@@ -65,6 +70,7 @@ const Textarea = (function() {
     }
   }
 
+  // Function to add posibility for auto expanding textarea
   function autoExpandTextarea(evt) {
     let el = evt.target;
     if (el.value) {
@@ -74,6 +80,8 @@ const Textarea = (function() {
       el.style.height = '';
     }
   }
+
+
 
   /**
   * ------------------------------------------------------------------------
@@ -90,20 +98,16 @@ const Textarea = (function() {
   
 })();
 
-// // On init run activateTextareas if they exist
+// On init run activateTextareas if they exist
 if (Textarea.textareas.length) {
   Textarea.activateTextareas();  
 }
 
 // Add focusin event
-document.addEventListener('focusin', function (event) {
-  Textarea.toggleActiveClass(event)
-})
+document.addEventListener('focusin', Textarea.toggleActiveClass, false)
 
 // Add focusout event
-document.addEventListener('focusout', function (event) {
-  Textarea.toggleActiveClass(event)
-})
+document.addEventListener('focusout', Textarea.toggleActiveClass, false)
 
 // Add input event (check if typing inside textarea)
 document.addEventListener('input', function (event) {

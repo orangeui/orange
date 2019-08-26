@@ -32,30 +32,18 @@ const Toggle = (function() {
   
   const all_toggles = document.querySelectorAll(Selectors._toggle)
 
-  // Function to activate all toggles
-  function activateToggles() {
-    for (let i = 0; all_toggles.length > i; i++) {
-      let toggle_wrapper = all_toggles[i]
-      let toggle_input = toggle_wrapper.querySelector(Selectors._input)
-      let value_element = toggle_wrapper.querySelector(Selectors._value)
 
-      assignValue(toggle_input, value_element)
 
-      toggle_input.addEventListener("change", toggleValue, false)
-    }
-  }
+  /**
+  * ------------------------------------------------------------------------
+  * Functions
+  * ------------------------------------------------------------------------
+  */
 
-  // Function to change value
-  function toggleValue(event) {
-    const toggle = event.target
-    const current_wrapper = toggle.closest(Selectors._toggle)
-    const value_element = current_wrapper.querySelector(Selectors._value)
-
-    assignValue(toggle, value_element)
-  }
+  // Private 
 
   // Function to assign value to toggle
-  function assignValue(toggle, value_element) {
+  function _assignValue(toggle, value_element) {
     let parent_toggle = toggle.closest(Selectors._toggle)
 
     if (toggle.checked) {
@@ -76,7 +64,37 @@ const Toggle = (function() {
     }
   }
 
-  // Return public variables and functions
+  // Public
+  
+  // Function to activate all toggles
+  function activateToggles() {
+    for (let i = 0; all_toggles.length > i; i++) {
+      let toggle_wrapper = all_toggles[i]
+      let toggle_input = toggle_wrapper.querySelector(Selectors._input)
+      let value_element = toggle_wrapper.querySelector(Selectors._value)
+
+      _assignValue(toggle_input, value_element)
+
+      toggle_input.addEventListener("change", toggleValue, false)
+    }
+  }
+
+  // Function to change value
+  function toggleValue(event) {
+    const toggle = event.target
+    const current_wrapper = toggle.closest(Selectors._toggle)
+    const value_element = current_wrapper.querySelector(Selectors._value)
+
+    _assignValue(toggle, value_element)
+  }
+
+  
+
+  /**
+  * ------------------------------------------------------------------------
+  * Expose public variables and functions
+  * ------------------------------------------------------------------------
+  */
   return {
     all_toggles: all_toggles,
     activateToggles: activateToggles,
