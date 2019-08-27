@@ -92,9 +92,7 @@
   }
 }
 
-.form__textarea {
-  min-height: $spacing-base * 5;
-}
+.form__textarea {}
 
 
 /** Form label
@@ -218,5 +216,9 @@
 
   .form__extras, .form__action {
     height: $input-height-large;
+  }
+  
+  .form__textarea {
+    height: auto;
   }
 }
