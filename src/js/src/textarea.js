@@ -19,6 +19,7 @@ const Textarea = (function() {
 
   const Selectors = {
     _textarea: ".form .form__textarea",
+    _read_only: 'readonly',
     auto_expand: 'data-auto-expand'
   }
 
@@ -51,7 +52,9 @@ const Textarea = (function() {
   function toggleActiveClass(event) {
     let textarea = event.target;
     let textarea_has_text = textarea.value !== "" && textarea.value !== null;
-    if (textarea_has_text || event.type === "focusin") {
+    let textarea_readonly = textarea.getAttribute('readonly') === 'readonly' || textarea.getAttribute('readonly') === "";
+
+    if (textarea_has_text || event.type === "focusin" && !textarea_readonly) {
       textarea.classList.add(Classes._active_class);
     } else if (event.type === "focusout" && !textarea_has_text || !textarea_has_text) {
       textarea.classList.remove(Classes._active_class);
