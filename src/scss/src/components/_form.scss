@@ -45,7 +45,7 @@
   width: 100%;
   border: $border;
   transition: 0.05s ease-in-out;
-  line-height: $line-height;
+  line-height: fontSize('delta') + 4px;
   height: auto;
 
   &:focus {
@@ -103,16 +103,15 @@
   top: 0;
   left: 0;
   height: 100%;
-  border: 1px solid transparent;
   font-size: fontSize('delta');
   font-weight: fontWeight('normal');
+  line-height: fontSize('delta');
   margin: 0;
   padding: $spacing-base $spacing-base / 2;
   color: color('gray', 'light');
   width: 100%;
   transition: 0.1s ease-in-out;
-  line-height: $line-height;
-  height: $input-height-large;
+  min-height: $input-height-large;
 }
 
 
@@ -184,8 +183,8 @@
 .form--large {
   .form__input,
   .form__textarea {
-    padding: $spacing-base $spacing-base / 2;
-    height: $input-height-large;
+    padding: (($input-height-large / 2) - ($input-large-line-height / 2) - 2px) $spacing-small; // the 2px account for the border
+    min-height: $input-height-large;
 
     + .form__label {
       display: block;
@@ -193,7 +192,7 @@
 
     &.is-full,
     &.has-placeholder {
-      padding: ($spacing-base * 1.5) ($spacing-base / 2) ($spacing-base / 2);
+      padding: ($spacing-base + 4px) ($spacing-base / 2) ($spacing-base / 2);
 
       + .form__label {
         padding: ($spacing-base / 2) ($spacing-base / 2) 0;
@@ -215,9 +214,9 @@
   }
 
   .form__extras, .form__action {
-    height: $input-height-large;
+    height: 100%;
   }
-  
+
   .form__textarea {
     height: auto;
   }

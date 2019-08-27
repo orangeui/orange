@@ -156,7 +156,9 @@ $border-radius-progress-bar: 9px !default;
 
 /** Form */
 $input-height: 40px !default;
-$input-height-large: 70px !default;
+$input-line-height: 18px !default;
+$input-height-large: 64px !default;
+$input-large-line-height: 22px !default;
 
 /** Checkbox */
 $checkbox-width-height: $spacing-base * 0.75 !default;

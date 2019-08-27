@@ -36,8 +36,8 @@
   border: $border;
   border-radius: $border-radius-main;
   height: $input-height;
-  font-size: fontSize('zeta');
-  padding: $spacing-small;
+  font-size: fontSize('epsilon');
+  padding: (($input-height / 2) - ($input-line-height / 2) - 2px) $spacing-small; // the 2px account for the border
 }
 
 
@@ -284,14 +284,14 @@
   .form-dropdown {
     .form-dropdown__label {
       font-size: fontSize('delta');
-      padding: ($spacing-base) ($spacing-base / 2);
-      height: $input-height-large;
+      padding: (($input-height-large / 2) - ($input-large-line-height / 2) - 2px) $spacing-small; // the 2px account for the border
+      min-height: $input-height-large;
     }
 
     .form-dropdown__text {
       font-size: fontSize('delta');
-      padding: ($spacing-base * 1.5) ($spacing-base / 2) ($spacing-base / 2);
-      height: $input-height-large;
+      padding: ($spacing-base + 4px) ($spacing-base / 2) ($spacing-base / 2);
+      min-height: $input-height-large;
     }
 
     &.is-full,
