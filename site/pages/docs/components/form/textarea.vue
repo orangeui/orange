@@ -32,13 +32,11 @@
       </form>
     </docs-item>
 
-
-
     <!-- Read-only  -->
     <docs-item title="Read-only" :code="textarea_read_only_html" v-if="is_html">
       <form class="form form--large" slot="body">
         <div class="form__item">
-          <textarea name="textarea_read_only" id="textarea_read_only" readonly="readonly" rows="3" class="form__textarea"></textarea>
+          <textarea name="textarea_read_only" id="textarea_read_only" readonly rows="3" class="form__textarea"></textarea>
           <label for="textarea_read_only" class="form__label">Label</label>
           <div class="form__description">Description text</div>
         </div>
@@ -75,7 +73,7 @@
 
     <!-- Disabled  -->
     <docs-item title="Disabled" :code="textarea_disabled_html" v-if="is_html">
-      <form class="form form--large">
+      <form class="form form--large" slot="body">
         <div class="form__item">
           <textarea name="textarea_disabled" id="textarea_disabled" disabled="disabled" rows="3" class="form__textarea"></textarea>
           <label for="textarea_disabled" class="form__label">Label</label>
@@ -128,7 +126,15 @@
         <tr>
           <td>read-only</td>
           <td>Set with <code>readonly</code> attribute on <code>textarea</code></td>
-          <td><code>disabled</code></td>
+          <td><code>readonly</code></td>
+          <td>string</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>data-auto-expand</td>
+          <td>Set with <code>data-auto-expand</code> attribute on <code>textarea</code>, that makes textarea autoresize</td>
+          <td><code>data-auto-expand</code></td>
           <td>string</td>
           <td>-</td>
           <td>-</td>
@@ -249,6 +255,12 @@
 </template>
 
 <script>
+
+// Import js for textarea
+if (process.browser) {
+  require('../../../../../src/js/src/textarea.js');
+}
+
 export default {
   name: 'DocsTextarea',
 
