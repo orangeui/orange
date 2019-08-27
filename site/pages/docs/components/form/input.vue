@@ -15,11 +15,7 @@
     <docs-item title="Basic" :code="input_html" v-if="!is_html">
       <form class="form" slot="body">
         <div class="form__item">
-          <div class="form__wrapper">
-            <div class="form__input-wrapper">
-              <input id="form_id" type="text" name="form_id" placeholder="Label" class="form__input">
-            </div>
-          </div>
+          <input id="form_id" type="text" name="form_id" placeholder="Label" class="form__input">
 
           <p class="form__description">Description text</p>
         </div>
@@ -70,11 +66,7 @@
     <docs-item title="Read-only" :code="input_validation_read_only_html" v-if="!is_html">
       <form class="form" slot="body">
         <div class="form__item">
-          <div class="form__wrapper">
-            <div class="form__input-wrapper">
-              <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input">
-            </div>
-          </div>
+          <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input">
         </div>
       </form>
     </docs-item>
@@ -94,12 +86,9 @@
     <docs-item title="Large" :code="input_large_html" v-if="!is_html">
       <form class="form form--large" slot="body">
         <div class="form__item">
-          <div class="form__wrapper">
-            <div class="form__input-wrapper">
-              <input id="form_large" type="text" name="form_large" class="form__input">
-              <label for="form_large" class="form__label">Label</label>
-            </div>
-          </div>
+          <input id="form_large" type="text" name="form_large" class="form__input">
+          <label for="form_large" class="form__label">Label</label>
+
           <p class="form__description">Description text</p>
         </div>
       </form>
@@ -135,12 +124,8 @@
     <docs-item title="Large and read-only" :code="input_read_only_large">
       <form class="form form--large" slot="body">
         <div class="form__item">
-          <div class="form__wrapper">
-            <div class="form__input-wrapper">
-              <input id="form_large_read_only" type="text" name="form_large_read_only" readonly="readonly" class="form__input">
-              <label for="form_large_read_only" class="form__label">Label</label>
-            </div>
-          </div>
+          <input id="form_large_read_only" type="text" name="form_large_read_only" readonly="readonly" class="form__input">
+          <label for="form_large_read_only" class="form__label">Label</label>
         </div>
       </form>
     </docs-item>
@@ -168,17 +153,15 @@
     <docs-item title="Large, read-only with a button" :code="input_large_read_only_button_html" v-if="!is_html">
       <form class="form form--large" slot="body">
         <div class="form__item has-extras">
-          <div class="form__wrapper">
-            <div class="form__input-wrapper">
-              <input id="form_large_button_read_only" type="text" name="form_large_button_read_only" readonly="readonly" class="form__input is-full" value="1231231231231231">
-              <label for="form_large_button_read_only" class="form__label">Your API key</label>
-              <div class="form__action">
-                <button type="button" class="button button--small">
-                  copy to clipboard
-                </button>
-              </div>
-            </div>
+          <input id="form_large_button_read_only" type="text" name="form_large_button_read_only" readonly="readonly" class="form__input is-full" value="1231231231231231">
+          <label for="form_large_button_read_only" class="form__label">Your API key</label>
+
+          <div class="form__action">
+            <button type="button" class="button button--small">
+              copy to clipboard
+            </button>
           </div>
+
           <p class="form__description">To change your API key please contact support</p>
         </div>
       </form>
@@ -195,7 +178,6 @@
         >
 
           <o-button text="copy to clipboard" size="small" slot="action" />
-
         </o-input>
       </form>
     </docs-item>
