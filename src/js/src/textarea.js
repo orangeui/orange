@@ -44,14 +44,6 @@ const Textarea = (function() {
       if (typeof textarea.value === "string" && textarea.value !== ''){
         textarea.classList.add(Classes._active_class);
       }
-
-      // textarea.addEventListener("focusin", toggleActiveClass, false);
-      // textarea.addEventListener("focusout", toggleActiveClass, false);
-
-      // let auto_expand_enabled = textarea.hasAttribute(Selectors._auto_expand)
-      // if (auto_expand_enabled){
-      //   textarea.addEventListener("input", autoExpandTextarea, false);
-      // }
     }
   }
 
@@ -64,17 +56,6 @@ const Textarea = (function() {
     } else if (event.type === "focusout" && !textarea_has_text || !textarea_has_text) {
       textarea.classList.remove(Classes._active_class);
     }
-    /*if (textarea_has_text) {
-      textarea.classList.add(Classes._active_class);
-    } else {
-      textarea.classList.remove(Classes._active_class);
-    }
-    if (event.type === "focusin") {
-      textarea.classList.add(Classes._active_class);
-    }
-    if (event.type === "focusout" && !textarea_has_text) {
-      textarea.classList.remove(Classes._active_class);
-    }*/
   }
 
   // Function to add posibility for auto expanding textarea

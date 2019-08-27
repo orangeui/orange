@@ -43,9 +43,6 @@ const Input = (function() {
       if (typeof text_input.value === "string" && text_input.value !== ''){
         text_input.classList.add(Classes._active_class);
       }
-
-      // text_input.addEventListener("focusin", toggleActiveClass, false);
-      // text_input.addEventListener("focusout", toggleActiveClass, false);
     }
   }
 
@@ -61,19 +58,6 @@ const Input = (function() {
         input.classList.remove(Classes._active_class);
       }
     }
-    /*if (input.classList.contains('form__input')) {
-      if (input_has_text) {
-        input.classList.add(Classes._active_class);
-      } else {
-        input.classList.remove(Classes._active_class);
-      }
-      if (event.type === "focusin" && input.getAttribute('readonly') === null) {
-        input.classList.add(Classes._active_class);
-      }
-      if (event.type === "focusout" && !input_has_text) {
-        input.classList.remove(Classes._active_class);
-      }
-    }*/
   }
 
 

@@ -50,18 +50,12 @@ const Toggle = (function() {
 
     if (toggle.checked) {
       _getDataSetting(value_element, '_enabled')
-      /*if (value_element) {
-        value_element.innerText = value_element.getAttribute(Selectors._enabled_data_setting) || State._enabled_default
-      }*/
 
       parent_toggle.classList.add(Classes._active_class)
 
     } else {
       _getDataSetting(value_element, '_disabled')
-      /*if (value_element) {
-        value_element.innerText = value_element.getAttribute(Selectors._disabled_data_setting) || State._disabled_default
-      }*/
-
+      
       parent_toggle.classList.remove(Classes._active_class)
     }
   }

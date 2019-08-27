@@ -49,16 +49,14 @@ const Dropdown = (function() {
   function _selectDropdownOption(event) {
     event.stopPropagation();
     
-    var option = event.target;
-    var option_value = option.innerText;
-    var current_dropdown = option.closest(Selectors.dropdown);
+    let option = event.target;
+    let option_value = option.innerText;
+    let current_dropdown = option.closest(Selectors.dropdown);
     current_dropdown.querySelector(Selectors._input).value = option_value;
     current_dropdown.querySelector(Selectors._text).innerText = option_value;
 
     current_dropdown.classList.add(Classes._active_class); 
     current_dropdown.classList.remove(Classes._open_class);
-
-    // toggleDropdown(event);
   }
 
 
@@ -117,8 +115,8 @@ const Dropdown = (function() {
       getDropdowns();
     }
 
-    for (var i = 0; i < dropdowns.length; i++) {
-      var dropdown = dropdowns[i];
+    for (let i = 0; i < dropdowns.length; i++) {
+      let dropdown = dropdowns[i];
       dropdown.classList.remove(Classes._open_class); 
     }
   }  
