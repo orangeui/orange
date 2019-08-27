@@ -54,12 +54,12 @@ const Textarea = (function() {
   }
 
   // Function to toggle active class
-  function toggleActiveClass(evt) {
-    let textarea = evt.target;
+  function toggleActiveClass(event) {
+    let textarea = event.target;
     let textarea_has_text = textarea.value !== "" && textarea.value !== null;
-    if (textarea_has_text || evt.type === "focusin") {
+    if (textarea_has_text || event.type === "focusin") {
       textarea.classList.add(Classes._active_class);
-    } else if (evt.type === "focusout" && !textarea_has_text || !textarea_has_text) {
+    } else if (event.type === "focusout" && !textarea_has_text || !textarea_has_text) {
       textarea.classList.remove(Classes._active_class);
     }
     /*if (textarea_has_text) {
@@ -67,17 +67,17 @@ const Textarea = (function() {
     } else {
       textarea.classList.remove(Classes._active_class);
     }
-    if (evt.type === "focusin") {
+    if (event.type === "focusin") {
       textarea.classList.add(Classes._active_class);
     }
-    if (evt.type === "focusout" && !textarea_has_text) {
+    if (event.type === "focusout" && !textarea_has_text) {
       textarea.classList.remove(Classes._active_class);
     }*/
   }
 
   // Function to add posibility for auto expanding textarea
-  function autoExpandTextarea(evt) {
-    const el = evt.target;
+  function autoExpandTextarea(event) {
+    const el = event.target;
     const offset = el.offsetHeight - el.clientHeight;
 
     if (el.value) {

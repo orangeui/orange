@@ -44,10 +44,10 @@ const Dropdown = (function() {
   }
 
   // Function to select option
-  function _selectDropdownOption(evt) {
-    evt.stopPropagation();
+  function _selectDropdownOption(event) {
+    event.stopPropagation();
     
-    var option = evt.target;
+    var option = event.target;
     var option_value = option.innerText;
     var current_dropdown = option.closest(Selectors.dropdown);
     current_dropdown.querySelector(Selectors._input).value = option_value;
@@ -56,7 +56,7 @@ const Dropdown = (function() {
     current_dropdown.classList.add(Classes._active_class); 
     current_dropdown.classList.remove(Classes._open_class);
 
-    // toggleDropdown(evt);
+    // toggleDropdown(event);
   }
 
 
@@ -88,17 +88,17 @@ const Dropdown = (function() {
       }
     }
 
-    document.addEventListener('click', function(evt){
-      if (!evt.target.closest(Selectors.dropdown)){
-        evt.stopPropagation();
+    document.addEventListener('click', function(event){
+      if (!event.target.closest(Selectors.dropdown)){
+        event.stopPropagation();
         closeDropdowns();
       }
     });
   }
 
   // Function to toggle dropdown active class
-  function toggleDropdown(evt) {
-    let dropdown = evt.target;
+  function toggleDropdown(event) {
+    let dropdown = event.target;
     let current_dropdown = dropdown.closest(Selectors.dropdown);
     if (_isOpen(current_dropdown)) {
       current_dropdown.classList.remove(Classes._open_class);

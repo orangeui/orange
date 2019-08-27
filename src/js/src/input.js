@@ -46,14 +46,14 @@ const Input = (function() {
   }
 
   // Function to toggle active class
-  function toggleActiveClass(evt) {
-    let input = evt.target;
+  function toggleActiveClass(event) {
+    let input = event.target;
     let input_has_text = input.value !== "" && input.value !== null;
 
     if (input.classList.contains('form__input')) {
-      if (input_has_text || evt.type === "focusin" && input.getAttribute('readonly') === null) {
+      if (input_has_text || event.type === "focusin" && input.getAttribute('readonly') === null) {
         input.classList.add(Classes._active_class);
-      } else if(evt.type === "focusout" && !input_has_text || !input_has_text) {
+      } else if(event.type === "focusout" && !input_has_text || !input_has_text) {
         input.classList.remove(Classes._active_class);
       }
     }
@@ -63,10 +63,10 @@ const Input = (function() {
       } else {
         input.classList.remove(Classes._active_class);
       }
-      if (evt.type === "focusin" && input.getAttribute('readonly') === null) {
+      if (event.type === "focusin" && input.getAttribute('readonly') === null) {
         input.classList.add(Classes._active_class);
       }
-      if (evt.type === "focusout" && !input_has_text) {
+      if (event.type === "focusout" && !input_has_text) {
         input.classList.remove(Classes._active_class);
       }
     }*/
