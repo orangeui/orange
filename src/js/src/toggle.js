@@ -6,7 +6,7 @@
  */
 
 const Toggle = (function() {
-  
+
   /**
   * ------------------------------------------------------------------------
   * Constants
@@ -17,7 +17,7 @@ const Toggle = (function() {
     _enabled_default: "On",
     _disabled_default: "Off"
   }
-  
+
   const Classes = {
     _active_class: "is-checked"
   }
@@ -29,7 +29,7 @@ const Toggle = (function() {
     _enabled_data_setting: "data-enabled",
     _disabled_data_setting: "data-disabled"
   }
-  
+
   const all_toggles = document.querySelectorAll(Selectors._toggle)
 
 
@@ -40,32 +40,38 @@ const Toggle = (function() {
   * ------------------------------------------------------------------------
   */
 
-  // Private 
+  // Private
 
   // Function to assign value to toggle
   function _assignValue(toggle, value_element) {
     let parent_toggle = toggle.closest(Selectors._toggle)
 
     if (toggle.checked) {
-      if (value_element) {
-        let value_text = value_element.getAttribute(Selectors._enabled_data_setting) || State._enabled_default
-        value_element.innerText = value_text
-      }
+      _getDataSetting(value_element, '_enabled')
+      /*if (value_element) {
+        value_element.innerText = value_element.getAttribute(Selectors._enabled_data_setting) || State._enabled_default
+      }*/
 
       parent_toggle.classList.add(Classes._active_class)
 
     } else {
-      if (value_element) {
-        let value_text = value_element.getAttribute(Selectors._disabled_data_setting) || State._disabled_default
-        value_element.innerText = value_text
-      }
+      _getDataSetting(value_element, '_disabled')
+      /*if (value_element) {
+        value_element.innerText = value_element.getAttribute(Selectors._disabled_data_setting) || State._disabled_default
+      }*/
 
       parent_toggle.classList.remove(Classes._active_class)
     }
   }
 
+  function _getDataSetting (value_element, property) {
+    if (value_element) {
+      value_element.innerText = value_element.getAttribute(Selectors[`${property}_data_setting`]) || State[`${property}_default`]
+    }
+  }
+
   // Public
-  
+
   // Function to activate all toggles
   function activateToggles() {
     for (let i = 0; all_toggles.length > i; i++) {
@@ -88,7 +94,7 @@ const Toggle = (function() {
     _assignValue(toggle, value_element)
   }
 
-  
+
 
   /**
   * ------------------------------------------------------------------------
