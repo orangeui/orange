@@ -4,6 +4,10 @@
 
 .toggle {
   position: relative;
+  
+  * {
+    transition: $transition;
+  }
 }
 
 /** Toggle button
@@ -57,7 +61,7 @@
     opacity: .5;
     top: 0;
     left: 0;
-    transition: 0.2s ease-in;
+    transition: $transition;
   }
 
   &:after {
@@ -69,7 +73,7 @@
     border-radius: $spacing-base;
     background: color('white');
     box-shadow: shadow('secondary');
-    transition: 0.2s linear;
+    transition: $transition;
   }
 }
 
@@ -122,7 +126,6 @@
     color: color('secondary');
     border: 1px solid transparent;
     width: 100%;
-    transition: 0.05s ease-in-out;
     line-height: $input-large-line-height;
     min-height: $input-height-large;
   }
@@ -135,7 +138,6 @@
     border: $border;
     border-radius: $border-radius-main;
     width: 100%;
-    transition: 0.1s ease-in-out;
     line-height: $line-height;
     padding: $spacing-small $spacing-small 0;
     font-size: fontSize('omega');

@@ -32,6 +32,10 @@
   position: relative;
   font-size: fontSize('epsilon');
 
+  * {
+    transition: $transition;
+  }
+
   & + & {
     margin-left: $spacing-base;
   }
@@ -78,6 +82,7 @@
       font-family: "fomo-icons";
       color: color('white');
       font-size: $spacing-base; /** equals 24px */
+      transition: $transition;
     }
   }
 }
