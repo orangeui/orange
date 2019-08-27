@@ -88,7 +88,7 @@ const Dropdown = (function() {
       }
     }
 
-    document.querySelector('body').addEventListener('click', function(evt){
+    document.addEventListener('click', function(evt){
       if (!evt.target.closest(Selectors.dropdown)){
         evt.stopPropagation();
         closeDropdowns();
@@ -155,6 +155,7 @@ document.addEventListener('click', function (event) {
                           event.target.classList.contains('form-dropdown__text')
 
   if (isDropdownLabel) {
+    Dropdown.closeDropdowns()
     Dropdown.toggleDropdown(event)
   }
 
