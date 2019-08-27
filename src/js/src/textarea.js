@@ -32,7 +32,9 @@ const Textarea = (function() {
   * ------------------------------------------------------------------------
   */
 
-  // Public
+  /**
+  * Public
+  */
 
   // Function to activate all textareas
   function activateTextareas() {

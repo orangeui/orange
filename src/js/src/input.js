@@ -31,6 +31,10 @@ const Input = (function() {
   * ------------------------------------------------------------------------
   */
 
+  /**
+  * Public
+  */
+
   // Function to activate all inputs
   function activateTextInputs() {
     for (var i = 0; i < text_inputs.length; i++) {

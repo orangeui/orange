@@ -40,7 +40,9 @@ const Toggle = (function() {
   * ------------------------------------------------------------------------
   */
 
-  // Private
+  /**
+  * Private
+  */
 
   // Function to assign value to toggle
   function _assignValue(toggle, value_element) {
@@ -70,7 +72,10 @@ const Toggle = (function() {
     }
   }
 
-  // Public
+
+  /**
+  * Public
+  */
 
   // Function to activate all toggles
   function activateToggles() {

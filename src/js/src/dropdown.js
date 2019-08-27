@@ -36,7 +36,9 @@ const Dropdown = (function() {
   * ------------------------------------------------------------------------
   */
 
-  // Private
+  /**
+  * Private
+  */
 
   // Function to check if dropdown is opened
   function _isOpen(dropdown_el) {
@@ -60,7 +62,9 @@ const Dropdown = (function() {
   }
 
 
-  // Public
+  /**
+  * Public
+  */
 
   // Function to get all dropdowns
   function getDropdowns() {
