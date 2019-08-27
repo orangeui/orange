@@ -77,12 +77,14 @@ const Textarea = (function() {
 
   // Function to add posibility for auto expanding textarea
   function autoExpandTextarea(evt) {
-    let el = evt.target;
+    const el = evt.target;
+    const offset = el.offsetHeight - el.clientHeight;
+
     if (el.value) {
-      el.style.height = '0px';
-      el.style.height = el.scrollHeight + 'px';
+      el.style.height = 'auto';
+      el.style.height = el.scrollHeight + offset + 'px';
     } else {
-      el.style.height = '';
+      el.style.height = 'auto';
     }
   }
 
