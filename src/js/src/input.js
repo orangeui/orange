@@ -6,7 +6,7 @@
  */
 
 const Input = (function() {
-  
+
   /**
   * ------------------------------------------------------------------------
   * Constants
@@ -38,28 +38,22 @@ const Input = (function() {
 
       if (typeof text_input.value === "string" && text_input.value !== ''){
         text_input.classList.add(Classes._active_class);
-      } 
+      }
 
       // text_input.addEventListener("focusin", toggleActiveClass, false);
       // text_input.addEventListener("focusout", toggleActiveClass, false);
-    }    
-  }  
-  
+    }
+  }
+
   // Function to toggle active class
   function toggleActiveClass(evt) {
     let input = evt.target;
     let input_has_text = input.value !== "" && input.value !== null;
-    
+
     if (input.classList.contains('form__input')) {
-      if (input_has_text) {
+      if (input_has_text || evt.type === "focusin" && input.getAttribute('readonly') === null) {
         input.classList.add(Classes._active_class);
-      } else {
-        input.classList.remove(Classes._active_class);
-      }
-      if (evt.type === "focusin" && input.getAttribute('readonly') === null) {
-        input.classList.add(Classes._active_class);
-      }
-      if (evt.type === "focusout" && !input_has_text) {
+      } else if(evt.type === "focusout" && !input_has_text || !input_has_text) {
         input.classList.remove(Classes._active_class);
       }
     }
@@ -77,12 +71,12 @@ const Input = (function() {
     activateTextInputs: activateTextInputs,
     toggleActiveClass: toggleActiveClass
   }
-  
+
 })();
 
 // On init run activateTextInputs if they exist
 if (Input.text_inputs.length){
-  Input.activateTextInputs();  
+  Input.activateTextInputs();
 }
 
 // Add focusin event
