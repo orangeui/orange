@@ -95,6 +95,17 @@ Phasellus condimentum ultrices nisl, quis accumsan tortor malesuada ut. Donec mo
       </form>
     </docs-item>
 
+    <!-- Auto expand  -->
+    <docs-item title="Auto expand" :code="textarea_auto_expand_html" v-if="is_html">
+      <form class="form form--large" slot="body">
+        <div class="form__item">
+          <textarea name="textarea_auto_expand" id="textarea_auto_expand" data-auto-expand rows="3" class="form__textarea"></textarea>
+          <label for="textarea_auto_expand" class="form__label">Label</label>
+          <div class="form__description">Description text</div>
+        </div>
+      </form>
+    </docs-item>
+
     <!-- Usage  -->
     <docs-item title="Usage" v-if="is_html">
       <table class="table table--compact table--celled" slot="body">
@@ -331,6 +342,13 @@ export default {
   <div class="form__item">
     <textarea name="textarea_disabled" id="textarea_disabled" disabled="disabled" rows="3" class="form__textarea"></textarea>
     <label for="textarea_disabled" class="form__label">Label</label>
+    <div class="form__description">Description text</div>
+  </div>
+</form>`,
+      textarea_auto_expand_html: `<form class="form form--large">
+  <div class="form__item">
+    <textarea name="textarea_auto_expand" id="textarea_auto_expand" data-auto-expand rows="3" class="form__textarea"></textarea>
+    <label for="textarea_auto_expand" class="form__label">Label</label>
     <div class="form__description">Description text</div>
   </div>
 </form>`
