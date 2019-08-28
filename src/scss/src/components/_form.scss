@@ -105,15 +105,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  margin: $spacing-base $spacing-base / 2;
   font-size: fontSize('delta');
   font-weight: fontWeight('normal');
   line-height: fontSize('delta');
-  margin: 0;
-  padding: $spacing-base $spacing-base / 2;
   color: color('gray', 'light');
-  width: 100%;
-  min-height: $input-height-large;
 }
 
 
@@ -197,10 +193,25 @@
       padding: ($spacing-base + 4px) ($spacing-base / 2) ($spacing-base / 2);
 
       + .form__label {
-        padding: ($spacing-base / 2) ($spacing-base / 2) 0;
+        line-height: 1;
         height: auto;
         font-size: fontSize('omega');
         color: color('black');
+        margin: $spacing-small 0 0 $spacing-small;
+        z-index: +1;
+        
+        &::before {
+          content: " ";
+          position: absolute;
+          width: calc(100% + #{$spacing-small});
+          height: calc( 100% + #{$spacing-small} / 2);
+          left: -$spacing-small / 2;
+          top: -$spacing-small / 4;
+          background-color: color('white');
+          z-index: -1;
+          transition: none;
+          border-radius: $spacing-small;
+        }
       }
     }
 
