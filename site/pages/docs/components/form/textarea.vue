@@ -36,7 +36,9 @@
     <docs-item title="Read-only" :code="textarea_read_only_html" v-if="is_html">
       <form class="form form--large" slot="body">
         <div class="form__item">
-          <textarea name="textarea_read_only" id="textarea_read_only" readonly rows="3" class="form__textarea"></textarea>
+          <textarea name="textarea_read_only" id="textarea_read_only" readonly rows="10" class="form__textarea is-full">Nam diam odio, aliquam at libero vel, tristique varius odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque dictum purus vitae accumsan tempor. Proin non ante purus. Proin ornare consequat sem. Integer in leo eu dolor lobortis vehicula vitae sed augue. Integer ac lorem quis urna lobortis mattis. Aenean ac metus non enim tempor pharetra maximus ut leo. Nunc imperdiet purus a felis consectetur, quis dignissim lorem semper. Etiam tristique, massa quis efficitur aliquet, ex leo efficitur magna, ac feugiat lectus tellus et risus.
+
+Phasellus condimentum ultrices nisl, quis accumsan tortor malesuada ut. Donec mollis volutpat varius. Maecenas consequat nunc massa, non cursus magna commodo volutpat. Ut ut risus est. Pellentesque quis rutrum tellus. Proin vel lobortis velit, non consequat massa. Nam imperdiet sodales justo, pretium suscipit nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ut aliquam libero. Nunc pharetra, lorem a ultricies tristique, turpis nisi varius ligula, nec iaculis mauris ante vel lectus. Curabitur consectetur mauris nec sapien pharetra ultricies. Curabitur tempus volutpat leo finibus vulputate.</textarea>
           <label for="textarea_read_only" class="form__label">Label</label>
           <div class="form__description">Description text</div>
         </div>
@@ -298,7 +300,7 @@ export default {
 </form>`,
       textarea_read_only_html: `<form class="form form--large">
   <div class="form__item">
-    <textarea name="textarea_read_only" id="textarea_read_only" readonly="readonly" rows="3" class="form__textarea"></textarea>
+    <textarea name="textarea_read_only" id="textarea_read_only" readonly rows="10" class="form__textarea is-full">{{ value }}</textarea>
     <label for="textarea_read_only" class="form__label">Label</label>
     <div class="form__description">Description text</div>
   </div>

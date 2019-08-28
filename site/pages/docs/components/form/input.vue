@@ -63,22 +63,12 @@
     </docs-item>
 
     <!-- Read-only  -->
-    <docs-item title="Read-only" :code="input_validation_read_only_html" v-if="!is_html">
+    <docs-item title="Read-only" :code="input_read_only_html" v-if="is_html">
       <form class="form" slot="body">
         <div class="form__item">
-          <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input">
+          <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+          <p class="form__description">Description text</p>
         </div>
-      </form>
-    </docs-item>
-
-    <docs-item title="Read-only" :code="input_validation_read_only_html" v-else>
-      <form class="form" slot="body">
-        <o-input
-          id="form_read_only"
-          v-model="form_model_read_only"
-          placeholder="Label"
-          :read_only="true"
-        />
       </form>
     </docs-item>
 
@@ -124,8 +114,9 @@
     <docs-item title="Large and read-only" :code="input_read_only_large">
       <form class="form form--large" slot="body">
         <div class="form__item">
-          <input id="form_large_read_only" type="text" name="form_large_read_only" readonly="readonly" class="form__input">
+          <input id="form_large_read_only" type="text" name="form_large_read_only" readonly="readonly" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
           <label for="form_large_read_only" class="form__label">Label</label>
+          <p class="form__description">Description text</p>
         </div>
       </form>
     </docs-item>
@@ -483,7 +474,6 @@ export default {
       input_html: `<form class="form">
   <div class="form__item">
     <input id="form_id" type="text" name="form_id" placeholder="Label" class="form__input">
-
     <p class="form__description">Description text</p>
   </div>
 </form>`,
@@ -517,9 +507,10 @@ export default {
     :read_only="true"
   />
 </form>`,
-      input_validation_read_only_html: `<form class="form">
+      input_read_only_html: `<form class="form">
   <div class="form__item">
-    <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input">
+    <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+    <p class="form__description">Description text</p>
   </div>
 </form>`,
 
@@ -549,10 +540,11 @@ export default {
     validate_name="Name"
   />
 </form>`,
-      input_read_only_large: `<form class="form form--large" slot="body">
+      input_read_only_large: `<form class="form form--large">
   <div class="form__item">
-    <input id="form_large_read_only" type="text" name="form_large_read_only" readonly="readonly" class="form__input">
+    <input id="form_large_read_only" type="text" name="form_large_read_only" readonly="readonly" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
     <label for="form_large_read_only" class="form__label">Label</label>
+    <p class="form__description">Description text</p>
   </div>
 </form>`,
 
