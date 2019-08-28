@@ -1,76 +1,170 @@
-(function() {
+/**
+ * --------------------------------------------------------------------------
+ * Orange (v1.2.0): js//src/dropdown.js
+ * Licensed under MIT
+ * --------------------------------------------------------------------------
+ */
 
-  const ACTIVE_CLASS = "is-full";
-  const DROPDOWN_OPEN_CLASS = "is-open";
-  const MAIN_DROPDOWN_ELEMENT = "div.form-dropdown";
-  const DROPDOWN_INPUT = ".form-dropdown__input";
-  const DROPDOWN_OPTION = ".form-dropdown__menu li";
-  const DROPDOWN_TEXT = ".form-dropdown__text";
 
-  const dropdowns = document.querySelectorAll(MAIN_DROPDOWN_ELEMENT);
+const Dropdown = (function() {
+
+  /**
+  * ------------------------------------------------------------------------
+  * Constants
+  * ------------------------------------------------------------------------
+  */
+
+  const Classes = {
+    _active_class: "is-full",
+    _open_class: "is-open"
+  }
+
+  const Selectors = {
+    dropdown: ".form-dropdown",
+    _input: ".form-dropdown__input",
+    _option: ".form-dropdown__menu li",
+    _text: ".form-dropdown__text"
+  }
+
+  let dropdowns;
   
-  function isOpen(dropdown_el) {
-    return dropdown_el.classList.contains(DROPDOWN_OPEN_CLASS);
-  } 
 
+
+  /**
+  * ------------------------------------------------------------------------
+  * Functions
+  * ------------------------------------------------------------------------
+  */
+
+  /**
+  * Private
+  */
+
+  // Function to check if dropdown is opened
+  function _isOpen(dropdown_el) {
+    return dropdown_el.classList.contains(Classes._open_class);
+  }
+
+  // Function to select option
+  function _selectDropdownOption(event) {
+    event.stopPropagation();
+    
+    let option = event.target;
+    let option_value = option.innerText;
+    let current_dropdown = option.closest(Selectors.dropdown);
+    current_dropdown.querySelector(Selectors._input).value = option_value;
+    current_dropdown.querySelector(Selectors._text).innerText = option_value;
+
+    current_dropdown.classList.add(Classes._active_class); 
+    current_dropdown.classList.remove(Classes._open_class);
+  }
+
+
+  /**
+  * Public
+  */
+
+  // Function to get all dropdowns
+  function getDropdowns() {
+    dropdowns = document.querySelectorAll(Selectors.dropdown);
+  }
+
+  // Function to activate all dropdowns
   function activateDropdowns() {
+    getDropdowns();
+
     for (let i = 0; i < dropdowns.length; i++) {
       let dropdown = dropdowns[i]
-      let current_value = dropdown.querySelector(DROPDOWN_INPUT).value;
+      let current_value = dropdown.querySelector(Selectors._input).value;
       if (typeof current_value === "string" && current_value !== ''){
-        dropdown.querySelector(DROPDOWN_TEXT).innerText = current_value;
-        dropdown.classList.add(ACTIVE_CLASS);
+        dropdown.querySelector(Selectors._text).innerText = current_value;
+        dropdown.classList.add(Classes._active_class);
       } 
 
-      dropdown.addEventListener("click", toggleDropdown, false);
+      // dropdown.addEventListener("click", toggleDropdown, false);
 
-      let options = dropdown.querySelectorAll(DROPDOWN_OPTION);
+      let options = dropdown.querySelectorAll(Selectors._option);
       for (let ii = 0; ii < options.length; ii++) {
         let dropdown_option = options[ii];
-        dropdown_option.addEventListener("click", selectDropdownOption, false);
+        dropdown_option.addEventListener("click", _selectDropdownOption, false);
       }
     }
 
-    document.querySelector('body').addEventListener('click', function(evt){
-      if (!evt.target.closest(MAIN_DROPDOWN_ELEMENT)){
-        evt.stopPropagation();
+    document.addEventListener('click', function(event){
+      if (!event.target.closest(Selectors.dropdown)){
+        event.stopPropagation();
         closeDropdowns();
       }
     });
   }
 
-  function toggleDropdown(evt) {
-    let dropdown = evt.target;
-    let current_dropdown = dropdown.closest(MAIN_DROPDOWN_ELEMENT);      
-    if (isOpen(current_dropdown)) {
-      current_dropdown.classList.remove(DROPDOWN_OPEN_CLASS);
+  // Function to toggle dropdown active class
+  function toggleDropdown(event) {
+    let dropdown = event.target;
+    let current_dropdown = dropdown.closest(Selectors.dropdown);
+    if (_isOpen(current_dropdown)) {
+      current_dropdown.classList.remove(Classes._open_class);
     } else {
-      current_dropdown.classList.add(DROPDOWN_OPEN_CLASS); 
+      current_dropdown.classList.add(Classes._open_class);
     }
   }
   
-  function selectDropdownOption(evt) {
-    evt.stopPropagation();
-    
-    var option = evt.target;
-    var option_value = option.innerText;
-    var current_dropdown = option.closest(MAIN_DROPDOWN_ELEMENT);
-    current_dropdown.querySelector(DROPDOWN_INPUT).value = option_value;
-    current_dropdown.querySelector(DROPDOWN_TEXT).innerText = option_value;
-
-    current_dropdown.classList.add(ACTIVE_CLASS); 
-    current_dropdown.classList.remove(DROPDOWN_OPEN_CLASS); 
-  }
-
+  // Function to close dropdowns
   function closeDropdowns() {
-    for (var i = 0; i < dropdowns.length; i++) {
-      var dropdown = dropdowns[i];
-      dropdown.classList.remove(DROPDOWN_OPEN_CLASS); 
+    if (dropdowns === undefined || dropdowns.length === 0) {
+      getDropdowns();
+    }
+
+    for (let i = 0; i < dropdowns.length; i++) {
+      let dropdown = dropdowns[i];
+      dropdown.classList.remove(Classes._open_class); 
     }
   }  
 
-  if (dropdowns.length){
-    activateDropdowns();  
+
+
+  /**
+  * ------------------------------------------------------------------------
+  * Expose public variables and functions
+  * ------------------------------------------------------------------------
+  */
+  return {
+    dropdowns: dropdowns,
+    getDropdowns: getDropdowns,
+    activateDropdowns: activateDropdowns,
+    toggleDropdown: toggleDropdown,
+    closeDropdowns: closeDropdowns,
+    dropdown: Selectors.dropdown
   }
   
-})();
+})()
+
+// On init run getDropdowns
+Dropdown.getDropdowns();
+
+// On init run activateToggles if they exist
+if (Dropdown.dropdowns) {
+  Dropdown.activateDropdowns()
+}
+
+// Add click event
+document.addEventListener('click', function (event) {
+  if (!Dropdown.dropdowns){
+    Dropdown.activateDropdowns()
+  }
+
+  const isDropdownLabel = event.target.classList.contains('form-dropdown__label') || 
+                          event.target.classList.contains('form-dropdown__text')
+
+  if (isDropdownLabel) {
+    Dropdown.closeDropdowns()
+    Dropdown.toggleDropdown(event)
+  }
+
+  if (!event.target.closest(Dropdown.dropdown)) {
+    event.stopPropagation()
+    Dropdown.closeDropdowns()
+  }
+})
+
+export default Dropdown

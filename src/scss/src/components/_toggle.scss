@@ -4,6 +4,10 @@
 
 .toggle {
   position: relative;
+  
+  * {
+    transition: $transition;
+  }
 }
 
 /** Toggle button
@@ -57,7 +61,7 @@
     opacity: .5;
     top: 0;
     left: 0;
-    transition: 0.2s ease-in;
+    transition: $transition;
   }
 
   &:after {
@@ -69,7 +73,7 @@
     border-radius: $spacing-base;
     background: color('white');
     box-shadow: shadow('secondary');
-    transition: 0.2s linear;
+    transition: $transition;
   }
 }
 
@@ -116,27 +120,24 @@
 
 /** Large */
 .toggle--large {
-  padding-right: $spacing-base * 3;
-
   .toggle__value {
-    padding: ($spacing-base * 1.25) ($spacing-base / 2) ($spacing-base * 0.75) ($spacing-base / 2);
+    padding: ($spacing-base + 4px) ($spacing-base / 2) ($spacing-base / 2);
     font-size: fontSize('delta');
     color: color('secondary');
     border: 1px solid transparent;
     width: 100%;
-    transition: 0.05s ease-in-out;
-    line-height: $line-height;
+    line-height: $input-large-line-height;
+    min-height: $input-height-large;
   }
 
   .toggle__text {
     position: absolute;
     top: 0;
     left: 0;
-    height: $input-height-large;
+    min-height: $input-height-large;
     border: $border;
     border-radius: $border-radius-main;
     width: 100%;
-    transition: 0.1s ease-in-out;
     line-height: $line-height;
     padding: $spacing-small $spacing-small 0;
     font-size: fontSize('omega');
@@ -150,10 +151,9 @@
   .toggle__button {
     position: absolute;
     right: $spacing-small;
-    top: $spacing-base * 1.5;
-    transform: translateY(-50%);
+    top: ($input-height-large / 2) -  ($toggle-height / 2);
   }
-
+  
   .toggle__label {
     padding-left: $toggle-width;
   }
