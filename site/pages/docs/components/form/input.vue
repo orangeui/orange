@@ -141,7 +141,7 @@
     </docs-item>
 
     <!-- Large read-only with a Button  -->
-    <docs-item title="Large, read-only with action/extras" :code="input_large_read_only_button_html" v-if="is_html">
+    <docs-item title="Large, read-only with action/extras" :code="input_large_action_button_html" v-if="is_html">
       <form class="form form--large" slot="body">
         <div class="form__item has-action">
           <div class="form__action">
@@ -151,8 +151,8 @@
           </div>
 
           <div class="form__input-wrapper">
-            <input id="form_large_action_left" type="text" name="form_large_action_left" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
-            <label for="form_large_action_left" class="form__label">Your API key</label>
+            <input id="form_large_action_button_left" type="text" name="form_large_action_button_left" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+            <label for="form_large_action_button_left" class="form__label">Your API key</label>
           </div>
 
           <p class="form__description">To change your API key please contact support</p>
@@ -160,8 +160,8 @@
 
         <div class="form__item has-action">
           <div class="form__input-wrapper">
-            <input id="form_large_action_right" type="text" name="form_large_action_right" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
-            <label for="form_large_action_right" class="form__label">Your API key</label>
+            <input id="form_large_action_button_right" type="text" name="form_large_action_button_right" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+            <label for="form_large_action_button_right" class="form__label">Your API key</label>
           </div>
 
           <div class="form__action">
@@ -172,18 +172,31 @@
 
           <p class="form__description">To change your API key please contact support</p>
         </div>
+      </form>
+    </docs-item>
+
+    <docs-item title="Large with action/extras" :code="input_large_action_html" v-if="is_html">
+      <form class="form form--large" slot="body">
+        <div class="form__item has-action">
+          <div class="form__input-wrapper">
+            <input id="form_large_action_right" type="text" name="form_large_action_right" class="form__input">
+            <label for="form_large_action_right" class="form__label">https://example.com</label>
+          </div>
+
+          <div class="form__action">
+            /orange
+          </div>
+        </div>
 
         <div class="form__item has-action">
           <div class="form__action">
-            Copy API key
+            +386
           </div>
 
           <div class="form__input-wrapper">
-            <input id="form_large_action_left_2" type="text" name="form_large_action_left_2" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
-            <label for="form_large_action_left_2" class="form__label">Your API key</label>
+            <input id="form_large_action_left" type="text" name="form_large_action_left" class="form__input">
+            <label for="form_large_action_left" class="form__label">Your phone number</label>
           </div>
-
-          <p class="form__description">To change your API key please contact support</p>
         </div>
       </form>
     </docs-item>
@@ -612,7 +625,7 @@ export default {
 
   </o-input>
 </form>`,
-      input_large_read_only_button_html: `<form class="form form--large">
+      input_large_action_button_html: `<form class="form form--large">
   <div class="form__item has-action">
     <div class="form__action">
       <button type="button" class="button button--small">
@@ -621,8 +634,8 @@ export default {
     </div>
 
     <div class="form__input-wrapper">
-      <input id="form_large_action_left" type="text" name="form_large_action_left" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
-      <label for="form_large_action_left" class="form__label">Your API key</label>
+      <input id="form_large_action_button_left" type="text" name="form_large_action_button_left" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+      <label for="form_large_action_button_left" class="form__label">Your API key</label>
     </div>
 
     <p class="form__description">To change your API key please contact support</p>
@@ -630,32 +643,44 @@ export default {
 
   <div class="form__item has-action">
     <div class="form__input-wrapper">
-      <input id="form_large_action_right" type="text" name="form_large_action_right" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
-      <label for="form_large_action_right" class="form__label">Your API key</label>
+      <input id="form_large_action_button_right" type="text" name="form_large_action_button_right" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+      <label for="form_large_action_button_right" class="form__label">Your API key</label>
     </div>
 
     <div class="form__action">
       <button type="button" class="button button--small">
         copy to clipboard
       </button>
-    </div>
-
-    <p class="form__description">To change your API key please contact support</p>
-  </div>
-
-  <div class="form__item has-action">
-    <div class="form__action">
-      Copy API key
-    </div>
-
-    <div class="form__input-wrapper">
-      <input id="form_large_action_left_2" type="text" name="form_large_action_left_2" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
-      <label for="form_large_action_left_2" class="form__label">Your API key</label>
     </div>
 
     <p class="form__description">To change your API key please contact support</p>
   </div>
 </form>`,
+
+    input_large_action_html: `<form class="form form--large">
+  <div class="form__item has-action">
+    <div class="form__input-wrapper">
+      <input id="form_large_action_right" type="text" name="form_large_action_right" class="form__input">
+      <label for="form_large_action_right" class="form__label">https://example.com</label>
+    </div>
+
+    <div class="form__action">
+      /orange
+    </div>
+  </div>
+
+  <div class="form__item has-action">
+    <div class="form__action">
+      +386
+    </div>
+
+    <div class="form__input-wrapper">
+      <input id="form_large_action_left" type="text" name="form_large_action_left" class="form__input">
+      <label for="form_large_action_left" class="form__label">Your phone number</label>
+    </div>
+  </div>
+</form>
+    `,
 
       input_placeholder_large: `<form class="form form--large">
   <o-input
