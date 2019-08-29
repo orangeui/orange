@@ -58,6 +58,7 @@
     border-color: transparentize(color('secondary'), 0.66);
     outline: 0;
   }
+  
   &::placeholder {
     opacity: 1;
     color: color('gray', 'light');
@@ -225,8 +226,7 @@
       display: block;
     }
 
-    &.is-full,
-    &.has-placeholder {
+    &.is-full {
       padding: ($spacing-base + 4px) ($spacing-base / 2) ($spacing-base / 2);
 
       + .form__label {
@@ -251,27 +251,18 @@
         }
       }
     }
-
-    &::placeholder {
-      opacity: 0;
-      color: transparent;
-    }
-
-    &.has-placeholder::placeholder {
-      opacity: 1;
-      color: color('gray', 'light');
-    }
   }
 
-  .form__extras, .form__action {
+  .form__extras,
+  .form__action {
     height: $input-height-large;
   }
 
   .form__textarea {
+    height: auto;
     
-    &.is-full, &.has-placeholder {
+    &.is-full {
       padding: ($spacing-base + 2px) ($spacing-base / 2) ($spacing-base / 2);
     }
-    height: auto;
   }
 }
