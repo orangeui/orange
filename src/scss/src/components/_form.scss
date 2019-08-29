@@ -120,17 +120,12 @@
 .form__extras, 
 .form__action {
   height: $input-height;
-  // position: absolute;
-  right: 0;
-  top: 0;
   padding: 0 $spacing-base / 2;
   display: flex;
   align-items: center;
   z-index: 3;
   border: $border;
-  margin-left: -1px;
   margin-right: -1px;
-  // background-color: color('gray', 'lightest');
   border-top-left-radius: $border-radius-main;
   border-bottom-left-radius: $border-radius-main;
 }
@@ -204,6 +199,8 @@
     }
 
     .form__input-wrapper + .form__action {
+      margin-right: 0;
+      margin-left: -1px;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       border-top-right-radius: $border-radius-main;
