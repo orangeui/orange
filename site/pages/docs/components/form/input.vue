@@ -12,7 +12,7 @@
     </docs-item>
 
     <!-- Basic  -->
-    <docs-item title="Basic" :code="input_html" v-if="!is_html">
+    <docs-item title="Basic" :code="input_html" v-if="is_html">
       <form class="form" slot="body">
         <div class="form__item">
           <input id="form_id" type="text" name="form_id" placeholder="Label" class="form__input">
@@ -73,7 +73,7 @@
     </docs-item>
 
     <!-- Size Large  -->
-    <docs-item title="Large" :code="input_large_html" v-if="!is_html">
+    <docs-item title="Large" :code="input_large_html" v-if="is_html">
       <form class="form form--large" slot="body">
         <div class="form__item">
           <input id="form_large" type="text" name="form_large" class="form__input">
@@ -111,7 +111,7 @@
     </docs-item>
 
     <!-- Large read-only  -->
-    <docs-item title="Large and read-only" :code="input_read_only_large">
+    <docs-item title="Large and read-only" :code="input_read_only_large" v-if="is_html">
       <form class="form form--large" slot="body">
         <div class="form__item">
           <input id="form_large_read_only" type="text" name="form_large_read_only" readonly="readonly" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
@@ -141,11 +141,28 @@
     </docs-item>
 
     <!-- Large read-only with a Button  -->
-    <docs-item title="Large, read-only with a button" :code="input_large_read_only_button_html" v-if="!is_html">
+    <docs-item title="Large, read-only with a button" :code="input_large_read_only_button_html" v-if="is_html">
       <form class="form form--large" slot="body">
         <div class="form__item has-extras">
-          <input id="form_large_button_read_only" type="text" name="form_large_button_read_only" readonly="readonly" class="form__input is-full" value="1231231231231231">
-          <label for="form_large_button_read_only" class="form__label">Your API key</label>
+          <div class="form__action">
+            <button type="button" class="button button--small">
+              copy to clipboard
+            </button>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input id="form_large_button_read_only" type="text" name="form_large_button_read_only" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+            <label for="form_large_button_read_only" class="form__label">Your API key</label>
+          </div>
+
+          <p class="form__description">To change your API key please contact support</p>
+        </div>
+
+        <div class="form__item has-extras">
+          <div class="form__input-wrapper">
+            <input id="form_large_button_read_only" type="text" name="form_large_button_read_only" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+            <label for="form_large_button_read_only" class="form__label">Your API key</label>
+          </div>
 
           <div class="form__action">
             <button type="button" class="button button--small">
@@ -155,6 +172,7 @@
 
           <p class="form__description">To change your API key please contact support</p>
         </div>
+
       </form>
     </docs-item>
 
@@ -441,6 +459,12 @@
 </template>
 
 <script>
+
+// Import js for textarea
+if (process.browser) {
+  require('../../../../../src/js/src/input.js');
+}
+
 export default {
   name: 'DocsInput',
 
