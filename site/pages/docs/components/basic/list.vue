@@ -757,7 +757,7 @@ export default {
     </list-item-slot>
   </list-item>
 </list>`,
-      list_large_html: `<div class="list list--large">
+      list_large_html: `<ul class="list list--large">
   <li>
     <div>
       <h3>First item</h3>
@@ -790,7 +790,7 @@ export default {
       <button type="button" class="button button--small">Action</button>
     </div>
   </li>
-</div>`,
+</ul>`,
 
       list_medium: `<list size="medium">
   <list-item>
@@ -826,7 +826,7 @@ export default {
     </list-item-slot>
   </list-item>
 </list>`,
-      list_medium_html: `<div class="list list--medium">
+      list_medium_html: `<ul class="list list--medium">
   <li>
     <div>
       <h3>First item</h3>
@@ -859,7 +859,7 @@ export default {
       <button type="button" class="button button--small">Action</button>
     </div>
   </li>
-</div>`,
+</ul>`,
 
       list_small: `<list>
   <list-item size="small">
@@ -895,7 +895,7 @@ export default {
     </list-item-slot>
   </list-item>
 </list>`,
-      list_small_html: `<div class="list list--small">
+      list_small_html: `<ul class="list list--small">
   <li>
     <div>
       <h3>First item</h3>
@@ -928,7 +928,7 @@ export default {
       <button type="button" class="button button--small">Action</button>
     </div>
   </li>
-</div>`,
+</ul>`,
 
       list_divide: `<list>
   <list-item divide>
@@ -964,7 +964,7 @@ export default {
     </list-item-slot>
   </list-item>
 </list>`,
-      list_divide_html: `<div class="list list--large list--divide">
+      list_divide_html: `<ul class="list list--large list--divide">
   <li>
     <div>
       <h3>First item</h3>
@@ -997,7 +997,7 @@ export default {
       <button type="button" class="button button--small">Action</button>
     </div>
   </li>
-</div>`,
+</ul>`,
 
       list_hover: `<list>
   <list-item hover>
@@ -1033,7 +1033,7 @@ export default {
     </list-item-slot>
   </list-item>
 </list>`,
-      list_hover_html: `<div class="list list--large list--hover">
+      list_hover_html: `<ul class="list list--large list--hover">
   <li>
     <div>
       <h3>First item</h3>
@@ -1066,7 +1066,7 @@ export default {
       <button type="button" class="button button--small">Action</button>
     </div>
   </li>
-</div>`,
+</ul>`,
 
       list_pointer: `<list>
   <list-item pointer>
@@ -1102,7 +1102,7 @@ export default {
     </list-item-slot>
   </list-item>
 </list>`,
-      list_pointer_html: `<div class="list list--large list--pointer">
+      list_pointer_html: `<ul class="list list--large list--pointer">
   <li>
     <div>
       <h3>First item</h3>
@@ -1135,7 +1135,7 @@ export default {
       <button type="button" class="button button--small">Action</button>
     </div>
   </li>
-</div>`,
+</ul>`,
 
       list_no_gutter: `<o-card>
   <o-card-header>
@@ -1184,7 +1184,7 @@ export default {
     <h3>List title</h3>
   </div>
   <div class="card__body">
-    <div class="list list--large list--divide list--no-gutter list--hover list--pointer">
+    <ul class="list list--large list--divide list--no-gutter list--hover list--pointer">
       <li>
         <div>
           <h3>First item</h3>
@@ -1217,7 +1217,7 @@ export default {
           <button type="button" class="button button--small button--icon-only"><i class="icon-remove"></i></button>
         </div>
       </li>
-    </div>
+    </ul>
   </div>
 </div>`
     }
