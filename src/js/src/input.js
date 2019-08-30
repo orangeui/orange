@@ -14,11 +14,12 @@ const Input = (function() {
   */
 
   const Classes = {
-    _active_class: "is-full"
+    _focus_class: 'has-focus',
+    _value_class: 'has-value'
   }
 
   const Selectors = {
-    _input: ".form--large .form__input",
+    _input: '.form--large .form__input',
   }
 
   const text_inputs = document.querySelectorAll(Selectors._input);
@@ -40,26 +41,29 @@ const Input = (function() {
     for (var i = 0; i < text_inputs.length; i++) {
       let text_input = text_inputs[i];
 
-      if (typeof text_input.value === "string" && text_input.value !== ''){
-        text_input.classList.add(Classes._active_class);
+      if (typeof text_input.value === 'string' && text_input.value !== ''){
+        text_input.classList.add(Classes._value_class);
       }
     }
   }
 
   // Function to toggle active class
-  function toggleActiveClass(event) {
+  function toggleFocusClass (event) {
     let input = event.target;
-    let input_has_text = input.value !== "" && input.value !== null;
 
     if (input.classList.contains('form__input')) {
-      if (input_has_text || event.type === "focusin" && input.getAttribute('readonly') === null) {
-        input.classList.add(Classes._active_class);
-      } else if(event.type === "focusout" && !input_has_text || !input_has_text) {
-        input.classList.remove(Classes._active_class);
-      }
+      return event.type === 'focusin' && input.getAttribute('readonly') === null ? input.classList.add(Classes._focus_class) : input.classList.remove(Classes._focus_class)
     }
   }
 
+  function toggleValueClass (event) {
+    let input = event.target
+    let input_has_text = input.value !== '' && input.value !== null;
+
+    if (input.classList.contains('form__input')) {
+      return input_has_text ? input.classList.add(Classes._value_class) : input.classList.remove(Classes._value_class)
+    }
+  }
 
 
   /**
@@ -70,7 +74,8 @@ const Input = (function() {
   return {
     text_inputs: text_inputs,
     activateTextInputs: activateTextInputs,
-    toggleActiveClass: toggleActiveClass
+    toggleFocusClass: toggleFocusClass,
+    toggleValueClass: toggleValueClass
   }
 
 })();
@@ -80,10 +85,13 @@ if (Input.text_inputs.length){
   Input.activateTextInputs();
 }
 
+// Add input event (check if typing inside input)
+document.addEventListener('input', Input.toggleValueClass, false)
+
 // Add focusin event
-document.addEventListener('focusin', Input.toggleActiveClass, false)
+document.addEventListener('focusin', Input.toggleFocusClass, false)
 
 // Add focusout event
-document.addEventListener('focusout', Input.toggleActiveClass, false)
+document.addEventListener('focusout', Input.toggleFocusClass, false)
 
 export default Input

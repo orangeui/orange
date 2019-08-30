@@ -8,11 +8,11 @@
 .form__item {
   position: relative;
   margin-bottom: $spacing-base;
-  
+
   * {
     transition: $transition;
   }
-  
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -118,7 +118,7 @@
 /** Form action
 --------------------------------------------------*/
 
-.form__extras, 
+.form__extras,
 .form__action {
   height: $input-height;
   padding: 0 $spacing-base / 2;
@@ -168,7 +168,7 @@
   }
 
   /** Action */
-  &.has-extras, 
+  &.has-extras,
   &.has-action {
     display: flex;
     flex-wrap: wrap;
@@ -184,7 +184,7 @@
     .form__description {
       width: 100%;
     }
-    
+
     // Style inputs with actions/extras
     .form__action + .form__input-wrapper {
       .form__input {
@@ -227,7 +227,7 @@
       display: block;
     }
 
-    &.is-full {
+    &.has-focus, &.has-value {
       padding: ($spacing-base + 4px) ($spacing-base / 2) ($spacing-base / 2);
 
       + .form__label {
@@ -237,7 +237,7 @@
         color: color('black');
         margin: $spacing-small 0 0 $spacing-small;
         z-index: 1;
-        
+
         &::before {
           content: " ";
           position: absolute;
@@ -261,8 +261,8 @@
 
   .form__textarea {
     height: auto;
-    
-    &.is-full {
+
+    &.has-focus, &.has-value {
       padding: ($spacing-base + 2px) ($spacing-base / 2) ($spacing-base / 2);
     }
   }
