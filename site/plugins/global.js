@@ -40,7 +40,6 @@ import Input from '@/components/Input/Input'
 import InputFormat from '@/components/InputFormat/InputFormat'
 // import FormInputProtocol from '@/components/Input/FormInputProtocol'
 import InputTextarea from '@/components/Textarea/InputTextarea'
-import InputDropdown from '@/components/Dropdown/InputDropdown'
 
 /*
  * Import Docs Components
@@ -104,7 +103,6 @@ Vue.component('o-input', Input)
 Vue.component('o-input-format', InputFormat)
 // Vue.component('form-input-protocol', FormInputProtocol)
 Vue.component('o-textarea', InputTextarea)
-Vue.component('o-dropdown', InputDropdown)
 
 /* Docs components */
 Vue.component('docs-item', DocsItem)
