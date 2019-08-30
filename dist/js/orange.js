@@ -137,14 +137,14 @@ const Dropdown = function () {
   * ------------------------------------------------------------------------
   */
   const Classes = {
-    _active_class: "is-full",
-    _open_class: "is-open"
+    _value_class: 'has-value',
+    _open_class: 'is-open'
   };
   const Selectors = {
-    dropdown: ".form-dropdown",
-    _input: ".form-dropdown__input",
-    _option: ".form-dropdown__menu li",
-    _text: ".form-dropdown__text"
+    dropdown: '.form-dropdown',
+    _input: '.form-dropdown__input',
+    _option: '.form-dropdown__menu li',
+    _text: '.form-dropdown__text'
   };
   let dropdowns;
   /**
@@ -170,7 +170,7 @@ const Dropdown = function () {
     let current_dropdown = option.closest(Selectors.dropdown);
     current_dropdown.querySelector(Selectors._input).value = option_value;
     current_dropdown.querySelector(Selectors._text).innerText = option_value;
-    current_dropdown.classList.add(Classes._active_class);
+    current_dropdown.classList.add(Classes._value_class);
     current_dropdown.classList.remove(Classes._open_class);
   }
   /**
@@ -191,17 +191,17 @@ const Dropdown = function () {
       let dropdown = dropdowns[i];
       let current_value = dropdown.querySelector(Selectors._input).value;
 
-      if (typeof current_value === "string" && current_value !== '') {
+      if (typeof current_value === 'string' && current_value !== '') {
         dropdown.querySelector(Selectors._text).innerText = current_value;
-        dropdown.classList.add(Classes._active_class);
-      } // dropdown.addEventListener("click", toggleDropdown, false);
+        dropdown.classList.add(Classes._value_class);
+      } // dropdown.addEventListener('click', toggleDropdown, false);
 
 
       let options = dropdown.querySelectorAll(Selectors._option);
 
       for (let ii = 0; ii < options.length; ii++) {
         let dropdown_option = options[ii];
-        dropdown_option.addEventListener("click", _selectDropdownOption, false);
+        dropdown_option.addEventListener('click', _selectDropdownOption, false);
       }
     }
 
@@ -304,10 +304,11 @@ const Input = function () {
   * ------------------------------------------------------------------------
   */
   const Classes = {
-    _active_class: "is-full"
+    _focus_class: 'has-focus',
+    _value_class: 'has-value'
   };
   const Selectors = {
-    _input: ".form--large .form__input"
+    _input: '.form--large .form__input'
   };
   const text_inputs = document.querySelectorAll(Selectors._input);
   /**
@@ -325,23 +326,27 @@ const Input = function () {
     for (var i = 0; i < text_inputs.length; i++) {
       let text_input = text_inputs[i];
 
-      if (typeof text_input.value === "string" && text_input.value !== '') {
-        text_input.classList.add(Classes._active_class);
+      if (typeof text_input.value === 'string' && text_input.value !== '') {
+        text_input.classList.add(Classes._value_class);
       }
     }
   } // Function to toggle active class
 
 
-  function toggleActiveClass(event) {
+  function toggleFocusClass(event) {
     let input = event.target;
-    let input_has_text = input.value !== "" && input.value !== null;
 
     if (input.classList.contains('form__input')) {
-      if (input_has_text || event.type === "focusin" && input.getAttribute('readonly') === null) {
-        input.classList.add(Classes._active_class);
-      } else if (event.type === "focusout" && !input_has_text || !input_has_text) {
-        input.classList.remove(Classes._active_class);
-      }
+      return event.type === 'focusin' && input.getAttribute('readonly') === null ? input.classList.add(Classes._focus_class) : input.classList.remove(Classes._focus_class);
+    }
+  }
+
+  function toggleValueClass(event) {
+    let input = event.target;
+    let input_has_text = input.value !== '' && input.value !== null;
+
+    if (input.classList.contains('form__input')) {
+      return input_has_text ? input.classList.add(Classes._value_class) : input.classList.remove(Classes._value_class);
     }
   }
   /**
@@ -354,19 +359,22 @@ const Input = function () {
   return {
     text_inputs: text_inputs,
     activateTextInputs: activateTextInputs,
-    toggleActiveClass: toggleActiveClass
+    toggleFocusClass: toggleFocusClass,
+    toggleValueClass: toggleValueClass
   };
 }(); // On init run activateTextInputs if they exist
 
 
 if (Input.text_inputs.length) {
   Input.activateTextInputs();
-} // Add focusin event
+} // Add input event (check if typing inside input)
 
 
-document.addEventListener('focusin', Input.toggleActiveClass, false); // Add focusout event
+document.addEventListener('input', Input.toggleValueClass, false); // Add focusin event
 
-document.addEventListener('focusout', Input.toggleActiveClass, false);
+document.addEventListener('focusin', Input.toggleFocusClass, false); // Add focusout event
+
+document.addEventListener('focusout', Input.toggleFocusClass, false);
 /* harmony default export */ __webpack_exports__["default"] = (Input);
 
 /***/ }),
@@ -416,10 +424,12 @@ const Textarea = function () {
   * ------------------------------------------------------------------------
   */
   const Classes = {
-    _active_class: "is-full"
+    _focus_class: 'has-focus',
+    _value_class: 'has-value'
   };
   const Selectors = {
-    _textarea: ".form .form__textarea",
+    _textarea: '.form .form__textarea',
+    _read_only: 'readonly',
     auto_expand: 'data-auto-expand'
   };
   const textareas = document.querySelectorAll(Selectors._textarea);
@@ -438,21 +448,19 @@ const Textarea = function () {
     for (let i = 0; i < textareas.length; i++) {
       let textarea = textareas[i];
 
-      if (typeof textarea.value === "string" && textarea.value !== '') {
-        textarea.classList.add(Classes._active_class);
+      if (typeof textarea.value === 'string' && textarea.value !== '') {
+        textarea.classList.add(Classes._value_class);
       }
     }
   } // Function to toggle active class
 
 
-  function toggleActiveClass(event) {
+  function toggleFocusClass(event) {
     let textarea = event.target;
-    let textarea_has_text = textarea.value !== "" && textarea.value !== null;
+    let textarea_readonly = textarea.getAttribute('readonly') === 'readonly' || textarea.getAttribute('readonly') === '';
 
-    if (textarea_has_text || event.type === "focusin") {
-      textarea.classList.add(Classes._active_class);
-    } else if (event.type === "focusout" && !textarea_has_text || !textarea_has_text) {
-      textarea.classList.remove(Classes._active_class);
+    if (textarea.classList.contains('form__textarea')) {
+      return event.type === 'focusin' && !textarea_readonly ? textarea.classList.add(Classes._focus_class) : textarea.classList.remove(Classes._focus_class);
     }
   } // Function to add posibility for auto expanding textarea
 
@@ -468,6 +476,20 @@ const Textarea = function () {
       el.style.height = 'auto';
     }
   }
+
+  function onInput(event) {
+    let textarea = event.target;
+    let textarea_has_text = textarea.value !== '' && textarea.value !== null;
+    let auto_expand_enabled = event.target.hasAttribute(Textarea.auto_expand);
+
+    if (textarea.classList.contains('form__textarea')) {
+      if (auto_expand_enabled) {
+        autoExpandTextarea(event);
+      }
+
+      return textarea_has_text ? textarea.classList.add(Classes._value_class) : textarea.classList.remove(Classes._value_class);
+    }
+  }
   /**
   * ------------------------------------------------------------------------
   * Expose public variables and functions
@@ -478,8 +500,8 @@ const Textarea = function () {
   return {
     textareas: textareas,
     activateTextareas: activateTextareas,
-    toggleActiveClass: toggleActiveClass,
-    autoExpandTextarea: autoExpandTextarea,
+    toggleFocusClass: toggleFocusClass,
+    onInput: onInput,
     auto_expand: Selectors.auto_expand
   };
 }(); // On init run activateTextareas if they exist
@@ -490,17 +512,11 @@ if (Textarea.textareas.length) {
 } // Add focusin event
 
 
-document.addEventListener('focusin', Textarea.toggleActiveClass, false); // Add focusout event
+document.addEventListener('focusin', Textarea.toggleFocusClass, false); // Add focusout event
 
-document.addEventListener('focusout', Textarea.toggleActiveClass, false); // Add input event (check if typing inside textarea)
+document.addEventListener('focusout', Textarea.toggleFocusClass, false); // Add input event (check if typing inside textarea)
 
-document.addEventListener('input', function (event) {
-  let auto_expand_enabled = event.target.hasAttribute(Textarea.auto_expand);
-
-  if (event.target.classList.contains('form__textarea') && auto_expand_enabled) {
-    Textarea.autoExpandTextarea(event);
-  }
-});
+document.addEventListener('input', Textarea.onInput, false);
 /* harmony default export */ __webpack_exports__["default"] = (Textarea);
 
 /***/ }),

@@ -1308,7 +1308,85 @@ h6,
  * Breadcrumbs
  */
 .breadcrumbs {
-  display: flex; }
+  display: flex;
+  /** Menu
+  --------------------------------------------------*/ }
+.breadcrumbs > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    user-select: none;
+    /** Item
+    --------------------------------------------------*/
+    /** Link
+    --------------------------------------------------*/
+    /** Icon
+    --------------------------------------------------*/ }
+.breadcrumbs > ul > li {
+      font-size: 14px;
+      margin-right: 3px; }
+.breadcrumbs > ul > li:first-child > a {
+        margin-left: 0;
+        padding-left: 12px; }
+.breadcrumbs > ul > li:first-child > a::before {
+          display: none; }
+.breadcrumbs > ul > li:first-child .icon {
+        margin-left: -3px; }
+.breadcrumbs > ul > li:last-child {
+        margin-right: 0; }
+.breadcrumbs > ul > li:last-child > a {
+          padding-right: 18px; }
+.breadcrumbs > ul > li:last-child > a::after {
+            display: none; }
+.breadcrumbs > ul > li > a {
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 0 12px;
+      background: rgba(0, 0, 0, 0.05);
+      color: rgba(0, 0, 0, 0.5);
+      line-height: 1;
+      height: 36px;
+      cursor: pointer;
+      margin-left: 12px; }
+.breadcrumbs > ul > li > a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -12px;
+        border-top: 18px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 18px solid rgba(0, 0, 0, 0.05);
+        border-right: 12px solid transparent;
+        font-size: 0;
+        line-height: 0;
+        width: 0;
+        transform: rotate(180deg); }
+.breadcrumbs > ul > li > a::after {
+        content: '';
+        position: absolute;
+        right: -12px;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 18px 0 18px 12px;
+        border-color: transparent transparent transparent rgba(0, 0, 0, 0.05); }
+.breadcrumbs > ul > li > a.is-active, .breadcrumbs > ul > li > a:hover {
+        color: black;
+        text-decoration: none;
+        background: rgba(0, 0, 0, 0.12); }
+.breadcrumbs > ul > li > a.is-active::before, .breadcrumbs > ul > li > a:hover::before {
+          border-top: 18px solid rgba(0, 0, 0, 0.12);
+          border-bottom: 18px solid rgba(0, 0, 0, 0.12); }
+.breadcrumbs > ul > li > a.is-active::after, .breadcrumbs > ul > li > a:hover::after {
+          border-color: transparent transparent transparent rgba(0, 0, 0, 0.12); }
+.breadcrumbs > ul > li > a.is-disabled {
+        cursor: default;
+        pointer-events: none;
+        opacity: 0.5; }
+.breadcrumbs > ul li > a > .icon {
+      margin-right: 6px; }
 /** Back button
 --------------------------------------------------*/
 .breadcrumbs__button,
@@ -1317,7 +1395,7 @@ a.breadcrumbs__button {
   align-items: center;
   justify-content: space-between;
   border-radius: 0 3px 3px 0;
-  padding: 0px 18px 0px 12px;
+  padding: 0 18px 0 12px;
   margin-left: 12px;
   margin-right: 24px;
   line-height: 1;
@@ -1327,35 +1405,16 @@ a.breadcrumbs__button {
   color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
   /** Disabled state */ }
-.breadcrumbs__button .breadcrumbs__button-arrow-tail,
-  a.breadcrumbs__button .breadcrumbs__button-arrow-tail {
+.breadcrumbs__button::before,
+  a.breadcrumbs__button::before {
+    content: '';
     position: absolute;
     left: -12px;
     top: 0;
-    width: 12px;
-    height: 36px; }
-.breadcrumbs__button .breadcrumbs__button-arrow-tail::before, .breadcrumbs__button .breadcrumbs__button-arrow-tail::after,
-    a.breadcrumbs__button .breadcrumbs__button-arrow-tail::before,
-    a.breadcrumbs__button .breadcrumbs__button-arrow-tail::after {
-      position: absolute;
-      right: 0;
-      content: '';
-      width: 0;
-      height: 0;
-      border-style: solid; }
-.breadcrumbs__button .breadcrumbs__button-arrow-tail::before,
-    a.breadcrumbs__button .breadcrumbs__button-arrow-tail::before {
-      top: 0; }
-.breadcrumbs__button .breadcrumbs__button-arrow-tail::after,
-    a.breadcrumbs__button .breadcrumbs__button-arrow-tail::after {
-      bottom: 0; }
-.breadcrumbs__button .breadcrumbs__button-arrow-tail::before,
-  a.breadcrumbs__button .breadcrumbs__button-arrow-tail::before {
-    border-width: 0 0 18px 12px;
-    border-color: transparent transparent rgba(0, 0, 0, 0.05) transparent; }
-.breadcrumbs__button .breadcrumbs__button-arrow-tail::after,
-  a.breadcrumbs__button .breadcrumbs__button-arrow-tail::after {
-    border-width: 0 12px 18px 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 18px 12px 18px 0;
     border-color: transparent rgba(0, 0, 0, 0.05) transparent transparent; }
 .breadcrumbs__button[disabled],
   a.breadcrumbs__button[disabled] {
@@ -1369,156 +1428,29 @@ a.breadcrumbs__button {
     color: black;
     background-color: rgba(0, 0, 0, 0.12);
     text-decoration: none; }
-.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before,
-    a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before {
-      border-color: transparent transparent rgba(0, 0, 0, 0.12) transparent; }
-.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after,
-    a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after {
+.breadcrumbs__button:hover::before,
+    a.breadcrumbs__button:hover::before {
       border-color: transparent rgba(0, 0, 0, 0.12) transparent transparent; }
-/** Menu
---------------------------------------------------*/
-.breadcrumbs__menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  user-select: none;
-  /** Item
-  --------------------------------------------------*/
-  /** Link
-  --------------------------------------------------*/
-  /** Arrow head & tail
-  --------------------------------------------------*/
-  /** Icon
-  --------------------------------------------------*/ }
-.breadcrumbs__menu > li {
-    font-size: 14px;
-    margin-right: 3px;
-    margin-left: -12px; }
-.breadcrumbs__menu > li:first-child {
-      margin-left: -12px; }
-.breadcrumbs__menu > li:first-child > a {
-        padding-left: 24px; }
-.breadcrumbs__menu > li:first-child > a::before {
-          border-radius: 3px 0 0 3px; }
-.breadcrumbs__menu > li:first-child .icon {
-        margin-left: -3px; }
-.breadcrumbs__menu > li:first-child .breadcrumbs__link-arrow-tail {
-        display: none; }
-.breadcrumbs__menu > li:last-child {
-      margin-right: 0; }
-.breadcrumbs__menu > li:last-child > a {
-        padding-right: 18px; }
-.breadcrumbs__menu > li:last-child > a::before {
-          border-radius: 0 3px 3px 0;
-          width: calc(100% - 12px); }
-.breadcrumbs__menu > li:last-child .breadcrumbs__link-arrow-head {
-        display: none; }
-.breadcrumbs__menu > li > a {
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: 0 24px;
-    color: rgba(0, 0, 0, 0.5);
-    line-height: 1;
-    height: 36px;
-    cursor: pointer; }
-.breadcrumbs__menu > li > a::after {
-      display: none; }
-.breadcrumbs__menu > li > a::before {
-      content: '';
-      position: absolute;
-      width: calc(100% - 12px * 2);
-      height: 100%;
-      top: 0;
-      left: 12px;
-      opacity: 1;
-      background-color: rgba(0, 0, 0, 0.05);
-      pointer-events: none; }
-.breadcrumbs__menu > li > a.is-active, .breadcrumbs__menu > li > a:hover {
-      color: black;
-      text-decoration: none; }
-.breadcrumbs__menu > li > a.is-active::before, .breadcrumbs__menu > li > a:hover::before {
-        background-color: rgba(0, 0, 0, 0.12); }
-.breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::after, .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::after {
-        border-color: transparent rgba(0, 0, 0, 0.12) transparent transparent; }
-.breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::before, .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::before {
-        border-color: transparent transparent rgba(0, 0, 0, 0.12) transparent; }
-.breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::after, .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::after {
-        border-color: transparent transparent transparent rgba(0, 0, 0, 0.12); }
-.breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::before, .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::before {
-        border-color: rgba(0, 0, 0, 0.12) transparent transparent transparent; }
-.breadcrumbs__menu > li > a.is-disabled {
-      cursor: default;
-      pointer-events: none;
-      opacity: 0.5; }
-.breadcrumbs__menu .breadcrumbs__link-arrow-tail,
-  .breadcrumbs__menu .breadcrumbs__link-arrow-head {
-    position: absolute;
-    top: 0;
-    width: 12px;
-    height: 36px; }
-.breadcrumbs__menu .breadcrumbs__link-arrow-tail::after, .breadcrumbs__menu .breadcrumbs__link-arrow-tail::before,
-    .breadcrumbs__menu .breadcrumbs__link-arrow-head::after,
-    .breadcrumbs__menu .breadcrumbs__link-arrow-head::before {
-      position: absolute;
-      right: 0;
-      content: '';
-      width: 0;
-      height: 0;
-      border-style: solid; }
-.breadcrumbs__menu .breadcrumbs__link-arrow-tail::after,
-    .breadcrumbs__menu .breadcrumbs__link-arrow-head::after {
-      top: 0; }
-.breadcrumbs__menu .breadcrumbs__link-arrow-tail::before,
-    .breadcrumbs__menu .breadcrumbs__link-arrow-head::before {
-      bottom: 0; }
-.breadcrumbs__menu .breadcrumbs__link-arrow-tail {
-    left: 0; }
-.breadcrumbs__menu .breadcrumbs__link-arrow-tail::after {
-      border-width: 0 12px 18px 0;
-      border-color: transparent rgba(0, 0, 0, 0.05) transparent transparent; }
-.breadcrumbs__menu .breadcrumbs__link-arrow-tail::before {
-      border-width: 0 0 18px 12px;
-      border-color: transparent transparent rgba(0, 0, 0, 0.05) transparent; }
-.breadcrumbs__menu .breadcrumbs__link-arrow-head {
-    left: calc(100% - 12px); }
-.breadcrumbs__menu .breadcrumbs__link-arrow-head::after {
-      border-width: 18px 0 0 12px;
-      border-color: transparent transparent transparent rgba(0, 0, 0, 0.05); }
-.breadcrumbs__menu .breadcrumbs__link-arrow-head::before {
-      border-width: 18px 12px 0 0;
-      border-color: rgba(0, 0, 0, 0.05) transparent transparent transparent; }
-.breadcrumbs__menu li > a > .icon {
-    margin-right: 6px; }
 /** Colors
 --------------------------------------------------*/
 .breadcrumbs--color-primary {
   /** Color modifiers */ }
-.breadcrumbs--color-primary .breadcrumbs__menu > li > a {
-    color: rgba(255, 169, 65, 0.5); }
-.breadcrumbs--color-primary .breadcrumbs__menu > li > a::before {
-      background-color: rgba(255, 169, 65, 0.05); }
-.breadcrumbs--color-primary .breadcrumbs__menu > li > a.is-active, .breadcrumbs--color-primary .breadcrumbs__menu > li > a:hover {
-      color: #ffa941; }
-.breadcrumbs--color-primary .breadcrumbs__menu > li > a.is-active::before, .breadcrumbs--color-primary .breadcrumbs__menu > li > a:hover::before {
-        background-color: rgba(255, 169, 65, 0.12); }
-.breadcrumbs--color-primary .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::after, .breadcrumbs--color-primary .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::after {
-        border-color: transparent rgba(255, 169, 65, 0.12) transparent transparent; }
-.breadcrumbs--color-primary .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::before, .breadcrumbs--color-primary .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::before {
-        border-color: transparent transparent rgba(255, 169, 65, 0.12) transparent; }
-.breadcrumbs--color-primary .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::after, .breadcrumbs--color-primary .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::after {
-        border-color: transparent transparent transparent rgba(255, 169, 65, 0.12); }
-.breadcrumbs--color-primary .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::before, .breadcrumbs--color-primary .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::before {
-        border-color: rgba(255, 169, 65, 0.12) transparent transparent transparent; }
-.breadcrumbs--color-primary .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::after {
-      border-color: transparent rgba(255, 169, 65, 0.05) transparent transparent; }
-.breadcrumbs--color-primary .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::before {
-      border-color: transparent transparent rgba(255, 169, 65, 0.05) transparent; }
-.breadcrumbs--color-primary .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::after {
+.breadcrumbs--color-primary > ul > li > a {
+    color: rgba(255, 169, 65, 0.5);
+    background-color: rgba(255, 169, 65, 0.05); }
+.breadcrumbs--color-primary > ul > li > a::before {
+      border-top: 18px solid rgba(255, 169, 65, 0.05);
+      border-bottom: 18px solid rgba(255, 169, 65, 0.05); }
+.breadcrumbs--color-primary > ul > li > a::after {
       border-color: transparent transparent transparent rgba(255, 169, 65, 0.05); }
-.breadcrumbs--color-primary .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::before {
-      border-color: rgba(255, 169, 65, 0.05) transparent transparent transparent; }
+.breadcrumbs--color-primary > ul > li > a.is-active, .breadcrumbs--color-primary > ul > li > a:hover {
+      color: #ffa941;
+      background-color: rgba(255, 169, 65, 0.12); }
+.breadcrumbs--color-primary > ul > li > a.is-active::before, .breadcrumbs--color-primary > ul > li > a:hover::before {
+        border-top: 18px solid rgba(255, 169, 65, 0.12);
+        border-bottom: 18px solid rgba(255, 169, 65, 0.12); }
+.breadcrumbs--color-primary > ul > li > a.is-active::after, .breadcrumbs--color-primary > ul > li > a:hover::after {
+        border-color: transparent transparent transparent rgba(255, 169, 65, 0.12); }
 .breadcrumbs--color-primary .breadcrumbs__button,
   .breadcrumbs--color-primary a.breadcrumbs__button {
     background: rgba(255, 169, 65, 0.05);
@@ -1527,44 +1459,24 @@ a.breadcrumbs__button {
     .breadcrumbs--color-primary a.breadcrumbs__button:hover {
       color: #ffa941;
       background: rgba(255, 169, 65, 0.12); }
-.breadcrumbs--color-primary .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before,
-      .breadcrumbs--color-primary a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before {
-        border-color: transparent transparent rgba(255, 169, 65, 0.12) transparent; }
-.breadcrumbs--color-primary .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after,
-      .breadcrumbs--color-primary a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after {
-        border-color: transparent rgba(255, 169, 65, 0.12) transparent transparent; }
-.breadcrumbs--color-primary .breadcrumbs__button .breadcrumbs__button-arrow-tail::before,
-    .breadcrumbs--color-primary a.breadcrumbs__button .breadcrumbs__button-arrow-tail::before {
-      border-color: transparent transparent rgba(255, 169, 65, 0.05) transparent; }
-.breadcrumbs--color-primary .breadcrumbs__button .breadcrumbs__button-arrow-tail::after,
-    .breadcrumbs--color-primary a.breadcrumbs__button .breadcrumbs__button-arrow-tail::after {
-      border-color: transparent rgba(255, 169, 65, 0.05) transparent transparent; }
 .breadcrumbs--color-secondary {
   /** Color modifiers */ }
-.breadcrumbs--color-secondary .breadcrumbs__menu > li > a {
-    color: rgba(70, 72, 210, 0.5); }
-.breadcrumbs--color-secondary .breadcrumbs__menu > li > a::before {
-      background-color: rgba(70, 72, 210, 0.05); }
-.breadcrumbs--color-secondary .breadcrumbs__menu > li > a.is-active, .breadcrumbs--color-secondary .breadcrumbs__menu > li > a:hover {
-      color: #4648d2; }
-.breadcrumbs--color-secondary .breadcrumbs__menu > li > a.is-active::before, .breadcrumbs--color-secondary .breadcrumbs__menu > li > a:hover::before {
-        background-color: rgba(70, 72, 210, 0.12); }
-.breadcrumbs--color-secondary .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::after, .breadcrumbs--color-secondary .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::after {
-        border-color: transparent rgba(70, 72, 210, 0.12) transparent transparent; }
-.breadcrumbs--color-secondary .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::before, .breadcrumbs--color-secondary .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::before {
-        border-color: transparent transparent rgba(70, 72, 210, 0.12) transparent; }
-.breadcrumbs--color-secondary .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::after, .breadcrumbs--color-secondary .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::after {
-        border-color: transparent transparent transparent rgba(70, 72, 210, 0.12); }
-.breadcrumbs--color-secondary .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::before, .breadcrumbs--color-secondary .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::before {
-        border-color: rgba(70, 72, 210, 0.12) transparent transparent transparent; }
-.breadcrumbs--color-secondary .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::after {
-      border-color: transparent rgba(70, 72, 210, 0.05) transparent transparent; }
-.breadcrumbs--color-secondary .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::before {
-      border-color: transparent transparent rgba(70, 72, 210, 0.05) transparent; }
-.breadcrumbs--color-secondary .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::after {
+.breadcrumbs--color-secondary > ul > li > a {
+    color: rgba(70, 72, 210, 0.5);
+    background-color: rgba(70, 72, 210, 0.05); }
+.breadcrumbs--color-secondary > ul > li > a::before {
+      border-top: 18px solid rgba(70, 72, 210, 0.05);
+      border-bottom: 18px solid rgba(70, 72, 210, 0.05); }
+.breadcrumbs--color-secondary > ul > li > a::after {
       border-color: transparent transparent transparent rgba(70, 72, 210, 0.05); }
-.breadcrumbs--color-secondary .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::before {
-      border-color: rgba(70, 72, 210, 0.05) transparent transparent transparent; }
+.breadcrumbs--color-secondary > ul > li > a.is-active, .breadcrumbs--color-secondary > ul > li > a:hover {
+      color: #4648d2;
+      background-color: rgba(70, 72, 210, 0.12); }
+.breadcrumbs--color-secondary > ul > li > a.is-active::before, .breadcrumbs--color-secondary > ul > li > a:hover::before {
+        border-top: 18px solid rgba(70, 72, 210, 0.12);
+        border-bottom: 18px solid rgba(70, 72, 210, 0.12); }
+.breadcrumbs--color-secondary > ul > li > a.is-active::after, .breadcrumbs--color-secondary > ul > li > a:hover::after {
+        border-color: transparent transparent transparent rgba(70, 72, 210, 0.12); }
 .breadcrumbs--color-secondary .breadcrumbs__button,
   .breadcrumbs--color-secondary a.breadcrumbs__button {
     background: rgba(70, 72, 210, 0.05);
@@ -1573,44 +1485,24 @@ a.breadcrumbs__button {
     .breadcrumbs--color-secondary a.breadcrumbs__button:hover {
       color: #4648d2;
       background: rgba(70, 72, 210, 0.12); }
-.breadcrumbs--color-secondary .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before,
-      .breadcrumbs--color-secondary a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before {
-        border-color: transparent transparent rgba(70, 72, 210, 0.12) transparent; }
-.breadcrumbs--color-secondary .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after,
-      .breadcrumbs--color-secondary a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after {
-        border-color: transparent rgba(70, 72, 210, 0.12) transparent transparent; }
-.breadcrumbs--color-secondary .breadcrumbs__button .breadcrumbs__button-arrow-tail::before,
-    .breadcrumbs--color-secondary a.breadcrumbs__button .breadcrumbs__button-arrow-tail::before {
-      border-color: transparent transparent rgba(70, 72, 210, 0.05) transparent; }
-.breadcrumbs--color-secondary .breadcrumbs__button .breadcrumbs__button-arrow-tail::after,
-    .breadcrumbs--color-secondary a.breadcrumbs__button .breadcrumbs__button-arrow-tail::after {
-      border-color: transparent rgba(70, 72, 210, 0.05) transparent transparent; }
 .breadcrumbs--color-red {
   /** Color modifiers */ }
-.breadcrumbs--color-red .breadcrumbs__menu > li > a {
-    color: rgba(250, 61, 73, 0.5); }
-.breadcrumbs--color-red .breadcrumbs__menu > li > a::before {
-      background-color: rgba(250, 61, 73, 0.05); }
-.breadcrumbs--color-red .breadcrumbs__menu > li > a.is-active, .breadcrumbs--color-red .breadcrumbs__menu > li > a:hover {
-      color: #FA3D49; }
-.breadcrumbs--color-red .breadcrumbs__menu > li > a.is-active::before, .breadcrumbs--color-red .breadcrumbs__menu > li > a:hover::before {
-        background-color: rgba(250, 61, 73, 0.12); }
-.breadcrumbs--color-red .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::after, .breadcrumbs--color-red .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::after {
-        border-color: transparent rgba(250, 61, 73, 0.12) transparent transparent; }
-.breadcrumbs--color-red .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::before, .breadcrumbs--color-red .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::before {
-        border-color: transparent transparent rgba(250, 61, 73, 0.12) transparent; }
-.breadcrumbs--color-red .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::after, .breadcrumbs--color-red .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::after {
-        border-color: transparent transparent transparent rgba(250, 61, 73, 0.12); }
-.breadcrumbs--color-red .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::before, .breadcrumbs--color-red .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::before {
-        border-color: rgba(250, 61, 73, 0.12) transparent transparent transparent; }
-.breadcrumbs--color-red .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::after {
-      border-color: transparent rgba(250, 61, 73, 0.05) transparent transparent; }
-.breadcrumbs--color-red .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::before {
-      border-color: transparent transparent rgba(250, 61, 73, 0.05) transparent; }
-.breadcrumbs--color-red .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::after {
+.breadcrumbs--color-red > ul > li > a {
+    color: rgba(250, 61, 73, 0.5);
+    background-color: rgba(250, 61, 73, 0.05); }
+.breadcrumbs--color-red > ul > li > a::before {
+      border-top: 18px solid rgba(250, 61, 73, 0.05);
+      border-bottom: 18px solid rgba(250, 61, 73, 0.05); }
+.breadcrumbs--color-red > ul > li > a::after {
       border-color: transparent transparent transparent rgba(250, 61, 73, 0.05); }
-.breadcrumbs--color-red .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::before {
-      border-color: rgba(250, 61, 73, 0.05) transparent transparent transparent; }
+.breadcrumbs--color-red > ul > li > a.is-active, .breadcrumbs--color-red > ul > li > a:hover {
+      color: #FA3D49;
+      background-color: rgba(250, 61, 73, 0.12); }
+.breadcrumbs--color-red > ul > li > a.is-active::before, .breadcrumbs--color-red > ul > li > a:hover::before {
+        border-top: 18px solid rgba(250, 61, 73, 0.12);
+        border-bottom: 18px solid rgba(250, 61, 73, 0.12); }
+.breadcrumbs--color-red > ul > li > a.is-active::after, .breadcrumbs--color-red > ul > li > a:hover::after {
+        border-color: transparent transparent transparent rgba(250, 61, 73, 0.12); }
 .breadcrumbs--color-red .breadcrumbs__button,
   .breadcrumbs--color-red a.breadcrumbs__button {
     background: rgba(250, 61, 73, 0.05);
@@ -1619,44 +1511,24 @@ a.breadcrumbs__button {
     .breadcrumbs--color-red a.breadcrumbs__button:hover {
       color: #FA3D49;
       background: rgba(250, 61, 73, 0.12); }
-.breadcrumbs--color-red .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before,
-      .breadcrumbs--color-red a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before {
-        border-color: transparent transparent rgba(250, 61, 73, 0.12) transparent; }
-.breadcrumbs--color-red .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after,
-      .breadcrumbs--color-red a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after {
-        border-color: transparent rgba(250, 61, 73, 0.12) transparent transparent; }
-.breadcrumbs--color-red .breadcrumbs__button .breadcrumbs__button-arrow-tail::before,
-    .breadcrumbs--color-red a.breadcrumbs__button .breadcrumbs__button-arrow-tail::before {
-      border-color: transparent transparent rgba(250, 61, 73, 0.05) transparent; }
-.breadcrumbs--color-red .breadcrumbs__button .breadcrumbs__button-arrow-tail::after,
-    .breadcrumbs--color-red a.breadcrumbs__button .breadcrumbs__button-arrow-tail::after {
-      border-color: transparent rgba(250, 61, 73, 0.05) transparent transparent; }
 .breadcrumbs--color-orange {
   /** Color modifiers */ }
-.breadcrumbs--color-orange .breadcrumbs__menu > li > a {
-    color: rgba(255, 169, 65, 0.5); }
-.breadcrumbs--color-orange .breadcrumbs__menu > li > a::before {
-      background-color: rgba(255, 169, 65, 0.05); }
-.breadcrumbs--color-orange .breadcrumbs__menu > li > a.is-active, .breadcrumbs--color-orange .breadcrumbs__menu > li > a:hover {
-      color: #ffa941; }
-.breadcrumbs--color-orange .breadcrumbs__menu > li > a.is-active::before, .breadcrumbs--color-orange .breadcrumbs__menu > li > a:hover::before {
-        background-color: rgba(255, 169, 65, 0.12); }
-.breadcrumbs--color-orange .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::after, .breadcrumbs--color-orange .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::after {
-        border-color: transparent rgba(255, 169, 65, 0.12) transparent transparent; }
-.breadcrumbs--color-orange .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::before, .breadcrumbs--color-orange .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::before {
-        border-color: transparent transparent rgba(255, 169, 65, 0.12) transparent; }
-.breadcrumbs--color-orange .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::after, .breadcrumbs--color-orange .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::after {
-        border-color: transparent transparent transparent rgba(255, 169, 65, 0.12); }
-.breadcrumbs--color-orange .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::before, .breadcrumbs--color-orange .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::before {
-        border-color: rgba(255, 169, 65, 0.12) transparent transparent transparent; }
-.breadcrumbs--color-orange .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::after {
-      border-color: transparent rgba(255, 169, 65, 0.05) transparent transparent; }
-.breadcrumbs--color-orange .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::before {
-      border-color: transparent transparent rgba(255, 169, 65, 0.05) transparent; }
-.breadcrumbs--color-orange .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::after {
+.breadcrumbs--color-orange > ul > li > a {
+    color: rgba(255, 169, 65, 0.5);
+    background-color: rgba(255, 169, 65, 0.05); }
+.breadcrumbs--color-orange > ul > li > a::before {
+      border-top: 18px solid rgba(255, 169, 65, 0.05);
+      border-bottom: 18px solid rgba(255, 169, 65, 0.05); }
+.breadcrumbs--color-orange > ul > li > a::after {
       border-color: transparent transparent transparent rgba(255, 169, 65, 0.05); }
-.breadcrumbs--color-orange .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::before {
-      border-color: rgba(255, 169, 65, 0.05) transparent transparent transparent; }
+.breadcrumbs--color-orange > ul > li > a.is-active, .breadcrumbs--color-orange > ul > li > a:hover {
+      color: #ffa941;
+      background-color: rgba(255, 169, 65, 0.12); }
+.breadcrumbs--color-orange > ul > li > a.is-active::before, .breadcrumbs--color-orange > ul > li > a:hover::before {
+        border-top: 18px solid rgba(255, 169, 65, 0.12);
+        border-bottom: 18px solid rgba(255, 169, 65, 0.12); }
+.breadcrumbs--color-orange > ul > li > a.is-active::after, .breadcrumbs--color-orange > ul > li > a:hover::after {
+        border-color: transparent transparent transparent rgba(255, 169, 65, 0.12); }
 .breadcrumbs--color-orange .breadcrumbs__button,
   .breadcrumbs--color-orange a.breadcrumbs__button {
     background: rgba(255, 169, 65, 0.05);
@@ -1665,44 +1537,24 @@ a.breadcrumbs__button {
     .breadcrumbs--color-orange a.breadcrumbs__button:hover {
       color: #ffa941;
       background: rgba(255, 169, 65, 0.12); }
-.breadcrumbs--color-orange .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before,
-      .breadcrumbs--color-orange a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before {
-        border-color: transparent transparent rgba(255, 169, 65, 0.12) transparent; }
-.breadcrumbs--color-orange .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after,
-      .breadcrumbs--color-orange a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after {
-        border-color: transparent rgba(255, 169, 65, 0.12) transparent transparent; }
-.breadcrumbs--color-orange .breadcrumbs__button .breadcrumbs__button-arrow-tail::before,
-    .breadcrumbs--color-orange a.breadcrumbs__button .breadcrumbs__button-arrow-tail::before {
-      border-color: transparent transparent rgba(255, 169, 65, 0.05) transparent; }
-.breadcrumbs--color-orange .breadcrumbs__button .breadcrumbs__button-arrow-tail::after,
-    .breadcrumbs--color-orange a.breadcrumbs__button .breadcrumbs__button-arrow-tail::after {
-      border-color: transparent rgba(255, 169, 65, 0.05) transparent transparent; }
 .breadcrumbs--color-yellow {
   /** Color modifiers */ }
-.breadcrumbs--color-yellow .breadcrumbs__menu > li > a {
-    color: rgba(255, 228, 51, 0.5); }
-.breadcrumbs--color-yellow .breadcrumbs__menu > li > a::before {
-      background-color: rgba(255, 228, 51, 0.05); }
-.breadcrumbs--color-yellow .breadcrumbs__menu > li > a.is-active, .breadcrumbs--color-yellow .breadcrumbs__menu > li > a:hover {
-      color: #ffe433; }
-.breadcrumbs--color-yellow .breadcrumbs__menu > li > a.is-active::before, .breadcrumbs--color-yellow .breadcrumbs__menu > li > a:hover::before {
-        background-color: rgba(255, 228, 51, 0.12); }
-.breadcrumbs--color-yellow .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::after, .breadcrumbs--color-yellow .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::after {
-        border-color: transparent rgba(255, 228, 51, 0.12) transparent transparent; }
-.breadcrumbs--color-yellow .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::before, .breadcrumbs--color-yellow .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::before {
-        border-color: transparent transparent rgba(255, 228, 51, 0.12) transparent; }
-.breadcrumbs--color-yellow .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::after, .breadcrumbs--color-yellow .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::after {
-        border-color: transparent transparent transparent rgba(255, 228, 51, 0.12); }
-.breadcrumbs--color-yellow .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::before, .breadcrumbs--color-yellow .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::before {
-        border-color: rgba(255, 228, 51, 0.12) transparent transparent transparent; }
-.breadcrumbs--color-yellow .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::after {
-      border-color: transparent rgba(255, 228, 51, 0.05) transparent transparent; }
-.breadcrumbs--color-yellow .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::before {
-      border-color: transparent transparent rgba(255, 228, 51, 0.05) transparent; }
-.breadcrumbs--color-yellow .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::after {
+.breadcrumbs--color-yellow > ul > li > a {
+    color: rgba(255, 228, 51, 0.5);
+    background-color: rgba(255, 228, 51, 0.05); }
+.breadcrumbs--color-yellow > ul > li > a::before {
+      border-top: 18px solid rgba(255, 228, 51, 0.05);
+      border-bottom: 18px solid rgba(255, 228, 51, 0.05); }
+.breadcrumbs--color-yellow > ul > li > a::after {
       border-color: transparent transparent transparent rgba(255, 228, 51, 0.05); }
-.breadcrumbs--color-yellow .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::before {
-      border-color: rgba(255, 228, 51, 0.05) transparent transparent transparent; }
+.breadcrumbs--color-yellow > ul > li > a.is-active, .breadcrumbs--color-yellow > ul > li > a:hover {
+      color: #ffe433;
+      background-color: rgba(255, 228, 51, 0.12); }
+.breadcrumbs--color-yellow > ul > li > a.is-active::before, .breadcrumbs--color-yellow > ul > li > a:hover::before {
+        border-top: 18px solid rgba(255, 228, 51, 0.12);
+        border-bottom: 18px solid rgba(255, 228, 51, 0.12); }
+.breadcrumbs--color-yellow > ul > li > a.is-active::after, .breadcrumbs--color-yellow > ul > li > a:hover::after {
+        border-color: transparent transparent transparent rgba(255, 228, 51, 0.12); }
 .breadcrumbs--color-yellow .breadcrumbs__button,
   .breadcrumbs--color-yellow a.breadcrumbs__button {
     background: rgba(255, 228, 51, 0.05);
@@ -1711,44 +1563,24 @@ a.breadcrumbs__button {
     .breadcrumbs--color-yellow a.breadcrumbs__button:hover {
       color: #ffe433;
       background: rgba(255, 228, 51, 0.12); }
-.breadcrumbs--color-yellow .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before,
-      .breadcrumbs--color-yellow a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before {
-        border-color: transparent transparent rgba(255, 228, 51, 0.12) transparent; }
-.breadcrumbs--color-yellow .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after,
-      .breadcrumbs--color-yellow a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after {
-        border-color: transparent rgba(255, 228, 51, 0.12) transparent transparent; }
-.breadcrumbs--color-yellow .breadcrumbs__button .breadcrumbs__button-arrow-tail::before,
-    .breadcrumbs--color-yellow a.breadcrumbs__button .breadcrumbs__button-arrow-tail::before {
-      border-color: transparent transparent rgba(255, 228, 51, 0.05) transparent; }
-.breadcrumbs--color-yellow .breadcrumbs__button .breadcrumbs__button-arrow-tail::after,
-    .breadcrumbs--color-yellow a.breadcrumbs__button .breadcrumbs__button-arrow-tail::after {
-      border-color: transparent rgba(255, 228, 51, 0.05) transparent transparent; }
 .breadcrumbs--color-green {
   /** Color modifiers */ }
-.breadcrumbs--color-green .breadcrumbs__menu > li > a {
-    color: rgba(75, 196, 95, 0.5); }
-.breadcrumbs--color-green .breadcrumbs__menu > li > a::before {
-      background-color: rgba(75, 196, 95, 0.05); }
-.breadcrumbs--color-green .breadcrumbs__menu > li > a.is-active, .breadcrumbs--color-green .breadcrumbs__menu > li > a:hover {
-      color: #4BC45F; }
-.breadcrumbs--color-green .breadcrumbs__menu > li > a.is-active::before, .breadcrumbs--color-green .breadcrumbs__menu > li > a:hover::before {
-        background-color: rgba(75, 196, 95, 0.12); }
-.breadcrumbs--color-green .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::after, .breadcrumbs--color-green .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::after {
-        border-color: transparent rgba(75, 196, 95, 0.12) transparent transparent; }
-.breadcrumbs--color-green .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::before, .breadcrumbs--color-green .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::before {
-        border-color: transparent transparent rgba(75, 196, 95, 0.12) transparent; }
-.breadcrumbs--color-green .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::after, .breadcrumbs--color-green .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::after {
-        border-color: transparent transparent transparent rgba(75, 196, 95, 0.12); }
-.breadcrumbs--color-green .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::before, .breadcrumbs--color-green .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::before {
-        border-color: rgba(75, 196, 95, 0.12) transparent transparent transparent; }
-.breadcrumbs--color-green .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::after {
-      border-color: transparent rgba(75, 196, 95, 0.05) transparent transparent; }
-.breadcrumbs--color-green .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::before {
-      border-color: transparent transparent rgba(75, 196, 95, 0.05) transparent; }
-.breadcrumbs--color-green .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::after {
+.breadcrumbs--color-green > ul > li > a {
+    color: rgba(75, 196, 95, 0.5);
+    background-color: rgba(75, 196, 95, 0.05); }
+.breadcrumbs--color-green > ul > li > a::before {
+      border-top: 18px solid rgba(75, 196, 95, 0.05);
+      border-bottom: 18px solid rgba(75, 196, 95, 0.05); }
+.breadcrumbs--color-green > ul > li > a::after {
       border-color: transparent transparent transparent rgba(75, 196, 95, 0.05); }
-.breadcrumbs--color-green .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::before {
-      border-color: rgba(75, 196, 95, 0.05) transparent transparent transparent; }
+.breadcrumbs--color-green > ul > li > a.is-active, .breadcrumbs--color-green > ul > li > a:hover {
+      color: #4BC45F;
+      background-color: rgba(75, 196, 95, 0.12); }
+.breadcrumbs--color-green > ul > li > a.is-active::before, .breadcrumbs--color-green > ul > li > a:hover::before {
+        border-top: 18px solid rgba(75, 196, 95, 0.12);
+        border-bottom: 18px solid rgba(75, 196, 95, 0.12); }
+.breadcrumbs--color-green > ul > li > a.is-active::after, .breadcrumbs--color-green > ul > li > a:hover::after {
+        border-color: transparent transparent transparent rgba(75, 196, 95, 0.12); }
 .breadcrumbs--color-green .breadcrumbs__button,
   .breadcrumbs--color-green a.breadcrumbs__button {
     background: rgba(75, 196, 95, 0.05);
@@ -1757,44 +1589,24 @@ a.breadcrumbs__button {
     .breadcrumbs--color-green a.breadcrumbs__button:hover {
       color: #4BC45F;
       background: rgba(75, 196, 95, 0.12); }
-.breadcrumbs--color-green .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before,
-      .breadcrumbs--color-green a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before {
-        border-color: transparent transparent rgba(75, 196, 95, 0.12) transparent; }
-.breadcrumbs--color-green .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after,
-      .breadcrumbs--color-green a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after {
-        border-color: transparent rgba(75, 196, 95, 0.12) transparent transparent; }
-.breadcrumbs--color-green .breadcrumbs__button .breadcrumbs__button-arrow-tail::before,
-    .breadcrumbs--color-green a.breadcrumbs__button .breadcrumbs__button-arrow-tail::before {
-      border-color: transparent transparent rgba(75, 196, 95, 0.05) transparent; }
-.breadcrumbs--color-green .breadcrumbs__button .breadcrumbs__button-arrow-tail::after,
-    .breadcrumbs--color-green a.breadcrumbs__button .breadcrumbs__button-arrow-tail::after {
-      border-color: transparent rgba(75, 196, 95, 0.05) transparent transparent; }
 .breadcrumbs--color-blue {
   /** Color modifiers */ }
-.breadcrumbs--color-blue .breadcrumbs__menu > li > a {
-    color: rgba(51, 51, 243, 0.5); }
-.breadcrumbs--color-blue .breadcrumbs__menu > li > a::before {
-      background-color: rgba(51, 51, 243, 0.05); }
-.breadcrumbs--color-blue .breadcrumbs__menu > li > a.is-active, .breadcrumbs--color-blue .breadcrumbs__menu > li > a:hover {
-      color: #3333f3; }
-.breadcrumbs--color-blue .breadcrumbs__menu > li > a.is-active::before, .breadcrumbs--color-blue .breadcrumbs__menu > li > a:hover::before {
-        background-color: rgba(51, 51, 243, 0.12); }
-.breadcrumbs--color-blue .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::after, .breadcrumbs--color-blue .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::after {
-        border-color: transparent rgba(51, 51, 243, 0.12) transparent transparent; }
-.breadcrumbs--color-blue .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::before, .breadcrumbs--color-blue .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::before {
-        border-color: transparent transparent rgba(51, 51, 243, 0.12) transparent; }
-.breadcrumbs--color-blue .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::after, .breadcrumbs--color-blue .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::after {
-        border-color: transparent transparent transparent rgba(51, 51, 243, 0.12); }
-.breadcrumbs--color-blue .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::before, .breadcrumbs--color-blue .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::before {
-        border-color: rgba(51, 51, 243, 0.12) transparent transparent transparent; }
-.breadcrumbs--color-blue .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::after {
-      border-color: transparent rgba(51, 51, 243, 0.05) transparent transparent; }
-.breadcrumbs--color-blue .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::before {
-      border-color: transparent transparent rgba(51, 51, 243, 0.05) transparent; }
-.breadcrumbs--color-blue .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::after {
+.breadcrumbs--color-blue > ul > li > a {
+    color: rgba(51, 51, 243, 0.5);
+    background-color: rgba(51, 51, 243, 0.05); }
+.breadcrumbs--color-blue > ul > li > a::before {
+      border-top: 18px solid rgba(51, 51, 243, 0.05);
+      border-bottom: 18px solid rgba(51, 51, 243, 0.05); }
+.breadcrumbs--color-blue > ul > li > a::after {
       border-color: transparent transparent transparent rgba(51, 51, 243, 0.05); }
-.breadcrumbs--color-blue .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::before {
-      border-color: rgba(51, 51, 243, 0.05) transparent transparent transparent; }
+.breadcrumbs--color-blue > ul > li > a.is-active, .breadcrumbs--color-blue > ul > li > a:hover {
+      color: #3333f3;
+      background-color: rgba(51, 51, 243, 0.12); }
+.breadcrumbs--color-blue > ul > li > a.is-active::before, .breadcrumbs--color-blue > ul > li > a:hover::before {
+        border-top: 18px solid rgba(51, 51, 243, 0.12);
+        border-bottom: 18px solid rgba(51, 51, 243, 0.12); }
+.breadcrumbs--color-blue > ul > li > a.is-active::after, .breadcrumbs--color-blue > ul > li > a:hover::after {
+        border-color: transparent transparent transparent rgba(51, 51, 243, 0.12); }
 .breadcrumbs--color-blue .breadcrumbs__button,
   .breadcrumbs--color-blue a.breadcrumbs__button {
     background: rgba(51, 51, 243, 0.05);
@@ -1803,44 +1615,24 @@ a.breadcrumbs__button {
     .breadcrumbs--color-blue a.breadcrumbs__button:hover {
       color: #3333f3;
       background: rgba(51, 51, 243, 0.12); }
-.breadcrumbs--color-blue .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before,
-      .breadcrumbs--color-blue a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before {
-        border-color: transparent transparent rgba(51, 51, 243, 0.12) transparent; }
-.breadcrumbs--color-blue .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after,
-      .breadcrumbs--color-blue a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after {
-        border-color: transparent rgba(51, 51, 243, 0.12) transparent transparent; }
-.breadcrumbs--color-blue .breadcrumbs__button .breadcrumbs__button-arrow-tail::before,
-    .breadcrumbs--color-blue a.breadcrumbs__button .breadcrumbs__button-arrow-tail::before {
-      border-color: transparent transparent rgba(51, 51, 243, 0.05) transparent; }
-.breadcrumbs--color-blue .breadcrumbs__button .breadcrumbs__button-arrow-tail::after,
-    .breadcrumbs--color-blue a.breadcrumbs__button .breadcrumbs__button-arrow-tail::after {
-      border-color: transparent rgba(51, 51, 243, 0.05) transparent transparent; }
 .breadcrumbs--color-indigo {
   /** Color modifiers */ }
-.breadcrumbs--color-indigo .breadcrumbs__menu > li > a {
-    color: rgba(23, 140, 214, 0.5); }
-.breadcrumbs--color-indigo .breadcrumbs__menu > li > a::before {
-      background-color: rgba(23, 140, 214, 0.05); }
-.breadcrumbs--color-indigo .breadcrumbs__menu > li > a.is-active, .breadcrumbs--color-indigo .breadcrumbs__menu > li > a:hover {
-      color: #178cd6; }
-.breadcrumbs--color-indigo .breadcrumbs__menu > li > a.is-active::before, .breadcrumbs--color-indigo .breadcrumbs__menu > li > a:hover::before {
-        background-color: rgba(23, 140, 214, 0.12); }
-.breadcrumbs--color-indigo .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::after, .breadcrumbs--color-indigo .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::after {
-        border-color: transparent rgba(23, 140, 214, 0.12) transparent transparent; }
-.breadcrumbs--color-indigo .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::before, .breadcrumbs--color-indigo .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::before {
-        border-color: transparent transparent rgba(23, 140, 214, 0.12) transparent; }
-.breadcrumbs--color-indigo .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::after, .breadcrumbs--color-indigo .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::after {
-        border-color: transparent transparent transparent rgba(23, 140, 214, 0.12); }
-.breadcrumbs--color-indigo .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::before, .breadcrumbs--color-indigo .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::before {
-        border-color: rgba(23, 140, 214, 0.12) transparent transparent transparent; }
-.breadcrumbs--color-indigo .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::after {
-      border-color: transparent rgba(23, 140, 214, 0.05) transparent transparent; }
-.breadcrumbs--color-indigo .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::before {
-      border-color: transparent transparent rgba(23, 140, 214, 0.05) transparent; }
-.breadcrumbs--color-indigo .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::after {
+.breadcrumbs--color-indigo > ul > li > a {
+    color: rgba(23, 140, 214, 0.5);
+    background-color: rgba(23, 140, 214, 0.05); }
+.breadcrumbs--color-indigo > ul > li > a::before {
+      border-top: 18px solid rgba(23, 140, 214, 0.05);
+      border-bottom: 18px solid rgba(23, 140, 214, 0.05); }
+.breadcrumbs--color-indigo > ul > li > a::after {
       border-color: transparent transparent transparent rgba(23, 140, 214, 0.05); }
-.breadcrumbs--color-indigo .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::before {
-      border-color: rgba(23, 140, 214, 0.05) transparent transparent transparent; }
+.breadcrumbs--color-indigo > ul > li > a.is-active, .breadcrumbs--color-indigo > ul > li > a:hover {
+      color: #178cd6;
+      background-color: rgba(23, 140, 214, 0.12); }
+.breadcrumbs--color-indigo > ul > li > a.is-active::before, .breadcrumbs--color-indigo > ul > li > a:hover::before {
+        border-top: 18px solid rgba(23, 140, 214, 0.12);
+        border-bottom: 18px solid rgba(23, 140, 214, 0.12); }
+.breadcrumbs--color-indigo > ul > li > a.is-active::after, .breadcrumbs--color-indigo > ul > li > a:hover::after {
+        border-color: transparent transparent transparent rgba(23, 140, 214, 0.12); }
 .breadcrumbs--color-indigo .breadcrumbs__button,
   .breadcrumbs--color-indigo a.breadcrumbs__button {
     background: rgba(23, 140, 214, 0.05);
@@ -1849,44 +1641,24 @@ a.breadcrumbs__button {
     .breadcrumbs--color-indigo a.breadcrumbs__button:hover {
       color: #178cd6;
       background: rgba(23, 140, 214, 0.12); }
-.breadcrumbs--color-indigo .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before,
-      .breadcrumbs--color-indigo a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before {
-        border-color: transparent transparent rgba(23, 140, 214, 0.12) transparent; }
-.breadcrumbs--color-indigo .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after,
-      .breadcrumbs--color-indigo a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after {
-        border-color: transparent rgba(23, 140, 214, 0.12) transparent transparent; }
-.breadcrumbs--color-indigo .breadcrumbs__button .breadcrumbs__button-arrow-tail::before,
-    .breadcrumbs--color-indigo a.breadcrumbs__button .breadcrumbs__button-arrow-tail::before {
-      border-color: transparent transparent rgba(23, 140, 214, 0.05) transparent; }
-.breadcrumbs--color-indigo .breadcrumbs__button .breadcrumbs__button-arrow-tail::after,
-    .breadcrumbs--color-indigo a.breadcrumbs__button .breadcrumbs__button-arrow-tail::after {
-      border-color: transparent rgba(23, 140, 214, 0.05) transparent transparent; }
 .breadcrumbs--color-violet {
   /** Color modifiers */ }
-.breadcrumbs--color-violet .breadcrumbs__menu > li > a {
-    color: rgba(139, 38, 241, 0.5); }
-.breadcrumbs--color-violet .breadcrumbs__menu > li > a::before {
-      background-color: rgba(139, 38, 241, 0.05); }
-.breadcrumbs--color-violet .breadcrumbs__menu > li > a.is-active, .breadcrumbs--color-violet .breadcrumbs__menu > li > a:hover {
-      color: #8b26f1; }
-.breadcrumbs--color-violet .breadcrumbs__menu > li > a.is-active::before, .breadcrumbs--color-violet .breadcrumbs__menu > li > a:hover::before {
-        background-color: rgba(139, 38, 241, 0.12); }
-.breadcrumbs--color-violet .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::after, .breadcrumbs--color-violet .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::after {
-        border-color: transparent rgba(139, 38, 241, 0.12) transparent transparent; }
-.breadcrumbs--color-violet .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::before, .breadcrumbs--color-violet .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::before {
-        border-color: transparent transparent rgba(139, 38, 241, 0.12) transparent; }
-.breadcrumbs--color-violet .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::after, .breadcrumbs--color-violet .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::after {
-        border-color: transparent transparent transparent rgba(139, 38, 241, 0.12); }
-.breadcrumbs--color-violet .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::before, .breadcrumbs--color-violet .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::before {
-        border-color: rgba(139, 38, 241, 0.12) transparent transparent transparent; }
-.breadcrumbs--color-violet .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::after {
-      border-color: transparent rgba(139, 38, 241, 0.05) transparent transparent; }
-.breadcrumbs--color-violet .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::before {
-      border-color: transparent transparent rgba(139, 38, 241, 0.05) transparent; }
-.breadcrumbs--color-violet .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::after {
+.breadcrumbs--color-violet > ul > li > a {
+    color: rgba(139, 38, 241, 0.5);
+    background-color: rgba(139, 38, 241, 0.05); }
+.breadcrumbs--color-violet > ul > li > a::before {
+      border-top: 18px solid rgba(139, 38, 241, 0.05);
+      border-bottom: 18px solid rgba(139, 38, 241, 0.05); }
+.breadcrumbs--color-violet > ul > li > a::after {
       border-color: transparent transparent transparent rgba(139, 38, 241, 0.05); }
-.breadcrumbs--color-violet .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::before {
-      border-color: rgba(139, 38, 241, 0.05) transparent transparent transparent; }
+.breadcrumbs--color-violet > ul > li > a.is-active, .breadcrumbs--color-violet > ul > li > a:hover {
+      color: #8b26f1;
+      background-color: rgba(139, 38, 241, 0.12); }
+.breadcrumbs--color-violet > ul > li > a.is-active::before, .breadcrumbs--color-violet > ul > li > a:hover::before {
+        border-top: 18px solid rgba(139, 38, 241, 0.12);
+        border-bottom: 18px solid rgba(139, 38, 241, 0.12); }
+.breadcrumbs--color-violet > ul > li > a.is-active::after, .breadcrumbs--color-violet > ul > li > a:hover::after {
+        border-color: transparent transparent transparent rgba(139, 38, 241, 0.12); }
 .breadcrumbs--color-violet .breadcrumbs__button,
   .breadcrumbs--color-violet a.breadcrumbs__button {
     background: rgba(139, 38, 241, 0.05);
@@ -1895,44 +1667,24 @@ a.breadcrumbs__button {
     .breadcrumbs--color-violet a.breadcrumbs__button:hover {
       color: #8b26f1;
       background: rgba(139, 38, 241, 0.12); }
-.breadcrumbs--color-violet .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before,
-      .breadcrumbs--color-violet a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before {
-        border-color: transparent transparent rgba(139, 38, 241, 0.12) transparent; }
-.breadcrumbs--color-violet .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after,
-      .breadcrumbs--color-violet a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after {
-        border-color: transparent rgba(139, 38, 241, 0.12) transparent transparent; }
-.breadcrumbs--color-violet .breadcrumbs__button .breadcrumbs__button-arrow-tail::before,
-    .breadcrumbs--color-violet a.breadcrumbs__button .breadcrumbs__button-arrow-tail::before {
-      border-color: transparent transparent rgba(139, 38, 241, 0.05) transparent; }
-.breadcrumbs--color-violet .breadcrumbs__button .breadcrumbs__button-arrow-tail::after,
-    .breadcrumbs--color-violet a.breadcrumbs__button .breadcrumbs__button-arrow-tail::after {
-      border-color: transparent rgba(139, 38, 241, 0.05) transparent transparent; }
 .breadcrumbs--color-black {
   /** Color modifiers */ }
-.breadcrumbs--color-black .breadcrumbs__menu > li > a {
-    color: rgba(0, 0, 0, 0.5); }
-.breadcrumbs--color-black .breadcrumbs__menu > li > a::before {
-      background-color: rgba(0, 0, 0, 0.05); }
-.breadcrumbs--color-black .breadcrumbs__menu > li > a.is-active, .breadcrumbs--color-black .breadcrumbs__menu > li > a:hover {
-      color: black; }
-.breadcrumbs--color-black .breadcrumbs__menu > li > a.is-active::before, .breadcrumbs--color-black .breadcrumbs__menu > li > a:hover::before {
-        background-color: rgba(0, 0, 0, 0.12); }
-.breadcrumbs--color-black .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::after, .breadcrumbs--color-black .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::after {
-        border-color: transparent rgba(0, 0, 0, 0.12) transparent transparent; }
-.breadcrumbs--color-black .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::before, .breadcrumbs--color-black .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::before {
-        border-color: transparent transparent rgba(0, 0, 0, 0.12) transparent; }
-.breadcrumbs--color-black .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::after, .breadcrumbs--color-black .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::after {
-        border-color: transparent transparent transparent rgba(0, 0, 0, 0.12); }
-.breadcrumbs--color-black .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::before, .breadcrumbs--color-black .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::before {
-        border-color: rgba(0, 0, 0, 0.12) transparent transparent transparent; }
-.breadcrumbs--color-black .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::after {
-      border-color: transparent rgba(0, 0, 0, 0.05) transparent transparent; }
-.breadcrumbs--color-black .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::before {
-      border-color: transparent transparent rgba(0, 0, 0, 0.05) transparent; }
-.breadcrumbs--color-black .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::after {
+.breadcrumbs--color-black > ul > li > a {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.05); }
+.breadcrumbs--color-black > ul > li > a::before {
+      border-top: 18px solid rgba(0, 0, 0, 0.05);
+      border-bottom: 18px solid rgba(0, 0, 0, 0.05); }
+.breadcrumbs--color-black > ul > li > a::after {
       border-color: transparent transparent transparent rgba(0, 0, 0, 0.05); }
-.breadcrumbs--color-black .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::before {
-      border-color: rgba(0, 0, 0, 0.05) transparent transparent transparent; }
+.breadcrumbs--color-black > ul > li > a.is-active, .breadcrumbs--color-black > ul > li > a:hover {
+      color: black;
+      background-color: rgba(0, 0, 0, 0.12); }
+.breadcrumbs--color-black > ul > li > a.is-active::before, .breadcrumbs--color-black > ul > li > a:hover::before {
+        border-top: 18px solid rgba(0, 0, 0, 0.12);
+        border-bottom: 18px solid rgba(0, 0, 0, 0.12); }
+.breadcrumbs--color-black > ul > li > a.is-active::after, .breadcrumbs--color-black > ul > li > a:hover::after {
+        border-color: transparent transparent transparent rgba(0, 0, 0, 0.12); }
 .breadcrumbs--color-black .breadcrumbs__button,
   .breadcrumbs--color-black a.breadcrumbs__button {
     background: rgba(0, 0, 0, 0.05);
@@ -1941,44 +1693,24 @@ a.breadcrumbs__button {
     .breadcrumbs--color-black a.breadcrumbs__button:hover {
       color: black;
       background: rgba(0, 0, 0, 0.12); }
-.breadcrumbs--color-black .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before,
-      .breadcrumbs--color-black a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before {
-        border-color: transparent transparent rgba(0, 0, 0, 0.12) transparent; }
-.breadcrumbs--color-black .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after,
-      .breadcrumbs--color-black a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after {
-        border-color: transparent rgba(0, 0, 0, 0.12) transparent transparent; }
-.breadcrumbs--color-black .breadcrumbs__button .breadcrumbs__button-arrow-tail::before,
-    .breadcrumbs--color-black a.breadcrumbs__button .breadcrumbs__button-arrow-tail::before {
-      border-color: transparent transparent rgba(0, 0, 0, 0.05) transparent; }
-.breadcrumbs--color-black .breadcrumbs__button .breadcrumbs__button-arrow-tail::after,
-    .breadcrumbs--color-black a.breadcrumbs__button .breadcrumbs__button-arrow-tail::after {
-      border-color: transparent rgba(0, 0, 0, 0.05) transparent transparent; }
 .breadcrumbs--color-gray {
   /** Color modifiers */ }
-.breadcrumbs--color-gray .breadcrumbs__menu > li > a {
-    color: rgba(153, 153, 153, 0.5); }
-.breadcrumbs--color-gray .breadcrumbs__menu > li > a::before {
-      background-color: rgba(153, 153, 153, 0.05); }
-.breadcrumbs--color-gray .breadcrumbs__menu > li > a.is-active, .breadcrumbs--color-gray .breadcrumbs__menu > li > a:hover {
-      color: #999999; }
-.breadcrumbs--color-gray .breadcrumbs__menu > li > a.is-active::before, .breadcrumbs--color-gray .breadcrumbs__menu > li > a:hover::before {
-        background-color: rgba(153, 153, 153, 0.12); }
-.breadcrumbs--color-gray .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::after, .breadcrumbs--color-gray .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::after {
-        border-color: transparent rgba(153, 153, 153, 0.12) transparent transparent; }
-.breadcrumbs--color-gray .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::before, .breadcrumbs--color-gray .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::before {
-        border-color: transparent transparent rgba(153, 153, 153, 0.12) transparent; }
-.breadcrumbs--color-gray .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::after, .breadcrumbs--color-gray .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::after {
-        border-color: transparent transparent transparent rgba(153, 153, 153, 0.12); }
-.breadcrumbs--color-gray .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::before, .breadcrumbs--color-gray .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::before {
-        border-color: rgba(153, 153, 153, 0.12) transparent transparent transparent; }
-.breadcrumbs--color-gray .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::after {
-      border-color: transparent rgba(153, 153, 153, 0.05) transparent transparent; }
-.breadcrumbs--color-gray .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::before {
-      border-color: transparent transparent rgba(153, 153, 153, 0.05) transparent; }
-.breadcrumbs--color-gray .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::after {
+.breadcrumbs--color-gray > ul > li > a {
+    color: rgba(153, 153, 153, 0.5);
+    background-color: rgba(153, 153, 153, 0.05); }
+.breadcrumbs--color-gray > ul > li > a::before {
+      border-top: 18px solid rgba(153, 153, 153, 0.05);
+      border-bottom: 18px solid rgba(153, 153, 153, 0.05); }
+.breadcrumbs--color-gray > ul > li > a::after {
       border-color: transparent transparent transparent rgba(153, 153, 153, 0.05); }
-.breadcrumbs--color-gray .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::before {
-      border-color: rgba(153, 153, 153, 0.05) transparent transparent transparent; }
+.breadcrumbs--color-gray > ul > li > a.is-active, .breadcrumbs--color-gray > ul > li > a:hover {
+      color: #999999;
+      background-color: rgba(153, 153, 153, 0.12); }
+.breadcrumbs--color-gray > ul > li > a.is-active::before, .breadcrumbs--color-gray > ul > li > a:hover::before {
+        border-top: 18px solid rgba(153, 153, 153, 0.12);
+        border-bottom: 18px solid rgba(153, 153, 153, 0.12); }
+.breadcrumbs--color-gray > ul > li > a.is-active::after, .breadcrumbs--color-gray > ul > li > a:hover::after {
+        border-color: transparent transparent transparent rgba(153, 153, 153, 0.12); }
 .breadcrumbs--color-gray .breadcrumbs__button,
   .breadcrumbs--color-gray a.breadcrumbs__button {
     background: rgba(153, 153, 153, 0.05);
@@ -1987,44 +1719,24 @@ a.breadcrumbs__button {
     .breadcrumbs--color-gray a.breadcrumbs__button:hover {
       color: #999999;
       background: rgba(153, 153, 153, 0.12); }
-.breadcrumbs--color-gray .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before,
-      .breadcrumbs--color-gray a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before {
-        border-color: transparent transparent rgba(153, 153, 153, 0.12) transparent; }
-.breadcrumbs--color-gray .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after,
-      .breadcrumbs--color-gray a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after {
-        border-color: transparent rgba(153, 153, 153, 0.12) transparent transparent; }
-.breadcrumbs--color-gray .breadcrumbs__button .breadcrumbs__button-arrow-tail::before,
-    .breadcrumbs--color-gray a.breadcrumbs__button .breadcrumbs__button-arrow-tail::before {
-      border-color: transparent transparent rgba(153, 153, 153, 0.05) transparent; }
-.breadcrumbs--color-gray .breadcrumbs__button .breadcrumbs__button-arrow-tail::after,
-    .breadcrumbs--color-gray a.breadcrumbs__button .breadcrumbs__button-arrow-tail::after {
-      border-color: transparent rgba(153, 153, 153, 0.05) transparent transparent; }
 .breadcrumbs--color-white {
   /** Color modifiers */ }
-.breadcrumbs--color-white .breadcrumbs__menu > li > a {
-    color: rgba(255, 255, 255, 0.5); }
-.breadcrumbs--color-white .breadcrumbs__menu > li > a::before {
-      background-color: rgba(255, 255, 255, 0.05); }
-.breadcrumbs--color-white .breadcrumbs__menu > li > a.is-active, .breadcrumbs--color-white .breadcrumbs__menu > li > a:hover {
-      color: white; }
-.breadcrumbs--color-white .breadcrumbs__menu > li > a.is-active::before, .breadcrumbs--color-white .breadcrumbs__menu > li > a:hover::before {
-        background-color: rgba(255, 255, 255, 0.12); }
-.breadcrumbs--color-white .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::after, .breadcrumbs--color-white .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::after {
-        border-color: transparent rgba(255, 255, 255, 0.12) transparent transparent; }
-.breadcrumbs--color-white .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-tail::before, .breadcrumbs--color-white .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-tail::before {
-        border-color: transparent transparent rgba(255, 255, 255, 0.12) transparent; }
-.breadcrumbs--color-white .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::after, .breadcrumbs--color-white .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::after {
-        border-color: transparent transparent transparent rgba(255, 255, 255, 0.12); }
-.breadcrumbs--color-white .breadcrumbs__menu > li > a.is-active .breadcrumbs__link-arrow-head::before, .breadcrumbs--color-white .breadcrumbs__menu > li > a:hover .breadcrumbs__link-arrow-head::before {
-        border-color: rgba(255, 255, 255, 0.12) transparent transparent transparent; }
-.breadcrumbs--color-white .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::after {
-      border-color: transparent rgba(255, 255, 255, 0.05) transparent transparent; }
-.breadcrumbs--color-white .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-tail::before {
-      border-color: transparent transparent rgba(255, 255, 255, 0.05) transparent; }
-.breadcrumbs--color-white .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::after {
+.breadcrumbs--color-white > ul > li > a {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.05); }
+.breadcrumbs--color-white > ul > li > a::before {
+      border-top: 18px solid rgba(255, 255, 255, 0.05);
+      border-bottom: 18px solid rgba(255, 255, 255, 0.05); }
+.breadcrumbs--color-white > ul > li > a::after {
       border-color: transparent transparent transparent rgba(255, 255, 255, 0.05); }
-.breadcrumbs--color-white .breadcrumbs__menu > li > a .breadcrumbs__link-arrow-head::before {
-      border-color: rgba(255, 255, 255, 0.05) transparent transparent transparent; }
+.breadcrumbs--color-white > ul > li > a.is-active, .breadcrumbs--color-white > ul > li > a:hover {
+      color: white;
+      background-color: rgba(255, 255, 255, 0.12); }
+.breadcrumbs--color-white > ul > li > a.is-active::before, .breadcrumbs--color-white > ul > li > a:hover::before {
+        border-top: 18px solid rgba(255, 255, 255, 0.12);
+        border-bottom: 18px solid rgba(255, 255, 255, 0.12); }
+.breadcrumbs--color-white > ul > li > a.is-active::after, .breadcrumbs--color-white > ul > li > a:hover::after {
+        border-color: transparent transparent transparent rgba(255, 255, 255, 0.12); }
 .breadcrumbs--color-white .breadcrumbs__button,
   .breadcrumbs--color-white a.breadcrumbs__button {
     background: rgba(255, 255, 255, 0.05);
@@ -2033,25 +1745,13 @@ a.breadcrumbs__button {
     .breadcrumbs--color-white a.breadcrumbs__button:hover {
       color: white;
       background: rgba(255, 255, 255, 0.12); }
-.breadcrumbs--color-white .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before,
-      .breadcrumbs--color-white a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::before {
-        border-color: transparent transparent rgba(255, 255, 255, 0.12) transparent; }
-.breadcrumbs--color-white .breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after,
-      .breadcrumbs--color-white a.breadcrumbs__button:hover .breadcrumbs__button-arrow-tail::after {
-        border-color: transparent rgba(255, 255, 255, 0.12) transparent transparent; }
-.breadcrumbs--color-white .breadcrumbs__button .breadcrumbs__button-arrow-tail::before,
-    .breadcrumbs--color-white a.breadcrumbs__button .breadcrumbs__button-arrow-tail::before {
-      border-color: transparent transparent rgba(255, 255, 255, 0.05) transparent; }
-.breadcrumbs--color-white .breadcrumbs__button .breadcrumbs__button-arrow-tail::after,
-    .breadcrumbs--color-white a.breadcrumbs__button .breadcrumbs__button-arrow-tail::after {
-      border-color: transparent rgba(255, 255, 255, 0.05) transparent transparent; }
 /** Sizes
 --------------------------------------------------*/
-.breadcrumbs--full .breadcrumbs__menu {
+.breadcrumbs--full > ul {
   width: 100%; }
-.breadcrumbs--full .breadcrumbs__menu > li {
+.breadcrumbs--full > ul > li {
     flex: 1; }
-.breadcrumbs--full .breadcrumbs__menu > li > a {
+.breadcrumbs--full > ul > li > a {
     justify-content: center;
     text-align: center; }
 /**
@@ -2135,14 +1835,14 @@ a.breadcrumbs__button {
 /** Checkbox group
 --------------------------------------------------*/
 .checkbox-group {
-  height: 70px;
+  height: 64px;
   padding: 12px;
   border: 1px solid #ebebeb;
   border-radius: 3px; }
 /** Checkbox group label
 --------------------------------------------------*/
 .checkbox-group__label {
-  margin-bottom: 12px;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1;
   color: black; }
@@ -2156,6 +1856,8 @@ a.breadcrumbs__button {
   --------------------------------------------------*/
   /** Checkbox label
   --------------------------------------------------*/ }
+.checkbox * {
+    transition: all 150ms ease-out; }
 .checkbox + .checkbox {
     margin-left: 24px; }
 .checkbox > input {
@@ -2193,7 +1895,8 @@ a.breadcrumbs__button {
       font-family: "fomo-icons";
       color: white;
       font-size: 24px;
-      /** equals 24px */ }
+      /** equals 24px */
+      transition: all 150ms ease-out; }
 /** States
 --------------------------------------------------*/
 .checkbox {
@@ -2245,6 +1948,8 @@ a.breadcrumbs__button {
 .form__item {
   position: relative;
   margin-bottom: 24px; }
+.form__item * {
+    transition: all 150ms ease-out; }
 .form__item:last-child {
     margin-bottom: 0; }
 /** Form wrapper
@@ -2255,7 +1960,8 @@ a.breadcrumbs__button {
 --------------------------------------------------*/
 .form__input-wrapper {
   position: relative;
-  flex: 1; }
+  flex: 1;
+  z-index: 4; }
 /** Form input and textarea
 --------------------------------------------------*/
 .form__input,
@@ -2267,8 +1973,7 @@ a.breadcrumbs__button {
   display: block;
   width: 100%;
   border: 1px solid #ebebeb;
-  transition: 0.05s ease-in-out;
-  line-height: 1.5;
+  line-height: 22px;
   height: auto; }
 .form__input:focus,
   .form__textarea:focus {
@@ -2311,28 +2016,25 @@ a.breadcrumbs__button {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  border: 1px solid transparent;
+  margin: 24px 12px;
   font-size: 18px;
   font-weight: 400;
-  margin: 0;
-  padding: 24px 12px;
-  color: #cccccc;
-  width: 100%;
-  transition: 0.1s ease-in-out;
-  line-height: 1.5;
-  height: 70px; }
-/** Form extras
+  line-height: 18px;
+  color: #cccccc; }
+/** Form action
 --------------------------------------------------*/
-.form__extras {
+.form__extras,
+.form__action {
   height: 40px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding-right: 12px;
+  padding: 0 12px;
   display: flex;
   align-items: center;
-  z-index: 3; }
+  z-index: 3;
+  border: 1px solid #ebebeb;
+  margin-right: -1px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: #f7f7f7; }
 /** Form message
 --------------------------------------------------*/
 .form__message {
@@ -2349,45 +2051,73 @@ a.breadcrumbs__button {
 --------------------------------------------------*/
 .form__item {
   /** Error */
-  /** Extras */ }
+  /** Action */ }
 .form__item.has-error .form__input,
   .form__item.has-error .form__textarea {
     border-color: rgba(250, 61, 73, 0.75); }
-.form__item.has-extras .form__input[readonly] {
-    color: #4648d2; }
+.form__item.has-extras, .form__item.has-action {
+    display: flex;
+    flex-wrap: wrap; }
+.form__item.has-extras .form__input[readonly], .form__item.has-action .form__input[readonly] {
+      color: #4648d2; }
+.form__item.has-extras .form__description, .form__item.has-action .form__description {
+      width: 100%; }
+.form__item.has-extras .form__action + .form__input-wrapper .form__input, .form__item.has-action .form__action + .form__input-wrapper .form__input {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+.form__item.has-extras .form__input-wrapper:first-child .form__input, .form__item.has-action .form__input-wrapper:first-child .form__input {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+.form__item.has-extras .form__input-wrapper + .form__action, .form__item.has-action .form__input-wrapper + .form__action {
+      margin-right: 0;
+      margin-left: -1px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px; }
 /** Sizes
 --------------------------------------------------*/
 /** Large */
 .form--large .form__input,
 .form--large .form__textarea {
-  padding: 24px 12px;
-  height: 70px; }
+  padding: 19px 12px;
+  min-height: 64px; }
 .form--large .form__input + .form__label,
   .form--large .form__textarea + .form__label {
     display: block; }
-.form--large .form__input.is-full, .form--large .form__input.has-placeholder,
-  .form--large .form__textarea.is-full,
-  .form--large .form__textarea.has-placeholder {
-    padding: 36px 12px 12px; }
-.form--large .form__input.is-full + .form__label, .form--large .form__input.has-placeholder + .form__label,
-    .form--large .form__textarea.is-full + .form__label,
-    .form--large .form__textarea.has-placeholder + .form__label {
-      padding: 12px 12px 0;
+.form--large .form__input.has-focus, .form--large .form__input.has-value,
+  .form--large .form__textarea.has-focus,
+  .form--large .form__textarea.has-value {
+    padding: 28px 12px 12px; }
+.form--large .form__input.has-focus + .form__label, .form--large .form__input.has-value + .form__label,
+    .form--large .form__textarea.has-focus + .form__label,
+    .form--large .form__textarea.has-value + .form__label {
+      line-height: 1;
       height: auto;
       font-size: 12px;
-      color: black; }
-.form--large .form__input::placeholder,
-  .form--large .form__textarea::placeholder {
-    opacity: 0;
-    color: transparent; }
-.form--large .form__input.has-placeholder::placeholder,
-  .form--large .form__textarea.has-placeholder::placeholder {
-    opacity: 1;
-    color: #cccccc; }
-.form--large .form__extras {
-  height: 70px; }
+      color: black;
+      margin: 12px 0 0 12px;
+      z-index: 1; }
+.form--large .form__input.has-focus + .form__label::before, .form--large .form__input.has-value + .form__label::before,
+      .form--large .form__textarea.has-focus + .form__label::before,
+      .form--large .form__textarea.has-value + .form__label::before {
+        content: " ";
+        position: absolute;
+        width: calc(100% + 12px);
+        height: calc( 100% + 12px / 2);
+        left: -6px;
+        top: -3px;
+        background-color: white;
+        z-index: -1;
+        transition: none;
+        border-radius: 12px; }
+.form--large .form__extras,
+.form--large .form__action {
+  height: 64px; }
 .form--large .form__textarea {
   height: auto; }
+.form--large .form__textarea.has-focus, .form--large .form__textarea.has-value {
+    padding: 26px 12px 12px; }
 /**
  * Dropdown
  */
@@ -2415,8 +2145,8 @@ a.breadcrumbs__button {
   border: 1px solid #ebebeb;
   border-radius: 3px;
   height: 40px;
-  font-size: 14px;
-  padding: 12px; }
+  font-size: 16px;
+  padding: 9px 12px; }
 /** Dropdown text
 --------------------------------------------------*/
 .form-dropdown__text {
@@ -2446,8 +2176,7 @@ a.breadcrumbs__button {
 .form-dropdown__icon svg {
     height: 18px;
     width: 18px;
-    display: block;
-    transition: 0.1s ease-in-out; }
+    display: block; }
 .form-dropdown__icon svg path {
       fill: #4648d2; }
 .form-dropdown__icon svg:first-child {
@@ -2493,13 +2222,15 @@ a.breadcrumbs__button {
 --------------------------------------------------*/
 /** Open and with a value */
 .form-dropdown.is-open .form-dropdown__label,
-.form-dropdown.is-full .form-dropdown__label {
+.form-dropdown.has-focus .form-dropdown__label,
+.form-dropdown.has-value .form-dropdown__label {
   color: black;
   height: 100%;
   font-size: 10px;
   padding: 6px 12px 0; }
 .form-dropdown.is-open .form-dropdown__text,
-.form-dropdown.is-full .form-dropdown__text {
+.form-dropdown.has-focus .form-dropdown__text,
+.form-dropdown.has-value .form-dropdown__text {
   color: #4648d2;
   opacity: 1;
   visibility: visible; }
@@ -2567,13 +2298,13 @@ a.breadcrumbs__button {
   /** Search */ }
 .form--large .form-dropdown .form-dropdown__label {
     font-size: 18px;
-    padding: 24px 12px;
-    height: 70px; }
+    padding: 19px 12px;
+    min-height: 64px; }
 .form--large .form-dropdown .form-dropdown__text {
     font-size: 18px;
-    padding: 36px 12px 12px;
-    height: 70px; }
-.form--large .form-dropdown.is-full .form-dropdown__label, .form--large .form-dropdown.is-open .form-dropdown__label {
+    padding: 28px 12px 12px;
+    min-height: 64px; }
+.form--large .form-dropdown.has-focus .form-dropdown__label, .form--large .form-dropdown.has-value .form-dropdown__label, .form--large .form-dropdown.is-open .form-dropdown__label {
     padding: 12px 12px 0;
     font-size: 12px; }
 .form--large .form-dropdown .form-dropdown__icon {
@@ -2584,7 +2315,7 @@ a.breadcrumbs__button {
       width: 24px;
       height: 24px; }
 .form--large .form-dropdown .form-dropdown__content {
-    padding-top: 70px; }
+    padding-top: 64px; }
 .form--large .form-dropdown .form-dropdown__menu {
     margin: 12px 0; }
 .form--large .form-dropdown .form-dropdown__menu li {
@@ -2592,7 +2323,7 @@ a.breadcrumbs__button {
       padding: 6px 24px; }
 .form--large .form-dropdown.form-dropdown--search .form-dropdown__input,
   .form--large .form-dropdown.form-dropdown--search .form-dropdown__search-text {
-    height: 70px;
+    height: 64px;
     padding: 36px 12px 12px;
     font-size: 18px; }
 /** With an input */
@@ -2858,74 +2589,70 @@ a.breadcrumbs__button {
 /**
  * List
  */
-/** Header
---------------------------------------------------*/
-.list__header {
-  display: flex;
-  align-items: center;
-  height: 65px;
-  font-size: 16px;
-  color: black;
-  padding: 0 24px; }
+ul, ol {
+  padding-left: 24px;
+  margin: 0; }
+.list {
+  padding: 0; }
 /** Item
 --------------------------------------------------*/
-.list__item {
+.list__item, .list > li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding-left: 24px;
   padding-right: 24px;
   /** Disabled state */ }
-.list__item.is-disabled {
+.list__item.is-disabled, .list > li.is-disabled {
     background-color: #f7f7f7; }
-.list__item .list__item-title {
+.list__item .list__item-title, .list__item h1, .list__item h2, .list__item h3, .list__item h4, .list__item h5, .list__item h6, .list > li .list__item-title, .list > li h1, .list > li h2, .list > li h3, .list > li h4, .list > li h5, .list > li h6 {
     margin-top: 0;
     font-size: inherit; }
-.list__item .list__item-description {
+.list__item .list__item-description, .list__item p, .list > li .list__item-description, .list > li p {
     margin-bottom: 0;
     color: #cccccc;
     font-size: 90%;
     /** set description text to 90% size relative to style's font size */ }
-/** Slot
+/** Action
 --------------------------------------------------*/
-.list__slot:first-child {
-  flex: 1; }
+.list__action {
+  margin-left: auto; }
 /** Styles
 --------------------------------------------------*/
 /** Divide */
-.list--divide .list__item {
+.list--divide .list__item, .list--divide > li {
   border-top: 1px solid #ebebeb; }
-.list--divide .list__item:first-child {
+.list--divide .list__item:first-child, .list--divide > li:first-child {
     border-top: none; }
 /** Large */
 .list--large {
   font-size: 18px; }
-.list--large .list__item {
+.list--large .list__item, .list--large > li {
     padding-top: 24px;
     padding-bottom: 24px; }
-.list--large .list__item-title {
+.list--large .list__item-title, .list--large h1, .list--large h2, .list--large h3, .list--large h4, .list--large h5, .list--large h6 {
     margin-bottom: 6px; }
-.list--large .list__item-description {
+.list--large .list__item-description, .list--large p {
     font-size: 16px; }
 /** Medium */
 .list--medium {
   font-size: 16px; }
-.list--medium .list__item {
+.list--medium .list__item, .list--medium > li {
     padding-top: 12px;
     padding-bottom: 12px; }
-.list--medium .list__item-title {
+.list--medium .list__item-title, .list--medium h1, .list--medium h2, .list--medium h3, .list--medium h4, .list--medium h5, .list--medium h6 {
     margin-bottom: 3px; }
-.list--medium .list__item-description {
+.list--medium .list__item-description, .list--medium p {
     font-size: 14px; }
 /** Small */
 .list--small {
   font-size: 14px; }
-.list--small .list__item {
+.list--small .list__item, .list--small > li {
     padding-top: 6px;
     padding-bottom: 6px; }
-.list--small .list__item-title {
+.list--small .list__item-title, .list--small h1, .list--small h2, .list--small h3, .list--small h4, .list--small h5, .list--small h6 {
     margin-bottom: 0; }
-.list--small .list__item-description {
+.list--small .list__item-description, .list--small p {
     font-size: 12px; }
 .list--small [class^="icon-"],
   .list--small [class*=" icon-"] {
@@ -2934,10 +2661,10 @@ a.breadcrumbs__button {
 .list--no-gutter {
   margin: -24px; }
 /** Hover */
-.list--hover .list__item:hover {
+.list--hover .list__item:hover, .list--hover > li:hover {
   background-color: #fcfcfc; }
 /** Pointer */
-.list--pointer .list__item:hover {
+.list--pointer .list__item:hover, .list--pointer > li:hover {
   cursor: pointer; }
 /**
  * Message
@@ -3804,14 +3531,14 @@ a.breadcrumbs__button {
 /** Radio group
 --------------------------------------------------*/
 .radio-group {
-  height: 72px;
+  height: 64px;
   padding: 12px;
   border: 1px solid #ebebeb;
   border-radius: 3px; }
 /** Radio group label
 --------------------------------------------------*/
 .radio-group__label {
-  margin-bottom: 12px;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1;
   color: black; }
@@ -3971,6 +3698,8 @@ a.breadcrumbs__button {
  */
 .toggle {
   position: relative; }
+.toggle * {
+    transition: all 150ms ease-out; }
 /** Toggle button
 --------------------------------------------------*/
 .toggle__button {
@@ -4009,7 +3738,7 @@ a.breadcrumbs__button {
     opacity: .5;
     top: 0;
     left: 0;
-    transition: 0.2s ease-in; }
+    transition: all 150ms ease-out; }
 .toggle__label:after {
     content: '';
     width: 24px;
@@ -4019,7 +3748,7 @@ a.breadcrumbs__button {
     border-radius: 24px;
     background: white;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
-    transition: 0.2s linear; }
+    transition: all 150ms ease-out; }
 /** States
 --------------------------------------------------*/
 /** Checked */
@@ -4042,43 +3771,39 @@ a.breadcrumbs__button {
 /** Sizes
 --------------------------------------------------*/
 /** Large */
-.toggle--large {
-  padding-right: 72px; }
 .toggle--large .toggle__value {
-    padding: 30px 12px 18px 12px;
-    font-size: 18px;
-    color: #4648d2;
-    border: 1px solid transparent;
-    width: 100%;
-    transition: 0.05s ease-in-out;
-    line-height: 1.5; }
+  padding: 28px 12px 12px;
+  font-size: 18px;
+  color: #4648d2;
+  border: 1px solid transparent;
+  width: 100%;
+  line-height: 22px;
+  min-height: 64px; }
 .toggle--large .toggle__text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 70px;
-    border: 1px solid #ebebeb;
-    border-radius: 3px;
-    width: 100%;
-    transition: 0.1s ease-in-out;
-    line-height: 1.5;
-    padding: 12px 12px 0;
-    font-size: 12px;
-    color: black; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 64px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  width: 100%;
+  line-height: 1.5;
+  padding: 12px 12px 0;
+  font-size: 12px;
+  color: black; }
 .toggle--large .toggle__text:hover {
-      cursor: pointer; }
+    cursor: pointer; }
 .toggle--large .toggle__button {
-    position: absolute;
-    right: 12px;
-    top: 36px;
-    transform: translateY(-50%); }
+  position: absolute;
+  right: 12px;
+  top: 17px; }
 .toggle--large .toggle__label {
-    padding-left: 54px; }
+  padding-left: 54px; }
 .toggle--large.is-disabled {
-    cursor: default;
-    pointer-events: none; }
+  cursor: default;
+  pointer-events: none; }
 .toggle--large.is-disabled .toggle__value {
-      color: #999999; }
+    color: #999999; }
 /** Colors
 --------------------------------------------------*/
 .toggle--color-primary.is-checked .toggle__label:before {
@@ -4129,7 +3854,7 @@ a.button {
   user-select: none;
   color: white;
   background-color: #ffa941;
-  transition: 200ms ease-out all;
+  transition: all 150ms ease-out;
   /** Disabled state */
   /** Add a margin when buttons are next to each other */
   /** Loading state */
