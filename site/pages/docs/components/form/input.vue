@@ -66,7 +66,7 @@
     <docs-item title="Read-only" :code="input_read_only_html" v-if="is_html">
       <form class="form" slot="body">
         <div class="form__item">
-          <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+          <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
           <p class="form__description">Description text</p>
         </div>
       </form>
@@ -114,7 +114,7 @@
     <docs-item title="Large and read-only" :code="input_read_only_large" v-if="is_html">
       <form class="form form--large" slot="body">
         <div class="form__item">
-          <input id="form_large_read_only" type="text" name="form_large_read_only" readonly="readonly" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+          <input id="form_large_read_only" type="text" name="form_large_read_only" readonly="readonly" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
           <label for="form_large_read_only" class="form__label">Label</label>
           <p class="form__description">Description text</p>
         </div>
@@ -151,7 +151,7 @@
           </div>
 
           <div class="form__input-wrapper">
-            <input id="form_large_action_button_left" type="text" name="form_large_action_button_left" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+            <input id="form_large_action_button_left" type="text" name="form_large_action_button_left" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
             <label for="form_large_action_button_left" class="form__label">Your API key</label>
           </div>
 
@@ -160,7 +160,7 @@
 
         <div class="form__item has-action">
           <div class="form__input-wrapper">
-            <input id="form_large_action_button_right" type="text" name="form_large_action_button_right" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+            <input id="form_large_action_button_right" type="text" name="form_large_action_button_right" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
             <label for="form_large_action_button_right" class="form__label">Your API key</label>
           </div>
 
@@ -558,7 +558,7 @@ export default {
 </form>`,
       input_read_only_html: `<form class="form">
   <div class="form__item">
-    <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+    <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
     <p class="form__description">Description text</p>
   </div>
 </form>`,
@@ -591,7 +591,7 @@ export default {
 </form>`,
       input_read_only_large: `<form class="form form--large">
   <div class="form__item">
-    <input id="form_large_read_only" type="text" name="form_large_read_only" readonly="readonly" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+    <input id="form_large_read_only" type="text" name="form_large_read_only" readonly="readonly" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
     <label for="form_large_read_only" class="form__label">Label</label>
     <p class="form__description">Description text</p>
   </div>
@@ -634,7 +634,7 @@ export default {
     </div>
 
     <div class="form__input-wrapper">
-      <input id="form_large_action_button_left" type="text" name="form_large_action_button_left" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+      <input id="form_large_action_button_left" type="text" name="form_large_action_button_left" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
       <label for="form_large_action_button_left" class="form__label">Your API key</label>
     </div>
 
@@ -643,7 +643,7 @@ export default {
 
   <div class="form__item has-action">
     <div class="form__input-wrapper">
-      <input id="form_large_action_button_right" type="text" name="form_large_action_button_right" class="form__input is-full" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+      <input id="form_large_action_button_right" type="text" name="form_large_action_button_right" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
       <label for="form_large_action_button_right" class="form__label">Your API key</label>
     </div>
 

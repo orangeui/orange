@@ -14,11 +14,12 @@ const Textarea = (function() {
   */
 
   const Classes = {
-    _active_class: "is-full"
+    _focus_class: 'has-focus',
+    _value_class: 'has-value'
   }
 
   const Selectors = {
-    _textarea: ".form .form__textarea",
+    _textarea: '.form .form__textarea',
     _read_only: 'readonly',
     auto_expand: 'data-auto-expand'
   }
@@ -38,31 +39,28 @@ const Textarea = (function() {
   */
 
   // Function to activate all textareas
-  function activateTextareas() {
+  function activateTextareas () {
     for (let i = 0; i < textareas.length; i++) {
       let textarea = textareas[i];
 
-      if (typeof textarea.value === "string" && textarea.value !== ''){
-        textarea.classList.add(Classes._active_class);
+      if (typeof textarea.value === 'string' && textarea.value !== ''){
+        textarea.classList.add(Classes._value_class);
       }
     }
   }
 
   // Function to toggle active class
-  function toggleActiveClass(event) {
+  function toggleFocusClass (event) {
     let textarea = event.target;
-    let textarea_has_text = textarea.value !== "" && textarea.value !== null;
-    let textarea_readonly = textarea.getAttribute('readonly') === 'readonly' || textarea.getAttribute('readonly') === "";
+    let textarea_readonly = textarea.getAttribute('readonly') === 'readonly' || textarea.getAttribute('readonly') === '';
 
-    if (textarea_has_text || event.type === "focusin" && !textarea_readonly) {
-      textarea.classList.add(Classes._active_class);
-    } else if (event.type === "focusout" && !textarea_has_text || !textarea_has_text) {
-      textarea.classList.remove(Classes._active_class);
+    if (textarea.classList.contains('form__textarea')) {
+      return event.type === 'focusin' && !textarea_readonly ? textarea.classList.add(Classes._focus_class) : textarea.classList.remove(Classes._focus_class)
     }
   }
 
   // Function to add posibility for auto expanding textarea
-  function autoExpandTextarea(event) {
+  function autoExpandTextarea (event) {
     const el = event.target;
     const offset = el.offsetHeight - el.clientHeight;
 
@@ -71,6 +69,20 @@ const Textarea = (function() {
       el.style.height = el.scrollHeight + offset + 'px';
     } else {
       el.style.height = 'auto';
+    }
+  }
+
+  function onInput (event) {
+    let textarea = event.target
+    let textarea_has_text = textarea.value !== '' && textarea.value !== null;
+    let auto_expand_enabled = event.target.hasAttribute(Textarea.auto_expand)
+
+    if (textarea.classList.contains('form__textarea')) {
+      if (auto_expand_enabled) {
+        autoExpandTextarea(event)
+      }
+
+      return textarea_has_text ? textarea.classList.add(Classes._value_class) : textarea.classList.remove(Classes._value_class)
     }
   }
 
@@ -84,8 +96,8 @@ const Textarea = (function() {
   return {
     textareas: textareas,
     activateTextareas: activateTextareas,
-    toggleActiveClass: toggleActiveClass,
-    autoExpandTextarea: autoExpandTextarea,
+    toggleFocusClass: toggleFocusClass,
+    onInput: onInput,
     auto_expand: Selectors.auto_expand
   }
 
@@ -97,18 +109,12 @@ if (Textarea.textareas.length) {
 }
 
 // Add focusin event
-document.addEventListener('focusin', Textarea.toggleActiveClass, false)
+document.addEventListener('focusin', Textarea.toggleFocusClass, false)
 
 // Add focusout event
-document.addEventListener('focusout', Textarea.toggleActiveClass, false)
+document.addEventListener('focusout', Textarea.toggleFocusClass, false)
 
 // Add input event (check if typing inside textarea)
-document.addEventListener('input', function (event) {
-  let auto_expand_enabled = event.target.hasAttribute(Textarea.auto_expand)
-
-  if (event.target.classList.contains('form__textarea') && auto_expand_enabled){
-    Textarea.autoExpandTextarea(event)
-  }
-})
+document.addEventListener('input', Textarea.onInput, false)
 
 export default Textarea
