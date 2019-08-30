@@ -5,7 +5,6 @@
  * --------------------------------------------------------------------------
  */
 
-
 const Dropdown = (function() {
 
   /**
@@ -15,19 +14,19 @@ const Dropdown = (function() {
   */
 
   const Classes = {
-    _active_class: "is-full",
-    _open_class: "is-open"
+    _value_class: 'has-value',
+    _open_class: 'is-open'
   }
 
   const Selectors = {
-    dropdown: ".form-dropdown",
-    _input: ".form-dropdown__input",
-    _option: ".form-dropdown__menu li",
-    _text: ".form-dropdown__text"
+    dropdown: '.form-dropdown',
+    _input: '.form-dropdown__input',
+    _option: '.form-dropdown__menu li',
+    _text: '.form-dropdown__text'
   }
 
   let dropdowns;
-  
+
 
 
   /**
@@ -41,21 +40,21 @@ const Dropdown = (function() {
   */
 
   // Function to check if dropdown is opened
-  function _isOpen(dropdown_el) {
+  function _isOpen (dropdown_el) {
     return dropdown_el.classList.contains(Classes._open_class);
   }
 
   // Function to select option
-  function _selectDropdownOption(event) {
+  function _selectDropdownOption (event) {
     event.stopPropagation();
-    
+
     let option = event.target;
     let option_value = option.innerText;
     let current_dropdown = option.closest(Selectors.dropdown);
     current_dropdown.querySelector(Selectors._input).value = option_value;
     current_dropdown.querySelector(Selectors._text).innerText = option_value;
 
-    current_dropdown.classList.add(Classes._active_class); 
+    current_dropdown.classList.add(Classes._value_class);
     current_dropdown.classList.remove(Classes._open_class);
   }
 
@@ -65,28 +64,28 @@ const Dropdown = (function() {
   */
 
   // Function to get all dropdowns
-  function getDropdowns() {
+  function getDropdowns () {
     dropdowns = document.querySelectorAll(Selectors.dropdown);
   }
 
   // Function to activate all dropdowns
-  function activateDropdowns() {
+  function activateDropdowns () {
     getDropdowns();
 
     for (let i = 0; i < dropdowns.length; i++) {
       let dropdown = dropdowns[i]
       let current_value = dropdown.querySelector(Selectors._input).value;
-      if (typeof current_value === "string" && current_value !== ''){
+      if (typeof current_value === 'string' && current_value !== ''){
         dropdown.querySelector(Selectors._text).innerText = current_value;
-        dropdown.classList.add(Classes._active_class);
-      } 
+        dropdown.classList.add(Classes._value_class);
+      }
 
-      // dropdown.addEventListener("click", toggleDropdown, false);
+      // dropdown.addEventListener('click', toggleDropdown, false);
 
       let options = dropdown.querySelectorAll(Selectors._option);
       for (let ii = 0; ii < options.length; ii++) {
         let dropdown_option = options[ii];
-        dropdown_option.addEventListener("click", _selectDropdownOption, false);
+        dropdown_option.addEventListener('click', _selectDropdownOption, false);
       }
     }
 
@@ -99,7 +98,7 @@ const Dropdown = (function() {
   }
 
   // Function to toggle dropdown active class
-  function toggleDropdown(event) {
+  function toggleDropdown (event) {
     let dropdown = event.target;
     let current_dropdown = dropdown.closest(Selectors.dropdown);
     if (_isOpen(current_dropdown)) {
@@ -108,7 +107,7 @@ const Dropdown = (function() {
       current_dropdown.classList.add(Classes._open_class);
     }
   }
-  
+
   // Function to close dropdowns
   function closeDropdowns() {
     if (dropdowns === undefined || dropdowns.length === 0) {
@@ -117,9 +116,9 @@ const Dropdown = (function() {
 
     for (let i = 0; i < dropdowns.length; i++) {
       let dropdown = dropdowns[i];
-      dropdown.classList.remove(Classes._open_class); 
+      dropdown.classList.remove(Classes._open_class);
     }
-  }  
+  }
 
 
 
@@ -136,7 +135,7 @@ const Dropdown = (function() {
     closeDropdowns: closeDropdowns,
     dropdown: Selectors.dropdown
   }
-  
+
 })()
 
 // On init run getDropdowns
@@ -153,7 +152,7 @@ document.addEventListener('click', function (event) {
     Dropdown.activateDropdowns()
   }
 
-  const isDropdownLabel = event.target.classList.contains('form-dropdown__label') || 
+  const isDropdownLabel = event.target.classList.contains('form-dropdown__label') ||
                           event.target.classList.contains('form-dropdown__text')
 
   if (isDropdownLabel) {
