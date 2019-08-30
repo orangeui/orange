@@ -15,7 +15,7 @@
     <docs-item title="Basic" :code="dropdown_html">
       <form class="form" slot="body">
         <div class="form__item">
-          <div id="form_dropdown" class="form-dropdown">
+          <div class="form-dropdown">
             <label for="form_dropdown" class="form-dropdown__label">Label</label>
             <input id="form_dropdown" type="text" name="form_dropdown" class="form-dropdown__input" >
             <div class="form-dropdown__text">Placeholder</div>
@@ -46,7 +46,7 @@
     <docs-item title="Large" :code="dropdown_large_html">
       <form class="form form--large" slot="body">
         <div class="form__item">
-          <div id="form_dropdown_large" class="form-dropdown">
+          <div class="form-dropdown">
             <label for="form_dropdown_large" class="form-dropdown__label">Label</label>
             <input id="form_dropdown_large" type="text" name="form_dropdown_large" class="form-dropdown__input">
 
