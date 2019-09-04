@@ -6,8 +6,8 @@
 
     <docs-item class="explanation">
       <div slot="body">
-        <p>An input field is used to <mark>elicit a response from a user</mark>.</p>
-        <p>The Input component comes in <mark>small (default)</mark> and <mark>large size</mark>, and can hold Vue components like Buttons when needed.</p>
+        <p>An input component is used to <mark>elicit a response from a user</mark>.</p>
+        <p>The Input comes in <mark>small (default)</mark> and <mark>large size</mark>, and can hold other components like Buttons when needed.</p>
       </div>
     </docs-item>
 
@@ -15,8 +15,8 @@
     <docs-item title="Basic" :code="input_html" v-if="is_html">
       <form class="form" slot="body">
         <div class="form__item">
-          <input id="form_id" type="text" name="form_id" placeholder="Label" class="form__input">
-
+          <input id="form_id" type="text" name="form_id" class="form__input">
+          <label for="form_id" class="form__label">Label</label>
           <p class="form__description">Description text</p>
         </div>
       </form>
@@ -67,6 +67,7 @@
       <form class="form" slot="body">
         <div class="form__item">
           <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+          <label for="form_read_only" class="form__label">Label</label>
           <p class="form__description">Description text</p>
         </div>
       </form>
@@ -523,6 +524,7 @@ export default {
       input_html: `<form class="form">
   <div class="form__item">
     <input id="form_id" type="text" name="form_id" placeholder="Label" class="form__input">
+    <label for="form_id" class="form__label">Label</label>
     <p class="form__description">Description text</p>
   </div>
 </form>`,
@@ -559,6 +561,7 @@ export default {
       input_read_only_html: `<form class="form">
   <div class="form__item">
     <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+    <label for="form_id" class="form__label">Label</label>
     <p class="form__description">Description text</p>
   </div>
 </form>`,

@@ -19,7 +19,7 @@ const Input = (function() {
   }
 
   const Selectors = {
-    _input: '.form--large .form__input',
+    _input: '.form .form__input',
   }
 
   const text_inputs = document.querySelectorAll(Selectors._input);
