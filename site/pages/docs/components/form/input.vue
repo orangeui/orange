@@ -73,6 +73,68 @@
       </form>
     </docs-item>
 
+    <!-- With action/extras -->
+    <docs-item title="With action/extras" :code="input_action_html" v-if="is_html">
+      <form class="form" slot="body">
+        <div class="form__item has-action">
+          <div class="form__action">
+            +386
+          </div>
+
+          <div class="form__input-wrapper">
+            <input id="form_action_left" type="text" name="form_action_left" class="form__input">
+            <label for="form_action_left" class="form__label">Your phone number</label>
+          </div>
+          <p class="form__description">Description text</p>
+        </div>
+
+        <div class="form__item has-action">
+          <div class="form__input-wrapper">
+            <input id="form_action_right" type="text" name="form_action_right" class="form__input">
+            <label for="form_action_right" class="form__label">https://example.com</label>
+          </div>
+
+          <div class="form__action">
+            /orange
+          </div>
+          <p class="form__description">Description text</p>
+        </div>
+      </form>
+    </docs-item>
+
+    <!-- Read-only with action/extras -->
+    <docs-item title="Read-only with action/extras" :code="input_action_button_html" v-if="is_html">
+      <form class="form" slot="body">
+        <div class="form__item has-action">
+          <div class="form__action">
+            <button type="button" class="button button--small">
+              copy to clipboard
+            </button>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input id="form_action_button_left" type="text" name="form_action_button_left" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+            <label for="form_action_button_left" class="form__label">Your API key</label>
+          </div>
+          <p class="form__description">To change your API key please contact support</p>
+        </div>
+
+        <div class="form__item has-action">
+          <div class="form__input-wrapper">
+            <input id="form_action_button_right" type="text" name="form_action_button_right" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+            <label for="form_action_button_right" class="form__label">Your API key</label>
+          </div>
+
+          <div class="form__action">
+            <button type="button" class="button button--small">
+              copy to clipboard
+            </button>
+          </div>
+          <p class="form__description">To change your API key please contact support</p>
+        </div>
+      </form>
+    </docs-item>
+
     <!-- Size Large  -->
     <docs-item title="Large" :code="input_large_html" v-if="is_html">
       <form class="form form--large" slot="body">
@@ -140,42 +202,8 @@
         </o-input>
       </form>
     </docs-item>
-
-    <!-- Large read-only with a Button  -->
-    <docs-item title="Large, read-only with action/extras" :code="input_large_action_button_html" v-if="is_html">
-      <form class="form form--large" slot="body">
-        <div class="form__item has-action">
-          <div class="form__action">
-            <button type="button" class="button button--small">
-              copy to clipboard
-            </button>
-          </div>
-
-          <div class="form__input-wrapper">
-            <input id="form_large_action_button_left" type="text" name="form_large_action_button_left" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
-            <label for="form_large_action_button_left" class="form__label">Your API key</label>
-          </div>
-
-          <p class="form__description">To change your API key please contact support</p>
-        </div>
-
-        <div class="form__item has-action">
-          <div class="form__input-wrapper">
-            <input id="form_large_action_button_right" type="text" name="form_large_action_button_right" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
-            <label for="form_large_action_button_right" class="form__label">Your API key</label>
-          </div>
-
-          <div class="form__action">
-            <button type="button" class="button button--small">
-              copy to clipboard
-            </button>
-          </div>
-
-          <p class="form__description">To change your API key please contact support</p>
-        </div>
-      </form>
-    </docs-item>
-
+    
+    <!-- Large with action/extras -->
     <docs-item title="Large with action/extras" :code="input_large_action_html" v-if="is_html">
       <form class="form form--large" slot="body">
         <div class="form__item has-action">
@@ -214,6 +242,41 @@
 
           <o-button text="copy to clipboard" size="small" slot="action" />
         </o-input>
+      </form>
+    </docs-item>
+
+    <!-- Large read-only with a Button  -->
+    <docs-item title="Large, read-only with action/extras" :code="input_large_action_button_html" v-if="is_html">
+      <form class="form form--large" slot="body">
+        <div class="form__item has-action">
+          <div class="form__action">
+            <button type="button" class="button button--small">
+              copy to clipboard
+            </button>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input id="form_large_action_button_left" type="text" name="form_large_action_button_left" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+            <label for="form_large_action_button_left" class="form__label">Your API key</label>
+          </div>
+
+          <p class="form__description">To change your API key please contact support</p>
+        </div>
+
+        <div class="form__item has-action">
+          <div class="form__input-wrapper">
+            <input id="form_large_action_button_right" type="text" name="form_large_action_button_right" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+            <label for="form_large_action_button_right" class="form__label">Your API key</label>
+          </div>
+
+          <div class="form__action">
+            <button type="button" class="button button--small">
+              copy to clipboard
+            </button>
+          </div>
+
+          <p class="form__description">To change your API key please contact support</p>
+        </div>
       </form>
     </docs-item>
 
@@ -558,11 +621,68 @@ export default {
     :read_only="true"
   />
 </form>`,
+      
       input_read_only_html: `<form class="form">
   <div class="form__item">
     <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
     <label for="form_id" class="form__label">Label</label>
     <p class="form__description">Description text</p>
+  </div>
+</form>`,
+      
+      input_action_html: `<form class="form">
+  <div class="form__item has-action">
+    <div class="form__action">
+      +386
+    </div>
+
+    <div class="form__input-wrapper">
+      <input id="form_action_left" type="text" name="form_action_left" class="form__input">
+      <label for="form_action_left" class="form__label">Your phone number</label>
+    </div>
+    <p class="form__description">Description text</p>
+  </div>
+
+  <div class="form__item has-action">
+    <div class="form__input-wrapper">
+      <input id="form_action_right" type="text" name="form_action_right" class="form__input">
+      <label for="form_action_right" class="form__label">https://example.com</label>
+    </div>
+
+    <div class="form__action">
+      /orange
+    </div>
+    <p class="form__description">Description text</p>
+  </div>
+</form>`,
+
+      input_action_button_html: `<form class="form">
+  <div class="form__item has-action">
+    <div class="form__action">
+      <button type="button" class="button button--small">
+        copy to clipboard
+      </button>
+    </div>
+
+    <div class="form__input-wrapper">
+      <input id="form_action_button_left" type="text" name="form_action_button_left" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+      <label for="form_action_button_left" class="form__label">Your API key</label>
+    </div>
+    <p class="form__description">To change your API key please contact support</p>
+  </div>
+
+  <div class="form__item has-action">
+    <div class="form__input-wrapper">
+      <input id="form_action_button_right" type="text" name="form_action_button_right" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+      <label for="form_action_button_right" class="form__label">Your API key</label>
+    </div>
+
+    <div class="form__action">
+      <button type="button" class="button button--small">
+        copy to clipboard
+      </button>
+    </div>
+    <p class="form__description">To change your API key please contact support</p>
   </div>
 </form>`,
 
@@ -637,7 +757,7 @@ export default {
     </div>
 
     <div class="form__input-wrapper">
-      <input id="form_large_action_button_left" type="text" name="form_large_action_button_left" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+      <input id="form_large_action_button_left" type="text" name="form_large_action_button_left" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
       <label for="form_large_action_button_left" class="form__label">Your API key</label>
     </div>
 
@@ -646,7 +766,7 @@ export default {
 
   <div class="form__item has-action">
     <div class="form__input-wrapper">
-      <input id="form_large_action_button_right" type="text" name="form_large_action_button_right" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+      <input id="form_large_action_button_right" type="text" name="form_large_action_button_right" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
       <label for="form_large_action_button_right" class="form__label">Your API key</label>
     </div>
 

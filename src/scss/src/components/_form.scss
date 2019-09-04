@@ -119,7 +119,7 @@
 .form__extras,
 .form__action {
   height: $input-height;
-  padding: 0 $spacing-base / 2;
+  padding: 0 $spacing-base / 4;
   display: flex;
   align-items: center;
   z-index: 3;
@@ -148,6 +148,7 @@
   color: color('gray', 'light');
   font-size: fontSize('zeta');
   margin-top: $spacing-small;
+  margin-bottom: 0;
 }
 
 
@@ -257,6 +258,7 @@
   .form__extras,
   .form__action {
     height: $input-height-large;
+    padding: 0 $spacing-base / 2;
   }
 
   .form__textarea {
