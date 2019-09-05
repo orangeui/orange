@@ -2,6 +2,10 @@
  * Form
  */
 
+.form + .form {
+  margin-top: $spacing-base;
+}
+
 /** Form item
 --------------------------------------------------*/
 
