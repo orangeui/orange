@@ -308,7 +308,7 @@ const Input = function () {
     _value_class: 'has-value'
   };
   const Selectors = {
-    _input: '.form--large .form__input'
+    _input: '.form .form__input'
   };
   const text_inputs = document.querySelectorAll(Selectors._input);
   /**

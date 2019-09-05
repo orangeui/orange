@@ -1943,6 +1943,8 @@ a.breadcrumbs__button {
 /**
  * Form
  */
+.form + .form {
+  margin-top: 24px; }
 /** Form item
 --------------------------------------------------*/
 .form__item {
@@ -1983,18 +1985,13 @@ a.breadcrumbs__button {
     outline: 0; }
 .form__input::placeholder,
   .form__textarea::placeholder {
-    opacity: 1;
-    color: #cccccc; }
+    opacity: 0; }
 .form__input[disabled], .form__input[readonly],
   .form__textarea[disabled],
   .form__textarea[readonly] {
     background-color: transparent;
     opacity: 1;
     color: #999999; }
-.form__input[disabled]::placeholder, .form__input[readonly]::placeholder,
-    .form__textarea[disabled]::placeholder,
-    .form__textarea[readonly]::placeholder {
-      color: #999999; }
 .form__input[disabled]:focus, .form__input[readonly]:focus,
     .form__textarea[disabled]:focus,
     .form__textarea[readonly]:focus {
@@ -2004,8 +2001,9 @@ a.breadcrumbs__button {
   .form__textarea:-webkit-autofill {
     border-color: #ebebeb !important;
     -webkit-text-fill-color: #4648d2 !important; }
-.form__input + .form__label,
-  .form__textarea + .form__label {
+.form__input.has-focus + .form__label, .form__input.has-value + .form__label,
+  .form__textarea.has-focus + .form__label,
+  .form__textarea.has-value + .form__label {
     display: none; }
 /** Remove iOS shadow on input */
 .form__input[type=text] {
@@ -2016,7 +2014,7 @@ a.breadcrumbs__button {
   position: absolute;
   top: 0;
   left: 0;
-  margin: 24px 12px;
+  margin: 11px 12px;
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
@@ -2026,7 +2024,7 @@ a.breadcrumbs__button {
 .form__extras,
 .form__action {
   height: 40px;
-  padding: 0 12px;
+  padding: 0 6px;
   display: flex;
   align-items: center;
   z-index: 3;
@@ -2046,7 +2044,8 @@ a.breadcrumbs__button {
 .form__description {
   color: #cccccc;
   font-size: 14px;
-  margin-top: 12px; }
+  margin-top: 12px;
+  margin-bottom: 0; }
 /** States
 --------------------------------------------------*/
 .form__item {
@@ -2082,9 +2081,6 @@ a.breadcrumbs__button {
 .form--large .form__textarea {
   padding: 19px 12px;
   min-height: 64px; }
-.form--large .form__input + .form__label,
-  .form--large .form__textarea + .form__label {
-    display: block; }
 .form--large .form__input.has-focus, .form--large .form__input.has-value,
   .form--large .form__textarea.has-focus,
   .form--large .form__textarea.has-value {
@@ -2092,6 +2088,7 @@ a.breadcrumbs__button {
 .form--large .form__input.has-focus + .form__label, .form--large .form__input.has-value + .form__label,
     .form--large .form__textarea.has-focus + .form__label,
     .form--large .form__textarea.has-value + .form__label {
+      display: block;
       line-height: 1;
       height: auto;
       font-size: 12px;
@@ -2111,9 +2108,12 @@ a.breadcrumbs__button {
         z-index: -1;
         transition: none;
         border-radius: 12px; }
+.form--large .form__label {
+  margin: 23px 12px; }
 .form--large .form__extras,
 .form--large .form__action {
-  height: 64px; }
+  height: 64px;
+  padding: 0 12px; }
 .form--large .form__textarea {
   height: auto; }
 .form--large .form__textarea.has-focus, .form--large .form__textarea.has-value {
