@@ -1,62 +1,34 @@
-/*----------------------------------*\
-    Grid
-\*----------------------------------*/
-/*
-	Container and row
+/**
+ * Grid
+ */
+
+/**
+  Container and row
 */
-/* Container main css and it's width */
+/** Container main css and it's width */
 .container {
   max-width: $container-max-width;
-
-  /*
-    Responsive media query
-    On Extra-Small screens and down, container is full width
-  */
-  /* Width 768px on small devices (768px and more) */
-  @media #{$tablet-and-up} {
-    width: 768px;
-  }
-
-  /* Width 936px on medium devices (960px and more) */
-  @media #{$small-desktop-and-up} {
-    width: 960px;
-  }
-
-  /* Width 1140px on large devices (1160px and more) */
-  @media #{$desktop-and-up} {
-    width: 1140px;
-  }
-
-  /* Width 1440px on large devices (1440px and more) */
-  @media #{$large-desktop-and-up} {
-    width: 1440px;
-  }
 }
 
-/* Container */
+/** Container */
 .container, .container-fluid {
   margin-right: auto;
   margin-left: auto;
   padding-right: $gutter-container;
   padding-left: $gutter-container;
-
-  @media #{$tablet-and-down} {
-    padding-right: $gutter-container-mobile;
-    padding-left: $gutter-container-mobile;
-  }
 }
 
-/* Row is wraper of columns, it removes extra padding of columns left and right to fit container width */
+/** Main flex class that applies flex to the element */
+.flex,
+.row {
+  display: flex;
+}
+
+/** Row is wrapper of columns that removes gutter of columns to fit container width */
 .row {
   margin-right: -$gutter;
   margin-left: -$gutter;
   flex-wrap: wrap;
-}
-
-/* Main flex class, without this, flex positioning is not working. Use "row" when using columns, if not, use "flex" */
-.flex,
-.row {
-  display: flex;
 }
 
 /*

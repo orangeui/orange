@@ -1,6 +1,17 @@
-/*----------------------------------*\
-  	Variables - Breakpoint Sizes
-\*----------------------------------*/
+/**
+ * Variables - Breakpoints
+ */
+
+$breakpoints: (
+  nano: 320px,
+  micro: 480px,
+  extra-small: 640px,
+  small: 768px,
+  medium: 992px,
+  large: 1200px,
+  extra-large: 1440px,
+) !default;
+
 /*
 	Media Query Breakpoint Sizes
 */
