@@ -343,6 +343,10 @@ export default {
       </p>
     </div>
   </div>
+</div>`,
+      
+      callout_colors_html: `<div class="callout callout--color-{color} callout--shadow">
+  <p>Click here to claim a free hat</p>
 </div>`
     }
   }
