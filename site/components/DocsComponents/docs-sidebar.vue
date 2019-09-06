@@ -17,6 +17,12 @@
         <li><router-link :to="{ name: 'docs-global-spacings'}"><span>Spacings</span></router-link></li>
       </ul>
 
+      <router-link :to="{ name: 'docs-layout'}" tag="h5">Layout</router-link>
+
+      <ul>
+        <li><router-link :to="{ name: 'docs-layout'}"><span>Grid</span></router-link></li>
+      </ul>
+
       <router-link :to="{ name: 'docs-typography'}" tag="h5">Typography</router-link>
 
       <ul>

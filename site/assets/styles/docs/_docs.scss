@@ -10,7 +10,19 @@ body {
   background-color: color('white');
 }
 
-/** Navigation
+/**
+  Grid
+*/
+.col__content {
+  padding: $spacing-base;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: fontSize('delta');
+  color: color('white');
+}
+
+/** Navigationp
 --------------------------------------------------*/
 
 .docs__navigation {

@@ -19,8 +19,14 @@
 /**
   Grid
 */
+/* Grid (usually it's called row) */
 .grid {
   display: grid;
   grid-gap: $grid-gutter;
   grid-auto-flow: column;
+}
+
+/* Column */
+.col {
+
 }
