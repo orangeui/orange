@@ -11,7 +11,6 @@
 
       <ul>
         <li><router-link :to="{ name: 'docs-global'}" exact><span>Colors</span></router-link></li>
-        <li><router-link :to="{ name: 'docs-global-grid'}"><span>Grid</span></router-link></li>
         <li><router-link :to="{ name: 'docs-global-icons'}"><span>Icons</span></router-link></li>
         <li><router-link :to="{ name: 'docs-global-materials'}"><span>Materials</span></router-link></li>
         <li><router-link :to="{ name: 'docs-global-spacings'}"><span>Spacings</span></router-link></li>
