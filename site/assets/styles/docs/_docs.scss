@@ -66,15 +66,15 @@ body {
   float: left;
   width: $docs-sidebar-width;
   height: calc(100vh - #{$docs-navigation-height});
+  border-right: 1px solid color('gray', 'lightest');
 
-  overflow: scroll;
+  overflow: auto;
 
   padding-left: $spacing-base;
 }
 
 .docs__content-wrap {
-  margin-left: $docs-sidebar-width;
-  width: calc(100vw - #{$docs-sidebar-width});
+  padding-left: $docs-sidebar-width;
 }
 
 .docs__footer {
@@ -205,20 +205,12 @@ body {
     padding: 0;
     margin-top: 0;
     margin-bottom: $spacing-base;
-
-    li {
-      display: none;
-    }
   }
 
   h1, h2, h3, h4, h5, h6 {
     &:hover {
       cursor: pointer;
     }
-  }
-
-  h5.is-active + ul li, h6.is-active + ul li {
-    display: block;
   }
 
   li {
@@ -233,7 +225,6 @@ body {
   a {
     display: block;
     position: relative;
-    width: 100%;
     z-index: 10;
     color: color('secondary');
     font-size: fontSize('zeta');
