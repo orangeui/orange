@@ -54,6 +54,7 @@
             <li><router-link :to="{ name: 'docs-components-custom-callout'}"><span>Callout</span></router-link></li>
             <li><router-link :to="{ name: 'docs-components-custom-card'}"><span>Card</span></router-link></li>
             <li><router-link :to="{ name: 'docs-components-custom-empty-state'}"><span>Empty State</span></router-link></li>
+            <li><router-link :to="{ name: 'docs-components-custom-image-gallery'}"><span>Image Gallery</span></router-link></li>
             <li><router-link :to="{ name: 'docs-components-custom-message'}"><span>Message</span></router-link></li>
           </ul>
         </li>

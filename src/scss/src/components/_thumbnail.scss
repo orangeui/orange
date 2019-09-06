@@ -1,0 +1,46 @@
+/**
+ * Thumbnail
+ */
+
+.thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: color('white');
+  border-radius: $border-radius-main;
+  transition: $transition;
+
+  &:hover {
+    box-shadow: shadow('primary');
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+/** Looks
+--------------------------------------------------*/
+
+.thumbnail--circle {
+  border-radius: 100%;
+}
+
+.thumbnail--shadow {
+  box-shadow: shadow('secondary');
+
+  &:hover {
+    box-shadow: shadow('primary'), shadow('secondary');
+    transform: translate3d(0, -$spacing-base / 4, 0);
+  }
+}
+
+/** Colors
+--------------------------------------------------*/
+@each $name, $value in $colors {
+  .avatar--color-#{$name} {
+    color: color(#{$name});
+    border-color: color(#{$name});
+  }
+}
