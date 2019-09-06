@@ -342,14 +342,6 @@ body {
     border: none;
   }
 
-  & > div > *:first-child {
-    margin-top: 0;
-  }
-
-  & > div > *:last-child {
-    margin-bottom: 0;
-  }
-
   & > div > h3 {
     margin-top: $spacing-base * 2;
   }
