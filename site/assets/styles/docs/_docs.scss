@@ -66,15 +66,15 @@ body {
   float: left;
   width: $docs-sidebar-width;
   height: calc(100vh - #{$docs-navigation-height});
+  border-right: 1px solid color('gray', 'lightest');
 
-  overflow: scroll;
+  overflow: auto;
 
   padding-left: $spacing-base;
 }
 
 .docs__content-wrap {
-  margin-left: $docs-sidebar-width;
-  width: calc(100vw - #{$docs-sidebar-width});
+  padding-left: $docs-sidebar-width;
 }
 
 .docs__footer {
@@ -233,7 +233,6 @@ body {
   a {
     display: block;
     position: relative;
-    width: 100%;
     z-index: 10;
     color: color('secondary');
     font-size: fontSize('zeta');
