@@ -7,7 +7,10 @@
 
     <docs-item class="explanation">
       <div slot="body">
-        <p>Describe a grid</p>
+        <div class="grid">
+          <div class="grid-col">abc</div>
+          <div class="grid-col">abc</div>
+        </div>
       </div>
     </docs-item>
   </div>
