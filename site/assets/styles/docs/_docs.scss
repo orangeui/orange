@@ -205,20 +205,12 @@ body {
     padding: 0;
     margin-top: 0;
     margin-bottom: $spacing-base;
-
-    li {
-      display: none;
-    }
   }
 
   h1, h2, h3, h4, h5, h6 {
     &:hover {
       cursor: pointer;
     }
-  }
-
-  h5.is-active + ul li, h6.is-active + ul li {
-    display: block;
   }
 
   li {
