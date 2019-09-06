@@ -362,4 +362,8 @@ body {
   & > div > h3 {
     margin-top: $spacing-base * 2;
   }
+
+  & > div > ul li p:last-child {
+    margin-bottom: 0;
+  }
 }

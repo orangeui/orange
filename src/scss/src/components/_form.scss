@@ -2,6 +2,10 @@
  * Form
  */
 
+.form + .form {
+  margin-top: $spacing-base;
+}
+
 /** Form item
 --------------------------------------------------*/
 
@@ -60,8 +64,7 @@
   }
 
   &::placeholder {
-    opacity: 1;
-    color: color('gray', 'light');
+    opacity: 0;
   }
 
   &[disabled],
@@ -69,10 +72,6 @@
     background-color: transparent;
     opacity: 1;
     color: color('gray');
-
-    &::placeholder {
-      color: color('gray');
-    }
 
     &:focus {
       box-shadow: none;
@@ -85,8 +84,11 @@
     -webkit-text-fill-color: color('secondary') !important;
   }
 
-  + .form__label {
-    display: none;
+  &.has-focus,
+  &.has-value {
+    + .form__label {
+      display: none;
+    }
   }
 }
 
@@ -107,7 +109,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin: $spacing-base $spacing-base / 2;
+  margin: ($spacing-base / 2 - 1px) $spacing-base / 2; // -1px because of borders
   font-size: fontSize('delta');
   font-weight: fontWeight('normal');
   line-height: fontSize('delta');
@@ -121,7 +123,7 @@
 .form__extras,
 .form__action {
   height: $input-height;
-  padding: 0 $spacing-base / 2;
+  padding: 0 $spacing-base / 4;
   display: flex;
   align-items: center;
   z-index: 3;
@@ -150,6 +152,7 @@
   color: color('gray', 'light');
   font-size: fontSize('zeta');
   margin-top: $spacing-small;
+  margin-bottom: 0;
 }
 
 
@@ -223,14 +226,12 @@
     padding: (($input-height-large / 2) - ($input-large-line-height / 2) - 2px) $spacing-small; // the 2px account for the border
     min-height: $input-height-large;
 
-    + .form__label {
-      display: block;
-    }
-
-    &.has-focus, &.has-value {
+    &.has-focus, 
+    &.has-value {
       padding: ($spacing-base + 4px) ($spacing-base / 2) ($spacing-base / 2);
 
       + .form__label {
+        display: block;
         line-height: 1;
         height: auto;
         font-size: fontSize('omega');
@@ -254,9 +255,14 @@
     }
   }
 
+  .form__label {
+    margin: ($spacing-base - 1px) $spacing-base / 2; // -1px because of borders
+  }
+
   .form__extras,
   .form__action {
     height: $input-height-large;
+    padding: 0 $spacing-base / 2;
   }
 
   .form__textarea {

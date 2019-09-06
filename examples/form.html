@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>Form Example</title>
-  <link rel="stylesheet" href="../dist/css/orange.min.css" />
+  <link rel="stylesheet" href="../dist/css/orange.css" />
+    <script type="text/javascript" src="../dist/js/orange.js"></script>
   
 </head>
   
@@ -25,8 +26,74 @@
           </button>
         </div>
         <div class="card__body">
-          <div class='form form--large'>
+          <form class="form">
+            <div class="form__item">
+              <input id="form_id" type="text" name="form_id" placeholder="Label" class="form__input">
+              <label for="form_id" class="form__label">Label</label>
+              <p class="form__description">Description text</p>
+            </div>
 
+            <div class="form__item">
+              <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+              <label for="form_id" class="form__label">Label</label>
+              <p class="form__description">Description text</p>
+            </div>
+
+            <div class="form__item has-action">
+              <div class="form__action">
+                +386
+              </div>
+
+              <div class="form__input-wrapper">
+                <input id="form_action_left" type="text" name="form_action_left" class="form__input">
+                <label for="form_action_left" class="form__label">Your phone number</label>
+              </div>
+              <p class="form__description">Description text</p>
+            </div>
+
+            <div class="form__item has-action">
+              <div class="form__input-wrapper">
+                <input id="form_action_right" type="text" name="form_action_right" class="form__input">
+                <label for="form_action_right" class="form__label">https://example.com</label>
+              </div>
+
+              <div class="form__action">
+                /orange
+              </div>
+              <p class="form__description">Description text</p>
+            </div>
+
+            <div class="form__item has-action">
+              <div class="form__action">
+                <button type="button" class="button button--small">
+                  copy to clipboard
+                </button>
+              </div>
+
+              <div class="form__input-wrapper">
+                <input id="form_action_button_left" type="text" name="form_action_button_left" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+                <label for="form_action_button_left" class="form__label">Your API key</label>
+              </div>
+              <p class="form__description">To change your API key please contact support</p>
+            </div>
+
+            <div class="form__item has-action">
+              <div class="form__input-wrapper">
+                <input id="form_action_button_right" type="text" name="form_action_button_right" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+                <label for="form_action_button_right" class="form__label">Your API key</label>
+              </div>
+
+              <div class="form__action">
+                <button type="button" class="button button--small">
+                  copy to clipboard
+                </button>
+              </div>
+              <p class="form__description">To change your API key please contact support</p>
+            </div>
+          </form>
+    
+
+          <form class='form form--large'>
             <div class="form__item">
               <div class="form__wrapper">
                 <div class="form__input-wrapper">
@@ -39,12 +106,66 @@
             <div class="form__item">
               <div class="form__wrapper">
                 <div class="form__input-wrapper">
-                  <input id="form_example_name_large_readonly" type="text" name="form_example_name_large_readonly" class="form__input" readonly value="readonly input">
+                  <input id="form_example_name_large_readonly" type="text" name="form_example_name_large_readonly" class="form__input has-value" readonly value="readonly input">
                   <label for="form_example_name_large_readonly" class="form__label">Some Name</label>
                 </div>
               </div>
             </div>
+            
+            <!-- Actions -->
+            <div class="form__item has-action">
+              <div class="form__input-wrapper">
+                <input id="form_large_action_right" type="text" name="form_large_action_right" class="form__input">
+                <label for="form_large_action_right" class="form__label">https://example.com</label>
+              </div>
 
+              <div class="form__action">
+                /orange
+              </div>
+            </div>
+
+            <div class="form__item has-action">
+              <div class="form__action">
+                +386
+              </div>
+
+              <div class="form__input-wrapper">
+                <input id="form_large_action_left" type="text" name="form_large_action_left" class="form__input">
+                <label for="form_large_action_left" class="form__label">Your phone number</label>
+              </div>
+            </div>
+
+            <div class="form__item has-action">
+              <div class="form__action">
+                <button type="button" class="button button--small">
+                  copy to clipboard
+                </button>
+              </div>
+
+              <div class="form__input-wrapper">
+                <input id="form_large_action_button_left" type="text" name="form_large_action_button_left" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+                <label for="form_large_action_button_left" class="form__label">Your API key</label>
+              </div>
+
+              <p class="form__description">To change your API key please contact support</p>
+            </div>
+
+            <div class="form__item has-action">
+              <div class="form__input-wrapper">
+                <input id="form_large_action_button_right" type="text" name="form_large_action_button_right" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+                <label for="form_large_action_button_right" class="form__label">Your API key</label>
+              </div>
+
+              <div class="form__action">
+                <button type="button" class="button button--small">
+                  copy to clipboard
+                </button>
+              </div>
+
+              <p class="form__description">To change your API key please contact support</p>
+            </div>
+              
+            <!-- Textarea -->
             <div class="form__item">
               <textarea name="textarea" id="textarea" class="form__textarea"></textarea>
               <label for="textarea" class="form__label">Label</label>
@@ -62,7 +183,8 @@
               <label for="textarea_1" class="form__label">Textarea + auto expand</label>
               <div class="form__description">Description text</div>
             </div>
-
+            
+            <!-- Dropdowns -->
             <div class="form__item">
               <div id="form_dropdown" class="form-dropdown">
                 <label for="form_dropdown" class="form-dropdown__label">Label</label>
@@ -113,7 +235,8 @@
               </div>
               <div class="form__description">Description of the dropdown field</div>
             </div>
-
+          
+            <!-- Toggles -->
             <div class="form__item">
               <div class="toggle toggle--label toggle--large">
                 <div class="toggle__button">
@@ -155,12 +278,11 @@
               </div>
             </div>
 
-          </div>
+          </form>
         </div>
       </div>
     </div>
     
     <!-- <script src="../dist/js/orange.min.js"></script> -->
-    <script type="text/javascript" src="../dist/js/orange.js"></script>
   </body>
 </html>
