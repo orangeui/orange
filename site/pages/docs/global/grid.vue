@@ -8,8 +8,12 @@
     <docs-item class="explanation">
       <div slot="body">
         <div class="grid">
-          <div class="grid-col">abc</div>
-          <div class="grid-col">abc</div>
+          <div class="grid-col">
+            <div class="bg-gray">1</div>
+          </div>
+          <div class="grid-col">
+            <div class="bg-gray">2</div>
+          </div>
         </div>
       </div>
     </docs-item>

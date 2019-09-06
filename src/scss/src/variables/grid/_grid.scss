@@ -1,14 +1,19 @@
 /**
- * Variables - Grid options
+ * Variables - Grid
  */
 
+/**
+  Gutter
+*/
 /* Desktop */
-$gutter: 12px !default;
-$gutter-container: 12px !default;
+$grid-gutter: 12px !default;
+$container-gutter: 12px !default;
 
 /* Mobile */
-$gutter-mobile: $gutter !default;
-$gutter-container-mobile: $gutter-container !default;
+$grid-gutter-mobile: $grid-gutter !default;
+$container-gutter-mobile: $container-gutter !default;
 
-/* Container */
+/**
+  Container
+*/
 $container-max-width: 100% !default;

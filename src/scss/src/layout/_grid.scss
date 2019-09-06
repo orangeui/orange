@@ -3,238 +3,24 @@
  */
 
 /**
-  Container and row
+  Container
 */
-/** Container main css and it's width */
 .container {
   max-width: $container-max-width;
 }
 
-/** Container */
 .container, .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-right: $gutter-container;
-  padding-left: $gutter-container;
+  padding-right: $container-gutter;
+  padding-left: $container-gutter;
 }
 
-/** Main flex class that applies flex to the element */
-.flex,
-.row {
-  display: flex;
-}
-
-/** Row is wrapper of columns that removes gutter of columns to fit container width */
-.row {
-  margin-right: -$gutter;
-  margin-left: -$gutter;
-  flex-wrap: wrap;
-}
-
-/*
-	Flex alignment
+/**
+  Grid
 */
-$flex-directions: row, row-reverse, column, column-reverse;
-$flex-wrap-items: wrap, nowrap;
-$flex-justify-contents: (
-  'start': flex-start,
-  'end': flex-end,
-  'center': center,
-  'between': space-between,
-  'around': space-around
-);
-$flex-align-items: (
-  'start': flex-start,
-  'end': flex-end,
-  'center': center,
-  'stretch': stretch,
-  'baseline': baseline
-);
-$flex-align-contents: (
-  'start': flex-start,
-  'end': flex-end,
-  'center': center,
-  'stretch': stretch,
-  'between': space-between,
-  'around': space-around
-);
-$flex-align-selfs: (
-  'start': flex-start,
-  'end': flex-end,
-  'center': center,
-  'stretch': stretch,
-  'baseline': baseline
-);
-
-.flex {
-  /*
-    Properties for parents - containers
-    Direction of displayed flex items
-  */
-  @each $direction in $flex-directions {
-    &--#{$direction} {
-      flex-direction: $direction;
-    }
-  }
-
-  @each $class, $point in $breakpoints-up {
-    @media #{$point} {
-      @each $direction in $flex-directions {
-        &--#{$direction}-#{$class} {
-          flex-direction: $direction;
-        }
-      }
-    }
-  }
-
-  /*
-    Flex wrapping items
-  */
-  @each $wrap in $flex-wrap-items {
-    &--#{$wrap} {
-      flex-wrap: $wrap;
-    }
-  }
-
-  @each $class, $point in $breakpoints-up {
-    @media #{$point} {
-      @each $wrap in $flex-wrap-items {
-        &--#{$wrap}-#{$class} {
-          flex-wrap: $wrap;
-        }
-      }
-    }
-  }
-
-  /*
-    Content alignment on main axis - X axis
-  */
-  @each $prefix, $meaning in $flex-justify-contents {
-    &--justify-#{$prefix} {
-      justify-content: $meaning;
-    }
-  }
-
-  @each $class, $point in $breakpoints-up {
-    @media #{$point} {
-      @each $prefix, $meaning in $flex-justify-contents {
-        &--justify-#{$prefix}-#{$class} {
-          justify-content: $meaning;
-        }
-      }
-    }
-  }
-
-  /*
-    Content alignment on cross axis - Y axis
-  */
-  @each $prefix, $meaning in $flex-align-items {
-    &--align-#{$prefix} {
-      align-items: $meaning;
-    }
-  }
-
-  @each $class, $point in $breakpoints-up {
-    @media #{$point} {
-      @each $prefix, $meaning in $flex-align-items {
-        &--align-#{$prefix}-#{$class} {
-          align-items: $meaning;
-        }
-      }
-    }
-  }
-
-  /*
-    Content alignment on cross axis - Y axis, but only when there are multiple lines and extra space in container - Y axis
-  */
-  @each $prefix, $meaning in $flex-align-contents {
-    &--#{$prefix} {
-      align-content: $meaning;
-    }
-  }
-
-  @each $class, $point in $breakpoints-up {
-    @media #{$point} {
-      @each $prefix, $meaning in $flex-align-contents {
-        &--#{$prefix}-#{$class} {
-          align-content: $meaning;
-        }
-      }
-    }
-  }
-
-
-  /*
-    Properties for children - flex items
-  */
-  /* Align Self */
-  @each $prefix, $meaning in $flex-align-selfs {
-    &__item-#{$prefix} {
-      align-self: $meaning;
-    }
-  }
-
-  @each $class, $point in $breakpoints-up {
-    @media #{$point} {
-      @each $prefix, $meaning in $flex-align-selfs {
-        &__item-#{$prefix}-#{$class} {
-          align-self: $meaning;
-        }
-      }
-    }
-  }
-
-  /* Fill Gap */
-  &__fill-gap {
-    flex: 1;
-  }
-}
-
-/*
-	Columns
-*/
-/* Add padding left and right to all columns. Width: 100% added to fill the container if any column size is not defined */
-[class*=" col-"],
-[class^="col-"] {
-  padding-right: $gutter;
-  padding-left: $gutter;
-  width: 100%;
-}
-
-/* Create basic columns */
-@mixin col-flex($basis, $grow, $width) {
-  flex-basis: $basis;
-  flex-grow: $grow;
-  max-width: $width;
-}
-
-.col {
-  @include col-flex(0, 1, 100%);
-  padding-right: $gutter;
-  padding-left: $gutter;
-}
-
-@each $class, $point in $breakpoints-up {
-  @media #{$point}{
-    .col-#{$class} {
-      @include col-flex(0, 1, 100%);
-    }
-  }
-}
-
-/* Set column width */
-@mixin col-width($width) {
-  max-width: $width;
-  flex-basis: $width;
-}
-
-/* Create columns from sizes 1-12 */
-@each $class, $point in $breakpoints-up {
-  @media #{$point}{
-    @for $i from 1 through $grid {
-      .col-#{$class}-#{$i} {
-        @include col-width(100% / $grid * $i);
-      }
-    }
-  }
+.grid {
+  display: grid;
+  grid-gap: $grid-gutter;
+  grid-auto-flow: column;
 }
