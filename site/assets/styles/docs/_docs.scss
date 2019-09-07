@@ -13,13 +13,14 @@ body {
 /**
   Grid
 */
-.col__content {
+.page-docs-layout .col {
   padding: $spacing-base;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: fontSize('delta');
   color: color('white');
+  background: color('primary');
 }
 
 /** Navigationp
