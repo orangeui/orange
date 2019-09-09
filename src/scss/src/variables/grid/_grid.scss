@@ -22,3 +22,9 @@ $container-max-width: 100% !default;
   Columns
 */
 $grid-column-number: 12;
+
+/* Width */
+$grid-column-min-width-narrow: 120px;
+$grid-column-min-width-regular: 240px;
+$grid-column-min-width-wide: 360px;
+$grid-column-max-width: 1fr;

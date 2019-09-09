@@ -13,7 +13,7 @@ body {
 /**
   Grid
 */
-.page-docs-layout .col {
+.page-docs-layout .grid > div {
   padding: $spacing-base;
   display: flex;
   align-items: center;
@@ -21,6 +21,7 @@ body {
   font-size: fontSize('delta');
   color: color('white');
   background: color('primary');
+  border-radius: 3px;
 }
 
 /** Navigationp

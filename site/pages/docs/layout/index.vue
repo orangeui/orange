@@ -24,17 +24,31 @@
       </div>
     </docs-item>
 
-    <docs-item title="Equal column width" :code="equal_column_width">
+    <docs-item title="Auto Fill column" :code="equal_column_width">
       <div slot="body">
         <p>
-          By default, <code>.grid</code> stacks the columns horizontally with css property <code>grid-auto-flow:
-          column;</code>.
+          By default, <code>.grid</code> is using 12 column system with auto responsive columns.
           <br>
-          All the columns are equal width and you can put as many columns in a grid as you want.
+          All the columns are equal width and you can put as many columns in a grid as you want and columns will be moved to a new row when there is not enough space in a container.
         </p>
 
+        <h3>Narrow</h3>
+        <div class="grid grid--columns-narrow">
+          <div v-for="number in 6" :key="number">
+            {{ number }}
+          </div>
+        </div>
+
+        <h3>Regular (default)</h3>
         <div class="grid">
-          <div class="col" v-for="number in 6" :key="number">
+          <div v-for="number in 6" :key="number">
+            {{ number }}
+          </div>
+        </div>
+
+        <h3>Wide</h3>
+        <div class="grid grid--columns-wide">
+          <div v-for="number in 6" :key="number">
             {{ number }}
           </div>
         </div>
@@ -48,13 +62,16 @@
           We still limit to 12 column grid system, so setting widths of the columns is only available till 12.
         </p>
 
-        <div class="grid">
-          <div class="col col--1/5">1</div>
-          <div class="col">2</div>
-          <div class="col">3</div>
-          <div class="col col--row-2 1/3">4</div>
-          <div class="col col--row-2 col--2/6">5</div>
-          <div class="col col--row-2">6</div>
+        <div class="grid grid--columns-narrow">
+          <div class="col-1/3">2</div>
+          <div class="col-3/7">2</div>
+          <div class="col-1/4">1</div>
+          <div class="col-4/7">1</div>
+          <div class="col-1/5">2</div>
+          <div class="col-5/7">2</div>
+          <div class="col-1/4">2</div>
+          <div class="col-4/6">2</div>
+          <div class="col-6/7">2</div>
         </div>
       </div>
     </docs-item>
@@ -77,21 +94,42 @@
   xlarge: 1200px,
   xxlarge: 1440px,
 ) !default;`,
-        equal_column_width: `<div class="grid">
-  <div class="col">1</div>
-  <div class="col">2</div>
-  <div class="col">3</div>
-  <div class="col">4</div>
-  <div class="col">5</div>
-  <div class="col">6</div>
+        equal_column_width: `<div class="grid grid--columns-narrow">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<div class="grid">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<div class="grid grid--columns-wide">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
 </div>`,
-        different_column_width: `<div class="grid">
-  <div class="col col--1/5">1</div>
-  <div class="col">2</div>
-  <div class="col">3</div>
-  <div class="col col--row-2 1/3">4</div>
-  <div class="col col--row-2 col--2/6">5</div>
-  <div class="col col--row-2">6</div>
+        different_column_width: `<div class="grid grid--columns-narrow">
+  <div class="col-1/3">2</div>
+  <div class="col-3/7">2</div>
+  <div class="col-1/4">1</div>
+  <div class="col-4/7">1</div>
+  <div class="col-1/5">2</div>
+  <div class="col-5/7">2</div>
+  <div class="col-1/4">2</div>
+  <div class="col-4/6">2</div>
+  <div class="col-6/7">2</div>
 </div>`
       }
     }
