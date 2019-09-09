@@ -7,11 +7,14 @@
   max-width: 100%;
   overflow: hidden;
   background-color: color('white');
-  border-radius: $border-radius-main;
-  transition: $transition;
+  border-radius: $thumbnail-border-radius;
+  transition: $thumbnail-transition;
+  padding: $spacing-base / 6;
+  margin-bottom: $thumbnail-margin-bottom;
+  border: $thumbnail-border;
 
   &:hover {
-    box-shadow: shadow('primary');
+    box-shadow: $thumbnail-basic-hover;
   }
 
   img {
@@ -25,22 +28,17 @@
 
 .thumbnail--circle {
   border-radius: 100%;
-}
 
-.thumbnail--shadow {
-  box-shadow: shadow('secondary');
-
-  &:hover {
-    box-shadow: shadow('primary'), shadow('secondary');
-    transform: translate3d(0, -$spacing-base / 4, 0);
+  img {
+    border-radius: 100%;
   }
 }
 
-/** Colors
---------------------------------------------------*/
-@each $name, $value in $colors {
-  .avatar--color-#{$name} {
-    color: color(#{$name});
-    border-color: color(#{$name});
+.thumbnail--shadow {
+  box-shadow: $thumbnail-shadow;
+
+  &:hover {
+    box-shadow: $thumbnail-shadow-hover;
+    transform: $thumbnail-shadow-hover-transform;
   }
 }
