@@ -15,6 +15,11 @@ $breakpoints: (
 /*
 	Media Query Breakpoint Sizes
 */
+@mixin breakpoint-down($name) {
+  @media (max-width: breakpoint($name)) {
+    @content;
+  }
+}
 /* Nano */
 $small-mobile-screen-from: 0px !default;
 $small-mobile-screen-to: 320px !default;

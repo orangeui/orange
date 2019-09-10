@@ -45,3 +45,8 @@
 @function shadow($shadow) {
   @return map-get($shadows, $shadow);
 }
+
+/* Breakpoints */
+@function breakpoint($breakpoint) {
+  @return map-get($breakpoints, $breakpoint);
+}
