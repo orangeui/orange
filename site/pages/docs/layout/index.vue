@@ -94,7 +94,7 @@
   xlarge: 1200px,
   xxlarge: 1440px,
 ) !default;`,
-        equal_column_width: `<div class="grid grid--columns-narrow">
+        equal_column_width: `<div class="grid grid--columns-auto-narrow">
   <div>1</div>
   <div>2</div>
   <div>3</div>
@@ -112,7 +112,7 @@
   <div>6</div>
 </div>
 
-<div class="grid grid--columns-wide">
+<div class="grid grid--columns-auto-wide">
   <div>1</div>
   <div>2</div>
   <div>3</div>
@@ -120,7 +120,7 @@
   <div>5</div>
   <div>6</div>
 </div>`,
-        different_column_width: `<div class="grid grid--columns-narrow">
+        different_column_width: `<div class="grid">
   <div class="col-6">2</div>
   <div class="col-6">2</div>
   <div class="col-4">1</div>
