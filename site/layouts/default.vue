@@ -7,8 +7,10 @@
         <o-navigation color="black">
           <o-navigation-item :to="{ name: 'docs' }">Documentation</o-navigation-item>
           <!-- <o-navigation-item :to="{ name: 'examples' }">Examples</o-navigation-item> -->
-          <o-navigation-item :to="{ name: 'changelog' }">Changelog</o-navigation-item>
           <o-navigation-item :to="{ name: 'manifesto' }">Manifesto</o-navigation-item>
+          <li>
+            <a href="https://github.com/orangeui/orange/releases" target="_blank">Changelog</a>
+          </li>
           <li>
             <a href="https://github.com/orangeui/orange/issues" target="_blank">Contribute</a>
           </li>
