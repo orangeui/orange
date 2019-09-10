@@ -19,18 +19,22 @@
 /**
   Grid
 */
+@mixin grid-column-auto-fill ($min-width) {
+  grid-template-columns: repeat(auto-fill, minmax($min-width, $grid-column-max-width));
+}
+
 /* Grid (usually it was called row) */
 .grid {
   display: grid;
   grid-gap: $grid-gutter;
-  grid-template-columns: repeat(auto-fill, minmax($grid-column-min-width-regular, $grid-column-max-width));
+  @include grid-column-auto-fill($grid-column-min-width-regular);
 
   &--columns-narrow {
-    grid-template-columns: repeat(auto-fill, minmax($grid-column-min-width-narrow, $grid-column-max-width));
+    @include grid-column-auto-fill($grid-column-min-width-narrow);
   }
 
   &--columns-wide {
-    grid-template-columns: repeat(auto-fill, minmax($grid-column-min-width-wide, $grid-column-max-width));
+    @include grid-column-auto-fill($grid-column-min-width-wide);
   }
 }
 
