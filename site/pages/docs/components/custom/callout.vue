@@ -46,7 +46,7 @@
         </o-callout>
       </div>
     </docs-item>
-    
+
 
 
 
@@ -65,8 +65,8 @@
     <!-- As stats -->
     <docs-item title="As stats" :code="callout_stats_html" v-if="is_html">
       <div slot="body">
-        <div class="row">
-          <div class="col-sm-3">
+        <div class="grid">
+          <div class="col-3">
             <div class="callout">
               <h1>28K</h1>
               <p>
@@ -75,7 +75,7 @@
               </p>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-3">
             <div class="callout">
               <h1>285</h1>
               <p>
@@ -84,7 +84,7 @@
               </p>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-3">
             <div class="callout">
               <h1>1106</h1>
               <p>
@@ -93,7 +93,7 @@
               </p>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-3">
             <div class="callout">
               <h1>$724</h1>
               <p>
@@ -112,8 +112,8 @@
     <!-- With an image -->
     <docs-item title="With an image" :code="callout_image_html" v-if="is_html">
       <div slot="body">
-        <div class="row">
-          <div class="col-sm-3">
+        <div class="grid">
+          <div class="col-3">
             <div class="callout callout--color-primary callout--action">
               <div class="callout__image"><img src="https://fomo.com/static/images/app/dashboard/google-analytics.svg" alt="Callout #1"></div>
               <p><strong>Conversion metrics</strong><br>
@@ -121,7 +121,7 @@
               </p>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-3">
             <div class="callout callout callout--color-primary callout--action">
               <div class="callout__image"><img src="https://fomo.com/static/images/app/dashboard/badges.svg" alt="Callout #3"></div>
               <p><strong>Achievements</strong><br>
@@ -129,7 +129,7 @@
               </p>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-3">
             <div class="callout callout callout--color-primary callout--action">
               <div class="callout__image"><img src="https://fomo.com/static/images/app/dashboard/slack.svg" alt="Callout #4"></div>
               <p><strong>Real-time updates</strong><br>
@@ -140,7 +140,7 @@
         </div>
       </div>
     </docs-item>
-    
+
 
 
 
@@ -279,8 +279,8 @@ export default {
   <p>Click here to claim a free hat</p>
 </div>`,
 
-      callout_stats_html: `<div class="row">
-  <div class="col-sm-3">
+      callout_stats_html: `<div class="grid">
+  <div class="col-3">
     <div class="callout">
       <h1>28K</h1>
       <p>
@@ -289,7 +289,7 @@ export default {
       </p>
     </div>
   </div>
-  <div class="col-sm-3">
+  <div class="col-3">
     <div class="callout">
       <h1>285</h1>
       <p>
@@ -298,7 +298,7 @@ export default {
       </p>
     </div>
   </div>
-  <div class="col-sm-3">
+  <div class="col-3">
     <div class="callout">
       <h1>1106</h1>
       <p>
@@ -307,7 +307,7 @@ export default {
       </p>
     </div>
   </div>
-  <div class="col-sm-3">
+  <div class="col-3">
     <div class="callout">
       <h1>$724</h1>
       <p>
@@ -319,7 +319,7 @@ export default {
 </div>`,
 
       callout_image_html: `<div class="row">
-  <div class="col-sm-3">
+  <div class="col-3">
     <div class="callout callout--color-primary callout--action">
       <div class="callout__image"><img src="https://fomo.com/static/images/app/dashboard/google-analytics.svg" alt="Callout #1"></div>
       <p><strong>Conversion metrics</strong><br>
@@ -327,7 +327,7 @@ export default {
       </p>
     </div>
   </div>
-  <div class="col-sm-3">
+  <div class="col-3">
     <div class="callout callout callout--color-primary callout--action">
       <div class="callout__image"><img src="https://fomo.com/static/images/app/dashboard/badges.svg" alt="Callout #3"></div>
       <p><strong>Achievements</strong><br>
@@ -335,7 +335,7 @@ export default {
       </p>
     </div>
   </div>
-  <div class="col-sm-3">
+  <div class="col-3">
     <div class="callout callout callout--color-primary callout--action">
       <div class="callout__image"><img src="https://fomo.com/static/images/app/dashboard/slack.svg" alt="Callout #4"></div>
       <p><strong>Real-time updates</strong><br>
