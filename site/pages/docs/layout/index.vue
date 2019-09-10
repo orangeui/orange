@@ -33,21 +33,21 @@
         </p>
 
         <h3>Narrow</h3>
-        <div class="grid grid--columns-narrow">
+        <div class="grid grid--columns-auto-narrow">
           <div v-for="number in 6" :key="number">
             {{ number }}
           </div>
         </div>
 
         <h3>Regular (default)</h3>
-        <div class="grid">
+        <div class="grid grid--columns-auto">
           <div v-for="number in 6" :key="number">
             {{ number }}
           </div>
         </div>
 
         <h3>Wide</h3>
-        <div class="grid grid--columns-wide">
+        <div class="grid grid--columns-auto-wide">
           <div v-for="number in 6" :key="number">
             {{ number }}
           </div>
@@ -63,15 +63,15 @@
         </p>
 
         <div class="grid grid--columns-narrow">
-          <div class="col-1/3">2</div>
-          <div class="col-3/7">2</div>
-          <div class="col-1/4">1</div>
-          <div class="col-4/7">1</div>
-          <div class="col-1/5">2</div>
-          <div class="col-5/7">2</div>
-          <div class="col-1/4">2</div>
-          <div class="col-4/6">2</div>
-          <div class="col-6/7">2</div>
+          <div class="col-6">2</div>
+          <div class="col-6">2</div>
+          <div class="col-4">1</div>
+          <div class="col-3">1</div>
+          <div class="col-5">2</div>
+          <div class="col-1">2</div>
+          <div class="col-2">2</div>
+          <div class="col-7">2</div>
+          <div class="col-2">2</div>
         </div>
       </div>
     </docs-item>
@@ -121,15 +121,15 @@
   <div>6</div>
 </div>`,
         different_column_width: `<div class="grid grid--columns-narrow">
-  <div class="col-1/3">2</div>
-  <div class="col-3/7">2</div>
-  <div class="col-1/4">1</div>
-  <div class="col-4/7">1</div>
-  <div class="col-1/5">2</div>
-  <div class="col-5/7">2</div>
-  <div class="col-1/4">2</div>
-  <div class="col-4/6">2</div>
-  <div class="col-6/7">2</div>
+  <div class="col-6">2</div>
+  <div class="col-6">2</div>
+  <div class="col-4">1</div>
+  <div class="col-3">1</div>
+  <div class="col-5">2</div>
+  <div class="col-1">2</div>
+  <div class="col-2">2</div>
+  <div class="col-7">2</div>
+  <div class="col-2">2</div>
 </div>`
       }
     }

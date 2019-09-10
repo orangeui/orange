@@ -27,23 +27,23 @@
 .grid {
   display: grid;
   grid-gap: $grid-gutter;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.grid--columns-auto {
   @include grid-column-auto-fill($grid-column-min-width-regular);
 
-  &--columns-narrow {
+  &-narrow {
     @include grid-column-auto-fill($grid-column-min-width-narrow);
   }
 
-  &--columns-wide {
+  &-wide {
     @include grid-column-auto-fill($grid-column-min-width-wide);
   }
 }
 
-@for $column from 1 through $grid-column-number + 1 {
-  @for $i from 1 through $column {
-    @if $i < $column {
-      .col-#{$i}\/#{$column} {
-        grid-column: #{$i}/#{$column};
-      }
-    }
+@for $column from 1 through $grid-column-number {
+  .col-#{$column} {
+    grid-column: span #{$column};
   }
 }
