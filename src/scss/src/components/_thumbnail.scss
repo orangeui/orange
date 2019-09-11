@@ -9,9 +9,7 @@
   background-color: color('white');
   border-radius: $thumbnail-border-radius;
   transition: $thumbnail-transition;
-  padding: $spacing-base / 6;
   margin-bottom: $thumbnail-margin-bottom;
-  border: $thumbnail-border;
 
   > img {
     display: block;
