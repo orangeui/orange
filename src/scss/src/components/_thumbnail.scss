@@ -29,12 +29,11 @@
 }
 
 .thumbnail--shadow {
-  box-shadow: $thumbnail-shadow;
+  box-shadow: shadow('primary');
 }
 
 .thumbnail--action {
   &:hover {
-    box-shadow: $thumbnail-shadow-hover;
-    transform: $thumbnail-shadow-hover-transform;
+    opacity: 0.8;
   }
 }
