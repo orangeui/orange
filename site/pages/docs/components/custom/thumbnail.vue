@@ -14,49 +14,29 @@
     <!-- Basic -->
     <docs-item title="Basic" :code="thumbnail_basic" v-if="is_html">
       <div slot="body">
-        <img class="thumbnail" src="/images/thumbnails/hedgehog.jpg" alt="Hedgy" />
+        <img class="thumbnail" src="/images/thumbnails/cat.jpg" alt="Katze" />
       </div>
     </docs-item>
     
     <!-- With shadow  -->
     <docs-item title="With shadow" :code="thumbnail_shadow" v-if="is_html">
       <div slot="body">
-        <img class="thumbnail thumbnail--shadow" src="/images/thumbnails/cat.jpg" alt="Katze" />
+        <img class="thumbnail thumbnail--shadow" src="/images/thumbnails/hedgehog.jpg" alt="Hedgy" />
       </div>
     </docs-item>
 
-    <!-- As circle  -->
-    <docs-item title="As circle" :code="thumbnail_circle" v-if="is_html">
+    <!-- In circle  -->
+    <docs-item title="In circle" :code="thumbnail_circle" v-if="is_html">
       <div slot="body">
         <p>
-          <strong>Note:</strong> Image have to be in 1:1 ratio (square) to get the best result.
+          Please note that images have to be square for this style to work as expected.
         </p>
         <img class="thumbnail thumbnail--circle" src="/images/thumbnails/dog-square.jpg" alt="Doggo" />
       </div>
     </docs-item>
 
-    <!-- In grid  -->
-    <docs-item title="In grid" :code="thumbnail_gallery" v-if="is_html">
-      <div slot="body">
-        <div class="grid">
-          <div class="col-2">
-            <img class="thumbnail" src="/images/thumbnails/dog.jpg" alt="Doggo" />
-          </div>
-          <div class="col-2">
-            <img class="thumbnail" src="/images/thumbnails/cat.jpg" alt="Katze" />
-          </div>
-          <div class="col-2">
-            <img class="thumbnail" src="/images/thumbnails/hedgehog.jpg" alt="Hedgy" />
-          </div>
-          <div class="col-2">
-            <img class="thumbnail" src="/images/thumbnails/fox.jpg" alt="Foxy" />
-          </div>
-        </div>
-      </div>
-    </docs-item>
-
-    <!-- With hover effect  -->
-    <docs-item title="With hover effect" :code="thumbnail_action" v-if="is_html">
+    <!-- With action  -->
+    <docs-item title="With action, in grid" :code="thumbnail_action" v-if="is_html">
       <div slot="body">
         <div class="grid">
           <div class="col-2">
@@ -65,18 +45,28 @@
             </a>
           </div>
           <div class="col-2">
-            <a href="#" class="thumbnail thumbnail--action thumbnail--shadow">
+            <a href="#" class="thumbnail thumbnail--action">
               <img src="/images/thumbnails/cat.jpg" alt="Katze" />
             </a>
           </div>
           <div class="col-2">
-            <a href="#" class="thumbnail thumbnail--action thumbnail--circle thumbnail--shadow">
-              <img src="/images/thumbnails/dog-square.jpg" alt="Doggo" />
+            <a href="#" class="thumbnail thumbnail--action">
+              <img src="/images/thumbnails/dog.jpg" alt="Doggo" />
             </a>
           </div>
           <div class="col-2">
             <a href="#" class="thumbnail thumbnail--action">
               <img src="/images/thumbnails/fox.jpg" alt="Foxy" />
+            </a>
+          </div>
+          <div class="col-2">
+            <a href="#" class="thumbnail thumbnail--action">
+              <img src="/images/thumbnails/hedgehog.jpg" alt="Hedgy" />
+            </a>
+          </div>
+          <div class="col-2">
+            <a href="#" class="thumbnail thumbnail--action">
+              <img src="/images/thumbnails/cat.jpg" alt="Katze" />
             </a>
           </div>
         </div>
@@ -136,23 +126,9 @@ export default {
   data () {
     return {
       is_html: true,
-      thumbnail_basic: `<img class="thumbnail" src="/images/thumbnails/hedgehog.jpg" alt="Hedgy" />`,
-      thumbnail_shadow: `<img class="thumbnail thumbnail--shadow" src="/images/thumbnails/cat.jpg" alt="Katze" />`,
+      thumbnail_basic: `<img class="thumbnail" src="/images/thumbnails/cat.jpg" alt="Katze" />`,
+      thumbnail_shadow: `<img class="thumbnail thumbnail--shadow" src="/images/thumbnails/hedgehog.jpg" alt="Hedgy" />`,
       thumbnail_circle: `<img class="thumbnail thumbnail--circle thumbnail--shadow" src="/images/thumbnails/dog-square.jpg" alt="Doggo" />`,
-      thumbnail_gallery: `<div class="grid">
-  <div class="col-2">
-    <img class="thumbnail" src="/images/thumbnails/dog.jpg" alt="Doggo" />
-  </div>
-  <div class="col-2">
-    <img class="thumbnail" src="/images/thumbnails/cat.jpg" alt="Katze" />
-  </div>
-  <div class="col-2">
-    <img class="thumbnail" src="/images/thumbnails/hedgehog.jpg" alt="Hedgy" />
-  </div>
-  <div class="col-2">
-    <img class="thumbnail" src="/images/thumbnails/fox.jpg" alt="Foxy" />
-  </div>
-</div>`,
       thumbnail_action: `<div class="grid">
   <div class="col-2">
     <a href="#" class="thumbnail thumbnail--action">
@@ -160,18 +136,28 @@ export default {
     </a>
   </div>
   <div class="col-2">
-    <a href="#" class="thumbnail thumbnail--action thumbnail--shadow">
+    <a href="#" class="thumbnail thumbnail--action">
       <img src="/images/thumbnails/cat.jpg" alt="Katze" />
     </a>
   </div>
   <div class="col-2">
-    <a href="#" class="thumbnail thumbnail--action thumbnail--circle thumbnail--shadow">
-      <img src="/images/thumbnails/dog-square.jpg" alt="Doggo" />
+    <a href="#" class="thumbnail thumbnail--action">
+      <img src="/images/thumbnails/dog.jpg" alt="Doggo" />
     </a>
   </div>
   <div class="col-2">
     <a href="#" class="thumbnail thumbnail--action">
       <img src="/images/thumbnails/fox.jpg" alt="Foxy" />
+    </a>
+  </div>
+  <div class="col-2">
+    <a href="#" class="thumbnail thumbnail--action">
+      <img src="/images/thumbnails/hedgehog.jpg" alt="Hedgy" />
+    </a>
+  </div>
+  <div class="col-2">
+    <a href="#" class="thumbnail thumbnail--action">
+      <img src="/images/thumbnails/cat.jpg" alt="Katze" />
     </a>
   </div>
 </div>`
