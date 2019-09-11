@@ -4,9 +4,9 @@
 
 /** Global
 --------------------------------------------------*/
-@import "./variables/grid";
-@import "./variables/breakpoint-sizes";
-@import "./variables/media-queries";
+@import "./variables/grid/grid";
+@import "./variables/grid/breakpoints";
+@import "./variables/grid/media-queries";
 @import "./variables/spacings";
 
 $transition: all 150ms ease-out;

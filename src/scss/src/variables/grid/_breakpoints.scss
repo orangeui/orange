@@ -1,9 +1,25 @@
-/*----------------------------------*\
-  	Variables - Breakpoint Sizes
-\*----------------------------------*/
+/**
+ * Variables - Breakpoints
+ */
+
+$breakpoints: (
+  xxsmall: 320px,
+  xsmall: 480px,
+  small: 640px,
+  medium: 768px,
+  large: 992px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+) !default;
+
 /*
 	Media Query Breakpoint Sizes
 */
+@mixin breakpoint-down($name) {
+  @media (max-width: breakpoint($name)) {
+    @content;
+  }
+}
 /* Nano */
 $small-mobile-screen-from: 0px !default;
 $small-mobile-screen-to: 320px !default;

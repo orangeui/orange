@@ -10,7 +10,21 @@ body {
   background-color: color('white');
 }
 
-/** Navigation
+/**
+  Grid
+*/
+.page-docs-layout .grid > div {
+  padding: $spacing-base;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: fontSize('delta');
+  color: color('white');
+  background: color('primary');
+  border-radius: 3px;
+}
+
+/** Navigationp
 --------------------------------------------------*/
 
 .docs__navigation {
@@ -334,20 +348,12 @@ body {
     max-width: $spacing-base * 28;
   }
 
-  & h2:first-child {
+  & > h2:first-child {
     margin-top: 0;
   }
 
   &:last-child {
     border: none;
-  }
-
-  & > div > *:first-child {
-    margin-top: 0;
-  }
-
-  & > div > *:last-child {
-    margin-bottom: 0;
   }
 
   & > div > h3 {
