@@ -27,7 +27,7 @@
 .grid {
   display: grid;
   grid-gap: $grid-gap;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat($grid-column-number, 1fr);
 }
 
 /* Auto Layout */
