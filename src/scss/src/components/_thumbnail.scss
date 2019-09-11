@@ -13,11 +13,7 @@
   margin-bottom: $thumbnail-margin-bottom;
   border: $thumbnail-border;
 
-  &:hover {
-    box-shadow: $thumbnail-basic-hover;
-  }
-
-  img {
+  > img {
     display: block;
     max-width: 100%;
   }
@@ -29,14 +25,16 @@
 .thumbnail--circle {
   border-radius: 100%;
 
-  img {
+  > img {
     border-radius: 100%;
   }
 }
 
 .thumbnail--shadow {
   box-shadow: $thumbnail-shadow;
+}
 
+.thumbnail--action {
   &:hover {
     box-shadow: $thumbnail-shadow-hover;
     transform: $thumbnail-shadow-hover-transform;
