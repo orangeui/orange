@@ -348,7 +348,7 @@ body {
     max-width: $spacing-base * 28;
   }
 
-  & h2:first-child {
+  & > h2:first-child {
     margin-top: 0;
   }
 

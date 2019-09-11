@@ -318,7 +318,7 @@ export default {
   </div>
 </div>`,
 
-      callout_image_html: `<div class="row">
+      callout_image_html: `<div class="grid">
   <div class="col-3">
     <div class="callout callout--color-primary callout--action">
       <div class="callout__image"><img src="https://fomo.com/static/images/app/dashboard/google-analytics.svg" alt="Callout #1"></div>
