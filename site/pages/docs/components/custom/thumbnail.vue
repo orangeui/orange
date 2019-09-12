@@ -32,6 +32,18 @@
           Please note that images have to be square for this style to work as expected.
         </p>
         <img class="thumbnail thumbnail--circle" src="/images/thumbnails/dog-square.jpg" alt="Doggo" />
+
+        <div class="test">
+          <a href="#" class="thumbnail thumbnail--size-small thumbnail--circle thumbnail--action">
+            <img src="/images/thumbnails/fox.jpg" alt="Doggo" />
+          </a>
+        </div>
+
+        <div class="test">
+          <a href="#" class="thumbnail thumbnail--size-small thumbnail--circle thumbnail--action">
+            <img src="https://lanaicat-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/cat-slider4.png" alt="Doggo" />
+          </a>
+        </div>
       </div>
     </docs-item>
 
@@ -40,34 +52,61 @@
       <div slot="body">
         <div class="grid">
           <div class="col-2">
-            <a href="#" class="thumbnail thumbnail--action">
+            <a href="#" class="thumbnail thumbnail--size-auto thumbnail--action">
               <img src="/images/thumbnails/hedgehog.jpg" alt="Hedgy" />
             </a>
           </div>
           <div class="col-2">
-            <a href="#" class="thumbnail thumbnail--action">
+            <a href="#" class="thumbnail thumbnail--size-auto thumbnail--action">
               <img src="/images/thumbnails/cat.jpg" alt="Katze" />
             </a>
           </div>
           <div class="col-2">
-            <a href="#" class="thumbnail thumbnail--action">
+            <a href="#" class="thumbnail thumbnail--size-auto thumbnail--action">
               <img src="/images/thumbnails/dog.jpg" alt="Doggo" />
             </a>
           </div>
           <div class="col-2">
-            <a href="#" class="thumbnail thumbnail--action">
+            <a href="#" class="thumbnail thumbnail--size-auto thumbnail--action">
               <img src="/images/thumbnails/fox.jpg" alt="Foxy" />
             </a>
           </div>
           <div class="col-2">
-            <a href="#" class="thumbnail thumbnail--action">
-              <img src="/images/thumbnails/hedgehog.jpg" alt="Hedgy" />
+            <a href="#" class="thumbnail thumbnail--size-auto thumbnail--action thumbnail--circle thumbnail--size-large">
+              <img src="/images/thumbnails/cat-square.jpg" alt="Katze" />
+            </a>
+          </div>
+
+          <div class="col-2">
+            <a href="#" class="thumbnail thumbnail--size-auto thumbnail--circle thumbnail--action">
+              <img src="/images/thumbnails/hedgehog-square.jpg" alt="Hedgy" />
             </a>
           </div>
           <div class="col-2">
-            <a href="#" class="thumbnail thumbnail--action">
-              <img src="/images/thumbnails/cat.jpg" alt="Katze" />
+            <a href="#" class="thumbnail thumbnail--size-auto thumbnail--circle thumbnail--action">
+              <img src="/images/thumbnails/dog-square.jpg" alt="Katze" />
             </a>
+          </div>
+          <div class="col-2">
+            <a href="#" class="thumbnail thumbnail--size-auto thumbnail--circle thumbnail--action">
+              <img src="/images/thumbnails/fox-square.jpg" alt="Doggo" />
+            </a>
+          </div>
+
+          <div class="col-2">
+            <div class="test">
+              <a href="#" class="thumbnail thumbnail--size-small thumbnail--circle thumbnail--action">
+                <img src="/images/thumbnails/fox.jpg" alt="Doggo" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="test">
+              <a href="#" class="thumbnail thumbnail--size-small thumbnail--circle thumbnail--action">
+                <img src="https://lanaicat-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/cat-slider4.png" alt="Doggo" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

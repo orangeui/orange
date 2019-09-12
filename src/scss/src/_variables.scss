@@ -198,6 +198,14 @@ $thumbnail-border-radius: $border-radius-main !default;
 $thumbnail-margin-bottom: $spacing-base / 2 !default;
 $thumbnail-transition: $transition !default;
 
+$thumbnail-sizes: (
+  'xsmall': 60px,
+  'small': 120px,
+  'medium': 240px,
+  'large': 480px
+) !default;
+
+
 /** Avatar */
 $avatar-width-height: $spacing-base * 4 !default;
 $avatar-small-width-height: $spacing-base * 2 !default;
