@@ -43,14 +43,18 @@
   }
 }
 
-/* Basic Columns */
-@for $column from 1 through $grid-column-number {
-  .col-#{$column} {
-    grid-column: span $column;
+@mixin grid-span ($end, $property, $class) {
+  @for $i from 1 through $end {
+    .#{$class}-#{$i} {
+      grid-#{$property}: span $i;
+    }
   }
 }
 
-/* Columns positions */
+/* Basic Column */
+@include grid-span($grid-column-number, 'column', 'col');
+
+/* Column position */
 @for $column from 1 through $grid-column-number {
   @for $i from 1 through $column {
     @if $i < $column {
@@ -61,9 +65,16 @@
   }
 }
 
-/* Basic Rows */
+/* Basic Row */
+@include grid-span($grid-row-number, 'row', 'row');
+
+/* Row position */
 @for $row from 1 through $grid-row-number {
-  .row-#{$row} {
-    grid-row: $row;
+  @for $i from 1 through $row {
+    @if $i < $row {
+      .row-#{$i}\/#{$row} {
+        grid-row: #{$i}/#{$row + 1}; // Add +1 because the "grid-column-end" ends before the actual number of column and not with it
+      }
+    }
   }
 }
