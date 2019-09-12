@@ -30,6 +30,7 @@
   grid-template-columns: repeat(12, 1fr);
 }
 
+/* Auto Layout */
 .grid--columns-auto {
   @include grid-column-auto-fill($grid-column-min-width-regular);
 
@@ -42,8 +43,27 @@
   }
 }
 
+/* Basic Columns */
 @for $column from 1 through $grid-column-number {
   .col-#{$column} {
-    grid-column: span #{$column};
+    grid-column: span $column;
+  }
+}
+
+/* Columns positions */
+@for $column from 1 through $grid-column-number {
+  @for $i from 1 through $column {
+    @if $i < $column {
+      .col-#{$i}\/#{$column} {
+        grid-column: #{$i}/#{$column + 1}; // Add +1 because the "grid-column-end" ends before the actual number of column and not with it
+      }
+    }
+  }
+}
+
+/* Basic Rows */
+@for $row from 1 through $grid-row-number {
+  .row-#{$row} {
+    grid-row: $row;
   }
 }

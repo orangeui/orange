@@ -57,21 +57,35 @@
 
     <docs-item title="Different column width" :code="different_column_width">
       <div slot="body">
+        <div class="grid">
+          <div class="col-6">1</div>
+          <div class="col-6">2</div>
+          <div class="col-4">3</div>
+          <div class="col-3">4</div>
+          <div class="col-5">5</div>
+          <div class="col-1">6</div>
+          <div class="col-2">7</div>
+          <div class="col-7">8</div>
+          <div class="col-2">9</div>
+        </div>
+      </div>
+    </docs-item>
+
+    <docs-item title="Columns with different positions" :code="position_column">
+      <div slot="body">
         <p>
-          We achieve width of columns with choosing positions rather than setting exact width to columns.
-          We still limit to 12 column grid system, so setting widths of the columns is only available till 12.
+          By setting class like <code>.col-1/7</code>, column will span from column 1 to including 7, but you have to set in which row like <code>.row-2</code>.
+          <br>
+          You can also change positions of columns with this, check the example below.
         </p>
 
-        <div class="grid grid--columns-narrow">
-          <div class="col-6">2</div>
-          <div class="col-6">2</div>
-          <div class="col-4">1</div>
+        <div class="grid">
           <div class="col-3">1</div>
-          <div class="col-5">2</div>
-          <div class="col-1">2</div>
-          <div class="col-2">2</div>
-          <div class="col-7">2</div>
-          <div class="col-2">2</div>
+          <div class="col-9">2</div>
+          <div class="col-5">3</div>
+          <div class="col-1/7 row-2">4</div>
+          <div class="col-5/12 row-3">5</div>
+          <div class="col-4">6</div>
         </div>
       </div>
     </docs-item>
@@ -130,6 +144,14 @@
   <div class="col-2">2</div>
   <div class="col-7">2</div>
   <div class="col-2">2</div>
+</div>`,
+        position_column: `<div class="grid">
+  <div class="col-3">1</div>
+  <div class="col-9">2</div>
+  <div class="col-5">3</div>
+  <div class="col-1/7 row-2">4</div>
+  <div class="col-5/12 row-3">5</div>
+  <div class="col-4">6</div>
 </div>`
       }
     }
