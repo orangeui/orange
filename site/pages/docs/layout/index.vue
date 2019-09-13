@@ -74,7 +74,7 @@
     <docs-item title="Columns with different positions" :code="position_column">
       <div slot="body">
         <p>
-          By setting class like <code>.col-1/7</code>, column will span from column 1 to including 7, but you have to set in which row like <code>.row-2</code>.
+          By setting class like <code>.col-7/12</code>, column will span from column 1 to including 7, but you have to set in which row like <code>.row-2</code>.
           <br>
           You can also change positions of columns with this, check the example below.
         </p>
@@ -82,10 +82,12 @@
         <div class="grid">
           <div class="col-3">1</div>
           <div class="col-9">2</div>
-          <div class="col-5">3</div>
-          <div class="col-1/7 row-pos-2">4</div>
-          <div class="col-5/12 row-pos-3">5</div>
-          <div class="col-4">6</div>
+          <div class="col-1">3</div>
+          <div class="col-5">4</div>
+          <div class="col-2/7 row-pos-2">5</div>
+          <div class="col-5/10 row-pos-3">6</div>
+          <div class="col-4">7</div>
+          <div class="col-2">8</div>
         </div>
       </div>
     </docs-item>
