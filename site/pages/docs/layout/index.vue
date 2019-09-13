@@ -7,7 +7,9 @@
 
     <docs-item class="explanation">
       <div slot="body">
-        Description of Grid system
+        <p>
+          This grid is non-responsive until Orange <code>v1.4.0</code>.
+        </p>
       </div>
     </docs-item>
 
