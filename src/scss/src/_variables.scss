@@ -197,13 +197,13 @@ $sidebar-width: 243px !default;
 $thumbnail-border-radius: $border-radius-main !default;
 $thumbnail-margin-bottom: $spacing-base / 2 !default;
 $thumbnail-transition: $transition !default;
-
 $thumbnail-sizes: (
   'xsmall': 60px,
   'small': 120px,
   'medium': 240px,
   'large': 480px
 ) !default;
+$thumbnail-wrapper-default-size: map-get($thumbnail-sizes, 'small') !default;
 
 
 /** Avatar */
