@@ -12,8 +12,8 @@
 .container, .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-right: $container-gutter;
-  padding-left: $container-gutter;
+  padding-right: $container-gap;
+  padding-left: $container-gap;
 }
 
 /**
@@ -26,7 +26,7 @@
 /* Grid (usually it was called row) */
 .grid {
   display: grid;
-  grid-gap: $grid-gutter;
+  grid-gap: $grid-gap;
   grid-template-columns: repeat(12, 1fr);
 }
 

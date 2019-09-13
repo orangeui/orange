@@ -16,10 +16,10 @@
     <docs-item title="Container" :css_code="container_widths">
       <div slot="body">
         <p>
-          Container is an element that wraps content and has gutter on sides. Class <code>.container</code> limits the
+          Container is an element that wraps content and has gap on sides. Class <code>.container</code> limits the
           width, while <code>.container-fluid</code> is full width.
           <br>
-          Gutter can be changed with variable <code>$container-gutter</code>. Default is <code>12px</code>
+          Gutter can be changed with variable <code>$container-gap</code>. Default is <code>12px</code>
         </p>
 
         <p>Default container widths on all the breakpoints are shown below.</p>
