@@ -6,12 +6,12 @@
   Gutter
 */
 /* Desktop */
-$grid-gutter: 12px !default;
-$container-gutter: 12px !default;
+$grid-gap: 12px !default;
+$container-gap: 12px !default;
 
 /* Mobile */
-$grid-gutter-mobile: $grid-gutter !default;
-$container-gutter-mobile: $container-gutter !default;
+$grid-gap-mobile: $grid-gap !default;
+$container-gap-mobile: $container-gap !default;
 
 /**
   Container
@@ -28,3 +28,8 @@ $grid-column-min-width-narrow: 120px;
 $grid-column-min-width-regular: 240px;
 $grid-column-min-width-wide: 360px;
 $grid-column-max-width: 1fr;
+
+/*+
+  Rows
+*/
+$grid-row-number: 12;

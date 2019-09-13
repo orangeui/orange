@@ -12,8 +12,8 @@
 .container, .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-right: $container-gutter;
-  padding-left: $container-gutter;
+  padding-right: $container-gap;
+  padding-left: $container-gap;
 }
 
 /**
@@ -26,10 +26,11 @@
 /* Grid (usually it was called row) */
 .grid {
   display: grid;
-  grid-gap: $grid-gutter;
+  grid-gap: $grid-gap;
   grid-template-columns: repeat(12, 1fr);
 }
 
+/* Auto Layout */
 .grid--columns-auto {
   @include grid-column-auto-fill($grid-column-min-width-regular);
 
@@ -42,8 +43,50 @@
   }
 }
 
+@mixin grid-span ($end, $property, $class, $span) {
+  @for $i from 1 through $end {
+    @if ($span == false) {
+      .#{$class}-#{$i} {
+        grid-#{$property}: span $i;
+      }
+    } @else {
+      .#{$class}-pos-#{$i} {
+        grid-#{$property}: $i;
+      }
+    }
+  }
+}
+
+/* Column span */
+@include grid-span($grid-column-number, 'column', 'col', false);
+
+/* Column exact positions */
+@include grid-span($grid-column-number, 'column', 'col', true);
+
+/* Row span */
+@include grid-span($grid-row-number, 'row', 'row', false);
+
+/* Row exact positions */
+@include grid-span($grid-row-number, 'row', 'row', true);
+
+/* Column from - to position */
 @for $column from 1 through $grid-column-number {
-  .col-#{$column} {
-    grid-column: span #{$column};
+  @for $i from 1 through $column {
+    @if $i < $column {
+      .col-#{$i}\/#{$column} {
+        grid-column: #{$i}/#{$column + 1}; // Add +1 because the "grid-column-end" ends before the actual number of column and not with it
+      }
+    }
+  }
+}
+
+/* Row from - to position */
+@for $row from 1 through $grid-row-number {
+  @for $i from 1 through $row {
+    @if $i < $row {
+      .row-#{$i}\/#{$row} {
+        grid-row: #{$i}/#{$row + 1}; // Add +1 because the "grid-column-end" ends before the actual number of column and not with it
+      }
+    }
   }
 }
