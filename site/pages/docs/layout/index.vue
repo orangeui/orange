@@ -83,14 +83,14 @@
           <div class="col-3">1</div>
           <div class="col-9">2</div>
           <div class="col-5">3</div>
-          <div class="col-1/7 row-2">4</div>
-          <div class="col-5/12 row-3">5</div>
+          <div class="col-1/7 row-pos-2">4</div>
+          <div class="col-5/12 row-pos-3">5</div>
           <div class="col-4">6</div>
         </div>
       </div>
     </docs-item>
 
-    <docs-item title="Spanning column over multiple rows" :code="position_column">
+    <docs-item title="Spanning column over multiple rows" :code="span_column_over_rows">
       <div slot="body">
         <div class="grid">
           <div class="col-3">1</div>
@@ -164,10 +164,21 @@
 </div>`,
         position_column: `<div class="grid">
   <div class="col-3">1</div>
+  <div class="col-9">2</div>
+  <div class="col-5">3</div>
+  <div class="col-1/7 row-pos-2">4</div>
+  <div class="col-5/12 row-pos-3">5</div>
+  <div class="col-4">6</div>
+</div>`,
+        span_column_over_rows: `<div class="grid">
+  <div class="col-3">1</div>
   <div class="col-3">2</div>
   <div class="col-6">3</div>
   <div class="col-8 row-3">4</div>
   <div class="col-4">5</div>
+  <div class="col-4">8</div>
+  <div class="col-4">8</div>
+  <div class="col-4">8</div>
   <div class="col-4">8</div>
   <div class="col-4">8</div>
 </div>`

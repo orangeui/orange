@@ -43,18 +43,33 @@
   }
 }
 
-@mixin grid-span ($end, $property, $class) {
+@mixin grid-span ($end, $property, $class, $span) {
   @for $i from 1 through $end {
-    .#{$class}-#{$i} {
-      grid-#{$property}: span $i;
+    @if ($span == false) {
+      .#{$class}-#{$i} {
+        grid-#{$property}: span $i;
+      }
+    } @else {
+      .#{$class}-pos-#{$i} {
+        grid-#{$property}: $i;
+      }
     }
   }
 }
 
-/* Basic Column */
-@include grid-span($grid-column-number, 'column', 'col');
+/* Column span */
+@include grid-span($grid-column-number, 'column', 'col', false);
 
-/* Column position */
+/* Column exact positions */
+@include grid-span($grid-column-number, 'column', 'col', true);
+
+/* Row span */
+@include grid-span($grid-row-number, 'row', 'row', false);
+
+/* Row exact positions */
+@include grid-span($grid-row-number, 'row', 'row', true);
+
+/* Column from - to position */
 @for $column from 1 through $grid-column-number {
   @for $i from 1 through $column {
     @if $i < $column {
@@ -65,10 +80,7 @@
   }
 }
 
-/* Basic Row */
-@include grid-span($grid-row-number, 'row', 'row');
-
-/* Row position */
+/* Row from - to position */
 @for $row from 1 through $grid-row-number {
   @for $i from 1 through $row {
     @if $i < $row {
