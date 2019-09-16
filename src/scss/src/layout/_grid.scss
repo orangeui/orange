@@ -10,26 +10,29 @@
 
   /*
    Responsive media query
-   On Extra-Small screens and down, container is full width
+   On XX Small screens and down, container is full width
  */
-  /* Width 768px on small devices (768px and more) */
-  @media #{$tablet-and-up} {
-    width: 768px;
+  @media #{$xsmall-and-up} {
+    width: 420px;
+  }
+  @media #{$small-and-up} {
+    width: 580px;
   }
 
-  /* Width 936px on medium devices (960px and more) */
-  @media #{$small-desktop-and-up} {
+  @media #{$medium-and-up} {
+    width: 720px;
+  }
+
+  @media #{$large-and-up} {
     width: 960px;
   }
 
-  /* Width 1140px on large devices (1160px and more) */
-  @media #{$desktop-and-up} {
+  @media #{$xlarge-and-up} {
     width: 1140px;
   }
 
-  /* Width 1440px on large devices (1440px and more) */
-  @media #{$large-desktop-and-up} {
-    width: 1440px;
+  @media #{$xxlarge-and-up} {
+    width: 1280px;
   }
 }
 

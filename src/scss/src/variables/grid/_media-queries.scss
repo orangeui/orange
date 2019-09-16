@@ -9,38 +9,38 @@
 /* Screen */
 $screen: "only screen" !default;
 
-/* Nano Small Query */
-$small-mobile-and-down: "#{$screen} and (max-width : #{$small-mobile-screen-to})" !default;
-$small-mobile-and-up: "#{$screen} and (min-width : #{$small-mobile-screen-from})" !default;
-$small-mobile-only: "#{$screen} and (min-width: #{$small-mobile-screen-from}) and (max-width: #{$small-mobile-screen-to})" !default;
+/* XX Small Query */
+$xxsmall-and-down: "#{$screen} and (max-width : #{$xxsmall-screen-to})" !default;
+$xxsmall-and-up: "#{$screen} and (min-width : #{$xxsmall-screen-from})" !default;
+$xxsmall-only: "#{$screen} and (min-width: #{$xxsmall-screen-from}) and (max-width: #{$xxsmall-screen-to})" !default;
 
-/* Micro Small Query */
-$mobile-and-down: "#{$screen} and (max-width : #{$mobile-screen-to})" !default;
-$mobile-and-up: "#{$screen} and (min-width : #{$mobile-screen-from})" !default;
-$mobile-only: "#{$screen} and (min-width: #{$mobile-screen-from}) and (max-width: #{$mobile-screen-to})" !default;
-
-/* Extra Small Query */
-$small-tablet-and-down: "#{$screen} and (max-width : #{$small-tablet-screen-to})" !default;
-$small-tablet-and-up: "#{$screen} and (min-width : #{$small-tablet-screen-from})" !default;
-$small-tablet-only: "#{$screen} and (min-width: #{$small-tablet-screen-from}) and (max-width: #{$small-tablet-screen-to})" !default;
+/* X Small Query */
+$xsmall-and-down: "#{$screen} and (max-width : #{$xsmall-screen-to})" !default;
+$xsmall-and-up: "#{$screen} and (min-width : #{$xsmall-screen-from})" !default;
+$xsmall-only: "#{$screen} and (min-width: #{$xsmall-screen-from}) and (max-width: #{$xsmall-screen-to})" !default;
 
 /* Small Query */
-$tablet-and-down: "#{$screen} and (max-width : #{$tablet-screen-to})" !default;
-$tablet-and-up: "#{$screen} and (min-width : #{$tablet-screen-from})" !default;
-$tablet-only: "#{$screen} and (min-width: #{$tablet-screen-from}) and (max-width: #{$tablet-screen-to})" !default;
+$small-and-down: "#{$screen} and (max-width : #{$small-screen-to})" !default;
+$small-and-up: "#{$screen} and (min-width : #{$small-screen-from})" !default;
+$small-only: "#{$screen} and (min-width: #{$small-screen-from}) and (max-width: #{$small-screen-to})" !default;
 
 /* Medium Query */
-$small-desktop-and-down: "#{$screen} and (max-width : #{$small-desktop-screen-to})" !default;
-$small-desktop-and-up: "#{$screen} and (min-width : #{$small-desktop-screen-from})" !default;
-$small-desktop-only: "#{$screen} and (min-width: #{$small-desktop-screen-from}) and (max-width: #{$small-desktop-screen-to})" !default;
+$medium-and-down: "#{$screen} and (max-width : #{$medium-screen-to})" !default;
+$medium-and-up: "#{$screen} and (min-width : #{$medium-screen-from})" !default;
+$medium-only: "#{$screen} and (min-width: #{$medium-screen-from}) and (max-width: #{$medium-screen-to})" !default;
 
 /* Large Query */
-$desktop-and-down: "#{$screen} and (max-width : #{$desktop-screen-to})" !default;
-$desktop-and-up: "#{$screen} and (min-width : #{$desktop-screen-from})" !default;
-$desktop-only: "#{$screen} and (min-width: #{$desktop-screen-from}) and (max-width: #{$desktop-screen-to})" !default;
+$large-and-down: "#{$screen} and (max-width : #{$large-screen-to})" !default;
+$large-and-up: "#{$screen} and (min-width : #{$large-screen-from})" !default;
+$large-only: "#{$screen} and (min-width: #{$large-screen-from}) and (max-width: #{$large-screen-to})" !default;
+
+/* Large Query */
+$xlarge-and-down: "#{$screen} and (max-width : #{$xlarge-screen-to})" !default;
+$xlarge-and-up: "#{$screen} and (min-width : #{$xlarge-screen-from})" !default;
+$xlarge-only: "#{$screen} and (min-width: #{$xlarge-screen-from}) and (max-width: #{$xlarge-screen-to})" !default;
 
 /* Extra Large Query */
-$large-desktop-and-up: "#{$screen} and (min-width : #{$large-desktop-screen-from})" !default;
+$xxlarge-and-up: "#{$screen} and (min-width : #{$xxlarge-screen-from})" !default;
 
 /*
 	Media Query Properties
@@ -50,32 +50,32 @@ $grid: 12 !default;
 
 /* Breakpoints query breakpoint and up */
 $breakpoints-up: (
-  "nano": $small-mobile-and-up,
-  "micro": $mobile-and-up,
-  "xs": $small-tablet-and-up,
-  "sm": $tablet-and-up,
-  "md": $small-desktop-and-up,
-  "lg": $desktop-and-up,
-  "xl": $large-desktop-and-up
+  "xxsm": $xxsmall-and-up,
+  "xsm": $xsmall-and-up,
+  "sm": $small-and-up,
+  "md": $medium-and-up,
+  "lg": $large-and-up,
+  "xl": $xlarge-and-up,
+  "xxl": $xxlarge-and-up
 );
 
 /* Breakpoints query breakpoint and down */
 $breakpoints-down: (
-  "lg-down": $desktop-and-down,
-  "md-down": $small-desktop-and-down,
-  "sm-down": $tablet-and-down,
-  "xs-down": $small-tablet-and-down,
-  "micro-down": $mobile-and-down,
-  "nano-down": $small-mobile-and-down
+  "lg-down": $xlarge-and-down,
+  "md-down": $large-and-down,
+  "sm-down": $medium-and-down,
+  "xs-down": $small-and-down,
+  "micro-down": $xsmall-and-down,
+  "nano-down": $xxsmall-and-down
 );
 
 /* Breakpoints query breakpoint only */
 $breakpoints-only: (
-  "xl-only": $large-desktop-and-up,
-  "lg-only": $desktop-only,
-  "md-only": $small-desktop-only,
-  "sm-only": $tablet-only,
-  "xs-only": $small-tablet-only,
-  "micro-only": $mobile-only,
-  "nano-only": $small-mobile-only
+  "xl-only": $xxlarge-and-up,
+  "lg-only": $xlarge-only,
+  "md-only": $large-only,
+  "sm-only": $medium-only,
+  "xs-only": $small-only,
+  "micro-only": $xsmall-only,
+  "nano-only": $xxsmall-only
 );

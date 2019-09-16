@@ -17,6 +17,14 @@ $container-gap-mobile: $container-gap !default;
   Container
 */
 $container-max-width: 100% !default;
+$container-max-widths: (
+  xsmall: 420px,
+  small: 580px,
+  medium: 720px,
+  large: 960px,
+  xlarge: 1140px,
+  xxlarge: 1280px
+) !default;
 
 /**
   Columns

@@ -50,7 +50,7 @@ $flex-align-selfs: (
     }
   }
 
-  @each $class, $point in $breakpoints-up {
+  /*@each $class, $point in $breakpoints-up {
     @media #{$point} {
       @each $direction in $flex-directions {
         &--#{$direction}-#{$class} {
@@ -58,7 +58,7 @@ $flex-align-selfs: (
         }
       }
     }
-  }
+  }*/
 
   /*
     Flex wrapping items
@@ -69,7 +69,7 @@ $flex-align-selfs: (
     }
   }
 
-  @each $class, $point in $breakpoints-up {
+  /*@each $class, $point in $breakpoints-up {
     @media #{$point} {
       @each $wrap in $flex-wrap-items {
         &--#{$wrap}-#{$class} {
@@ -77,7 +77,7 @@ $flex-align-selfs: (
         }
       }
     }
-  }
+  }*/
 
   /*
     Content alignment on main axis - X axis
@@ -88,7 +88,7 @@ $flex-align-selfs: (
     }
   }
 
-  @each $class, $point in $breakpoints-up {
+  /*@each $class, $point in $breakpoints-up {
     @media #{$point} {
       @each $prefix, $meaning in $flex-justify-contents {
         &--justify-#{$prefix}-#{$class} {
@@ -96,7 +96,7 @@ $flex-align-selfs: (
         }
       }
     }
-  }
+  }*/
 
   /*
     Content alignment on cross axis - Y axis
@@ -107,7 +107,7 @@ $flex-align-selfs: (
     }
   }
 
-  @each $class, $point in $breakpoints-up {
+  /*@each $class, $point in $breakpoints-up {
     @media #{$point} {
       @each $prefix, $meaning in $flex-align-items {
         &--align-#{$prefix}-#{$class} {
@@ -115,7 +115,7 @@ $flex-align-selfs: (
         }
       }
     }
-  }
+  }*/
 
   /*
     Content alignment on cross axis - Y axis, but only when there are multiple lines and extra space in container - Y axis
@@ -126,7 +126,7 @@ $flex-align-selfs: (
     }
   }
 
-  @each $class, $point in $breakpoints-up {
+  /*@each $class, $point in $breakpoints-up {
     @media #{$point} {
       @each $prefix, $meaning in $flex-align-contents {
         &--#{$prefix}-#{$class} {
@@ -134,7 +134,7 @@ $flex-align-selfs: (
         }
       }
     }
-  }
+  }*/
 
   /*
     Properties for children - flex items
@@ -146,7 +146,7 @@ $flex-align-selfs: (
     }
   }
 
-  @each $class, $point in $breakpoints-up {
+  /*@each $class, $point in $breakpoints-up {
     @media #{$point} {
       @each $prefix, $meaning in $flex-align-selfs {
         &__item-#{$prefix}-#{$class} {
@@ -154,7 +154,7 @@ $flex-align-selfs: (
         }
       }
     }
-  }
+  }*/
 
   /* Fill Gap */
   &__fill-gap {
