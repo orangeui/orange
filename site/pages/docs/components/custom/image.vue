@@ -31,6 +31,21 @@
       </div>
     </docs-item>
 
+    <!-- Rounded  -->
+    <docs-item title="Rounded" :code="thumbnail_rounded" v-if="is_html">
+      <div slot="body">
+        <p>
+          Add border radius to image.
+        </p>
+
+        <img class="image image--rounded" src="/images/thumbnails/square/cat-square.jpg" alt="Katze" />
+
+        <a href="#" class="image image--size-small image--rounded image--action">
+          <img src="/images/thumbnails/hedgehog.jpg" alt="Hedgy" />
+        </a>
+      </div>
+    </docs-item>
+
     <!-- In circle  -->
     <docs-item title="In circle" :code="thumbnail_circle" v-if="is_html">
       <div slot="body">
@@ -250,6 +265,10 @@ export default {
       thumbnail_basic: `<img class="image" src="/images/thumbnails/cat.jpg" alt="Katze" />
 <a href="#" class="image"><img src="/images/thumbnails/fox.jpg" alt="Foxy" /></a>`,
       thumbnail_shadow: `<img class="image image--shadow" src="/images/thumbnails/hedgehog.jpg" alt="Hedgy" />`,
+      thumbnail_rounded: `<img class="image image--rounded" src="/images/thumbnails/square/cat-square.jpg" alt="Katze" />
+<a href="#" class="image image--size-small image--rounded image--action">
+  <img src="/images/thumbnails/hedgehog.jpg" alt="Hedgy" />
+</a>`,
       thumbnail_circle: `<img class="image image--circle" src="/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
 <a href="#" class="image image--size-small image--circle image--action"><img src="/images/thumbnails/square/fox-square.jpg" alt="Foxy" /></a>`,
       thumbnail_sizes: `<img class="image" src="/images/thumbnails/cat.jpg" alt="Katze" />
