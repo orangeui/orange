@@ -46,6 +46,12 @@ $font-weights: (
   'black': 800
 ) !default;
 
+/** Include fonts */
+@if ($include-fonts) {
+  @import url($font-url);
+}
+
+
 /** Colors
 --------------------------------------------------*/
 $darken: 20%;
