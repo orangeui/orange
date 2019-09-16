@@ -193,6 +193,19 @@ $nav-link-height: 40px !default;
 /** Sidebar */
 $sidebar-width: 243px !default;
 
+/** Image */
+$image-border-radius: $border-radius-main !default;
+$image-margin-bottom: $spacing-base / 2 !default;
+$image-transition: $transition !default;
+$image-sizes: (
+  'xsmall': 60px,
+  'small': 120px,
+  'medium': 240px,
+  'large': 480px
+) !default;
+$image-wrapper-default-size: map-get($image-sizes, 'small') !default;
+
+
 /** Avatar */
 $avatar-width-height: $spacing-base * 4 !default;
 $avatar-small-width-height: $spacing-base * 2 !default;

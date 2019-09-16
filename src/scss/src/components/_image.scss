@@ -1,0 +1,84 @@
+/**
+ * Image
+ */
+
+.image {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  transition: $image-transition;
+  margin-bottom: $image-margin-bottom;
+
+  > img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+/** Looks
+--------------------------------------------------*/
+.image--rounded {
+  border-radius: $image-border-radius;
+}
+
+.image--circle {
+  border-radius: 100%;
+
+  > img {
+    width: 100%;
+  }
+}
+
+.image--shadow {
+  box-shadow: shadow('primary');
+}
+
+.image--action {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+/** Sizes
+--------------------------------------------------*/
+@each $name, $size in $image-sizes {
+  .image--size-#{$name} {
+    width: $size;
+  }
+}
+
+/** Square/circle in any dimension
+--------------------------------------------------*/
+.image-wrapper {
+  display: inline-block;
+  width: $image-wrapper-default-size;
+  max-width: 100%;
+
+   .image {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding: 100% 0 0;
+
+    > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@each $name, $size in $image-sizes {
+  .image-wrapper--size-#{$name} {
+    width: $size;
+  }
+}
+
+/** Remove margin in grid as grid have gap
+--------------------------------------------------*/
+.grid [class*="col"] .image {
+  margin-bottom: 0;
+}
