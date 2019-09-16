@@ -21,15 +21,15 @@ $container-max-width: 100% !default;
 /**
   Columns
 */
-$grid-column-number: 12;
+$grid-column-number: 12 !default;
 
 /* Width */
-$grid-column-min-width-narrow: 120px;
-$grid-column-min-width-regular: 240px;
-$grid-column-min-width-wide: 360px;
-$grid-column-max-width: 1fr;
+$grid-column-min-width-narrow: 120px !default;
+$grid-column-min-width-regular: 240px !default;
+$grid-column-min-width-wide: 360px !default;
+$grid-column-max-width: 1fr !default;
 
 /*+
   Rows
 */
-$grid-row-number: 12;
+$grid-row-number: 12 !default;
