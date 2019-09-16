@@ -193,17 +193,17 @@ $nav-link-height: 40px !default;
 /** Sidebar */
 $sidebar-width: 243px !default;
 
-/** Thumbnail */
-$thumbnail-border-radius: $border-radius-main !default;
-$thumbnail-margin-bottom: $spacing-base / 2 !default;
-$thumbnail-transition: $transition !default;
-$thumbnail-sizes: (
+/** Image */
+$image-border-radius: $border-radius-main !default;
+$image-margin-bottom: $spacing-base / 2 !default;
+$image-transition: $transition !default;
+$image-sizes: (
   'xsmall': 60px,
   'small': 120px,
   'medium': 240px,
   'large': 480px
 ) !default;
-$thumbnail-wrapper-default-size: map-get($thumbnail-sizes, 'small') !default;
+$image-wrapper-default-size: map-get($image-sizes, 'small') !default;
 
 
 /** Avatar */
