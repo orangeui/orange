@@ -148,15 +148,14 @@
         <div class="grid">
           <div class="col-2">
             <div class="image-wrapper">
-              <a href="#" class="image image--action">
+              <a href="#" class="image image--rounded image--action">
                 <img src="/images/thumbnails/width-240/fox-240.jpg" alt="Foxy" />
               </a>
             </div>
           </div>
-
           <div class="col-2">
             <div class="image-wrapper">
-              <a href="#" class="image image--circle image--action">
+              <a href="#" class="image image--rounded image--action">
                 <img src="/images/thumbnails/width-240/cat-240.jpg" alt="Katze" />
               </a>
             </div>
@@ -168,7 +167,6 @@
               </a>
             </div>
           </div>
-         
           <div class="col-2">
             <div class="image-wrapper">
               <a href="#" class="image image--size-large image--circle image--action">
@@ -204,8 +202,16 @@
           <td>-</td>
         </tr>
         <tr>
+          <td>rounded</td>
+          <td>Add <code>$border-radius-main</code> (3px) border radius</td>
+          <td><code>.image--rounded</code></td>
+          <td>String</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
           <td>circle</td>
-          <td>Add 100% border radius.</td>
+          <td>Add 100% border radius</td>
           <td><code>.image--circle</code></td>
           <td>String</td>
           <td>-</td>
@@ -221,7 +227,7 @@
         </tr>
         <tr>
           <td>size</td>
-          <td>Set with <code>.image--size-{size}</code>, if you are using any dimension thumbnail you need to set it to <code>.image-wrapper--size-{size}</code></td>
+          <td>Set with <code>.image--size-{size}</code>, if you are using any dimension image you need to set it as <code>.image-wrapper--size-{size}</code></td>
           <td><code>xsmall</code>, <code>small</code>, <code>medium</code>, <code>large</code></td>
           <td>String</td>
           <td>-</td>
@@ -307,14 +313,14 @@ export default {
 <div class="grid">
   <div class="col-2">
     <div class="image-wrapper">
-      <a href="#" class="image image--action">
+      <a href="#" class="image image--rounded image--action">
         <img src="/images/thumbnails/width-240/fox-240.jpg" alt="Foxy" />
       </a>
     </div>
   </div>
   <div class="col-2">
     <div class="image-wrapper">
-      <a href="#" class="image image--circle image--action">
+      <a href="#" class="image image--rounded image--action">
         <img src="/images/thumbnails/width-240/cat-240.jpg" alt="Katze" />
       </a>
     </div>
