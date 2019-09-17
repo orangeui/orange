@@ -56,8 +56,8 @@
       align-items: center;
       position: relative;
       padding: 0 $breadcrumbs-spacing;
-      background: rgba(color('black'), $breadcrumbs-bg-transperancy);
-      color: rgba(color('black'), $breadcrumbs-color-transperancy);
+      background: rgba($breadcrumbs-default-color, $breadcrumbs-bg-transperancy);
+      color: rgba($breadcrumbs-default-color, $breadcrumbs-color-transperancy);
       line-height: 1;
       height: $breadcrumbs-height;
       cursor: pointer;
@@ -68,8 +68,8 @@
         position: absolute;
         top: 0;
         left: -$breadcrumbs-spacing;
-        border-top: $breadcrumbs-height / 2 solid rgba(color('black'), $breadcrumbs-bg-transperancy);
-        border-bottom: $breadcrumbs-height / 2 solid rgba(color('black'), $breadcrumbs-bg-transperancy);
+        border-top: $breadcrumbs-height / 2 solid rgba($breadcrumbs-default-color, $breadcrumbs-bg-transperancy);
+        border-bottom: $breadcrumbs-height / 2 solid rgba($breadcrumbs-default-color, $breadcrumbs-bg-transperancy);
         border-right: $breadcrumbs-spacing solid transparent;
         font-size: 0;
         line-height: 0;
@@ -86,22 +86,22 @@
         height: 0;
         border-style: solid;
         border-width: $breadcrumbs-height / 2 0 $breadcrumbs-height / 2 $breadcrumbs-spacing;
-        border-color: transparent transparent transparent rgba(color('black'), $breadcrumbs-bg-transperancy);
+        border-color: transparent transparent transparent rgba($breadcrumbs-default-color, $breadcrumbs-bg-transperancy);
       }
 
       &.is-active,
       &:hover {
-        color: color('black');
+        color: $breadcrumbs-default-color;
         text-decoration: none;
-        background: rgba(color('black'), $breadcrumbs-bg-transperancy-active);
+        background: rgba($breadcrumbs-default-color, $breadcrumbs-bg-transperancy-active);
 
         &::before {
-          border-top: $breadcrumbs-height / 2 solid rgba(color('black'), $breadcrumbs-bg-transperancy-active);
-          border-bottom: $breadcrumbs-height / 2 solid rgba(color('black'), $breadcrumbs-bg-transperancy-active);
+          border-top: $breadcrumbs-height / 2 solid rgba($breadcrumbs-default-color, $breadcrumbs-bg-transperancy-active);
+          border-bottom: $breadcrumbs-height / 2 solid rgba($breadcrumbs-default-color, $breadcrumbs-bg-transperancy-active);
         }
 
         &::after {
-          border-color: transparent transparent transparent rgba(color('black'), $breadcrumbs-bg-transperancy-active);
+          border-color: transparent transparent transparent rgba($breadcrumbs-default-color, $breadcrumbs-bg-transperancy-active);
         }
       }
 
@@ -135,8 +135,8 @@ a.breadcrumbs__button {
   line-height: 1;
   height: $breadcrumbs-height;
   position: relative;
-  background: rgba(color('black'), $breadcrumbs-bg-transperancy);
-  color: rgba(color('black'), $breadcrumbs-color-transperancy);
+  background: rgba($breadcrumbs-default-color, $breadcrumbs-bg-transperancy);
+  color: rgba($breadcrumbs-default-color, $breadcrumbs-color-transperancy);
   font-size: fontSize('zeta');
 
   &::before {
@@ -148,7 +148,7 @@ a.breadcrumbs__button {
     height: 0;
     border-style: solid;
     border-width: $breadcrumbs-height / 2 $breadcrumbs-spacing $breadcrumbs-height / 2 0;
-    border-color: transparent rgba(color('black'), $breadcrumbs-bg-transperancy) transparent transparent;
+    border-color: transparent rgba($breadcrumbs-default-color, $breadcrumbs-bg-transperancy) transparent transparent;
   }
 
   /** Disabled state */
@@ -162,12 +162,12 @@ a.breadcrumbs__button {
   }
 
   &:hover {
-    color: color('black');
-    background-color: rgba(color('black'), $breadcrumbs-bg-transperancy-active);
+    color: $breadcrumbs-default-color;
+    background-color: rgba($breadcrumbs-default-color, $breadcrumbs-bg-transperancy-active);
     text-decoration: none;
 
     &::before {
-      border-color: transparent rgba(color('black'), $breadcrumbs-bg-transperancy-active) transparent transparent;
+      border-color: transparent rgba($breadcrumbs-default-color, $breadcrumbs-bg-transperancy-active) transparent transparent;
     }
   }
 }
