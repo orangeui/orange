@@ -197,46 +197,40 @@
           <h3>Title</h3>
         </div>
         <div class="card__body">
-          <div class="list list--large list--divide list--no-gutter list--hover">
+          <ul class="list list--large list--divide list--no-gutter list--hover">
+            <li>
+              <div>
+                <h3>First item</h3>
+                <p>Description of the first item</p>
+              </div>
 
-            <div class="list__item">
-              <div class="list__slot">
-                <h3 class="list__item-title">First item</h3>
-                <p class="list__item-description">Description of the first item</p>
+              <div class="list__action">
+                <button type="button" class="button button--small">Action</button>
               </div>
-              <div class="list__slot">
-                <button type="button" class="button button--small button--icon-only">
-                  <i class="icon-remove"></i>
-                </button>
+            </li>
+
+            <li>
+              <div>
+                <h3>Second item</h3>
+                <p>Description of the second item</p>
               </div>
-            </div>
-            <div class="list__item">
-              <div class="list__slot">
-                <div>
-                  <h3 class="list__item-title">Second item</h3>
-                  <p class="list__item-description">Description of the second item</p>
-                </div>
+
+              <div class="list__action">
+                <button type="button" class="button button--small">Action</button>
               </div>
-              <div class="list__slot">
-                <button type="button" class="button button--small button--icon-only">
-                  <i class="icon-remove"></i>
-                </button>
+            </li>
+
+            <li>
+              <div>
+                <h3>Third item</h3>
+                <p>Description of the third item</p>
               </div>
-            </div>
-            <div class="list__item">
-              <div class="list__slot">
-                <div>
-                  <h3 class="list__item-title">Third item</h3>
-                  <p class="list__item-description">Description of the third item</p>
-                </div>
+
+              <div class="list__action">
+                <button type="button" class="button button--small">Action</button>
               </div>
-              <div class="list__slot">
-                <button type="button" class="button button--small button--icon-only">
-                  <i class="icon-remove"></i>
-                </button>
-              </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </docs-item>
