@@ -33,11 +33,11 @@
     align-items: center;
     position: relative;
     padding: $spacing-base / 2;
-    color: color('gray', 'light');
+    color: rgba($nav-default-link-color, $nav-default-link-color-opacity);
     height: $nav-link-height;
 
     &:hover {
-      color: color('black');
+      color: rgba($nav-default-link-color, $nav-default-link-color-opacity-hover);
       text-decoration: none;
 
       &::before {
@@ -49,7 +49,7 @@
     /** Active state */
     &.is-active,
     &.is-exact-active.is-active {
-      color: color('black');
+      color: rgba($nav-default-link-color, $nav-default-link-color-opacity-active);
 
       &::after {
         content: " ";
@@ -58,7 +58,7 @@
         left: $spacing-small;
         bottom: -$spacing-base / 2;
         border-bottom: 1px solid;
-        border-bottom-color: color('black');
+        border-bottom-color: $nav-default-link-color;
         z-index: 1;
       }
     }
@@ -79,7 +79,7 @@
       top: $spacing-base / 8;
       border-radius: $border-radius-main;
       opacity: 0;
-      background-color: rgba(color('black'), 0.03);
+      background-color: rgba($nav-default-link-color, $nav-default-link-bgcolor-opacity);
       pointer-events: none;
     }
   }
