@@ -29,8 +29,8 @@ The quickest way to getting started is linking to a minimized version of Orange 
 Add these styles and scripts to all your pages:
 
 ``` html
-<link rel="stylesheet" href="https://cdn.orangecss.com/1.2.1/css/orange.min.css">
-<script src="https://cdn.orangecss.com/1.2.1/js/orange.min.js"></script>
+<link rel="stylesheet" href="https://cdn.orangecss.com/1.3.0/css/orange.min.css">
+<script src="https://cdn.orangecss.com/1.3.0/js/orange.min.js"></script>
 ```
 
 ... and you're good to go! You'll probably want to [read the documentation](https://orangecss.com/docs) for examples and explanations of available tools.
