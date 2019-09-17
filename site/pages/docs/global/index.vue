@@ -81,24 +81,24 @@ export default {
   data () {
     return {
       customizing_css: `...`,
-      
+
       primary: [
         {
           title: 'Primary dark',
           variable: 'primary-dark',
-          hex: '#null',
+          hex: '#da7700',
           class: 'bg-primary-dark'
         },
         {
           title: 'Primary',
           variable: 'primary',
-          hex: '#null',
+          hex: '#ffa941',
           class: 'bg-primary'
         },
         {
           title: 'Primary light',
           variable: 'primary-light',
-          hex: '#null',
+          hex: '#ffd7a7',
           class: 'bg-primary-light'
         }
       ],
@@ -106,19 +106,19 @@ export default {
         {
           title: 'Secondary dark',
           variable: 'secondary-dark',
-          hex: '#null',
+          hex: '#1113a1',
           class: 'bg-secondary-dark'
         },
         {
           title: 'Secondary',
           variable: 'secondary',
-          hex: '#null',
+          hex: '#4648d2',
           class: 'bg-secondary'
         },
         {
           title: 'Secondary light',
           variable: 'secondary-light',
-          hex: '#null',
+          hex: '#8b8df3',
           class: 'bg-secondary-light'
         }
       ],
@@ -127,19 +127,19 @@ export default {
         {
           title: 'Red dark',
           variable: 'red-dark',
-          hex: '#null',
+          hex: '#d1000d',
           class: 'bg-red-dark'
         },
         {
           title: 'Red',
           variable: 'red',
-          hex: '#null',
+          hex: '#fa3d49',
           class: 'bg-red'
         },
         {
           title: 'Red light',
           variable: 'red-light',
-          hex: '#null',
+          hex: '#ff9ea4',
           class: 'bg-red-light'
         }
       ],
@@ -147,19 +147,19 @@ export default {
         {
           title: 'Orange dark',
           variable: 'orange-dark',
-          hex: '#null',
+          hex: '#da7700',
           class: 'bg-orange-dark'
         },
         {
           title: 'Orange',
           variable: 'orange',
-          hex: '#null',
+          hex: '#ffa941',
           class: 'bg-orange'
         },
         {
           title: 'Orange light',
           variable: 'orange-light',
-          hex: '#null',
+          hex: '#ffd7a7',
           class: 'bg-orange-light'
         }
       ],
@@ -167,19 +167,19 @@ export default {
         {
           title: 'Yellow dark',
           variable: 'yellow-dark',
-          hex: '#null',
+          hex: '#ccb100',
           class: 'bg-yellow-dark'
         },
         {
           title: 'Yellow',
           variable: 'yellow',
-          hex: '#null',
+          hex: '#ffe433',
           class: 'bg-yellow'
         },
         {
           title: 'Yellow light',
           variable: 'yellow-light',
-          hex: '#null',
+          hex: '#fff299',
           class: 'bg-yellow-light'
         }
       ],
@@ -187,19 +187,19 @@ export default {
         {
           title: 'Green dark',
           variable: 'green-dark',
-          hex: '#null',
+          hex: '#19902d',
           class: 'bg-green-dark'
         },
         {
           title: 'Green',
           variable: 'green',
-          hex: '#null',
+          hex: '#4bc45f',
           class: 'bg-green'
         },
         {
           title: 'Green light',
           variable: 'green-light',
-          hex: '#null',
+          hex: '#8aeb9a',
           class: 'bg-green-light'
         }
       ],
@@ -207,19 +207,19 @@ export default {
         {
           title: 'Indigo dark',
           variable: 'indigo-dark',
-          hex: '#null',
+          hex: '#005387',
           class: 'bg-indigo-dark'
         },
         {
           title: 'Indigo',
           variable: 'indigo',
-          hex: '#null',
+          hex: '#178cd6',
           class: 'bg-indigo'
         },
         {
           title: 'Indigo light',
           variable: 'indigo-light',
-          hex: '#null',
+          hex: '#54bdff',
           class: 'bg-indigo-light'
         }
       ],
@@ -227,19 +227,19 @@ export default {
         {
           title: 'Blue dark',
           variable: 'blue-dark',
-          hex: '#null',
+          hex: '#0000c0',
           class: 'bg-blue-dark'
         },
         {
           title: 'Blue',
           variable: 'blue',
-          hex: '#null',
+          hex: '#3333f3',
           class: 'bg-blue'
         },
         {
           title: 'Blue light',
           variable: 'blue-light',
-          hex: '#null',
+          hex: '#8d8dff',
           class: 'bg-blue-light'
         }
       ],
@@ -247,19 +247,19 @@ export default {
         {
           title: 'Violet dark',
           variable: 'violet-dark',
-          hex: '#null',
+          hex: '#5800b1',
           class: 'bg-violet-dark'
         },
         {
           title: 'Violet',
           variable: 'violet',
-          hex: '#null',
+          hex: '#8b26f1',
           class: 'bg-violet'
         },
         {
           title: 'Violet light',
           variable: 'violet-light',
-          hex: '#null',
+          hex: '#be7eff',
           class: 'bg-violet-light'
         }
       ],
@@ -268,7 +268,7 @@ export default {
         {
           title: 'Black',
           variable: 'black',
-          hex: '#null',
+          hex: '#000',
           class: 'bg-black'
         }
       ],
@@ -276,31 +276,31 @@ export default {
         {
           title: 'Gray darkest',
           variable: 'gray-darkest',
-          hex: '#null',
+          hex: '#333',
           class: 'bg-gray-darkest'
         },
         {
           title: 'Gray dark',
           variable: 'gray-dark',
-          hex: '#null',
+          hex: '#6b6b6b',
           class: 'bg-gray-dark'
         },
         {
           title: 'Gray',
           variable: 'gray',
-          hex: '#null',
+          hex: '#999',
           class: 'bg-gray'
         },
         {
           title: 'Gray light',
           variable: 'gray-light',
-          hex: '#null',
+          hex: '#ccc',
           class: 'bg-gray-light'
         },
         {
           title: 'Gray lightest',
           variable: 'gray-lightest',
-          hex: '#null',
+          hex: '#ebebeb',
           class: 'bg-gray-lightest'
         }
       ],
@@ -308,7 +308,7 @@ export default {
         {
           title: 'White',
           variable: 'white',
-          hex: '#null',
+          hex: '#fff',
           class: 'bg-white'
         }
       ],
