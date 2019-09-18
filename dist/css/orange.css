@@ -1391,6 +1391,8 @@ a.breadcrumbs__button {
 /** With navigation */
 .card__header .nav {
   margin-left: 12px; }
+.card__header .nav > ul {
+    padding: 0; }
 /** No gutter */
 .card--full .card__body {
   padding: 0; }
