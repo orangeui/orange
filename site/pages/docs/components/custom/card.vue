@@ -12,7 +12,7 @@
     </docs-item>
 
     <!-- Basic -->
-    <docs-item title="Basic" :code="card_html" v-if="is_html">
+    <docs-item title="Basic" :code="card">
       <div class="card" slot="body">
         <div class="card__header">
           <h3>Title</h3>
@@ -28,24 +28,8 @@
       </div>
     </docs-item>
 
-    <docs-item title="Basic" :code="card" v-else>
-      <o-card slot="body">
-        <o-card-header>
-          <h3>Title</h3>
-        </o-card-header>
-
-        <o-card-body>
-          Body
-        </o-card-body>
-
-        <o-card-footer>
-          Footer
-        </o-card-footer>
-      </o-card>
-    </docs-item>
-
     <!-- Card with button -->
-    <docs-item title="With a button" :code="card_with_button_html" v-if="is_html">
+    <docs-item title="With a button" :code="card_with_button">
       <div class="card" slot="body">
         <div class="card__header">
           <h3>Title</h3>
@@ -63,27 +47,8 @@
       </div>
     </docs-item>
 
-    <docs-item title="With a button" :code="card_with_button" v-else>
-      <o-card slot="body">
-        <o-card-header>
-          <h3>Title</h3>
-
-          <!-- Button -->
-          <o-button text="Action" />
-        </o-card-header>
-
-        <o-card-body>
-          Body
-        </o-card-body>
-
-        <o-card-footer>
-          Footer
-        </o-card-footer>
-      </o-card>
-    </docs-item>
-
     <!-- Card with an input -->
-    <docs-item title="With an input" :code="card_with_input_html" v-if="is_html">
+    <docs-item title="With an input" :code="card_with_input">
       <div class="card" slot="body">
         <div class="card__header">
           <h3>Title</h3>
@@ -109,32 +74,8 @@
       </div>
     </docs-item>
 
-    <docs-item title="With an input" :code="card_with_input" v-else>
-      <o-card slot="body">
-        <o-card-header>
-          <h3>Title</h3>
-
-          <form class="form">
-            <o-input
-              v-model="form_model"
-              id="form_id"
-              label="Search"
-              type="text" />
-          </form>
-        </o-card-header>
-
-        <o-card-body>
-          Body
-        </o-card-body>
-
-        <o-card-footer>
-          Footer
-        </o-card-footer>
-      </o-card>
-    </docs-item>
-
     <!-- Card with navigation and button -->
-    <docs-item title="With navigation and button" :code="card_with_nav_button_html" v-if="is_html">
+    <docs-item title="With navigation and button" :code="card_with_nav_button">
       <div class="card" slot="body">
         <div class="card__header">
           <nav class="nav">
@@ -166,32 +107,8 @@
       </div>
     </docs-item>
 
-    <docs-item title="With navigation and button" :code="card_with_nav_button" v-else>
-      <o-card slot="body">
-        <o-card-header>
-          <!-- Navigation -->
-          <o-navigation>
-            <o-navigation-item to="card">First item</o-navigation-item>
-            <o-navigation-item to="changelog">Second item</o-navigation-item>
-            <o-navigation-item to="contribute">Third item</o-navigation-item>
-            <o-navigation-item to="about" disabled>Fourth item</o-navigation-item>
-          </o-navigation>
-
-          <o-button text="Action" />
-        </o-card-header>
-
-        <o-card-body>
-          Body
-        </o-card-body>
-
-        <o-card-footer>
-          Footer
-        </o-card-footer>
-      </o-card>
-    </docs-item>
-
     <!-- Card with a list -->
-    <docs-item title="With a list" :code="card_with_list_html" v-if="is_html">
+    <docs-item title="With a list" :code="card_with_list">
       <div class="card" slot="body">
         <div class="card__header">
           <h3>Title</h3>
@@ -235,57 +152,8 @@
       </div>
     </docs-item>
 
-    <docs-item title="With a list" :code="card_with_list" v-else>
-      <o-card slot="body">
-        <o-card-header>
-          <h3>Title</h3>
-        </o-card-header>
-
-        <o-card-body>
-          <list no_gutter divide hover>
-            <list-item>
-              <list-item-slot>
-                <h3 class="list__item-title">First item</h3>
-                <p class="list__item-description">Description of the first item</p>
-              </list-item-slot>
-
-              <list-item-slot>
-                <o-button icon="remove" size="small" />
-              </list-item-slot>
-            </list-item>
-
-            <list-item>
-              <list-item-slot>
-                <div>
-                  <h3 class="list__item-title">Second item</h3>
-                  <p class="list__item-description">Description of the second item</p>
-                </div>
-              </list-item-slot>
-
-              <list-item-slot>
-                <o-button icon="remove" size="small" />
-              </list-item-slot>
-            </list-item>
-
-            <list-item>
-              <list-item-slot>
-                <div>
-                  <h3 class="list__item-title">Third item</h3>
-                  <p class="list__item-description">Description of the third item</p>
-                </div>
-              </list-item-slot>
-
-              <list-item-slot>
-                <o-button icon="remove" size="small" />
-              </list-item-slot>
-            </list-item>
-          </list>
-        </o-card-body>
-      </o-card>
-    </docs-item>
-
     <!-- Card with clickable footer -->
-    <docs-item title="Clickable footer" :code="card_click_footer_html" v-if="is_html">
+    <docs-item title="Clickable footer" :code="card_click_footer">
       <div class="card" slot="body">
         <div class="card__header">
           <h3>Title</h3>
@@ -302,25 +170,8 @@
       </div>
     </docs-item>
 
-    <docs-item title="Clickable footer" :code="card_click_footer" v-else>
-      <o-card slot="body">
-        <o-card-header>
-          <h3>Title</h3>
-        </o-card-header>
-
-        <o-card-body>
-          Body
-        </o-card-body>
-
-        <o-card-footer click>
-          Load more
-          <o-icon symbol="plus" />
-        </o-card-footer>
-      </o-card>
-    </docs-item>
-
     <!-- Multiple sections -->
-    <docs-item title="Multiple sections" :code="card_multiple_sections_html">
+    <docs-item title="Multiple sections" :code="card_multiple_sections">
       <div class="card" slot="body">
         <div class="card__header">
           <h3>Title</h3>
@@ -354,7 +205,7 @@
     </docs-item>
 
     <!-- Card without gutter -->
-    <docs-item title="Without gutter" :code="card_full_html" v-if="is_html">
+    <docs-item title="Without gutter" :code="card_full">
       <div class="card card--full" slot="body">
         <div class="card__body">
           Body
@@ -362,18 +213,8 @@
       </div>
     </docs-item>
 
-    <docs-item title="Without gutter" :code="card_full" v-else>
-      <o-card slot="body" full>
-        <o-card-body>
-          Body
-        </o-card-body>
-      </o-card>
-    </docs-item>
-
-
-
     <!-- Usage  -->
-    <docs-item title="Usage" v-if="is_html">
+    <docs-item title="Usage">
       <table class="table table--compact table--celled" slot="body">
         <thead>
         <tr>
@@ -422,22 +263,7 @@ export default {
 
   data () {
     return {
-      form_model: null,
-      is_html: true,
-      card: `<o-card>
-  <o-card-header>
-    <h3>Title</h3>
-  </o-card-header>
-
-  <o-card-body>
-    Body
-  </o-card-body>
-
-  <o-card-footer>
-    Footer
-  </o-card-footer>
-</o-card>`,
-      card_html: `<div class="card">
+      card: `<div class="card">
   <div class="card__header">
     <h3>Title</h3>
   </div>
@@ -450,23 +276,7 @@ export default {
     Footer
   </div>
 </div>`,
-
-      card_with_button: `<o-card>
-  <o-card-header>
-    <h3>Title</h3>
-
-    <o-button text="Action" />
-  </o-card-header>
-
-  <o-card-body>
-    Body
-  </o-card-body>
-
-  <o-card-footer>
-    Footer
-  </o-card-footer>
-</o-card>`,
-      card_with_button_html: `<div class="card">
+      card_with_button: `<div class="card">
   <div class="card__header">
     <h3>Title</h3>
 
@@ -481,29 +291,7 @@ export default {
     Footer
   </div>
 </div>`,
-
-      card_with_input: `<o-card>
-  <o-card-header>
-    <h3>Title</h3>
-
-    <form class="form">
-      <o-input
-        v-model="form_model"
-        id="form_id"
-        label="Search"
-        type="text" />
-    </form>
-  </o-card-header>
-
-  <o-card-body>
-    Body
-  </o-card-body>
-
-  <o-card-footer>
-    Footer
-  </o-card-footer>
-</o-card>`,
-      card_with_input_html: `<div class="card">
+      card_with_input: `<div class="card">
   <div class="card__header">
     <h3>Title</h3>
 
@@ -526,29 +314,7 @@ export default {
     Footer
   </div>
 </div>`,
-
-      card_with_nav_button: `<o-card>
-  <o-card-header>
-    <!-- Navigation -->
-    <o-navigation>
-      <o-navigation-item to="card">First item</o-navigation-item>
-      <o-navigation-item to="changelog">Second item</o-navigation-item>
-      <o-navigation-item to="contribute">Third item</o-navigation-item>
-      <o-navigation-item to="about" disabled>Fourth item</o-navigation-item>
-    </o-navigation>
-
-    <o-button text="Action" />
-  </o-card-header>
-
-  <o-card-body>
-    Body
-  </o-card-body>
-
-  <o-card-footer>
-    Footer
-  </o-card-footer>
-</o-card>`,
-      card_with_nav_button_html: `<div class="card">
+      card_with_nav_button: `<div class="card">
   <div class="card__header">
     <nav class="nav">
       <ul>
@@ -580,25 +346,7 @@ export default {
     Footer
   </div>
 </div>`,
-
-      card_click_footer: `<o-card>
-  <o-card-header>
-    <h3>Title</h3>
-
-    <!-- Button -->
-    <o-button text="Action" />
-  </o-card-header>
-
-  <o-card-body>
-    Body
-  </o-card-body>
-
-  <o-card-footer click>
-    Load more
-    <o-icon symbol="plus" />
-  </o-card-footer>
-</o-card>`,
-      card_click_footer_html: `<div class="card">
+      card_click_footer: `<div class="card">
   <div class="card__header">
     <h3>Title</h3>
   </div>
@@ -612,54 +360,7 @@ export default {
     <span class="icon-plus"></span>
   </div>
 </div>`,
-
-      card_with_list: `<o-card>
-  <o-card-header>
-    <h3>Title</h3>
-  </o-card-header>
-
-  <o-card-body>
-    <list no_gutter divide hover>
-      <list-item>
-        <list-item-slot>
-          <h3 class="list__item-title">First item</h3>
-          <p class="list__item-description">Description of the first item</p>
-        </list-item-slot>
-
-        <list-item-slot>
-          <o-button icon="remove" size="small" />
-        </list-item-slot>
-      </list-item>
-
-      <list-item>
-        <list-item-slot>
-          <div>
-            <h3 class="list__item-title">Second item</h3>
-            <p class="list__item-description">Description of the second item</p>
-          </div>
-        </list-item-slot>
-
-        <list-item-slot>
-          <o-button icon="remove" size="small" />
-        </list-item-slot>
-      </list-item>
-
-      <list-item>
-        <list-item-slot>
-          <div>
-            <h3 class="list__item-title">Third item</h3>
-            <p class="list__item-description">Description of the third item</p>
-          </div>
-        </list-item-slot>
-
-        <list-item-slot>
-          <o-button icon="remove" size="small" />
-        </list-item-slot>
-      </list-item>
-    </list>
-  </o-card-body>
-</o-card>`,
-      card_with_list_html: `<div class="card" slot="body">
+      card_with_list: `<div class="card" slot="body">
   <div class="card__header">
     <h3>Title</h3>
   </div>
@@ -700,19 +401,12 @@ export default {
     </ul>
   </div>
 </div>`,
-
-      card_full: `<o-card full>
-  <o-card-body>
-    Body
-  </o-card-body>
-</o-card>`,
-      card_full_html: `<div class="card card--full">
+      card_full: `<div class="card card--full">
   <div class="card__body">
     Body
   </div>
 </div>`,
-
-      card_multiple_sections_html: `<div class="card">
+      card_multiple_sections: `<div class="card">
   <div class="card__header">
     <h3>Title</h3>
     <button type="button" class="button">Action</button>
