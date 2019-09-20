@@ -176,7 +176,7 @@ $button-size-regular: 40px !default;
 $button-size-small: 28px !default;
 
 /** Breadcrumbs */
-$breadcrumbs-default-color: color('black') !default;
+$breadcrumbs-basic-color: color('black') !default;
 $breadcrumbs-font-size: fontSize('zeta') !default;
 $breadcrumbs-height: 36px !default;
 $breadcrumbs-spacing: $spacing-small !default;
@@ -186,11 +186,11 @@ $breadcrumbs-bg-transperancy-active: 0.12 !default;
 $breadcrumbs-color-transperancy: 0.5 !default;
 
 /** Navigation */
-$nav-default-link-color: color('black') !default;
-$nav-default-link-color-opacity: 0.3 !default;
-$nav-default-link-color-opacity-hover: 1 !default;
-$nav-default-link-color-opacity-active: 1 !default;
-$nav-default-link-bgcolor-opacity: 0.03 !default;
+$nav-basic-link-color: color('black') !default;
+$nav-basic-link-color-opacity: 0.3 !default;
+$nav-basic-link-color-opacity-hover: 1 !default;
+$nav-basic-link-color-opacity-active: 1 !default;
+$nav-basic-link-bgcolor-opacity: 0.03 !default;
 
 $nav-link-font-size: fontSize('zeta') !default;
 $nav-link-color-opacity: 0.5 !default;
@@ -212,11 +212,16 @@ $image-sizes: (
   'medium': 240px,
   'large': 480px
 ) !default;
-$image-wrapper-default-size: map-get($image-sizes, 'small') !default;
+$image-wrapper-basic-size: map-get($image-sizes, 'small') !default;
 
 
 /** Avatar */
-$avatar-default-color: color('primary') !default;
+$avatar-basic-color: color('primary') !default;
 $avatar-width-height: $spacing-base * 4 !default;
 $avatar-small-width-height: $spacing-base * 2 !default;
 $avatar-large-width-height: $spacing-base * 8 !default;
+
+/** Callout */
+$callout-font-size: fontSize('zeta') !default;
+$callout-basic-color: color('black') !default;
+$callout-basic-background-color: color('gray', 'lightest') !default;
