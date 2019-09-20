@@ -18,7 +18,7 @@
     /** Item
     --------------------------------------------------*/
     > li {
-      font-size: fontSize('zeta');
+      font-size: $breadcrumbs-font-size;
       margin-right: $breadcrumbs-margin;
 
       &:first-child {
@@ -137,7 +137,7 @@ a.breadcrumbs__button {
   position: relative;
   background: rgba($breadcrumbs-default-color, $breadcrumbs-bg-transperancy);
   color: rgba($breadcrumbs-default-color, $breadcrumbs-color-transperancy);
-  font-size: fontSize('zeta');
+  font-size: $breadcrumbs-font-size;
 
   &::before {
     content: '';
