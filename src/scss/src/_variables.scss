@@ -161,7 +161,12 @@ $input-height-large: 64px !default;
 $input-large-line-height: 22px !default;
 
 /** Checkbox */
+$checkbox-color: color('secondary') !default;
+$checkbox-font-size: fontSize('epsilon') !default;
 $checkbox-width-height: $spacing-base * 0.75 !default;
+$checkbox-label-font-size: fontSize('omega') !default;
+$checkbox-label-text-color: color('black') !default;
+$checkbox-disabled-color: color('gray', 'dark') !default;
 
 /** Radio */
 $radio-width-height: $spacing-base * 0.75 !default;
@@ -225,3 +230,4 @@ $avatar-large-width-height: $spacing-base * 8 !default;
 $callout-font-size: fontSize('zeta') !default;
 $callout-basic-color: color('black') !default;
 $callout-basic-background-color: color('gray', 'lightest') !default;
+

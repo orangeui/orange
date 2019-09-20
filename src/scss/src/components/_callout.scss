@@ -14,10 +14,10 @@
   margin-bottom: $spacing-base / 2;
   transition: 0.2s ease-in-out;
 
-  background-color: color('gray', 'lightest');
-  color: color('black');
+  background-color: $callout-basic-background-color;
+  color: $callout-basic-color;
   text-align: center;
-  font-size: fontSize('zeta');
+  font-size: $callout-font-size;
   cursor: default;
 
   p {
@@ -29,7 +29,7 @@
   }
 
   a {
-    color: color('black');
+    color: $callout-basic-color;
     font-weight: fontWeight('bold');
     text-decoration: underline;
 
