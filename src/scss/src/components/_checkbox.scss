@@ -18,9 +18,9 @@
 
 .checkbox-group__label {
   margin-bottom: $spacing-base / 6;
-  font-size: fontSize('omega');
+  font-size: $checkbox-label-font-size;
   line-height: 1;
-  color: color('black');
+  color: $checkbox-label-text-color;
 }
 
 
@@ -30,7 +30,7 @@
 .checkbox {
   display: inline-block;
   position: relative;
-  font-size: fontSize('epsilon');
+  font-size: $checkbox-font-size;
 
   * {
     transition: $transition;
@@ -63,7 +63,7 @@
     padding-left: $checkbox-width-height + $spacing-base / 3;
     min-height: $checkbox-width-height;
     position: relative;
-    color: color('secondary');
+    color: $checkbox-color;
     opacity: 0.5;
 
     &::before {
@@ -73,7 +73,7 @@
       height: $checkbox-width-height;
       width: $checkbox-width-height;
       transform: translateY(-50%);
-      border: 1px solid color('secondary');
+      border: 1px solid $checkbox-color;
       content: '';
       border-radius: $border-radius-main;
       display: flex;
@@ -102,24 +102,24 @@
 
     + label::before {
       content: "\e821";
-      background-color: color('secondary');
+      background-color: $checkbox-color;
     }
   }
 
   /** Disabled and checked */
   > input:disabled {
     + label {
-      color: color('gray', 'dark');
+      color: $checkbox-disabled-color;
       cursor: default;
 
       &::before {
-        border-color: color('gray', 'dark');
+        border-color: $checkbox-disabled-color;
       }
     }
     
     &:checked {
       > label::before {
-        background-color: color('gray', 'dark');
+        background-color: $checkbox-disabled-color;
       }
     }
   }
