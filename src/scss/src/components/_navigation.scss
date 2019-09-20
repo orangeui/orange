@@ -28,7 +28,7 @@
   /** Link
   --------------------------------------------------*/
   > ul > li > a {
-    font-size: fontSize('zeta');
+    font-size: $nav-link-font-size;
     display: flex;
     align-items: center;
     position: relative;
