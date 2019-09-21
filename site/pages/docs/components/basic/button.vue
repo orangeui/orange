@@ -405,14 +405,14 @@
         </tr>
         <tr>
           <td>icon</td>
-          <td>Add an icon to a button. See <a href="/icons">Icons</a> page for possible values.</td>
+          <td>Add an icon to a button. See <a href="/docs/global/icons">Icons</a> page for possible values.</td>
           <td>String</td>
           <td>false</td>
           <td>-</td>
         </tr>
         <tr>
           <td>color</td>
-          <td>See <a href="/colors">Colors</a> page for possible values</td>
+          <td>See <a href="/docs/global/colors">Colors</a> page for possible values</td>
           <td>String</td>
           <td>false</td>
           <td>primary</td>

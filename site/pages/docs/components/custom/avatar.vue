@@ -173,7 +173,7 @@
         <tr>
           <td>color</td>
           <td>Set with <code>.avatar--color-{color}</code> class</td>
-          <td>See <a href="/colors">Colors</a> page</td>
+          <td>See <a href="/docs/global/colors">Colors</a> page</td>
           <td>String</td>
           <td>-</td>
           <td>null - primary</td>

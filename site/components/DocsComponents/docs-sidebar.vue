@@ -7,10 +7,10 @@
         <li><router-link :to="{ name: 'docs'}" exact><span>Install</span></router-link></li>
       </ul>
 
-      <router-link :to="{ name: 'docs-global'}" tag="h5">Global</router-link>
+      <router-link :to="{ name: 'docs-global-colors'}" tag="h5">Global</router-link>
 
       <ul>
-        <li><router-link :to="{ name: 'docs-global'}" exact><span>Colors</span></router-link></li>
+        <li><router-link :to="{ name: 'docs-global-colors'}" exact><span>Colors</span></router-link></li>
         <li><router-link :to="{ name: 'docs-global-icons'}"><span>Icons</span></router-link></li>
         <li><router-link :to="{ name: 'docs-global-materials'}"><span>Materials</span></router-link></li>
         <li><router-link :to="{ name: 'docs-global-spacings'}"><span>Spacings</span></router-link></li>
