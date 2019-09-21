@@ -329,7 +329,7 @@
         <tr>
           <td>icon</td>
           <td>Add an icon to a button like <code>.icon-{icon-name}</code></td>
-          <td>See <a href="/icons">Icons</a> page</td>
+          <td>See <a href="/docs/global/icons">Icons</a> page</td>
           <td>String</td>
           <td>-</td>
           <td>-</td>
@@ -337,7 +337,7 @@
         <tr>
           <td>color</td>
           <td>Set with <code>.button--color-{color}</code></td>
-          <td>See <a href="/colors">Colors</a> page</td>
+          <td>See <a href="/docs/global/colors">Colors</a> page</td>
           <td>String</td>
           <td>-</td>
           <td>primary</td>
