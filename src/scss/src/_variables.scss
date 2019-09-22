@@ -172,6 +172,11 @@ $button-secondary-inverted-border-color-action: transparent;
 
 // Font
 $button-font-size: fontSize('epsilon');
+$button-line-height: $button-font-size;
+$button-small-font-size: fontSize('zeta');
+$button-small-line-height: $button-small-font-size;
+$button-large-font-size: $button-font-size;
+$button-large-line-height: $button-font-size;
 $button-font-weight: fontWeight('normal');
 
 // Color

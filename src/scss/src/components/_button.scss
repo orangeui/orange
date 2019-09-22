@@ -23,7 +23,7 @@ a.button {
   font-style: normal;
   font-size: $button-font-size;
   font-weight: $button-font-weight;
-  line-height: $spacing-small;
+  line-height: $button-line-height;
 
   text-decoration: none;
   user-select: none;
@@ -254,8 +254,8 @@ a.button--basic {
 .button--small,
 a.button--small {
   padding: ($spacing-small / 4) ($spacing-small / 2);
-  font-size: fontSize('zeta');
-  line-height: fontSize('zeta');
+  font-size: $button-small-font-size;
+  line-height: $button-small-line-height;
   height: $button-size-small;
 
   &.button--icon-only,
@@ -274,6 +274,8 @@ a.button--small {
 .button--large,
 a.button--large {
   padding: $spacing-small ($spacing-base * 0.75);
+  font-size: $button-large-font-size;
+  line-height: $button-large-line-height;
   height: $button-size-large;
 
   &.button--icon-only,
