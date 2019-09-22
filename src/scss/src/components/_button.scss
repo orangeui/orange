@@ -29,7 +29,7 @@ a.button {
   user-select: none;
 
   color: $button-color;
-  background-color: $button-background;
+  background-color: $button-background-color;
 
   transition: $transition;
 
@@ -40,7 +40,7 @@ a.button {
   &:hover,
   &:focus {
     border-color: $button-border-color-action;
-    background-color: $button-background-action;
+    background-color: $button-background-color-action;
     cursor: pointer;
     outline: none;
     color: $button-color-action;
@@ -75,13 +75,13 @@ a.button {
 
   /** Inverted modifier */
   &.button--inverted {
-    color: color('primary');
-    background-color: color('white');
+    color: $button-inverted-color;
+    background-color: $button-inverted-background-color;
 
     &:hover,
     &:focus {
-      color: color('white');
-      background-color: transparentize(color('white'), 0.66);
+      color: $button-inverted-color-action;
+      background-color: $button-inverted-background-color-action;
     }
   }
 }
@@ -89,26 +89,26 @@ a.button {
 /** Secondary */
 .button--secondary,
 a.button--secondary {
-  background-color: transparent;
-  color: color('primary');
-  border-color: color('primary');
+  background-color: $button-secondary-background-color;
+  color: $button-secondary-color;
+  border-color: $button-secondary-border-color;
 
   &:hover,
   &:focus {
-    border-color: transparent;
-    color: color('white');
+    border-color: $button-secondary-border-color-action;
+    color: $button-secondary-color-action;
   }
 
   &.button--inverted {
-    color: color('white');
-    background-color: transparent;
-    border-color: color('white');
+    color: $button-secondary-inverted-color;
+    background-color: $button-secondary-inverted-background-color;
+    border-color: $button-secondary-inverted-border-color;
 
     &:hover,
     &:focus {
-      color: color('white');
-      background-color: transparentize(color('white'), 0.66);
-      border-color: transparent;
+      color: $button-secondary-inverted-color-action;
+      background-color: $button-secondary-inverted-background-color-action;
+      border-color: $button-secondary-inverted-border-color-action;
     }
   }
 }
