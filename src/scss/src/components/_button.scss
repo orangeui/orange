@@ -16,20 +16,20 @@ a.button {
 
   height: $button-size-regular;
   padding: 0 $spacing-small;
-  
+
   border-radius: $border-radius-main;
-  border: 1px solid transparent;
-  
+  border: $button-border-width solid $button-border-color;
+
   font-style: normal;
-  font-size: fontSize('epsilon');
-  font-weight: fontWeight('normal');
+  font-size: $button-font-size;
+  font-weight: $button-font-weight;
   line-height: $spacing-small;
-  
+
   text-decoration: none;
   user-select: none;
-  
-  color: color('white');
-  background-color: color('primary');
+
+  color: $button-color;
+  background-color: $button-background;
 
   transition: $transition;
 
@@ -39,15 +39,16 @@ a.button {
 
   &:hover,
   &:focus {
-    border-color: transparent;
-    background-color: transparentize(color('primary'), 0.33);
+    border-color: $button-border-color-action;
+    background-color: $button-background-action;
     cursor: pointer;
     outline: none;
+    color: $button-color-action;
   }
 
   /** Disabled state */
   &[disabled] {
-    opacity: 0.5;
+    opacity: $button-disabled-opacity;
     pointer-events: none;
 
     &:hover,
@@ -137,7 +138,7 @@ a.button--basic {
       background-color: transparentize(color('primary'), 0.33);
       color: color('white');
       border-color: transparent;
-    } 
+    }
   }
 }
 
@@ -293,7 +294,7 @@ a.button--large {
 a.button--wide {
   width: 100%;
   justify-content: center;
-  
+
   & + & {
     margin-left: 0;
     margin-top: $spacing-small;
