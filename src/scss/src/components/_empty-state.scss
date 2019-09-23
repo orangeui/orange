@@ -5,8 +5,8 @@
 .empty-state {
   display: flex;
   align-items: center;
-  margin-left: $spacing-base * 2;
-  margin-right: $spacing-base * 2;
+  margin-left: $empty-state-margin-left;
+  margin-right: $empty-state-margin-right;
 }
 
 .empty-state__image {
@@ -25,9 +25,9 @@
 .empty-state__title {  }
 
 .empty-state__description {
-  font-size: fontSize('delta');
-  color: color('gray');
-  max-width: $spacing-base * 16;
+  font-size: $empty-state-description-font-size;
+  color: $empty-state-description-color;
+  max-width: $empty-state-description-max-width;
 
   p {
     margin-bottom: $spacing-small;

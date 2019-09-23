@@ -303,6 +303,15 @@ $card-footer-click-color: color('gray');
 $card-footer-click-hover-color: $card-footer-click-color;
 $card-footer-click-hover-background-color: color('gray', 'lightest');
 
+/** Empty State */
+$empty-state-margin-left: $spacing-base * 2;
+$empty-state-margin-right: $spacing-base * 2;
+
+// Description
+$empty-state-description-font-size: fontSize('delta');
+$empty-state-description-color: color('gray');
+$empty-state-description-max-width: $spacing-base * 16;
+
 /** Callout */
 $callout-font-size: fontSize('zeta') !default;
 $callout-basic-color: color('black') !default;
