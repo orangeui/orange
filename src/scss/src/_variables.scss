@@ -312,6 +312,25 @@ $empty-state-description-font-size: fontSize('delta');
 $empty-state-description-color: color('gray');
 $empty-state-description-max-width: $spacing-base * 16;
 
+/** Message */
+$message-font-size: fontSize('zeta');
+$message-padding: $spacing-small;
+$message-border-radius: $border-radius-main;
+$message-color: color('gray');
+$message-background-color: rgba(color('gray'), 0.05);
+$message-font-style: italic;
+$message-margin-bottom: $spacing-small;
+$message-shadow: shadow('primary');
+
+// Link
+$message-link-font-weight: fontWeight('bold');
+$message-link-text-decoration: underline;
+$message-link-text-decoration-hover: none;
+$message-link-color: color('gray', 'dark');
+
+// Body
+$message-body-headings-font-weight: fontWeight('bold');
+
 /** Callout */
 $callout-font-size: fontSize('zeta') !default;
 $callout-basic-color: color('black') !default;

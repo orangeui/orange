@@ -3,18 +3,18 @@
  */
 
 .message {
-  font-size: fontSize('zeta');
-  padding: $spacing-small;
-  border-radius: $border-radius-main;
-  color: color('gray');
-  background-color: rgba(color('gray'), 0.05);
-  font-style: italic;
-  margin-bottom: $spacing-base / 2;
+  font-size: $message-font-size;
+  padding: $message-padding;
+  border-radius: $message-border-radius;
+  color: $message-color;
+  background-color: $message-background-color;
+  font-style: $message-font-style;
+  margin-bottom: $message-margin-bottom;
   display: flex;
   align-items: center;
 
   p {
-    margin-bottom: $spacing-base / 2;
+    margin-bottom: $spacing-small;
 
     &:last-of-type {
       margin-bottom: 0;
@@ -22,12 +22,12 @@
   }
 
   a {
-    font-weight: fontWeight('bold');
-    text-decoration: underline;
-    color: color('gray', 'dark');
+    font-weight: $message-link-font-weight;
+    text-decoration: $message-link-text-decoration;
+    color: $message-link-color;
 
     &:hover {
-      text-decoration: none;
+      text-decoration: $message-link-text-decoration-hover;
     }
   }
 
@@ -40,14 +40,14 @@
   }
 
   & + & {
-    margin-top: $spacing-base / 2;
+    margin-top: $spacing-small;
   }
 }
 
 .message__body {
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    font-weight: fontWeight('bold');
+    font-weight: $message-body-headings-font-weight;
   }
 }
 
@@ -104,12 +104,12 @@
 
 /** Full width */
 .message--full {
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 /** With a shadow */
 .message--shadow {
-  box-shadow: shadow('primary');
+  box-shadow: $message-shadow;
 }
 
 /** Interactive */
