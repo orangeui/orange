@@ -6,10 +6,10 @@
 /** Checkbox group
 --------------------------------------------------*/
 .checkbox-group {
-  height: $input-height-large;
-  padding: $spacing-small;
-  border: $border;
-  border-radius: $border-radius-main;
+  height: $checkbox-group-height;
+  padding: $checkbox-group-padding;
+  border: $checkbox-group-border;
+  border-radius: $checkbox-group-border-radius;
 }
 
 
@@ -17,7 +17,7 @@
 --------------------------------------------------*/
 
 .checkbox-group__label {
-  margin-bottom: $spacing-base / 6;
+  margin-bottom: $checkbox-bottom-margin;
   font-size: $checkbox-label-font-size;
   line-height: 1;
   color: $checkbox-label-text-color;
@@ -75,7 +75,7 @@
       transform: translateY(-50%);
       border: 1px solid $checkbox-color;
       content: '';
-      border-radius: $border-radius-main;
+      border-radius: $checkbox-border-radius;
       display: flex;
       align-items: center;
       justify-content: center;
