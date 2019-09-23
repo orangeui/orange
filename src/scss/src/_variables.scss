@@ -418,7 +418,19 @@ $dropdown-item-hover-background-color: color('gray', 'lightest') !default;
 $dropdown-item-selected-color: color('gray') !default;
 
 /** Radio */
+$radio-group-height: $input-height-large !default;
+$radio-group-padding: $spacing-base / 2 !default;
+$radio-group-border: $border !default;
+$radio-group-border-radius: $border-radius-main !default;
+
+$radio-bottom-margin: $spacing-base / 6 !default;
+$radio-border-radius: 100% !default;
+$radio-color: color('secondary') !default;
+$radio-font-size: fontSize('epsilon') !default;
 $radio-width-height: $spacing-base * 0.75 !default;
+$radio-label-font-size: fontSize('omega') !default;
+$radio-label-text-color: color('black') !default;
+$radio-disabled-color: color('gray', 'dark') !default;
 
 /** Toggle */
 $toggle-width: $spacing-base * 2.25 !default;
