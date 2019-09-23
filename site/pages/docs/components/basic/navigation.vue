@@ -262,7 +262,7 @@
         <tr>
           <td>color</td>
           <td>Set with <code>.nav--color-{color}</code></td>
-          <td>See <a href="/colors">Colors</a> page</td>
+          <td>See <router-link :to="{ name: 'docs-global'}"><span>Colors</span></router-link> page</td>
           <td>String</td>
           <td>-</td>
           <td>-</td>
@@ -270,7 +270,7 @@
         <tr>
           <td>icon</td>
           <td>Add an icon to a navigation item like <code>.icon-{icon-name}</code></td>
-          <td>See <a href="/icons">Icons</a> page</td>
+          <td>See <router-link :to="{ name: 'docs-global-icons'}"><span>Icons</span></router-link> page</td>
           <td>String</td>
           <td>-</td>
           <td>-</td>
