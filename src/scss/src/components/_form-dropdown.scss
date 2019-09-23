@@ -5,7 +5,7 @@
 .form-dropdown {
   position: relative;
   z-index: 1;
-  min-width: $spacing-base * 10;
+  min-width: $dropdown-label-min-width;
 
   &:hover {
     cursor: pointer;
@@ -29,15 +29,14 @@
   top: 0;
   left: 0;
   z-index: 3;
-  border: 1px solid transparent;
-  color: color('gray', 'light');
+  color: $dropdown-label-color;
   width: 100%;
-  line-height: $line-height;
-  border: $border;
-  border-radius: $border-radius-main;
-  height: $input-height;
-  font-size: fontSize('epsilon');
-  padding: (($input-height / 2) - ($input-line-height / 2) - 2px) $spacing-small; // the 2px account for the border
+  line-height: $dropdown-label-line-height;
+  border: $dropdown-label-border;
+  border-radius: $dropdown-label-border-radius;
+  height: $dropdown-label-height;
+  font-size: $dropdown-label-font-size;
+  padding: $dropdown-label-padding;
 }
 
 
@@ -47,21 +46,20 @@
 .form-dropdown__text {
   position: relative;
   z-index: 2;
-  color: color('gray', 'light');
-  border-radius: $border-radius-main;
+  color: $dropdown-text-color;
+  border-radius: $dropdown-text-border-radius;
   display: block;
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  height: $input-height;
-  font-size: fontSize('zeta');
-  padding: ($spacing-base / 1.2 - 2) ($spacing-base / 2) ($spacing-base / 4);
+  height: $dropdown-text-height;
+  font-size: $dropdown-text-font-size;
+  padding: $dropdown-text-padding;
 
   &.no-label {
-    padding-top: $spacing-base;
+    padding-top: $dropdown-text-no-label-padding-top;
   }
 }
-
 
 /** Dropdown icon
 --------------------------------------------------*/
@@ -71,19 +69,17 @@
   top: 50%;
   z-index: 2;
   transform: translateY(-50%);
-  height: $spacing-base * 1.5;
-  width: $spacing-base * 0.75;
-  right: $spacing-base / 8;
-
-
+  height: $dropdown-icon-height;
+  width: $dropdown-icon-width;
+  right: $dropdown-icon-right;
 
   svg {
-    height: $spacing-base * 0.75;
-    width: $spacing-base * 0.75;
+    height: $dropdown-icon-height;
+    width: $dropdown-icon-width;
     display: block;
 
     path {
-      fill: color('secondary');
+      fill: $dropdown-icon-fill;
     }
 
     &:first-child {
@@ -91,9 +87,6 @@
     }
   }
 }
-
-
-
 
 /** Dropdown content
 --------------------------------------------------*/
@@ -103,18 +96,15 @@
   top: 0;
   left: 0;
   width: 100%;
-  border-radius: $border-radius-main;
-  border: 1px solid color('secondary', 'light');
-  padding-top: $input-height;
+  border-radius: $dropdown-content-border-radius;
+  border: $dropdown-content-border;
+  padding-top: $dropdown-content-padding-top;
   z-index: 1;
   opacity: 0;
   visibility: hidden;
-  box-shadow: shadow('input');
-  background-color: color('white');
+  box-shadow: $dropdown-content-shadow;
+  background-color: $dropdown-content-background-color;
 }
-
-
-
 
 /** Dropdown menu
 --------------------------------------------------*/
@@ -122,21 +112,21 @@
 .form-dropdown__menu {
   padding: 0;
   list-style-type: none;
-  margin: ($spacing-base / 4) 0;
-  max-height: 200px;
+  margin: $dropdown-menu-margin;
+  max-height: $dropdown-menu-max-height;
   overflow: auto;
 
   li {
     display: flex;
     align-items: center;
-    color: color('gray', 'light');
-    font-size: fontSize('zeta');
-    padding: ($spacing-base / 4) ($spacing-base / 2);
+    color: $dropdown-item-color;
+    font-size: $dropdown-item-font-size;
+    padding: $dropdown-item-padding;
 
     &:hover {
       cursor: pointer;
-      color: color('secondary');
-      background-color: color('gray', 'lightest');
+      color: $dropdown-item-hover-color;
+      background-color: $dropdown-item-hover-background-color;
     }
   }
 
@@ -144,7 +134,7 @@
     cursor: not-allowed;
 
     &:hover {
-      color: color('gray');
+      color: $dropdown-item-selected-color;
     }
   }
 }
@@ -160,15 +150,15 @@
 .form-dropdown.has-value {
 
   .form-dropdown__label {
-    color: color('black');
+    color: $dropdown-label-action-color;
     height: 100%;
-    font-size: fontSize('omega') - 2px;
-    padding: ($spacing-base / 4) ($spacing-base / 2) 0;
+    font-size: $dropdown-label-action-font-size;
+    padding: $dropdown-label-action-padding;
   }
 
   .form-dropdown__text {
-    color: color('secondary');
-    opacity: 1;
+    color: $dropdown-action-text-color;
+    opacity: $dropdown-action-text-opacity;
     visibility: visible;
   }
 }
