@@ -446,6 +446,45 @@ $label-pill-height: $spacing-base / 2 !default;
 // Dissmiss
 $label-dismiss-icon-hover-color: color('gray', 'dark') !default;
 
+/** List */
+// Global
+$list-tag-left-padding: $spacing-base !default;
+
+// List
+$list-padding: 0 !default;
+$list-item-horizontal-padding: $spacing-base !default;
+$list-item-disabled-background-color: darken(color('white'), 3) !default;
+$list-item-description-color: color('gray', 'light') !default;
+$list-item-description-font-size: 90% !default;
+
+// Divide
+$list-divide-item-top-border: $border !default;
+
+// Large
+$list-large-font-size: fontSize('delta') !default;
+$list-large-item-vertical-padding: $spacing-base !default;
+$list-large-item-title-margin-bottom: $spacing-base / 4 !default;
+$list-large-item-description-font-size: fontSize('epsilon') !default;
+
+// Medium
+$list-medium-font-size: fontSize('epsilon') !default;
+$list-medium-item-vertical-padding: $spacing-base / 2 !default;
+$list-medium-item-title-margin-bottom: $spacing-base / 8 !default;
+$list-medium-item-description-font-size: fontSize('zeta') !default;
+
+// Small
+$list-small-font-size: fontSize('zeta') !default;
+$list-small-item-vertical-padding: $spacing-base / 4 !default;
+$list-small-item-title-margin-bottom: 0 !default;
+$list-small-item-description-font-size: fontSize('omega') !default;
+$list-small-item-icon-font-size: fontSize('delta') !default;
+
+// No gutter
+$list-no-gutter-margin: -$card-body-padding !default;
+
+// Hover
+$list-hover-item-hover-background-color: darken(color('white'), 1) !default;
+
 /** Radio */
 $radio-group-height: $input-height-large !default;
 $radio-group-padding: $spacing-base / 2 !default;
