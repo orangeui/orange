@@ -336,51 +336,76 @@ $input-height-large: 64px !default;
 $input-large-line-height: 22px !default;
 
 /** Dropdown */
+// Label
 $dropdown-label-color: color('gray', 'light') !default;
 $dropdown-label-min-width: $spacing-base * 10 !default;
 $dropdown-label-border: $border !default;
 $dropdown-label-line-height: $line-height !default;
+$dropdown-large-label-line-height: $input-large-line-height !default;
 $dropdown-label-border-radius: $border-radius-main !default;
 $dropdown-label-height: $input-height !default;
+$dropdown-large-label-height: $input-height-large !default;
 $dropdown-label-font-size: fontSize('epsilon') !default;
-$dropdown-label-padding: (($dropdown-label-height / 2) - ($dropdown-label-line-height / 2) - 2px) $spacing-small !default; // the 2px account for the border
-$dropdown-label-action-color: color('black') !default;
-$dropdown-label-action-font-size: fontSize('omega') - 2px !default;
-$dropdown-label-action-padding: ($spacing-base / 4) ($spacing-base / 2) 0 !default; // the 2px account for the border
+$dropdown-large-label-font-size: fontSize('delta') !default;
+$dropdown-large-action-label-font-size: fontSize('omega') !default;
+$dropdown-label-padding: (($dropdown-label-height / 2) - ($input-line-height / 2) - 2px) $spacing-small !default; // the 2px account for the border
+$dropdown-large-label-padding: (($dropdown-large-label-height / 2) - ($dropdown-large-label-line-height / 2) - 2px) $spacing-small !default; // the 2px account for the border
+$dropdown-large-action-label-padding: ($spacing-base / 2) ($spacing-base / 2) 0 !default; // the 2px account for the border
+$dropdown-action-label-color: color('black') !default;
+$dropdown-action-label-font-size: fontSize('omega') - 2px !default;
+$dropdown-action-label-padding: ($spacing-base / 4) ($spacing-base / 2) 0 !default; // the 2px account for the border
+$dropdown-open-label-border-color: color('secondary', 'light') !default;
+$dropdown-open-label-border-bottom-color: color('gray', 'lightest') !default;
+$dropdown-disabled-label-border-color: color('gray', 'lightest') !default;
 
 // Text
 $dropdown-text-color: color('gray', 'light') !default;
 $dropdown-text-border-radius: $dropdown-label-border-radius !default;
 $dropdown-text-height: $dropdown-label-height !default;
 $dropdown-text-font-size: fontSize('zeta') !default;
+$dropdown-large-text-font-size: fontSize('delta') !default;
 $dropdown-text-padding: ($spacing-base / 1.2 - 2) ($spacing-base / 2) ($spacing-base / 4) !default;
+$dropdown-large-text-padding: ($spacing-base + 4px) ($spacing-base / 2) ($spacing-base / 2) !default;
 $dropdown-text-no-label-padding-top: $spacing-base !default;
 $dropdown-action-text-color: color('secondary') !default;
 $dropdown-action-text-opacity: 1 !default;
+$dropdown-open-text-border-color: color('secondary', 'light') !default;
+$dropdown-open-text-border-bottom-color: color('gray', 'lightest') !default;
+$dropdown-disabled-text-color: color('gray') !default;
 
 // Icon
 $dropdown-icon-height: $spacing-base * 1.5 !default;
+$dropdown-large-icon-height: $spacing-base * 2 !default;
 $dropdown-icon-width: $spacing-base * 0.75 !default;
+$dropdown-large-icon-width: $spacing-base !default;
 $dropdown-icon-right: $spacing-base / 8 !default;
+$dropdown-large-icon-right: $spacing-small !default;
 $dropdown-icon-height: $spacing-base * 0.75 !default;
 $dropdown-icon-width: $spacing-base * 0.75 !default;
 $dropdown-icon-fill: color('secondary') !default;
+$dropdown-open-icon-fill: $dropdown-icon-fill !default;
+$dropdown-disabled-icon-fill: color('gray') !default;
 
 // Content
 $dropdown-content-border-radius: $border-radius-main !default;
 $dropdown-content-border: 1px solid color('secondary', 'light') !default;
 $dropdown-content-padding-top: $dropdown-label-height !default;
+$dropdown-large-content-padding-top: $dropdown-large-label-height !default;
 $dropdown-content-shadow: shadow('input') !default;
 $dropdown-content-background-color: color('white') !default;
+$dropdown-open-content-opacity: 1 !default;
 
 // Menu
 $dropdown-menu-margin: ($spacing-base / 4) 0 !default;
+$dropdown-large-menu-margin: ($spacing-base / 2) 0 !default;
 $dropdown-menu-max-height: 200px !default;
 
 // Item
 $dropdown-item-color: color('gray', 'light') !default;
 $dropdown-item-font-size: fontSize('zeta') !default;
+$dropdown-large-item-font-size: fontSize('delta') !default;
 $dropdown-item-padding: ($spacing-base / 4) ($spacing-base / 2) !default;
+$dropdown-large-item-padding: ($spacing-base / 4) $spacing-base !default;
 $dropdown-item-hover-color: color('secondary') !default;
 $dropdown-item-hover-background-color: color('gray', 'lightest') !default;
 $dropdown-item-selected-color: color('gray') !default;
