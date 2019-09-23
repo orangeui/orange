@@ -3,9 +3,9 @@
  */
 
 .card {
-  border-radius: $border-radius-main;
-  background-color: color('white');
-  box-shadow: shadow('primary');
+  border-radius: $card-border-radius;
+  background-color: $card-background-color;
+  box-shadow: $card-shadow;
 }
 
 
@@ -13,13 +13,13 @@
 --------------------------------------------------*/
 
 .card__header {
-  border-bottom: $border;
-  border-radius: $border-radius-main $border-radius-main 0 0;
-  padding: $spacing-base / 2;
+  border-bottom: $card-header-border;
+  border-radius: $card-header-border-radius;
+  padding: $card-header-padding;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: $spacing-base + $button-size-regular;
+  height: $card-header-height;
   // spacing base accounts for 12px top and 12px bottom padding
   // 40px is large button's size
 
@@ -29,9 +29,9 @@
 
   // Card Title
   h1, h2, h3, h4, h5, h6 {
-    font-weight: fontWeight('normal');
-    color: color('black');
-    padding-left: $spacing-small;
+    font-weight: $card-header-heading-font-weight;
+    color: $card-header-heading-color;
+    padding-left: $card-header-heading-padding-left;
     margin-bottom: 0;
     margin-top: 0;
   }
@@ -41,7 +41,7 @@
 --------------------------------------------------*/
 
 .card__body {
-  padding: $spacing-base;
+  padding: $card-body-padding;
 }
 
 
@@ -49,11 +49,11 @@
 --------------------------------------------------*/
 
 .card__section {
-  border-bottom: $border;
-  padding-bottom: $spacing-small;
+  border-bottom: $card-section-border;
+  padding-bottom: $card-section-padding;
 
   &:last-of-type {
-    border: none;
+    border: $card-section-last-border;
   }
 
   .card__header {
@@ -73,29 +73,30 @@
 --------------------------------------------------*/
 
 .card__footer {
-  border-radius: 0 0 $border-radius-main $border-radius-main;
-  border-top: $border;
-  min-height: $spacing-large;
+  border-radius: $card-footer-border-radius;
+  border-top: $card-footer-border;
+  min-height: $card-footer-min-height;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 $spacing-base;
+  padding: $card-footer-padding;
   transition: 0.15s ease-in-out;
 
   &:empty {
     min-height: 0;
-    height: $spacing-base;
+    height: $card-footer-empty-padding;
     padding: 0;
     border-top: 0;
   }
 }
 
 .card__footer--click {
-  color: color('gray');
+  color: $card-footer-click-color;
 
   &:hover {
+    color: $card-footer-click-hover-color;
     cursor: pointer;
-    background-color: color('gray', 'lightest');
+    background-color: $card-footer-click-hover-background-color;
   }
 }
 
@@ -105,7 +106,7 @@
 
 /** With navigation */
 .card__header .nav {
-  margin-left: $spacing-small;
+  margin-left: $card-header-nav-margin;
 
   > ul {
     padding: 0;
