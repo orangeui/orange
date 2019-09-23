@@ -3,23 +3,22 @@
  */
 
 .label {
-  border-radius: 30px;
-  color: color('gray');
-  font-size: fontSize('omega');
-  background-color: rgba(color('gray'), 0.1);
+  border-radius: $label-border-radius;
+  font-size: $label-font-size;
   display: inline-flex;
   align-items: center;
-  padding: 0 $spacing-base / 2;
-  height: $spacing-base + 4px;
+  padding: $label-padding;
+  height: $label-height;
+  background-color: $label-basic-background-color;
+  color: $label-basic-color;
 
   [class^="icon-"], [class*=" icon-"] {
-    font-size: fontSize('delta');
-    margin-right: -$spacing-base / 4;
-    margin-left: 0;
+    font-size: $label-icon-font-size;
+    margin-right: $label-icon-margin-right;
   }
 
   + .label {
-    margin-left: $spacing-base / 4;
+    margin-left: $label-margin-left;
   }
 }
 
@@ -28,21 +27,21 @@
 
 /** Small */
 .label--small {
-  padding: 0 $spacing-small - 2px;
-  height: $spacing-base - 2px;
+  padding: $label-small-padding;
+  height: $label-small-height;
 }
 
 /** Dot */
 .label--dot {
-  width: $spacing-small;
-  height: $spacing-small;
+  width: $label-dot-width-height;
+  height: $label-dot-width-height;
   padding: 0;
 }
 
 /** Pill */
 .label--pill {
-  width: $spacing-base * 3;
-  height: $spacing-base / 2;
+  width: $label-pill-width;
+  height: $label-pill-height;
 }
 
 
@@ -53,7 +52,7 @@
   [class^="icon-"], [class*=" icon-"] {
     &:hover {
       cursor: pointer;
-      color: color('gray', 'dark');
+      color: $label-dismiss-icon-hover-color;
     }
   }
 }
@@ -69,11 +68,27 @@
       .label--#{$prefix} {
         background-color: rgba($colorValue, 0.1);
         color: $colorValue;
+
+        &.label--dismiss {
+          [class^="icon-"], [class*=" icon-"] {
+            &:hover {
+              color: color($prefix, 'dark');
+            }
+          }
+        }
       }
     } @else {
       .label--#{$prefix}-#{$colorKey} {
         background-color: rgba($colorValue, 0.1);
         color: $colorValue;
+
+        &.label--dismiss {
+          [class^="icon-"], [class*=" icon-"] {
+            &:hover {
+              color: color($prefix, 'dark');
+            }
+          }
+        }
       }
     }
   }

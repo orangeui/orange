@@ -417,6 +417,35 @@ $dropdown-item-hover-color: color('secondary') !default;
 $dropdown-item-hover-background-color: color('gray', 'lightest') !default;
 $dropdown-item-selected-color: color('gray') !default;
 
+/** Label */
+$label-font-size: fontSize('omega') !default;
+$label-border-radius: 30px !default;
+$label-height: $spacing-base + 4px !default;
+$label-padding: 0 $spacing-base / 2 !default;
+$label-margin-left: $spacing-base / 4 !default;
+
+// Icon
+$label-icon-font-size: fontSize('delta') !default;
+$label-icon-margin-right: -$spacing-base / 4 !default;
+
+// Basic
+$label-basic-color: color('gray') !default;
+$label-basic-background-color: rgba(color('gray'), 0.1) !default;
+
+// Small
+$label-small-padding: 0 $spacing-small - 2px !default;
+$label-small-height: $spacing-base - 2px !default;
+
+// Dot
+$label-dot-width-height: $spacing-small !default;
+
+// Pill
+$label-pill-width: $spacing-base * 3 !default;
+$label-pill-height: $spacing-base / 2 !default;
+
+// Dissmiss
+$label-dismiss-icon-hover-color: color('gray', 'dark') !default;
+
 /** Radio */
 $radio-group-height: $input-height-large !default;
 $radio-group-padding: $spacing-base / 2 !default;
