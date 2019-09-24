@@ -91,8 +91,8 @@
           <div class="form__item">
             <div class="toggle toggle--color-primary is-checked" :class="[ color ? `toggle--color-${color}` : '' ]">
               <div class="toggle__button">
-                <input type="checkbox" id="toggle_color" class="toggle__input" checked>
-                <label class="toggle__label" for="toggle_color"></label>
+                <input type="checkbox" :id="[ color ? `toggle--color-${color}` : '' ]" class="toggle__input" checked>
+                <label class="toggle__label" :for="[ color ? `toggle--color-${color}` : '' ]"></label>
               </div>
             </div>
           </div>
