@@ -4,16 +4,15 @@
 
 .table {
   width: 100%;
-  margin: ($spacing-base / 2) 0;
-
-  font-size: fontSize('zeta');
-  color: color('gray');
+  margin: $table-vertical-margin;
+  
+  font-size: $table-font-size;
+  color: $table-text-color;
   text-align: left;
-
-  border-radius: $border-radius-main;
+  
+  border-radius: $table-border-radius;
   border-collapse: separate;
   border-spacing: 0;
-
 
   &:first-child {
     margin-top: 0;
@@ -24,36 +23,37 @@
   }
 
   th {
-    font-weight: fontWeight('normal');
-    color: color('gray', 'light');
-  }
-
-  th,
-  td {
-    padding: $spacing-small;
+    font-weight: $table-head-cell-font-weight;
+    color: $table-head-cell-text-color;
+    padding: $table-head-cell-padding;
 
     @media #{$small-and-down} {
-      width: 100% !important;
+      width: 100%;
       display: block;
     }
   }
 
-  th:first-child,
-  td:first-child {
-    padding-left: $spacing-base;
+  th:first-child{
+    padding-left: $table-head-cell-first-left-padding;
   }
 
   td {
-    border-top: $border;
-    padding: $spacing-base $spacing-small;
+    border-top: $table-body-cell-border-top;
+    padding: $table-body-cell-padding;
+
+    @media #{$small-and-down} {
+      width: 100%;
+      display: block;
+    }
   }
 
   td:first-child {
-    font-size: fontSize('gamma');
-    color: color('black');
+    font-size: $table-body-cell-first-font-size;
+    color: $table-body-cell-first-color;
+    padding-left: $table-body-cell-first-padding-left;
 
     a {
-      color: color('black');
+      color: $table-body-cell-first-color;
     }
   }
 
@@ -70,7 +70,7 @@
 
 /** With a bottom border */
 .table--border-bottom {
-  border-bottom: $border;
+  border-bottom: $table-bottom-border;
 }
 
 /** Equal column widths */
@@ -80,53 +80,55 @@
 
 /** Celled */
 .table--celled {
-  border: $border;
+  border: $table-celled-border;
 
-  thead th {
-    border-left: $border;
-    background-color: transparentize(color('gray', 'lightest'), 0.5);
-    color: color('black');
-    font-weight: fontWeight('bold');
-  }
-
-  tr td,
-  tr th {
-    border-left: $border;
+  th {
+    border-left: $table-celled-head-cell-border-left;
+    background-color: $table-celled-head-cell-background-color;
+    color: $table-celled-head-cell-text-color;
+    font-weight: $table-celled-head-cell-font-weight;
 
     &:first-child {
-      border-left-color: transparent;
+      border-left-color: $table-celled-head-cell-first-border-color;
+    }
+  }
+
+  td {
+    border-left: $table-celled-body-cell-border-left;
+
+    &:first-child {
+      border-left-color: $table-celled-body-cell-first-border-color;
     }
   }
 }
 
 /** Compact */
 .table--compact {
-  color: color('gray', 'dark');
+  color: $table-compact-text-color;
 
   td {
-    color: color('gray', 'dark');
-    padding: $spacing-small;
+    padding: $table-compact-body-cell-padding;
   }
 
   td:first-child {
-    padding-left: $spacing-base;
-    font-size: fontSize('zeta');
+    padding-left: $table-compact-body-cell-first-left-padding;
+    font-size: $table-compact-body-cell-first-font-size;
   }
 }
 
 /** With heads left of the content */
 .table--definition {
   th {
-    vertical-align: text-top;
-    padding-bottom: $spacing-base;
-    padding-top: $spacing-base;
+    vertical-align: $table-definition-vertical-align;
+    padding-bottom: $table-definition-vertical-padding;
+    padding-top: $table-definition-vertical-padding;
   }
 
   td:nth-child(2) {
-    border-left: 0;
+    border-left: $table-definition-body-cell-second-border-left;
   }
 
   td.ignored {
-    color: color('gray', 'light');
+    color: $table-definition-body-cell-ignored-text-color;
   }
 }

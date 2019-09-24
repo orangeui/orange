@@ -500,6 +500,51 @@ $radio-label-font-size: fontSize('omega') !default;
 $radio-label-text-color: color('black') !default;
 $radio-disabled-color: color('gray', 'dark') !default;
 
+/** Table */
+$table-vertical-margin: ($spacing-base / 2) 0 !default;
+$table-font-size: fontSize('zeta') !default;
+$table-text-color: color('gray') !default;
+$table-border-radius: $border-radius-main !default;
+
+// Table head
+$table-head-cell-font-weight: fontWeight('normal') !default;
+$table-head-cell-text-color: color('gray', 'light') !default;
+$table-head-cell-padding: $spacing-small !default;
+$table-head-cell-first-left-padding: $spacing-base !default;
+
+// Table Body
+$table-body-cell-border-top: $border !default;
+$table-body-cell-padding: $spacing-base $spacing-small !default;
+$table-body-cell-first-font-size: fontSize('gamma') !default;
+$table-body-cell-first-color: color('black') !default;
+$table-body-cell-first-padding-left: $spacing-base !default;
+
+// Table bottom border
+$table-bottom-border: $border !default;
+
+// Table celled
+$table-celled-border: $border !default;
+$table-celled-head-cell-border-left: $border !default;
+$table-celled-head-cell-background-color: transparentize(color('gray', 'lightest'), 0.5) !default;
+$table-celled-head-cell-text-color: color('black') !default;
+$table-celled-head-cell-font-weight: fontWeight('bold') !default;
+$table-celled-head-cell-first-border-color: transparent !default;
+
+$table-celled-body-cell-border-left: $border !default;
+$table-celled-body-cell-first-border-color: transparent !default;
+
+// Table compact
+$table-compact-text-color: color('gray', 'dark') !default;
+$table-compact-body-cell-padding: $spacing-small !default;
+$table-compact-body-cell-first-left-padding: $spacing-base !default;
+$table-compact-body-cell-first-font-size: fontSize('zeta') !default;
+
+// Table definition
+$table-definition-vertical-align: text-top !default;
+$table-definition-vertical-padding: $spacing-base !default;
+$table-definition-body-cell-second-border-left: 0 !default;
+$table-definition-body-cell-ignored-text-color: color('gray', 'light') !default;
+
 /** Toggle */
 $toggle-width: $spacing-base * 2.25 !default;
 $toggle-height: $spacing-base * 1.25 !default;
