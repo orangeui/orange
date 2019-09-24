@@ -548,3 +548,69 @@ $table-definition-body-cell-ignored-text-color: color('gray', 'light') !default;
 /** Toggle */
 $toggle-width: $spacing-base * 2.25 !default;
 $toggle-height: $spacing-base * 1.25 !default;
+$toggle-transition: $transition !default;
+
+$toggle-button-height: $toggle-height !default;
+
+$toggle-input-height: 100% !default;
+$toggle-input-width: $toggle-width;
+
+$toggle-label-height: 100% !default;
+$toggle-label-padding-left: $toggle-width !default;
+$toggle-label-line-height: 24px !default;
+
+// Label before
+$toggle-label-before-border-radius: 24px !default;
+$toggle-label-before-height: 100% !default;
+$toggle-label-before-width: $toggle-width !default;
+$toggle-label-before-background-color: color('gray', 'light') !default;
+$toggle-label-before-opacity: 0.5 !default;
+
+// Label after
+$toggle-label-after-width: $spacing-base !default;
+$toggle-label-after-height: $spacing-base !default;
+$toggle-label-after-top: $spacing-base / 8 !default;
+$toggle-label-after-left: $spacing-base / 8 !default;
+$toggle-label-after-border-radius: $spacing-base !default;
+$toggle-label-after-background-color: color('white') !default;
+$toggle-label-after-box-shadow: shadow('secondary') !default;
+
+// Checked
+$toggle-checked-label-text-color: rgba(color('black'), 0.95) !default;
+$toggle-checked-label-before-background-color: color('secondary') !default;
+$toggle-checked-label-after-left: $spacing-base + $spacing-base / 8 !default;
+
+// Disabled
+$toggle-disabled-label-before-opacity: 0.5 !default;
+
+// Label
+$toggle-label-label-padding-left: $spacing-base * 3 !default;
+
+// Large
+// Value
+$toggle-large-value-padding: ($spacing-base + 4px) ($spacing-base / 2) ($spacing-base / 2) !default;
+$toggle-large-value-font-size: fontSize('delta') !default;
+$toggle-large-value-text-color: color('secondary') !default;
+$toggle-large-value-width: 100% !default;
+$toggle-large-value-line-height: $input-large-line-height !default;
+$toggle-large-value-min-height: $input-height-large !default;
+
+// Text
+$toggle-large-text-min-height: $input-height-large !default;
+$toggle-large-text-border: $border !default;
+$toggle-large-text-border-radius: $border-radius-main !default;
+$toggle-large-text-width: 100% !default;
+$toggle-large-text-line-height: $line-height !default;
+$toggle-large-text-padding: $spacing-small $spacing-small 0 !default;
+$toggle-large-text-font-size: fontSize('omega') !default;
+$toggle-large-text-text-color: color('black') !default;
+
+// Button
+$toggle-large-button-right: $spacing-base / 2 !default;
+$toggle-large-button-top: ($input-height-large / 2) -  ($toggle-height / 2) !default;
+
+// Label
+$toggle-large-label-padding-left: $toggle-width !default;
+
+// Disabled
+$toggle-large-disabled-value-text-color: color('gray') !default;
