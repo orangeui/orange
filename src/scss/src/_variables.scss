@@ -534,10 +534,8 @@ $label-border-radius: 30px !default;
 $label-height: $spacing-base + 4px !default;
 $label-padding: 0 $spacing-base / 2 !default;
 $label-margin-left: $spacing-base / 4 !default;
-
-// Default - remove basic from these variables
-$label-basic-color: color('gray') !default;
-$label-basic-background-color: rgba(color('gray'), 0.1) !default;
+$label-text-color: color('gray') !default;
+$label-background-color: rgba(color('gray'), 0.1) !default;
 
 /** Icon */
 $label-icon-font-size: fontSize('delta') !default;

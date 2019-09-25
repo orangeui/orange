@@ -9,8 +9,8 @@
   align-items: center;
   padding: $label-padding;
   height: $label-height;
-  background-color: $label-basic-background-color;
-  color: $label-basic-color;
+  background-color: $label-background-color;
+  color: $label-text-color;
 
   [class^="icon-"], [class*=" icon-"] {
     font-size: $label-icon-font-size;
