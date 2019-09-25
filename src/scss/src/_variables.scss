@@ -184,13 +184,13 @@ $button-secondary-background-color: transparent !default;
 
 // Inverted
 $button-secondary-inverted-color: color('white') !default;
-$button-secondary-inverted-color-action: $button-secondary-inverted-color !default; // Move action before inverted-color
 $button-secondary-inverted-background-color: $button-secondary-background-color !default;
-$button-secondary-inverted-background-color-action: transparentize(color('white'), 0.66) !default; // Move action before inverted-color
-
-// Inverted
 $button-secondary-inverted-border-color: color('white') !default;
-$button-secondary-inverted-border-color-action: transparent !default; // Move action before inverted-border-color
+
+// Inverted Action
+$button-secondary-inverted-action-color: $button-secondary-inverted-color !default;
+$button-secondary-inverted-action-background-color: transparentize(color('white'), 0.66) !default;
+$button-secondary-inverted-action-border-color: transparent !default;
 
 /** Small */
 $button-small-font-size: fontSize('zeta') !default;
@@ -202,9 +202,11 @@ $button-large-line-height: $button-font-size !default;
 
 /** Inverted */
 $button-inverted-color: color('primary') !default;
-$button-inverted-color-action: color('white') !default; // Move action before inverted-color
 $button-inverted-background-color: color('white') !default;
-$button-inverted-background-color-action: transparentize(color('white'), 0.66) !default;
+
+// Action
+$button-inverted-action-color: color('white') !default;
+$button-inverted-action-background-color: transparentize(color('white'), 0.66) !default;
 
 /** Background */
 $button-background-color: color('primary') !default;

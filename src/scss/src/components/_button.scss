@@ -80,8 +80,8 @@ a.button {
 
     &:hover,
     &:focus {
-      color: $button-inverted-color-action;
-      background-color: $button-inverted-background-color-action;
+      color: $button-inverted-action-color;
+      background-color: $button-inverted-action-background-color;
     }
   }
 }
@@ -106,9 +106,9 @@ a.button--secondary {
 
     &:hover,
     &:focus {
-      color: $button-secondary-inverted-color-action;
-      background-color: $button-secondary-inverted-background-color-action;
-      border-color: $button-secondary-inverted-border-color-action;
+      color: $button-secondary-inverted-action-color;
+      background-color: $button-secondary-inverted-action-background-color;
+      border-color: $button-secondary-inverted-action-border-color;
     }
   }
 }
