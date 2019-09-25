@@ -9,13 +9,13 @@
   justify-content: space-between;
   height: 100%;
 
-  padding: $spacing-small;
-  border-radius: $border-radius-main;
-  margin-bottom: $spacing-base / 2;
-  transition: 0.2s ease-in-out;
+  padding: $callout-padding;
+  border-radius: $callout-border-radius;
+  margin-bottom: $callout-margin-bottom;
+  transition: $callout-transition;
 
-  background-color: $callout-basic-background-color;
-  color: $callout-basic-color;
+  background-color: $callout-background-color;
+  color: $callout-text-color;
   text-align: center;
   font-size: $callout-font-size;
   cursor: default;
@@ -29,7 +29,7 @@
   }
 
   a {
-    color: $callout-basic-color;
+    color: $callout-link-color;
     font-weight: fontWeight('bold');
     text-decoration: underline;
 
@@ -70,7 +70,7 @@
           }
 
           &.callout--action:hover {
-            background-color: lighten(color(#{$name}), 5);
+            background-color: lighten(color(#{$name}), $callout-color-base-action-hover-background-color-lighten);
           }
         }
       } @else {
@@ -84,7 +84,7 @@
           }
 
           &.callout--action:hover {
-            background-color: adjust-color($colorValue, $lightness: 5%);
+            background-color: adjust-color($colorValue, $lightness: $callout-color-action-hover-background-color-lightness);
           }
         }
       }
@@ -98,18 +98,18 @@
 
 /** With a shadow */
 .callout--shadow {
-  box-shadow: shadow('primary');
+  box-shadow: $callout-shadow-box-shadow;
 }
 
 /** With an image */
 .callout__image {
-  padding: ($spacing-base / 2) 0;
+  padding: $callout-image-padding;
 }
 
 /* Hover action */
 .callout--action {
   &:hover {
     cursor: pointer;
-    background-color: lighten(color('gray', 'light'), 2);
+    background-color: $callout-action-hover-background-color;
   }
 }
