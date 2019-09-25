@@ -205,18 +205,29 @@ $button-inverted-background-color-action: transparentize(color('white'), 0.66) !
 // Disabled
 $button-disabled-opacity: 0.5 !default;
 
-/** Navigation */
+/**
+ * Navigation
+ */
+/** Link */
+// Color
 $nav-basic-link-color: color('black') !default;
 $nav-basic-link-color-opacity: 0.3 !default;
 $nav-basic-link-color-opacity-hover: 1 !default;
 $nav-basic-link-color-opacity-active: 1 !default;
+
+// Background
 $nav-basic-link-bgcolor-opacity: 0.03 !default;
 
 $nav-link-font-size: fontSize('zeta') !default;
+
+// Color
 $nav-link-color-opacity: 0.5 !default;
 $nav-link-color-opacity-hover: 1 !default;
 $nav-link-color-opacity-active: 1 !default;
+
+// Background
 $nav-link-bgcolor-opacity: 0.05 !default;
+
 $nav-link-height: 40px !default;
 
 /**
