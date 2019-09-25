@@ -30,12 +30,12 @@
 }
 
 .image--shadow {
-  box-shadow: shadow('primary');
+  box-shadow: $image-shadow-shadow;
 }
 
 .image--action {
   &:hover {
-    opacity: 0.8;
+    opacity: $image-action-hover-opacity;
   }
 }
 

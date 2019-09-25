@@ -349,6 +349,12 @@ $image-sizes: (
 ) !default;
 $image-wrapper-basic-size: map-get($image-sizes, 'small') !default;
 
+/** Shadow */
+$image-shadow-shadow: shadow('primary') !default;
+
+/** Action */
+$image-action-hover-opacity: 0.8 !default;
+
 /**
  * Message
  */
