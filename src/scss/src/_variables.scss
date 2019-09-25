@@ -677,6 +677,10 @@ $toggle-checked-label-after-left: $spacing-base + $spacing-base / 8 !default;
 // Label
 $toggle-disabled-label-before-opacity: 0.5 !default;
 
+/** Label */
+// Label
+$toggle-label-label-padding-left: $spacing-base * 3 !default;
+
 /** Large */
 // Value
 $toggle-large-value-padding: ($spacing-base + 4px) ($spacing-base / 2) ($spacing-base / 2) !default;
