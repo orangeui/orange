@@ -204,10 +204,6 @@ $button-inverted-background-color-action: transparentize(color('white'), 0.66) !
 // Disabled
 $button-disabled-opacity: 0.5 !default;
 
-/** Label */
-
-/** List */
-
 /** Navigation */
 $nav-basic-link-color: color('black') !default;
 $nav-basic-link-color-opacity: 0.3 !default;
@@ -221,8 +217,6 @@ $nav-link-color-opacity-hover: 1 !default;
 $nav-link-color-opacity-active: 1 !default;
 $nav-link-bgcolor-opacity: 0.05 !default;
 $nav-link-height: 40px !default;
-
-/** Table */
 
 /** Avatar */
 $avatar-basic-color: color('primary') !default;
