@@ -334,6 +334,9 @@ $message-link-color: color('gray', 'dark') !default;
 // Body
 $message-body-headings-font-weight: fontWeight('bold') !default;
 
+// Avatar
+$message-avatar-margin-right: $spacing-small !default;
+
 /** Input */
 $input-height: 40px !default;
 $input-line-height: 18px !default;
