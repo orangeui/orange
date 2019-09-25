@@ -24,7 +24,7 @@
   // 40px is large button's size
 
   .form {
-    min-width: $spacing-base * 10;
+    min-width: $card-header-form-min-width;
   }
 
   // Card Title
@@ -62,10 +62,25 @@
     }
   }
 
-  .card__header, .card__body, .card__footer {
-    margin: 0 $spacing-base;
-    padding-left: 0;
-    padding-right: 0;
+  .card__header {
+    margin-left: $card-section-header-horizontal-margin;
+    margin-right: $card-section-header-horizontal-margin;
+    padding-left: $card-section-header-horizontal-padding;
+    padding-right: $card-section-header-horizontal-padding;
+  }
+
+  .card__body {
+    margin-left: $card-section-body-horizontal-margin;
+    margin-right: $card-section-body-horizontal-margin;
+    padding-left: $card-section-body-horizontal-padding;
+    padding-right: $card-section-body-horizontal-padding;
+  }
+
+  .card__footer {
+    margin-left: $card-section-footer-horizontal-margin;
+    margin-right: $card-section-footer-horizontal-margin;
+    padding-left: $card-section-footer-horizontal-padding;
+    padding-right: $card-section-footer-horizontal-padding;
   }
 }
 
@@ -80,13 +95,13 @@
   align-items: center;
   justify-content: space-between;
   padding: $card-footer-padding;
-  transition: 0.15s ease-in-out;
+  transition: $card-footer-transition;
 
   &:empty {
-    min-height: 0;
-    height: $card-footer-empty-padding;
-    padding: 0;
-    border-top: 0;
+    min-height: $card-footer-empty-min-height;
+    height: $card-footer-empty-height;
+    padding: $card-footer-empty-padding;
+    border-top: $card-footer-empty-border-top;
   }
 }
 

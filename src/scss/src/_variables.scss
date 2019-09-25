@@ -241,7 +241,7 @@ $nav-link-height: 40px !default;
 /**
  * Avatar
  */
-$avatar-basic-color: color('primary') !default; // Remove basic
+$avatar-color: color('primary') !default; // Remove basic
 $avatar-width-height: $spacing-base * 4 !default;
 
 /** Small */
@@ -312,6 +312,9 @@ $card-header-heading-font-weight: fontWeight('normal') !default;
 $card-header-heading-color: color('black') !default;
 $card-header-heading-padding-left: $spacing-small !default;
 
+// Header form
+$card-header-form-min-width: $spacing-base * 10 !default;
+
 /** Body */
 $card-body-padding: $spacing-base !default;
 
@@ -320,12 +323,32 @@ $card-section-border: $border !default;
 $card-section-padding: $spacing-small !default;
 $card-section-last-border: none !default;
 
+// Header
+$card-section-header-horizontal-margin: $spacing-base !default;
+$card-section-header-horizontal-padding: 0 !default;
+
+// Body
+$card-section-body-horizontal-margin: $spacing-base !default;
+$card-section-body-horizontal-padding: 0 !default;
+
+// Footer
+$card-section-footer-horizontal-margin: $spacing-base !default;
+$card-section-footer-horizontal-padding: 0 !default;
+
+
 /** Footer */
 $card-footer-border-radius: 0 0 $border-radius-main $border-radius-main !default;
 $card-footer-border: $border !default;
 $card-footer-min-height: $spacing-large !default;
 $card-footer-padding: 0 $spacing-base !default;
-$card-footer-empty-padding: $spacing-base !default;
+$card-footer-transition: 0.15s ease-in-out !default;
+
+// Empty
+$card-footer-empty-height: $spacing-base !default;
+$card-footer-empty-min-height: 0 !default;
+$card-footer-empty-padding: 0 !default;
+$card-footer-empty-border-top: 0 !default;
+
 
 // Click
 $card-footer-click-color: color('gray') !default;
