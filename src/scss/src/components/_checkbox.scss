@@ -38,6 +38,7 @@
 
   & + & {
     margin-left: $spacing-base;
+    margin-left: $checkbox-next-checkbox-margin-left;
   }
 
   /** Checkbox input
@@ -60,18 +61,17 @@
     position: relative;
     background: transparent;
     cursor: pointer;
-    padding-left: $checkbox-width-height + $spacing-base / 3;
-    min-height: $checkbox-width-height;
-    position: relative;
+    padding-left: $checkbox-label-padding-left;
+    min-height: $checkbox-label-width-height;
     color: $checkbox-color;
-    opacity: 0.5;
+    opacity: $checkbox-label-opacity;
 
     &::before {
       position: absolute;
       top: 50%;
       left: 0;
-      height: $checkbox-width-height;
-      width: $checkbox-width-height;
+      height: $checkbox-label-width-height;
+      width: $checkbox-label-width-height;
       transform: translateY(-50%);
       border: 1px solid $checkbox-color;
       content: '';
@@ -80,9 +80,9 @@
       align-items: center;
       justify-content: center;
       font-family: "fomo-icons";
-      color: color('white');
-      font-size: $spacing-base; /** equals 24px */
-      transition: $transition;
+      color: $checkbox-label-before-text-color;
+      font-size: $checkbox-label-before-font-size; /** equals 24px */
+      transform: $checkbox-label-before-transition;
     }
   }
 }
@@ -97,7 +97,7 @@
   /** Checked */
   > input:checked {
     + label {
-      opacity: 1;
+      opacity: $checkbox-label-checked-opacity;
     }
 
     + label::before {

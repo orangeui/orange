@@ -425,7 +425,7 @@ $checkbox-bottom-margin: $spacing-base / 6 !default;
 $checkbox-border-radius: $border-radius-main !default;
 $checkbox-color: color('secondary') !default;
 $checkbox-font-size: fontSize('epsilon') !default;
-$checkbox-width-height: $spacing-base * 0.75 !default;
+$checkbox-next-checkbox-margin-left: $spacing-base !default;
 
 /** Group */
 $checkbox-group-height: $input-height-large !default;
@@ -434,11 +434,22 @@ $checkbox-group-border: $border !default;
 $checkbox-group-border-radius: $border-radius-main !default;
 
 /** Label */
+$checkbox-label-width-height: $spacing-base * 0.75 !default;
 $checkbox-label-font-size: fontSize('omega') !default;
 $checkbox-label-text-color: color('black') !default;
+$checkbox-label-padding-left: $checkbox-label-width-height + $spacing-base / 3 !default;
+$checkbox-label-opacity: 0.5 !default;
+
+// Before
+$checkbox-label-before-text-color: color('white') !default;
+$checkbox-label-before-font-size: $spacing-base !default;
+$checkbox-label-before-transition: $transition !default;
 
 /** Disabled */
 $checkbox-disabled-color: color('gray', 'dark') !default;
+
+/** Checked */
+$checkbox-label-checked-opacity: 1 !default;
 
 /**
  * Dropdown
