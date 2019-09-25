@@ -219,23 +219,37 @@ $nav-link-color-opacity-active: 1 !default;
 $nav-link-bgcolor-opacity: 0.05 !default;
 $nav-link-height: 40px !default;
 
-/** Avatar */
-$avatar-basic-color: color('primary') !default;
+/**
+ * Avatar
+ */
+$avatar-basic-color: color('primary') !default; // Remove basic
 $avatar-width-height: $spacing-base * 4 !default;
+
+/** Small */
 $avatar-small-width-height: $spacing-base * 2 !default;
+
+/** Large */
 $avatar-large-width-height: $spacing-base * 8 !default;
 
-/** Breadcrumbs */
+/**
+ * Breadcrumbs
+ */
 $breadcrumbs-basic-color: color('black') !default;
 $breadcrumbs-font-size: fontSize('zeta') !default;
 $breadcrumbs-height: 36px !default;
 $breadcrumbs-spacing: $spacing-small !default;
 $breadcrumbs-margin: 3px !default;
+
+/** Background */
 $breadcrumbs-bg-transperancy: 0.05 !default;
 $breadcrumbs-bg-transperancy-active: 0.12 !default;
+
+/** Color */
 $breadcrumbs-color-transperancy: 0.5 !default;
 
-/** Callout */
+/**
+ * Callout
+ */
 $callout-font-size: fontSize('zeta') !default;
 $callout-text-color: color('black') !default;
 $callout-link-color: color('black') !default;
@@ -245,17 +259,17 @@ $callout-border-radius: $border-radius-main !default;
 $callout-margin-bottom: $spacing-base / 2 !default;
 $callout-transition: 0.2s ease-in-out !default;
 
-// Shadow
+/** Shadow */
 $callout-shadow-box-shadow: shadow('primary') !default;
 
-// Image
+/** Image */
 $callout-image-padding: ($spacing-base / 2) 0 !default;
 
-// Action
+/** Action */
 $callout-action-hover-background-color: lighten(color('gray', 'light'), 2) !default;
 
-// Colors
-$callout-color-base-action-hover-background-color-lighten: 5 !default;
+/** Color */
+$callout-color-base-action-hover-background-color-lighten: 5 !default; // Change from base to none - default and move it up to globals
 $callout-color-action-hover-background-color-lightness: 5% !default;
 
 /**
