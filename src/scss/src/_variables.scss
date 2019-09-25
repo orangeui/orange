@@ -158,51 +158,59 @@ $ul-ol-padding-left: $spacing-base !default;
  * Components properties
  */
 
-/** Button */
-// Sizes
+/**
+ * Button
+ */
+$button-border-width: 1px !default;
+$button-border-color: transparent !default;
+$button-border-color-action: $button-border-color !default;
+$button-font-size: fontSize('epsilon') !default;
+$button-line-height: $button-font-size !default;
+$button-font-weight: fontWeight('normal') !default;
+$button-color: color('white') !default;
+$button-color-action: $button-color !default;
+
+/** Size */
 $button-size-large: 54px !default;
 $button-size-regular: 40px !default;
 $button-size-small: 28px !default;
 
-$button-border-width: 1px !default;
-$button-border-color: transparent !default;
-$button-border-color-action: $button-border-color !default;
+/** Secondary */
 $button-secondary-border-color: color('primary') !default;
 $button-secondary-border-color-action: transparent !default;
-$button-secondary-inverted-border-color: color('white') !default;
-$button-secondary-inverted-border-color-action: transparent !default;
+$button-secondary-color: color('primary') !default;
+$button-secondary-color-action: color('white') !default;
+$button-secondary-background-color: transparent !default;
 
-// Font
-$button-font-size: fontSize('epsilon') !default;
-$button-line-height: $button-font-size !default;
+// Inverted
+$button-secondary-inverted-color: color('white') !default;
+$button-secondary-inverted-color-action: $button-secondary-inverted-color !default; // Move action before inverted-color
+$button-secondary-inverted-background-color: $button-secondary-background-color !default;
+$button-secondary-inverted-background-color-action: transparentize(color('white'), 0.66) !default; // Move action before inverted-color
+
+// Inverted
+$button-secondary-inverted-border-color: color('white') !default;
+$button-secondary-inverted-border-color-action: transparent !default; // Move action before inverted-border-color
+
+/** Small */
 $button-small-font-size: fontSize('zeta') !default;
 $button-small-line-height: $button-small-font-size !default;
 
-// Large
+/** Large */
 $button-large-font-size: $button-font-size !default;
 $button-large-line-height: $button-font-size !default;
-$button-font-weight: fontWeight('normal') !default;
 
-// Color
-$button-color: color('white') !default;
-$button-color-action: $button-color !default;
-$button-secondary-color: color('primary') !default;
-$button-secondary-color-action: color('white') !default;
-$button-secondary-inverted-color: color('white') !default;
-$button-secondary-inverted-color-action: $button-secondary-inverted-color !default;
+/** Inverted */
 $button-inverted-color: color('primary') !default;
-$button-inverted-color-action: color('white') !default;
-
-// Background
-$button-background-color: color('primary') !default;
-$button-background-color-action: transparentize(color('primary'), 0.33) !default;
-$button-secondary-background-color: transparent !default;
-$button-secondary-inverted-background-color: $button-secondary-background-color !default;
-$button-secondary-inverted-background-color-action: transparentize(color('white'), 0.66) !default;
+$button-inverted-color-action: color('white') !default; // Move action before inverted-color
 $button-inverted-background-color: color('white') !default;
 $button-inverted-background-color-action: transparentize(color('white'), 0.66) !default;
 
-// Disabled
+/** Background */
+$button-background-color: color('primary') !default;
+$button-background-color-action: transparentize(color('primary'), 0.33) !default;
+
+/** Disabled */
 $button-disabled-opacity: 0.5 !default;
 
 /**
