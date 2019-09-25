@@ -46,14 +46,14 @@
 
 .form__input,
 .form__textarea {
-  font-size: fontSize('delta');
-  padding: ($spacing-base / 3) ($spacing-base / 2);
-  color: color('secondary');
-  border-radius: $border-radius-main;
+  font-size: $input-font-size;
+  padding: $input-padding;
+  color: $input-color;
+  border-radius: $input-border-radius;
   display: block;
-  width: 100%;
-  border: $border;
-  line-height: fontSize('delta') + 4px;
+  width: $input-width;
+  border: $input-border;
+  line-height: $input-line-height;
   height: auto;
 
   &:focus {
@@ -223,10 +223,10 @@
 .form--large {
   .form__input,
   .form__textarea {
-    padding: (($input-height-large / 2) - ($input-large-line-height / 2) - 2px) $spacing-small; // the 2px account for the border
-    min-height: $input-height-large;
+    padding: (($input-large-height / 2) - ($input-large-line-height / 2) - 2px) $spacing-small; // the 2px account for the border
+    min-height: $input-large-height;
 
-    &.has-focus, 
+    &.has-focus,
     &.has-value {
       padding: ($spacing-base + 4px) ($spacing-base / 2) ($spacing-base / 2);
 
@@ -261,7 +261,7 @@
 
   .form__extras,
   .form__action {
-    height: $input-height-large;
+    height: $input-large-height;
     padding: 0 $spacing-base / 2;
   }
 

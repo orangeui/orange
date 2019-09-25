@@ -443,8 +443,16 @@ $message-avatar-margin-right: $spacing-small !default;
  * Input
  */
 $input-height: 40px !default;
-$input-line-height: 18px !default;
-$input-height-large: 64px !default;
+$input-width: 100%;
+$input-font-size: fontSize('delta');
+$input-line-height: $input-font-size + 4px;
+$input-padding: ($spacing-base / 3) ($spacing-base / 2);
+$input-color: color('secondary');
+$input-border-radius: $border-radius-main;
+$input-border: $border;
+
+/** Large */
+$input-large-height: 64px !default;
 $input-large-line-height: 22px !default;
 
 /**
@@ -457,7 +465,7 @@ $checkbox-font-size: fontSize('epsilon') !default;
 $checkbox-next-checkbox-margin-left: $spacing-base !default;
 
 /** Group */
-$checkbox-group-height: $input-height-large !default;
+$checkbox-group-height: $input-large-height !default;
 $checkbox-group-padding: $spacing-base / 2 !default;
 $checkbox-group-border: $border !default;
 $checkbox-group-border-radius: $border-radius-main !default;
@@ -496,7 +504,7 @@ $dropdown-label-padding: (($dropdown-label-height / 2) - ($input-line-height / 2
 /** Large */
 // Label
 $dropdown-large-label-line-height: $input-large-line-height !default;
-$dropdown-large-label-height: $input-height-large !default;
+$dropdown-large-label-height: $input-large-height !default;
 $dropdown-large-label-font-size: fontSize('delta') !default;
 $dropdown-large-label-padding: (($dropdown-large-label-height / 2) - ($dropdown-large-label-line-height / 2) - 2px) $spacing-small !default; // the 2px account for the border
 
@@ -699,7 +707,7 @@ $radio-label-text-color: color('black') !default;
 $radio-disabled-color: color('gray', 'dark') !default;
 
 /** Group */
-$radio-group-height: $input-height-large !default;
+$radio-group-height: $input-large-height !default;
 $radio-group-padding: $spacing-base / 2 !default;
 $radio-group-border: $border !default;
 $radio-group-border-radius: $border-radius-main !default;
@@ -808,10 +816,10 @@ $toggle-large-value-font-size: fontSize('delta') !default;
 $toggle-large-value-text-color: color('secondary') !default;
 $toggle-large-value-width: 100% !default;
 $toggle-large-value-line-height: $input-large-line-height !default;
-$toggle-large-value-min-height: $input-height-large !default;
+$toggle-large-value-min-height: $input-large-height !default;
 
 // Text
-$toggle-large-text-min-height: $input-height-large !default;
+$toggle-large-text-min-height: $input-large-height !default;
 $toggle-large-text-border: $border !default;
 $toggle-large-text-border-radius: $border-radius-main !default;
 $toggle-large-text-width: 100% !default;
@@ -822,7 +830,7 @@ $toggle-large-text-text-color: color('black') !default;
 
 // Button
 $toggle-large-button-right: $spacing-base / 2 !default;
-$toggle-large-button-top: ($input-height-large / 2) -  ($toggle-height / 2) !default;
+$toggle-large-button-top: ($input-large-height / 2) -  ($toggle-height / 2) !default;
 
 // Label
 $toggle-large-label-padding-left: $toggle-width !default;
