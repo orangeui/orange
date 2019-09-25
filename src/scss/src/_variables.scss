@@ -233,12 +233,12 @@ $nav-link-color-opacity-hover: 1 !default;
 $nav-link-color-opacity-active: 1 !default;
 
 // Background
-$nav-link-bgcolor-opacity: 0.03 !default;
+$nav-link-background-color-opacity: 0.03 !default;
 
 // Active
-$nav-link-after-active-width: calc(100% - #{$spacing-base}) !default;
-$nav-link-after-active-left: $spacing-small !default;
-$nav-link-after-active-bottom:  -$spacing-base / 2 !default;
+$nav-link-active-after-width: calc(100% - #{$spacing-base}) !default;
+$nav-link-active-after-left: $spacing-small !default;
+$nav-link-active-after-bottom:  -$spacing-base / 2 !default;
 
 // Disabled
 $nav-link-disabled-opacity: 0.5 !default;
@@ -255,12 +255,13 @@ $nav-link-before-opacity: 0!default;
 $nav-icon-margin-right: $spacing-base / 4 !default;
 
 /** Color */
+// Change link properties based on navigation color
 $nav-color-link-color-opacity: 0.5 !default;
 $nav-color-link-color-opacity-hover: 1 !default;
 $nav-color-link-color-opacity-active: 1 !default;
 
 // Background
-$nav-color-link-bgcolor-opacity: 0.05 !default;
+$nav-color-link-background-color-opacity: 0.05 !default;
 
 
 /**
@@ -285,11 +286,11 @@ $breadcrumbs-spacing: $spacing-small !default;
 $breadcrumbs-margin: 3px !default;
 
 /** Background */
-$breadcrumbs-bg-transperancy: 0.05 !default;
-$breadcrumbs-bg-transperancy-active: 0.12 !default;
+$breadcrumbs-background-transparency: 0.05 !default;
+$breadcrumbs-background-transparency-active: 0.12 !default;
 
 /** Color */
-$breadcrumbs-color-transperancy: 0.5 !default;
+$breadcrumbs-color-transparency: 0.5 !default;
 
 /**
  * Callout

@@ -57,9 +57,9 @@
         border-bottom: 1px solid;
         border-bottom-color: $nav-link-color;
         z-index: 1;
-        width: $nav-link-after-active-width;
-        left: $nav-link-after-active-left;
-        bottom: $nav-link-after-active-bottom;
+        width: $nav-link-active-after-width;
+        left: $nav-link-active-after-left;
+        bottom: $nav-link-active-after-bottom;
       }
     }
 
@@ -73,7 +73,7 @@
     &::before {
       content: '';
       position: absolute;
-      background-color: rgba($nav-link-color, $nav-link-bgcolor-opacity);
+      background-color: rgba($nav-link-color, $nav-link-background-color-opacity);
       pointer-events: none;
       width: $nav-link-before-width;
       height: $nav-link-before-height;
@@ -111,7 +111,7 @@
       }
 
       &::before {
-        background-color: rgba(color(#{$name}), $nav-color-link-bgcolor-opacity);
+        background-color: rgba(color(#{$name}), $nav-color-link-background-color-opacity);
       }
 
       &.is-active,
