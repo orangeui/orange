@@ -258,20 +258,20 @@ $callout-action-hover-background-color: lighten(color('gray', 'light'), 2) !defa
 $callout-color-base-action-hover-background-color-lighten: 5 !default;
 $callout-color-action-hover-background-color-lightness: 5% !default;
 
-/** Card */
 /**
- * Message
+ * Card
  */
-// Base
 $card-border-radius: $border-radius-main !default;
 $card-background-color: color('white') !default;
 $card-shadow: shadow('primary') !default;
 
-// Header
+/** Header */
 $card-header-border: $border !default;
 $card-header-border-radius: $border-radius-main $border-radius-main 0 0 !default;
 $card-header-padding: $spacing-base / 2 !default;
 $card-header-height: $spacing-base + $button-size-regular !default;
+
+// Header Navigation
 $card-header-nav-margin: $card-header-padding !default; // Default value will not work if you change $card-header-padding to multiple numbers
 
 // Header Heading
@@ -279,29 +279,33 @@ $card-header-heading-font-weight: fontWeight('normal') !default;
 $card-header-heading-color: color('black') !default;
 $card-header-heading-padding-left: $spacing-small !default;
 
-// Body
+/** Body */
 $card-body-padding: $spacing-base !default;
 
-// Section
+/** Section */
 $card-section-border: $border !default;
 $card-section-padding: $spacing-small !default;
 $card-section-last-border: none !default;
 
-// Footer
+/** Footer */
 $card-footer-border-radius: 0 0 $border-radius-main $border-radius-main !default;
 $card-footer-border: $border !default;
 $card-footer-min-height: $spacing-large !default;
 $card-footer-padding: 0 $spacing-base !default;
 $card-footer-empty-padding: $spacing-base !default;
+
+// Click
 $card-footer-click-color: color('gray') !default;
 $card-footer-click-hover-color: $card-footer-click-color !default;
 $card-footer-click-hover-background-color: color('gray', 'lightest') !default;
 
-/** Empty State */
+/**
+ * Empty State
+ */
 $empty-state-margin-left: $spacing-base * 2 !default;
 $empty-state-margin-right: $spacing-base * 2 !default;
 
-// Description
+/** Description */
 $empty-state-description-font-size: fontSize('delta') !default;
 $empty-state-description-color: color('gray') !default;
 $empty-state-description-max-width: $spacing-base * 16 !default;
