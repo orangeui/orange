@@ -216,27 +216,52 @@ $button-disabled-opacity: 0.5 !default;
 /**
  * Navigation
  */
+$nav-padding-bottom: $spacing-base / 2 !default;
+
+/** Item */
+$nav-item-first-margin-left: -$spacing-base / 2 !default;
+
 /** Link */
-// Color
-$nav-basic-link-color: color('black') !default;
-$nav-basic-link-color-opacity: 0.3 !default;
-$nav-basic-link-color-opacity-hover: 1 !default;
-$nav-basic-link-color-opacity-active: 1 !default;
-
-// Background
-$nav-basic-link-bgcolor-opacity: 0.03 !default;
-
+$nav-link-padding: $spacing-base / 2 !default;
+$nav-link-height: 40px !default;
 $nav-link-font-size: fontSize('zeta') !default;
 
 // Color
-$nav-link-color-opacity: 0.5 !default;
+$nav-link-color: color('black') !default;
+$nav-link-color-opacity: 0.3 !default;
 $nav-link-color-opacity-hover: 1 !default;
 $nav-link-color-opacity-active: 1 !default;
 
 // Background
-$nav-link-bgcolor-opacity: 0.05 !default;
+$nav-link-bgcolor-opacity: 0.03 !default;
 
-$nav-link-height: 40px !default;
+// Active
+$nav-link-after-active-width: calc(100% - #{$spacing-base}) !default;
+$nav-link-after-active-left: $spacing-small !default;
+$nav-link-after-active-bottom:  -$spacing-base / 2 !default;
+
+// Disabled
+$nav-link-disabled-opacity: 0.5 !default;
+
+// Before
+$nav-link-before-width: calc(100% - #{$spacing-base} / 4) !default;
+$nav-link-before-height: calc(100% - #{$spacing-base} / 4) !default;
+$nav-link-before-left: $spacing-base / 8 !default;
+$nav-link-before-top: $spacing-base / 8 !default;
+$nav-link-before-border-radius: $border-radius-main !default;
+$nav-link-before-opacity: 0!default;
+
+/** Icon */
+$nav-icon-margin-right: $spacing-base / 4 !default;
+
+/** Color */
+$nav-color-link-color-opacity: 0.5 !default;
+$nav-color-link-color-opacity-hover: 1 !default;
+$nav-color-link-color-opacity-active: 1 !default;
+
+// Background
+$nav-color-link-bgcolor-opacity: 0.05 !default;
+
 
 /**
  * Avatar
