@@ -303,7 +303,9 @@ $empty-state-description-font-size: fontSize('delta') !default;
 $empty-state-description-color: color('gray') !default;
 $empty-state-description-max-width: $spacing-base * 16 !default;
 
-/** Image */
+/**
+ * Image
+ */
 $image-border-radius: $border-radius-main !default;
 $image-margin-bottom: $spacing-base / 2 !default;
 $image-transition: $transition !default;
@@ -315,7 +317,9 @@ $image-sizes: (
 ) !default;
 $image-wrapper-basic-size: map-get($image-sizes, 'small') !default;
 
-/** Message */
+/**
+ * Message
+ */
 $message-font-size: fontSize('zeta') !default;
 $message-padding: $spacing-small !default;
 $message-border-radius: $border-radius-main !default;
@@ -325,37 +329,46 @@ $message-font-style: italic !default;
 $message-margin-bottom: $spacing-small !default;
 $message-shadow: shadow('primary') !default;
 
-// Link
+/** Link */
 $message-link-font-weight: fontWeight('bold') !default;
 $message-link-text-decoration: underline !default;
 $message-link-text-decoration-hover: none !default;
 $message-link-color: color('gray', 'dark') !default;
 
-// Body
+/** Body */
 $message-body-headings-font-weight: fontWeight('bold') !default;
 
 // Avatar
 $message-avatar-margin-right: $spacing-small !default;
 
-/** Input */
+/**
+ * Input
+ */
 $input-height: 40px !default;
 $input-line-height: 18px !default;
 $input-height-large: 64px !default;
 $input-large-line-height: 22px !default;
 
-/** Checkbox */
-$checkbox-group-height: $input-height-large !default;
-$checkbox-group-padding: $spacing-base / 2 !default;
-$checkbox-group-border: $border !default;
-$checkbox-group-border-radius: $border-radius-main !default;
-
+/**
+ * Checkbox
+ */
 $checkbox-bottom-margin: $spacing-base / 6 !default;
 $checkbox-border-radius: $border-radius-main !default;
 $checkbox-color: color('secondary') !default;
 $checkbox-font-size: fontSize('epsilon') !default;
 $checkbox-width-height: $spacing-base * 0.75 !default;
+
+/** Group */
+$checkbox-group-height: $input-height-large !default;
+$checkbox-group-padding: $spacing-base / 2 !default;
+$checkbox-group-border: $border !default;
+$checkbox-group-border-radius: $border-radius-main !default;
+
+/** Label */
 $checkbox-label-font-size: fontSize('omega') !default;
 $checkbox-label-text-color: color('black') !default;
+
+/** Disabled */
 $checkbox-disabled-color: color('gray', 'dark') !default;
 
 /**
