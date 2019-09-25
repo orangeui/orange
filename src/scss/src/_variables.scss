@@ -314,7 +314,8 @@ $callout-image-padding: ($spacing-base / 2) 0 !default;
 $callout-action-hover-background-color: lighten(color('gray', 'light'), 2) !default;
 
 /** Color */
-$callout-color-base-action-hover-background-color-lighten: 5 !default; // Change from base to none - default and move it up to globals
+// Action
+$callout-color-action-hover-background-color-lighten: 5 !default;
 $callout-color-action-hover-background-color-lightness: 5% !default;
 
 /**
