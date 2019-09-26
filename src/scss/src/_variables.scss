@@ -265,8 +265,8 @@ $nav-link-font-size: fontSize('zeta') !default;
 // Color
 $nav-link-color: color('black') !default;
 $nav-link-color-opacity: 0.3 !default;
-$nav-link-color-opacity-hover: 1 !default;
-$nav-link-color-opacity-active: 1 !default;
+$nav-link-hover-color-opacity: 1 !default;
+$nav-link-active-color-opacity: 1 !default;
 
 // Background
 $nav-link-background-color-opacity: 0.03 !default;

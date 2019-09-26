@@ -37,7 +37,7 @@
     height: $nav-link-height;
 
     &:hover {
-      color: rgba($nav-link-color, $nav-link-color-opacity-hover);
+      color: rgba($nav-link-color, $nav-link-hover-color-opacity);
       text-decoration: none;
 
       &::before {
@@ -49,7 +49,7 @@
     /** Active state */
     &.is-active,
     &.is-exact-active.is-active {
-      color: rgba($nav-link-color, $nav-link-color-opacity-active);
+      color: rgba($nav-link-color, $nav-link-active-color-opacity);
 
       &::after {
         content: " ";
