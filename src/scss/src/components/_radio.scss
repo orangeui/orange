@@ -55,12 +55,12 @@
     display: flex;
     align-items: center;
     min-height: $radio-width-height;
-    padding-left: $radio-width-height + $spacing-base / 4;
+    padding-left: $radio-label-padding-left;
     position: relative;
     line-height: 1;
     cursor: pointer;
     color: $radio-color;
-    opacity: 0.5;
+    opacity: $radio-label-opacity;
 
     &::before {
       height: $radio-width-height;
@@ -77,8 +77,8 @@
     &::after {
       width: $spacing-small;
       height: $spacing-small;
-      top: $spacing-base / 8;
-      left: $spacing-base / 8;
+      top: $radio-label-after-top;
+      left: $radio-label-after-left;
       position: absolute;
       background-color: $radio-color;
       border-radius: $radio-border-radius;

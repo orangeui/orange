@@ -819,6 +819,12 @@ $radio-width-height: $spacing-base * 0.75 !default;
 /** Label */
 $radio-label-font-size: fontSize('omega') !default;
 $radio-label-text-color: color('black') !default;
+$radio-label-opacity: 0.5 !default;
+$radio-label-padding-left: $radio-width-height + $spacing-base / 4 !default;
+
+// After
+$radio-label-after-top: $spacing-base / 8 !default;
+$radio-label-after-left: $spacing-base / 8 !default;
 
 /** Disabled */
 $radio-disabled-color: color('gray', 'dark') !default;
