@@ -14,10 +14,10 @@ a.button {
   justify-content: space-between;
   vertical-align: middle;
 
-  height: $button-size-regular;
-  padding: 0 $spacing-small;
+  height: $button-height;
+  padding: $button-padding;
 
-  border-radius: $border-radius-main;
+  border-radius: $button-border-radius;
   border: $button-border-width solid $button-border-color;
 
   font-style: normal;
@@ -31,19 +31,19 @@ a.button {
   color: $button-color;
   background-color: $button-background-color;
 
-  transition: $transition;
+  transition: $button-transition;
 
   [class^="icon-"], [class*=" icon-"] {
-    margin-left: $spacing-small / 2;
+    margin-left: $button-icon-margin-left;
   }
 
   &:hover,
   &:focus {
-    border-color: $button-border-color-action;
-    background-color: $button-background-color-action;
+    border-color: $button-action-border-color;
+    background-color: $button-action-background-color;
     cursor: pointer;
     outline: none;
-    color: $button-color-action;
+    color: $button-action-color;
   }
 
   /** Disabled state */
@@ -59,7 +59,7 @@ a.button {
 
   /** Add a margin when buttons are next to each other */
   & + & {
-    margin-left: $spacing-base / 2;
+    margin-left: $button-next-button-margin-left;
   }
 
   /** Loading state */
@@ -120,24 +120,24 @@ a.button--secondary {
 /** Basic */
 .button--basic,
 a.button--basic {
-  color: color('gray');
-  background-color: color('gray', 'lightest');
+  color: $button-basic-color;
+  background-color: $button-basic-background-color;
 
   &:hover,
   &:focus {
-    background-color: transparentize(color('primary'), 0.33);
-    color: color('white');
+    color: $button-basic-action-color;
+    background-color: $button-basic-action-background-color;
   }
 
   &.button--secondary {
-    background-color: transparent;
-    border-color: color('gray', 'lightest');
+    background-color: $button-basic-secondary-background-color;
+    border-color: $button-basic-secondary-border-color;
 
     &:hover,
     &:focus {
-      background-color: transparentize(color('primary'), 0.33);
-      color: color('white');
-      border-color: transparent;
+      background-color: $button-basic-secondary-action-background-color;
+      border-color: $button-basic-secondary-action-border-color;
+      color: $button-basic-secondary-action-color;
     }
   }
 }
@@ -253,19 +253,19 @@ a.button--basic {
 /** Small */
 .button--small,
 a.button--small {
-  padding: ($spacing-small / 4) ($spacing-small / 2);
+  padding: $button-small-padding;
   font-size: $button-small-font-size;
   line-height: $button-small-line-height;
-  height: $button-size-small;
+  height: $button-small-height;
 
   &.button--icon-only,
   &a.button--icon-only {
-    width: $button-size-small;
+    width: $button-small-height;
     padding: 0;
 
-    .button__icon {
-      font-size: 20px;
-      height: 20px;
+    [class^="icon-"], [class*=" icon-"] {
+      font-size: $button-small-icon-only-icon-font-size;
+      height: $button-small-icon-only-icon-height;
     }
   }
 }
@@ -273,19 +273,19 @@ a.button--small {
 /** Large */
 .button--large,
 a.button--large {
-  padding: $spacing-small ($spacing-base * 0.75);
+  padding: $button-large-padding;
   font-size: $button-large-font-size;
   line-height: $button-large-line-height;
-  height: $button-size-large;
+  height: $button-large-height;
 
   &.button--icon-only,
   &a.button--icon-only {
-    width: $button-size-large;
+    width: $button-large-height;
     padding: 0;
 
-    .button__icon {
-      font-size: $spacing-base;
-      height: $spacing-base;
+    [class^="icon-"], [class*=" icon-"] {
+      font-size: $button-large-icon-only-icon-font-size;
+      height: $button-large-icon-only-icon-height;
     }
   }
 }
@@ -310,8 +310,8 @@ a.button--wide {
 /** Icon only */
 .button--icon-only,
 a.button--icon-only {
-  width: $button-size-regular;
-  padding: 0 1px 0 0;
+  width: $button-height;
+  padding: $button-icon-only-padding;
   align-items: center;
   justify-content: center;
 
