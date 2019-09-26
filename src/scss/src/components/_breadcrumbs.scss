@@ -19,7 +19,7 @@
     --------------------------------------------------*/
     > li {
       font-size: $breadcrumbs-font-size;
-      margin-right: $breadcrumbs-margin;
+      margin-right: $breadcrumbs-item-margin-right;
 
       &:first-child {
         > a {
@@ -32,7 +32,7 @@
         }
 
         [class^="icon-"], [class*=" icon-"] {
-          margin-left: -$breadcrumbs-spacing / 4;
+          margin-left: $breadcrumbs-icon-margin-left;
         }
       }
 
@@ -40,7 +40,7 @@
         margin-right: 0;
 
         > a {
-          padding-right: ($breadcrumbs-spacing) + ($breadcrumbs-spacing / 2);
+          padding-right: $breadcrumbs-item-last-padding-right;
 
           &::after {
             display: none;
@@ -55,22 +55,23 @@
       display: flex;
       align-items: center;
       position: relative;
-      padding: 0 $breadcrumbs-spacing;
-      background: rgba($breadcrumbs-basic-color, $breadcrumbs-background-transparency);
-      color: rgba($breadcrumbs-basic-color, $breadcrumbs-color-transparency);
+      padding: $breadcrumbs-link-padding;
+      background: rgba($breadcrumbs-color, $breadcrumbs-background-transparency);
+      color: rgba($breadcrumbs-color, $breadcrumbs-color-transparency);
       line-height: 1;
       height: $breadcrumbs-height;
       cursor: pointer;
-      margin-left: $breadcrumbs-spacing;
+      margin-left: $breadcrumbs-link-margin-left;
 
       &::before {
         content: '';
         position: absolute;
         top: 0;
-        left: -$breadcrumbs-spacing;
-        border-top: $breadcrumbs-height / 2 solid rgba($breadcrumbs-basic-color, $breadcrumbs-background-transparency);
-        border-bottom: $breadcrumbs-height / 2 solid rgba($breadcrumbs-basic-color, $breadcrumbs-background-transparency);
-        border-right: $breadcrumbs-spacing solid transparent;
+        left: $breadcrumbs-link-before-left;
+        border-top: $breadcrumbs-link-before-border-top;
+        border-bottom: $breadcrumbs-link-before-border-bottom;
+        border-right: $breadcrumbs-link-before-border-right;
+
         font-size: 0;
         line-height: 0;
         width: 0;
@@ -80,35 +81,36 @@
       &::after {
         content: '';
         position: absolute;
-        right: -$breadcrumbs-spacing;
+        right: $breadcrumbs-link-after-right;
         top: 0;
         width: 0;
         height: 0;
-        border-style: solid;
-        border-width: $breadcrumbs-height / 2 0 $breadcrumbs-height / 2 $breadcrumbs-spacing;
-        border-color: transparent transparent transparent rgba($breadcrumbs-basic-color, $breadcrumbs-background-transparency);
+        
+        border-top: $breadcrumbs-link-after-border-top;
+        border-bottom: $breadcrumbs-link-after-border-bottom;
+        border-left: $breadcrumbs-link-after-border-left;
       }
 
       &.is-active,
       &:hover {
-        color: $breadcrumbs-basic-color;
+        color: $breadcrumbs-color;
         text-decoration: none;
-        background: rgba($breadcrumbs-basic-color, $breadcrumbs-active-background-transparency);
+        background: rgba($breadcrumbs-color, $breadcrumbs-active-background-transparency);
 
         &::before {
-          border-top: $breadcrumbs-height / 2 solid rgba($breadcrumbs-basic-color, $breadcrumbs-active-background-transparency);
-          border-bottom: $breadcrumbs-height / 2 solid rgba($breadcrumbs-basic-color, $breadcrumbs-active-background-transparency);
+          border-top-color: rgba($breadcrumbs-color, $breadcrumbs-active-background-transparency);
+          border-bottom-color: rgba($breadcrumbs-color, $breadcrumbs-active-background-transparency);
         }
 
         &::after {
-          border-color: transparent transparent transparent rgba($breadcrumbs-basic-color, $breadcrumbs-active-background-transparency);
+          border-left-color: rgba($breadcrumbs-color, $breadcrumbs-active-background-transparency);
         }
       }
 
       &.is-disabled {
         cursor: default;
         pointer-events: none;
-        opacity: 0.5;
+        opacity: $breadcrumbs-link-disabled-transparency;
       }
     }
 
@@ -116,7 +118,7 @@
     --------------------------------------------------*/
     li > a > [class^="icon-"], 
     li > a > [class*=" icon-"] {
-      margin-right: $spacing-base / 4;
+      margin-right: $breadcrumbs-icon-margin-right;
     }
   }
 }
@@ -129,32 +131,34 @@ a.breadcrumbs__button {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 0 $border-radius-main $border-radius-main 0;
-  padding: 0 ($breadcrumbs-spacing * 1.5) 0 $breadcrumbs-spacing;
-  margin-left: $breadcrumbs-spacing;
-  margin-right: $spacing-base;
+  border-radius: $breadcrumbs-button-border-radius;
+  padding: $breadcrumbs-button-padding;
+  margin-left: $breadcrumbs-button-margin-left;
+  margin-right: $breadcrumbs-button-margin-right;
+
   line-height: 1;
   height: $breadcrumbs-height;
   position: relative;
-  background: rgba($breadcrumbs-basic-color, $breadcrumbs-background-transparency);
-  color: rgba($breadcrumbs-basic-color, $breadcrumbs-color-transparency);
+  background: rgba($breadcrumbs-color, $breadcrumbs-background-transparency);
+  color: rgba($breadcrumbs-color, $breadcrumbs-color-transparency);
   font-size: $breadcrumbs-font-size;
 
   &::before {
     content: '';
     position: absolute;
-    left: -$breadcrumbs-spacing;
+    left: $breadcrumbs-button-before-left;
     top: 0;
     width: 0;
     height: 0;
-    border-style: solid;
-    border-width: $breadcrumbs-height / 2 $breadcrumbs-spacing $breadcrumbs-height / 2 0;
-    border-color: transparent rgba($breadcrumbs-basic-color, $breadcrumbs-background-transparency) transparent transparent;
+
+    border-top: $breadcrumbs-button-before-border-top;
+    border-right: $breadcrumbs-button-before-border-right;
+    border-bottom: $breadcrumbs-button-before-border-bottom;
   }
 
   /** Disabled state */
   &[disabled] {
-    opacity: 0.5;
+    opacity: $breadcrumbs-button-disabled-opacity;
     pointer-events: none;
 
     &:hover {
@@ -163,12 +167,12 @@ a.breadcrumbs__button {
   }
 
   &:hover {
-    color: $breadcrumbs-basic-color;
-    background-color: rgba($breadcrumbs-basic-color, $breadcrumbs-active-background-transparency);
+    color: $breadcrumbs-color;
+    background-color: rgba($breadcrumbs-color, $breadcrumbs-active-background-transparency);
     text-decoration: none;
 
     &::before {
-      border-color: transparent rgba($breadcrumbs-basic-color, $breadcrumbs-active-background-transparency) transparent transparent;
+      border-color: transparent rgba($breadcrumbs-color, $breadcrumbs-active-background-transparency) transparent transparent;
     }
   }
 }
@@ -185,12 +189,12 @@ a.breadcrumbs__button {
         background-color: rgba(color(#{$name}), $breadcrumbs-background-transparency);
 
         &::before {
-          border-top: $breadcrumbs-height / 2 solid rgba(color(#{$name}), $breadcrumbs-background-transparency);
-          border-bottom: $breadcrumbs-height / 2 solid rgba(color(#{$name}), $breadcrumbs-background-transparency);
+          border-top-color: rgba(color(#{$name}), $breadcrumbs-background-transparency);
+          border-bottom-color: rgba(color(#{$name}), $breadcrumbs-background-transparency);
         }
 
         &::after {
-          border-color: transparent transparent transparent rgba(color(#{$name}), $breadcrumbs-background-transparency);
+          border-left-color: rgba(color(#{$name}), $breadcrumbs-background-transparency);
         }
 
         &.is-active,
@@ -199,12 +203,12 @@ a.breadcrumbs__button {
           background-color: rgba(color(#{$name}), $breadcrumbs-active-background-transparency);
 
           &::before {
-            border-top: $breadcrumbs-height / 2 solid rgba(color(#{$name}), $breadcrumbs-active-background-transparency);
-            border-bottom: $breadcrumbs-height / 2 solid rgba(color(#{$name}), $breadcrumbs-active-background-transparency);
+            border-top-color: rgba(color(#{$name}), $breadcrumbs-active-background-transparency);
+            border-bottom-color: rgba(color(#{$name}), $breadcrumbs-active-background-transparency);
           }
 
           &::after {
-            border-color: transparent transparent transparent rgba(color(#{$name}), $breadcrumbs-active-background-transparency);
+            border-left-color: rgba(color(#{$name}), $breadcrumbs-active-background-transparency);
           }
         }
       }

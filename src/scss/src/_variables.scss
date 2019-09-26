@@ -299,6 +299,8 @@ $nav-color-link-color-opacity-active: 1 !default;
 // Background
 $nav-color-link-background-color-opacity: 0.05 !default;
 
+/** Right */
+$nav-right-item-last-margin-right: -$spacing-small !default;
 
 /**
  * Avatar
@@ -315,11 +317,10 @@ $avatar-large-width-height: $spacing-base * 8 !default;
 /**
  * Breadcrumbs
  */
-$breadcrumbs-basic-color: color('black') !default;
+$breadcrumbs-color: color('black') !default;
 $breadcrumbs-font-size: fontSize('zeta') !default;
 $breadcrumbs-height: 36px !default;
 $breadcrumbs-spacing: $spacing-small !default;
-$breadcrumbs-margin: 3px !default;
 
 /** Background */
 $breadcrumbs-background-transparency: 0.05 !default;
@@ -329,6 +330,48 @@ $breadcrumbs-active-background-transparency: 0.12 !default;
 
 /** Color */
 $breadcrumbs-color-transparency: 0.5 !default;
+
+/** Item */
+$breadcrumbs-item-margin-right: 3px !default;
+$breadcrumbs-item-last-padding-right: ($breadcrumbs-spacing) + ($breadcrumbs-spacing / 2) !default;
+
+/** Link */
+$breadcrumbs-link-padding: 0 $breadcrumbs-spacing !default;
+$breadcrumbs-link-margin-left: $breadcrumbs-spacing !default;
+
+// Before
+$breadcrumbs-link-before-left: -$breadcrumbs-spacing !default;
+$breadcrumbs-link-before-border-top: $breadcrumbs-height / 2 solid rgba($breadcrumbs-color, $breadcrumbs-background-transparency) !default;
+$breadcrumbs-link-before-border-bottom: $breadcrumbs-height / 2 solid rgba($breadcrumbs-color, $breadcrumbs-background-transparency) !default;
+$breadcrumbs-link-before-border-right: $breadcrumbs-spacing solid transparent !default;
+
+// After
+$breadcrumbs-link-after-right: -$breadcrumbs-spacing !default;
+$breadcrumbs-link-after-border-top: $breadcrumbs-height / 2 solid transparent !default;
+$breadcrumbs-link-after-border-bottom: $breadcrumbs-height / 2 solid transparent !default;
+$breadcrumbs-link-after-border-left: $breadcrumbs-spacing solid rgba($breadcrumbs-color, $breadcrumbs-background-transparency) !default;
+
+// Disabled
+$breadcrumbs-link-disabled-transparency: 0.5 !default;
+
+/** Icon */
+$breadcrumbs-icon-margin-left: -$breadcrumbs-spacing / 4 !default;
+$breadcrumbs-icon-margin-right: $spacing-base / 4 !default;
+
+/** Button */
+$breadcrumbs-button-border-radius: 0 $border-radius-main $border-radius-main 0 !default
+$breadcrumbs-button-padding: 0 ($breadcrumbs-spacing * 1.5) 0 $breadcrumbs-spacing !default;
+$breadcrumbs-button-margin-left: $breadcrumbs-spacing !default;
+$breadcrumbs-button-margin-right: $spacing-base !default;
+
+// Before
+$breadcrumbs-button-before-left: -$breadcrumbs-spacing !default;
+$breadcrumbs-button-before-border-top: $breadcrumbs-height / 2 solid transparent !default;
+$breadcrumbs-button-before-border-right: $breadcrumbs-spacing solid rgba($breadcrumbs-color, $breadcrumbs-background-transparency) !default;
+$breadcrumbs-button-before-border-bottom: $breadcrumbs-height / 2 solid transparent !default;
+
+// Disabled
+$breadcrumbs-button-disabled-opacity: $breadcrumbs-link-disabled-transparency !default;
 
 /**
  * Callout

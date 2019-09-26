@@ -151,7 +151,7 @@
     }
 
     &:last-child {
-      margin-right: -$spacing-small;
+      margin-right: $nav-right-item-last-margin-right;
     }
   }
 }
