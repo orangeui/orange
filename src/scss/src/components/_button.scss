@@ -14,40 +14,41 @@ a.button {
   justify-content: space-between;
   vertical-align: middle;
 
-  height: $button-size-regular;
-  padding: 0 $spacing-small;
-  
-  border-radius: $border-radius-main;
-  border: 1px solid transparent;
-  
+  height: $button-height;
+  padding: $button-padding;
+
+  border-radius: $button-border-radius;
+  border: $button-border-width solid $button-border-color;
+
   font-style: normal;
-  font-size: fontSize('epsilon');
-  font-weight: fontWeight('normal');
-  line-height: $spacing-small;
-  
+  font-size: $button-font-size;
+  font-weight: $button-font-weight;
+  line-height: $button-line-height;
+
   text-decoration: none;
   user-select: none;
-  
-  color: color('white');
-  background-color: color('primary');
 
-  transition: $transition;
+  color: $button-color;
+  background-color: $button-background-color;
+
+  transition: $button-transition;
 
   [class^="icon-"], [class*=" icon-"] {
-    margin-left: $spacing-small / 2;
+    margin-left: $button-icon-margin-left;
   }
 
   &:hover,
   &:focus {
-    border-color: transparent;
-    background-color: transparentize(color('primary'), 0.33);
+    border-color: $button-action-border-color;
+    background-color: $button-action-background-color;
     cursor: pointer;
     outline: none;
+    color: $button-action-color;
   }
 
   /** Disabled state */
   &[disabled] {
-    opacity: 0.5;
+    opacity: $button-disabled-opacity;
     pointer-events: none;
 
     &:hover,
@@ -58,7 +59,7 @@ a.button {
 
   /** Add a margin when buttons are next to each other */
   & + & {
-    margin-left: $spacing-base / 2;
+    margin-left: $button-next-button-margin-left;
   }
 
   /** Loading state */
@@ -74,13 +75,13 @@ a.button {
 
   /** Inverted modifier */
   &.button--inverted {
-    color: color('primary');
-    background-color: color('white');
+    color: $button-inverted-color;
+    background-color: $button-inverted-background-color;
 
     &:hover,
     &:focus {
-      color: color('white');
-      background-color: transparentize(color('white'), 0.66);
+      color: $button-inverted-action-color;
+      background-color: $button-inverted-action-background-color;
     }
   }
 }
@@ -88,26 +89,26 @@ a.button {
 /** Secondary */
 .button--secondary,
 a.button--secondary {
-  background-color: transparent;
-  color: color('primary');
-  border-color: color('primary');
+  background-color: $button-secondary-background-color;
+  color: $button-secondary-color;
+  border-color: $button-secondary-border-color;
 
   &:hover,
   &:focus {
-    border-color: transparent;
-    color: color('white');
+    border-color: $button-secondary-border-color-action;
+    color: $button-secondary-color-action;
   }
 
   &.button--inverted {
-    color: color('white');
-    background-color: transparent;
-    border-color: color('white');
+    color: $button-secondary-inverted-color;
+    background-color: $button-secondary-inverted-background-color;
+    border-color: $button-secondary-inverted-border-color;
 
     &:hover,
     &:focus {
-      color: color('white');
-      background-color: transparentize(color('white'), 0.66);
-      border-color: transparent;
+      color: $button-secondary-inverted-action-color;
+      background-color: $button-secondary-inverted-action-background-color;
+      border-color: $button-secondary-inverted-action-border-color;
     }
   }
 }
@@ -119,25 +120,25 @@ a.button--secondary {
 /** Basic */
 .button--basic,
 a.button--basic {
-  color: color('gray');
-  background-color: color('gray', 'lightest');
+  color: $button-basic-color;
+  background-color: $button-basic-background-color;
 
   &:hover,
   &:focus {
-    background-color: transparentize(color('primary'), 0.33);
-    color: color('white');
+    color: $button-basic-action-color;
+    background-color: $button-basic-action-background-color;
   }
 
   &.button--secondary {
-    background-color: transparent;
-    border-color: color('gray', 'lightest');
+    background-color: $button-basic-secondary-background-color;
+    border-color: $button-basic-secondary-border-color;
 
     &:hover,
     &:focus {
-      background-color: transparentize(color('primary'), 0.33);
-      color: color('white');
-      border-color: transparent;
-    } 
+      background-color: $button-basic-secondary-action-background-color;
+      border-color: $button-basic-secondary-action-border-color;
+      color: $button-basic-secondary-action-color;
+    }
   }
 }
 
@@ -252,19 +253,19 @@ a.button--basic {
 /** Small */
 .button--small,
 a.button--small {
-  padding: ($spacing-small / 4) ($spacing-small / 2);
-  font-size: fontSize('zeta');
-  line-height: fontSize('zeta');
-  height: $button-size-small;
+  padding: $button-small-padding;
+  font-size: $button-small-font-size;
+  line-height: $button-small-line-height;
+  height: $button-small-height;
 
   &.button--icon-only,
   &a.button--icon-only {
-    width: $button-size-small;
+    width: $button-small-height;
     padding: 0;
 
-    .button__icon {
-      font-size: 20px;
-      height: 20px;
+    [class^="icon-"], [class*=" icon-"] {
+      font-size: $button-small-icon-only-icon-font-size;
+      height: $button-small-icon-only-icon-height;
     }
   }
 }
@@ -272,17 +273,19 @@ a.button--small {
 /** Large */
 .button--large,
 a.button--large {
-  padding: $spacing-small ($spacing-base * 0.75);
-  height: $button-size-large;
+  padding: $button-large-padding;
+  font-size: $button-large-font-size;
+  line-height: $button-large-line-height;
+  height: $button-large-height;
 
   &.button--icon-only,
   &a.button--icon-only {
-    width: $button-size-large;
+    width: $button-large-height;
     padding: 0;
 
-    .button__icon {
-      font-size: $spacing-base;
-      height: $spacing-base;
+    [class^="icon-"], [class*=" icon-"] {
+      font-size: $button-large-icon-only-icon-font-size;
+      height: $button-large-icon-only-icon-height;
     }
   }
 }
@@ -293,7 +296,7 @@ a.button--large {
 a.button--wide {
   width: 100%;
   justify-content: center;
-  
+
   & + & {
     margin-left: 0;
     margin-top: $spacing-small;
@@ -307,8 +310,8 @@ a.button--wide {
 /** Icon only */
 .button--icon-only,
 a.button--icon-only {
-  width: $button-size-regular;
-  padding: 0 1px 0 0;
+  width: $button-height;
+  padding: $button-icon-only-padding;
   align-items: center;
   justify-content: center;
 

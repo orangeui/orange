@@ -7,10 +7,10 @@
 --------------------------------------------------*/
 
 .radio-group {
-  height: $input-height-large;
-  padding: $spacing-small;
-  border: $border;
-  border-radius: $border-radius-main;
+  height: $radio-group-height;
+  padding: $radio-group-padding;
+  border: $radio-group-border;
+  border-radius: $radio-group-border-radius;
 }
 
 
@@ -18,10 +18,10 @@
 --------------------------------------------------*/
 
 .radio-group__label {
-  margin-bottom: $spacing-base / 6;
-  font-size: fontSize('omega');
+  margin-bottom: $radio-bottom-margin;
+  font-size: $radio-label-font-size;
   line-height: 1;
-  color: color('black');
+  color: $radio-label-text-color;
 }
 
 
@@ -31,7 +31,7 @@
 .radio {
   display: inline-block;
   position: relative;
-  font-size: fontSize('epsilon');
+  font-size: $radio-font-size;
 
   & + & {
     margin-left: $spacing-base;
@@ -51,37 +51,37 @@
   /** Radio label
   --------------------------------------------------*/
   > label {
-    font-size: fontSize('epsilon');
+    font-size: $radio-font-size;
     display: flex;
     align-items: center;
     min-height: $radio-width-height;
-    padding-left: $radio-width-height + $spacing-base / 4;
+    padding-left: $radio-label-padding-left;
     position: relative;
     line-height: 1;
     cursor: pointer;
-    color: color('secondary');
-    opacity: 0.5;
+    color: $radio-color;
+    opacity: $radio-label-opacity;
 
     &::before {
       height: $radio-width-height;
       width: $radio-width-height;
-      border: 1px solid color('secondary');
+      border: 1px solid $radio-color;
       position: absolute;
       top: 0px;
       left: 0px;
       background-color: transparent;
-      border-radius: 100%;
+      border-radius: $radio-border-radius;
       content: '';
     }
 
     &::after {
       width: $spacing-small;
       height: $spacing-small;
-      top: $spacing-base / 8;
-      left: $spacing-base / 8;
+      top: $radio-label-after-top;
+      left: $radio-label-after-left;
       position: absolute;
-      background-color: color('secondary');
-      border-radius: 100%;
+      background-color: $radio-color;
+      border-radius: $radio-border-radius;
       content: '';
       opacity: 0;
       visibility: hidden;
@@ -104,7 +104,7 @@
       &::after {
         opacity: 1;
         visibility: visible;
-        background-color: color('secondary');
+        background-color: $radio-color;
       }
     }
   }
@@ -113,21 +113,21 @@
   > input:disabled {
     + label {
       pointer-events: none;
-      color: color('gray', 'dark');
+      color: $radio-disabled-color;
 
       &::before {
-        border-color: color('gray', 'dark')
+        border-color: $radio-disabled-color
       }
 
       &::after {
-        background-color: color('gray', 'dark');
+        background-color: $radio-disabled-color;
       }
     }
 
     &:checked {
       + label {
         &::after {
-          background-color: color('gray', 'dark');
+          background-color: $radio-disabled-color;
         }
       }
     }

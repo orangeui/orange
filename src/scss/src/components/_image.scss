@@ -30,12 +30,12 @@
 }
 
 .image--shadow {
-  box-shadow: shadow('primary');
+  box-shadow: $image-shadow-shadow;
 }
 
 .image--action {
   &:hover {
-    opacity: 0.8;
+    opacity: $image-action-hover-opacity;
   }
 }
 
@@ -51,7 +51,7 @@
 --------------------------------------------------*/
 .image-wrapper {
   display: inline-block;
-  width: $image-wrapper-default-size;
+  width: $image-wrapper-basic-size;
   max-width: 100%;
 
    .image {
