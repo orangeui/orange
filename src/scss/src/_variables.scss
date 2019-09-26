@@ -429,6 +429,9 @@ $empty-state-description-font-size: fontSize('delta') !default;
 $empty-state-description-color: color('gray') !default;
 $empty-state-description-max-width: $spacing-base * 16 !default;
 
+/** Buttons */
+$empty-state-buttons-margin-top: $spacing-small !default;
+
 /**
  * Image
  */
