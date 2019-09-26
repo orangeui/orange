@@ -469,8 +469,8 @@ $message-shadow: shadow('primary') !default;
 /** Link */
 $message-link-font-weight: fontWeight('bold') !default;
 $message-link-text-decoration: underline !default;
-$message-link-text-decoration-hover: none !default;
 $message-link-color: color('gray', 'dark') !default;
+$message-link-hover-text-decoration: none !default;
 
 /** Body */
 $message-body-headings-font-weight: fontWeight('bold') !default;
