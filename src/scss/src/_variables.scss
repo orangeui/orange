@@ -496,6 +496,27 @@ $input-webkit-autofill-text-fill-color: color('secondary') !important !default;
 /** Large */
 $input-large-height: 64px !default;
 $input-large-line-height: 22px !default;
+$input-large-padding: (($input-large-height / 2) - ($input-large-line-height / 2) - 2px) $spacing-small !default; // the 2px account for the border
+$input-large-min-height: $input-large-height !default;
+
+// Label
+$input-large-label-margin: ($spacing-base - 1px) $spacing-base / 2 !default; // -1px because of borders
+
+// Action
+$input-large-action-padding: ($spacing-base + 4px) ($spacing-base / 2) ($spacing-base / 2) !default;
+// Action Label
+$input-large-action-label-line-height: 1 !default;
+$input-large-action-label-height: auto !default;
+$input-large-action-label-font-size: fontSize('omega') !default;
+$input-large-action-label-color: color('black') !default;
+$input-large-action-label-margin: $spacing-small 0 0 $spacing-small !default;
+$input-large-action-label-before-width: calc(100% + #{$spacing-small}) !default;
+$input-large-action-label-before-height: calc( 100% + #{$spacing-small} / 2) !default;
+$input-large-action-label-before-left: -$spacing-small / 2 !default;
+$input-large-action-label-before-top: -$spacing-small / 4 !default;
+$input-large-action-label-before-background-color: color('white') !default;
+$input-large-action-label-before-transition: none !default;
+$input-large-action-label-before-border-radius: $spacing-small !default;
 
 /** Focus */
 $input-focus-color: color('secondary') !default;
@@ -528,6 +549,28 @@ $input-label-font-size: fontSize('delta') !default;
 $input-label-font-weight: fontWeight('normal') !default;
 $input-label-line-height: fontSize('delta') !default;
 $input-label-color: color('gray', 'light') !default;
+
+/** Action / Extras */ // This action does not stand for focus and hover, but for action/extras elements inside of input
+$input-action-padding: 0 $spacing-base / 4 !default;
+$input-action-border: $border !default;
+$input-action-border-top-left-radius: $border-radius-main !default;
+$input-action-border-bottom-left-radius: $border-radius-main !default;
+$input-action-background-color: adjust-color(#000000, $lightness: 97%) !default;
+$input-action-readonly-color: color('secondary') !default;
+
+/** Message */
+$input-message-margin-top: $spacing-small !default;
+$input-message-font-size: fontSize('zeta') !default;
+$input-message-color: color('red') !default;
+
+/** Description */
+$input-description-color: color('gray', 'light') !default;
+$input-description-font-size: fontSize('zeta') !default;
+$input-description-margin-top: $spacing-small !default;
+$input-description-margin-bottom: 0 !default;
+
+/** Error */
+$input-error-border-color: rgba(color('red'), 0.75) !default;
 
 /**
  * Checkbox
