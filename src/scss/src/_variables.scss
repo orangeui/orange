@@ -482,17 +482,52 @@ $message-avatar-margin-right: $spacing-small !default;
  * Input
  */
 $input-height: 40px !default;
-$input-width: 100%;
-$input-font-size: fontSize('delta');
-$input-line-height: $input-font-size + 4px;
-$input-padding: ($spacing-base / 3) ($spacing-base / 2);
-$input-color: color('secondary');
-$input-border-radius: $border-radius-main;
-$input-border: $border;
+$input-width: 100% !default;
+$input-font-size: fontSize('delta') !default;
+$input-line-height: $input-font-size + 4px !default;
+$input-padding: ($spacing-base / 3) ($spacing-base / 2) !default;
+$input-color: color('secondary') !default;
+$input-border-radius: $border-radius-main !default;
+$input-border: $border !default;
+
+$input-webkit-autofill-border-color: color('gray', 'lightest') !important !default;
+$input-webkit-autofill-text-fill-color: color('secondary') !important !default;
 
 /** Large */
 $input-large-height: 64px !default;
 $input-large-line-height: 22px !default;
+
+/** Focus */
+$input-focus-color: color('secondary') !default;
+$input-focus-shadow: shadow('input') !default;
+$input-focus-border-color: transparentize(color('secondary'), 0.66) !default;
+
+/** Disabled */
+$input-disabled-background-color: transparent !default;
+$input-disabled-opacity: 1 !default;
+$input-disabled-color: color('gray') !default;
+
+// Focus
+$input-disabled-focus-shadow: none !default;
+$input-disabled-focus-border: $border !default;
+
+/** Readonly */
+$input-readonly-background-color: transparent !default;
+$input-readonly-opacity: 1 !default;
+$input-readonly-color: color('gray') !default;
+
+// Focus
+$input-readonly-focus-shadow: none !default;
+$input-readonly-focus-border: $border !default;
+
+/** Label */
+$input-label-top: 0 !default;
+$input-label-left: 0 !default;
+$input-label-margin: ($spacing-base / 2 - 1px) $spacing-base / 2 !default; // -1px because of borders
+$input-label-font-size: fontSize('delta') !default;
+$input-label-font-weight: fontWeight('normal') !default;
+$input-label-line-height: fontSize('delta') !default;
+$input-label-color: color('gray', 'light') !default;
 
 /**
  * Checkbox
