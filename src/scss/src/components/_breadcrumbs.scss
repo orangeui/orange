@@ -93,15 +93,15 @@
       &:hover {
         color: $breadcrumbs-basic-color;
         text-decoration: none;
-        background: rgba($breadcrumbs-basic-color, $breadcrumbs-background-transparency-active);
+        background: rgba($breadcrumbs-basic-color, $breadcrumbs-active-background-transparency);
 
         &::before {
-          border-top: $breadcrumbs-height / 2 solid rgba($breadcrumbs-basic-color, $breadcrumbs-background-transparency-active);
-          border-bottom: $breadcrumbs-height / 2 solid rgba($breadcrumbs-basic-color, $breadcrumbs-background-transparency-active);
+          border-top: $breadcrumbs-height / 2 solid rgba($breadcrumbs-basic-color, $breadcrumbs-active-background-transparency);
+          border-bottom: $breadcrumbs-height / 2 solid rgba($breadcrumbs-basic-color, $breadcrumbs-active-background-transparency);
         }
 
         &::after {
-          border-color: transparent transparent transparent rgba($breadcrumbs-basic-color, $breadcrumbs-background-transparency-active);
+          border-color: transparent transparent transparent rgba($breadcrumbs-basic-color, $breadcrumbs-active-background-transparency);
         }
       }
 
@@ -164,11 +164,11 @@ a.breadcrumbs__button {
 
   &:hover {
     color: $breadcrumbs-basic-color;
-    background-color: rgba($breadcrumbs-basic-color, $breadcrumbs-background-transparency-active);
+    background-color: rgba($breadcrumbs-basic-color, $breadcrumbs-active-background-transparency);
     text-decoration: none;
 
     &::before {
-      border-color: transparent rgba($breadcrumbs-basic-color, $breadcrumbs-background-transparency-active) transparent transparent;
+      border-color: transparent rgba($breadcrumbs-basic-color, $breadcrumbs-active-background-transparency) transparent transparent;
     }
   }
 }
@@ -196,15 +196,15 @@ a.breadcrumbs__button {
         &.is-active,
         &:hover {
           color: color(#{$name});
-          background-color: rgba(color(#{$name}), $breadcrumbs-background-transparency-active);
+          background-color: rgba(color(#{$name}), $breadcrumbs-active-background-transparency);
 
           &::before {
-            border-top: $breadcrumbs-height / 2 solid rgba(color(#{$name}), $breadcrumbs-background-transparency-active);
-            border-bottom: $breadcrumbs-height / 2 solid rgba(color(#{$name}), $breadcrumbs-background-transparency-active);
+            border-top: $breadcrumbs-height / 2 solid rgba(color(#{$name}), $breadcrumbs-active-background-transparency);
+            border-bottom: $breadcrumbs-height / 2 solid rgba(color(#{$name}), $breadcrumbs-active-background-transparency);
           }
 
           &::after {
-            border-color: transparent transparent transparent rgba(color(#{$name}), $breadcrumbs-background-transparency-active);
+            border-color: transparent transparent transparent rgba(color(#{$name}), $breadcrumbs-active-background-transparency);
           }
         }
       }
@@ -218,7 +218,7 @@ a.breadcrumbs__button {
 
       &:hover {
         color: color('#{$name}');
-        background: rgba(color('#{$name}'), $breadcrumbs-background-transparency-active);
+        background: rgba(color('#{$name}'), $breadcrumbs-active-background-transparency);
       }
     }
   }

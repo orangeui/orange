@@ -323,7 +323,9 @@ $breadcrumbs-margin: 3px !default;
 
 /** Background */
 $breadcrumbs-background-transparency: 0.05 !default;
-$breadcrumbs-background-transparency-active: 0.12 !default;
+
+// Active
+$breadcrumbs-active-background-transparency: 0.12 !default;
 
 /** Color */
 $breadcrumbs-color-transparency: 0.5 !default;
