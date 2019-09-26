@@ -46,20 +46,20 @@
 
 .form__input,
 .form__textarea {
-  font-size: fontSize('delta');
-  padding: ($spacing-base / 3) ($spacing-base / 2);
-  color: color('secondary');
-  border-radius: $border-radius-main;
+  font-size: $input-font-size;
+  padding: $input-padding;
+  color: $input-color;
+  border-radius: $input-border-radius;
   display: block;
-  width: 100%;
-  border: $border;
-  line-height: fontSize('delta') + 4px;
+  width: $input-width;
+  border: $input-border;
+  line-height: $input-line-height;
   height: auto;
 
   &:focus {
-    color: color('secondary');
-    box-shadow: shadow('input');
-    border-color: transparentize(color('secondary'), 0.66);
+    color: $input-focus-color;
+    box-shadow: $input-focus-shadow;
+    border-color: $input-focus-border-color;
     outline: 0;
   }
 
@@ -67,21 +67,31 @@
     opacity: 0;
   }
 
-  &[disabled],
-  &[readonly] {
-    background-color: transparent;
-    opacity: 1;
-    color: color('gray');
+  &[disabled] {
+    background-color: $input-disabled-background-color;
+    opacity: $input-disabled-opacity;
+    color: $input-disabled-color;
 
     &:focus {
-      box-shadow: none;
-      border: $border;
+      box-shadow: $input-disabled-focus-shadow;
+      border: $input-disabled-focus-border;
+    }
+  }
+
+  &[readonly] {
+    background-color: $input-readonly-background-color;
+    opacity: $input-readonly-opacity;
+    color: $input-readonly-color;
+
+    &:focus {
+      box-shadow: $input-readonly-focus-shadow;
+      border: $input-readonly-focus-border;
     }
   }
 
   &:-webkit-autofill {
-    border-color: color('gray', 'lightest') !important;
-    -webkit-text-fill-color: color('secondary') !important;
+    border-color: $input-webkit-autofill-border-color;
+    -webkit-text-fill-color: $input-webkit-autofill-text-fill-color;
   }
 
   &.has-focus,
@@ -107,13 +117,13 @@
 
 .form__label {
   position: absolute;
-  top: 0;
-  left: 0;
-  margin: ($spacing-base / 2 - 1px) $spacing-base / 2; // -1px because of borders
-  font-size: fontSize('delta');
-  font-weight: fontWeight('normal');
-  line-height: fontSize('delta');
-  color: color('gray', 'light');
+  top: $input-label-top;
+  left: $input-label-left;
+  margin: $input-label-margin;
+  font-size: $input-label-font-size;
+  font-weight: $input-label-font-weight;
+  line-height: $input-label-line-height;
+  color: $input-label-color;
 }
 
 
@@ -123,15 +133,15 @@
 .form__extras,
 .form__action {
   height: $input-height;
-  padding: 0 $spacing-base / 4;
+  padding: $input-action-padding;
   display: flex;
   align-items: center;
   z-index: 3;
-  border: $border;
+  border: $input-action-border;
   margin-right: -1px;
-  border-top-left-radius: $border-radius-main;
-  border-bottom-left-radius: $border-radius-main;
-  background-color: adjust-color(#000000, $lightness: 97%);
+  border-top-left-radius: $input-action-border-top-left-radius;
+  border-bottom-left-radius: $input-action-border-bottom-left-radius;
+  background-color: $input-action-background-color;
 }
 
 
@@ -139,9 +149,9 @@
 --------------------------------------------------*/
 
 .form__message {
-  margin-top: $spacing-small;
-  font-size: fontSize('zeta');
-  color: color('red');
+  margin-top: $input-message-margin-top;
+  font-size: $input-message-font-size;
+  color: $input-message-color;
 }
 
 
@@ -149,10 +159,10 @@
 --------------------------------------------------*/
 
 .form__description {
-  color: color('gray', 'light');
-  font-size: fontSize('zeta');
-  margin-top: $spacing-small;
-  margin-bottom: 0;
+  color: $input-description-color;
+  font-size: $input-description-font-size;
+  margin-top: $input-description-margin-top;
+  margin-bottom: $input-description-margin-bottom;
 }
 
 
@@ -166,7 +176,7 @@
   &.has-error {
     .form__input,
     .form__textarea {
-      border-color: rgba(color('red'), 0.75);
+      border-color: $input-error-border-color;
     }
   }
 
@@ -180,7 +190,7 @@
       // flex: 1;
 
       &[readonly] {
-        color: color('secondary');
+        color: $input-action-readonly-color;
       }
     }
 
@@ -223,45 +233,45 @@
 .form--large {
   .form__input,
   .form__textarea {
-    padding: (($input-height-large / 2) - ($input-large-line-height / 2) - 2px) $spacing-small; // the 2px account for the border
-    min-height: $input-height-large;
+    padding: $input-large-padding;
+    min-height: $input-large-min-height;
 
-    &.has-focus, 
+    &.has-focus,
     &.has-value {
-      padding: ($spacing-base + 4px) ($spacing-base / 2) ($spacing-base / 2);
+      padding: $input-large-action-padding;
 
       + .form__label {
         display: block;
-        line-height: 1;
-        height: auto;
-        font-size: fontSize('omega');
-        color: color('black');
-        margin: $spacing-small 0 0 $spacing-small;
+        line-height: $input-large-action-label-line-height;
+        height: $input-large-action-label-height;
+        font-size: $input-large-action-label-font-size;
+        color: $input-large-action-label-color;
+        margin: $input-large-action-label-margin;
         z-index: 1;
 
         &::before {
           content: " ";
           position: absolute;
-          width: calc(100% + #{$spacing-small});
-          height: calc( 100% + #{$spacing-small} / 2);
-          left: -$spacing-small / 2;
-          top: -$spacing-small / 4;
-          background-color: color('white');
+          width: $input-large-action-label-before-width;
+          height: $input-large-action-label-before-height;
+          left: $input-large-action-label-before-left;
+          top: $input-large-action-label-before-top;
+          background-color: $input-large-action-label-before-background-color;
           z-index: -1;
-          transition: none;
-          border-radius: $spacing-small;
+          transition: $input-large-action-label-before-transition;
+          border-radius: $input-large-action-label-before-border-radius;
         }
       }
     }
   }
 
   .form__label {
-    margin: ($spacing-base - 1px) $spacing-base / 2; // -1px because of borders
+    margin: $input-large-label-margin;
   }
 
   .form__extras,
   .form__action {
-    height: $input-height-large;
+    height: $input-large-height;
     padding: 0 $spacing-base / 2;
   }
 

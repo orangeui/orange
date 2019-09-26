@@ -5,7 +5,7 @@
 .avatar {
   width: $avatar-width-height;
   height: $avatar-width-height;
-  color: color('primary');
+  color: $avatar-color;
   overflow: hidden;
 
   svg {
@@ -36,7 +36,7 @@
 
 .avatar--circle {
   border-radius: 100%;
-  border: 1px solid color('primary');
+  border: 1px solid $avatar-color;
 }
 
 /** Colors

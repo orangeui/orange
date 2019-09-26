@@ -11,7 +11,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-bottom: $spacing-base / 2;
+    padding-bottom: $nav-padding-bottom;
     display: flex;
     user-select: none;
   }
@@ -21,23 +21,23 @@
   --------------------------------------------------*/
   > ul > li {
     &:first-child {
-      margin-left: -$spacing-small;
+      margin-left: $nav-item-first-margin-left;
     }
   }
 
   /** Link
   --------------------------------------------------*/
   > ul > li > a {
-    font-size: fontSize('zeta');
+    font-size: $nav-link-font-size;
     display: flex;
     align-items: center;
     position: relative;
-    padding: $spacing-base / 2;
-    color: color('gray', 'light');
+    padding: $nav-link-padding;
+    color: rgba($nav-link-color, $nav-link-color-opacity);
     height: $nav-link-height;
 
     &:hover {
-      color: color('black');
+      color: rgba($nav-link-color, $nav-link-hover-color-opacity);
       text-decoration: none;
 
       &::before {
@@ -49,17 +49,17 @@
     /** Active state */
     &.is-active,
     &.is-exact-active.is-active {
-      color: color('black');
+      color: rgba($nav-link-color, $nav-link-active-color-opacity);
 
       &::after {
         content: " ";
-        width: calc(100% - #{$spacing-base});
         position: absolute;
-        left: $spacing-small;
-        bottom: -$spacing-base / 2;
         border-bottom: 1px solid;
-        border-bottom-color: color('black');
+        border-bottom-color: $nav-link-color;
         z-index: 1;
+        width: $nav-link-active-after-width;
+        left: $nav-link-active-after-left;
+        bottom: $nav-link-active-after-bottom;
       }
     }
 
@@ -67,20 +67,20 @@
     &.is-disabled {
       cursor: default;
       pointer-events: none;
-      opacity: 0.5;
+      opacity: $nav-link-disabled-opacity;
     }
 
     &::before {
       content: '';
       position: absolute;
-      width: calc(100% - #{$spacing-base} / 4);
-      height: calc(100% - #{$spacing-base} / 4);
-      left: $spacing-base / 8;
-      top: $spacing-base / 8;
-      border-radius: $border-radius-main;
-      opacity: 0;
-      background-color: rgba(color('black'), 0.03);
+      background-color: rgba($nav-link-color, $nav-link-background-color-opacity);
       pointer-events: none;
+      width: $nav-link-before-width;
+      height: $nav-link-before-height;
+      left: $nav-link-before-left;
+      top: $nav-link-before-top;
+      border-radius: $nav-link-before-border-radius;
+      opacity: $nav-link-before-opacity;
     }
   }
 
@@ -88,7 +88,7 @@
   --------------------------------------------------*/
   [class^="icon-"],
   [class*=" icon-"] {
-    margin-right: $spacing-base / 4;
+    margin-right: $nav-icon-margin-right;
   }
 }
 
@@ -100,10 +100,10 @@
 @each $name, $value in $colors {
   .nav--color-#{$name} {
     ul > li > a {
-      color: rgba(color(#{$name}), $nav-link-color-opacity);
+      color: rgba(color(#{$name}), $nav-color-link-color-opacity);
 
       &:hover {
-        color: rgba(color(#{$name}), $nav-link-color-opacity-hover);
+        color: rgba(color(#{$name}), $nav-color-link-color-opacity-hover);
       }
 
       &::after {
@@ -111,12 +111,12 @@
       }
 
       &::before {
-        background-color: rgba(color(#{$name}), $nav-link-bgcolor-opacity);
+        background-color: rgba(color(#{$name}), $nav-color-link-background-color-opacity);
       }
 
       &.is-active,
       &.is-exact-active.is-active {
-        color: rgba(color(#{$name}), $nav-link-color-opacity-active);
+        color: rgba(color(#{$name}), $nav-color-link-color-opacity-active);
 
         &::after {
           border-bottom-color: color(#{$name});
@@ -151,7 +151,7 @@
     }
 
     &:last-child {
-      margin-right: -$spacing-small;
+      margin-right: $nav-right-item-last-margin-right;
     }
   }
 }

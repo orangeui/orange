@@ -247,7 +247,7 @@
         <tr>
           <td>color</td>
           <td>Set with <code>.message--color-{color}</code> class</td>
-          <td>See <a href="/colors">Colors</a> page</td>
+          <td>See <router-link :to="{ name: 'docs-global'}"><span>Colors</span></router-link> page</td>
           <td>String</td>
           <td>-</td>
           <td>-</td>
@@ -278,7 +278,7 @@
         <tbody>
         <tr>
           <td>color</td>
-          <td>See <a href="/colors">Colors</a> page for possible values</td>
+          <td>See <router-link :to="{ name: 'docs-global'}"><span>Colors</span></router-link> page for possible values</td>
           <td>String</td>
           <td>-</td>
           <td>-</td>
