@@ -85,34 +85,46 @@
 }
 
 /* Column span */
-@include grid-span($grid-column-number, 'column', 'col', false);
+@if $include-grid-column-span {
+  @include grid-span($grid-column-number, 'column', 'col', false);
+}
 
 /* Column exact positions */
-@include grid-span($grid-column-number, 'column', 'col', true);
+@if $include-grid-column-exact {
+  @include grid-span($grid-column-number, 'column', 'col', true);
+}
 
 /* Row span */
-@include grid-span($grid-row-number, 'row', 'row', false);
+@if $include-grid-row-span {
+  @include grid-span($grid-row-number, 'row', 'row', false);
+}
 
 /* Row exact positions */
-@include grid-span($grid-row-number, 'row', 'row', true);
+@if $include-grid-row-exact {
+  @include grid-span($grid-row-number, 'row', 'row', true);
+}
 
 /* Column from - to position */
-@for $column from 1 through $grid-column-number {
-  @for $i from 1 through $column {
-    @if $i < $column {
-      .col-#{$i}\/#{$column} {
-        grid-column: #{$i}/#{$column + 1}; // Add +1 because the "grid-column-end" ends before the actual number of column and not with it
+@if $include-grid-column-from-to {
+  @for $column from 1 through $grid-column-number {
+    @for $i from 1 through $column {
+      @if $i < $column {
+        .col-#{$i}\/#{$column} {
+          grid-column: #{$i}/#{$column + 1}; // Add +1 because the "grid-column-end" ends before the actual number of column and not with it
+        }
       }
     }
   }
 }
 
 /* Row from - to position */
-@for $row from 1 through $grid-row-number {
-  @for $i from 1 through $row {
-    @if $i < $row {
-      .row-#{$i}\/#{$row} {
-        grid-row: #{$i}/#{$row + 1}; // Add +1 because the "grid-column-end" ends before the actual number of column and not with it
+@if $include-grid-row-from-to {
+  @for $row from 1 through $grid-row-number {
+    @for $i from 1 through $row {
+      @if $i < $row {
+        .row-#{$i}\/#{$row} {
+          grid-row: #{$i}/#{$row + 1}; // Add +1 because the "grid-column-end" ends before the actual number of column and not with it
+        }
       }
     }
   }
