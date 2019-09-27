@@ -39,9 +39,9 @@ $include-grid-column-from-to: true !default;
 $grid-column-number: 12 !default;
 
 /** Width */
-$grid-column-min-width-narrow: 120px !default;
-$grid-column-min-width-regular: 240px !default;
-$grid-column-min-width-wide: 360px !default;
+$grid-column-narrow-min-width: 120px !default;
+$grid-column-regular-min-width: 240px !default;
+$grid-column-wide-min-width: 360px !default;
 $grid-column-max-width: 1fr !default;
 
 /**
