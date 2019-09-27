@@ -12,11 +12,12 @@ $breakpoints: (
   xxlarge: 1440px,
 ) !default;
 
-/*
-	Media Query Breakpoint Sizes
-*/
-@mixin breakpoint-down($name) {
-  @media (max-width: breakpoint($name)) {
+/**
+ * Media Query Breakpoint Sizes
+ */
+/** {breakpoint} and up */
+@mixin breakpoint-and-up($name) {
+  @media (min-width: breakpoint($name)) {
     @content;
   }
 }
