@@ -3,8 +3,8 @@
  */
 
 /**
-  Gutter
-*/
+ * Gap
+ */
 /* Desktop */
 $grid-gap: 12px !default;
 $container-gap: 12px !default;
@@ -14,8 +14,8 @@ $grid-gap-mobile: $grid-gap !default;
 $container-gap-mobile: $container-gap !default;
 
 /**
-  Container
-*/
+ * Container
+ */
 $container-max-width: 100% !default;
 $container-max-widths: (
   xsmall: 420px,
@@ -27,17 +27,31 @@ $container-max-widths: (
 ) !default;
 
 /**
-  Columns
-*/
+ * Column
+ */
+/** Includes */
+$include-grid-column: true !default;
+$include-grid-column-span: true !default;
+$include-grid-column-exact: true !default;
+$include-grid-column-from-to: true !default;
+
+/** Basic */
 $grid-column-number: 12 !default;
 
-/* Width */
+/** Width */
 $grid-column-min-width-narrow: 120px !default;
 $grid-column-min-width-regular: 240px !default;
 $grid-column-min-width-wide: 360px !default;
 $grid-column-max-width: 1fr !default;
 
-/*+
-  Rows
-*/
+/**
+ * Row
+ */
+/** Includes */
+$include-grid-row: true !default;
+$include-grid-row-span: true !default;
+$include-grid-row-exact: true !default;
+$include-grid-row-from-to: true !default;
+
+/** Basic */
 $grid-row-number: 12 !default;
