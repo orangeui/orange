@@ -58,15 +58,17 @@
 }
 
 /* Auto Layout */
-.grid--columns-auto {
-  @include grid-column-auto-fill($grid-column-regular-min-width);
+@if $include-grid-column-auto-fill {
+  .grid--columns-auto {
+    @include grid-column-auto-fill($grid-column-regular-min-width);
 
-  &-narrow {
-    @include grid-column-auto-fill($grid-column-narrow-min-width);
-  }
+    &-narrow {
+      @include grid-column-auto-fill($grid-column-narrow-min-width);
+    }
 
-  &-wide {
-    @include grid-column-auto-fill($grid-column-wide-min-width);
+    &-wide {
+      @include grid-column-auto-fill($grid-column-wide-min-width);
+    }
   }
 }
 
