@@ -59,14 +59,14 @@
 
 /* Auto Layout */
 .grid--columns-auto {
-  @include grid-column-auto-fill($grid-column-min-width-regular);
+  @include grid-column-auto-fill($grid-column-regular-min-width);
 
   &-narrow {
-    @include grid-column-auto-fill($grid-column-min-width-narrow);
+    @include grid-column-auto-fill($grid-column-narrow-min-width);
   }
 
   &-wide {
-    @include grid-column-auto-fill($grid-column-min-width-wide);
+    @include grid-column-auto-fill($grid-column-wide-min-width);
   }
 }
 
