@@ -6,33 +6,12 @@
   Container
 */
 .container {
-  max-width: $container-max-width;
+  width: 100%;
 
-  /*
-   Responsive media query
-   On XX Small screens and down, container is full width
- */
-  @media #{$xsmall-and-up} {
-    width: 420px;
-  }
-  @media #{$small-and-up} {
-    width: 580px;
-  }
-
-  @media #{$medium-and-up} {
-    width: 720px;
-  }
-
-  @media #{$large-and-up} {
-    width: 960px;
-  }
-
-  @media #{$xlarge-and-up} {
-    width: 1140px;
-  }
-
-  @media #{$xxlarge-and-up} {
-    width: 1280px;
+  @each $breakpointKey, $breakpointValue in $breakpoints {
+    @include breakpoint-and-up($breakpointKey) {
+      max-width: map-get($container-max-widths, $breakpointKey);
+    }
   }
 }
 
