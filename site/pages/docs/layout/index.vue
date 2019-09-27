@@ -102,11 +102,11 @@
           <div class="col-6">3</div>
           <div class="col-8 row-3">4</div>
           <div class="col-4">5</div>
+          <div class="col-4">6</div>
+          <div class="col-4">7</div>
           <div class="col-4">8</div>
-          <div class="col-4">8</div>
-          <div class="col-4">8</div>
-          <div class="col-4">8</div>
-          <div class="col-4">8</div>
+          <div class="col-4">9</div>
+          <div class="col-4">10</div>
         </div>
       </div>
     </docs-item>
@@ -156,23 +156,25 @@
   <div>6</div>
 </div>`,
         different_column_width: `<div class="grid">
+  <div class="col-6">1</div>
   <div class="col-6">2</div>
-  <div class="col-6">2</div>
-  <div class="col-4">1</div>
-  <div class="col-3">1</div>
-  <div class="col-5">2</div>
-  <div class="col-1">2</div>
-  <div class="col-2">2</div>
-  <div class="col-7">2</div>
-  <div class="col-2">2</div>
+  <div class="col-4">3</div>
+  <div class="col-3">4</div>
+  <div class="col-5">5</div>
+  <div class="col-1">6</div>
+  <div class="col-2">7</div>
+  <div class="col-7">8</div>
+  <div class="col-2">9</div>
 </div>`,
         position_column: `<div class="grid">
   <div class="col-3">1</div>
   <div class="col-9">2</div>
-  <div class="col-5">3</div>
-  <div class="col-1/7 row-pos-2">4</div>
-  <div class="col-5/12 row-pos-3">5</div>
-  <div class="col-4">6</div>
+  <div class="col-1">3</div>
+  <div class="col-5">4</div>
+  <div class="col-2/7 row-pos-2">5</div>
+  <div class="col-5/10 row-pos-3">6</div>
+  <div class="col-4">7</div>
+  <div class="col-2">8</div>
 </div>`,
         span_column_over_rows: `<div class="grid">
   <div class="col-3">1</div>
@@ -180,11 +182,11 @@
   <div class="col-6">3</div>
   <div class="col-8 row-3">4</div>
   <div class="col-4">5</div>
+  <div class="col-4">6</div>
+  <div class="col-4">7</div>
   <div class="col-4">8</div>
-  <div class="col-4">8</div>
-  <div class="col-4">8</div>
-  <div class="col-4">8</div>
-  <div class="col-4">8</div>
+  <div class="col-4">9</div>
+  <div class="col-4">10</div>
 </div>`
       }
     }
