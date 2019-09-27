@@ -117,9 +117,9 @@
   @for $col from 1 through $grid-column-number {
     @debug "col number: #{$col}";
 
-    @include breakpoint-and-up(breakpointKey) {
-      @debug "#{$col}, #{breakpointKey}";
-      .#{breakpointKey}\:col-#{$col} {
+    @include breakpoint-and-up($breakpointKey) {
+      @debug "#{$col}, #{$breakpointKey}";
+      .#{$breakpointKey}\:col-#{$col} {
         grid-column: span $col;
       }
     }
