@@ -8,9 +8,9 @@
 .container {
   width: 100%;
 
-  @each $breakpointKey, $breakpointValue in $breakpoints {
-    @include breakpoint-and-up($breakpointKey) {
-      max-width: map-get($container-max-widths, $breakpointKey);
+  @each $breakpoint-key, $breakpoint-value in $breakpoints {
+    @include breakpoint-and-up($breakpoint-key) {
+      max-width: map-get($container-max-widths, $breakpoint-key);
     }
   }
 }
@@ -113,11 +113,11 @@
 
 
 /** RESPONSIVE COLUMN SIZING */
-@each $breakpointKey, $breakpointValue in $breakpoints {
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
   @for $col from 1 through $grid-column-number {
 
-    @include breakpoint-and-up($breakpointKey) {
-      .#{$breakpointKey}\:col-#{$col} {
+    @include breakpoint-and-up($breakpoint-key) {
+      .#{$breakpoint-key}\:col-#{$col} {
         grid-column: span $col;
       }
     }

@@ -18,12 +18,12 @@ $container-gap-mobile: $container-gap !default;
  */
 $container-max-width: 100% !default;
 $container-max-widths: (
-  xsmall: 480px,
-  small: 580px,
-  medium: 720px,
-  large: 960px,
-  xlarge: 1140px,
-  xxlarge: 1280px
+  xs: 480px,
+  sm: 580px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1280px
 ) !default;
 
 /**
