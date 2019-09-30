@@ -50,3 +50,15 @@
 @function breakpoint($breakpoint) {
   @return map-get($breakpoints, $breakpoint);
 }
+
+/** Components
+--------------------------------------------------*/
+
+/**
+ * Breadcrumbs
+ */
+/** Button */
+// Before
+@function breadcrumbs-back-button-arrow-color($color, $transparency: $breadcrumbs-background-transparency) {
+  @return $breadcrumbs-spacing solid rgba($color, $transparency);
+}
