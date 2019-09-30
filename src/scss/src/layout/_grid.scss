@@ -63,6 +63,26 @@
       }
     }
   }
+
+  /** Responsive */
+  @each $breakpoint-key, $breakpoint-value in $breakpoints {
+    @for $i from 1 through $end {
+      
+      @if ($span == false) {
+        @include breakpoint-and-up($breakpoint-key) {
+          .#{$breakpoint-key}\:#{$class}-#{$i} {
+            grid-#{$property}: span $i;
+          }
+        }
+      } @else {
+        @include breakpoint-and-up($breakpoint-key) {
+          .#{$breakpoint-key}\:#{$class}-pos-#{$i} {
+            grid-#{$property}: $i;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Column span */
@@ -96,6 +116,21 @@
       }
     }
   }
+
+  /** Responsive */
+  @each $breakpoint-key, $breakpoint-value in $breakpoints {
+    @for $column from 1 through $grid-column-number {
+      @for $i from 1 through $column {
+        @if $i < $column {
+          @include breakpoint-and-up($breakpoint-key) {
+            .#{$breakpoint-key}\:col-#{$i}\/#{$column} {
+              grid-column: #{$i}/#{$column + 1}; // Add +1 because the "grid-column-end" ends before the actual number of column and not with it
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Row from - to position */
@@ -109,18 +144,23 @@
       }
     }
   }
-}
 
-
-/** RESPONSIVE COLUMN SIZING */
-@each $breakpoint-key, $breakpoint-value in $breakpoints {
-  @for $col from 1 through $grid-column-number {
-
-    @include breakpoint-and-up($breakpoint-key) {
-      .#{$breakpoint-key}\:col-#{$col} {
-        grid-column: span $col;
+  /** Responsive */
+  @each $breakpoint-key, $breakpoint-value in $breakpoints {
+    @for $row from 1 through $grid-row-number {
+      @for $i from 1 through $row {
+        @if $i < $row {
+          @include breakpoint-and-up($breakpoint-key) {
+            .#{$breakpoint-key}\:row-#{$i}\/#{$row} {
+              grid-row: #{$i}/#{$row + 1}; // Add +1 because the "grid-row-end" ends before the actual number of column and not with it
+            }
+          }
+        }
       }
     }
   }
 }
+
+
+
 
