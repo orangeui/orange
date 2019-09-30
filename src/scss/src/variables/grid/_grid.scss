@@ -3,8 +3,8 @@
  */
 
 /**
-  Gutter
-*/
+ * Gap
+ */
 /* Desktop */
 $grid-gap: 12px !default;
 $container-gap: 12px !default;
@@ -14,30 +14,46 @@ $grid-gap-mobile: $grid-gap !default;
 $container-gap-mobile: $container-gap !default;
 
 /**
-  Container
-*/
+ * Container
+ */
 $container-max-width: 100% !default;
 $container-max-widths: (
-  xsmall: 420px,
-  small: 580px,
-  medium: 720px,
-  large: 960px,
-  xlarge: 1140px,
-  xxlarge: 1280px
+  xs: 480px,
+  sm: 580px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1280px
 ) !default;
 
 /**
-  Columns
-*/
+ * Column
+ */
+/** Includes */
+$include-grid-column: true !default;
+$include-grid-column-span: true !default;
+$include-grid-column-exact: true !default;
+$include-grid-column-from-to: true !default;
+$include-grid-column-auto-fill: true !default;
+
+/** Basic */
 $grid-column-number: 12 !default;
 
-/* Width */
-$grid-column-min-width-narrow: 120px !default;
-$grid-column-min-width-regular: 240px !default;
-$grid-column-min-width-wide: 360px !default;
+/** Width */
+$grid-column-narrow-min-width: 120px !default;
+$grid-column-regular-min-width: 240px !default;
+$grid-column-wide-min-width: 360px !default;
 $grid-column-max-width: 1fr !default;
 
-/*+
-  Rows
-*/
+/**
+ * Row
+ */
+/** Includes */
+$include-grid-row: true !default;
+$include-grid-row-span: true !default;
+$include-grid-row-exact: true !default;
+$include-grid-row-from-to: true !default;
+
+/** Basic */
 $grid-row-number: 12 !default;
+

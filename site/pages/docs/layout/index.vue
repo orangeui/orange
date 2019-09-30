@@ -110,6 +110,101 @@
         </div>
       </div>
     </docs-item>
+
+    <docs-item title="Grid options">
+      <div slot="body">
+
+        <table class="table table--fixed table--compact table--definition table--border-bottom">
+          <thead>
+            <th></th>
+            <th>
+              Max container width
+            </th>
+            <th>
+              Class prefix
+            </th>
+            <!-- <th>
+              Num of columns
+            </th>
+            <th>
+              Gutter width
+            </th> -->
+          </thead>
+          <tbody>
+            <tr>
+                <td>
+                  <span class="fs-epsilon color-secondary">Default</span><br>
+                  > 0px
+                </td>
+                <td>
+                  100%
+                </td>
+                <td><code>col-</code> and <code>row-</code></td>
+            </tr>
+            <tr>
+              <td>
+                <span class="fs-epsilon color-secondary">Extra extra small</span><br>
+                > 320px
+              </td>
+              <td>
+                  100%
+              </td>
+              <td><code>xxs:col-</code> and <code>xxs:row-</code></td>
+            </tr>
+            <tr>
+              <td>
+                <span class="fs-epsilon color-secondary">Extra small</span><br>
+                > 480px
+              </td>
+              <td>
+                480px
+              </td>
+              <td><code>xs:col-</code> and <code>xs:row-</code></td>
+            </tr>
+            <tr>
+              <td>
+                <span class="fs-epsilon color-secondary">Small</span><br>
+                > 640px
+              </td>
+              <td>580px</td>
+              <td><code>sm:col-</code> and <code>sm:row-</code></td>
+            </tr>
+            <tr>
+              <td>
+                <span class="fs-epsilon color-secondary">Medium</span><br>
+                > 768px
+              </td>
+              <td>720px</td>
+              <td><code>md:col-</code> and <code>md:row-</code></td>
+            </tr>
+            <tr>
+              <td>
+                <span class="fs-epsilon color-secondary">Large</span><br>
+                > 991px
+              </td>
+              <td>960px</td>
+              <td><code>lg:col-</code> and <code>lg:row-</code></td>
+            </tr>
+            <tr>
+              <td>
+                <span class="fs-epsilon color-secondary">Extra large</span><br>
+                > 1200px
+              </td>
+              <td>1140px</td>
+              <td><code>xl:col-</code> and <code>xl:row-</code></td>
+            </tr>
+            <tr>
+              <td>
+                <span class="fs-epsilon color-secondary">Extra extra large</span><br>
+                > 1440px
+              </td>
+              <td>1280px</td>
+              <td><code>xxl:col-</code> and <code>xxl:row-</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </docs-item>
   </div>
 </template>
 
@@ -121,13 +216,13 @@
       return {
         // TODO: Change this value with actual container variable instead of breakpoint
         container_widths: `$breakpoints: (
-  xxsmall: 320px,
-  xsmall: 480px,
-  small: 640px,
-  medium: 768px,
-  large: 992px,
-  xlarge: 1200px,
-  xxlarge: 1440px,
+  xxs: 320px,
+  xs: 480px,
+  sm: 640px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
 ) !default;`,
         equal_column_width: `<div class="grid grid--columns-auto-narrow">
   <div>1</div>

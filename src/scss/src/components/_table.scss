@@ -27,7 +27,7 @@
     color: $table-head-cell-text-color;
     padding: $table-head-cell-padding;
 
-    @media #{$small-and-down} {
+    @media #{$sm-and-down} {
       width: 100%;
       display: block;
     }
@@ -41,7 +41,7 @@
     border-top: $table-body-cell-border-top;
     padding: $table-body-cell-padding;
 
-    @media #{$small-and-down} {
+    @media #{$sm-and-down} {
       width: 100%;
       display: block;
     }

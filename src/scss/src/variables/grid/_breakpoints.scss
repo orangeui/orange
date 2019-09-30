@@ -3,47 +3,48 @@
  */
 
 $breakpoints: (
-  xxsmall: 320px,
-  xsmall: 480px,
-  small: 640px,
-  medium: 768px,
-  large: 992px,
-  xlarge: 1200px,
-  xxlarge: 1440px,
+  xxs: 320px,
+  xs: 480px,
+  sm: 640px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
 ) !default;
 
-/*
-	Media Query Breakpoint Sizes
-*/
-@mixin breakpoint-down($name) {
-  @media (max-width: breakpoint($name)) {
+/**
+ * Media Query Breakpoint Sizes
+ */
+/** {breakpoint} and up */
+@mixin breakpoint-and-up($name) {
+  @media (min-width: breakpoint($name)) {
     @content;
   }
 }
 
 /* XX Small */
-$xxsmall-screen-from: 0px !default;
-$xxsmall-screen-to: 320px !default;
+$xxs-screen-from: 0px !default;
+$xxs-screen-to: 320px !default;
 
 /* Micro */
-$xsmall-screen-from: 321px !default;
-$xsmall-screen-to: 479px !default;
+$xs-screen-from: 321px !default;
+$xs-screen-to: 479px !default;
 
 /* Extra Small */
-$small-screen-from: 480px !default;
-$small-screen-to: 767px !default;
+$sm-screen-from: 480px !default;
+$sm-screen-to: 767px !default;
 
 /* Small */
-$medium-screen-from: 768px !default;
-$medium-screen-to: 991px !default;
+$md-screen-from: 768px !default;
+$md-screen-to: 991px !default;
 
 /* Medium */
-$large-screen-from: 992px !default;
-$large-screen-to: 1199px !default;
+$lg-screen-from: 992px !default;
+$lg-screen-to: 1199px !default;
 
 /* Large */
-$xlarge-screen-from: 1200px !default;
-$xlarge-screen-to: 1439px !default;
+$xl-screen-from: 1200px !default;
+$xl-screen-to: 1439px !default;
 
 /* Extra Large */
-$xxlarge-screen-from: 1440px !default;
+$xxl-screen-from: 1440px !default;

@@ -6,33 +6,12 @@
   Container
 */
 .container {
-  max-width: $container-max-width;
+  width: 100%;
 
-  /*
-   Responsive media query
-   On XX Small screens and down, container is full width
- */
-  @media #{$xsmall-and-up} {
-    width: 420px;
-  }
-  @media #{$small-and-up} {
-    width: 580px;
-  }
-
-  @media #{$medium-and-up} {
-    width: 720px;
-  }
-
-  @media #{$large-and-up} {
-    width: 960px;
-  }
-
-  @media #{$xlarge-and-up} {
-    width: 1140px;
-  }
-
-  @media #{$xxlarge-and-up} {
-    width: 1280px;
+  @each $breakpoint-key, $breakpoint-value in $breakpoints {
+    @include breakpoint-and-up($breakpoint-key) {
+      max-width: map-get($container-max-widths, $breakpoint-key);
+    }
   }
 }
 
@@ -58,15 +37,17 @@
 }
 
 /* Auto Layout */
-.grid--columns-auto {
-  @include grid-column-auto-fill($grid-column-min-width-regular);
+@if $include-grid-column-auto-fill {
+  .grid--columns-auto {
+    @include grid-column-auto-fill($grid-column-regular-min-width);
 
-  &-narrow {
-    @include grid-column-auto-fill($grid-column-min-width-narrow);
-  }
+    &-narrow {
+      @include grid-column-auto-fill($grid-column-narrow-min-width);
+    }
 
-  &-wide {
-    @include grid-column-auto-fill($grid-column-min-width-wide);
+    &-wide {
+      @include grid-column-auto-fill($grid-column-wide-min-width);
+    }
   }
 }
 
@@ -82,38 +63,104 @@
       }
     }
   }
+
+  /** Responsive */
+  @each $breakpoint-key, $breakpoint-value in $breakpoints {
+    @for $i from 1 through $end {
+      
+      @if ($span == false) {
+        @include breakpoint-and-up($breakpoint-key) {
+          .#{$breakpoint-key}\:#{$class}-#{$i} {
+            grid-#{$property}: span $i;
+          }
+        }
+      } @else {
+        @include breakpoint-and-up($breakpoint-key) {
+          .#{$breakpoint-key}\:#{$class}-pos-#{$i} {
+            grid-#{$property}: $i;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Column span */
-@include grid-span($grid-column-number, 'column', 'col', false);
+@if $include-grid-column-span {
+  @include grid-span($grid-column-number, 'column', 'col', false);
+}
 
 /* Column exact positions */
-@include grid-span($grid-column-number, 'column', 'col', true);
+@if $include-grid-column-exact {
+  @include grid-span($grid-column-number, 'column', 'col', true);
+}
 
 /* Row span */
-@include grid-span($grid-row-number, 'row', 'row', false);
+@if $include-grid-row-span {
+  @include grid-span($grid-row-number, 'row', 'row', false);
+}
 
 /* Row exact positions */
-@include grid-span($grid-row-number, 'row', 'row', true);
+@if $include-grid-row-exact {
+  @include grid-span($grid-row-number, 'row', 'row', true);
+}
 
 /* Column from - to position */
-@for $column from 1 through $grid-column-number {
-  @for $i from 1 through $column {
-    @if $i < $column {
-      .col-#{$i}\/#{$column} {
-        grid-column: #{$i}/#{$column + 1}; // Add +1 because the "grid-column-end" ends before the actual number of column and not with it
+@if $include-grid-column-from-to {
+  @for $column from 1 through $grid-column-number {
+    @for $i from 1 through $column {
+      @if $i < $column {
+        .col-#{$i}\/#{$column} {
+          grid-column: #{$i}/#{$column + 1}; // Add +1 because the "grid-column-end" ends before the actual number of column and not with it
+        }
+      }
+    }
+  }
+
+  /** Responsive */
+  @each $breakpoint-key, $breakpoint-value in $breakpoints {
+    @for $column from 1 through $grid-column-number {
+      @for $i from 1 through $column {
+        @if $i < $column {
+          @include breakpoint-and-up($breakpoint-key) {
+            .#{$breakpoint-key}\:col-#{$i}\/#{$column} {
+              grid-column: #{$i}/#{$column + 1}; // Add +1 because the "grid-column-end" ends before the actual number of column and not with it
+            }
+          }
+        }
       }
     }
   }
 }
 
 /* Row from - to position */
-@for $row from 1 through $grid-row-number {
-  @for $i from 1 through $row {
-    @if $i < $row {
-      .row-#{$i}\/#{$row} {
-        grid-row: #{$i}/#{$row + 1}; // Add +1 because the "grid-column-end" ends before the actual number of column and not with it
+@if $include-grid-row-from-to {
+  @for $row from 1 through $grid-row-number {
+    @for $i from 1 through $row {
+      @if $i < $row {
+        .row-#{$i}\/#{$row} {
+          grid-row: #{$i}/#{$row + 1}; // Add +1 because the "grid-column-end" ends before the actual number of column and not with it
+        }
+      }
+    }
+  }
+
+  /** Responsive */
+  @each $breakpoint-key, $breakpoint-value in $breakpoints {
+    @for $row from 1 through $grid-row-number {
+      @for $i from 1 through $row {
+        @if $i < $row {
+          @include breakpoint-and-up($breakpoint-key) {
+            .#{$breakpoint-key}\:row-#{$i}\/#{$row} {
+              grid-row: #{$i}/#{$row + 1}; // Add +1 because the "grid-row-end" ends before the actual number of column and not with it
+            }
+          }
+        }
       }
     }
   }
 }
+
+
+
+
