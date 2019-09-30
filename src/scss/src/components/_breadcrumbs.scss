@@ -85,7 +85,7 @@
         top: 0;
         width: 0;
         height: 0;
-        
+
         border-top: $breadcrumbs-link-after-border-top;
         border-bottom: $breadcrumbs-link-after-border-bottom;
         border-left: $breadcrumbs-link-after-border-left;
@@ -116,7 +116,7 @@
 
     /** Icon
     --------------------------------------------------*/
-    li > a > [class^="icon-"], 
+    li > a > [class^="icon-"],
     li > a > [class*=" icon-"] {
       margin-right: $breadcrumbs-icon-margin-right;
     }
@@ -220,9 +220,17 @@ a.breadcrumbs__button {
       background: rgba(color('#{$name}'), $breadcrumbs-background-transparency);
       color: rgba(color('#{$name}'), $breadcrumbs-color-transparency);
 
+      &:before {
+        border-right: breadcrumbs-back-button-arrow-color(color($name));
+      }
+
       &:hover {
         color: color('#{$name}');
         background: rgba(color('#{$name}'), $breadcrumbs-active-background-transparency);
+
+        &:before {
+          border-right: breadcrumbs-back-button-arrow-color(color($name), $breadcrumbs-active-background-transparency);
+        }
       }
     }
   }
