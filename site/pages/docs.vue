@@ -3,7 +3,7 @@
     <div class="docs__view">
       <docs-sidebar></docs-sidebar>
 
-      <div class="docs__content-wrap">
+      <div class="docs__content-wrap container">
         <router-view></router-view>
       </div>
     </div>

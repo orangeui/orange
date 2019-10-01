@@ -1,5 +1,5 @@
 <template>
-  <div class="docs__section">
+  <div class="docs__section container">
     <div class="docs__header">
       <h1>Manifesto</h1>
     </div>

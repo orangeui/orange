@@ -1,5 +1,5 @@
 <template>
-  <div class="docs__section">
+  <div class="docs__section container">
     <docs-item>
       <div slot="body">
 
