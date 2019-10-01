@@ -4,17 +4,21 @@
 
 /** Align
 --------------------------------------------------*/
-
-.text-center {
-  text-align: center;
+@each $alignment in $text-alignments {
+  .text-#{$alignment} {
+    text-align: #{$alignment};
+  }
 }
 
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
+/** Responsive */
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
+  @each $alignment in $text-alignments {
+    @include breakpoint-and-up($breakpoint-key) {
+      .#{$breakpoint-key}\:text-#{$alignment} {
+        text-align: #{$alignment};
+      }
+    }
+  }
 }
 
 
@@ -42,24 +46,38 @@
 }
 
 
-/** Utilities
+/** Sizes
 --------------------------------------------------*/
 
-/** Sizes */
 @each $name, $size in $font-sizes {
   .fs-#{$name} {
     font-size: $size;
   }
 }
 
-/** Weights */
+/** Responsive */
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
+  @each $name, $size in $font-sizes {
+    @include breakpoint-and-up($breakpoint-key) {
+      .#{$breakpoint-key}\:fs-#{$name} {
+        font-size: #{$size};
+      }
+    }
+  }
+}
+
+
+/** Font Weights
+--------------------------------------------------*/
 @each $name, $weight in $font-weights {
   .font-#{$name} {
     font-weight: $weight;
   }
 }
 
-/** Ellipsis */
+/** Ellipsis
+--------------------------------------------------*/
+
 .text-ellipsis {
   white-space: nowrap;
   text-overflow: ellipsis;

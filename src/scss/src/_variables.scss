@@ -49,6 +49,8 @@ $font-weights: (
   'black': 800
 ) !default;
 
+$text-alignments: 'left', 'center', 'right', 'justify' !default;
+
 /** Include fonts */
 @if ($include-fonts) {
   @import url($font-url);
