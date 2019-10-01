@@ -7,6 +7,18 @@ $spacing-classes-with-breakpoints: true !default;
 /* Sizes of spacings - Margin and Padding. Just change the numbers for different spacings, or add new ones */
 $spacing-sizes: 0, 6, 12, 18, 24, 30, 36, 48, 60, 72, 96, 120 !default;
 
+$space-base: 24px !default;
+
+$spaces: (
+  'xxs': $space-base / 3,
+  'xs': $space-base / 2,
+  'sm': $space-base / 1.5,
+  'md': $space-base,
+  'lg': $space-base * 1.5,
+  'xl': $space-base * 2,
+  'xxl': $space-base * 3
+) !default;
+
 /*
   Margins and paddings
 */
