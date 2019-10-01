@@ -9,6 +9,7 @@
       <div slot="body">
         <p><o-label text="HTML" size="small" /> apply sizes by adding <code>.fs-{size}</code> class to text elements</p>
         <p><o-label text="SCSS" size="small" />  recall size values with the <code>fontSize('{size}')</code> function</p>
+        <p><o-label text="Responsive" size="small" />  apply responsive sizes by adding <code>.{breakpoint}-fs-{size}</code> class to text elements</p>
       </div>
 
       <docs-simple-list :items="fontSizes" slot="body"></docs-simple-list>
@@ -77,7 +78,19 @@ export default {
           content: '12 Omega',
           class: 'fs-omega',
           code: '<p class="fs-omega">12 Omega</p>'
-        }
+        },
+        {
+          title: 'Epsilon with Gamma',
+          content: '16 Epsilon with 21 Gamma on viewport size SM or wider',
+          class: 'fs-epsilon sm:fs-gamma',
+          code: '<p class="fs-epsilon sm:fs-gamma">16 Epsilon with 21 Gamma on viewport size SM or wider</p>'
+        },
+        {
+          title: 'Zeta with Epsilon',
+          content: '14 Zeta with 16 Epsilon on viewport size MD or wider',
+          class: 'fs-zeta md:fs-epsilon',
+          code: '<p class="fs-zeta md:fs-epsilon">14 Zeta with 16 Epsilon on viewport size MD or wider</p>'
+        },
       ],
       fontSizesHTML: `<p class="fs-giga">76 Giga</p>
 <p class="fs-mega">54 Mega</p>
@@ -87,7 +100,10 @@ export default {
 <p class="fs-delta">18 Delta</p>
 <p class="fs-epsilon">16 Epsilon</p>
 <p class="fs-zeta">14 Zeta</p>
-<p class="fs-omega">12 Omega</p>`,
+<p class="fs-omega">12 Omega</p>
+
+<p class="fs-epsilon sm:fs-gamma">16 Epsilon with 21 Gamma on viewport size SM or wider</p>
+<p class="fs-zeta md:fs-epsilon">14 Zeta with 16 Epsilon on viewport size MD or wider</p>`,
       fontSizesCSS: `.example-class {
   font-size: fontSize('giga');
 }`
