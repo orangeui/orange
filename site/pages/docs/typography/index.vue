@@ -21,6 +21,16 @@
       <docs-simple-list :items="fontWeights" slot="body"></docs-simple-list>
     </docs-item>
 
+    <!-- Alignments  -->
+    <docs-item title="Alignments" :code="textAlignmentsHTML">
+      <div slot="body">
+        <p><o-label text="HTML" size="small" /> apply alignment by adding <code>.text-{alignment}</code> class to text elements</p>
+        <p><o-label text="Responsive" size="small" /> apply responsive alignment with <code>{breakpoint}:text-{alignment}</code> class to text elements</p>
+      </div>
+
+      <docs-simple-list :items="textAlignments" slot="body"></docs-simple-list>
+    </docs-item>
+
     <!-- Italic  -->
     <docs-item title="Italic" :code="fontItalicHTML">
       <div slot="body">
@@ -78,6 +88,51 @@ export default {
       fontWeightsCSS: `.example {
   font-weight: fontWeight('extrabold');
 }`,
+      textAlignmentsHTML: `<p class="text-left">Text align left</p>
+<p class="text-right">Text align right</p>
+<p class="text-center">Text align center</p>
+
+<p class="md:text-left">Left aligned text on viewport size MD or wider</p>
+<p class="sm:text-center">Center aligned text on viewport size SM or wider</p>
+<p class="xs:text-right">Right aligned text on viewport size XS or wider</p>`,
+      textAlignments: [
+        {
+          title: '',
+          content: 'Text align left',
+          class: 'fs-gamma text-left',
+          code: '<p class="text-left">Text align left</p>'
+        },
+        {
+          title: '',
+          content: 'Text align right',
+          class: 'fs-gamma text-right',
+          code: '<p class="text-right">Text align right</p>'
+        },
+        {
+          title: '',
+          content: 'Text align center',
+          class: 'fs-gamma text-center',
+          code: '<p class="text-center">Text align center</p>'
+        },
+        {
+          title: '',
+          content: 'Left aligned text on viewport size MD or wider',
+          class: 'fs-gamma md:text-left',
+          code: '<p class="md:text-left">Left aligned text on viewport size MD or wider</p>'
+        },
+        {
+          title: '',
+          content: 'Center aligned text on viewport size SM or wider',
+          class: 'fs-gamma sm:text-center',
+          code: '<p class="sm:text-center">Center aligned text on viewport size SM or wider</p>'
+        },
+        {
+          title: '',
+          content: 'Right aligned text on viewport size XS or wider',
+          class: 'fs-gamma xs:text-right',
+          code: '<p class="xs:text-right">Right aligned text on viewport size XS or wider</p>'
+        },
+      ],
       fontItalicHTML: `<p class="font-extrabold text-italic">700 Extra Bold Italic</p>
 <p class="font-bold text-italic">600 Bold Italic</p>
 <p class="font-medium text-italic">500 Medium Italic</p>
