@@ -2,15 +2,6 @@
     Spacings
 \*----------------------------------*/
 
-/* Spacings class loop - OLD */
-@each $prefix, $meaning in $spacing-classes {
-  @each $size in $spacing-sizes{
-    .#{$prefix}-#{$size} {
-      #{$meaning}: $size * 1px;
-    }
-  }
-}
-
 /* Spacings class loop with names */
 @each $prefix, $meaning in $spacing-classes {
   @each $name, $size in $spaces {
@@ -20,33 +11,9 @@
   }
 }
 
-/* Spacings class loop - with values */
-@each $prefix, $meaning in $spacing-classes {
-  @each $name, $size in $spaces {
-    .#{$prefix}-#{$size} {
-      #{$meaning}: #{$size};
-    }
-  }
-}
-
-
 
 /* Spacings class loop - Responsive */
 @if $spacing-classes-with-breakpoints {
-
-  /* Spacings class loop with postfix of breakpoints */
-  // @each $class, $point in $breakpoints-up {
-  //   @media #{$point}{
-  //     @each $prefix, $meaning in $spacing-classes {
-  //       @each $size in $spacing-sizes {
-  //         .#{$prefix}-#{$size}-#{$class} {
-  //           #{$meaning}: $size * 1px;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-
   @each $breakpoint-key, $breakpoint-value in $breakpoints {
     @each $prefix, $meaning in $spacing-classes {
       @each $name, $size in $spaces {
@@ -58,17 +25,4 @@
       }
     }
   }
-
-  /* Spacings class loop with postfix of breakpoints for breakpoint and down */
-  // @each $class, $point in $breakpoints-down {
-  //   @media #{$point}{
-  //     @each $prefix, $meaning in $spacing-classes {
-  //       @each $size in $spacing-sizes {
-  //         .#{$prefix}-#{$size}-#{$class} {
-  //           #{$meaning}: $size * 1px;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
 }

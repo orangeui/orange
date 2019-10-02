@@ -4,19 +4,19 @@
 /* Spacings with breakpoints */
 $spacing-classes-with-breakpoints: true !default;
 
-/* Sizes of spacings - Margin and Padding. Just change the numbers for different spacings, or add new ones */
-$spacing-sizes: 0, 6, 12, 18, 24, 30, 36, 48, 60, 72, 96, 120 !default;
-
+/* Base space */
 $space-base: 24px !default;
 
+/* Sizes of spacings - Margin and Padding. Just change the numbers for different spacings, or add new ones */
 $spaces: (
-  'xxs': $space-base / 3,
-  'xs': $space-base / 2,
-  'sm': $space-base / 1.5,
-  'md': $space-base,
-  'lg': $space-base * 1.5,
-  'xl': $space-base * 2,
-  'xxl': $space-base * 3
+  '0': 0,                 // 0px
+  '1': $space-base / 6,   // 4px
+  '2': $space-base / 3,   // 8px
+  '3': $space-base / 2,   // 12px
+  '4': $space-base,       // 24px
+  '5': $space-base * 2,   // 48px
+  '6': $space-base * 3,   // 72px
+  '7': $space-base * 6    // 144px
 ) !default;
 
 /*
