@@ -9,14 +9,14 @@ $space-base: 24px !default;
 
 /* Sizes of spacings - Margin and Padding. Just change the numbers for different spacings, or add new ones */
 $spaces: (
-  '0': 0,                 // 0px
-  '1': $space-base / 6,   // 4px
-  '2': $space-base / 3,   // 8px
-  '3': $space-base / 2,   // 12px
-  '4': $space-base,       // 24px
-  '5': $space-base * 2,   // 48px
-  '6': $space-base * 3,   // 72px
-  '7': $space-base * 6    // 144px
+  0: 0,                 // 0px
+  1: $space-base / 6,   // 4px
+  2: $space-base / 3,   // 8px
+  3: $space-base / 2,   // 12px
+  4: $space-base,       // 24px
+  5: $space-base * 2,   // 48px
+  6: $space-base * 3,   // 72px
+  7: $space-base * 6    // 144px
 ) !default;
 
 /*
