@@ -67,7 +67,7 @@
   /** Responsive */
   @each $breakpoint-key, $breakpoint-value in $breakpoints {
     @for $i from 1 through $end {
-      
+
       @if ($span == false) {
         @include breakpoint-and-up($breakpoint-key) {
           .#{$breakpoint-key}\:#{$class}-#{$i} {
@@ -95,15 +95,16 @@
   @include grid-span($grid-column-number, 'column', 'col', true);
 }
 
+/** Currently not supporting these because of too much bugs with other grid possibilities */
 /* Row span */
-@if $include-grid-row-span {
+/*@if $include-grid-row-span {
   @include grid-span($grid-row-number, 'row', 'row', false);
 }
 
-/* Row exact positions */
+!* Row exact positions *!
 @if $include-grid-row-exact {
   @include grid-span($grid-row-number, 'row', 'row', true);
-}
+}*/
 
 /* Column from - to position */
 @if $include-grid-column-from-to {
@@ -133,15 +134,16 @@
   }
 }
 
+/** Currently not supporting these because of too much bugs with other grid possibilities */
 /* Row from - to position */
 @if $include-grid-row-from-to {
   @for $row from 1 through $grid-row-number {
     @for $i from 1 through $row {
-      @if $i < $row {
+      /*@if $i < $row {
         .row-#{$i}\/#{$row} {
           grid-row: #{$i}/#{$row + 1}; // Add +1 because the "grid-column-end" ends before the actual number of column and not with it
         }
-      }
+      }*/
     }
   }
 
@@ -149,13 +151,13 @@
   @each $breakpoint-key, $breakpoint-value in $breakpoints {
     @for $row from 1 through $grid-row-number {
       @for $i from 1 through $row {
-        @if $i < $row {
+        /*@if $i < $row {
           @include breakpoint-and-up($breakpoint-key) {
             .#{$breakpoint-key}\:row-#{$i}\/#{$row} {
               grid-row: #{$i}/#{$row + 1}; // Add +1 because the "grid-row-end" ends before the actual number of column and not with it
             }
           }
-        }
+        }*/
       }
     }
   }

@@ -73,7 +73,8 @@
       </div>
     </docs-item>
 
-    <docs-item title="Columns with different positions" :code="position_column">
+    <!-- Currently not supporting these because of too much bugs with other grid possibilities -->
+    <!--<docs-item title="Columns with different positions" :code="position_column">
       <div slot="body">
         <p>
           By setting class like <code>.col-7/12</code>, column will span from column 1 to including 7, but you have to set in which row like <code>.row-2</code>.
@@ -92,9 +93,10 @@
           <div class="col-2">8</div>
         </div>
       </div>
-    </docs-item>
+    </docs-item>-->
 
-    <docs-item title="Spanning column over multiple rows" :code="span_column_over_rows">
+    <!-- Currently not supporting these because of too much bugs with other grid possibilities -->
+    <!--<docs-item title="Spanning column over multiple rows" :code="span_column_over_rows">
       <div slot="body">
         <div class="grid">
           <div class="col-3">1</div>
@@ -109,7 +111,7 @@
           <div class="col-4">10</div>
         </div>
       </div>
-    </docs-item>
+    </docs-item>-->
 
     <docs-item title="Grid options">
       <div slot="body">
