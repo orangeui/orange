@@ -36,6 +36,25 @@
   grid-template-columns: repeat($grid-column-number, 1fr);
 }
 
+/** Exact number of columns in grid */
+@if $include-grid-number-of-columns {
+  @for $i from 1 through $grid-column-number {
+    .grid--#{$i} {
+      grid-template-columns: repeat($i, 1fr);
+    }
+  }
+
+  @each $breakpoint-key, $breakpoint-value in $breakpoints {
+    @for $i from 1 through $grid-column-number {
+      @include breakpoint-and-up($breakpoint-key) {
+        .#{$breakpoint-key}\:grid--#{$i} {
+          grid-template-columns: repeat($i, 1fr);
+        }
+      }
+    }
+  }
+}
+
 /* Auto Layout */
 @if $include-grid-column-auto-fill {
   .grid--columns-auto {
