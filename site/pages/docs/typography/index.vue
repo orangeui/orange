@@ -25,7 +25,7 @@
     <docs-item title="Alignments" :code="textAlignmentsHTML">
       <div slot="body">
         <p><o-label text="HTML" size="small" /> apply alignment by adding <code>.text-{alignment}</code> class to text elements</p>
-        <p><o-label text="Responsive" size="small" /> apply responsive alignment with <code>{breakpoint}:text-{alignment}</code> class to text elements</p>
+        <p><o-label text="Responsive" size="small" /> apply responsive alignment with <code>.{breakpoint}:text-{alignment}</code> class to text elements</p>
       </div>
 
       <docs-simple-list :items="textAlignments" slot="body"></docs-simple-list>
