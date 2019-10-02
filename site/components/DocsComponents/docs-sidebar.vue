@@ -18,9 +18,10 @@
       <router-link :to="{ name: 'docs-layout'}" tag="h5">Layout</router-link>
 
       <ul>
-        <li><router-link :to="{ name: 'docs-layout'}" exact><span>Grid</span></router-link></li>
-        
-        
+        <li><router-link :to="{ name: 'docs-layout'}" exact><span>Breakpoints</span></router-link></li>
+        <li><router-link :to="{ name: 'docs-layout-container'}"><span>Container</span></router-link></li>
+        <li><router-link :to="{ name: 'docs-layout-grid'}"><span>Grid</span></router-link></li>
+
         <li>
           <router-link :to="{ name: 'docs-layout-utilities'}" tag="h6">Utilities</router-link>
           <ul>
