@@ -2,6 +2,7 @@
  * Flex
  */
 .flex,
+.d-flex,
 .row {
   display: flex;
 }
@@ -39,7 +40,8 @@ $flex-align-selfs: (
   'baseline': baseline
 );
 
-.flex {
+.flex,
+.d-flex {
   /**
    * Properties for parents - containers
    * Direction of displayed flex items

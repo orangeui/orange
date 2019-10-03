@@ -20,7 +20,8 @@
       <router-link :to="{ name: 'docs-layout'}" tag="h5">Layout</router-link>
 
       <ul>
-        <li><router-link :to="{ name: 'docs-layout'}"><span>Grid</span></router-link></li>
+        <li><router-link :to="{ name: 'docs-layout'}" exact><span>Grid</span></router-link></li>
+        <li><router-link :to="{ name: 'docs-layout-display'}"><span>Display</span></router-link></li>
       </ul>
 
       <router-link :to="{ name: 'docs-typography'}" tag="h5">Typography</router-link>
