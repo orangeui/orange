@@ -153,8 +153,40 @@ $spacing-extra-large: $spacing-base * 3 !default;
 $border: 1px solid color('gray', 'lightest') !default;
 $border-radius-main: 3px !default;
 $border-radius-medium: 6px !default;
+$border-radius-full: 9999px !default;
 $border-radius-progress-bar: 9px !default;
 $ul-ol-padding-left: $spacing-base !default;
+
+/**
+ * Border radius
+ */
+
+$border-radius-base: 3px !default;
+
+$border-radiuses: (
+  0: 0,                         // 0px
+  'base': $border-radius-base,  // 3px
+  1: $border-radius-base * 2,   // 6px
+  'full': 50%                   // 50%
+) !default;
+
+
+/**
+ * Display
+ */
+
+$displays: (
+  'block': block,
+  'inline-block': inline-block,
+  'inline': inline,
+  'flex': flex,
+  'inline-flex': inline-flex,
+  'table': table,
+  'table-row': table-row,
+  'table-cell': table-cell,
+  'grid': grid,
+  'hidden': none
+) !default;
 
 
 /** Components properties

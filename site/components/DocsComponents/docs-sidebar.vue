@@ -14,6 +14,7 @@
         <li><router-link :to="{ name: 'docs-global-icons'}"><span>Icons</span></router-link></li>
         <li><router-link :to="{ name: 'docs-global-materials'}"><span>Materials</span></router-link></li>
         <li><router-link :to="{ name: 'docs-global-spacings'}"><span>Spacings</span></router-link></li>
+        <li><router-link :to="{ name: 'docs-global-border-radius'}"><span>Border Radius</span></router-link></li>
       </ul>
 
       <router-link :to="{ name: 'docs-layout'}" tag="h5">Layout</router-link>

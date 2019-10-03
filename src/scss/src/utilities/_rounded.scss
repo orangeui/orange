@@ -1,0 +1,15 @@
+/**
+ * Rounded
+ */
+
+@each $borderRadiusKey, $borderRadiusValue in $border-radiuses {
+  @if ($borderRadiusKey == 'base') {
+    .rounded {
+      border-radius: $borderRadiusValue;
+    }
+  } @else {
+    .rounded-#{$borderRadiusKey} {
+      border-radius: $borderRadiusValue;
+    }
+  }
+}
