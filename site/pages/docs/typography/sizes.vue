@@ -9,7 +9,7 @@
       <div slot="body">
         <p><o-label text="HTML" size="small" /> apply sizes by adding <code>.fs-{size}</code> class to text elements</p>
         <p><o-label text="SCSS" size="small" />  recall size values with the <code>fontSize('{size}')</code> function</p>
-        <p><o-label text="Responsive" size="small" />  apply responsive sizes by adding <code>.{breakpoint}-fs-{size}</code> class to text elements</p>
+        <p><o-label text="Responsive" size="small" />  apply responsive sizes by adding <code>.{breakpoint}:fs-{size}</code> class to text elements</p>
       </div>
 
       <docs-simple-list :items="fontSizes" slot="body"></docs-simple-list>
