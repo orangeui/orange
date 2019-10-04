@@ -24,25 +24,25 @@
 
     <docs-item title="Block" :code="block_css">
       <div slot="body">
-        <div class="d-block p-24 bg-primary text-center color-white mb-12">1</div>
-        <div class="d-block p-24 bg-primary text-center color-white mb-12">2</div>
-        <div class="d-block p-24 bg-primary text-center color-white mb-12">3</div>
+        <div class="d-block p-4 bg-primary text-center color-white mb-3">1</div>
+        <div class="d-block p-4 bg-primary text-center color-white mb-3">2</div>
+        <div class="d-block p-4 bg-primary text-center color-white mb-3">3</div>
       </div>
     </docs-item>
 
     <docs-item title="Inline Block" :code="inline_block_css">
       <div slot="body">
-        <div class="d-inline-block p-24 bg-primary text-center color-white mb-12">1</div>
-        <div class="d-inline-block p-24 bg-primary text-center color-white mb-12">2</div>
-        <div class="d-inline-block p-24 bg-primary text-center color-white mb-12">3</div>
+        <div class="d-inline-block p-4 bg-primary text-center color-white mb-3">1</div>
+        <div class="d-inline-block p-4 bg-primary text-center color-white mb-3">2</div>
+        <div class="d-inline-block p-4 bg-primary text-center color-white mb-3">3</div>
       </div>
     </docs-item>
 
     <docs-item title="Inline" :code="inline_css">
       <div slot="body">
-        <div class="d-inline p-24 bg-primary text-center color-white mb-12">1</div>
-        <div class="d-inline p-24 bg-primary text-center color-white mb-12">2</div>
-        <div class="d-inline p-24 bg-primary text-center color-white mb-12">3</div>
+        <div class="d-inline p-4 bg-primary text-center color-white">1</div>
+        <div class="d-inline p-4 bg-primary text-center color-white">2</div>
+        <div class="d-inline p-4 bg-primary text-center color-white">3</div>
       </div>
     </docs-item>
 
@@ -50,9 +50,9 @@
       <div slot="body">
         <p>More detailed use of flex can be found <a href="#">here</a></p>
 
-        <div class="d-flex p-24 bg-primary text-center color-white mb-12">1</div>
-        <div class="d-flex p-24 bg-primary text-center color-white mb-12">2</div>
-        <div class="d-flex p-24 bg-primary text-center color-white mb-12">3</div>
+        <div class="d-flex p-4 bg-primary text-center color-white mb-3">1</div>
+        <div class="d-flex p-4 bg-primary text-center color-white mb-3">2</div>
+        <div class="d-flex p-4 bg-primary text-center color-white mb-3">3</div>
       </div>
     </docs-item>
 
@@ -60,9 +60,9 @@
       <div slot="body">
         <p>More detailed use of flex can be found <a href="#">here</a></p>
 
-        <div class="d-inline-flex p-24 bg-primary text-center color-white mb-12">1</div>
-        <div class="d-inline-flex p-24 bg-primary text-center color-white mb-12">2</div>
-        <div class="d-inline-flex p-24 bg-primary text-center color-white mb-12">3</div>
+        <div class="d-inline-flex p-4 bg-primary text-center color-white mb-3">1</div>
+        <div class="d-inline-flex p-4 bg-primary text-center color-white mb-3">2</div>
+        <div class="d-inline-flex p-4 bg-primary text-center color-white mb-3">3</div>
       </div>
     </docs-item>
 
@@ -72,14 +72,14 @@
         
         <div class="d-table">
           <div class="d-table-row">
-            <div class="d-table-cell p-24 bg-primary text-center color-white mb-12">Table cell 1</div>
-            <div class="d-table-cell p-24 bg-primary-dark text-center color-white mb-12">2</div>
-            <div class="d-table-cell p-24 bg-primary text-center color-white mb-12">3</div>
+            <div class="d-table-cell p-4 bg-primary text-center color-white mb-3">Table cell 1</div>
+            <div class="d-table-cell p-4 bg-primary-dark text-center color-white mb-3">2</div>
+            <div class="d-table-cell p-4 bg-primary text-center color-white mb-3">3</div>
           </div>
           <div class="d-table-row">
-            <div class="d-table-cell p-24 bg-primary-dark text-center color-white mb-12">5</div>
-            <div class="d-table-cell p-24 bg-primary text-center color-white mb-12">Table cell 4</div>
-            <div class="d-table-cell p-24 bg-primary-dark text-center color-white mb-12"> Table cell 6</div>
+            <div class="d-table-cell p-4 bg-primary-dark text-center color-white mb-3">5</div>
+            <div class="d-table-cell p-4 bg-primary text-center color-white mb-3">Table cell 4</div>
+            <div class="d-table-cell p-4 bg-primary-dark text-center color-white mb-3"> Table cell 6</div>
           </div>
         </div>
       </div>
@@ -87,9 +87,9 @@
 
     <docs-item title="Hidden" :code="hidden_css">
       <div slot="body">
-        <div class="d-inline-block p-24 bg-primary text-center color-white mb-12">1</div>
-        <div class="d-inline-block p-24 bg-primary text-center color-white mb-12">2</div>
-        <div class="d-hidden p-24 bg-primary text-center color-white mb-12">3</div>
+        <div class="d-inline-block p-4 bg-primary text-center color-white mb-3">1</div>
+        <div class="d-inline-block p-4 bg-primary text-center color-white mb-3">2</div>
+        <div class="d-hidden p-4 bg-primary text-center color-white mb-3">3</div>
       </div>
     </docs-item>
 
@@ -97,9 +97,9 @@
       <div slot="body">
         <p>Apply responsive display to elements <code>.{breakpoint}:-d-{key}</code> class</p>
 
-        <div class="d-block md:d-inline-block lg:d-flex p-24 bg-primary text-center color-white mb-12">1</div>
-        <div class="d-block md:d-inline-block lg:d-flex p-24 bg-primary text-center color-white mb-12">2</div>
-        <div class="d-block md:d-inline-block lg:d-flex p-24 bg-primary text-center color-white mb-12">3</div>
+        <div class="d-block md:d-inline-block lg:d-flex p-4 bg-primary text-center color-white mb-3">1</div>
+        <div class="d-block md:d-inline-block lg:d-flex p-4 bg-primary text-center color-white mb-3">2</div>
+        <div class="d-block md:d-inline-block lg:d-flex p-4 bg-primary text-center color-white mb-3">3</div>
       </div>
     </docs-item>
 
@@ -124,45 +124,45 @@
   'hidden': none
 ) !default;`,
         
-        block_css: `<div class="d-block p-24 bg-primary text-center color-white mb-12">1</div>
-<div class="d-block p-24 bg-primary text-center color-white mb-12">2</div>
-<div class="d-block p-24 bg-primary text-center color-white mb-12">3</div>`,
+        block_css: `<div class="d-block p-4 bg-primary text-center color-white mb-3">1</div>
+<div class="d-block p-4 bg-primary text-center color-white mb-3">2</div>
+<div class="d-block p-4 bg-primary text-center color-white mb-3">3</div>`,
 
-        inline_block_css: `<div class="d-inline-block p-24 bg-primary text-center color-white mb-12">1</div>
-<div class="d-inline-block p-24 bg-primary text-center color-white mb-12">2</div>
-<div class="d-inline-block p-24 bg-primary text-center color-white mb-12">3</div>`,
+        inline_block_css: `<div class="d-inline-block p-4 bg-primary text-center color-white mb-3">1</div>
+<div class="d-inline-block p-4 bg-primary text-center color-white mb-3">2</div>
+<div class="d-inline-block p-4 bg-primary text-center color-white mb-3">3</div>`,
 
-        inline_css: `<div class="d-inline p-24 bg-primary text-center color-white mb-12">1</div>
-<div class="d-inline p-24 bg-primary text-center color-white mb-12">2</div>
-<div class="d-inline p-24 bg-primary text-center color-white mb-12">3</div>`,
+        inline_css: `<div class="d-inline p-4 bg-primary text-center color-white">1</div>
+<div class="d-inline p-4 bg-primary text-center color-white">2</div>
+<div class="d-inline p-4 bg-primary text-center color-white">3</div>`,
 
-        flex_css: `<div class="d-flex p-24 bg-primary text-center color-white mb-12">1</div>
-<div class="d-flex p-24 bg-primary text-center color-white mb-12">2</div>
-<div class="d-flex p-24 bg-primary text-center color-white mb-12">3</div>`,
+        flex_css: `<div class="d-flex p-4 bg-primary text-center color-white mb-3">1</div>
+<div class="d-flex p-4 bg-primary text-center color-white mb-3">2</div>
+<div class="d-flex p-4 bg-primary text-center color-white mb-3">3</div>`,
 
-        inline_flex_css: `<div class="d-inline-flex p-24 bg-primary text-center color-white mb-12">1</div>
-<div class="d-inline-flex p-24 bg-primary text-center color-white mb-12">2</div>
-<div class="d-inline-flex p-24 bg-primary text-center color-white mb-12">3</div>`,
+        inline_flex_css: `<div class="d-inline-flex p-4 bg-primary text-center color-white mb-3">1</div>
+<div class="d-inline-flex p-4 bg-primary text-center color-white mb-3">2</div>
+<div class="d-inline-flex p-4 bg-primary text-center color-white mb-3">3</div>`,
 
         table_css: `<div class="d-table">
   <div class="d-table-row">
-    <div class="d-table-cell p-24 bg-primary text-center color-white mb-12">1</div>
-    <div class="d-table-cell p-24 bg-primary-dark text-center color-white mb-12">2</div>
-    <div class="d-table-cell p-24 bg-primary text-center color-white mb-12">3</div>
+    <div class="d-table-cell p-4 bg-primary text-center color-white mb-3">1</div>
+    <div class="d-table-cell p-4 bg-primary-dark text-center color-white mb-3">2</div>
+    <div class="d-table-cell p-4 bg-primary text-center color-white mb-3">3</div>
   </div>
   <div class="d-table-row">
-    <div class="d-table-cell p-24 bg-primary-dark text-center color-white mb-12">1</div>
-    <div class="d-table-cell p-24 bg-primary text-center color-white mb-12">2</div>
-    <div class="d-table-cell p-24 bg-primary-dark text-center color-white mb-12">3</div>
+    <div class="d-table-cell p-4 bg-primary-dark text-center color-white mb-3">1</div>
+    <div class="d-table-cell p-4 bg-primary text-center color-white mb-3">2</div>
+    <div class="d-table-cell p-4 bg-primary-dark text-center color-white mb-3">3</div>
   </div>
 </div>`,
-        hidden_css: `<div class="d-inline-block p-24 bg-primary text-center color-white mb-12">1</div>
-<div class="d-inline-block p-24 bg-primary text-center color-white mb-12">2</div>
-<div class="d-hidden p-24 bg-primary text-center color-white mb-12">3</div>`,
+        hidden_css: `<div class="d-inline-block p-4 bg-primary text-center color-white mb-3">1</div>
+<div class="d-inline-block p-4 bg-primary text-center color-white mb-3">2</div>
+<div class="d-hidden p-4 bg-primary text-center color-white mb-3">3</div>`,
       
-        responsive_css: `<div class="d-block md:d-inline-block lg:d-flex p-24 bg-primary text-center color-white mb-12">1</div>
-<div class="d-block md:d-inline-block lg:d-flex p-24 bg-primary text-center color-white mb-12">2</div>
-<div class="d-block md:d-inline-block lg:d-flex p-24 bg-primary text-center color-white mb-12">3</div>`
+        responsive_css: `<div class="d-block md:d-inline-block lg:d-flex p-4 bg-primary text-center color-white mb-3">1</div>
+<div class="d-block md:d-inline-block lg:d-flex p-4 bg-primary text-center color-white mb-3">2</div>
+<div class="d-block md:d-inline-block lg:d-flex p-4 bg-primary text-center color-white mb-3">3</div>`
       }
     }
   }
