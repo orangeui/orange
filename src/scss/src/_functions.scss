@@ -64,6 +64,12 @@
   @return map-get($displays, $display);
 }
 
+/** Spacing
+--------------------------------------------------*/
+@function space($space) {
+  @return map-get($spaces, $space);
+}
+
 /** Components
 --------------------------------------------------*/
 
