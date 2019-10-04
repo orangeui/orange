@@ -6,7 +6,7 @@
     name: 'utilities',
 
     beforeCreate () {
-      this.$router.push({ name: 'docs-layout-utilities-border-radius' })
+      this.$router.push({ name: 'docs-layout-utilities-align' })
     }
   }
 </script>

@@ -24,7 +24,7 @@
         <li>
           <router-link :to="{ name: 'docs-layout-utilities'}" tag="h6">Utilities</router-link>
           <ul>
-            <li><router-link :to="{ name: 'docs-layout-utilities-alignment'}"><span>Alignment</span></router-link></li>
+            <li><router-link :to="{ name: 'docs-layout-utilities-align'}"><span>Align</span></router-link></li>
             <li><router-link :to="{ name: 'docs-layout-utilities-border-radius'}"><span>Border Radius</span></router-link></li>
             <li><router-link :to="{ name: 'docs-layout-utilities-box-shadow'}"><span>Box Shadow</span></router-link></li>
             <li><router-link :to="{ name: 'docs-layout-utilities-display'}"><span>Display</span></router-link></li>

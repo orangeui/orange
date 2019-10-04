@@ -1,7 +1,7 @@
 <template>
   <div class="docs__section">
     <div class="docs__header">
-      <h1>Alignment</h1>
+      <h1>Align</h1>
     </div>
 
     <docs-item class="explanation">
@@ -12,7 +12,7 @@
 
     <docs-item title="">
       <div slot="body">
-        <p><o-label text="HTML" size="small" /> apply center alignment to elements with <code>.block-{align}</code> or <code>.flex-{align}</code> class.</p>
+        <p><o-label text="HTML" size="small" /> apply alignment to elements with <code>.block-{align}</code> or <code>.flex-{align}</code> class.</p>
       </div>
     </docs-item>
 
@@ -76,7 +76,7 @@
 
 <script>
 export default {
-  name: 'DocsAlignment',
+  name: 'DocsAlign',
 
   data () {
     return {
