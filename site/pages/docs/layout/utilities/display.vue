@@ -48,7 +48,7 @@
 
     <docs-item title="Flex" :code="flex_css">
       <div slot="body">
-        <p>More detailed use of flex can be found <a href="#">here</a></p>
+        <!-- <p>More detailed use of flex can be found <a href="#">here</a></p> -->
 
         <div class="d-flex p-4 bg-primary text-center color-white mb-3">1</div>
         <div class="d-flex p-4 bg-primary text-center color-white mb-3">2</div>
@@ -58,7 +58,7 @@
 
     <docs-item title="Inline Flex" :code="inline_flex_css">
       <div slot="body">
-        <p>More detailed use of flex can be found <a href="#">here</a></p>
+        <!-- <p>More detailed use of flex can be found <a href="#">here</a></p> -->
 
         <div class="d-inline-flex p-4 bg-primary text-center color-white mb-3">1</div>
         <div class="d-inline-flex p-4 bg-primary text-center color-white mb-3">2</div>

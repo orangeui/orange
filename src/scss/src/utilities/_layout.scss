@@ -1,0 +1,38 @@
+/**
+ * Layout
+ */
+
+/** Block */
+.block-left {
+  display: block;
+  margin-right: auto;
+}
+
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block-right {
+  display: block;
+  margin-left: auto;
+}
+
+
+/** Flex */
+.flex-left {
+  display: flex;
+  margin-right: auto;
+}
+
+.flex-center {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-right {
+  display: flex;
+  margin-left: auto;
+}

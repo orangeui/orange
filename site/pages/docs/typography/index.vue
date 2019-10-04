@@ -41,13 +41,13 @@
     </docs-item>
 
     <!-- Text decoration  -->
-    <docs-item title="Text decoration" :code="textAlignmentsHTML">
+    <docs-item title="Text decoration" :code="textDecorationHTML">
       <div slot="body">
         <p><o-label text="HTML" size="small" /> apply text decoration by adding <code>.text-{decoration}</code> class to text elements</p>
         <p><o-label text="HTML" size="small" /> to control text decoration on hover apply text decoration by adding <code>.hover:text-{decoration}</code> class to text elements</p>
       </div>
 
-      <docs-simple-list :items="textAlignments" slot="body"></docs-simple-list>
+      <docs-simple-list :items="textDecoration" slot="body"></docs-simple-list>
     </docs-item>
 
   </div>
@@ -174,14 +174,14 @@ export default {
         }
       ],
 
-      textAlignmentsHTML: `<p class="text-underline">Text decoration underline</p>
+      textDecorationHTML: `<p class="text-underline">Text decoration underline</p>
 <p class="text-line-through">Text decoration line-through</p>
 <p class="text-no-underline">Text decoration none</p>
 
 <p class="hover:text-underline">Text decoration underline on hover</p>
 <p class="hover:text-line-through">Text decoration line-through on hover</p>
 <p class="text-underline hover:text-no-underline">Text decoration none on hover</p>`,
-      textAlignments: [
+      textDecoration: [
         {
           title: '',
           content: 'Text decoration underline',

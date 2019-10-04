@@ -11,17 +11,26 @@
 
       <ul>
         <li><router-link :to="{ name: 'docs-global-colors'}" exact><span>Colors</span></router-link></li>
+        <li><router-link :to="{ name: 'docs-global-background-colors'}"><span>Background colors</span></router-link></li>
         <li><router-link :to="{ name: 'docs-global-icons'}"><span>Icons</span></router-link></li>
-        <li><router-link :to="{ name: 'docs-global-materials'}"><span>Materials</span></router-link></li>
-        <li><router-link :to="{ name: 'docs-global-spacings'}"><span>Spacings</span></router-link></li>
-        <li><router-link :to="{ name: 'docs-global-border-radius'}"><span>Border Radius</span></router-link></li>
       </ul>
 
       <router-link :to="{ name: 'docs-layout'}" tag="h5">Layout</router-link>
 
       <ul>
         <li><router-link :to="{ name: 'docs-layout'}" exact><span>Grid</span></router-link></li>
-        <li><router-link :to="{ name: 'docs-layout-display'}"><span>Display</span></router-link></li>
+        
+        
+        <li>
+          <router-link :to="{ name: 'docs-layout-utilities'}" tag="h6">Utilities</router-link>
+          <ul>
+            <li><router-link :to="{ name: 'docs-layout-utilities-alignment'}"><span>Alignment</span></router-link></li>
+            <li><router-link :to="{ name: 'docs-layout-utilities-border-radius'}"><span>Border Radius</span></router-link></li>
+            <li><router-link :to="{ name: 'docs-layout-utilities-box-shadow'}"><span>Box Shadow</span></router-link></li>
+            <li><router-link :to="{ name: 'docs-layout-utilities-display'}"><span>Display</span></router-link></li>
+            <li><router-link :to="{ name: 'docs-layout-utilities-spacings'}"><span>Spacings</span></router-link></li>
+          </ul>
+        </li>
       </ul>
 
       <router-link :to="{ name: 'docs-typography'}" tag="h5">Typography</router-link>
