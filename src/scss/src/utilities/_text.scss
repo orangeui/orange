@@ -66,6 +66,38 @@
   }
 }
 
+/** Decoration
+--------------------------------------------------*/
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.hover\:text-underline {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.hover\:text-line-through {
+  &:hover {
+    text-decoration: line-through;
+  }
+}
+
+.text-no-underline {
+  text-decoration: none;
+}
+
+.hover\:text-no-underline {
+  &:hover {
+    text-decoration: none;
+  }
+}
 
 /** Font Weights
 --------------------------------------------------*/
