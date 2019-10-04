@@ -39,6 +39,14 @@
         <li><router-link :to="{ name: 'docs-typography'}" exact><span>Font</span></router-link></li>
         <li><router-link :to="{ name: 'docs-typography-sizes'}"><span>Sizes</span></router-link></li>
         <li><router-link :to="{ name: 'docs-typography-styles'}"><span>Styles</span></router-link></li>
+
+        <li>
+          <router-link :to="{ name: 'docs-typography-utilities'}" tag="h6">Utilities</router-link>
+          <ul>
+            <li><router-link :to="{ name: 'docs-typography-utilities-text-align'}"><span>Text Align</span></router-link></li>
+            <li><router-link :to="{ name: 'docs-typography-utilities-text-decoration'}"><span>Text Decoration</span></router-link></li>
+          </ul>
+        </li>
       </ul>
 
       <router-link :to="{ name: 'docs-components'}" tag="h5">Components</router-link>

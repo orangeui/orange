@@ -21,16 +21,6 @@
       <docs-simple-list :items="fontWeights" slot="body"></docs-simple-list>
     </docs-item>
 
-    <!-- Alignments  -->
-    <docs-item title="Alignments" :code="textAlignmentsHTML">
-      <div slot="body">
-        <p><o-label text="HTML" size="small" /> apply alignment by adding <code>.text-{alignment}</code> class to text elements</p>
-        <p><o-label text="Responsive" size="small" /> apply responsive alignment with <code>.{breakpoint}:text-{alignment}</code> class to text elements</p>
-      </div>
-
-      <docs-simple-list :items="textAlignments" slot="body"></docs-simple-list>
-    </docs-item>
-
     <!-- Italic  -->
     <docs-item title="Italic" :code="fontItalicHTML">
       <div slot="body">
@@ -38,16 +28,6 @@
       </div>
 
       <docs-simple-list :items="fontWeightsItalic" slot="body"></docs-simple-list>
-    </docs-item>
-
-    <!-- Text decoration  -->
-    <docs-item title="Text decoration" :code="textDecorationHTML">
-      <div slot="body">
-        <p><o-label text="HTML" size="small" /> apply text decoration by adding <code>.text-{decoration}</code> class to text elements</p>
-        <p><o-label text="HTML" size="small" /> to control text decoration on hover apply text decoration by adding <code>.hover:text-{decoration}</code> class to text elements</p>
-      </div>
-
-      <docs-simple-list :items="textDecoration" slot="body"></docs-simple-list>
     </docs-item>
 
   </div>
@@ -98,51 +78,6 @@ export default {
       fontWeightsCSS: `.example {
   font-weight: fontWeight('extrabold');
 }`,
-      textAlignmentsHTML: `<p class="text-left">Text align left</p>
-<p class="text-right">Text align right</p>
-<p class="text-center">Text align center</p>
-
-<p class="md:text-left">Left aligned text on viewport size MD or wider</p>
-<p class="sm:text-center">Center aligned text on viewport size SM or wider</p>
-<p class="xs:text-right">Right aligned text on viewport size XS or wider</p>`,
-      textAlignments: [
-        {
-          title: '',
-          content: 'Text align left',
-          class: 'fs-gamma text-left',
-          code: '<p class="text-left">Text align left</p>'
-        },
-        {
-          title: '',
-          content: 'Text align right',
-          class: 'fs-gamma text-right',
-          code: '<p class="text-right">Text align right</p>'
-        },
-        {
-          title: '',
-          content: 'Text align center',
-          class: 'fs-gamma text-center',
-          code: '<p class="text-center">Text align center</p>'
-        },
-        {
-          title: '',
-          content: 'Left aligned text on viewport size MD or wider',
-          class: 'fs-gamma md:text-left',
-          code: '<p class="md:text-left">Left aligned text on viewport size MD or wider</p>'
-        },
-        {
-          title: '',
-          content: 'Center aligned text on viewport size SM or wider',
-          class: 'fs-gamma sm:text-center',
-          code: '<p class="sm:text-center">Center aligned text on viewport size SM or wider</p>'
-        },
-        {
-          title: '',
-          content: 'Right aligned text on viewport size XS or wider',
-          class: 'fs-gamma xs:text-right',
-          code: '<p class="xs:text-right">Right aligned text on viewport size XS or wider</p>'
-        },
-      ],
       fontItalicHTML: `<p class="font-extrabold text-italic">700 Extra Bold Italic</p>
 <p class="font-bold text-italic">600 Bold Italic</p>
 <p class="font-medium text-italic">500 Medium Italic</p>
@@ -172,52 +107,6 @@ export default {
           class: 'fs-gamma font-normal text-italic',
           code: '<p class="font-normal text-italic">400 Normal Italic</p>'
         }
-      ],
-
-      textDecorationHTML: `<p class="text-underline">Text decoration underline</p>
-<p class="text-line-through">Text decoration line-through</p>
-<p class="text-no-underline">Text decoration none</p>
-
-<p class="hover:text-underline">Text decoration underline on hover</p>
-<p class="hover:text-line-through">Text decoration line-through on hover</p>
-<p class="text-underline hover:text-no-underline">Text decoration none on hover</p>`,
-      textDecoration: [
-        {
-          title: '',
-          content: 'Text decoration underline',
-          class: 'fs-gamma text-underline',
-          code: '<p class="text-underline">Text decoration underline</p>'
-        },
-        {
-          title: '',
-          content: 'Text decoration line-through',
-          class: 'fs-gamma text-line-through',
-          code: '<p class="text-line-through">Text decoration line-through</p>'
-        },
-        {
-          title: '',
-          content: 'Text decoration none',
-          class: 'fs-gamma text-no-underline',
-          code: '<p class="text-no-underline">Text decoration none</p>'
-        },
-        {
-          title: '',
-          content: 'Text decoration underline on hover',
-          class: 'fs-gamma hover:text-underline',
-          code: '<p class="hover:text-underline">Text decoration underline on hover</p>'
-        },
-        {
-          title: '',
-          content: 'Text decoration line-through on hover',
-          class: 'fs-gamma hover:text-line-through',
-          code: '<p class="hover:text-line-through">Text decoration line-through on hover</p>'
-        },
-        {
-          title: '',
-          content: 'Text decoration none on hover',
-          class: 'fs-gamma text-underline hover:text-no-underline',
-          code: '<p class="text-underline hover:text-no-underline">Text decoration none on hover</p>'
-        },
       ],
     }
   }
