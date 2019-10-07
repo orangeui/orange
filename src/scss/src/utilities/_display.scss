@@ -1,0 +1,20 @@
+/**
+ * Display
+ */
+
+ @each $displayKey, $displayValue in $displays {
+  .d-#{$displayKey} {
+    display: $displayValue;
+  }
+}
+
+/* Display class loop - Responsive */
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
+  @each $displayKey, $displayValue in $displays {
+    @include breakpoint-and-up($breakpoint-key) {
+      .#{$breakpoint-key}\:d-#{$displayKey} {
+        display: #{$displayValue};
+      }
+    }
+  }
+}
