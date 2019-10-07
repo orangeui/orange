@@ -17,8 +17,7 @@
     <docs-item title="" :css_code="mapCss" :item="{}">
       <div slot="body" class="mb48">
         <p><o-label text="SCSS" size="small" /> recall display with <code>display({key})</code> function</p>
-        <p><o-label text="HTML" size="small" /> apply display to elements with <code>.d-{key}</code> class, except <code>display: none;</code> class is <code>.d-hidden</code></p>
-        <p><o-label text="Responsive" size="small" />  apply responsive display to elements <code>.{breakpoint}:-d-{key}</code> class</p>
+        <p><o-label text="HTML" size="small" /> apply display to elements with <code>.d-{key}</code> class</p>
       </div>
     </docs-item>
 
@@ -85,11 +84,11 @@
       </div>
     </docs-item>
 
-    <docs-item title="Hidden" :code="hidden_css">
+    <docs-item title="None / Hidden" :code="none_css">
       <div slot="body">
         <div class="d-inline-block p-4 bg-primary text-center color-white mb-3">1</div>
         <div class="d-inline-block p-4 bg-primary text-center color-white mb-3">2</div>
-        <div class="d-hidden p-4 bg-primary text-center color-white mb-3">3</div>
+        <div class="d-none p-4 bg-primary text-center color-white mb-3">3</div>
       </div>
     </docs-item>
 
@@ -121,7 +120,7 @@
   'table': table,
   'table-cell': table-cell,
   'grid': grid,
-  'hidden': none
+  'none': none
 ) !default;`,
         
         block_css: `<div class="d-block p-4 bg-primary text-center color-white mb-3">1</div>
@@ -156,9 +155,9 @@
     <div class="d-table-cell p-4 bg-primary-dark text-center color-white mb-3">3</div>
   </div>
 </div>`,
-        hidden_css: `<div class="d-inline-block p-4 bg-primary text-center color-white mb-3">1</div>
+        none_css: `<div class="d-inline-block p-4 bg-primary text-center color-white mb-3">1</div>
 <div class="d-inline-block p-4 bg-primary text-center color-white mb-3">2</div>
-<div class="d-hidden p-4 bg-primary text-center color-white mb-3">3</div>`,
+<div class="d-none p-4 bg-primary text-center color-white mb-3">3</div>`,
       
         responsive_css: `<div class="d-block md:d-inline-block lg:d-inline-flex p-4 bg-primary text-center color-white mb-3">1</div>
 <div class="d-block md:d-inline-block lg:d-inline-flex p-4 bg-primary text-center color-white mb-3">2</div>
