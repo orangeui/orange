@@ -8,6 +8,17 @@
   box-shadow: $card-shadow;
 }
 
+/** Image
+--------------------------------------------------*/
+
+.card__image {
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: $card-border-radius $card-border-radius 0 0;
+  }
+}
 
 /** Header
 --------------------------------------------------*/
