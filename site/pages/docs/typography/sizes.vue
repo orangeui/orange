@@ -5,14 +5,22 @@
     </div>
 
     <!-- Type Sizes  -->
-    <docs-item :code="fontSizesHTML" :css_code="fontSizesCSS">
+    <docs-item :code="font_sizes_HTML" :css_code="font_sizes_CSS">
       <div slot="body">
         <p><o-label text="HTML" size="small" /> apply sizes by adding <code>.fs-{size}</code> class to text elements</p>
         <p><o-label text="SCSS" size="small" />  recall size values with the <code>fontSize('{size}')</code> function</p>
-        <p><o-label text="Responsive" size="small" />  apply responsive sizes by adding <code>.{breakpoint}:fs-{size}</code> class to text elements</p>
       </div>
 
-      <docs-simple-list :items="fontSizes" slot="body"></docs-simple-list>
+      <docs-simple-list :items="font_sizes" slot="body"></docs-simple-list>
+    </docs-item>
+
+    <!-- Responsive Sizes  -->
+    <docs-item title="Responsive" :code="font_sizes_responsive_HTML">
+      <div slot="body">
+        <p>Apply responsive sizes by adding <code>.{breakpoint}:fs-{size}</code> class to text elements</p>
+      </div>
+
+      <docs-simple-list :items="font_sizes_responsive" slot="body"></docs-simple-list>
     </docs-item>
 
   </div>
@@ -24,7 +32,7 @@ export default {
 
   data () {
     return {
-      fontSizes: [
+      font_sizes: [
         {
           title: 'Giga',
           content: '76 Giga',
@@ -92,7 +100,7 @@ export default {
           code: '<p class="fs-zeta md:fs-epsilon">14 Zeta with 16 Epsilon on viewport size MD or wider</p>'
         },
       ],
-      fontSizesHTML: `<p class="fs-giga">76 Giga</p>
+      font_sizes_HTML: `<p class="fs-giga">76 Giga</p>
 <p class="fs-mega">54 Mega</p>
 <p class="fs-alpha">36 Alpha</p>
 <p class="fs-beta">28 Beta</p>
@@ -104,9 +112,25 @@ export default {
 
 <p class="fs-epsilon sm:fs-gamma">16 Epsilon with 21 Gamma on viewport size SM or wider</p>
 <p class="fs-zeta md:fs-epsilon">14 Zeta with 16 Epsilon on viewport size MD or wider</p>`,
-      fontSizesCSS: `.example-class {
+      font_sizes_CSS: `.example-class {
   font-size: fontSize('giga');
-}`
+}`,
+      font_sizes_responsive: [
+        {
+          title: 'Epsilon with Gamma',
+          content: '16 Epsilon with 21 Gamma on viewport size SM or wider',
+          class: 'fs-epsilon sm:fs-gamma',
+          code: '<p class="fs-epsilon sm:fs-gamma">16 Epsilon with 21 Gamma on viewport size SM or wider</p>'
+        },
+        {
+          title: 'Zeta with Epsilon',
+          content: '14 Zeta with 16 Epsilon on viewport size MD or wider',
+          class: 'fs-zeta md:fs-epsilon',
+          code: '<p class="fs-zeta md:fs-epsilon">14 Zeta with 16 Epsilon on viewport size MD or wider</p>'
+        },
+      ],
+      font_sizes_responsive_HTML: `<p class="fs-epsilon sm:fs-gamma">16 Epsilon with 21 Gamma on viewport size SM or wider</p>
+<p class="fs-zeta md:fs-epsilon">14 Zeta with 16 Epsilon on viewport size MD or wider</p>`,
     }
   }
 }
