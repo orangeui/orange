@@ -95,11 +95,11 @@
 
     <docs-item title="Responsive" :code="responsive_css">
       <div slot="body">
-        <p>Apply responsive display to elements <code>.{breakpoint}:-d-{key}</code> class</p>
+        <p>Apply responsive display to elements <code>.{breakpoint}:d-{key}</code> class</p>
 
-        <div class="d-block md:d-inline-block lg:d-flex p-4 bg-primary text-center color-white mb-3">1</div>
-        <div class="d-block md:d-inline-block lg:d-flex p-4 bg-primary text-center color-white mb-3">2</div>
-        <div class="d-block md:d-inline-block lg:d-flex p-4 bg-primary text-center color-white mb-3">3</div>
+        <div class="d-block md:d-inline-block lg:d-inline-flex p-4 bg-primary text-center color-white mb-3">1</div>
+        <div class="d-block md:d-inline-block lg:d-inline-flex p-4 bg-primary text-center color-white mb-3">2</div>
+        <div class="d-block md:d-inline-block lg:d-inline-flex p-4 bg-primary text-center color-white mb-3">3</div>
       </div>
     </docs-item>
 
@@ -160,9 +160,9 @@
 <div class="d-inline-block p-4 bg-primary text-center color-white mb-3">2</div>
 <div class="d-hidden p-4 bg-primary text-center color-white mb-3">3</div>`,
       
-        responsive_css: `<div class="d-block md:d-inline-block lg:d-flex p-4 bg-primary text-center color-white mb-3">1</div>
-<div class="d-block md:d-inline-block lg:d-flex p-4 bg-primary text-center color-white mb-3">2</div>
-<div class="d-block md:d-inline-block lg:d-flex p-4 bg-primary text-center color-white mb-3">3</div>`
+        responsive_css: `<div class="d-block md:d-inline-block lg:d-inline-flex p-4 bg-primary text-center color-white mb-3">1</div>
+<div class="d-block md:d-inline-block lg:d-inline-flex p-4 bg-primary text-center color-white mb-3">2</div>
+<div class="d-block md:d-inline-block lg:d-inline-flex p-4 bg-primary text-center color-white mb-3">3</div>`
       }
     }
   }
