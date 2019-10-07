@@ -92,10 +92,82 @@
       </div>
     </docs-item>
 
-    <docs-item title="Responsive" :code="responsive_css">
+    <docs-item title="Responsive">
       <div slot="body">
         <p>Apply responsive display to elements <code>.{breakpoint}:d-{key}</code> class</p>
+        
+        <table class="table table--fixed table--compact table--definition table--border-bottom">
+          <thead>
+            <th></th>
+            <th>
+              Class prefix
+            </th>
+          </thead>
+          <tbody>
+            <tr>
+                <td>
+                  <span class="fs-epsilon color-secondary">Default</span><br>
+                  > 0px
+                </td>
+                <td><code>d-</code></td>
+            </tr>
+            <tr>
+              <td>
+                <span class="fs-epsilon color-secondary">Extra extra small</span><br>
+                > 320px
+              </td>
+              <td><code>xxs:d-{key}</code></td>
+            </tr>
+            <tr>
+              <td>
+                <span class="fs-epsilon color-secondary">Extra small</span><br>
+                > 480px
+              </td>
+              <td><code>xs:d-{key}</code></td>
+            </tr>
+            <tr>
+              <td>
+                <span class="fs-epsilon color-secondary">Small</span><br>
+                > 640px
+              </td>
+              <td><code>sm:d-{key}</code></td>
+            </tr>
+            <tr>
+              <td>
+                <span class="fs-epsilon color-secondary">Medium</span><br>
+                > 768px
+              </td>
+              <td><code>md:d-{key}</code></td>
+            </tr>
+            <tr>
+              <td>
+                <span class="fs-epsilon color-secondary">Large</span><br>
+                > 991px
+              </td>
+              <td><code>lg:d-{key}</code></td>
+            </tr>
+            <tr>
+              <td>
+                <span class="fs-epsilon color-secondary">Extra large</span><br>
+                > 1200px
+              </td>
+              <td><code>xl:d-{key}</code></td>
+            </tr>
+            <tr>
+              <td>
+                <span class="fs-epsilon color-secondary">Extra extra large</span><br>
+                > 1440px
+              </td>
+              <td><code>xxl:d-{key}</code></td>
+            </tr>
+          </tbody>
+        </table>
 
+      </div>
+    </docs-item>
+
+    <docs-item :code="responsive_css">
+      <div slot="body">
         <div class="d-block md:d-inline-block lg:d-inline-flex p-4 bg-primary text-center color-white mb-3">1</div>
         <div class="d-block md:d-inline-block lg:d-inline-flex p-4 bg-primary text-center color-white mb-3">2</div>
         <div class="d-block md:d-inline-block lg:d-inline-flex p-4 bg-primary text-center color-white mb-3">3</div>
