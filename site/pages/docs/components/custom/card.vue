@@ -107,6 +107,41 @@
       </div>
     </docs-item>
 
+    <!-- Card with image -->
+    <docs-item title="With image" :code="card_with_nav_button">
+      <div class="grid grid--1 md:grid--2" slot="body">
+        <div class="card">
+          <div class="card__image">
+            <img src="https://orangecss.com/images/thumbnails/width-480/hedgehog-480.jpg" alt="Card image">
+          </div>
+          <div class="card__header">
+            <h3>Title</h3>
+          </div>
+          <div class="card__body">
+            Body
+          </div>
+          <div class="card__footer">
+            Footer
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image">
+            <img src="https://orangecss.com/images/thumbnails/width-480/hedgehog-480.jpg" alt="Card image">
+          </div>
+          <div class="card__header">
+            <h3>Title</h3>
+          </div>
+          <div class="card__body">
+            Body
+          </div>
+          <div class="card__footer">
+            Footer
+          </div>
+        </div>
+      </div>
+    </docs-item>
+
     <!-- Card with a list -->
     <docs-item title="With a list" :code="card_with_list">
       <div class="card" slot="body">
