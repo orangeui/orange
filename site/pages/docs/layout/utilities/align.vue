@@ -37,6 +37,18 @@
       </div>
     </docs-item>
 
+    <docs-item title="Responsive" :code="responsive_html">
+      <div slot="body">
+        <p>Apply responsive align to elements <code>.{breakpoint}:block-{align}</code> or <code>.{breakpoint}:flex-{align}</code> classes</p>
+
+        <img class="image block-left lg:block-center" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
+
+        <img class="image flex-center lg:flex-right" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
+
+        <img class="image flex-right lg:flex-left" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />
+      </div>
+    </docs-item>
+
     <!-- Usage  -->
     <docs-item title="Usage">
       <table class="table table--compact table--celled" slot="body">
@@ -97,7 +109,12 @@ $border-radiuses: (
 
 <img class="image flex-center" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
 
-<img class="image flex-right" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />`
+<img class="image flex-right" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />`,
+      responsive_html: `<img class="image block-left lg:block-center" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
+
+<img class="image flex-center lg:flex-right" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
+
+<img class="image flex-right lg:flex-left" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />`
     }
   }
 }
