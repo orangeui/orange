@@ -107,7 +107,7 @@ export default {
           class: 'fs-gamma font-normal text-italic',
           code: '<p class="font-normal text-italic">400 Normal Italic</p>'
         }
-      ]
+      ],
     }
   }
 }

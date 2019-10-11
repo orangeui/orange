@@ -11,15 +11,26 @@
 
       <ul>
         <li><router-link :to="{ name: 'docs-global-colors'}" exact><span>Colors</span></router-link></li>
+        <li><router-link :to="{ name: 'docs-global-background-colors'}"><span>Background colors</span></router-link></li>
         <li><router-link :to="{ name: 'docs-global-icons'}"><span>Icons</span></router-link></li>
-        <li><router-link :to="{ name: 'docs-global-materials'}"><span>Materials</span></router-link></li>
-        <li><router-link :to="{ name: 'docs-global-spacings'}"><span>Spacings</span></router-link></li>
       </ul>
 
       <router-link :to="{ name: 'docs-layout'}" tag="h5">Layout</router-link>
 
       <ul>
-        <li><router-link :to="{ name: 'docs-layout'}"><span>Grid</span></router-link></li>
+        <li><router-link :to="{ name: 'docs-layout'}" exact><span>Grid</span></router-link></li>
+        
+        
+        <li>
+          <router-link :to="{ name: 'docs-layout-utilities'}" tag="h6">Utilities</router-link>
+          <ul>
+            <li><router-link :to="{ name: 'docs-layout-utilities-align'}"><span>Align</span></router-link></li>
+            <li><router-link :to="{ name: 'docs-layout-utilities-border-radius'}"><span>Border Radius</span></router-link></li>
+            <li><router-link :to="{ name: 'docs-layout-utilities-box-shadow'}"><span>Box Shadow</span></router-link></li>
+            <li><router-link :to="{ name: 'docs-layout-utilities-display'}"><span>Display</span></router-link></li>
+            <li><router-link :to="{ name: 'docs-layout-utilities-spacings'}"><span>Spacings</span></router-link></li>
+          </ul>
+        </li>
       </ul>
 
       <router-link :to="{ name: 'docs-typography'}" tag="h5">Typography</router-link>
@@ -28,6 +39,14 @@
         <li><router-link :to="{ name: 'docs-typography'}" exact><span>Font</span></router-link></li>
         <li><router-link :to="{ name: 'docs-typography-sizes'}"><span>Sizes</span></router-link></li>
         <li><router-link :to="{ name: 'docs-typography-styles'}"><span>Styles</span></router-link></li>
+
+        <li>
+          <router-link :to="{ name: 'docs-typography-utilities'}" tag="h6">Utilities</router-link>
+          <ul>
+            <li><router-link :to="{ name: 'docs-typography-utilities-text-align'}"><span>Text Align</span></router-link></li>
+            <li><router-link :to="{ name: 'docs-typography-utilities-text-decoration'}"><span>Text Decoration</span></router-link></li>
+          </ul>
+        </li>
       </ul>
 
       <router-link :to="{ name: 'docs-components'}" tag="h5">Components</router-link>

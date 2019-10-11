@@ -46,9 +46,28 @@
   @return map-get($shadows, $shadow);
 }
 
-/* Breakpoints */
+/** Breakpoints
+--------------------------------------------------*/
 @function breakpoint($breakpoint) {
   @return map-get($breakpoints, $breakpoint);
+}
+
+/** Border radius
+--------------------------------------------------*/
+@function rounded($border-radius) {
+  @return map-get($border-radiuses, $border-radius);
+}
+
+/** Display
+--------------------------------------------------*/
+@function display($display) {
+  @return map-get($displays, $display);
+}
+
+/** Spacing
+--------------------------------------------------*/
+@function space($space) {
+  @return map-get($spaces, $space);
 }
 
 /** Components

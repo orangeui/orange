@@ -47,9 +47,9 @@
       <div slot="body">
         <p>Add stylesheets and scripts to all your pages via our CDN.</p>
 
-        <code-block code='<link rel="stylesheet" href="https://cdn.orangecss.com/1.4.0/css/orange.min.css">' code_markup="HTML" />
+        <code-block code='<link rel="stylesheet" href="https://cdn.orangecss.com/1.4.1/css/orange.min.css">' code_markup="HTML" />
 
-        <code-block code='<script src="https://cdn.orangecss.com/1.4.0/js/orange.min.js"></script>' code_markup="HTML" />
+        <code-block code='<script src="https://cdn.orangecss.com/1.4.1/js/orange.min.js"></script>' code_markup="HTML" />
 
         <p>The latest release can be found at <a href="https://github.com/orangeui/orange" target="_blank">https://github.com/orangeui/orange</a>.</p>
 

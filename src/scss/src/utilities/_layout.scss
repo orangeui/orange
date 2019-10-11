@@ -1,0 +1,84 @@
+/**
+ * Layout
+ */
+
+/** Block */
+.block-left {
+  display: block;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block-right {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+
+/** Flex */
+.flex-left {
+  display: flex;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.flex-center {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-right {
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+@each $breakpoint-key, $breakpoint-value in $breakpoints {
+  @include breakpoint-and-up($breakpoint-key) {
+    /** Block */
+    .#{$breakpoint-key}\:block-left {
+      display: block;
+      margin-right: auto;
+      margin-left: 0;
+    }
+
+    .#{$breakpoint-key}\:block-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .#{$breakpoint-key}\:block-right {
+      display: block;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    /** Flex */
+    .#{$breakpoint-key}\:flex-left {
+      display: flex;
+      margin-right: auto;
+      margin-left: 0;
+    }
+
+    .#{$breakpoint-key}\:flex-center {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .#{$breakpoint-key}\:flex-right {
+      display: flex;
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+}
