@@ -8,7 +8,6 @@
     <docs-item class="explanation">
       <div slot="body">
         <p>
-          Global description of breakpoints
         </p>
       </div>
     </docs-item>
@@ -16,7 +15,7 @@
     <docs-item title="Variables" :css_code="breakpoints">
       <div slot="body">
         <p>
-          Description of customization maybe?
+          Default breakpoint widths are shown below.
         </p>
       </div>
     </docs-item>

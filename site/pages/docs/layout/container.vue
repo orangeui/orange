@@ -8,7 +8,7 @@
     <docs-item class="explanation">
       <div slot="body">
         <p>
-          Global description of container?
+
         </p>
       </div>
     </docs-item>

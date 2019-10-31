@@ -8,21 +8,7 @@
     <docs-item class="explanation">
       <div slot="body">
         <p>
-          This grid is non-responsive until Orange <code>v1.4.0</code>.
         </p>
-      </div>
-    </docs-item>
-
-    <docs-item title="Container" :css_code="container_widths">
-      <div slot="body">
-        <p>
-          Container is an element that wraps content and has gap on sides. Class <code>.container</code> limits the
-          width, while <code>.container-fluid</code> is full width.
-          <br>
-          Gutter can be changed with variable <code>$container-gap</code>. Default is <code>12px</code>
-        </p>
-
-        <p>Default container widths on all the breakpoints are shown below.</p>
       </div>
     </docs-item>
 
