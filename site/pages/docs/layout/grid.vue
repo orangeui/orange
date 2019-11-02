@@ -28,7 +28,7 @@
           </div>
         </div>
 
-        <h3>3 columns - responsive (describe this better)</h3>
+        <h3>3 columns - responsive</h3>
         <div class="grid grid--2 sm:grid--3">
           <div v-for="number in 12" :key="number">
             {{ number }}
