@@ -74,7 +74,7 @@
   right: $dropdown-icon-right;
 
   svg {
-    height: $dropdown-icon-height;
+    height: $dropdown-icon-height / 2;
     width: $dropdown-icon-width;
     display: block;
 
@@ -299,8 +299,8 @@
       right: $dropdown-large-icon-right;
 
       svg {
-        width: $spacing-base;
-        height: $spacing-base;
+        width: $dropdown-large-icon-width;
+        height: $dropdown-large-icon-height / 2;
       }
     }
 
