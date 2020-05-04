@@ -7,7 +7,7 @@ module.exports = {
         useBuiltIns: false,
         /* Disabled due to clash with Storybook MDX */
         /* Use false if using normal .js stories */
-        jsx: true
+        jsx: process.env.NODE_ENV === 'test' ? true : false
       }
     ]
   ]
