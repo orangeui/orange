@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components|Basic/Button Colors 1`] = `
+<div>
+  <button
+    class="button button--primary"
+    type="button"
+  >
+    <!---->
+     Button 
+    <!---->
+  </button>
+   
+  <button
+    class="button button--secondary"
+    type="button"
+  >
+    <!---->
+     Button 
+    <!---->
+  </button>
+   
+  <hr />
+   
+  <button
+    class="button button--primary button--color-secondary"
+    type="button"
+  >
+    <!---->
+     Button 
+    <!---->
+  </button>
+   
+  <button
+    class="button button--secondary button--color-secondary"
+    type="button"
+  >
+    <!---->
+     Button 
+    <!---->
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Button Disabled 1`] = `
+<button
+  class="button button--primary"
+  disabled="disabled"
+  type="button"
+>
+  <!---->
+   Can't touch this 
+  <!---->
+</button>
+`;
+
+exports[`Storyshots Components|Basic/Button Icon 1`] = `
+<div>
+  <button
+    class="button button--primary button--icon-only"
+    type="button"
+  >
+    <!---->
+     
+    <!---->
+     
+    <i
+      class="icon-remove"
+    />
+  </button>
+  <hr />
+   
+  <button
+    class="button button--primary"
+    type="button"
+  >
+    <!---->
+     With an icon 
+    <i
+      class="icon-arrow-right"
+    />
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Button Inverted 1`] = `
+<div
+  class="p-3 bg-primary"
+>
+  <button
+    class="button button--primary button--inverted"
+    type="button"
+  >
+    <!---->
+     Button 
+    <!---->
+  </button>
+   
+  <button
+    class="button button--secondary button--inverted"
+    type="button"
+  >
+    <!---->
+     Button 
+    <!---->
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Button Roles 1`] = `
+<div>
+  <button
+    class="button button--primary"
+    type="button"
+  >
+    <!---->
+     Primary 
+    <!---->
+  </button>
+  <hr />
+   
+  <button
+    class="button button--secondary"
+    type="button"
+  >
+    <!---->
+     Secondary 
+    <!---->
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Button Sizes 1`] = `
+<div>
+  <button
+    class="button button--large"
+    type="button"
+  >
+    <!---->
+     Large 
+    <!---->
+  </button>
+  <hr />
+   
+  <button
+    class="button button--primary"
+    type="button"
+  >
+    <!---->
+     Regular 
+    <!---->
+  </button>
+  <hr />
+   
+  <button
+    class="button button--small"
+    type="button"
+  >
+    <!---->
+     Small 
+    <!---->
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Button Tryout 1`] = `
+<div
+  class=""
+>
+  <button
+    class="button button--primary button--color-secondary"
+    type="button"
+  >
+    <!---->
+     Hello Storybook 
+    <i
+      class="icon-plus"
+    />
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Button Variants 1`] = `
+<div>
+  <button
+    class="button button--primary button--basic"
+    type="button"
+  >
+    <!---->
+     Primary basic 
+    <!---->
+  </button>
+  <hr />
+   
+  <button
+    class="button button--secondary button--basic"
+    type="button"
+  >
+    <!---->
+     Secondary basic 
+    <!---->
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Button Wide 1`] = `
+<button
+  class="button button--primary button--wide"
+  type="button"
+>
+  <!---->
+   Wide button 
+  <!---->
+</button>
+`;
