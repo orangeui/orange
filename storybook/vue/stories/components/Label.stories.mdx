@@ -1,0 +1,58 @@
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/vue';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+import OLabel from '../../src/components/Label/Label';
+
+<Meta title='Components|Basic/Label' component={ OLabel } />
+
+# Label
+
+Use a label when you want to <mark>classify content or data</mark>. It is often used as simple visual cue, but can also have interactive properties and act as a button (example: tags, that can be removed from a list).
+
+The Label component is an <mark>inline-block</mark> element meant to be used inline along elements such as text, buttons and forms. It's width is defined by the lenght of content that's passed inside.
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of button on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OLabel },
+    template: `<o-label @click="handleRegularClick" @dismissClick="handleDismissClick" :text="text" :icon="icon" :size="size" :color="color" :dismiss="dismiss" />`,
+    methods: { 
+      handleRegularClick: action('click'),
+      handleDismissClick: action('dismiss-click')
+    },
+    props: {
+      text: {
+        default: text('Text', 'Hello Storybook')
+      },
+      icon: {
+        default: text('Icon', 'plus')
+      },
+      size: {
+        default: text('Size', 'small')
+      },
+      color: {
+        default: text('Color', 'secondary')
+      },
+      dismiss: {
+        default: boolean('Dismiss', false)
+      }
+    },
+  }}
+</Story>
+
+<hr/>
+
+
+
+
+## Props
+
+<Props of={OLabel} />
