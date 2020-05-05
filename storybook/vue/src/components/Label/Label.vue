@@ -13,28 +13,50 @@ export default {
 
   props: {
     /**
-     * Text in button
+     * Text in label
      */
     text: {
       type: String,
       required: false,
       default: null
     },
+
+    /**
+     * Icon on right side of text
+     *
+     * Possible values: See [Icons page](link-to-page)
+     */
     icon: {
       type: String,
       required: false,
       default: null
     },
+
+    /**
+     * Label size
+     *
+     * Possible values: <code>small, pill, dot</code>
+     */
     size: {
       type: String,
       required: false,
       default: null
     },
+
+    /**
+     * Label color
+     *
+     * Possible values: See [Colors page](link-to-page)
+     */
     color: {
       type: String,
       required: false,
       default: null
     },
+
+    /**
+     * It will force to use <code>X</code> icon and add ability to <code>click</code> event on icon.
+     */
     dismiss: {
       type: Boolean,
       required: false,
@@ -63,7 +85,7 @@ export default {
   methods: {
     click(e) {
       /**
-       * Passthrough dismissClick event
+       * Passthrough <code>click</code> event
        * @type {Event}
        */
       this.$emit('click', e)
@@ -71,7 +93,7 @@ export default {
 
     dismissClick(e) {
       /**
-       * Passthrough dismissClick event
+       * Passthrough <code>dismissClick</code> event that is wired on <code>icon</code>
        * @type {Event}
        */
       this.$emit('dismissClick', e)
