@@ -489,3 +489,520 @@ exports[`Storyshots Components|Basic/Label With an icon 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots Global|Icon Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <span
+      class="icon-arrow-down"
+    />
+     
+    <span
+      class="icon-arrow-left color-primary"
+    />
+     
+    <span
+      class="icon-arrow-right color-secondary"
+    />
+     
+    <span
+      class="icon-arrow-up color-secondary"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Global|Icon Symbols 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="docs__simple-list"
+  >
+    <li
+      class="docs__icons-list"
+    >
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-arrow-down"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          arrow-down
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-arrow-left"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          arrow-left
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-arrow-right"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          arrow-right
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-arrow-skip"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          arrow-skip
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-arrow-up"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          arrow-up
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-audience"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          audience
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-billing"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          billing
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-breadcrumb"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          breadcrumb
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-budget"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          budget
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-burger"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          burger
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-caret-down"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          caret-down
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-caret-up"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          caret-up
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-code"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          code
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-dashboard"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          dashboard
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-desktop"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          desktop
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-editor"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          editor
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-events"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          events
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-external"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          external
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-heart"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          heart
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-launch"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          launch
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-lock"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          lock
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-mobile"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          mobile
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-plan"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          plan
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-plus"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          plus
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-profile"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          profile
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-refresh"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          refresh
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-remove"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          remove
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-rules"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          rules
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-settings"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          settings
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-target"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          target
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-team"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          team
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-theme"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          theme
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-tick"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          tick
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-x"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          x
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-integrations"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          integrations
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-more"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          more
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Global|Icon Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <span
+    class="icon-arrow-down color-secondary"
+  />
+</div>
+`;
