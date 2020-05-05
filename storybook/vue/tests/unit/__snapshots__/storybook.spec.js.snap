@@ -249,3 +249,243 @@ exports[`Storyshots Components|Basic/Button Wide 1`] = `
   </button>
 </div>
 `;
+
+exports[`Storyshots Components|Basic/Label Basic 1`] = `
+<div
+  class="p-4"
+>
+  <span
+    class="label"
+  >
+    
+  Basic
+
+  
+    <!---->
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Label Colors 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <span
+      class="label"
+    >
+      
+  Basic
+
+  
+      <!---->
+    </span>
+     
+    <hr />
+     
+    <span
+      class="label label--primary"
+    >
+      
+  Primary
+
+  
+      <!---->
+    </span>
+     
+    <span
+      class="label label--secondary"
+    >
+      
+  Secondary
+
+  
+      <!---->
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Label Dismissible 1`] = `
+<div
+  class="p-4"
+>
+  <span
+    class="label label--dismiss"
+  >
+    
+  Dismissible
+
+  
+    <i
+      class="icon-x"
+    />
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Label Size 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <span
+      class="label label--small"
+    >
+      
+  Small
+
+  
+      <!---->
+    </span>
+     
+    <span
+      class="label label--primary label--small"
+    >
+      
+  Small
+
+  
+      <!---->
+    </span>
+     
+    <span
+      class="label label--secondary label--small"
+    >
+      
+  Small
+
+  
+      <!---->
+    </span>
+     
+    <hr />
+     
+    <span
+      class="label label--pill"
+    >
+      
+  
+
+  
+      <!---->
+    </span>
+     
+    <span
+      class="label label--primary label--pill"
+    >
+      
+  
+
+  
+      <!---->
+    </span>
+     
+    <span
+      class="label label--secondary label--pill"
+    >
+      
+  
+
+  
+      <!---->
+    </span>
+     
+    <hr />
+     
+    <span
+      class="label label--dot"
+    >
+      
+  
+
+  
+      <!---->
+    </span>
+     
+    <span
+      class="label label--primary label--dot"
+    >
+      
+  
+
+  
+      <!---->
+    </span>
+     
+    <span
+      class="label label--secondary label--dot"
+    >
+      
+  
+
+  
+      <!---->
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Label Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <span
+    class="label label--secondary label--small"
+  >
+    
+  Hello Storybook
+
+  
+    <i
+      class="icon-plus"
+    />
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Label With an icon 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <span
+      class="label"
+    >
+      
+  More
+
+  
+      <i
+        class="icon-more"
+      />
+    </span>
+     
+    <hr />
+     
+    <span
+      class="label label--primary"
+    >
+      
+  Add
+
+  
+      <i
+        class="icon-plus"
+      />
+    </span>
+     
+    <span
+      class="label label--secondary"
+    >
+      
+  Secondary
+
+  
+      <i
+        class="icon-arrow-skip"
+      />
+    </span>
+  </div>
+</div>
+`;
