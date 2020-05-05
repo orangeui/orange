@@ -51,6 +51,86 @@ Tryout is for live example of button on **Canvas** tab and bottom tab **Knobs**
 <hr/>
 
 
+# Basic
+
+<Preview>
+  <Story name='Basic'>{{
+    components: { OLabel },
+    template: `<o-label text="Basic" />`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Colors
+
+<Preview>
+  <Story name='Colors'>{{
+    components: { OLabel },
+    template: `<div>
+      <o-label text="Basic" /> <hr />
+      <o-label text="Primary" color="primary" /> <o-label text="Secondary" color="secondary" />
+    </div>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# With an icon
+
+<Preview>
+  <Story name='With an icon'>{{
+    components: { OLabel },
+    template: `<div>
+      <o-label text="More" icon="more" /> <hr />
+      <o-label text="Add" icon="plus" color="primary" /> <o-label text="Secondary" icon="arrow-skip" color="secondary" />
+    </div>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Dismissible
+
+It will force to use <mark>X</mark> icon and add ability to <mark>click</mark> event on icon.
+
+<Preview>
+  <Story name='Dismissible'>{{
+    components: { OLabel },
+    template: `<o-label text="Dismissible" @dismissClick="handleDismissClick" :dismiss="true" />`,
+    methods: {
+      handleDismissClick: action('dismiss-click')
+    },
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Size
+
+<Preview>
+  <Story name='Size'>{{
+    components: { OLabel },
+    template: `<div>
+      <o-label text="Small" size="small" />
+      <o-label text="Small" size="small" color="primary" />
+      <o-label text="Small" size="small" color="secondary" />
+      <hr />
+      <o-label size="pill" />
+      <o-label size="pill" color="primary" />
+      <o-label size="pill" color="secondary" />
+      <hr />
+      <o-label size="dot" />
+      <o-label size="dot" color="primary" />
+      <o-label size="dot" color="secondary" />
+    </div>`
+  }}</Story>
+</Preview>
+
 
 
 ## Props
