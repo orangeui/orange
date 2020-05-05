@@ -1,4 +1,4 @@
-import '@orange-ui/orange/dist/css/orange.css';
+import "!style-loader!css-loader!sass-loader!../../../src/scss/src/styles.scss";
 import { addParameters, addDecorator } from "@storybook/vue";
 
 const paddedList = () => {
