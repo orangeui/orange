@@ -81,7 +81,7 @@ export default {
     },
 
     /**
-     * Button icon on right side of text or without text / icon only
+     * Button size
      *
      * Possible values: <code>small, large</code>
      */
@@ -148,7 +148,7 @@ export default {
   methods: {
     click(e) {
       /**
-       * Passthrough click event
+       * Passthrough <code>click</code> event
        * @type {Event}
        */
       this.$emit('click', e)
