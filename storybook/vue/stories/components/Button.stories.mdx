@@ -4,6 +4,7 @@ import { storiesOf } from '@storybook/vue';
 import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
 
 import OButton from '../../src/components/Button/Button';
+import IconList from '../../src/components/Icon/IconList';
 
 <Meta title='Components|Basic/Button' component={ OButton } />
 
@@ -54,7 +55,7 @@ Tryout is for live example of button on **Canvas** tab and bottom tab **Knobs**
         default: text('Variant', 'basic')
       },
       icon: {
-        default: text('Icon', 'plus')
+        default: select('Icon', IconList, IconList[0])
       },
       color: {
         default: text('Color', 'secondary')
