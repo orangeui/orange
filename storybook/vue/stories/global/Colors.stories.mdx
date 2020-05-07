@@ -1,0 +1,68 @@
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/vue';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+import ColorList from '../../src/global/ColorList.js';
+import ColorSlugs from '../../src/global/ColorSlugs.js';
+
+
+<Meta title='Global|Colors' />
+
+
+# Icon
+
+Icons are graphical projections of <mark>objects, actions and ideas</mark>.
+
+
+<hr/>
+
+
+<Story name='Tryout'>
+  {{
+    components: {},
+    template: `<div>
+        <ul class="docs__bg-color-list">
+          <li>
+            <div class="docs__bg-color-item" :class="'bg-' + color"></div>
+            <p>
+              {{ color }}
+            </p>
+          </li>
+        </ul>
+      </div>`,
+    props: {
+      color: {
+        default: select('Color', ColorSlugs, ColorSlugs[0])
+      }
+    }
+  }}
+</Story>
+
+<hr/>
+
+<Story name='List'>
+  {{
+    components: {},
+    template: `<div>
+      <div v-for="color in colors">
+        <h2>{{ color.name }}</h2>
+        <ul class="docs__bg-color-list">
+          <li v-for="colorShade in color.colorShades">
+            <div class="docs__bg-color-item" :class="'bg-' + colorShade.slug"></div>
+            <p>
+              {{ colorShade.name }}<br>
+              {{ colorShade.slug }}<br>
+              {{ colorShade.hex }}
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>`,
+    props: {
+      colors: {
+        default: () => ColorList
+      }
+    }
+  }}
+</Story>
