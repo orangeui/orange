@@ -5,6 +5,7 @@ import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
 
 import OButton from '../../src/components/Button/Button';
 import IconList from '../../src/components/Icon/IconList';
+import ColorBase from '../../src/global/ColorBase.js';
 
 <Meta title='Components|Basic/Button' component={ OButton } />
 
@@ -58,7 +59,7 @@ Tryout is for live example of button on **Canvas** tab and bottom tab **Knobs**
         default: select('Icon', IconList, IconList[0])
       },
       color: {
-        default: text('Color', 'secondary')
+        default: select('Color', ColorBase, ColorBase[0])
       },
       size: {
         default: select('Size', 
