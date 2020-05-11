@@ -195,13 +195,13 @@ exports[`Storyshots Components|Basic/Button Tryout 1`] = `
     class=""
   >
     <button
-      class="button button--primary button--color-secondary"
+      class="button button--primary button--color-primary"
       type="button"
     >
       <!---->
        Hello Storybook 
       <i
-        class="icon-plus"
+        class="icon-arrow-down"
       />
     </button>
   </div>
@@ -486,6 +486,1818 @@ exports[`Storyshots Components|Basic/Label With an icon 1`] = `
         class="icon-arrow-skip"
       />
     </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/List Divide style 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="list list--large list--divide"
+  >
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          First item
+        </h3>
+         
+        <p>
+          Description of the first item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Second item
+        </h3>
+         
+        <p>
+          Description of the second item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Third item
+        </h3>
+         
+        <p>
+          Description of the third item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/List Hover style 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="list list--large list--hover"
+  >
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          First item
+        </h3>
+         
+        <p>
+          Description of the first item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Second item
+        </h3>
+         
+        <p>
+          Description of the second item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Third item
+        </h3>
+         
+        <p>
+          Description of the third item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/List Large 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="list list--large"
+  >
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          First item
+        </h3>
+         
+        <p>
+          Description of the first item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Second item
+        </h3>
+         
+        <p>
+          Description of the second item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Third item
+        </h3>
+         
+        <p>
+          Description of the third item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/List Medium 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="list list--medium"
+  >
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          First item
+        </h3>
+         
+        <p>
+          Description of the first item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Second item
+        </h3>
+         
+        <p>
+          Description of the second item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Third item
+        </h3>
+         
+        <p>
+          Description of the third item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/List Pointer style 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="list list--large list--hover"
+  >
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          First item
+        </h3>
+         
+        <p>
+          Description of the first item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Second item
+        </h3>
+         
+        <p>
+          Description of the second item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Third item
+        </h3>
+         
+        <p>
+          Description of the third item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/List Small 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="list list--small"
+  >
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          First item
+        </h3>
+         
+        <p>
+          Description of the first item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Second item
+        </h3>
+         
+        <p>
+          Description of the second item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Third item
+        </h3>
+         
+        <p>
+          Description of the third item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/List Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="list list--large"
+  >
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          First item
+        </h3>
+         
+        <p>
+          Description of the first item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Second item
+        </h3>
+         
+        <p>
+          Description of the second item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Third item
+        </h3>
+         
+        <p>
+          Description of the third item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Navigation Align Center 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <nav
+      class="nav nav--center"
+    >
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active"
+            href="#/"
+          >
+            <!---->
+             Navigation
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/breadcrumbs"
+          >
+            <!---->
+             Breadcrumbs
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/message"
+          >
+            <!---->
+             Message
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/empty-state"
+          >
+            <!---->
+             Empty State
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Navigation Align Right 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <nav
+      class="nav nav--right"
+    >
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active"
+            href="#/"
+          >
+            <!---->
+             Navigation
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/breadcrumbs"
+          >
+            <!---->
+             Breadcrumbs
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/message"
+          >
+            <!---->
+             Message
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/empty-state"
+          >
+            <!---->
+             Empty State
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Navigation Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <nav
+      class="nav nav--left"
+    >
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active"
+            href="#/"
+          >
+            <!---->
+             Navigation
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/breadcrumbs"
+          >
+            <!---->
+             Breadcrumbs
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/message"
+          >
+            <!---->
+             Message
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/empty-state"
+          >
+            <!---->
+             Empty State
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Navigation Disabled item 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <nav
+      class="nav nav--left"
+    >
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active"
+            href="#/"
+          >
+            <!---->
+             Navigation
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/breadcrumbs"
+          >
+            <!---->
+             Breadcrumbs
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/message"
+          >
+            <!---->
+             Message
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class="is-disabled"
+            href="#/empty-state"
+          >
+            <!---->
+             Empty State
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Navigation Toned in color 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <nav
+      class="nav nav--color-secondary nav--left"
+    >
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active"
+            href="#/"
+          >
+            <!---->
+             Navigation
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/breadcrumbs"
+          >
+            <!---->
+             Breadcrumbs
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/message"
+          >
+            <!---->
+             Message
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/empty-state"
+          >
+            <!---->
+             Empty State
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Navigation Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <nav
+      class="nav nav--left"
+    >
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active"
+            href="#/"
+          >
+            <span
+              class="icon-integrations"
+            />
+             Navigation
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/breadcrumbs"
+          >
+            <!---->
+             Breadcrumbs
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/message"
+          >
+            <!---->
+             Message
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/empty-state"
+          >
+            <!---->
+             Empty State
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Navigation With icons 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <nav
+      class="nav nav--left"
+    >
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active"
+            href="#/"
+          >
+            <span
+              class="icon-integrations"
+            />
+             Navigation
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/breadcrumbs"
+          >
+            <span
+              class="icon-theme"
+            />
+             Breadcrumbs
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/message"
+          >
+            <span
+              class="icon-rules"
+            />
+             Message
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/empty-state"
+          >
+            <span
+              class="icon-code"
+            />
+             Empty State
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Storyshots Global|Colors List 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div>
+      <h2>
+        Primary
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-primary-dark"
+          />
+           
+          <p>
+            
+              Primary dark
+            <br />
+            
+              primary-dark
+            <br />
+            
+              #da7700
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-primary"
+          />
+           
+          <p>
+            
+              Primary
+            <br />
+            
+              primary
+            <br />
+            
+              #ffa941
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-primary-light"
+          />
+           
+          <p>
+            
+              Primary Light
+            <br />
+            
+              primary-light
+            <br />
+            
+              #ffd7a7
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Secondary
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-secondary-dark"
+          />
+           
+          <p>
+            
+              Secondary dark
+            <br />
+            
+              secondary-dark
+            <br />
+            
+              #1113a1
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-secondary"
+          />
+           
+          <p>
+            
+              Secondary
+            <br />
+            
+              secondary
+            <br />
+            
+              #4648d2
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-secondary-light"
+          />
+           
+          <p>
+            
+              Secondary Light
+            <br />
+            
+              secondary-light
+            <br />
+            
+              #8b8df3
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Red
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-red-dark"
+          />
+           
+          <p>
+            
+              Red dark
+            <br />
+            
+              red-dark
+            <br />
+            
+              #d1000d
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-red"
+          />
+           
+          <p>
+            
+              Red
+            <br />
+            
+              red
+            <br />
+            
+              #fa3d49
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-red-light"
+          />
+           
+          <p>
+            
+              Red Light
+            <br />
+            
+              red-light
+            <br />
+            
+              #ff9ea4
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Orange
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-orange-dark"
+          />
+           
+          <p>
+            
+              Orange dark
+            <br />
+            
+              orange-dark
+            <br />
+            
+              #da7700
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-orange"
+          />
+           
+          <p>
+            
+              Orange
+            <br />
+            
+              orange
+            <br />
+            
+              #ffa941
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-orange-light"
+          />
+           
+          <p>
+            
+              Orange Light
+            <br />
+            
+              orange-light
+            <br />
+            
+              #ffd7a7
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Yellow
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-yellow-dark"
+          />
+           
+          <p>
+            
+              Yellow dark
+            <br />
+            
+              yellow-dark
+            <br />
+            
+              #ccb100
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-yellow"
+          />
+           
+          <p>
+            
+              Yellow
+            <br />
+            
+              yellow
+            <br />
+            
+              #ffe433
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-yellow-light"
+          />
+           
+          <p>
+            
+              Yellow Light
+            <br />
+            
+              yellow-light
+            <br />
+            
+              #fff299
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Green
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-green-dark"
+          />
+           
+          <p>
+            
+              Green dark
+            <br />
+            
+              green-dark
+            <br />
+            
+              #19902d
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-green"
+          />
+           
+          <p>
+            
+              Green
+            <br />
+            
+              green
+            <br />
+            
+              #4bc45f
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-green-light"
+          />
+           
+          <p>
+            
+              Green Light
+            <br />
+            
+              green-light
+            <br />
+            
+              #8aeb9a
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Indigo
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-indigo-dark"
+          />
+           
+          <p>
+            
+              Indigo dark
+            <br />
+            
+              indigo-dark
+            <br />
+            
+              #005387
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-indigo"
+          />
+           
+          <p>
+            
+              Indigo
+            <br />
+            
+              indigo
+            <br />
+            
+              #178cd6
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-indigo-light"
+          />
+           
+          <p>
+            
+              Indigo Light
+            <br />
+            
+              indigo-light
+            <br />
+            
+              #54bdff
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Blue
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-blue-dark"
+          />
+           
+          <p>
+            
+              Blue dark
+            <br />
+            
+              blue-dark
+            <br />
+            
+              #0000c0
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-blue"
+          />
+           
+          <p>
+            
+              Blue
+            <br />
+            
+              blue
+            <br />
+            
+              #3333f3
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-blue-light"
+          />
+           
+          <p>
+            
+              Blue Light
+            <br />
+            
+              blue-light
+            <br />
+            
+              #8d8dff
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Violet
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-violet-dark"
+          />
+           
+          <p>
+            
+              Violet dark
+            <br />
+            
+              violet-dark
+            <br />
+            
+              #5800b1
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-violet"
+          />
+           
+          <p>
+            
+              Violet
+            <br />
+            
+              violet
+            <br />
+            
+              #8b26f1
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-violet-light"
+          />
+           
+          <p>
+            
+              Violet Light
+            <br />
+            
+              violet-light
+            <br />
+            
+              #be7eff
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Black
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-black"
+          />
+           
+          <p>
+            
+              Black
+            <br />
+            
+              black
+            <br />
+            
+              #000
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Gray
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-gray-darkest"
+          />
+           
+          <p>
+            
+              Gray darkest
+            <br />
+            
+              gray-darkest
+            <br />
+            
+              #333
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-gray-dark"
+          />
+           
+          <p>
+            
+              Gray dark
+            <br />
+            
+              gray-dark
+            <br />
+            
+              #6b6b6b
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-gray"
+          />
+           
+          <p>
+            
+              Gray
+            <br />
+            
+              gray
+            <br />
+            
+              #999
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-gray-light"
+          />
+           
+          <p>
+            
+              Gray Light
+            <br />
+            
+              gray-light
+            <br />
+            
+              #ccc
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-gray-light"
+          />
+           
+          <p>
+            
+              Gray Light
+            <br />
+            
+              gray-light
+            <br />
+            
+              #ebebeb
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        White
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-white"
+          />
+           
+          <p>
+            
+              White
+            <br />
+            
+              white
+            <br />
+            
+              #fff
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Global|Colors Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <ul
+      class="docs__bg-color-list"
+    >
+      <li>
+        <div
+          class="docs__bg-color-item bg-primary-light"
+        />
+         
+        <p>
+          
+              primary-light
+            
+        </p>
+      </li>
+    </ul>
   </div>
 </div>
 `;
