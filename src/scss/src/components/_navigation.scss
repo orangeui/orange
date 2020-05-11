@@ -48,7 +48,8 @@
 
     /** Active state */
     &.is-active,
-    &.is-exact-active.is-active {
+    &.is-exact-active.is-active,
+    &.router-link-exact-active {
       color: rgba($nav-link-color, $nav-link-active-color-opacity);
 
       &::after {
@@ -115,7 +116,8 @@
       }
 
       &.is-active,
-      &.is-exact-active.is-active {
+      &.is-exact-active.is-active,
+      &.router-link-exact-active {
         color: rgba(color(#{$name}), $nav-color-link-color-opacity-active);
 
         &::after {
