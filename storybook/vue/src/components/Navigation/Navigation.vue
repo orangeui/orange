@@ -1,0 +1,46 @@
+<template>
+  <nav class="nav" :class="nav_classes">
+    <ul>
+      <slot />
+    </ul>
+  </nav>
+</template>
+
+<script>
+export default {
+  name: 'Navigation',
+
+  props: {
+    /**
+     * Navigation color
+     *
+     * Possible values: See [Colors page](link-to-page)
+     */
+    color: {
+      type: String,
+      required: false,
+      default: null
+    },
+
+    /**
+     * Navigation align
+     *
+     * Possible values: <code>left, center, right</code>
+     */
+    align: {
+      type: String,
+      required: false,
+      default: 'left'
+    },
+  },
+
+  computed: {
+    nav_classes () {
+      return {
+        [`nav--color-${this.color}`]: this.color,
+        [`nav--${this.align}`]: this.align,
+      }
+    }
+  }
+}
+</script>
