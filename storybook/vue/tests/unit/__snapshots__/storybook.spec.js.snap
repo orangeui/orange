@@ -1770,6 +1770,375 @@ exports[`Storyshots Components|Custom/Avatar Tryout 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components|Custom/Breadcrumbs Basic 1`] = `
+<div
+  class="p-4"
+>
+  <nav
+    class="breadcrumbs"
+  >
+    <!---->
+     
+    <ul>
+      <li>
+        <a
+          class="router-link-exact-active router-link-active"
+        >
+          <span
+            class="icon-integrations"
+          />
+           First
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Second
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Three
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Four
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Breadcrumbs Colors 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <nav
+      class="breadcrumbs breadcrumbs--color-primary"
+    >
+      <!---->
+       
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active is-active"
+          >
+            <span
+              class="icon-integrations"
+            />
+             First
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class="router-link-exact-active router-link-active is-active"
+          >
+            <!---->
+             Second
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+          >
+            <!---->
+             Three
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+          >
+            <!---->
+             Four
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <hr />
+     
+    <nav
+      class="breadcrumbs breadcrumbs--color-secondary"
+    >
+      <!---->
+       
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active is-active"
+          >
+            <span
+              class="icon-integrations"
+            />
+             First
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class="router-link-exact-active router-link-active is-active"
+          >
+            <!---->
+             Second
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+          >
+            <!---->
+             Three
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+          >
+            <!---->
+             Four
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Breadcrumbs Full width 1`] = `
+<div
+  class="p-4"
+>
+  <nav
+    class="breadcrumbs breadcrumbs--full"
+  >
+    <!---->
+     
+    <ul>
+      <li>
+        <a
+          class="router-link-exact-active router-link-active"
+        >
+          <span
+            class="icon-integrations"
+          />
+           First
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Second
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Three
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Four
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Breadcrumbs Steps 1`] = `
+<div
+  class="p-4"
+>
+  <nav
+    class="breadcrumbs"
+  >
+    <!---->
+     
+    <ul>
+      <li>
+        <a
+          class="router-link-exact-active router-link-active is-active"
+        >
+          <span
+            class="icon-integrations"
+          />
+           First
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class="router-link-exact-active router-link-active is-active"
+        >
+          <!---->
+           Second
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Three
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Four
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Breadcrumbs Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <nav
+    class="breadcrumbs"
+  >
+    <!---->
+     
+    <ul>
+      <li>
+        <a
+          class="router-link-exact-active router-link-active"
+        >
+          <span
+            class="icon-integrations"
+          />
+           First
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Second
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Three
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Four
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Breadcrumbs With a back button 1`] = `
+<div
+  class="p-4"
+>
+  <nav
+    class="breadcrumbs"
+  >
+    <a
+      class="breadcrumbs__button router-link-exact-active router-link-active"
+      href="#/"
+    >
+      
+    Back text
+  
+    </a>
+     
+    <ul>
+      <li>
+        <a
+          class="router-link-exact-active router-link-active"
+        >
+          <span
+            class="icon-integrations"
+          />
+           First
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Second
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Three
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Four
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
 exports[`Storyshots Global|Colors List 1`] = `
 <div
   class="p-4"
