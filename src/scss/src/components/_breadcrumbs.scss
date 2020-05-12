@@ -92,6 +92,7 @@
       }
 
       &.is-active,
+      &.router-link-exact-active,
       &:hover {
         color: $breadcrumbs-color;
         text-decoration: none;
@@ -198,6 +199,7 @@ a.breadcrumbs__button {
         }
 
         &.is-active,
+        &.router-link-exact-active,
         &:hover {
           color: color(#{$name});
           background-color: rgba(color(#{$name}), $breadcrumbs-active-background-transparency);

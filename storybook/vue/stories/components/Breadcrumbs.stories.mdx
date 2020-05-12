@@ -82,7 +82,7 @@ Tryout is for live example of breadcrumbs on **Canvas** tab and bottom tab **Kno
   <Story name='With a back button' decorators={[BasicRouterDecorator]}>
     {{
       components: { OBreadcrumbs, OBreadcrumbsItem },
-      template: `<o-breadcrumbs back_route="/back" back_route_text="Back text">
+      template: `<o-breadcrumbs back_route="back" back_route_text="Back text">
           <o-breadcrumbs-item to="/" icon="integrations">First</o-breadcrumbs-item>
           <o-breadcrumbs-item to="/second">Second</o-breadcrumbs-item>
           <o-breadcrumbs-item to="/three">Three</o-breadcrumbs-item>
