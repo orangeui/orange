@@ -1,0 +1,47 @@
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/vue';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+import OCallout from '../../src/components/Callout/Callout';
+
+import ColorBase from '../../src/global/ColorBase.js';
+
+<Meta title='Components|Custom/Callout' component={ OCallout } />
+
+# Callout
+
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of Callout on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OCallout },
+    template: `<o-callout :color="color" :shadow="shadow" :action="action" @click="handleClick">
+      Orange color lies between red and yellow on the light spectrum
+    </o-callout>`,
+    methods: { handleClick: action('click') },
+    props: {
+      color: {
+        default: select('Color', ColorBase, null)
+      },
+      shadow: {
+        default: boolean('Shadow', false)
+      },
+      action: {
+        default: boolean('Action', false)
+      },
+    },
+  }}
+</Story>
+
+
+## Callout Props
+
+<Props of={OCallout} />
+
