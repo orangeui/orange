@@ -2139,6 +2139,299 @@ exports[`Storyshots Components|Custom/Breadcrumbs With a back button 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components|Custom/Callout As stats 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="grid"
+  >
+    <div
+      class="col-3"
+    >
+      <div
+        class="callout"
+      >
+        <h1>
+          28K
+        </h1>
+         
+        <p>
+          <strong>
+            Impressions
+          </strong>
+          <br />
+          
+              Quantity of notifications shown
+            
+        </p>
+      </div>
+    </div>
+     
+    <div
+      class="col-3"
+    >
+      <div
+        class="callout"
+      >
+        <h1>
+          285
+        </h1>
+         
+        <p>
+          <strong>
+            Clicks
+          </strong>
+          <br />
+          
+              Traffic from linked notifications
+            
+        </p>
+      </div>
+    </div>
+     
+    <div
+      class="col-3"
+    >
+      <div
+        class="callout"
+      >
+        <h1>
+          1106
+        </h1>
+         
+        <p>
+          <strong>
+            Engagements
+          </strong>
+          <br />
+          
+              Mouse hovers, which pause the animation
+            
+        </p>
+      </div>
+    </div>
+     
+    <div
+      class="col-3"
+    >
+      <div
+        class="callout"
+      >
+        <h1>
+          $724
+        </h1>
+         
+        <p>
+          <strong>
+            Sales
+          </strong>
+          <br />
+          
+              Goal completion value in dollars
+            
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Callout Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="callout"
+  >
+    
+        Orange color lies between red and yellow on the light spectrum
+      
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Callout Colors 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      class="callout callout--color-white callout--shadow"
+    >
+      
+          Click here to claim a free hat
+        
+    </div>
+     
+    <div
+      class="callout callout--color-gray callout--shadow"
+    >
+      
+          Click here to claim a free hat
+        
+    </div>
+     
+    <div
+      class="callout callout--color-black callout--shadow"
+    >
+      
+          Click here to claim a free hat
+        
+    </div>
+     
+    <div
+      class="callout callout--color-primary callout--shadow"
+    >
+      
+          Click here to claim a free hat
+        
+    </div>
+     
+    <div
+      class="callout callout--color-secondary callout--shadow"
+    >
+      
+          Click here to claim a free hat
+        
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Callout Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="callout"
+  >
+    
+      Orange color lies between red and yellow on the light spectrum
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Callout With a shadow 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="callout callout--color-white callout--shadow"
+  >
+    
+        Orange color lies between red and yellow on the light spectrum
+      
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Callout With an action 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="callout callout--color-green callout--action"
+  >
+    
+        Click here to claim a free hat
+      
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Callout With an image 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="grid"
+  >
+    <div
+      class="col-3"
+    >
+      <div
+        class="callout callout--color-primary callout--action"
+      >
+        <div
+          class="callout__image"
+        >
+          <img
+            alt="Callout #1"
+            src="https://fomo.com/static/images/app/dashboard/google-analytics.svg"
+          />
+        </div>
+         
+        <p>
+          <strong>
+            Conversion metrics
+          </strong>
+          <br />
+          
+              Connect Google Analytics to see Conversions & Sales metrics.
+            
+        </p>
+      </div>
+    </div>
+     
+    <div
+      class="col-3"
+    >
+      <div
+        class="callout callout--color-primary callout--action"
+      >
+        <div
+          class="callout__image"
+        >
+          <img
+            alt="Callout #3"
+            src="https://fomo.com/static/images/app/dashboard/badges.svg"
+          />
+        </div>
+         
+        <p>
+          <strong>
+            Achievements
+          </strong>
+          <br />
+          
+              Take note on your wins. Receive Badges for every milestone.
+            
+        </p>
+      </div>
+    </div>
+     
+    <div
+      class="col-3"
+    >
+      <div
+        class="callout callout--color-primary callout--action"
+      >
+        <div
+          class="callout__image"
+        >
+          <img
+            alt="Callout #4"
+            src="https://fomo.com/static/images/app/dashboard/slack.svg"
+          />
+        </div>
+         
+        <p>
+          <strong>
+            Real-time updates
+          </strong>
+          <br />
+          
+              Get informed by sending Fomo events to any #channel.
+            
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Global|Colors List 1`] = `
 <div
   class="p-4"
