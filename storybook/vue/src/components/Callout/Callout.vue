@@ -9,18 +9,29 @@ export default {
   name: 'Callout',
 
   props: {
+    /**
+     * Callout color
+     *
+     * Possible values: See [Colors page](link-to-page)
+     */
     color: {
       type: String,
       required: false,
       default: null
     },
 
+    /**
+     * Throw a shadow
+     */
     shadow: {
       type: Boolean,
       required: false,
       default: false
     },
     
+    /**
+     * Show hover effects
+     */
     action: {
       type: Boolean,
       required: false,
