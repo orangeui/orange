@@ -2432,6 +2432,513 @@ exports[`Storyshots Components|Custom/Callout With an image 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components|Custom/Card Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card"
+  >
+    <div
+      class="card__header"
+    >
+      <h3>
+        Title
+      </h3>
+    </div>
+     
+    <div
+      class="card__body"
+    >
+      
+          Body
+        
+    </div>
+     
+    <div
+      class="card__footer"
+    >
+      
+          Footer
+        
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Card Clickable footer 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card"
+  >
+    <div
+      class="card__header"
+    >
+      <h3>
+        Title
+      </h3>
+    </div>
+     
+    <div
+      class="card__body"
+    >
+      
+          Body
+        
+    </div>
+     
+    <div
+      class="card__footer card__footer--click"
+    >
+      
+          Footer
+          
+      <span
+        class="icon-plus"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Card Multiple sections 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card"
+  >
+    <div
+      class="card__header"
+    >
+      <h3>
+        Title
+      </h3>
+       
+      <button
+        class="button button--primary"
+        type="button"
+      >
+        <!---->
+         Action 
+        <!---->
+      </button>
+    </div>
+     
+    <section
+      class="card__section"
+    >
+      <div
+        class="card__header"
+      >
+        <h4>
+          First section
+        </h4>
+         
+        <button
+          class="button button--primary button--small button--color-gray"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+       
+      <div
+        class="card__body"
+      >
+        
+            Body of first section
+          
+      </div>
+    </section>
+     
+    <section
+      class="card__section"
+    >
+      <div
+        class="card__header"
+      >
+        <h4>
+          Second section
+        </h4>
+         
+        <button
+          class="button button--primary button--small button--color-gray"
+          type="button"
+        >
+          <!---->
+           Action 
+          <!---->
+        </button>
+      </div>
+       
+      <div
+        class="card__body"
+      >
+        
+            Body of second section
+          
+      </div>
+    </section>
+     
+    <div
+      class="card__footer"
+    >
+      
+          Footer
+        
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Card Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card"
+  >
+    <div
+      class="card__header"
+    >
+      <h3>
+        Title
+      </h3>
+       
+      <!---->
+    </div>
+     
+    <div
+      class="card__body"
+    >
+      
+        Body
+      
+    </div>
+     
+    <div
+      class="card__footer"
+    >
+      
+        Footer
+        
+      <!---->
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Card With a button 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card"
+  >
+    <div
+      class="card__header"
+    >
+      <h3>
+        Title
+      </h3>
+       
+      <button
+        class="button button--primary"
+        type="button"
+      >
+        <!---->
+         Action 
+        <!---->
+      </button>
+    </div>
+     
+    <div
+      class="card__body"
+    >
+      
+          Body
+        
+    </div>
+     
+    <div
+      class="card__footer"
+    >
+      
+          Footer
+        
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Card With a list 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card card--full"
+  >
+    <div
+      class="card__header"
+    >
+      <h3>
+        Title
+      </h3>
+    </div>
+     
+    <div
+      class="card__body"
+    >
+      <ul
+        class="list list--large list--divide list--hover"
+      >
+        <li
+          class="list__item"
+        >
+          <div
+            class=""
+          >
+            <h3>
+              First item
+            </h3>
+             
+            <p>
+              Description of the first item
+            </p>
+          </div>
+           
+          <div
+            class="list__action"
+          >
+            <button
+              class="button button--small"
+              type="button"
+            >
+              <!---->
+               Action 
+              <!---->
+            </button>
+          </div>
+        </li>
+         
+        <li
+          class="list__item"
+        >
+          <div
+            class=""
+          >
+            <h3>
+              Second item
+            </h3>
+             
+            <p>
+              Description of the second item
+            </p>
+          </div>
+           
+          <div
+            class="list__action"
+          >
+            <button
+              class="button button--small"
+              type="button"
+            >
+              <!---->
+               Action 
+              <!---->
+            </button>
+          </div>
+        </li>
+         
+        <li
+          class="list__item"
+        >
+          <div
+            class=""
+          >
+            <h3>
+              Third item
+            </h3>
+             
+            <p>
+              Description of the third item
+            </p>
+          </div>
+           
+          <div
+            class="list__action"
+          >
+            <button
+              class="button button--small"
+              type="button"
+            >
+              <!---->
+               Action 
+              <!---->
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Card With image 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="grid grid--1 md:grid--2"
+  >
+    <div
+      class="card"
+    >
+      <div
+        class="card__image"
+      >
+        <img
+          alt="Card image"
+          src="https://orangecss.com/images/thumbnails/width-480/hedgehog-480.jpg"
+        />
+      </div>
+       
+      <div
+        class="card__header"
+      >
+        <h3>
+          Title
+        </h3>
+      </div>
+       
+      <div
+        class="card__body"
+      >
+        
+            Body
+          
+      </div>
+       
+      <div
+        class="card__footer"
+      >
+        
+            Footer
+          
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Card With navigation and button 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card"
+  >
+    <div
+      class="card__header"
+    >
+      <nav
+        class="nav nav--left"
+      >
+        <ul>
+          <li>
+            <a
+              class="router-link-exact-active router-link-active"
+              href="#/"
+            >
+              <!---->
+               First item
+            </a>
+          </li>
+           
+          <li>
+            <a
+              class=""
+              href="#/breadcrumbs"
+            >
+              <!---->
+               Second item
+            </a>
+          </li>
+           
+          <li>
+            <a
+              class=""
+              href="#/message"
+            >
+              <!---->
+               Third item
+            </a>
+          </li>
+           
+          <li>
+            <a
+              class=""
+              href="#/empty-state"
+            >
+              <!---->
+               Fourth item
+            </a>
+          </li>
+        </ul>
+      </nav>
+       
+      <button
+        class="button button--primary"
+        type="button"
+      >
+        <!---->
+         Action 
+        <!---->
+      </button>
+    </div>
+     
+    <div
+      class="card__body"
+    >
+      
+          Body
+        
+    </div>
+     
+    <div
+      class="card__footer"
+    >
+      
+          Footer
+        
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Card Without gutter 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card card--full"
+  >
+    <div
+      class="card__body"
+    >
+      
+          Body without gutter
+        
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Global|Colors List 1`] = `
 <div
   class="p-4"
