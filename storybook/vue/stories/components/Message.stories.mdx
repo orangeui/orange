@@ -1,0 +1,66 @@
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/vue';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+import OMessage from '../../src/components/Message/Message';
+
+import ColorBase from '../../src/global/ColorBase.js';
+
+<Meta title='Components|Custom/Message' component={ OMessage } />
+
+# Message
+
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of Message on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OMessage },
+    template: `<o-message :heading="heading" :color="color" >
+      Orange color lies between red and yellow on the light spectrum
+    </o-message>`,
+    methods: { handleClick: action('click') },
+    props: {
+      heading: {
+        default: text('Heading', 'Heading')
+      },
+      color: {
+        default: select('Color', ColorBase, null)
+      },
+      
+      action: {
+        default: boolean('Action', false)
+      },
+    },
+  }}
+</Story>
+
+<hr />
+
+
+# Basic
+
+<Preview>
+  <Story name='Basic'>
+    {{
+      components: { OMessage },
+      template: `<o-message>
+        Orange color lies between red and yellow on the light spectrum
+      </o-message>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+## Message Props
+
+<Props of={OMessage} />
+
