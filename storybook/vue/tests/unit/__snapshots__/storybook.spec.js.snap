@@ -3118,6 +3118,258 @@ exports[`Storyshots Components|Custom/EmptyState Tryout 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components|Custom/Image Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Katzee"
+      class="image"
+      src="https://orangecss.com/images/thumbnails/cat.jpg"
+    />
+     
+    <a
+      class=""
+      href="#/somewhere"
+    >
+      <img
+        alt="Foxy"
+        class="image"
+        src="https://orangecss.com/images/thumbnails/fox.jpg"
+      />
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Image Rounded - circle 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Doggo"
+      class="image image--circle"
+      src="https://orangecss.com/images/thumbnails/square/dog-square.jpg"
+    />
+     
+    <a
+      class=""
+      href="#/somewhere"
+    >
+      <img
+        alt="Foxy"
+        class="image image--circle"
+        src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
+      />
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Image Rounded 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Katzee"
+      class="image image--rounded"
+      src="https://orangecss.com/images/thumbnails/cat.jpg"
+    />
+     
+    <a
+      class=""
+      href="#/somewhere"
+    >
+      <img
+        alt="Foxy"
+        class="image image--rounded"
+        src="https://orangecss.com/images/thumbnails/fox.jpg"
+      />
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Image Sizes 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <p>
+      Default - auto size
+    </p>
+     
+    <img
+      alt="Katzee"
+      class="image"
+      src="https://orangecss.com/images/thumbnails/cat.jpg"
+    />
+     
+    <p>
+      Extra small - 60px
+    </p>
+     
+    <img
+      alt="Foxy"
+      class="image image--size-xsmall"
+      src="https://orangecss.com/images/thumbnails/width-60/fox-60.jpg"
+    />
+     
+    <p>
+      Small - 120px
+    </p>
+     
+    <img
+      alt="Hedgy"
+      class="image image--size-small"
+      src="https://orangecss.com/images/thumbnails/width-120/hedgehog-120.jpg"
+    />
+     
+    <p>
+      Medium - 240px
+    </p>
+     
+    <img
+      alt="Doggo"
+      class="image image--size-medium"
+      src="https://orangecss.com/images/thumbnails/width-240/dog-240.jpg"
+    />
+     
+    <p>
+      Large - 480px
+    </p>
+     
+    <img
+      alt="Hedgy"
+      class="image image--size-large"
+      src="https://orangecss.com/images/thumbnails/width-480/hedgehog-480.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Image Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Katzze"
+      class="image image---"
+      src="https://orangecss.com/images/thumbnails/cat.jpg"
+    />
+     
+    <a
+      href="#"
+    >
+      <img
+        alt="Katzze"
+        class="image image---"
+        src="https://orangecss.com/images/thumbnails/square/dog-square.jpg"
+      />
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Image With action, in grid 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="grid"
+  >
+    <div
+      class="col-2"
+    >
+      <img
+        alt="Hedgy"
+        class="image image--action"
+        src="https://orangecss.com/images/thumbnails/hedgehog.jpg"
+      />
+    </div>
+     
+    <div
+      class="col-2"
+    >
+      <img
+        alt="Katzee"
+        class="image image--action"
+        src="https://orangecss.com/images/thumbnails/cat.jpg"
+      />
+    </div>
+     
+    <div
+      class="col-2"
+    >
+      <img
+        alt="Doggo"
+        class="image image--action"
+        src="https://orangecss.com/images/thumbnails/square/dog-square.jpg"
+      />
+    </div>
+     
+    <div
+      class="col-2"
+    >
+      <img
+        alt="Foxy"
+        class="image image--action"
+        src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
+      />
+    </div>
+     
+    <div
+      class="col-2"
+    >
+      <img
+        alt="Katzee"
+        class="image image--circle image--action"
+        src="https://orangecss.com/images/thumbnails/square/cat-square.jpg"
+      />
+    </div>
+     
+    <div
+      class="col-2"
+    >
+      <img
+        alt="Hedgy"
+        class="image image--circle image--action"
+        src="https://orangecss.com/images/thumbnails/square/hedgehog-square.jpg"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/Image With shadow 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Katzee"
+      class="image image--shadow"
+      src="https://orangecss.com/images/thumbnails/cat.jpg"
+    />
+     
+    <a
+      class=""
+      href="#/somewhere"
+    >
+      <img
+        alt="Foxy"
+        class="image image--shadow"
+        src="https://orangecss.com/images/thumbnails/fox.jpg"
+      />
+    </a>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Global|Colors List 1`] = `
 <div
   class="p-4"
