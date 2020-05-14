@@ -2939,6 +2939,185 @@ exports[`Storyshots Components|Custom/Card Without gutter 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components|Custom/EmptyState Inside card 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card"
+  >
+    <div
+      class="card__body"
+    >
+      <div
+        class="empty-state"
+      >
+        <div
+          class="empty-state__content"
+        >
+          <div
+            class="empty-state__title"
+          >
+            <h2>
+              
+            It's your first time here
+          
+            </h2>
+          </div>
+           
+          <div
+            class="empty-state__description"
+          >
+             
+            <p>
+              
+            A short explanation of this view or why it is empty. Longer texts span into multiple lines.
+          
+            </p>
+             
+          </div>
+           
+          <div
+            class="empty-state__buttons"
+          >
+            <button
+              class="button button--primary"
+              type="button"
+            >
+              <!---->
+               Continue 
+              <!---->
+            </button>
+          </div>
+        </div>
+         
+        <div
+          class="empty-state__image"
+        >
+          <img
+            src="https://orangecss.com/images/empty-state.svg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/EmptyState No gutter 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="empty-state"
+  >
+    <div
+      class="empty-state__content"
+    >
+      <div
+        class="empty-state__title"
+      >
+        <h2>
+          
+        It's your first time here
+      
+        </h2>
+      </div>
+       
+      <div
+        class="empty-state__description"
+      >
+         
+        <p>
+          
+        A short explanation of this view or why it is empty. Longer texts span into multiple lines.
+      
+        </p>
+         
+      </div>
+       
+      <div
+        class="empty-state__buttons"
+      >
+        <button
+          class="button button--primary"
+          type="button"
+        >
+          <!---->
+           Continue 
+          <!---->
+        </button>
+      </div>
+    </div>
+     
+    <div
+      class="empty-state__image"
+    >
+      <img
+        src="https://orangecss.com/images/empty-state.svg"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Custom/EmptyState Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="empty-state"
+  >
+    <div
+      class="empty-state__content"
+    >
+      <div
+        class="empty-state__title"
+      >
+        <h2>
+          
+        It's your first time here
+      
+        </h2>
+      </div>
+       
+      <div
+        class="empty-state__description"
+      >
+         
+        <p>
+          
+        A short explanation of this view or why it is empty. Longer texts span into multiple lines.
+      
+        </p>
+         
+      </div>
+       
+      <div
+        class="empty-state__buttons"
+      >
+        <button
+          class="button button--primary"
+          type="button"
+        >
+          <!---->
+           Continue 
+          <!---->
+        </button>
+      </div>
+    </div>
+     
+    <div
+      class="empty-state__image"
+    >
+      <img
+        src="https://orangecss.com/images/empty-state.svg"
+      />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Global|Colors List 1`] = `
 <div
   class="p-4"
