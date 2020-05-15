@@ -118,7 +118,7 @@
     }
     
     &:checked {
-      > label::before {
+      + label::before {
         background-color: $checkbox-disabled-color;
       }
     }
