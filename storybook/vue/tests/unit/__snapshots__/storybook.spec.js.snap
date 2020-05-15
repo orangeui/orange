@@ -3727,6 +3727,200 @@ exports[`Storyshots Components|Custom/Message With an avatar 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components|Forms/Checkbox Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="checkbox"
+  >
+    <input
+      id="checkbox_basic"
+      type="checkbox"
+    />
+     
+    <label>
+      Label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Checkbox Group 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="form__item"
+  >
+    <div
+      class="checkbox-group"
+    >
+      <div
+        class="checkbox-group__label"
+      >
+        Group label
+      </div>
+       
+      <div
+        class="checkbox"
+      >
+        <input
+          id="checkbox_basic_tryout_1"
+          type="checkbox"
+        />
+         
+        <label>
+          First label
+        </label>
+      </div>
+       
+      <div
+        class="checkbox"
+      >
+        <input
+          id="checkbox_basic_tryout_2"
+          type="checkbox"
+        />
+         
+        <label>
+          Second label
+        </label>
+      </div>
+       
+      <div
+        class="checkbox is-checked"
+      >
+        <input
+          id="checkbox_basic_tryout_3"
+          type="checkbox"
+        />
+         
+        <label>
+          Third label
+        </label>
+      </div>
+       
+      <div
+        class="checkbox is-checked"
+      >
+        <input
+          id="checkbox_basic_tryout_4"
+          type="checkbox"
+        />
+         
+        <label>
+          Forth label
+        </label>
+      </div>
+    </div>
+     
+    <div
+      class="form__description"
+    >
+      Description text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Checkbox Tryout - Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="checkbox"
+  >
+    <input
+      id="checkbox_basic_tryout"
+      type="checkbox"
+    />
+     
+    <label>
+      Label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Checkbox Tryout - Group 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="form__item"
+  >
+    <div
+      class="checkbox-group"
+    >
+      <div
+        class="checkbox-group__label"
+      >
+        Group label
+      </div>
+       
+      <div
+        class="checkbox"
+      >
+        <input
+          id="checkbox_basic_tryout_1"
+          type="checkbox"
+        />
+         
+        <label>
+          First label
+        </label>
+      </div>
+       
+      <div
+        class="checkbox"
+      >
+        <input
+          id="checkbox_basic_tryout_2"
+          type="checkbox"
+        />
+         
+        <label>
+          Second label
+        </label>
+      </div>
+       
+      <div
+        class="checkbox is-checked"
+      >
+        <input
+          id="checkbox_basic_tryout_3"
+          type="checkbox"
+        />
+         
+        <label>
+          Third label
+        </label>
+      </div>
+       
+      <div
+        class="checkbox is-checked"
+      >
+        <input
+          id="checkbox_basic_tryout_4"
+          type="checkbox"
+        />
+         
+        <label>
+          Forth label
+        </label>
+      </div>
+    </div>
+     
+    <div
+      class="form__description"
+    >
+      Description text
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Global|Colors List 1`] = `
 <div
   class="p-4"
