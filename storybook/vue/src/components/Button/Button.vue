@@ -137,7 +137,7 @@ export default {
       // Check if button is inside message component
       if (this.$parent.$options._componentTag === 'o-message') {
         let message_color = this.$parent.$options.propsData.color
-        return message_color !== undefined ? `button--color-${message_color}` : 'button--color-gray'
+        return message_color == null ? 'button--color-gray' : `button--color-${message_color}`
       } else {
         return {
           [`button--color-${this.color}`]: this.color,
