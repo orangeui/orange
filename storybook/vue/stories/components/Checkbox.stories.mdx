@@ -110,18 +110,18 @@ Tryout is for live example of Checkbox in group on **Canvas** tab and bottom tab
   {{
     components: { OCheckbox, OCheckboxGroup },
     template: `<o-checkbox-group label="Group label" description="Description text">
-      <o-checkbox v-model="form_model_checkbox_tryout_1" id="checkbox_basic_tryout_1" label="First label" @input="handleClick" />
-      <o-checkbox v-model="form_model_checkbox_tryout_2" id="checkbox_basic_tryout_2" label="Second label" @input="handleClick" />
-      <o-checkbox v-model="form_model_checkbox_tryout_3" id="checkbox_basic_tryout_3" label="Third label" @input="handleClick" />
-      <o-checkbox v-model="form_model_checkbox_tryout_4" id="checkbox_basic_tryout_4" label="Forth label" @input="handleClick" />
+      <o-checkbox v-model="form_model_checkbox_1" id="checkbox_basic_1" label="First label" @input="handleClick" />
+      <o-checkbox v-model="form_model_checkbox_2" id="checkbox_basic_2" label="Second label" @input="handleClick" />
+      <o-checkbox v-model="form_model_checkbox_3" id="checkbox_basic_3" label="Third label" @input="handleClick" />
+      <o-checkbox v-model="form_model_checkbox_4" id="checkbox_basic_4" label="Forth label" @input="handleClick" :disabled="true" />
     </o-checkbox-group>`,
     methods: { handleClick: action('click') },
     data() {
       return {
-        form_model_checkbox_tryout_1: false,
-        form_model_checkbox_tryout_2: false,
-        form_model_checkbox_tryout_3: true,
-        form_model_checkbox_tryout_4: true,
+        form_model_checkbox_1: false,
+        form_model_checkbox_2: false,
+        form_model_checkbox_3: false,
+        form_model_checkbox_4: false,
       }
     }
   }}
