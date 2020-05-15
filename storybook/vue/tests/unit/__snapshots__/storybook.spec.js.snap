@@ -3766,7 +3766,7 @@ exports[`Storyshots Components|Forms/Checkbox Group 1`] = `
         class="checkbox"
       >
         <input
-          id="checkbox_basic_tryout_1"
+          id="checkbox_basic_1"
           type="checkbox"
         />
          
@@ -3779,7 +3779,7 @@ exports[`Storyshots Components|Forms/Checkbox Group 1`] = `
         class="checkbox"
       >
         <input
-          id="checkbox_basic_tryout_2"
+          id="checkbox_basic_2"
           type="checkbox"
         />
          
@@ -3789,10 +3789,10 @@ exports[`Storyshots Components|Forms/Checkbox Group 1`] = `
       </div>
        
       <div
-        class="checkbox is-checked"
+        class="checkbox"
       >
         <input
-          id="checkbox_basic_tryout_3"
+          id="checkbox_basic_3"
           type="checkbox"
         />
          
@@ -3802,10 +3802,11 @@ exports[`Storyshots Components|Forms/Checkbox Group 1`] = `
       </div>
        
       <div
-        class="checkbox is-checked"
+        class="checkbox is-disabled"
       >
         <input
-          id="checkbox_basic_tryout_4"
+          disabled="disabled"
+          id="checkbox_basic_4"
           type="checkbox"
         />
          
@@ -3907,6 +3908,241 @@ exports[`Storyshots Components|Forms/Checkbox Tryout - Group 1`] = `
         />
          
         <label>
+          Forth label
+        </label>
+      </div>
+    </div>
+     
+    <div
+      class="form__description"
+    >
+      Description text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Radio Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="radio"
+  >
+    <input
+      id="radio_basic"
+      name="form_radio_name"
+      type="radio"
+      value="radio_basic"
+    />
+     
+    <label
+      for="radio_basic"
+    >
+      Label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Radio Group 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="form__item"
+  >
+    <div
+      class="radio-group"
+    >
+      <div
+        class="radio-group__label"
+      >
+        Group label
+      </div>
+       
+      <div
+        class="radio"
+      >
+        <input
+          id="radio_basic_1"
+          name="form_radio_group_name"
+          type="radio"
+          value="radio_basic_1"
+        />
+         
+        <label
+          for="radio_basic_1"
+        >
+          First label
+        </label>
+      </div>
+       
+      <div
+        class="radio"
+      >
+        <input
+          id="radio_basic_2"
+          name="form_radio_group_name"
+          type="radio"
+          value="radio_basic_2"
+        />
+         
+        <label
+          for="radio_basic_2"
+        >
+          Second label
+        </label>
+      </div>
+       
+      <div
+        class="radio"
+      >
+        <input
+          id="radio_basic_3"
+          name="form_radio_group_name"
+          type="radio"
+          value="radio_basic_3"
+        />
+         
+        <label
+          for="radio_basic_3"
+        >
+          Third label
+        </label>
+      </div>
+       
+      <div
+        class="radio is-disabled"
+      >
+        <input
+          disabled="disabled"
+          id="radio_basic_4"
+          name="form_radio_group_name"
+          type="radio"
+          value="radio_basic_4"
+        />
+         
+        <label
+          for="radio_basic_4"
+        >
+          Forth label
+        </label>
+      </div>
+    </div>
+     
+    <div
+      class="form__description"
+    >
+      Description text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Radio Tryout - Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="radio"
+  >
+    <input
+      id="radio_basic_tryout"
+      name="form_radio_tryout_name"
+      type="radio"
+      value="radio_basic_tryout"
+    />
+     
+    <label
+      for="radio_basic_tryout"
+    >
+      Label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Radio Tryout - Group 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="form__item"
+  >
+    <div
+      class="radio-group"
+    >
+      <div
+        class="radio-group__label"
+      >
+        Group label
+      </div>
+       
+      <div
+        class="radio"
+      >
+        <input
+          id="radio_basic_tryout_1"
+          name="form_radio_group_tryout_name"
+          type="radio"
+          value="radio_basic_tryout_1"
+        />
+         
+        <label
+          for="radio_basic_tryout_1"
+        >
+          First label
+        </label>
+      </div>
+       
+      <div
+        class="radio"
+      >
+        <input
+          id="radio_basic_tryout_2"
+          name="form_radio_group_tryout_name"
+          type="radio"
+          value="radio_basic_tryout_2"
+        />
+         
+        <label
+          for="radio_basic_tryout_2"
+        >
+          Second label
+        </label>
+      </div>
+       
+      <div
+        class="radio"
+      >
+        <input
+          id="radio_basic_tryout_3"
+          name="form_radio_group_tryout_name"
+          type="radio"
+          value="radio_basic_tryout_3"
+        />
+         
+        <label
+          for="radio_basic_tryout_3"
+        >
+          Third label
+        </label>
+      </div>
+       
+      <div
+        class="radio"
+      >
+        <input
+          id="radio_basic_tryout_4"
+          name="form_radio_group_tryout_name"
+          type="radio"
+          value="radio_basic_tryout_4"
+        />
+         
+        <label
+          for="radio_basic_tryout_4"
+        >
           Forth label
         </label>
       </div>
