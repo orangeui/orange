@@ -1,5 +1,6 @@
 <template>
   <div class="message" :class="classes">
+    <!-- @slot Avatar slot -->
     <slot name="avatar"></slot>
 
     <div class="message__body">
@@ -10,6 +11,7 @@
     </div>
 
     <div class="message__action">
+      <!-- @slot Action slot for button -->
       <slot name="action"></slot>
     </div>
   </div>
@@ -20,35 +22,44 @@ export default {
   name: 'Message',
 
   props: {
-    color: {
-      type: String,
-      required: false,
-      default: null
-    },
-
-    size: {
-      type: String,
-      required: false,
-      default: null
-    },
-
-    shadow: {
-      type: Boolean,
-      required: false,
-      default: false
-    },
-
+    /**
+     * Message Heading before <code>default slot</code>
+     */
     heading: {
       type: String,
       required: false,
       default: null
     },
 
-    avatar: {
+    /**
+     * Message color
+     *
+     * Possible values: See [Colors page](link-to-page)
+     */
+    color: {
       type: String,
       required: false,
       default: null
-    }
+    },
+
+    /**
+     * Message size but for now only supports <code>full</code>. 
+     * That is meant to be used outside containers in order to take full browser width. 
+     *
+     * Possible values: <code>full</code>
+     */
+    size: {
+      type: String,
+      required: false,
+      default: null
+    },
+
+    // Talk to Lucian about this prop / probably unusable
+    shadow: {
+      type: Boolean,
+      required: false,
+      default: false
+    },
   },
 
   computed: {
