@@ -13,9 +13,6 @@ const paddedList = () => {
 };
 
 addParameters({
-  options: {
-    name: 'Orange Vue'
-  },
   docs: { inlineStories: true },
   iframeHeight: '60px',
 });
