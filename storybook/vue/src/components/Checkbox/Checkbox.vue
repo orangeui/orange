@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'checkbox',
+  name: 'Checkbox',
 
   data () {
     return {
