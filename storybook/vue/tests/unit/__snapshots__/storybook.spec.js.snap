@@ -3922,6 +3922,334 @@ exports[`Storyshots Components|Forms/Checkbox Tryout - Group 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components|Forms/Dropdown Basic with strings 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <div
+        class="form-dropdown"
+        id="form_dropdown_basic"
+      >
+        <label
+          class="form-dropdown__label"
+          for="form_dropdown_basic"
+        >
+          Dropdown label
+        </label>
+         
+        <input
+          class="form-dropdown__input"
+          id="form_dropdown_basic"
+          name="form_dropdown_basic"
+          type="text"
+        />
+         
+        <div
+          class="form-dropdown__text"
+        >
+          placeholder
+        </div>
+         
+        <div
+          class="form-dropdown__icon"
+        >
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+              fill="#000000"
+            />
+          </svg>
+           
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+              fill="#000000"
+            />
+          </svg>
+        </div>
+         
+        <div
+          class="form-dropdown__content"
+        >
+          <ul
+            class="form-dropdown__menu"
+          >
+            <li
+              class=""
+            >
+              google 
+              <!---->
+            </li>
+            <li
+              class=""
+            >
+              word 
+              <!---->
+            </li>
+            <li
+              class=""
+            >
+              Advertisement 
+              <!---->
+            </li>
+            <li
+              class=""
+            >
+              Competitor 
+              <!---->
+            </li>
+            <li
+              class=""
+            >
+              Other 
+              <!---->
+            </li>
+          </ul>
+        </div>
+      </div>
+       
+      <div
+        class="form__description"
+      >
+        Description of the dropdown field
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Dropdown Large with objects 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form form--large"
+  >
+    <div
+      class="form__item"
+    >
+      <div
+        class="form-dropdown"
+        id="form_dropdown_basic"
+      >
+        <label
+          class="form-dropdown__label"
+          for="form_dropdown_basic"
+        >
+          Dropdown label
+        </label>
+         
+        <input
+          class="form-dropdown__input"
+          id="form_dropdown_basic"
+          name="form_dropdown_basic"
+          type="text"
+        />
+         
+        <div
+          class="form-dropdown__text"
+        >
+          placeholder
+        </div>
+         
+        <div
+          class="form-dropdown__icon"
+        >
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+              fill="#000000"
+            />
+          </svg>
+           
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+              fill="#000000"
+            />
+          </svg>
+        </div>
+         
+        <div
+          class="form-dropdown__content"
+        >
+          <ul
+            class="form-dropdown__menu"
+          >
+            <li
+              class=""
+            >
+              Penguin 
+              <!---->
+            </li>
+            <li
+              class=""
+            >
+              Bear 
+              <!---->
+            </li>
+            <li
+              class=""
+            >
+              Bird 
+              <!---->
+            </li>
+            <li
+              class=""
+            >
+              Klemen 
+              <!---->
+            </li>
+            <li
+              class=""
+            >
+              Ryan 
+              <!---->
+            </li>
+          </ul>
+        </div>
+      </div>
+       
+      <div
+        class="form__description"
+      >
+        Description of the dropdown field
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Dropdown Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <form
+      class="form form--large"
+    >
+      <div
+        class="form__item"
+      >
+        <div
+          class="form-dropdown"
+          id="form_dropdown_tryout"
+        >
+          <label
+            class="form-dropdown__label"
+            for="form_dropdown_tryout"
+          >
+            Label
+          </label>
+           
+          <input
+            class="form-dropdown__input"
+            id="form_dropdown_tryout"
+            name="form_dropdown_tryout"
+            type="text"
+          />
+           
+          <div
+            class="form-dropdown__text"
+          >
+            Placeholder
+          </div>
+           
+          <div
+            class="form-dropdown__icon"
+          >
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                fill="#000000"
+              />
+            </svg>
+             
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                fill="#000000"
+              />
+            </svg>
+          </div>
+           
+          <div
+            class="form-dropdown__content"
+          >
+            <ul
+              class="form-dropdown__menu"
+            >
+              <li
+                class=""
+              >
+                google 
+                <!---->
+              </li>
+              <li
+                class=""
+              >
+                word 
+                <!---->
+              </li>
+              <li
+                class=""
+              >
+                Advertisement 
+                <!---->
+              </li>
+              <li
+                class=""
+              >
+                Competitor 
+                <!---->
+              </li>
+              <li
+                class=""
+              >
+                Other 
+                <!---->
+              </li>
+            </ul>
+          </div>
+        </div>
+         
+        <div
+          class="form__description"
+        >
+          Description of the dropdown field
+        </div>
+      </div>
+    </form>
+     
+    <code
+      class="d-block mt-4"
+    >
+      
+        Return value: 
+      
+    </code>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components|Forms/Radio Basic 1`] = `
 <div
   class="p-4"
