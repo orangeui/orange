@@ -6,8 +6,6 @@ import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
 import OCheckbox from '../../src/components/Checkbox/Checkbox';
 import OCheckboxGroup from '../../src/components/Checkbox/CheckboxGroup';
 
-import ColorBase from '../../src/global/ColorBase.js';
-
 <Meta title='Components|Forms/Checkbox' />
 
 # Checkbox
@@ -106,27 +104,28 @@ Tryout is for live example of Checkbox in group on **Canvas** tab and bottom tab
 
 # Group
 
-<Story name='Group'>
-  {{
-    components: { OCheckbox, OCheckboxGroup },
-    template: `<o-checkbox-group label="Group label" description="Description text">
-      <o-checkbox v-model="form_model_checkbox_1" id="checkbox_basic_1" label="First label" @input="handleClick" />
-      <o-checkbox v-model="form_model_checkbox_2" id="checkbox_basic_2" label="Second label" @input="handleClick" />
-      <o-checkbox v-model="form_model_checkbox_3" id="checkbox_basic_3" label="Third label" @input="handleClick" />
-      <o-checkbox v-model="form_model_checkbox_4" id="checkbox_basic_4" label="Forth label" @input="handleClick" :disabled="true" />
-    </o-checkbox-group>`,
-    methods: { handleClick: action('click') },
-    data() {
-      return {
-        form_model_checkbox_1: false,
-        form_model_checkbox_2: false,
-        form_model_checkbox_3: false,
-        form_model_checkbox_4: false,
+<Preview>
+  <Story name='Group'>
+    {{
+      components: { OCheckbox, OCheckboxGroup },
+      template: `<o-checkbox-group label="Group label" description="Description text">
+        <o-checkbox v-model="form_model_checkbox_1" id="checkbox_basic_1" label="First label" @input="handleClick" />
+        <o-checkbox v-model="form_model_checkbox_2" id="checkbox_basic_2" label="Second label" @input="handleClick" />
+        <o-checkbox v-model="form_model_checkbox_3" id="checkbox_basic_3" label="Third label" @input="handleClick" />
+        <o-checkbox v-model="form_model_checkbox_4" id="checkbox_basic_4" label="Forth label" @input="handleClick" :disabled="true" />
+      </o-checkbox-group>`,
+      methods: { handleClick: action('click') },
+      data() {
+        return {
+          form_model_checkbox_1: false,
+          form_model_checkbox_2: false,
+          form_model_checkbox_3: false,
+          form_model_checkbox_4: false,
+        }
       }
-    }
-  }}
-</Story>
-
+    }}
+  </Story>
+</Preview>
 
 <hr/>
 

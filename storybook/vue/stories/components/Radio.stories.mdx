@@ -6,8 +6,6 @@ import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
 import ORadio from '../../src/components/Radio/Radio';
 import ORadioGroup from '../../src/components/Radio/RadioGroup';
 
-import ColorBase from '../../src/global/ColorBase.js';
-
 <Meta title='Components|Forms/Radio' />
 
 # Radio
@@ -103,23 +101,25 @@ Tryout is for live example of Radio in group on **Canvas** tab and bottom tab **
 
 # Group
 
-<Story name='Group'>
-  {{
-    components: { ORadio, ORadioGroup },
-    template: `<o-radio-group label="Group label" description="Description text">
-      <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_1" label="First label" @input="handleClick" />
-      <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_2" label="Second label" @input="handleClick" />
-      <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_3" label="Third label" @input="handleClick" />
-      <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_4" label="Forth label" @input="handleClick" :disabled="true" />
-    </o-radio-group>`,
-    methods: { handleClick: action('click') },
-    data() {
-      return {
-        form_model_radio: false,
+<Preview>
+  <Story name='Group'>
+    {{
+      components: { ORadio, ORadioGroup },
+      template: `<o-radio-group label="Group label" description="Description text">
+        <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_1" label="First label" @input="handleClick" />
+        <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_2" label="Second label" @input="handleClick" />
+        <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_3" label="Third label" @input="handleClick" />
+        <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_4" label="Forth label" @input="handleClick" :disabled="true" />
+      </o-radio-group>`,
+      methods: { handleClick: action('click') },
+      data() {
+        return {
+          form_model_radio: false,
+        }
       }
-    }
-  }}
-</Story>
+    }}
+  </Story>
+</Preview>
 
 
 <hr/>
