@@ -18,5 +18,8 @@ module.exports = {
     "^.+\\.js$": "babel-jest", 
     "^.+\\.jsx?$": "babel-jest",
     "^.+\\.mdx?$": "@storybook/addon-docs/jest-transform-mdx"
-  }
+  },
+
+  // Enable lodash or any other global module
+  setupFiles: ["./setup-jest.js"]
 };
