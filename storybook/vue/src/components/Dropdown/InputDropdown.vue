@@ -168,10 +168,10 @@ export default {
     /**
     * Enable validation
     */
-    validate: {
-      type: String,
-      default: null
-    }
+    // validate: {
+    //   type: String,
+    //   default: null
+    // }
   },
 
   data () {
