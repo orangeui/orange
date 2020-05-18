@@ -18,7 +18,7 @@
 
     props: {
       /**
-      * Group label above checkboxes
+      * Group label above radio buttons
       */
       label: {
         type: String,
