@@ -4,6 +4,11 @@ import "!style-loader!css-loader!sass-loader!../../../src/scss/src/styles.scss";
 // Import Docs styles
 import "!style-loader!css-loader!sass-loader!../../../site/assets/styles/styles.scss";
 
+import Vue from'vue';
+import _ from 'lodash';
+
+Vue.prototype._ = _
+
 import { addParameters, addDecorator } from "@storybook/vue";
 
 const paddedList = () => {
