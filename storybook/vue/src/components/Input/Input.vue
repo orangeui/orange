@@ -4,15 +4,22 @@
         'has-extras has-action': hasActionSlot
     }">
 
-    <input class="form__input" :id="id" ref="input" :type="type"
-           :class="{ 'is-full': input_value || input_value === 0, 'has-placeholder': placeholder }"
-           :name="name_default" :placeholder="placeholder"
-           :disabled="disabled" :value="input_value" :readonly="read_only"
-           :min="min" :max="max"
-           autocomplete="off" v-on="input_listeners">
-    <label class="form__label" :for="id">{{ label }}</label>
+    <div v-if="hasActionSlot && action_position === 'left'" class="form__action">
+      <!-- @slot Action slot to pass in <o-button> component or text -->
+      <slot name="action"></slot>
+    </div>
+    
+    <div class="form__input-wrapper">
+      <input class="form__input" :id="id" ref="input" :type="type"
+             :class="{ 'has-value': input_value || input_value === 0 }"
+             :name="name_default"
+             :disabled="disabled" :value="input_value" :readonly="read_only"
+             :min="min" :max="max"
+             autocomplete="off" v-on="input_listeners">
+      <label class="form__label" :for="id">{{ label }}</label>
+    </div>
 
-    <div v-if="hasActionSlot" class="form__action">
+    <div v-if="hasActionSlot && action_position === 'right'" class="form__action">
       <slot name="action"></slot>
     </div>
 
@@ -26,61 +33,106 @@ export default {
   name: 'formInput',
 
   props: {
+    /**
+     * Set value with <code>v-model</code> prop
+     */
     value: {
       type: [ String, Number ],
       required: false, // Value is not required since we allow empty inputs as well
       default: null
     },
+
+    /**
+     * Set input type
+     */
     type: {
       type: String,
       required: false,
       default: 'text'
     },
+
+    /**
+     * Set id to input and label
+     */
     id: {
       type: String,
       required: true,
       default: null
     },
+
+    /**
+     * Set custom name for input
+     */
     name: {
       type: String,
       required: false,
       default: null
     },
+
+    /**
+     * Label text that also serves as placeholder
+     */
     label: {
       type: String,
       required: false,
       default: null
     },
-    placeholder: {
-      type: [String, Number],
-      required: false,
-      default: null
-    },
+
+    /**
+     * Disable input
+     */
     disabled: {
       type: Boolean,
       required: false,
       default: false
     },
+
+    /**
+      * Description text below input
+      */
     description: {
       type: String,
       required: false,
       default: null
     },
+
+    /**
+     * Read-only input
+     */
     read_only: {
       type: Boolean,
       required: false,
       default: false
     },
+
+    /**
+     * Set minimum value allowed
+     */
     min: {
       type: [String, Number],
       required: false,
       default: null
     },
+
+    /**
+     * Set maximum value allowed
+     */
     max: {
       type: [String, Number],
       required: false,
       default: null
     },
+
+    /**
+     * Action position
+     *
+     * Possible values: <code>left, right</code>
+     */
+    action_position: {
+      type: String,
+      required: false,
+      default: 'left'
+    }
   },
 
   data () {
