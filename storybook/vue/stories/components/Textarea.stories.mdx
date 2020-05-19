@@ -1,0 +1,74 @@
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/vue';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+import OFormTextarea from '../../src/components/Textarea/Textarea';
+
+import OButton from '../../src/components/Button/Button';
+
+<Meta title='Components|Forms/Textarea' />
+
+# Textarea
+
+A textarea is an input field that allows for <mark>extended user input</mark>.
+
+
+<hr/>
+
+# Tryout
+
+Tryout is for live example of Textarea on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OFormTextarea },
+    template: `<form class="form">
+      <o-form-textarea id="form_basic" 
+        v-model="form_model" 
+        :label="label"
+        :description="description"
+        :disabled="disabled"
+        :read_only="read_only"
+        :action_position="action_position">
+        <div slot="action">
+          <o-button text="copy to clipboard" size="small" />
+        </div>
+      </o-form-textarea>
+    </form>`,
+    props: {
+      label: {
+        default: text('Label', 'Label')
+      },
+      description: {
+        default: text('Description', 'Description text')
+      },
+      disabled: {
+        default: boolean('Disabled', false)
+      },
+      read_only: {
+        default: boolean('Readonly', false)
+      },
+      action_position: {
+        default: select('Action position', ['hide', 'left', 'right'], 'left')
+      },
+    },
+    data() {
+      return {
+        form_model: null,
+      }
+    },
+  }}
+</Story>
+
+<hr/>
+
+
+
+
+<hr/>
+
+## Input Props
+
+<Props of={OFormTextarea} />
+
