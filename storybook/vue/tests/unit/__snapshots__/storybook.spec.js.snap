@@ -4250,6 +4250,628 @@ exports[`Storyshots Components|Forms/Dropdown Tryout 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components|Forms/Input Basic 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <!---->
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input"
+          id="form_basic"
+          name="form_basic"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Label
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Input Large - Basic 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form form--large"
+  >
+    <div
+      class="form__item"
+    >
+      <!---->
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input"
+          id="form_basic"
+          name="form_basic"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Large
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Input Large - Read-only 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form form--large"
+  >
+    <div
+      class="form__item"
+    >
+      <!---->
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input has-value"
+          id="form_basic"
+          name="form_basic"
+          readonly="readonly"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Label
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Input Large - Read-only with action/extras 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form form--large"
+  >
+    <div
+      class="form__item has-extras has-action"
+    >
+      <div
+        class="form__action"
+      >
+        <div>
+          <button
+            class="button button--primary button--small"
+            type="button"
+          >
+            <!---->
+             copy to clipboard 
+            <!---->
+          </button>
+        </div>
+      </div>
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input has-value"
+          id="form_basic"
+          name="form_basic"
+          readonly="readonly"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Your phone number
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        To change your API key please contact support
+      </p>
+    </div>
+     
+    <div
+      class="form__item has-extras has-action"
+    >
+      <!---->
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input has-value"
+          id="form_basic_2"
+          name="form_basic_2"
+          readonly="readonly"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic_2"
+        >
+          Your API key
+        </label>
+      </div>
+       
+      <div
+        class="form__action"
+      >
+        <div>
+          <button
+            class="button button--primary button--small"
+            type="button"
+          >
+            <!---->
+             copy to clipboard 
+            <!---->
+          </button>
+        </div>
+      </div>
+       
+      <p
+        class="form__description"
+      >
+        To change your API key please contact support
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Input Large - With action/extras 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form form--large"
+  >
+    <div
+      class="form__item has-extras has-action"
+    >
+      <div
+        class="form__action"
+      >
+        <div>
+          
+            +386
+          
+        </div>
+      </div>
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input"
+          id="form_basic"
+          name="form_basic"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Your phone number
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+     
+    <div
+      class="form__item has-extras has-action"
+    >
+      <!---->
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input"
+          id="form_basic_2"
+          name="form_basic_2"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic_2"
+        >
+          https://example.com
+        </label>
+      </div>
+       
+      <div
+        class="form__action"
+      >
+        <div>
+          
+            /orange
+          
+        </div>
+      </div>
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Input Read-only 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <!---->
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input has-value"
+          id="form_basic"
+          name="form_basic"
+          readonly="readonly"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Label
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Input Read-only with action/extras 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item has-extras has-action"
+    >
+      <div
+        class="form__action"
+      >
+        <div>
+          <button
+            class="button button--primary button--small"
+            type="button"
+          >
+            <!---->
+             copy to clipboard 
+            <!---->
+          </button>
+        </div>
+      </div>
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input has-value"
+          id="form_basic"
+          name="form_basic"
+          readonly="readonly"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Your phone number
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        To change your API key please contact support
+      </p>
+    </div>
+     
+    <div
+      class="form__item has-extras has-action"
+    >
+      <!---->
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input has-value"
+          id="form_basic_2"
+          name="form_basic_2"
+          readonly="readonly"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic_2"
+        >
+          Your API key
+        </label>
+      </div>
+       
+      <div
+        class="form__action"
+      >
+        <div>
+          <button
+            class="button button--primary button--small"
+            type="button"
+          >
+            <!---->
+             copy to clipboard 
+            <!---->
+          </button>
+        </div>
+      </div>
+       
+      <p
+        class="form__description"
+      >
+        To change your API key please contact support
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Input Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item has-extras has-action"
+    >
+      <div
+        class="form__action"
+      >
+        <div>
+          <button
+            class="button button--primary button--small"
+            type="button"
+          >
+            <!---->
+             copy to clipboard 
+            <!---->
+          </button>
+        </div>
+      </div>
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input"
+          id="form_basic"
+          name="form_basic"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Label
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Input With action/extras 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item has-extras has-action"
+    >
+      <div
+        class="form__action"
+      >
+        <div>
+          
+            +386
+          
+        </div>
+      </div>
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input"
+          id="form_basic"
+          name="form_basic"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Your phone number
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+     
+    <div
+      class="form__item has-extras has-action"
+    >
+      <!---->
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input"
+          id="form_basic_2"
+          name="form_basic_2"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic_2"
+        >
+          https://example.com
+        </label>
+      </div>
+       
+      <div
+        class="form__action"
+      >
+        <div>
+          
+            /orange
+          
+        </div>
+      </div>
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
 exports[`Storyshots Components|Forms/Radio Basic 1`] = `
 <div
   class="p-4"
