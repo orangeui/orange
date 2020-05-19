@@ -7,6 +7,17 @@ import "!style-loader!css-loader!sass-loader!../../../site/assets/styles/styles.
 import Vue from'vue';
 import _ from 'lodash';
 
+/*
+* Import Directives
+* */
+import AutoExpand from '../src/modules/directives/AutoExpand'
+
+/*
+* Use Directives
+* */
+Vue.directive(AutoExpand)
+
+// Lodash register
 Vue.prototype._ = _
 
 import { addParameters, addDecorator } from "@storybook/vue";
