@@ -1,10 +1,10 @@
 import Vue from 'vue'
 
 export default Vue.directive('auto-expand', {
-  update (el) {
+  componentUpdated (el, binding) {
     const offset = el.offsetHeight - el.clientHeight;
 
-    if (el.value) {
+    if (binding.value) {
       el.style.height = 'auto';
       el.style.height = el.scrollHeight + offset + 'px';
     } else {
