@@ -5314,6 +5314,560 @@ exports[`Storyshots Components|Forms/Textarea Tryout 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components|Forms/Toggle Basic 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Toggle Colors 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-primary is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-secondary is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-red is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-orange is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-yellow is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-green is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-indigo is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-blue is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-violet is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-black is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-gray is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Toggle Custom value names 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--label toggle--large"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <!---->
+          </label>
+        </div>
+         
+        <div>
+          <label
+            class="toggle__text"
+          >
+            Custom value
+          </label>
+           
+          <div
+            class="toggle__value toggle__value--disabled"
+          >
+            Custom Disabled Value Text
+          </div>
+        </div>
+      </div>
+       
+      <!---->
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Toggle Large 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--label toggle--large"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <!---->
+          </label>
+        </div>
+         
+        <div>
+          <label
+            class="toggle__text"
+          >
+            Label
+          </label>
+           
+          <div
+            class="toggle__value toggle__value--disabled"
+          >
+            Disabled
+          </div>
+        </div>
+      </div>
+       
+      <!---->
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Toggle Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--label toggle--color-secondary"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              Label
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <div
+        class="form__description"
+      >
+        Description text
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Toggle With label 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--label"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              Label
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+  </form>
+</div>
+`;
+
 exports[`Storyshots Global|Colors List 1`] = `
 <div
   class="p-4"
