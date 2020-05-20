@@ -88,8 +88,8 @@ export default {
     },
 
     /**
-      * Description text below input
-      */
+     * Description text below input
+     */
     description: {
       type: String,
       required: false,

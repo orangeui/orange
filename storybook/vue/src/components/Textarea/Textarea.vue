@@ -46,48 +46,83 @@ export default {
   },
 
   props: {
+    /**
+     * Set value with <code>v-model</code> prop
+     */
     value: {
       required: true
     },
+
+    /**
+     * Set id to textarea and label
+     */
     id: {
       type: String,
       required: false,
       default: null
     },
+
+    /**
+     * Label text that also serves as placeholder
+     */
     label: {
       type: String,
       required: false,
       default: null
     },
+
+    /**
+     * Disable textarea
+     */
     disabled: {
       type: Boolean,
       required: false,
       default: false
     },
+
+    /**
+     * Description text below input
+     */
     description: {
       type: String,
       required: false,
       default: null
     },
+
+    /**
+     * Read-only textarea
+     */
     read_only: {
       type: Boolean,
       required: false,
       default: false
     },
+
+    /**
+     * Set rows that also serves as height
+     */
     rows: {
       type: Number,
       required: false,
       default: 3
     },
+
+    /**
+     * Autoexpand that makes textarea autoresize
+     */
     autoexpand: {
       type: Boolean,
       required: false,
-      default: true
+      default: false
     },
   },
 
   methods: {
     updateValue (value) {
+      /**
+       * Passthrough <code>input</code> event
+       * @type {Event}
+       */
       this.$emit('input', value)
     }
   },
