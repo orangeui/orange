@@ -5107,6 +5107,213 @@ exports[`Storyshots Components|Forms/Radio Tryout - Group 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components|Forms/Textarea Auto expand 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <textarea
+        class="form__textarea"
+        id="form_basic"
+        name="form_basic"
+        rows="3"
+      />
+       
+      <label
+        class="form__label"
+        for="form_basic"
+      >
+        Label
+      </label>
+       
+      <div
+        class="form__description"
+      >
+        Description text
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Textarea Disabled 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <textarea
+        class="form__textarea"
+        disabled="disabled"
+        id="form_basic"
+        name="form_basic"
+        rows="3"
+      />
+       
+      <label
+        class="form__label"
+        for="form_basic"
+      >
+        Label
+      </label>
+       
+      <div
+        class="form__description"
+      >
+        Description text
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Textarea Large - Basic 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form form--large"
+  >
+    <div
+      class="form__item"
+    >
+      <textarea
+        class="form__textarea"
+        id="form_basic"
+        name="form_basic"
+        rows="3"
+      />
+       
+      <label
+        class="form__label"
+        for="form_basic"
+      >
+        Label
+      </label>
+       
+      <div
+        class="form__description"
+      >
+        Description text
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Textarea Large - Read-only 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form form--large"
+  >
+    <div
+      class="form__item"
+    >
+      <textarea
+        class="form__textarea has-value"
+        id="form_basic"
+        name="form_basic"
+        readonly="readonly"
+        rows="3"
+      />
+       
+      <label
+        class="form__label"
+        for="form_basic"
+      >
+        Label
+      </label>
+       
+      <div
+        class="form__description"
+      >
+        Description text
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Textarea Read-only with rows 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <textarea
+        class="form__textarea has-value"
+        id="form_basic"
+        name="form_basic"
+        readonly="readonly"
+        rows="5"
+      />
+       
+      <label
+        class="form__label"
+        for="form_basic"
+      >
+        Label
+      </label>
+       
+      <div
+        class="form__description"
+      >
+        Description text
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Components|Forms/Textarea Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <textarea
+        class="form__textarea"
+        id="form_basic"
+        name="form_basic"
+        rows="3"
+      />
+       
+      <label
+        class="form__label"
+        for="form_basic"
+      >
+        Label
+      </label>
+       
+      <div
+        class="form__description"
+      >
+        Description text
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
 exports[`Storyshots Global|Colors List 1`] = `
 <div
   class="p-4"
