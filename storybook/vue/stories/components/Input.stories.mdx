@@ -24,7 +24,7 @@ Tryout is for live example of Input on **Canvas** tab and bottom tab **Knobs**
 <Story name='Tryout'>
   {{
     components: { OFormInput, OButton },
-    template: `<form class="form">
+    template: `<form class="form" :class="size_class">
       <o-form-input id="form_basic" 
         v-model="form_model" 
         :label="label"
@@ -53,12 +53,20 @@ Tryout is for live example of Input on **Canvas** tab and bottom tab **Knobs**
       action_position: {
         default: select('Action position', ['hide', 'left', 'right'], 'left')
       },
+      form_size: {
+        default: select('Size (apply to form class)', ['', 'large'], '')
+      },
     },
     data() {
       return {
         form_model: null,
       }
     },
+    computed: {
+      size_class() {
+        return { [`form--${this.form_size}`]: this.form_size }
+      }
+    }
   }}
 </Story>
 
