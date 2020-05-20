@@ -7,4 +7,7 @@ for(var i=0; i<ColorList.length-1; i++) {
   }
 }
 
+// Remove duplicates from array
+ColorBase = [...new Set(ColorBase)];
+
 export default ColorBase
