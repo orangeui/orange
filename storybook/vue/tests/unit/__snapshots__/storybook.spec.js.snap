@@ -1571,6 +1571,783 @@ exports[`Storyshots Components|Basic/Navigation With icons 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components|Basic/Table Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper"
+  >
+    <table
+      class="table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Title
+          </th>
+           
+          <th>
+            Impressions
+          </th>
+           
+          <th>
+            Clicks
+          </th>
+           
+          <th>
+            Spend
+          </th>
+           
+          <th>
+            Type
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td>
+            Shopify sales
+          </td>
+           
+          <td>
+            4,230
+          </td>
+           
+          <td>
+            520
+          </td>
+           
+          <td>
+            $78
+          </td>
+           
+          <td>
+            Simple
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Table Celled 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper"
+  >
+    <table
+      class="table table--celled"
+    >
+      <thead>
+        <tr>
+          <th>
+            Budget
+          </th>
+           
+          <th>
+            Spent Budget
+          </th>
+           
+          <th>
+            Date added
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td>
+            $30,000
+          </td>
+           
+          <td>
+            $768
+          </td>
+           
+          <td>
+            Wed, May 9th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            Tue, May 8th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            Mon, May 7th 2018
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Table Compact 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper"
+  >
+    <table
+      class="table table--compact"
+    >
+      <thead>
+        <tr>
+          <th>
+            Budget
+          </th>
+           
+          <th>
+            Spent Budget
+          </th>
+           
+          <th>
+            Date added
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td>
+            $30,000
+          </td>
+           
+          <td>
+            $768
+          </td>
+           
+          <td>
+            Wed, May 9th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            Tue, May 8th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            Mon, May 7th 2018
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Table Definition 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper"
+  >
+    <table
+      class="table table--compact table--definition"
+    >
+      <thead>
+        <tr>
+          <th>
+            Plan
+          </th>
+           
+          <th>
+            Fomo Essential
+          </th>
+           
+          <th>
+            
+                Fomo Plus 
+            <span
+              class="label label--green label--small"
+            >
+              
+  current plan
+
+  
+              <!---->
+            </span>
+          </th>
+           
+          <th>
+            Fomo Advanced
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td />
+           
+          <td>
+            <button
+              class="button button--primary button--basic button--small"
+              type="button"
+            >
+              <!---->
+               Downgrade to Essential 
+              <!---->
+            </button>
+          </td>
+           
+          <td>
+            <button
+              class="button button--primary button--basic button--small"
+              type="button"
+            >
+              <!---->
+               Cancel subscription 
+              <!---->
+            </button>
+          </td>
+           
+          <td>
+            <button
+              class="button button--primary button--small"
+              type="button"
+            >
+              <!---->
+               Upgrade to Advanced 
+              <!---->
+            </button>
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            Price
+          </td>
+           
+          <td>
+            $39 / month
+          </td>
+           
+          <td>
+            $79 / month
+          </td>
+           
+          <td>
+            $199 / month
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            Notifications
+          </td>
+           
+          <td>
+            50,000
+          </td>
+           
+          <td>
+            200,000
+          </td>
+           
+          <td>
+            3,000,000
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            Website domains
+          </td>
+           
+          <td>
+            unlimited
+          </td>
+           
+          <td>
+            unlimited
+          </td>
+           
+          <td>
+            unlimited
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            Custom page rules
+          </td>
+           
+          <td>
+            <span
+              class="icon-tick"
+            />
+          </td>
+           
+          <td>
+            <span
+              class="icon-tick"
+            />
+          </td>
+           
+          <td>
+            <span
+              class="icon-tick"
+            />
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            Email support
+          </td>
+           
+          <td>
+            <span
+              class="icon-tick"
+            />
+          </td>
+           
+          <td>
+            <span
+              class="icon-tick"
+            />
+          </td>
+           
+          <td>
+            <span
+              class="icon-tick"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Table Fixed 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper"
+  >
+    <table
+      class="table table--fixed"
+    >
+      <thead>
+        <tr>
+          <th>
+            Budget
+          </th>
+           
+          <th>
+            Spent Budget
+          </th>
+           
+          <th>
+            Date added
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td>
+            $30,000
+          </td>
+           
+          <td>
+            $768
+          </td>
+           
+          <td>
+            Wed, May 9th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            Tue, May 8th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            Mon, May 7th 2018
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Table Fixed header 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper table-wrapper--fixed-header"
+    style="height: 200px;"
+  >
+    <table
+      class="table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Budget
+          </th>
+           
+          <th>
+            Spent Budget
+          </th>
+           
+          <th>
+            Date added
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td>
+            $30,000
+          </td>
+           
+          <td>
+            $768
+          </td>
+           
+          <td>
+            Wed, May 9th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            Tue, May 8th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            Mon, May 7th 2018
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Table Height limit 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper"
+    style="height: 200px;"
+  >
+    <table
+      class="table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Budget
+          </th>
+           
+          <th>
+            Spent Budget
+          </th>
+           
+          <th>
+            Date added
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td>
+            $30,000
+          </td>
+           
+          <td>
+            $768
+          </td>
+           
+          <td>
+            Wed, May 9th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            Tue, May 8th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            Mon, May 7th 2018
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Table Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper"
+  >
+    <table
+      class="table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Budget
+          </th>
+           
+          <th>
+            Spent Budget
+          </th>
+           
+          <th>
+            Date added
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td>
+            $30,000
+          </td>
+           
+          <td>
+            $768
+          </td>
+           
+          <td>
+            Wed, May 9th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            Tue, May 8th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            Mon, May 7th 2018
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components|Basic/Table With a bottom border 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper"
+  >
+    <table
+      class="table table--border-bottom"
+    >
+      <thead>
+        <tr>
+          <th>
+            Title
+          </th>
+           
+          <th>
+            Impressions
+          </th>
+           
+          <th>
+            Clicks
+          </th>
+           
+          <th>
+            Spend
+          </th>
+           
+          <th>
+            Type
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td>
+            Shopify sales
+          </td>
+           
+          <td>
+            4,230
+          </td>
+           
+          <td>
+            520
+          </td>
+           
+          <td>
+            $78
+          </td>
+           
+          <td>
+            Simple
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            Shopify sales
+          </td>
+           
+          <td>
+            4,230
+          </td>
+           
+          <td>
+            520
+          </td>
+           
+          <td>
+            $78
+          </td>
+           
+          <td>
+            Simple
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components|Custom/Avatar Basic 1`] = `
 <div
   class="p-4"
