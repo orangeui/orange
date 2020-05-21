@@ -1,7 +1,30 @@
 /**
- * Table
+ * Table Wrapper
  */
 
+.table-wrapper {
+  overflow: auto;
+}
+
+.table-wrapper--fixed-header {
+  position: relative;
+
+  th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  
+  .table:not(.table--celled) {
+    th {
+      background-color: color('white');
+    }
+  }
+}
+
+/** Table
+ --------------------------------------------------*/
+  
 .table {
   width: 100%;
   margin: $table-vertical-margin;
