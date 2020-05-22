@@ -7978,3 +7978,17 @@ exports[`Storyshots Global|Icon Tryout 1`] = `
   />
 </div>
 `;
+
+exports[`Storyshots Layout|Breakpoints Variables 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    Check 
+    <mark>
+      Docs
+    </mark>
+     tab for informations
+  </div>
+</div>
+`;
