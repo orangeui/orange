@@ -1,0 +1,36 @@
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/vue';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<Meta title='Layout|Breakpoints' />
+
+
+# Breakpoints
+
+<hr/>
+
+<Story name='Variables'>
+  {{
+    components: {},
+    template: `<div>Check <mark>Docs</mark> tab for informations</div>`,
+  }}
+</Story>
+
+# Variables
+
+Default breakpoint widths are shown below.
+
+
+```scss
+$breakpoints: (
+  xxs: 320px,
+  xs: 480px,
+  sm: 640px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+) !default;
+```
+
