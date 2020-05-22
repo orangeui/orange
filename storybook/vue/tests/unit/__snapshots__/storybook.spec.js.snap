@@ -7992,3 +7992,17 @@ exports[`Storyshots Layout|Breakpoints Variables 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots Layout|Container Variables 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    Check 
+    <mark>
+      Docs
+    </mark>
+     tab for informations
+  </div>
+</div>
+`;
