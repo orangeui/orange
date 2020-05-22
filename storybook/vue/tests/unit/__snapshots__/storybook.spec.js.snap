@@ -8006,3 +8006,639 @@ exports[`Storyshots Layout|Container Variables 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots Layout|Grid 3 columns - responsive 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="page-docs-layout-grid"
+  >
+    <div
+      class="grid grid--2 sm:grid--3"
+    >
+      <div>
+        1
+      </div>
+       
+      <div>
+        2
+      </div>
+       
+      <div>
+        3
+      </div>
+       
+      <div>
+        4
+      </div>
+       
+      <div>
+        5
+      </div>
+       
+      <div>
+        6
+      </div>
+       
+      <div>
+        7
+      </div>
+       
+      <div>
+        8
+      </div>
+       
+      <div>
+        9
+      </div>
+       
+      <div>
+        10
+      </div>
+       
+      <div>
+        11
+      </div>
+       
+      <div>
+        12
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout|Grid Auto Fill - Narrow 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="page-docs-layout-grid"
+  >
+    <div
+      class="grid grid--columns-auto-narrow"
+    >
+      <div>
+        1
+      </div>
+       
+      <div>
+        2
+      </div>
+       
+      <div>
+        3
+      </div>
+       
+      <div>
+        4
+      </div>
+       
+      <div>
+        5
+      </div>
+       
+      <div>
+        6
+      </div>
+       
+      <div>
+        7
+      </div>
+       
+      <div>
+        8
+      </div>
+       
+      <div>
+        9
+      </div>
+       
+      <div>
+        10
+      </div>
+       
+      <div>
+        11
+      </div>
+       
+      <div>
+        12
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout|Grid Auto Fill - Regular (default) 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="page-docs-layout-grid"
+  >
+    <div
+      class="grid"
+    >
+      <div>
+        1
+      </div>
+       
+      <div>
+        2
+      </div>
+       
+      <div>
+        3
+      </div>
+       
+      <div>
+        4
+      </div>
+       
+      <div>
+        5
+      </div>
+       
+      <div>
+        6
+      </div>
+       
+      <div>
+        7
+      </div>
+       
+      <div>
+        8
+      </div>
+       
+      <div>
+        9
+      </div>
+       
+      <div>
+        10
+      </div>
+       
+      <div>
+        11
+      </div>
+       
+      <div>
+        12
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout|Grid Auto Fill - Wide 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="page-docs-layout-grid"
+  >
+    <div
+      class="grid grid--columns-auto-wide"
+    >
+      <div>
+        1
+      </div>
+       
+      <div>
+        2
+      </div>
+       
+      <div>
+        3
+      </div>
+       
+      <div>
+        4
+      </div>
+       
+      <div>
+        5
+      </div>
+       
+      <div>
+        6
+      </div>
+       
+      <div>
+        7
+      </div>
+       
+      <div>
+        8
+      </div>
+       
+      <div>
+        9
+      </div>
+       
+      <div>
+        10
+      </div>
+       
+      <div>
+        11
+      </div>
+       
+      <div>
+        12
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout|Grid Different column width 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="page-docs-layout-grid"
+  >
+    <div
+      class="grid"
+    >
+      <div
+        class="col-6"
+      >
+        1
+      </div>
+       
+      <div
+        class="col-6"
+      >
+        2
+      </div>
+       
+      <div
+        class="col-4"
+      >
+        3
+      </div>
+       
+      <div
+        class="col-3"
+      >
+        4
+      </div>
+       
+      <div
+        class="col-5"
+      >
+        5
+      </div>
+       
+      <div
+        class="col-1"
+      >
+        6
+      </div>
+       
+      <div
+        class="col-2"
+      >
+        7
+      </div>
+       
+      <div
+        class="col-7"
+      >
+        8
+      </div>
+       
+      <div
+        class="col-2"
+      >
+        9
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layout|Grid Grid Usage 1`] = `
+<div
+  class="p-4"
+>
+  <table
+    class="table table--fixed table--compact table--definition table--border-bottom"
+  >
+    <thead>
+      <th />
+       
+      <th>
+        
+          Max container width
+        
+      </th>
+       
+      <th>
+        
+          Class prefix
+        
+      </th>
+    </thead>
+     
+    <tbody>
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Default
+          </span>
+          <br />
+          
+            &gt; 0px
+          
+        </td>
+         
+        <td>
+          
+            100%
+          
+        </td>
+         
+        <td>
+          <code>
+            col-
+          </code>
+           and 
+          <code>
+            row-
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra extra small
+          </span>
+          <br />
+          
+            &gt; 320px
+          
+        </td>
+         
+        <td>
+          
+            100%
+          
+        </td>
+         
+        <td>
+          <code>
+            xxs:col-
+          </code>
+           and 
+          <code>
+            xxs:row-
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra small
+          </span>
+          <br />
+          
+            &gt; 480px
+          
+        </td>
+         
+        <td>
+          
+            480px
+          
+        </td>
+         
+        <td>
+          <code>
+            xs:col-
+          </code>
+           and 
+          <code>
+            xs:row-
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Small
+          </span>
+          <br />
+          
+            &gt; 640px
+          
+        </td>
+         
+        <td>
+          580px
+        </td>
+         
+        <td>
+          <code>
+            sm:col-
+          </code>
+           and 
+          <code>
+            sm:row-
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Medium
+          </span>
+          <br />
+          
+            &gt; 768px
+          
+        </td>
+         
+        <td>
+          720px
+        </td>
+         
+        <td>
+          <code>
+            md:col-
+          </code>
+           and 
+          <code>
+            md:row-
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Large
+          </span>
+          <br />
+          
+            &gt; 991px
+          
+        </td>
+         
+        <td>
+          960px
+        </td>
+         
+        <td>
+          <code>
+            lg:col-
+          </code>
+           and 
+          <code>
+            lg:row-
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra large
+          </span>
+          <br />
+          
+            &gt; 1200px
+          
+        </td>
+         
+        <td>
+          1140px
+        </td>
+         
+        <td>
+          <code>
+            xl:col-
+          </code>
+           and 
+          <code>
+            xl:row-
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra extra large
+          </span>
+          <br />
+          
+            &gt; 1440px
+          
+        </td>
+         
+        <td>
+          1280px
+        </td>
+         
+        <td>
+          <code>
+            xxl:col-
+          </code>
+           and 
+          <code>
+            xxl:row-
+          </code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Layout|Grid Regular (default) 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="page-docs-layout-grid"
+  >
+    <div
+      class="grid"
+    >
+      <div>
+        1
+      </div>
+       
+      <div>
+        2
+      </div>
+       
+      <div>
+        3
+      </div>
+       
+      <div>
+        4
+      </div>
+       
+      <div>
+        5
+      </div>
+       
+      <div>
+        6
+      </div>
+       
+      <div>
+        7
+      </div>
+       
+      <div>
+        8
+      </div>
+       
+      <div>
+        9
+      </div>
+       
+      <div>
+        10
+      </div>
+       
+      <div>
+        11
+      </div>
+       
+      <div>
+        12
+      </div>
+    </div>
+  </div>
+</div>
+`;
