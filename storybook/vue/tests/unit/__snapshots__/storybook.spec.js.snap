@@ -6645,6 +6645,92 @@ exports[`Storyshots Components|Forms/Toggle With label 1`] = `
 </div>
 `;
 
+exports[`Storyshots Global|Background Colors Backgrounds 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <ul
+      class="docs__bg-color-list"
+    >
+      <li>
+        <div
+          class="docs__bg-color-item bg-white"
+        />
+         
+        <p>
+          White
+        </p>
+      </li>
+       
+      <li>
+        <div
+          class="docs__bg-color-item bg-gray"
+        />
+         
+        <p>
+          Gray
+        </p>
+      </li>
+       
+      <li>
+        <div
+          class="docs__bg-color-item bg-black"
+        />
+         
+        <p>
+          Black
+        </p>
+      </li>
+       
+      <li>
+        <div
+          class="docs__bg-color-item bg-primary"
+        />
+         
+        <p>
+          Primary
+        </p>
+      </li>
+       
+      <li>
+        <div
+          class="docs__bg-color-item bg-secondary"
+        />
+         
+        <p>
+          Secondary
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Global|Background Colors Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <ul
+      class="docs__bg-color-list"
+    >
+      <li>
+        <div
+          class="docs__bg-color-item bg-primary-light"
+        />
+         
+        <p>
+          
+              primary-light
+            
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Global|Colors List 1`] = `
 <div
   class="p-4"
