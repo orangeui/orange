@@ -1,0 +1,82 @@
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/vue';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<Meta title='Utilities|Box Shadow' />
+
+
+# Box Shadow
+
+Apply a shadow by adding <mark>.shadow-{shadow}</mark> class
+
+Apply a shadow with the <mark>shadow('{shadow}')</mark> function in <mark>SCSS</mark>
+
+<hr/>
+
+
+# Styles
+
+<Story name='Styles'>
+  {{
+    components: {},
+    template: `<ul class="docs__bg-color-list">
+      <li>
+        <div class="docs__bg-color-item shadow-primary bg-white"></div>
+        <p>Primary</p>
+      </li>
+      <li>
+        <div class="docs__bg-color-item shadow-secondary bg-white"></div>
+        <p>Secondary</p>
+      </li>
+      <li>
+        <div class="docs__bg-color-item shadow-input bg-white"></div>
+        <p>Input</p>
+      </li>
+    </ul>`,
+  }}
+</Story>
+
+<hr/>
+
+
+```html
+<div class="shadow-primary"></div>
+<div class="shadow-secondary"></div>
+<div class="shadow-input"></div>
+```
+
+```scss
+.example-class {
+  box-shadow: shadow('{shadow}');
+}
+```
+
+# Usage 
+
+<Story name='Usage'>
+  {{
+    components: {},
+    template: `<table class="table table--compact table--celled">
+      <thead>
+        <tr>
+          <th>Attribute</th>
+          <th>Description</th>
+          <th>Type</th>
+          <th>Syntax</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>shadow</td>
+          <td>
+            Set with <code>.shadow-{shadow}</code> class <br/><br />
+            Possible values: <code>primary</code>, <code>secondary</code> or <code>input</code>
+          </td>
+          <td>Class</td>
+          <td><code>.shadow-primary</code></td>
+        </tr>
+      </tbody>
+    </table>`,
+  }}
+</Story>
