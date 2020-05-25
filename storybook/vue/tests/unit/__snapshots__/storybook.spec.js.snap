@@ -6731,6 +6731,67 @@ exports[`Storyshots Global|Background Colors Tryout 1`] = `
 </div>
 `;
 
+exports[`Storyshots Global|Background Colors Usage 1`] = `
+<div
+  class="p-4"
+>
+  <table
+    class="table table--compact table--celled"
+  >
+    <thead>
+      <tr>
+        <th>
+          Attribute
+        </th>
+         
+        <th>
+          Description
+        </th>
+         
+        <th>
+          Type
+        </th>
+         
+        <th>
+          Syntax
+        </th>
+      </tr>
+    </thead>
+     
+    <tbody>
+      <tr>
+        <td>
+          bg-color
+        </td>
+         
+        <td>
+          See 
+          <a
+            class="is-active"
+            href="/"
+          >
+            <span>
+              Colors
+            </span>
+          </a>
+           page for possible values
+        </td>
+         
+        <td>
+          Class
+        </td>
+         
+        <td>
+          <code>
+            .bg-color
+          </code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`Storyshots Global|Colors List 1`] = `
 <div
   class="p-4"
@@ -8640,5 +8701,191 @@ exports[`Storyshots Layout|Grid Regular (default) 1`] = `
       </div>
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots Utilities|Align Block 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Foxy"
+      class="image block-left"
+      src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
+    />
+     
+    <img
+      alt="Doggo"
+      class="image block-center"
+      src="https://orangecss.com/images/thumbnails/square/dog-square.jpg"
+    />
+     
+    <img
+      alt="Katze"
+      class="image block-right"
+      src="https://orangecss.com/images/thumbnails/square/cat-square.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Utilities|Align Flex 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Foxy"
+      class="image flex-left"
+      src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
+    />
+     
+    <img
+      alt="Doggo"
+      class="image flex-center"
+      src="https://orangecss.com/images/thumbnails/square/dog-square.jpg"
+    />
+     
+    <img
+      alt="Katze"
+      class="image flex-right"
+      src="https://orangecss.com/images/thumbnails/square/cat-square.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Utilities|Align Responsive 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Foxy"
+      class="image block-left lg:block-center"
+      src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
+    />
+     
+    <img
+      alt="Doggo"
+      class="image flex-center lg:flex-right"
+      src="https://orangecss.com/images/thumbnails/square/dog-square.jpg"
+    />
+     
+    <img
+      alt="Katze"
+      class="image flex-right lg:flex-left"
+      src="https://orangecss.com/images/thumbnails/square/cat-square.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Utilities|Align Usage 1`] = `
+<div
+  class="p-4"
+>
+  <table
+    class="table table--compact table--celled"
+  >
+    <thead>
+      <tr>
+        <th>
+          Attribute
+        </th>
+         
+        <th>
+          Description
+        </th>
+         
+        <th>
+          Type
+        </th>
+         
+        <th>
+          Syntax
+        </th>
+      </tr>
+    </thead>
+     
+    <tbody>
+      <tr>
+        <td>
+          role
+        </td>
+         
+        <td>
+          
+            Set with 
+          <code>
+            .{role}-left
+          </code>
+           class 
+          <br />
+          <br />
+          
+            Possible values: 
+          <code>
+            block
+          </code>
+           or 
+          <code>
+            flex
+          </code>
+        </td>
+         
+        <td>
+          Class
+        </td>
+         
+        <td>
+          <code>
+            .block-left
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          align
+        </td>
+         
+        <td>
+          
+            Set with 
+          <code>
+            .block-{align}
+          </code>
+           class 
+          <br />
+          <br />
+          
+            Possible values: 
+          <code>
+            left
+          </code>
+          , 
+          <code>
+            center
+          </code>
+           or 
+          <code>
+            right
+          </code>
+        </td>
+         
+        <td>
+          Class
+        </td>
+         
+        <td>
+          <code>
+            .block-left
+          </code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 `;
