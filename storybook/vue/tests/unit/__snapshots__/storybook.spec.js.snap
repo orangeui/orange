@@ -9527,3 +9527,303 @@ exports[`Storyshots Utilities|Display Table 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots Utilities|Spacings Responsive 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="grid"
+  >
+    <div
+      class="col-12 md:col-4"
+    >
+      <div
+        class="text-center color-white bg-primary p-1 md:p-2"
+      >
+        .p-1 
+        <br />
+         .md:p-2
+      </div>
+    </div>
+     
+    <div
+      class="col-12 md:col-4"
+    >
+      <div
+        class="text-center color-white bg-primary p-1 md:p-3"
+      >
+        .p-1 
+        <br />
+         .md:p-3
+      </div>
+    </div>
+     
+    <div
+      class="col-12 md:col-4"
+    >
+      <div
+        class="text-center color-white bg-primary p-1 md:p-4"
+      >
+        .p-1 
+        <br />
+         .md:p-4
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Utilities|Spacings Responsive Usage 1`] = `
+<div
+  class="p-4"
+>
+  <table
+    class="table table--fixed table--compact table--definition table--border-bottom"
+  >
+    <thead>
+      <th />
+       
+      <th>
+        
+          Class prefix example
+        
+      </th>
+    </thead>
+     
+    <tbody>
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Default
+          </span>
+          <br />
+          
+            &gt; 0px
+          
+        </td>
+         
+        <td>
+          <code>
+            m-
+          </code>
+          , 
+          <code>
+            p-
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra extra small
+          </span>
+          <br />
+          
+            &gt; 320px
+          
+        </td>
+         
+        <td>
+          <code>
+            xxs:m-{key}
+          </code>
+          , 
+          <code>
+            xxs:p-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra small
+          </span>
+          <br />
+          
+            &gt; 480px
+          
+        </td>
+         
+        <td>
+          <code>
+            xs:m-{key}
+          </code>
+          , 
+          <code>
+            xs:p-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Small
+          </span>
+          <br />
+          
+            &gt; 640px
+          
+        </td>
+         
+        <td>
+          <code>
+            sm:m-{key}
+          </code>
+          , 
+          <code>
+            sm:p-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Medium
+          </span>
+          <br />
+          
+            &gt; 768px
+          
+        </td>
+         
+        <td>
+          <code>
+            md:m-{key}
+          </code>
+          , 
+          <code>
+            md:p-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Large
+          </span>
+          <br />
+          
+            &gt; 991px
+          
+        </td>
+         
+        <td>
+          <code>
+            lg:m-{key}
+          </code>
+          , 
+          <code>
+            lg:p-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra large
+          </span>
+          <br />
+          
+            &gt; 1200px
+          
+        </td>
+         
+        <td>
+          <code>
+            xl:m-{key}
+          </code>
+          , 
+          <code>
+            xl:p-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra extra large
+          </span>
+          <br />
+          
+            &gt; 1440px
+          
+        </td>
+         
+        <td>
+          <code>
+            xxl:m-{key}
+          </code>
+          , 
+          <code>
+            xxl:p-{key}
+          </code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Utilities|Spacings Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="grid"
+  >
+    <div
+      class="col-4"
+    >
+      <div
+        class="text-center color-white bg-primary p-4"
+      >
+        .p-4
+      </div>
+    </div>
+     
+    <div
+      class="col-4"
+    >
+      <div
+        class="text-center color-white bg-primary p-5"
+      >
+        .p-5
+      </div>
+    </div>
+     
+    <div
+      class="col-4"
+    >
+      <div
+        class="text-center color-white bg-primary p-6"
+      >
+        .p-6
+      </div>
+    </div>
+  </div>
+</div>
+`;
