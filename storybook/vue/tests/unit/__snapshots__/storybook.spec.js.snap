@@ -8889,3 +8889,111 @@ exports[`Storyshots Utilities|Align Usage 1`] = `
   </table>
 </div>
 `;
+
+exports[`Storyshots Utilities|Border Radius Styles 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Doggo"
+      class="image rounded-0"
+      src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
+    />
+     
+    <img
+      alt="Doggo"
+      class="image rounded"
+      src="https://orangecss.com/images/thumbnails/square/cat-square.jpg"
+    />
+     
+    <img
+      alt="Hedgehog"
+      class="image rounded-1"
+      src="https://orangecss.com/images/thumbnails/square/hedgehog-square.jpg"
+    />
+     
+    <img
+      alt="Katze"
+      class="image rounded-full"
+      src="https://orangecss.com/images/thumbnails/square/dog-square.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Utilities|Border Radius Usage 1`] = `
+<div
+  class="p-4"
+>
+  <table
+    class="table table--compact table--celled"
+  >
+    <thead>
+      <tr>
+        <th>
+          Attribute
+        </th>
+         
+        <th>
+          Description
+        </th>
+         
+        <th>
+          Type
+        </th>
+         
+        <th>
+          Syntax
+        </th>
+      </tr>
+    </thead>
+     
+    <tbody>
+      <tr>
+        <td>
+          rounded
+        </td>
+         
+        <td>
+          
+            Set with 
+          <code>
+            .rounded-{size}
+          </code>
+           class 
+          <br />
+          <br />
+          
+            Possible values: 
+          <code>
+            0
+          </code>
+          , 
+          <code>
+            base (just rounded)
+          </code>
+          , 
+          <code>
+            1
+          </code>
+          , 
+          <code>
+            full
+          </code>
+        </td>
+         
+        <td>
+          Class
+        </td>
+         
+        <td>
+          <code>
+            .rounded-full
+          </code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
