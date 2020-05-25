@@ -8997,3 +8997,115 @@ exports[`Storyshots Utilities|Border Radius Usage 1`] = `
   </table>
 </div>
 `;
+
+exports[`Storyshots Utilities|Box Shadow Styles 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="docs__bg-color-list"
+  >
+    <li>
+      <div
+        class="docs__bg-color-item shadow-primary bg-white"
+      />
+       
+      <p>
+        Primary
+      </p>
+    </li>
+     
+    <li>
+      <div
+        class="docs__bg-color-item shadow-secondary bg-white"
+      />
+       
+      <p>
+        Secondary
+      </p>
+    </li>
+     
+    <li>
+      <div
+        class="docs__bg-color-item shadow-input bg-white"
+      />
+       
+      <p>
+        Input
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Utilities|Box Shadow Usage 1`] = `
+<div
+  class="p-4"
+>
+  <table
+    class="table table--compact table--celled"
+  >
+    <thead>
+      <tr>
+        <th>
+          Attribute
+        </th>
+         
+        <th>
+          Description
+        </th>
+         
+        <th>
+          Type
+        </th>
+         
+        <th>
+          Syntax
+        </th>
+      </tr>
+    </thead>
+     
+    <tbody>
+      <tr>
+        <td>
+          shadow
+        </td>
+         
+        <td>
+          
+            Set with 
+          <code>
+            .shadow-{shadow}
+          </code>
+           class 
+          <br />
+          <br />
+          
+            Possible values: 
+          <code>
+            primary
+          </code>
+          , 
+          <code>
+            secondary
+          </code>
+           or 
+          <code>
+            input
+          </code>
+        </td>
+         
+        <td>
+          Class
+        </td>
+         
+        <td>
+          <code>
+            .shadow-primary
+          </code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
