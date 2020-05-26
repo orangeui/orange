@@ -19,6 +19,38 @@ Orange's default typeface is <mark>Rubik</mark>, designed by Philipp Hubert and 
 <hr/>
 
 
+# Tryout
+
+Tryout is for live example of Icon on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<p :class="classes">
+      {{ fontWeight }}
+    </p>`,
+    props: {
+      fontWeight: {
+        default: select('Font weight', ['normal', 'medium', 'bold', 'extrabold'], 'normal')
+      },
+      textItalic: {
+        default: boolean('Text italic', false)
+      }
+    },
+    computed: {
+      classes () {
+        return {
+          [`font-${this.fontWeight}`]: this.fontWeight,
+          [`text-italic`]: this.textItalic
+        }
+      }
+    }
+  }}
+</Story>
+
+<hr/>
+
+
 # Weights
 
 Apply weights by adding <mark>.font-{weight}</mark> class to text elements
