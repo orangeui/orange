@@ -1,0 +1,101 @@
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/vue';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<Meta title='Typography|Font' />
+
+
+# Font
+
+Orange's default typeface is <mark>Rubik</mark>, designed by Philipp Hubert and Sebastian Fischer at Hubert & Fischer.
+
+```scss
+.example {
+  font-family: $font-primary;
+}
+```
+
+<hr/>
+
+
+# Weights
+
+Apply weights by adding <mark>.font-{weight}</mark> class to text elements
+
+Recall weights with the <mark>fontWeight('{weight}')</mark> function
+
+<Story name='Weights'>
+  {{
+    components: {},
+    template: `<ul class="docs__simple-list">
+      <li>
+        <h5>700 Extra Bold</h5>
+        <p class="fs-gamma font-extrabold">700 Extra Bold</p>
+      </li>
+      <li>
+        <h5>600 Bold</h5>
+        <p class="fs-gamma font-bold">600 Bold</p>
+      </li>
+      <li>
+        <h5>500 Medium</h5>
+        <p class="fs-gamma font-medium">500 Medium</p>
+      </li>
+      <li>
+        <h5>400 Normal</h5>
+        <p class="fs-gamma font-normal">400 Normal</p>
+      </li>
+    </ul>`,
+  }}
+</Story>
+
+```html
+<p class="font-extrabold">700 Extra Bold</p>
+<p class="font-bold">600 Bold</p>
+<p class="font-medium">500 Medium</p>
+<p class="font-normal">400 Normal</p>
+```
+
+```scss
+.example {
+  font-weight: fontWeight('extrabold');
+}
+```
+
+<hr/>
+
+
+# Italic
+
+Apply italic font style by adding <mark>.text-italic</mark> class to text elements
+
+<Story name='Italic'>
+  {{
+    components: {},
+    template: `<ul class="docs__simple-list">
+      <li>
+        <h5>700 Extra Bold</h5>
+        <p class="fs-gamma text-italic font-extrabold">700 Extra Bold</p>
+      </li>
+      <li>
+        <h5>600 Bold</h5>
+        <p class="fs-gamma text-italic font-bold">600 Bold</p>
+      </li>
+      <li>
+        <h5>500 Medium</h5>
+        <p class="fs-gamma text-italic font-medium">500 Medium</p>
+      </li>
+      <li>
+        <h5>400 Normal</h5>
+        <p class="fs-gamma text-italic font-normal">400 Normal</p>
+      </li>
+    </ul>`,
+  }}
+</Story>
+
+```html
+<p class="font-extrabold text-italic">700 Extra Bold</p>
+<p class="font-bold text-italic">600 Bold</p>
+<p class="font-medium text-italic">500 Medium</p>
+<p class="font-normal text-italic">400 Normal</p>
+```
