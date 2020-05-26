@@ -3,6 +3,8 @@ import { withKnobs, object, text, select, boolean } from '@storybook/addon-knobs
 import { storiesOf } from '@storybook/vue';
 import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
 
+import ColorSlugs from '../../src/global/ColorSlugs.js';
+
 <Meta title='Typography|Styles' />
 
 
@@ -11,6 +13,39 @@ import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
 Apply a color by adding <mark>.color-{color}</mark> class
 
 Recall color values with the <mark>color('{color}')</mark> function
+
+<hr />
+
+# Tryout
+
+Tryout is for live example of Styles on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<p :class="classes">
+      Suspendisse id nisi a magna lacinia lacinia sed sed purus.
+    </p>`,
+    props: {
+      color: {
+        default: select('Color', ColorSlugs, ColorSlugs[1])
+      },
+      heading: {
+        default: select('Heading', [null, 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'], null)
+      }
+    },
+    computed: {
+      classes () {
+        return {
+          [`color-${this.color}`]: this.color,
+          [`${this.heading}`]: this.heading,
+        }
+      }
+    }
+  }}
+</Story>
+
+<hr />
 
 <Preview>
   <Story name='Grayscale'>
@@ -118,6 +153,10 @@ Recall color values with the <mark>color('{color}')</mark> function
         <li>
           <h5>heading 5</h5>
           <p class="h5">social proof is the holy grail of marketing</p>
+        </li>
+        <li>
+          <h5>heading 6</h5>
+          <p class="h6">social proof is the holy grail of marketing</p>
         </li>
       </ul>`,
     }}
