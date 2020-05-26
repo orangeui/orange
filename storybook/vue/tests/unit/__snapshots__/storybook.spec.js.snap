@@ -8762,6 +8762,20 @@ exports[`Storyshots Typography|Font Italic 1`] = `
 </div>
 `;
 
+exports[`Storyshots Typography|Font Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <p
+    class="font-normal"
+  >
+    
+      normal
+    
+  </p>
+</div>
+`;
+
 exports[`Storyshots Typography|Font Weights 1`] = `
 <div
   class="p-4"
@@ -8993,6 +9007,20 @@ exports[`Storyshots Typography|Sizes Sizes 1`] = `
       </p>
     </li>
   </ul>
+</div>
+`;
+
+exports[`Storyshots Typography|Sizes Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <p
+    class="fs-alpha"
+  >
+    
+      fs-alpha
+    
+  </p>
 </div>
 `;
 
@@ -9331,6 +9359,20 @@ exports[`Storyshots Typography|Styles Headings 1`] = `
       </p>
     </li>
   </ul>
+</div>
+`;
+
+exports[`Storyshots Typography|Styles Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <p
+    class="color-primary"
+  >
+    
+      Suspendisse id nisi a magna lacinia lacinia sed sed purus.
+    
+  </p>
 </div>
 `;
 
