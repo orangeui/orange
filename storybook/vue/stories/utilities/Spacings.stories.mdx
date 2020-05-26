@@ -44,13 +44,13 @@ $spaces: (
       components: {},
       template: `<div class="grid">
         <div class="col-4">
-          <div class="text-center color-white bg-primary" :class="item1">.p-4</div>
+          <div class="text-center color-white bg-primary" :class="item1">.{{ item1 }}</div>
         </div>
         <div class="col-4">
-          <div class="text-center color-white bg-primary" :class="item2">.p-5</div>
+          <div class="text-center color-white bg-primary" :class="item2">.{{ item2 }}</div>
         </div>
         <div class="col-4">
-          <div class="text-center color-white bg-primary" :class="item3">.p-6</div>
+          <div class="text-center color-white bg-primary" :class="item3">.{{ item3 }}</div>
         </div>
       </div>`,
       props: {
