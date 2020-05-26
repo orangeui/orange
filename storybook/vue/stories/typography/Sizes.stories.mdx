@@ -12,6 +12,51 @@ Apply sizes by adding <mark>.fs-{size}</mark> class to text elements
 
 Recall size values with the <mark>fontSize('{size}')</mark> function
 
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of Font Size on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<p :class="classes">
+      fs-{{ fontSize }}
+    </p>`,
+    props: {
+      fontSize: {
+        default: select('Font size',
+        {
+          '76 Giga': 'giga',
+          '54 Mega': 'mega',
+          '36 Alpha': 'alpha',
+          '28 Beta': 'beta',
+          '21 Gamma': 'gamma',
+          '18 Delta': 'delta',
+          '16 Epsilon': 'epsilon',
+          '14 Zeta': 'zeta',
+          '12 Omega': 'omega'
+        }
+        , 'alpha')
+      },
+    },
+    computed: {
+      classes () {
+        return {
+          [`fs-${this.fontSize}`]: this.fontSize
+        }
+      }
+    }
+  }}
+</Story>
+
+<hr />
+
+
+# Sizes
+
 <Story name='Sizes'>
   {{
     components: {},
