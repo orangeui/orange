@@ -12,6 +12,35 @@ Apply a shadow by adding <mark>.shadow-{shadow}</mark> class
 
 Apply a shadow with the <mark>shadow('{shadow}')</mark> function in <mark>SCSS</mark>
 
+
+<hr />
+
+
+# Tryout
+
+Tryout is for live example of Box Shadow on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<div class="d-inline-block p-5 bg-white" :class="classes">
+      {{ shadow }}
+    </div>`,
+    props: {
+      shadow: {
+        default: select('Box Shadow', ['shadow-primary', 'shadow-secondary', 'shadow-input'], 'shadow-primary')
+      }
+    },
+    computed: {
+      classes () {
+        return {
+          [`${this.shadow}`]: this.shadow,
+        }
+      }
+    }
+  }}
+</Story>
+
 <hr/>
 
 
