@@ -6,6 +6,7 @@ import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
 import OIcon from '../../src/components/Icon/Icon';
 import IconList from '../../src/components/Icon/IconList';
 
+import ColorSlugs from '../../src/global/ColorSlugs.js';
 
 <Meta title='Global|Icon' component={ OIcon } />
 
@@ -31,8 +32,8 @@ Tryout is for live example of Icon on **Canvas** tab and bottom tab **Knobs**
         default: select('Icon', IconList, IconList[0])
       },
       color: {
-        default: text('Color', 'secondary')
-      }
+        default: select('Color', ColorSlugs, ColorSlugs[1])
+      },
     },
   }}
 </Story>
