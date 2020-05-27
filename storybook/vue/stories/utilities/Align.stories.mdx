@@ -14,6 +14,34 @@ Values that position/align element.
 
 apply alignment to elements with <mark>.block-{align}</mark> or <mark>.flex-{align}</mark> class.
 
+<hr />
+
+
+# Tryout
+
+Tryout is for live example of Align on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<div>
+      <img class="image" :class="classes" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
+    </div>`,
+    props: {
+      align: {
+        default: select('Align', ['block-left', 'block-center', 'block-right', 'flex-left', 'flex-center', 'flex-right', 'block-left lg:block-center', 'flex-left sm:flex-right'], 'block-left')
+      }
+    },
+    computed: {
+      classes () {
+        return {
+          [`${this.align}`]: this.align,
+        }
+      }
+    }
+  }}
+</Story>
+
 <hr/>
 
 # Block
