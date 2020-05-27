@@ -1,0 +1,38 @@
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/vue';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+import OAvatar from '../../src/components/Avatar/Avatar';
+
+import ColorBase from '../../src/global/ColorBase.js';
+
+<Meta title='1. Getting Started|Install' />
+
+# Install
+
+<hr/>
+
+# Orange CSS
+
+Add stylesheets and scripts to all your pages via our CDN.
+
+```html
+<link rel="stylesheet" href="https://cdn.orangecss.com/1.4.2/css/orange.min.css">
+
+```
+
+```html
+<script src="https://cdn.orangecss.com/1.4.2/js/orange.min.js"></script>
+```
+
+The latest release can be found at https://github.com/orangeui/orange.
+
+
+<Story name='Install'>
+  {{
+    components: { },
+    template: `<div>Check <mark>Docs</mark> tab for informations</div>`,
+  }}
+</Story>
+
