@@ -27,6 +27,34 @@ $border-radiuses: (
 );
 ```
 
+<hr />
+
+
+# Tryout
+
+Tryout is for live example of Border Radius on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<div>
+      <img class="image" :class="classes" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
+    </div>`,
+    props: {
+      rounded: {
+        default: select('Rounded', ['rounded-0', 'rounded', 'rounded-1', 'rounded-full'], 'rounded')
+      }
+    },
+    computed: {
+      classes () {
+        return {
+          [`${this.rounded}`]: this.rounded,
+        }
+      }
+    }
+  }}
+</Story>
+
 <hr/>
 
 # Styles
