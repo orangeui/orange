@@ -1,13 +1,8 @@
 import { addons } from '@storybook/addons';
-import { create } from '@storybook/theming/create';
-
-const theme = create({
-  base: 'light',
-  brandTitle: 'My custom title',
-});
+import { themes } from '@storybook/theming';
+import orangeTheme from './orangeTheme';
 
 addons.setConfig({
   showRoots: true,
   panelPosition: 'bottom',
-  theme,
 });

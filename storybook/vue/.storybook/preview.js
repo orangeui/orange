@@ -21,6 +21,7 @@ Vue.directive(AutoExpand)
 Vue.prototype._ = _
 
 import { addParameters, addDecorator } from "@storybook/vue";
+import orangeTheme from './orangeTheme';
 
 const paddedList = () => {
   return {
@@ -31,6 +32,9 @@ const paddedList = () => {
 addParameters({
   docs: { inlineStories: true },
   iframeHeight: '60px',
+  options: {
+    theme: orangeTheme,
+  },
 });
 
 addDecorator(paddedList);
