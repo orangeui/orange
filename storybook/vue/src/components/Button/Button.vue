@@ -72,7 +72,7 @@ export default {
     /**
      * Button color
      *
-     * Possible values: See [Colors page](link-to-page)
+     * Possible values: See [Colors page](/?path=/docs/2-global-colors--list)
      */
     color: {
       type: String,
