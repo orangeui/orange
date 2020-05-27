@@ -12,6 +12,33 @@ Apply text decoration by adding <mark>.text-{decoration}</mark> class to text el
 
 To control text decoration on hover apply text decoration by adding <mark>.hover:text-{decoration}</mark> class to text elements
 
+<hr />
+
+# Tryout
+
+Tryout is for live example of Text decoration on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<p :class="classes">
+      Try me out in Canvas tab
+    </p>`,
+    props: {
+      textDecoration: {
+        default: select('Text decoration', ['text-underline', 'text-line-trough', 'text-no-underline', 'hover:text-underline', 'hover:text-line-through', 'text-underline hover:text-no-underline'], 'text-left')
+      }
+    },
+    computed: {
+      classes () {
+        return {
+          [`${this.textDecoration}`]: this.textDecoration,
+        }
+      }
+    }
+  }}
+</Story>
+
 <Preview>
   <Story name='Basic'>
     {{
