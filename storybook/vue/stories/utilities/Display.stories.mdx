@@ -24,12 +24,40 @@ $displays: (
   'flex': flex,
   'inline-flex': inline-flex,
   'table': table,
+  'table-row': table-row,
   'table-cell': table-cell,
   'grid': grid,
   'none': none
 ) !default;
 ```
 
+<hr />
+
+
+# Tryout
+
+Tryout is for live example of Display on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<div class="p-5 bg-primary color-white text-center" :class="classes">
+      {{ display }}
+    </div>`,
+    props: {
+      display: {
+        default: select('Display', ['d-block', 'd-inline-block', 'd-inline', 'd-flex', 'd-inline-flex', 'd-table', 'd-table-row', 'd-table-cell', 'd-grid', 'd-none', 'd-block md:d-inline-block'], 'd-block')
+      }
+    },
+    computed: {
+      classes () {
+        return {
+          [`${this.display}`]: this.display,
+        }
+      }
+    }
+  }}
+</Story>
 
 <hr/>
 
