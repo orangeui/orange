@@ -8035,7 +8035,7 @@ exports[`Storyshots Global|Icon Tryout 1`] = `
   class="p-4"
 >
   <span
-    class="icon-arrow-down color-secondary"
+    class="icon-arrow-down color-primary"
   />
 </div>
 `;
@@ -9358,6 +9358,18 @@ exports[`Storyshots Typography|Styles Headings 1`] = `
         social proof is the holy grail of marketing
       </p>
     </li>
+     
+    <li>
+      <h5>
+        heading 6
+      </h5>
+       
+      <p
+        class="h6"
+      >
+        social proof is the holy grail of marketing
+      </p>
+    </li>
   </ul>
 </div>
 `;
@@ -9598,6 +9610,20 @@ exports[`Storyshots Typography|Text align Responsive 1`] = `
 </div>
 `;
 
+exports[`Storyshots Typography|Text align Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <p
+    class="text-left"
+  >
+    
+      Try me out in Canvas tab
+    
+  </p>
+</div>
+`;
+
 exports[`Storyshots Typography|Text decoration Basic 1`] = `
 <div
   class="p-4"
@@ -9665,6 +9691,20 @@ exports[`Storyshots Typography|Text decoration Basic 1`] = `
       </p>
     </li>
   </ul>
+</div>
+`;
+
+exports[`Storyshots Typography|Text decoration Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <p
+    class="text-left"
+  >
+    
+      Try me out in Canvas tab
+    
+  </p>
 </div>
 `;
 
@@ -9741,6 +9781,20 @@ exports[`Storyshots Utilities|Align Responsive 1`] = `
       alt="Katze"
       class="image flex-right lg:flex-left"
       src="https://orangecss.com/images/thumbnails/square/cat-square.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Utilities|Align Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Foxy"
+      class="image block-left"
+      src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
     />
   </div>
 </div>
@@ -9886,6 +9940,20 @@ exports[`Storyshots Utilities|Border Radius Styles 1`] = `
 </div>
 `;
 
+exports[`Storyshots Utilities|Border Radius Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Foxy"
+      class="image rounded"
+      src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots Utilities|Border Radius Usage 1`] = `
 <div
   class="p-4"
@@ -9999,6 +10067,20 @@ exports[`Storyshots Utilities|Box Shadow Styles 1`] = `
       </p>
     </li>
   </ul>
+</div>
+`;
+
+exports[`Storyshots Utilities|Box Shadow Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="d-inline-block p-5 bg-white shadow-primary"
+  >
+    
+      shadow-primary
+    
+  </div>
 </div>
 `;
 
@@ -10488,6 +10570,20 @@ exports[`Storyshots Utilities|Display Table 1`] = `
         Table cell 6
       </div>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Utilities|Display Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="p-5 bg-primary color-white text-center d-block"
+  >
+    
+      d-block
+    
   </div>
 </div>
 `;
