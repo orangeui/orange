@@ -10,6 +10,33 @@ import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
 
 Apply align by adding <mark>.text-{align}</mark> class to text elements
 
+<hr />
+
+# Tryout
+
+Tryout is for live example of Text align on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<p :class="classes">
+      Try me out in Canvas tab
+    </p>`,
+    props: {
+      textAlign: {
+        default: select('Text align', ['text-left', 'text-center', 'text-right'], 'text-left')
+      }
+    },
+    computed: {
+      classes () {
+        return {
+          [`${this.textAlign}`]: this.textAlign,
+        }
+      }
+    }
+  }}
+</Story>
+
 <Preview>
   <Story name='Basic'>
     {{
