@@ -1,7 +1,4 @@
-// Import Orange styles
-import "!style-loader!css-loader!sass-loader!../../../src/scss/src/styles.scss";
-
-// Import Docs styles
+// Import Docs styles, they also already import Orange styles
 import "!style-loader!css-loader!sass-loader!../../../site/assets/styles/styles.scss";
 
 import Vue from'vue';
