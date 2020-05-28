@@ -33,5 +33,5 @@ export default create({
 
   brandTitle: 'Orange Vue',
   brandUrl: 'https://orangecss.com',
-  // brandImage: 'https://placehold.it/350x150',
+  // brandImage: 'https://orangecss.com/images/logo.svg',
 });
