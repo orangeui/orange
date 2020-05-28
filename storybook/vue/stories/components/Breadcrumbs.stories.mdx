@@ -1,16 +1,19 @@
+<!-- Storybook Addon imports -->
 import { action } from '@storybook/addon-actions';
-import { withKnobs, object, text, select, boolean } from '@storybook/addon-knobs';
-import { storiesOf } from '@storybook/vue';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
 import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OBreadcrumbs from '../../src/components/Breadcrumbs/Breadcrumbs';
+import OBreadcrumbsItem from '../../src/components/Breadcrumbs/BreadcrumbsItem';
+
+<!-- Additional Helpers -->
+import ColorBase from '../../src/global/ColorBase.js';
+import IconList from '../../src/components/Icon/IconList';
 
 <!-- Need to add decorator to Story, for router-link to be recognized -->
 import BasicRouterDecorator from '../../src/global/BasicRouterDecorator.js';
 
-import OBreadcrumbs from '../../src/components/Breadcrumbs/Breadcrumbs';
-import OBreadcrumbsItem from '../../src/components/Breadcrumbs/BreadcrumbsItem';
-
-import IconList from '../../src/components/Icon/IconList';
-import ColorBase from '../../src/global/ColorBase.js';
 
 <Meta title='5. Components|Custom/Breadcrumbs' component={ OBreadcrumbs } />
 
@@ -19,13 +22,12 @@ import ColorBase from '../../src/global/ColorBase.js';
 Show a path
 
 
-
 <hr/>
 
 
 # Tryout
 
-Tryout is for live example of breadcrumbs on **Canvas** tab and bottom tab **Knobs**
+Tryout is for live example of Breadcrumbs on **Canvas** tab and bottom tab **Knobs**
 
 <Story name='Tryout' decorators={[BasicRouterDecorator]}>
   {{

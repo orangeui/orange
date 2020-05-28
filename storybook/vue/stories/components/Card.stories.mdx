@@ -1,11 +1,9 @@
+<!-- Storybook Addon imports -->
 import { action } from '@storybook/addon-actions';
-import { withKnobs, object, text, select, boolean } from '@storybook/addon-knobs';
-import { storiesOf } from '@storybook/vue';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
 import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
 
-<!-- Need to add decorator to Story, for router-link to be recognized -->
-import BasicRouterDecorator from '../../src/global/BasicRouterDecorator.js';
-
+<!-- Component import -->
 import OCard from '../../src/components/Card/Card';
 import OCardHeader from '../../src/components/Card/CardHeader';
 import OCardBody from '../../src/components/Card/CardBody';
@@ -13,6 +11,7 @@ import OCardFooter from '../../src/components/Card/CardFooter';
 import OCardImage from '../../src/components/Card/CardImage';
 import OCardSection from '../../src/components/Card/CardSection';
 
+<!-- Additional subcomponents -->
 import ONavigation from '../../src/components/Navigation/Navigation';
 import ONavigationItem from '../../src/components/Navigation/NavigationItem';
 
@@ -22,6 +21,14 @@ import OListItemSlot from '../../src/components/List/ListItemSlot';
 
 import OButton from '../../src/components/Button/Button';
 import OIcon from '../../src/components/Icon/Icon';
+
+<!-- Additional Helpers -->
+import ColorBase from '../../src/global/ColorBase.js';
+import IconList from '../../src/components/Icon/IconList';
+
+<!-- Need to add decorator to Story, for router-link to be recognized -->
+import BasicRouterDecorator from '../../src/global/BasicRouterDecorator.js';
+
 
 <Meta title='5. Components|Custom/Card' component={ OCard } />
 
