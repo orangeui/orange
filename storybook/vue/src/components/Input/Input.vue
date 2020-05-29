@@ -1,43 +1,58 @@
 <template>
-  <div class="form__item"
-      :class="{
-        'has-extras has-action': hasActionSlot
-    }">
-
-    <div v-if="hasActionSlot && action_position === 'left'" class="form__action">
+  <div
+    class="form__item"
+    :class="{
+      'has-extras has-action': hasActionSlot
+    }"
+  >
+    <div
+      v-if="hasActionSlot && action_position === 'left'"
+      class="form__action"
+    >
       <!-- @slot Action slot to pass in <o-button> component or text -->
       <slot name="action"></slot>
     </div>
-    
+
     <div class="form__input-wrapper">
-      <input class="form__input" :id="id" ref="input" :type="type"
-             :class="{ 'has-value': input_value || input_value === 0 }"
-             :name="name_default"
-             :disabled="disabled" :value="input_value" :readonly="read_only"
-             :min="min" :max="max"
-             autocomplete="off" v-on="input_listeners">
+      <input
+        class="form__input"
+        :id="id"
+        ref="input"
+        :type="type"
+        :class="{ 'has-value': input_value || input_value === 0 }"
+        :name="name_default"
+        :disabled="disabled"
+        :value="input_value"
+        :readonly="read_only"
+        :min="min"
+        :max="max"
+        autocomplete="off"
+        v-on="input_listeners"
+      />
       <label class="form__label" :for="id">{{ label }}</label>
     </div>
 
-    <div v-if="hasActionSlot && action_position === 'right'" class="form__action">
+    <div
+      v-if="hasActionSlot && action_position === 'right'"
+      class="form__action"
+    >
       <slot name="action"></slot>
     </div>
 
-    <p v-if="description" class="form__description">{{ description}}</p>
+    <p v-if="description" class="form__description">{{ description }}</p>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'formInput',
+  name: "formInput",
 
   props: {
     /**
      * Set value with <code>v-model</code> prop
      */
     value: {
-      type: [ String, Number ],
+      type: [String, Number],
       required: false, // Value is not required since we allow empty inputs as well
       default: null
     },
@@ -48,7 +63,7 @@ export default {
     type: {
       type: String,
       required: false,
-      default: 'text'
+      default: "text"
     },
 
     /**
@@ -131,57 +146,55 @@ export default {
     action_position: {
       type: String,
       required: false,
-      default: 'left'
+      default: "left"
     }
   },
 
-  data () {
-    return {}
+  data() {
+    return {};
   },
 
   computed: {
     input_value: {
-      get () {
-        return this.value
+      get() {
+        return this.value;
       },
-      set (newValue) {
-        return newValue
+      set(newValue) {
+        return newValue;
       }
     },
 
-    name_default () {
-      return this.name ? this.name : this.id
+    name_default() {
+      return this.name ? this.name : this.id;
     },
 
-    input_listeners () {
-      const _this = this
+    input_listeners() {
+      const _this = this;
 
-      return Object.assign({},
-        this.$listeners,
-        {
-          input: (event) => {
-            const value = event.target.value.length === 0 ? null : event.target.value
-            _this.$emit('input', value)
-          }
+      return Object.assign({}, this.$listeners, {
+        input: event => {
+          const value =
+            event.target.value.length === 0 ? null : event.target.value;
+          _this.$emit("input", value);
         }
-      )
+      });
     },
 
-    hasActionSlot () {
-      return this.$slots.action
+    hasActionSlot() {
+      return this.$slots.action;
     }
   },
 
-  mounted () {
+  mounted() {
     // Make sure only numbers are possible inside input
-    if (this.type === 'number') {
-      this.$refs.input.addEventListener('keypress', function (evt) {
+    if (this.type === "number") {
+      this.$refs.input.addEventListener("keypress", function(evt) {
         // Allow to type in numbers and enter press
         if ((evt.which < 48 || evt.which > 57) && evt.which !== 13) {
-          evt.preventDefault()
+          evt.preventDefault();
         }
-      })
+      });
     }
   }
-}
+};
 </script>

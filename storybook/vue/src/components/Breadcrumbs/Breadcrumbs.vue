@@ -1,6 +1,10 @@
 <template>
   <nav class="breadcrumbs" :class="nav_classes">
-    <router-link v-if="back_route" :to="{ name: back_route }" class="breadcrumbs__button">
+    <router-link
+      v-if="back_route"
+      :to="{ name: back_route }"
+      class="breadcrumbs__button"
+    >
       {{ back_route_text }}
     </router-link>
 
@@ -12,7 +16,7 @@
 
 <script>
 export default {
-  name: 'Breadcrumbs',
+  name: "Breadcrumbs",
 
   props: {
     /**
@@ -20,7 +24,7 @@ export default {
      */
     // Support for Object route will be added in the future if we'll need to pass params in
     back_route: {
-      type: [ String, Object ],
+      type: [String, Object],
       required: false,
       default: null
     },
@@ -31,7 +35,7 @@ export default {
     back_route_text: {
       type: String,
       required: false,
-      default: 'Back'
+      default: "Back"
     },
 
     /**
@@ -56,12 +60,12 @@ export default {
   },
 
   computed: {
-    nav_classes () {
+    nav_classes() {
       return {
         [`breadcrumbs--${this.size}`]: this.size,
         [`breadcrumbs--color-${this.color}`]: this.color
-      }
+      };
     }
   }
-}
+};
 </script>

@@ -4,7 +4,7 @@ module.exports = {
 
   // need to add this for Unit testing purposes otherwise there are CSS issues
   moduleNameMapper: {
-    '.+\\.(css|styl|less|sass|scss)$': 'identity-obj-proxy'
+    ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy"
   },
   moduleFileExtensions: [
     "js",
@@ -15,7 +15,7 @@ module.exports = {
   transform: {
     // process `*.vue` files with `vue-jest`
     ".*\\.(vue)$": "vue-jest",
-    "^.+\\.js$": "babel-jest", 
+    "^.+\\.js$": "babel-jest",
     "^.+\\.jsx?$": "babel-jest",
     "^.+\\.mdx?$": "@storybook/addon-docs/jest-transform-mdx"
   },

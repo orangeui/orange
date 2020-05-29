@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'Avatar',
+  name: "Avatar",
 
   props: {
     // Not relevant for Global use(shortcut for Fomo robot, granny, sonny) - Talk to lucian
@@ -51,13 +51,13 @@ export default {
   },
 
   computed: {
-    classes () {
+    classes() {
       return {
         [`avatar--color-${this.color}`]: this.color,
         [`avatar--size-${this.size}`]: this.size,
         [`avatar--${this.look}`]: this.look
-      }
+      };
     }
   }
-}
+};
 </script>

@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: 'CardSection'
-}
+  name: "CardSection"
+};
 </script>

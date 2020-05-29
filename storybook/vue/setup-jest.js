@@ -1,2 +1,2 @@
-import lodash from 'lodash'
-global._ = lodash
+import _ from "lodash";
+global._ = _;

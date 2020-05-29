@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: 'CardImage'
-}
+  name: "CardImage"
+};
 </script>
