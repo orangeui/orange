@@ -4,28 +4,28 @@ import "!style-loader!css-loader!sass-loader!../../../site/assets/styles/styles.
 import Vue from'vue';
 import _ from 'lodash';
 
-/*
-* Import Directives
-* */
+// Import Directives
 import AutoExpand from '../src/modules/directives/AutoExpand'
 
-/*
-* Use Directives
-* */
+// Use Directives
 Vue.directive(AutoExpand)
 
 // Lodash register
 Vue.prototype._ = _
 
+// Import Storybook addons
 import { addParameters, addDecorator } from "@storybook/vue";
+import { withA11y } from '@storybook/addon-a11y';
 import orangeTheme from './orangeTheme';
 
+// Add padding around stories
 const paddedList = () => {
   return {
     template: '<div class="p-4"><story/></div>',
   };
 };
 
+// Add options for stories
 addParameters({
   docs: { inlineStories: true },
   showRoots: true,
@@ -38,4 +38,6 @@ addParameters({
   },
 });
 
+// Apply addons to stories
 addDecorator(paddedList);
+addDecorator(withA11y);
