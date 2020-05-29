@@ -4,7 +4,7 @@ import App from "./App.vue";
 /*
  * Import Directives
  * */
-import AutoExpand from "modules/directives/AutoExpand";
+import AutoExpand from "./modules/directives/AutoExpand";
 
 // require('@orange-ui/orange/dist/css/orange.css');
 // import '../../../dist/css/orange.css';
