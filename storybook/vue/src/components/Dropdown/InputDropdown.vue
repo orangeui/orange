@@ -1,29 +1,71 @@
 <template>
   <div class="form__item">
-    <div :id="id"
-         v-on-clickaway="closeMenu"
-         class="form-dropdown" :class="classes" @click="toggleMenu($event)">
+    <div
+      :id="id"
+      v-on-clickaway="closeMenu"
+      class="form-dropdown"
+      :class="classes"
+      @click="toggleMenu($event)"
+    >
       <label class="form-dropdown__label" :for="id">{{ label }}</label>
 
-      <input v-if="search" :id="id" ref="input" v-model="search_value" type="text" class="form-dropdown__input" />
-      <input v-else :id="id" ref="input" v-model="value" type="text" :name="id" class="form-dropdown__input" />
+      <input
+        v-if="search"
+        :id="id"
+        ref="input"
+        v-model="search_value"
+        type="text"
+        class="form-dropdown__input"
+      />
+      <input
+        v-else
+        :id="id"
+        ref="input"
+        v-model="value"
+        type="text"
+        :name="id"
+        class="form-dropdown__input"
+      />
 
-      <div v-if="dropdown_item_title" :class="[ search ? 'form-dropdown__search-text' : 'form-dropdown__text', { 'no-label': !label } ]">{{ dropdown_item_title }}</div>
-      <div v-else-if="!search" class="form-dropdown__text">{{ placeholder }}</div>
+      <div
+        v-if="dropdown_item_title"
+        :class="[
+          search ? 'form-dropdown__search-text' : 'form-dropdown__text',
+          { 'no-label': !label }
+        ]"
+      >
+        {{ dropdown_item_title }}
+      </div>
+      <div v-else-if="!search" class="form-dropdown__text">
+        {{ placeholder }}
+      </div>
 
       <div class="form-dropdown__icon">
         <svg viewBox="0 0 24 24">
-          <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+          <path
+            fill="#000000"
+            d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+          />
         </svg>
         <svg viewBox="0 0 24 24">
-          <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+          <path
+            fill="#000000"
+            d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+          />
         </svg>
       </div>
 
       <div class="form-dropdown__content">
         <ul class="form-dropdown__menu">
-          <li v-for="item in (!search ? dropdown_items : dropdown_items_search)" :key="item.id ? item.id : item" :class="{ 'is-selected': item.is_selected }" @click="updateValue(item)">
-            <template v-if="_.isObject(item)">{{ item[title_property] }}</template>
+          <li
+            v-for="item in !search ? dropdown_items : dropdown_items_search"
+            :key="item.id ? item.id : item"
+            :class="{ 'is-selected': item.is_selected }"
+            @click="updateValue(item)"
+          >
+            <template v-if="_.isObject(item)">{{
+              item[title_property]
+            }}</template>
             <template v-else>{{ item }}</template>
             <o-icon v-if="item.is_selected" symbol="yes" />
           </li>
@@ -31,20 +73,24 @@
       </div>
     </div>
 
-    <div v-if="description" class="form__description">{{ description}}</div>
+    <div v-if="description" class="form__description">{{ description }}</div>
   </div>
 </template>
 
 <script>
-import OIcon from '../Icon/Icon';
-import { mixin as clickaway } from 'vue-clickaway';
+import Vue from "vue";
+import _ from "lodash";
+Vue.prototype._ = _;
+
+import OIcon from "../Icon/Icon";
+import { mixin as clickaway } from "vue-clickaway";
 
 export default {
-  name: 'formInputDropdown',
+  name: "formInputDropdown",
 
   // inject: [ '$validator' ],
 
-  mixins: [ clickaway ],
+  mixins: [clickaway],
 
   components: {
     OIcon
@@ -68,10 +114,10 @@ export default {
     },
 
     /**
-    * Property to display in dropdown list
-    *
-    * Possible only when passing array of object
-    */
+     * Property to display in dropdown list
+     *
+     * Possible only when passing array of object
+     */
     // selected_items: {
     //   type: Array,
     //   required: false,
@@ -93,7 +139,7 @@ export default {
     label: {
       type: String,
       required: true,
-      default: 'Dropdown label'
+      default: "Dropdown label"
     },
 
     /**
@@ -106,8 +152,8 @@ export default {
     },
 
     /**
-      * Description text below dropdown
-      */
+     * Description text below dropdown
+     */
     description: {
       type: String,
       required: false,
@@ -115,32 +161,32 @@ export default {
     },
 
     /**
-    * Property to display in dropdown list
-    *
-    * Possible only when passing array of object
-    */
+     * Property to display in dropdown list
+     *
+     * Possible only when passing array of object
+     */
     title_property: {
       type: String,
       required: false,
-      default: 'name'
+      default: "name"
     },
 
     /**
-    * Value of property we pass to parent
-    *
-    * Possible only when passing array of object
-    */
+     * Value of property we pass to parent
+     *
+     * Possible only when passing array of object
+     */
     value_property: {
       type: String,
       required: false,
-      default: 'id'
+      default: "id"
     },
 
     /**
-    * Pass full object to parent
-    *
-    * Possible only when passing array of object
-    */
+     * Pass full object to parent
+     *
+     * Possible only when passing array of object
+     */
     value_as_object: {
       type: Boolean,
       required: false,
@@ -148,8 +194,8 @@ export default {
     },
 
     /**
-    * Enable search input
-    */
+     * Enable search input
+     */
     search: {
       type: Boolean,
       required: false,
@@ -157,104 +203,115 @@ export default {
     },
 
     /**
-    * Disable dropdown
-    */
+     * Disable dropdown
+     */
     disabled: {
       type: Boolean,
       required: false,
       default: false
-    },
+    }
 
     /**
-    * Enable validation
-    */
+     * Enable validation
+     */
     // validate: {
     //   type: String,
     //   default: null
     // }
   },
 
-  data () {
+  data() {
     return {
       is_open: false,
       search_value: null
-    }
+    };
   },
 
   computed: {
-    classes () {
+    classes() {
       return {
-        'is-open': this.is_open,
-        'has-value': this.dropdown_item_title || (this.search && this.value),
-        'is-disabled': this.disabled,
-        'form-dropdown--search': this.search,
+        "is-open": this.is_open,
+        "has-value": this.dropdown_item_title || (this.search && this.value),
+        "is-disabled": this.disabled,
+        "form-dropdown--search": this.search
         // 'error': this.errors.has(this.id)
-      }
+      };
     },
 
-    is_dropdown_with_objects () {
-      let is_object
+    is_dropdown_with_objects() {
+      let is_object;
 
       this.dropdown_items.forEach(item => {
-        is_object = _.isObject(item)
-      })
+        is_object = _.isObject(item);
+      });
 
-      return is_object
+      return is_object;
     },
 
-    dropdown_item_title () {
+    dropdown_item_title() {
       // This serves as a title if it's array of strings
-      let title = this.value
+      let title = this.value;
 
       // If value is object, set title from title_property, else if value is not object (value_as_object !== true), then find the item in the array based on value and value_property
       if (_.isObject(this.value)) {
-        title = this.value[ this.title_property ] ? this.value[ this.title_property ] : this.value[ this.value_property ]
+        title = this.value[this.title_property]
+          ? this.value[this.title_property]
+          : this.value[this.value_property];
       } else if (this.value && this.is_dropdown_with_objects) {
         const item = this.dropdown_items.find(dropdown_item => {
-          if (dropdown_item[this.value_property].toString() === this.value.toString()) {
-            return dropdown_item
+          if (
+            dropdown_item[this.value_property].toString() ===
+            this.value.toString()
+          ) {
+            return dropdown_item;
           }
-        })
+        });
 
         // If item is found, return title, else return title set from the first line in the method
         if (item) {
-          title = item[this.title_property]
+          title = item[this.title_property];
         }
       }
 
-      return title
+      return title;
     },
 
-    dropdown_items () {
+    dropdown_items() {
       /*
-        * Map array of dropdown items into objects, so we can add 'is_selected` property to it
-        * (It doesn't matter if it's array of strings or objects, it handles both)
-        * */
+       * Map array of dropdown items into objects, so we can add 'is_selected` property to it
+       * (It doesn't matter if it's array of strings or objects, it handles both)
+       * */
       return _.map(this.items, item => {
-        const title_property = _.isObject(item) ? item[this.title_property] : item
+        const title_property = _.isObject(item)
+          ? item[this.title_property]
+          : item;
 
         const modified_object = {
           [this.title_property]: title_property,
-          is_selected: this.selected_items ? this.selected_items.indexOf(item.id ? item.id : item) !== -1 : false
-        }
+          is_selected: this.selected_items
+            ? this.selected_items.indexOf(item.id ? item.id : item) !== -1
+            : false
+        };
 
-        return _.isObject(item) ? Object.assign(modified_object, item) : item
-      })
+        return _.isObject(item) ? Object.assign(modified_object, item) : item;
+      });
     },
 
-    dropdown_items_search () {
+    dropdown_items_search() {
       if (this.search_value) {
-        return _.filter(this.dropdown_items, (item) => {
-          let value = item
+        return _.filter(this.dropdown_items, item => {
+          let value = item;
 
           if (_.isObject(item)) {
-            value = item[this.title_property]
+            value = item[this.title_property];
           }
 
-          return value.toLowerCase().indexOf(this.search_value.toLowerCase()) !== -1
-        })
+          return (
+            value.toLowerCase().indexOf(this.search_value.toLowerCase()) !== -1
+          );
+        });
       } else {
-        return this.dropdown_items
+        return this.dropdown_items;
       }
     }
   },
@@ -270,28 +327,31 @@ export default {
   },
 
   methods: {
-    updateValue (value) {
+    updateValue(value) {
       // If value item is object
       if (_.isObject(value)) {
         // If item is already selected, disable updating the value
         if (value.is_selected) {
-          return
+          return;
         }
 
         // Remove 'is_selected' property out of the object so we don't pass it outside of this component
-        _.unset(value, 'is_selected')
+        _.unset(value, "is_selected");
       }
 
-      const returned_value = (this.value_as_object || !_.isObject(value)) ? value : value[ this.value_property ]
+      const returned_value =
+        this.value_as_object || !_.isObject(value)
+          ? value
+          : value[this.value_property];
 
       /**
        * Passthrough <code>input</code> event
        * @type {Event}
        */
-      this.$emit('input', returned_value)
+      this.$emit("input", returned_value);
 
       if (this.search) {
-        this.search_value = null
+        this.search_value = null;
       }
 
       // if (this.validate) {
@@ -301,25 +361,28 @@ export default {
       // }
     },
 
-    toggleMenu (event) {
+    toggleMenu(event) {
       // Disable closing the dropdown when clicking on already selected items
-      if (event.target.tagName === 'LI' && event.target.className.indexOf('is-selected') !== -1) {
-        return
+      if (
+        event.target.tagName === "LI" &&
+        event.target.className.indexOf("is-selected") !== -1
+      ) {
+        return;
       }
-      this.is_open = !this.is_open
+      this.is_open = !this.is_open;
 
       if (this.search) {
         if (!this.is_open) {
-          this.$refs.input.blur()
+          this.$refs.input.blur();
         }
       }
     },
 
-    closeMenu () {
+    closeMenu() {
       if (this.is_open) {
-        this.is_open = false
+        this.is_open = false;
       }
     }
   }
-}
+};
 </script>
