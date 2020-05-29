@@ -11,7 +11,7 @@ module.exports = {
           },
         },
       },
-    }, '@storybook/addon-actions', '@storybook/addon-knobs', '@storybook/addon-links'],
+    }, '@storybook/addon-actions', '@storybook/addon-a11y/register', '@storybook/addon-knobs', '@storybook/addon-links'],
 
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
