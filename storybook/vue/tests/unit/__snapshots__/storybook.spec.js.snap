@@ -7807,7 +7807,9 @@ exports[`Storyshots 5. Components|Forms/Dropdown Basic with strings 1`] = `
         <div
           class="form-dropdown__text"
         >
-          placeholder
+          
+      placeholder
+    
         </div>
          
         <div
@@ -7913,7 +7915,9 @@ exports[`Storyshots 5. Components|Forms/Dropdown Large with objects 1`] = `
         <div
           class="form-dropdown__text"
         >
-          placeholder
+          
+      placeholder
+    
         </div>
          
         <div
@@ -8020,7 +8024,9 @@ exports[`Storyshots 5. Components|Forms/Dropdown Tryout 1`] = `
           <div
             class="form-dropdown__text"
           >
-            Placeholder
+            
+      Placeholder
+    
           </div>
            
           <div
@@ -9577,7 +9583,9 @@ exports[`Storyshots 5. Components|Forms/Toggle Custom value names 1`] = `
           <div
             class="toggle__value toggle__value--disabled"
           >
-            Custom Disabled Value Text
+            
+        Custom Disabled Value Text
+      
           </div>
         </div>
       </div>
@@ -9627,7 +9635,9 @@ exports[`Storyshots 5. Components|Forms/Toggle Large 1`] = `
           <div
             class="toggle__value toggle__value--disabled"
           >
-            Disabled
+            
+        Disabled
+      
           </div>
         </div>
       </div>
