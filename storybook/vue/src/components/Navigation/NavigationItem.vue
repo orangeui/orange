@@ -1,6 +1,11 @@
 <template>
   <li>
-    <router-link :to="to" :class="{ 'is-disabled': disabled }" :tag="tag" :exact="exact">
+    <router-link
+      :to="to"
+      :class="{ 'is-disabled': disabled }"
+      :tag="tag"
+      :exact="exact"
+    >
       <o-icon v-if="icon" :symbol="`${icon}`" />
 
       <slot />
@@ -9,10 +14,10 @@
 </template>
 
 <script>
-import OIcon from '../Icon/Icon';
+import OIcon from "../Icon/Icon";
 
 export default {
-  name: 'NavigationItem',
+  name: "NavigationItem",
 
   components: {
     OIcon
@@ -24,7 +29,7 @@ export default {
      */
     to: {
       type: [String, Object],
-      default: ''
+      default: ""
     },
 
     /**
@@ -32,7 +37,7 @@ export default {
      */
     tag: {
       type: String,
-      default: 'a'
+      default: "a"
     },
 
     /**
@@ -63,5 +68,5 @@ export default {
       default: null
     }
   }
-}
+};
 </script>

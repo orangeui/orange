@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'Navigation',
+  name: "Navigation",
 
   props: {
     /**
@@ -30,17 +30,17 @@ export default {
     align: {
       type: String,
       required: false,
-      default: 'left'
-    },
+      default: "left"
+    }
   },
 
   computed: {
-    nav_classes () {
+    nav_classes() {
       return {
         [`nav--color-${this.color}`]: this.color,
-        [`nav--${this.align}`]: this.align,
-      }
+        [`nav--${this.align}`]: this.align
+      };
     }
   }
-}
+};
 </script>

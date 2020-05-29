@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'TableWrapper',
+  name: "TableWrapper",
 
   props: {
     /**
@@ -53,23 +53,23 @@ export default {
       type: Boolean,
       required: false,
       default: false
-    },
+    }
   },
 
-  data () {
-    return {}
+  data() {
+    return {};
   },
 
   computed: {
-    classes () {
+    classes() {
       return {
         [`table--border-bottom`]: this.border_bottom,
         [`table--fixed`]: this.evenly_distributed,
         [`table--compact`]: this.compact,
         [`table--celled`]: this.celled,
-        [`table--definition`]: this.definition,
-      }
+        [`table--definition`]: this.definition
+      };
     }
   }
-}
+};
 </script>

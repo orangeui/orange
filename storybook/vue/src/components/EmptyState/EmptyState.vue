@@ -18,14 +18,14 @@
     </div>
 
     <div class="empty-state__image">
-      <img :src="`${image_path}`">
+      <img :src="`${image_path}`" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'EmptyState',
+  name: "EmptyState",
 
   props: {
     /**
@@ -48,11 +48,11 @@ export default {
   },
 
   computed: {
-    classes () {
+    classes() {
       return {
-        'empty-state--no-gutter': this.no_gutter
-      }
+        "empty-state--no-gutter": this.no_gutter
+      };
     }
   }
-}
+};
 </script>

@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'Callout',
+  name: "Callout",
 
   props: {
     /**
@@ -28,7 +28,7 @@ export default {
       required: false,
       default: false
     },
-    
+
     /**
      * Show hover effects
      */
@@ -36,17 +36,17 @@ export default {
       type: Boolean,
       required: false,
       default: false
-    },
+    }
   },
 
   computed: {
-    classes () {
+    classes() {
       return {
         [`callout--color-${this.color}`]: this.color,
         [`callout--${this.size}`]: this.size,
-        'callout--shadow': this.shadow,
-        'callout--action': this.action
-      }
+        "callout--shadow": this.shadow,
+        "callout--action": this.action
+      };
     }
   },
 
@@ -56,8 +56,8 @@ export default {
        * Passthrough <code>click</code> event
        * @type {Event}
        */
-      this.$emit('click', e)
+      this.$emit("click", e);
     }
   }
-}
+};
 </script>

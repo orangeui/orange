@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'CardFooter',
+  name: "CardFooter",
 
   props: {
     /**
@@ -20,15 +20,15 @@ export default {
   },
 
   computed: {
-    classes () {
+    classes() {
       return {
-        'card__footer--click': this.action
-      }
+        "card__footer--click": this.action
+      };
     },
 
     clickEnabled() {
-      return this.action ? 'click' : null
-    },
+      return this.action ? "click" : null;
+    }
   },
 
   methods: {
@@ -37,8 +37,8 @@ export default {
        * Passthrough <code>click</code> event
        * @type {Event}
        */
-      this.$emit('click', e)
+      this.$emit("click", e);
     }
   }
-}
+};
 </script>

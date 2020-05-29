@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'Icon',
+  name: "Icon",
 
   props: {
     /**
@@ -25,12 +25,12 @@ export default {
   },
 
   computed: {
-    classes () {
+    classes() {
       return {
         [`icon-${this.symbol}`]: this.symbol,
-        [`color-${this.color}`]: this.color,
-      }
+        [`color-${this.color}`]: this.color
+      };
     }
   }
-}
+};
 </script>

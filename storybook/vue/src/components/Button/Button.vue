@@ -1,14 +1,20 @@
 <template>
-  <button :type="type" class="button" :class="[button_classes, button_color]" @click="click" :disabled="isDisabled">
+  <button
+    :type="type"
+    class="button"
+    :class="[button_classes, button_color]"
+    @click="click"
+    :disabled="isDisabled"
+  >
     <span v-if="back" class="button__arrow-tail" />
     <template v-if="text">{{ text }}</template>
-    <i v-if="icon" :class="[ `icon-${icon}`]" />
+    <i v-if="icon" :class="[`icon-${icon}`]" />
   </button>
 </template>
 
 <script>
 export default {
-  name: 'Button',
+  name: "Button",
   props: {
     /**
      * HTML tag type
@@ -18,7 +24,7 @@ export default {
     type: {
       type: String,
       required: false,
-      default: 'button'
+      default: "button"
     },
 
     /**
@@ -38,7 +44,7 @@ export default {
     role: {
       type: String,
       required: false,
-      default: 'primary'
+      default: "primary"
     },
 
     /**
@@ -118,30 +124,32 @@ export default {
       default: false
     }
   },
-  data () {
-    return {}
+  data() {
+    return {};
   },
   computed: {
-    button_classes () {
+    button_classes() {
       return {
         [`button--${this.role}`]: this.role,
         [`button--${this.variant}`]: this.variant,
         [`button--${this.size}`]: this.size,
         [`button--icon-only`]: !this.text && this.icon,
         [`button--back`]: this.back,
-        'button--inverted': this.inverted,
-        'button--wide': this.wide
-      }
+        "button--inverted": this.inverted,
+        "button--wide": this.wide
+      };
     },
-    button_color () {
+    button_color() {
       // Check if button is inside message component
-      if (this.$parent.$options._componentTag === 'o-message') {
-        let message_color = this.$parent.$options.propsData.color
-        return message_color == null ? 'button--color-gray' : `button--color-${message_color}`
+      if (this.$parent.$options._componentTag === "o-message") {
+        let message_color = this.$parent.$options.propsData.color;
+        return message_color == null
+          ? "button--color-gray"
+          : `button--color-${message_color}`;
       } else {
         return {
-          [`button--color-${this.color}`]: this.color,
-        }
+          [`button--color-${this.color}`]: this.color
+        };
       }
     }
   },
@@ -151,8 +159,8 @@ export default {
        * Passthrough <code>click</code> event
        * @type {Event}
        */
-      this.$emit('click', e)
+      this.$emit("click", e);
     }
   }
-}
+};
 </script>

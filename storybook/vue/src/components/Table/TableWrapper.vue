@@ -1,5 +1,9 @@
 <template>
-  <div class="table-wrapper" :class="classes" :style="{ height: height + 'px' }">
+  <div
+    class="table-wrapper"
+    :class="classes"
+    :style="{ height: height + 'px' }"
+  >
     <!-- @slot Default slot for table component -->
     <slot />
   </div>
@@ -7,11 +11,11 @@
 
 <script>
 export default {
-  name: 'TableWrapper',
+  name: "TableWrapper",
 
   props: {
     /**
-     * Set height 
+     * Set height
      */
     height: {
       type: [String, Number],
@@ -31,16 +35,16 @@ export default {
     }
   },
 
-  data () {
-    return {}
+  data() {
+    return {};
   },
 
   computed: {
     classes() {
       return {
         [`table-wrapper--fixed-header`]: this.fixed_header
-      }
+      };
     }
   }
-}
+};
 </script>

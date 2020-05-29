@@ -1,47 +1,54 @@
 <template>
   <div class="form__item">
-    <textarea class="form__textarea" :class="{ 'has-value': input_value }" :name="id" :id="id" :disabled="disabled" :value="input_value"
-              v-on="input_listeners" :readonly="read_only" ref="input_textarea" :rows="rows"
-              v-auto-expand="autoexpand"></textarea>
+    <textarea
+      class="form__textarea"
+      :class="{ 'has-value': input_value }"
+      :name="id"
+      :id="id"
+      :disabled="disabled"
+      :value="input_value"
+      v-on="input_listeners"
+      :readonly="read_only"
+      ref="input_textarea"
+      :rows="rows"
+      v-auto-expand="autoexpand"
+    ></textarea>
     <label class="form__label" :for="id">{{ label }}</label>
 
-    <div class="form__description" v-if="description">{{ description}}</div>
+    <div class="form__description" v-if="description">{{ description }}</div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'formTextarea',
+  name: "formTextarea",
 
-  data () {
-    return {}
+  data() {
+    return {};
   },
 
   computed: {
     input_value: {
-      get () {
-        return this.value
+      get() {
+        return this.value;
       },
-      set (newValue) {
-        return newValue
+      set(newValue) {
+        return newValue;
       }
     },
 
-    name_default () {
-      return this.name ? this.name : this.id
+    name_default() {
+      return this.name ? this.name : this.id;
     },
 
-    input_listeners () {
-      const _this = this
+    input_listeners() {
+      const _this = this;
 
-      return Object.assign({},
-        this.$listeners,
-        {
-          input: (event) => {
-            _this.$emit('input', event.target.value)
-          }
+      return Object.assign({}, this.$listeners, {
+        input: event => {
+          _this.$emit("input", event.target.value);
         }
-      )
+      });
     }
   },
 
@@ -114,17 +121,17 @@ export default {
       type: Boolean,
       required: false,
       default: false
-    },
+    }
   },
 
   methods: {
-    updateValue (value) {
+    updateValue(value) {
       /**
        * Passthrough <code>input</code> event
        * @type {Event}
        */
-      this.$emit('input', value)
+      this.$emit("input", value);
     }
-  },
-}
+  }
+};
 </script>

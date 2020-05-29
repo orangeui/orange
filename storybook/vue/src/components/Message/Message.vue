@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: 'Message',
+  name: "Message",
 
   props: {
     /**
@@ -43,8 +43,8 @@ export default {
     },
 
     /**
-     * Message size but for now only supports <code>full</code>. 
-     * That is meant to be used outside containers in order to take full browser width. 
+     * Message size but for now only supports <code>full</code>.
+     * That is meant to be used outside containers in order to take full browser width.
      *
      * Possible values: <code>full</code>
      */
@@ -59,17 +59,17 @@ export default {
       type: Boolean,
       required: false,
       default: false
-    },
+    }
   },
 
   computed: {
-    classes () {
+    classes() {
       return {
         [`message--color-${this.color}`]: this.color,
         [`message--${this.size}`]: this.size,
-        'message--shadow': this.shadow
-      }
+        "message--shadow": this.shadow
+      };
     }
   }
-}
+};
 </script>

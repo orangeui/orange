@@ -2,14 +2,17 @@
   <span class="label" :class="classes" @[clickEnabled]="click">
     {{ text }}
 
-    <i v-if="dismiss || icon" :class="`icon-${dismiss ? 'x' : icon}`"
-    @[dismissClickEnabled]="dismissClick"></i>
+    <i
+      v-if="dismiss || icon"
+      :class="`icon-${dismiss ? 'x' : icon}`"
+      @[dismissClickEnabled]="dismissClick"
+    ></i>
   </span>
 </template>
 
 <script>
 export default {
-  name: 'Label',
+  name: "Label",
 
   props: {
     /**
@@ -65,20 +68,20 @@ export default {
   },
 
   computed: {
-    classes () {
+    classes() {
       return {
         [`label--${this.color}`]: this.color,
         [`label--${this.size}`]: this.size,
         [`label--dismiss`]: this.dismiss
-      }
+      };
     },
 
     clickEnabled() {
-      return !this.dismiss ? 'click' : null
+      return !this.dismiss ? "click" : null;
     },
 
     dismissClickEnabled() {
-      return this.dismiss ? 'click' : null
+      return this.dismiss ? "click" : null;
     }
   },
 
@@ -88,7 +91,7 @@ export default {
        * Passthrough <code>click</code> event
        * @type {Event}
        */
-      this.$emit('click', e)
+      this.$emit("click", e);
     },
 
     dismissClick(e) {
@@ -96,8 +99,8 @@ export default {
        * Passthrough <code>dismissClick</code> event that is wired on <code>icon</code>
        * @type {Event}
        */
-      this.$emit('dismissClick', e)
+      this.$emit("dismissClick", e);
     }
   }
-}
+};
 </script>

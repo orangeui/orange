@@ -1,32 +1,39 @@
 <template>
   <div class="radio" :class="radioClasses">
-    <input type="radio" :name="name" :disabled="disabled" v-model="radioValue" :value="id" @change="onChange" :id="id">
+    <input
+      type="radio"
+      :name="name"
+      :disabled="disabled"
+      v-model="radioValue"
+      :value="id"
+      @change="onChange"
+      :id="id"
+    />
     <label :for="id">{{ label }}</label>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'FormRadio',
+  name: "FormRadio",
 
-  data () {
-    return {
-    }
+  data() {
+    return {};
   },
 
   computed: {
-    radioClasses () {
+    radioClasses() {
       return {
-        'is-disabled': this.disabled,
-        'is-checked': this.value === this.id
-      }
+        "is-disabled": this.disabled,
+        "is-checked": this.value === this.id
+      };
     },
     radioValue: {
-      get () {
-        return this.value
+      get() {
+        return this.value;
       },
-      set (newValue) {
-        return newValue
+      set(newValue) {
+        return newValue;
       }
     }
   },
@@ -36,7 +43,7 @@ export default {
      * Set value with <code>v-model</code> prop
      */
     value: {
-      type: [ Number, String, Boolean ],
+      type: [Number, String, Boolean],
       required: true
     },
 
@@ -44,7 +51,7 @@ export default {
      * Set id to input
      */
     id: {
-      type: [ Number, String, Boolean ],
+      type: [Number, String, Boolean],
       required: true,
       default: null
     },
@@ -78,13 +85,13 @@ export default {
   },
 
   methods: {
-    onChange (event) {
+    onChange(event) {
       /**
        * Passthrough <code>input</code> event with input/radio value same as id
        * @type {Event}
        */
-      this.$emit('input', event.target.value)
+      this.$emit("input", event.target.value);
     }
   }
-}
+};
 </script>

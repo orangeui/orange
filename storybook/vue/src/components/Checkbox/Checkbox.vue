@@ -1,32 +1,37 @@
 <template>
   <div class="checkbox" :class="checkboxClasses">
-    <input type="checkbox" :disabled="disabled" v-model="checkboxValue" @change="onChange" :id="id">
+    <input
+      type="checkbox"
+      :disabled="disabled"
+      v-model="checkboxValue"
+      @change="onChange"
+      :id="id"
+    />
     <label @click="onToggle">{{ label }}</label>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Checkbox',
+  name: "Checkbox",
 
-  data () {
-    return {
-    }
+  data() {
+    return {};
   },
 
   computed: {
-    checkboxClasses () {
+    checkboxClasses() {
       return {
-        'is-disabled': this.disabled,
-        'is-checked': this.value
-      }
+        "is-disabled": this.disabled,
+        "is-checked": this.value
+      };
     },
     checkboxValue: {
-      get () {
-        return this.value
+      get() {
+        return this.value;
       },
-      set (newValue) {
-        return newValue
+      set(newValue) {
+        return newValue;
       }
     }
   },
@@ -69,19 +74,19 @@ export default {
   },
 
   methods: {
-    onChange (event) {
+    onChange(event) {
       /**
        * Passthrough <code>input</code> event with input/checkbox value
        * @type {Event}
        */
-      this.$emit('input', event.target.checked)
+      this.$emit("input", event.target.checked);
     },
 
-    onToggle () {
+    onToggle() {
       if (!this.disabled) {
-        this.$emit('input', !this.checkboxValue)
+        this.$emit("input", !this.checkboxValue);
       }
     }
   }
-}
+};
 </script>

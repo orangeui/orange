@@ -2,7 +2,14 @@
   <div class="form__item">
     <div class="toggle" :class="toggleClasses">
       <div class="toggle__button">
-        <input class="toggle__input" type="checkbox" :disabled="disabled" v-model="toggleValue" @change="onChange" :id="id">
+        <input
+          class="toggle__input"
+          type="checkbox"
+          :disabled="disabled"
+          v-model="toggleValue"
+          @change="onChange"
+          :id="id"
+        />
         <label class="toggle__label" @click="onToggle">
           <span v-if="size !== 'large'">{{ label }}</span>
         </label>
@@ -12,40 +19,39 @@
       <div v-if="size === 'large'">
         <label class="toggle__text" @click="onToggle">{{ label }}</label>
         <div class="toggle__value" v-if="toggleValue">{{ valueText }}</div>
-        <div class="toggle__value toggle__value--disabled" v-else>{{ valueTextDisabled }}</div>
+        <div class="toggle__value toggle__value--disabled" v-else>
+          {{ valueTextDisabled }}
+        </div>
       </div>
-
     </div>
     <div class="form__description" v-if="description">{{ description }}</div>
   </div>
-
 </template>
 
 <script>
 export default {
-  name: 'toggle',
+  name: "toggle",
 
-  data () {
-    return {
-    }
+  data() {
+    return {};
   },
 
   computed: {
-    toggleClasses () {
+    toggleClasses() {
       return {
-        'toggle--label': this.label,
+        "toggle--label": this.label,
         [`toggle--color-${this.color}`]: this.color,
         [`toggle--${this.size}`]: this.size,
-        'is-disabled': this.disabled,
-        'is-checked': this.value
-      }
+        "is-disabled": this.disabled,
+        "is-checked": this.value
+      };
     },
     toggleValue: {
-      get () {
-        return this.value
+      get() {
+        return this.value;
       },
-      set (newValue) {
-        return newValue
+      set(newValue) {
+        return newValue;
       }
     }
   },
@@ -123,7 +129,7 @@ export default {
     valueText: {
       type: String,
       required: false,
-      default: 'Enabled'
+      default: "Enabled"
     },
 
     /**
@@ -132,24 +138,24 @@ export default {
     valueTextDisabled: {
       type: String,
       required: false,
-      default: 'Disabled'
+      default: "Disabled"
     }
   },
 
   methods: {
-    onChange (event) {
+    onChange(event) {
       /**
        * Passthrough <code>input</code> event
        * @type {Event}
        */
-      this.$emit('input', event.target.checked)
+      this.$emit("input", event.target.checked);
     },
 
-    onToggle () {
+    onToggle() {
       if (!this.disabled) {
-        this.$emit('input', !this.toggleValue)
+        this.$emit("input", !this.toggleValue);
       }
     }
   }
-}
+};
 </script>

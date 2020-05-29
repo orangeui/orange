@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'OImage',
+  name: "OImage",
 
   props: {
     /**
@@ -63,18 +63,18 @@ export default {
       type: Boolean,
       required: false,
       default: false
-    },
+    }
   },
 
   computed: {
-    classes () {
+    classes() {
       return {
         [`image--${this.rounded}`]: this.rounded,
         [`image--size-${this.size}`]: this.size,
         [`image--shadow`]: this.shadow,
         [`image--action`]: this.action
-      }
-    },
-  },
-}
+      };
+    }
+  }
+};
 </script>

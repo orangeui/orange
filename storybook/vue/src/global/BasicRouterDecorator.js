@@ -1,7 +1,8 @@
-import StoryRouter from 'storybook-vue-router';
+import StoryRouter from "storybook-vue-router";
 
-export default StoryRouter({}, {
-    routes: [
-      { path: '/'}
-    ]
-});
+export default StoryRouter(
+  {},
+  {
+    routes: [{ path: "/" }]
+  }
+);

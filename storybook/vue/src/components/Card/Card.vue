@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'Card',
+  name: "Card",
 
   props: {
     /**
@@ -20,11 +20,11 @@ export default {
   },
 
   computed: {
-    classes () {
+    classes() {
       return {
-        'card--full': this.full
-      }
+        "card--full": this.full
+      };
     }
   }
-}
+};
 </script>

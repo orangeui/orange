@@ -1,12 +1,12 @@
 <template>
-  <div :class="{ 'list__action' : action }">
+  <div :class="{ list__action: action }">
     <slot />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ListSlot',
+  name: "ListSlot",
 
   props: {
     /**
@@ -16,7 +16,7 @@ export default {
       type: Boolean,
       required: false,
       default: false
-    },
+    }
   }
-}
+};
 </script>

@@ -1,6 +1,12 @@
 <template>
   <li>
-    <component :is="tag" :to="to" :href="href" :exact="exact" :class="{ 'is-active': active }">
+    <component
+      :is="tag"
+      :to="to"
+      :href="href"
+      :exact="exact"
+      :class="{ 'is-active': active }"
+    >
       <o-icon :symbol="icon" v-if="icon"></o-icon>
 
       <slot />
@@ -9,10 +15,10 @@
 </template>
 
 <script>
-import OIcon from '../Icon/Icon';
+import OIcon from "../Icon/Icon";
 
 export default {
-  name: 'BreadcrumbsItem',
+  name: "BreadcrumbsItem",
 
   components: {
     OIcon
@@ -25,7 +31,7 @@ export default {
     tag: {
       type: String,
       required: false,
-      default: 'router-link'
+      default: "router-link"
     },
 
     /**
@@ -33,7 +39,7 @@ export default {
      */
     to: {
       type: [String, Object],
-      default: ''
+      default: ""
     },
 
     /**
@@ -74,5 +80,5 @@ export default {
       default: false
     }
   }
-}
+};
 </script>
