@@ -59,7 +59,7 @@ export default {
     /**
      * Button icon on right side of text or without text / icon only
      *
-     * Possible values: See [Icons page](link-to-page)
+     * Possible values: See [Icons page](/?path=/docs/2-global-icon--symbols)
      */
     icon: {
       type: String,

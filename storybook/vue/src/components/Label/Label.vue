@@ -27,7 +27,7 @@ export default {
     /**
      * Icon on right side of text
      *
-     * Possible values: See [Icons page](link-to-page)
+     * Possible values: See [Icons page](/?path=/docs/2-global-icon--symbols)
      */
     icon: {
       type: String,

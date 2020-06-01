@@ -64,7 +64,7 @@ export default {
     /**
      * Breadcrumb icon
      *
-     * Possible values: See [Icons page](link-to-page)
+     * Possible values: See [Icons page](/?path=/docs/2-global-icon--symbols)
      */
     icon: {
       type: String,
