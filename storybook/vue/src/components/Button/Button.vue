@@ -48,15 +48,6 @@ export default {
     },
 
     /**
-     * Button variant
-     */
-    variant: {
-      type: String,
-      required: false,
-      default: null
-    },
-
-    /**
      * Button icon on right side of text or without text / icon only
      *
      * Possible values: See [Icons page](/?path=/docs/2-global-icon--symbols)
