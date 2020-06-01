@@ -1,5 +1,6 @@
 <template>
   <ul class="list" :class="classes">
+    <!-- @slot Default slot for List Item components -->
     <slot />
   </ul>
 </template>

@@ -11,6 +11,10 @@ import OListItemSlot from '../../src/components/List/ListItemSlot';
 <!-- Additional subcomponents -->
 import OButton from '../../src/components/Button/Button';
 
+import OCard from '../../src/components/Card/Card';
+import OCardHeader from '../../src/components/Card/CardHeader';
+import OCardBody from '../../src/components/Card/CardBody';
+
 
 <Meta title='5. Components|Basic/List' component={ OList } />
 
@@ -303,7 +307,7 @@ Tryout is for live example of list on **Canvas** tab and bottom tab **Knobs**
   <Story name='Pointer style'>
     {{
       components: { OList, OListItem, OListItemSlot, OButton },
-      template: `<o-list :hover="true">
+      template: `<o-list :pointer="true">
         <o-list-item>
           <o-list-item-slot>
             <h3>First item</h3>
@@ -341,7 +345,49 @@ Tryout is for live example of list on **Canvas** tab and bottom tab **Knobs**
 
 # Inside a card, divided, hover, pointer
 
-Needs to be added after **Card** component is added
+<Preview>
+  <Story name='Card, divided, hover, pointer'>
+    {{
+      components: { OList, OListItem, OListItemSlot, OButton, OCard, OCardHeader, OCardBody },
+      template: `<o-card>
+        <o-card-header>
+          <h3>Title</h3>
+        </o-card-header>
+        <o-card-body>
+          <o-list :divide="true" :hover="true" :pointer="true" :no_gutter="true">
+            <o-list-item>
+              <o-list-item-slot>
+                <h3>First item</h3>
+                <p>Description of the first item</p>
+              </o-list-item-slot>
+              <o-list-item-slot :action="true">
+                <o-button text="Action" role="small" />
+              </o-list-item-slot>
+            </o-list-item>
+            <o-list-item>
+              <o-list-item-slot>
+                <h3>Second item</h3>
+                <p>Description of the second item</p>
+              </o-list-item-slot>
+              <o-list-item-slot :action="true">
+                <o-button text="Action" role="small" />
+              </o-list-item-slot>
+            </o-list-item>
+            <o-list-item>
+              <o-list-item-slot>
+                <h3>Third item</h3>
+                <p>Description of the third item</p>
+              </o-list-item-slot>
+              <o-list-item-slot :action="true">
+                <o-button text="Action" role="small" />
+              </o-list-item-slot>
+            </o-list-item>
+          </o-list>
+        </o-card-body>
+      </o-card>`,
+    }}
+  </Story>
+</Preview>
 
 
 ## List Props
