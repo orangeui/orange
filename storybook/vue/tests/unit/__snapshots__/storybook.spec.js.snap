@@ -256,8 +256,7 @@ exports[`Storyshots 2. Global|Background Colors Usage 1`] = `
         <td>
           See 
           <a
-            class="is-active"
-            href="/"
+            href="/?path=/docs/2-global-colors--list"
           >
             <span>
               Colors
