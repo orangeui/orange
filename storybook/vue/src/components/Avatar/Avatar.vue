@@ -9,13 +9,6 @@ export default {
   name: "Avatar",
 
   props: {
-    // Not relevant for Global use(shortcut for Fomo robot, granny, sonny) - Talk to lucian
-    // name: {
-    //   type: String,
-    //   required: false,
-    //   default: 'user'
-    // },
-
     /**
      * Size of avatar
      *

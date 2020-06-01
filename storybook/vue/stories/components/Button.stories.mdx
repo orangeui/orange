@@ -55,10 +55,6 @@ Tryout is for live example of Button on **Canvas** tab and bottom tab **Knobs**
           }
         )
       },
-      // Talk to Lucian about this prop - seems like samee as Role
-      variant: {
-        default: text('Variant', 'basic')
-      },
       icon: {
         default: select('Icon', IconList, IconList[0])
       },
@@ -131,20 +127,6 @@ Tryout is for live example of Button on **Canvas** tab and bottom tab **Knobs**
   }}</Story>
 </Preview>
 
-<hr/>
-
-
-# Variants
-<!-- // Talk to Lucian about this prop - seems like samee as Role -->
-<Preview>
-  <Story name='Variants'>{{
-    components: { OButton },
-    template: `<div>
-      <o-button text="Primary basic" variant="basic" /><hr />
-      <o-button text="Secondary basic" variant="basic" role="secondary" />
-    </div>`
-  }}</Story>
-</Preview>
 
 <hr/>
 

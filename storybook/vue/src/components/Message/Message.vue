@@ -53,21 +53,13 @@ export default {
       required: false,
       default: null
     },
-
-    // Talk to Lucian about this prop / probably unusable
-    shadow: {
-      type: Boolean,
-      required: false,
-      default: false
-    }
   },
 
   computed: {
     classes() {
       return {
         [`message--color-${this.color}`]: this.color,
-        [`message--${this.size}`]: this.size,
-        "message--shadow": this.shadow
+        [`message--${this.size}`]: this.size
       };
     }
   }
