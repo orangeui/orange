@@ -1,5 +1,125 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots 0. Overview|Changelog Changelog 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <h1>
+      Changelog
+    </h1>
+     
+    <p>
+      We use GitHub for version release, please check 
+      <a
+        href="https://github.com/orangeui/orange/releases"
+        target="_blank"
+      >
+        Changelog
+      </a>
+      .
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 0. Overview|Contribute Contribute 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <h1>
+      Contribute
+    </h1>
+     
+    <p>
+      We use GitHub to track features and issues, we will be glad for your 
+      <a
+        href="https://github.com/orangeui/orange/issues"
+        target="_blank"
+      >
+        Contribution
+      </a>
+      .
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 0. Overview|Manifesto Manifesto 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <h1>
+      Manifesto
+    </h1>
+     
+    <h2>
+      Sorry we're late
+    </h2>
+     
+    <p>
+      <span
+        class="text-italic"
+      >
+        "You have good design,"
+      </span>
+       they said. But we kept it to ourselves. For years. We're not sure why. So here it is. The juice behind 
+      <a
+        href="https://fomo.com"
+      >
+        Fomo.com
+      </a>
+      .
+      
+    </p>
+     
+    <p>
+      
+        Orange is 
+      <strong>
+        opinionated
+      </strong>
+      . Some thoughts:
+      
+    </p>
+     
+    <ul>
+      <li>
+        most websites look the same
+      </li>
+       
+      <li>
+        design is a marketing channel
+      </li>
+       
+      <li>
+        free ideas _spread_
+      </li>
+    </ul>
+     
+    <p>
+      
+        So why are you still using Bootstrap? 
+      <a
+        href="/?path=/docs/1-getting-started-install--install"
+      >
+        Get started
+      </a>
+      .
+      
+    </p>
+     
+    <h6>
+      
+        Orange was imagined by Jan, Matevz, and Lucian.
+      
+    </h6>
+  </div>
+</div>
+`;
+
 exports[`Storyshots 1. Getting Started|Install Install 1`] = `
 <div
   class="p-4"
