@@ -3205,8 +3205,7 @@ exports[`Storyshots 5. Components|Basic/Button Colors 1`] = `
       class="button button--primary"
       type="button"
     >
-      <!---->
-       Button 
+      Button 
       <!---->
     </button>
      
@@ -3214,8 +3213,7 @@ exports[`Storyshots 5. Components|Basic/Button Colors 1`] = `
       class="button button--secondary"
       type="button"
     >
-      <!---->
-       Button 
+      Button 
       <!---->
     </button>
      
@@ -3225,8 +3223,7 @@ exports[`Storyshots 5. Components|Basic/Button Colors 1`] = `
       class="button button--primary button--color-secondary"
       type="button"
     >
-      <!---->
-       Button 
+      Button 
       <!---->
     </button>
      
@@ -3234,8 +3231,7 @@ exports[`Storyshots 5. Components|Basic/Button Colors 1`] = `
       class="button button--secondary button--color-secondary"
       type="button"
     >
-      <!---->
-       Button 
+      Button 
       <!---->
     </button>
   </div>
@@ -3251,8 +3247,7 @@ exports[`Storyshots 5. Components|Basic/Button Disabled 1`] = `
     disabled="disabled"
     type="button"
   >
-    <!---->
-     Can't touch this 
+    Can't touch this 
     <!---->
   </button>
 </div>
@@ -3269,8 +3264,6 @@ exports[`Storyshots 5. Components|Basic/Button Icon 1`] = `
     >
       <!---->
        
-      <!---->
-       
       <i
         class="icon-remove"
       />
@@ -3281,8 +3274,7 @@ exports[`Storyshots 5. Components|Basic/Button Icon 1`] = `
       class="button button--primary"
       type="button"
     >
-      <!---->
-       With an icon 
+      With an icon 
       <i
         class="icon-arrow-right"
       />
@@ -3302,8 +3294,7 @@ exports[`Storyshots 5. Components|Basic/Button Inverted 1`] = `
       class="button button--primary button--inverted"
       type="button"
     >
-      <!---->
-       Button 
+      Button 
       <!---->
     </button>
      
@@ -3311,8 +3302,7 @@ exports[`Storyshots 5. Components|Basic/Button Inverted 1`] = `
       class="button button--secondary button--inverted"
       type="button"
     >
-      <!---->
-       Button 
+      Button 
       <!---->
     </button>
   </div>
@@ -3328,8 +3318,7 @@ exports[`Storyshots 5. Components|Basic/Button Roles 1`] = `
       class="button button--primary"
       type="button"
     >
-      <!---->
-       Primary 
+      Primary 
       <!---->
     </button>
     <hr />
@@ -3338,8 +3327,7 @@ exports[`Storyshots 5. Components|Basic/Button Roles 1`] = `
       class="button button--secondary"
       type="button"
     >
-      <!---->
-       Secondary 
+      Secondary 
       <!---->
     </button>
   </div>
@@ -3355,8 +3343,7 @@ exports[`Storyshots 5. Components|Basic/Button Sizes 1`] = `
       class="button button--large"
       type="button"
     >
-      <!---->
-       Large 
+      Large 
       <!---->
     </button>
     <hr />
@@ -3365,8 +3352,7 @@ exports[`Storyshots 5. Components|Basic/Button Sizes 1`] = `
       class="button button--primary"
       type="button"
     >
-      <!---->
-       Regular 
+      Regular 
       <!---->
     </button>
     <hr />
@@ -3375,8 +3361,7 @@ exports[`Storyshots 5. Components|Basic/Button Sizes 1`] = `
       class="button button--small"
       type="button"
     >
-      <!---->
-       Small 
+      Small 
       <!---->
     </button>
   </div>
@@ -3394,38 +3379,10 @@ exports[`Storyshots 5. Components|Basic/Button Tryout 1`] = `
       class="button button--primary button--color-primary"
       type="button"
     >
-      <!---->
-       Hello Storybook 
+      Hello Storybook 
       <i
         class="icon-arrow-down"
       />
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots 5. Components|Basic/Button Variants 1`] = `
-<div
-  class="p-4"
->
-  <div>
-    <button
-      class="button button--primary button--basic"
-      type="button"
-    >
-      <!---->
-       Primary basic 
-      <!---->
-    </button>
-    <hr />
-     
-    <button
-      class="button button--secondary button--basic"
-      type="button"
-    >
-      <!---->
-       Secondary basic 
-      <!---->
     </button>
   </div>
 </div>
@@ -3439,8 +3396,7 @@ exports[`Storyshots 5. Components|Basic/Button Wide 1`] = `
     class="button button--primary button--wide"
     type="button"
   >
-    <!---->
-     Wide button 
+    Wide button 
     <!---->
   </button>
 </div>
@@ -3729,8 +3685,7 @@ exports[`Storyshots 5. Components|Basic/List Card, divided, hover, pointer 1`] =
               class="button button--small"
               type="button"
             >
-              <!---->
-               Action 
+              Action 
               <!---->
             </button>
           </div>
@@ -3758,8 +3713,7 @@ exports[`Storyshots 5. Components|Basic/List Card, divided, hover, pointer 1`] =
               class="button button--small"
               type="button"
             >
-              <!---->
-               Action 
+              Action 
               <!---->
             </button>
           </div>
@@ -3787,8 +3741,7 @@ exports[`Storyshots 5. Components|Basic/List Card, divided, hover, pointer 1`] =
               class="button button--small"
               type="button"
             >
-              <!---->
-               Action 
+              Action 
               <!---->
             </button>
           </div>
@@ -3828,8 +3781,7 @@ exports[`Storyshots 5. Components|Basic/List Divide style 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -3857,8 +3809,7 @@ exports[`Storyshots 5. Components|Basic/List Divide style 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -3886,8 +3837,7 @@ exports[`Storyshots 5. Components|Basic/List Divide style 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -3925,8 +3875,7 @@ exports[`Storyshots 5. Components|Basic/List Hover style 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -3954,8 +3903,7 @@ exports[`Storyshots 5. Components|Basic/List Hover style 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -3983,8 +3931,7 @@ exports[`Storyshots 5. Components|Basic/List Hover style 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -4022,8 +3969,7 @@ exports[`Storyshots 5. Components|Basic/List Large 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -4051,8 +3997,7 @@ exports[`Storyshots 5. Components|Basic/List Large 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -4080,8 +4025,7 @@ exports[`Storyshots 5. Components|Basic/List Large 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -4119,8 +4063,7 @@ exports[`Storyshots 5. Components|Basic/List Medium 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -4148,8 +4091,7 @@ exports[`Storyshots 5. Components|Basic/List Medium 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -4177,8 +4119,7 @@ exports[`Storyshots 5. Components|Basic/List Medium 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -4216,8 +4157,7 @@ exports[`Storyshots 5. Components|Basic/List Pointer style 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -4245,8 +4185,7 @@ exports[`Storyshots 5. Components|Basic/List Pointer style 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -4274,8 +4213,7 @@ exports[`Storyshots 5. Components|Basic/List Pointer style 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -4313,8 +4251,7 @@ exports[`Storyshots 5. Components|Basic/List Small 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -4342,8 +4279,7 @@ exports[`Storyshots 5. Components|Basic/List Small 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -4371,8 +4307,7 @@ exports[`Storyshots 5. Components|Basic/List Small 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -4410,8 +4345,7 @@ exports[`Storyshots 5. Components|Basic/List Tryout 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -4439,8 +4373,7 @@ exports[`Storyshots 5. Components|Basic/List Tryout 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -4468,8 +4401,7 @@ exports[`Storyshots 5. Components|Basic/List Tryout 1`] = `
           class="button button--small"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -5136,22 +5068,22 @@ exports[`Storyshots 5. Components|Basic/Table Definition 1`] = `
            
           <td>
             <button
-              class="button button--primary button--basic button--small"
+              class="button button--primary button--small"
               type="button"
+              variant="basic"
             >
-              <!---->
-               Downgrade to Essential 
+              Downgrade to Essential 
               <!---->
             </button>
           </td>
            
           <td>
             <button
-              class="button button--primary button--basic button--small"
+              class="button button--primary button--small"
               type="button"
+              variant="basic"
             >
-              <!---->
-               Cancel subscription 
+              Cancel subscription 
               <!---->
             </button>
           </td>
@@ -5161,8 +5093,7 @@ exports[`Storyshots 5. Components|Basic/Table Definition 1`] = `
               class="button button--primary button--small"
               type="button"
             >
-              <!---->
-               Upgrade to Advanced 
+              Upgrade to Advanced 
               <!---->
             </button>
           </td>
@@ -6607,8 +6538,7 @@ exports[`Storyshots 5. Components|Custom/Card Multiple sections 1`] = `
         class="button button--primary"
         type="button"
       >
-        <!---->
-         Action 
+        Action 
         <!---->
       </button>
     </div>
@@ -6627,8 +6557,7 @@ exports[`Storyshots 5. Components|Custom/Card Multiple sections 1`] = `
           class="button button--primary button--small button--color-gray"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -6656,8 +6585,7 @@ exports[`Storyshots 5. Components|Custom/Card Multiple sections 1`] = `
           class="button button--primary button--small button--color-gray"
           type="button"
         >
-          <!---->
-           Action 
+          Action 
           <!---->
         </button>
       </div>
@@ -6737,8 +6665,7 @@ exports[`Storyshots 5. Components|Custom/Card With a button 1`] = `
         class="button button--primary"
         type="button"
       >
-        <!---->
-         Action 
+        Action 
         <!---->
       </button>
     </div>
@@ -6805,8 +6732,7 @@ exports[`Storyshots 5. Components|Custom/Card With a list 1`] = `
               class="button button--small"
               type="button"
             >
-              <!---->
-               Action 
+              Action 
               <!---->
             </button>
           </div>
@@ -6834,8 +6760,7 @@ exports[`Storyshots 5. Components|Custom/Card With a list 1`] = `
               class="button button--small"
               type="button"
             >
-              <!---->
-               Action 
+              Action 
               <!---->
             </button>
           </div>
@@ -6863,8 +6788,7 @@ exports[`Storyshots 5. Components|Custom/Card With a list 1`] = `
               class="button button--small"
               type="button"
             >
-              <!---->
-               Action 
+              Action 
               <!---->
             </button>
           </div>
@@ -6982,8 +6906,7 @@ exports[`Storyshots 5. Components|Custom/Card With navigation and button 1`] = `
         class="button button--primary"
         type="button"
       >
-        <!---->
-         Action 
+        Action 
         <!---->
       </button>
     </div>
@@ -7070,8 +6993,7 @@ exports[`Storyshots 5. Components|Custom/EmptyState Inside card 1`] = `
               class="button button--primary"
               type="button"
             >
-              <!---->
-               Continue 
+              Continue 
               <!---->
             </button>
           </div>
@@ -7129,8 +7051,7 @@ exports[`Storyshots 5. Components|Custom/EmptyState No gutter 1`] = `
           class="button button--primary"
           type="button"
         >
-          <!---->
-           Continue 
+          Continue 
           <!---->
         </button>
       </div>
@@ -7186,8 +7107,7 @@ exports[`Storyshots 5. Components|Custom/EmptyState Tryout 1`] = `
           class="button button--primary"
           type="button"
         >
-          <!---->
-           Continue 
+          Continue 
           <!---->
         </button>
       </div>
@@ -7526,8 +7446,7 @@ exports[`Storyshots 5. Components|Custom/Message Colors 1`] = `
           class="button button--primary button--small button--color-gray"
           type="button"
         >
-          <!---->
-           action 
+          action 
           <!---->
         </button>
       </div>
@@ -7567,8 +7486,7 @@ exports[`Storyshots 5. Components|Custom/Message Colors 1`] = `
           class="button button--primary button--small button--color-secondary"
           type="button"
         >
-          <!---->
-           action 
+          action 
           <!---->
         </button>
       </div>
@@ -7608,8 +7526,7 @@ exports[`Storyshots 5. Components|Custom/Message Colors 1`] = `
           class="button button--primary button--small button--color-yellow"
           type="button"
         >
-          <!---->
-           action 
+          action 
           <!---->
         </button>
       </div>
@@ -7649,8 +7566,7 @@ exports[`Storyshots 5. Components|Custom/Message Colors 1`] = `
           class="button button--primary button--small button--color-green"
           type="button"
         >
-          <!---->
-           action 
+          action 
           <!---->
         </button>
       </div>
@@ -7690,8 +7606,7 @@ exports[`Storyshots 5. Components|Custom/Message Colors 1`] = `
           class="button button--primary button--small button--color-red"
           type="button"
         >
-          <!---->
-           action 
+          action 
           <!---->
         </button>
       </div>
@@ -7804,8 +7719,7 @@ exports[`Storyshots 5. Components|Custom/Message With an avatar 1`] = `
         class="button button--primary button--small button--color-secondary"
         type="button"
       >
-        <!---->
-         action 
+        action 
         <!---->
       </button>
     </div>
@@ -8490,8 +8404,7 @@ exports[`Storyshots 5. Components|Forms/Input Large - Read-only with action/extr
             class="button button--primary button--small"
             type="button"
           >
-            <!---->
-             copy to clipboard 
+            copy to clipboard 
             <!---->
           </button>
         </div>
@@ -8559,8 +8472,7 @@ exports[`Storyshots 5. Components|Forms/Input Large - Read-only with action/extr
             class="button button--primary button--small"
             type="button"
           >
-            <!---->
-             copy to clipboard 
+            copy to clipboard 
             <!---->
           </button>
         </div>
@@ -8730,8 +8642,7 @@ exports[`Storyshots 5. Components|Forms/Input Read-only with action/extras 1`] =
             class="button button--primary button--small"
             type="button"
           >
-            <!---->
-             copy to clipboard 
+            copy to clipboard 
             <!---->
           </button>
         </div>
@@ -8799,8 +8710,7 @@ exports[`Storyshots 5. Components|Forms/Input Read-only with action/extras 1`] =
             class="button button--primary button--small"
             type="button"
           >
-            <!---->
-             copy to clipboard 
+            copy to clipboard 
             <!---->
           </button>
         </div>
@@ -8834,8 +8744,7 @@ exports[`Storyshots 5. Components|Forms/Input Tryout 1`] = `
             class="button button--primary button--small"
             type="button"
           >
-            <!---->
-             copy to clipboard 
+            copy to clipboard 
             <!---->
           </button>
         </div>
