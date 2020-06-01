@@ -114,35 +114,6 @@ a.button--secondary {
 }
 
 
-/** Variants
---------------------------------------------------*/
-
-/** Basic */
-.button--basic,
-a.button--basic {
-  color: $button-basic-color;
-  background-color: $button-basic-background-color;
-
-  &:hover,
-  &:focus {
-    color: $button-basic-action-color;
-    background-color: $button-basic-action-background-color;
-  }
-
-  &.button--secondary {
-    background-color: $button-basic-secondary-background-color;
-    border-color: $button-basic-secondary-border-color;
-
-    &:hover,
-    &:focus {
-      background-color: $button-basic-secondary-action-background-color;
-      border-color: $button-basic-secondary-action-border-color;
-      color: $button-basic-secondary-action-color;
-    }
-  }
-}
-
-
 /** Colors
 --------------------------------------------------*/
 
@@ -241,7 +212,35 @@ a.button--basic {
           }
         }
       }
+    }
+  }
+}
 
+
+/** Variants
+--------------------------------------------------*/
+
+/** Basic */
+.button--basic,
+a.button--basic {
+  color: $button-basic-color;
+  background-color: $button-basic-background-color;
+
+  &:hover,
+  &:focus {
+    color: $button-basic-action-color;
+    background-color: $button-basic-action-background-color;
+  }
+
+  &.button--secondary {
+    background-color: $button-basic-secondary-background-color;
+    border-color: $button-basic-secondary-border-color;
+
+    &:hover,
+    &:focus {
+      background-color: $button-basic-secondary-action-background-color;
+      border-color: $button-basic-secondary-action-border-color;
+      color: $button-basic-secondary-action-color;
     }
   }
 }
