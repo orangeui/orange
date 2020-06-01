@@ -4,9 +4,8 @@
     class="button"
     :class="[button_classes, button_color]"
     @click="click"
-    :disabled="isDisabled"
+    :disabled="is_disabled"
   >
-    <span v-if="back" class="button__arrow-tail" />
     <template v-if="text">{{ text }}</template>
     <i v-if="icon" :class="[`icon-${icon}`]" />
   </button>
@@ -61,7 +60,7 @@ export default {
     /**
      * Disable button
      */
-    isDisabled: {
+    is_disabled: {
       type: Boolean,
       default: false
     },
@@ -97,14 +96,6 @@ export default {
       default: false
     },
 
-    /**
-     * Back button for breadcrumbs
-     */
-    back: {
-      type: Boolean,
-      required: false,
-      default: false
-    },
 
     /**
      * Invert a button so it can be placed on a solid color background.
@@ -125,7 +116,6 @@ export default {
         [`button--${this.variant}`]: this.variant,
         [`button--${this.size}`]: this.size,
         [`button--icon-only`]: !this.text && this.icon,
-        [`button--back`]: this.back,
         "button--inverted": this.inverted,
         "button--wide": this.wide
       };

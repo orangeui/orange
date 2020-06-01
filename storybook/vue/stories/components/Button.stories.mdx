@@ -28,7 +28,7 @@ Tryout is for live example of Button on **Canvas** tab and bottom tab **Knobs**
   {{
     components: { OButton },
     template: `<div :class="buttonExtraClass">
-      <o-button @click="handleClick" :type="type" :text="text" :role="role" :icon="icon" :color="color" :size="size" :wide="wide" :back="back" :inverted="inverted"></o-button>
+      <o-button @click="handleClick" :type="type" :text="text" :role="role" :icon="icon" :color="color" :size="size" :wide="wide" :inverted="inverted" :is_disabled="is_disabled"></o-button>
     </div>`,
     computed: {
       buttonExtraClass() {
@@ -73,12 +73,11 @@ Tryout is for live example of Button on **Canvas** tab and bottom tab **Knobs**
       wide: {
         default: boolean('Wide', false)
       },
-      // Need to check if still relevant
-      back: {
-        default: boolean('Back', false)
-      },
       inverted: {
         default: boolean('Inverted', false)
+      },
+      is_disabled: {
+        default: boolean('Disabled', false)
       }
     },
   }}
@@ -151,7 +150,7 @@ Tryout is for live example of Button on **Canvas** tab and bottom tab **Knobs**
 <Preview>
   <Story name='Disabled'>{{
     components: { OButton },
-    template: `<o-button text="Can't touch this" :isDisabled="true" />`
+    template: `<o-button text="Can't touch this" :is_disabled="true" />`
   }}</Story>
 </Preview>
 
