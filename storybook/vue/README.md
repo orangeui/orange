@@ -36,7 +36,7 @@ yarn add @orange-ui/orange
 ###### Styles and components
 The simplest way to setup styles is by using the pre-built versions that can be found in the `/dist` folder within this package.
 
-For this setup import styles `import "~@orange-ui/orange/dist/css/orange.min.css"` and import components like `import OButton from "~@orange-ui/orange/components/Button/Button"` to your `main.js` file and register them as `Vue.component(OButton)`. Done!
+For this setup import styles `import "~@orange-ui/orange/dist/css/orange.min.css"` and import components like `import OButton from "~@orange-ui/orange/components/Button/Button"` to your `main.js` file and register them as `Vue.component('o-button', OButton)`. Done!
 
 You'll probably want to [read the documentation](https://vue.orangecss.com//?path=/docs/1-getting-started-install--install) for examples and explanations of available components and their props.
 
