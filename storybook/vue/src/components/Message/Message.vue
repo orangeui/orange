@@ -52,9 +52,8 @@ export default {
       type: String,
       required: false,
       default: null
-    },
+    }
   },
-
   computed: {
     classes() {
       return {
