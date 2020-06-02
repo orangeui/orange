@@ -3,13 +3,6 @@ import "!style-loader!css-loader!sass-loader!../../../site/assets/styles/styles.
 
 import Vue from'vue';
 
-// Import Directives
-import AutoExpand from '../src/modules/directives/AutoExpand'
-
-// Use Directives
-Vue.directive(AutoExpand)
-
-
 // Import Storybook addons
 import { addParameters, addDecorator } from "@storybook/vue";
 import { withA11y } from '@storybook/addon-a11y';
