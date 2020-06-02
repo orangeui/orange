@@ -96,7 +96,6 @@ export default {
       default: false
     },
 
-
     /**
      * Invert a button so it can be placed on a solid color background.
      */
