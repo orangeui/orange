@@ -20,11 +20,17 @@
 </template>
 
 <script>
+import AutoExpand from "../../modules/directives/AutoExpand";
+
 export default {
   name: "formTextarea",
 
   data() {
     return {};
+  },
+
+  directives: {
+    AutoExpand
   },
 
   computed: {
