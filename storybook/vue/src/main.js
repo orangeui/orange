@@ -82,7 +82,7 @@ Vue.component("o-label", OLabel);
 
 Vue.component("o-list", OList);
 Vue.component("o-list-item", OListItem);
-Vue.component("o-list-slot", OListItemSlot);
+Vue.component("o-list-item-slot", OListItemSlot);
 
 Vue.component("o-message", OMessage);
 
