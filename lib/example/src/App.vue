@@ -1,11 +1,44 @@
 <template>
   <div id="app">
-    <p>
-      <o-card>
-        <o-button text='Button' />
-        <o-label text='Label' />
+    <div class="container">
+      <h1>Example</h1>
+      <o-card :full="true">
+        <o-card-header>
+          <h3>Title</h3>
+        </o-card-header>
+        <o-card-body>
+          <o-list :hover="true" :divide="true">
+            <o-list-item>
+              <o-list-item-slot>
+                <h3>First item</h3>
+                <p>Description of the first item</p>
+              </o-list-item-slot>
+              <o-list-item-slot :action="true">
+                <o-button text="Action" role="small" />
+              </o-list-item-slot>
+            </o-list-item>
+            <o-list-item>
+              <o-list-item-slot>
+                <h3>Second item</h3>
+                <p>Description of the second item</p>
+              </o-list-item-slot>
+              <o-list-item-slot :action="true">
+                <o-button text="Action" role="small" />
+              </o-list-item-slot>
+            </o-list-item>
+            <o-list-item>
+              <o-list-item-slot>
+                <h3>Third item</h3>
+                <p>Description of the third item</p>
+              </o-list-item-slot>
+              <o-list-item-slot :action="true">
+                <o-button text="Action" role="small" />
+              </o-list-item-slot>
+            </o-list-item>
+          </o-list>
+        </o-card-body>
       </o-card>
-    </p>
+    </div>
   </div>
 </template>
 
@@ -16,14 +49,3 @@ export default {
   components: {}
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
