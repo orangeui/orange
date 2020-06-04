@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import AutoExpand from "../../modules/directives/AutoExpand";
+import AutoExpand from "../../directives/AutoExpand";
 
 export default {
   name: "formTextarea",
