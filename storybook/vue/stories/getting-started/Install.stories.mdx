@@ -6,79 +6,122 @@ import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
 
 <Meta title='1. Getting Started|Install' />
 
-# Install
-
-<hr/>
-
 # Orange Vue
 
 Add stylesheets and scripts to all your pages via Node Js.
 
-```scss
+The latest release can be found at https://github.com/orangeui/orange.
+
+<hr/>
+
+# Compiled
+
+
+<Story name='Compiled'>
+  {{
+    components: { },
+    template: `<div>Check <mark>Docs</mark> tab for informations</div>`,
+  }}
+</Story>
+
+```css
 /*
- * Import Orange styles
+ * Import Orange Styles
  * */
 
-// SCSS
-import "~@orange-ui/orange/src/scss/src/styles.scss";
-
-// CSS
-import "~@orange-ui/orange/dist/css/orange.min.css";
-
+import "@orange-ui/orange/dist/css/orange.min.css";
 ```
 
 ```js
 /*
- * Import Orange Components
+ * Import Orange Compiled Components
  * */
-import OAvatar from "./components/Avatar/Avatar";
 
-import OBreadcrumbs from "./components/Breadcrumbs/Breadcrumbs";
-import OBreadcrumbsItem from "./components/Breadcrumbs/BreadcrumbsItem";
-
-import OButton from "./components/Button/Button";
-import OCallout from "./components/Callout/Callout";
-
-import OCard from "./components/Card/Card";
-import OCardBody from "./components/Card/CardBody";
-import OCardFooter from "./components/Card/CardFooter";
-import OCardHeader from "./components/Card/CardHeader";
-import OCardImage from "./components/Card/CardImage";
-import OCardSection from "./components/Card/CardSection";
-
-import OCheckbox from "./components/Checkbox/Checkbox";
-import OCheckboxGroup from "./components/Checkbox/CheckboxGroup";
-
-import OInputDropdown from "./components/Dropdown/InputDropdown";
-import OEmptyState from "./components/EmptyState/EmptyState";
-import OIcon from "./components/Icon/Icon";
-import OImage from "./components/Image/Image";
-import OInput from "./components/Input/Input";
-import OLabel from "./components/Label/Label";
-
-import OList from "./components/List/List";
-import OListItem from "./components/List/ListItem";
-import OListItemSlot from "./components/List/ListItemSlot";
-
-import OMessage from "./components/Message/Message";
-
-import ONavigation from "./components/Navigation/Navigation";
-import ONavigationItem from "./components/Navigation/NavigationItem";
-
-import ORadio from "./components/Radio/Radio";
-import ORadioGroup from "./components/Radio/RadioGroup";
-
-import OTable from "./components/Table/Table";
-import OTableWrapper from "./components/Table/TableWrapper";
-
-import OTextarea from "./components/Textarea/Textarea";
-import OToggle from "./components/Toggle/Toggle";
+import OrangeVue from '@orange-ui/vue';
 ```
 
 ```js
 /*
- * Register Components globally
+ * Register Orange Compiled Components globally
  * */
+
+Vue.use(OrangeVue);
+```
+
+
+<hr/>
+
+# Source
+
+<Story name='Source'>
+  {{
+    components: { },
+    template: `<div>Check <mark>Docs</mark> tab for informations</div>`,
+  }}
+</Story>
+
+```css
+/*
+ * Import Orange Styles
+ * */
+
+import "@orange-ui/orange/src/scss/src/styles.scss";
+```
+
+```js
+/*
+ * Import Orange Compiled Components
+ * */
+
+import OAvatar from "@orange-ui/vue/src/components/Avatar/Avatar";
+
+import OBreadcrumbs from "@orange-ui/vue/src/components/Breadcrumbs/Breadcrumbs";
+import OBreadcrumbsItem from "@orange-ui/vue/src/components/Breadcrumbs/BreadcrumbsItem";
+
+import OButton from "@orange-ui/vue/src/components/Button/Button";
+import OCallout from "@orange-ui/vue/src/components/Callout/Callout";
+
+import OCard from "@orange-ui/vue/src/components/Card/Card";
+import OCardBody from "@orange-ui/vue/src/components/Card/CardBody";
+import OCardFooter from "@orange-ui/vue/src/components/Card/CardFooter";
+import OCardHeader from "@orange-ui/vue/src/components/Card/CardHeader";
+import OCardImage from "@orange-ui/vue/src/components/Card/CardImage";
+import OCardSection from "@orange-ui/vue/src/components/Card/CardSection";
+
+import OCheckbox from "@orange-ui/vue/src/components/Checkbox/Checkbox";
+import OCheckboxGroup from "@orange-ui/vue/src/components/Checkbox/CheckboxGroup";
+
+import OInputDropdown from "@orange-ui/vue/src/components/Dropdown/InputDropdown";
+import OEmptyState from "@orange-ui/vue/src/components/EmptyState/EmptyState";
+import OIcon from "@orange-ui/vue/src/components/Icon/Icon";
+import OImage from "@orange-ui/vue/src/components/Image/Image";
+import OInput from "@orange-ui/vue/src/components/Input/Input";
+import OLabel from "@orange-ui/vue/src/components/Label/Label";
+
+import OList from "@orange-ui/vue/src/components/List/List";
+import OListItem from "@orange-ui/vue/src/components/List/ListItem";
+import OListItemSlot from "@orange-ui/vue/src/components/List/ListItemSlot";
+
+import OMessage from "@orange-ui/vue/src/components/Message/Message";
+
+import ONavigation from "@orange-ui/vue/src/components/Navigation/Navigation";
+import ONavigationItem from "@orange-ui/vue/src/components/Navigation/NavigationItem";
+
+import ORadio from "@orange-ui/vue/src/components/Radio/Radio";
+import ORadioGroup from "@orange-ui/vue/src/components/Radio/RadioGroup";
+
+import OTable from "@orange-ui/vue/src/components/Table/Table";
+import OTableWrapper from "@orange-ui/vue/src/components/Table/TableWrapper";
+
+import OTextarea from "@orange-ui/vue/src/components/Textarea/Textarea";
+import OToggle from "@orange-ui/vue/src/components/Toggle/Toggle";
+```
+
+```js
+/*
+ * Register Orange Compiled Components globally
+ * */
+
 Vue.component("o-avatar", OAvatar);
 
 Vue.component("o-breadcrumbs", OBreadcrumbs);
@@ -122,14 +165,3 @@ Vue.component("o-table-wrapper", OTableWrapper);
 Vue.component("o-form-textarea", OTextarea);
 Vue.component("o-toggle", OToggle);
 ```
-
-The latest release can be found at https://github.com/orangeui/orange.
-
-
-<Story name='Install'>
-  {{
-    components: { },
-    template: `<div>Check <mark>Docs</mark> tab for informations</div>`,
-  }}
-</Story>
-
