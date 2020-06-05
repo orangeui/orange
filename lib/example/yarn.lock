@@ -855,10 +855,10 @@
   resolved "https://registry.yarnpkg.com/@orange-ui/orange/-/orange-1.4.2.tgz#6c24887f6d286f299569f422714f44e6602bb8ea"
   integrity sha512-xWLOfON2dT0r8f7cgEgxlviUU/PQvcSIFH8YK7KREqisuE2bEXvVJGMvj34MFQrcBTd9BmATtp2vEenAYeRPDQ==
 
-"@orange-ui/vue@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@orange-ui/vue/-/vue-0.0.8.tgz#bbdb07811ae9022b0ba5de1c94741e733762e544"
-  integrity sha512-1W5/Y8IVlg/Vj10TBo9gcPKyaTpA14pXvbvng+JkSsUv0TrYYnht7zX/Y5RzRWYLPQ4LRXgNjnvLizqjqjmF9Q==
+"@orange-ui/vue@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@orange-ui/vue/-/vue-0.0.9.tgz#1cd86c0169ba0c1aedc3bde065e8559e6bb59ea2"
+  integrity sha512-h7RHGZYQQwzqFryeqcMokIC1jw7Zy8E5KKKQ3QR5bxc2qawy0xsB6Ugz/TZ3wyOEo0o7DBvKttIKf8ak/+6eZA==
   dependencies:
     "@orange-ui/orange" "^1.4.2"
     core-js "^3.6.4"
