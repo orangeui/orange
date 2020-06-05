@@ -1,6 +1,6 @@
 {
   "name": "@orange-ui/vue",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "dist/orangevue.common.js",
   "files": [
     "dist/*",
