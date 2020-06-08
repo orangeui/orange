@@ -1,7 +1,7 @@
 <template>
-  <div class="form__item">
+  <div class="o-form__item">
     <textarea
-      class="form__textarea"
+      class="o-form__textarea"
       :class="{ 'has-value': input_value }"
       :name="id"
       :id="id"
@@ -13,9 +13,9 @@
       :rows="rows"
       v-auto-expand="autoexpand"
     ></textarea>
-    <label class="form__label" :for="id">{{ label }}</label>
+    <label class="o-form__label" :for="id">{{ label }}</label>
 
-    <div class="form__description" v-if="description">{{ description }}</div>
+    <div class="o-form__description" v-if="description">{{ description }}</div>
   </div>
 </template>
 

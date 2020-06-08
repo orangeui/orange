@@ -2,7 +2,7 @@
  * Rounded
  */
 
-@each $borderRadiusKey, $borderRadiusValue in $border-radiuses {
+@each $borderRadiusKey, $borderRadiusValue in $o-border-radiuses {
   @if ($borderRadiusKey == 'base') {
     .rounded {
       border-radius: $borderRadiusValue;

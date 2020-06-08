@@ -2,7 +2,7 @@
  * Docs styles
  */
 
-$docs-sidebar-width: $spacing-base * 8;
+$docs-sidebar-width: $o-spacing-base * 8;
 $docs-navigation-height: 64px;
 
 
@@ -14,7 +14,7 @@ body {
   Grid
 */
 .page-docs-layout-grid .grid > div {
-  padding: $spacing-base;
+  padding: $o-spacing-base;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,8 +37,8 @@ body {
   justify-content: space-between;
 
   background-color: color('white');
-  border-bottom: $border;
-  padding: $spacing-small;
+  border-bottom: $o-border;
+  padding: $o-spacing-small;
   z-index: 1000;
 
   &-router {
@@ -47,7 +47,7 @@ body {
 
   &-logo {
     line-height: 0;
-    margin-right: $spacing-base;
+    margin-right: $o-spacing-base;
 
     img {
       width: 40px;
@@ -84,7 +84,7 @@ body {
 
   overflow: auto;
 
-  padding-left: $spacing-base;
+  padding-left: $o-spacing-base;
 }
 
 .docs__content-wrap {
@@ -103,8 +103,8 @@ body {
   justify-content: center;
 
   background-color: color('white');
-  border-top: $border;
-  padding: $spacing-small;
+  border-top: $o-border;
+  padding: $o-spacing-small;
 
   text-align: center;
 
@@ -120,7 +120,7 @@ body {
 
   &-links a {
     color: color('gray');
-    margin: 0 $spacing-small;
+    margin: 0 $o-spacing-small;
   }
 }
 
@@ -133,11 +133,11 @@ body {
   list-style-type: none;
 
   & > li {
-    border-bottom: $border;
-    padding: $spacing-small 0;
+    border-bottom: $o-border;
+    padding: $o-spacing-small 0;
 
     > h5 {
-      margin-bottom: $spacing-small / 2;
+      margin-bottom: $o-spacing-small / 2;
     }
 
     &:last-child {
@@ -152,7 +152,7 @@ body {
 
 .code-block {
   position: relative;
-  margin: $spacing-base 0;
+  margin: $o-spacing-base 0;
 
   pre {
     margin: 0;
@@ -164,9 +164,9 @@ body {
     overflow: auto;
     color: color('gray', 'dark');
     font-size: fontSize('zeta');
-    border-radius: $border-radius-main;
-    border: $border;
-    padding: $spacing-base;
+    border-radius: $o-border-radius-main;
+    border: $o-border;
+    padding: $o-spacing-base;
     background-color: color('white');
   }
 
@@ -181,8 +181,8 @@ body {
 
   .label {
     position: absolute;
-    top: $spacing-base / 2;
-    right: $spacing-base / 2;
+    top: $o-spacing-base / 2;
+    right: $o-spacing-base / 2;
   }
 }
 
@@ -197,15 +197,15 @@ body {
 
   li {
     display: inline-block;
-    margin-right: $spacing-base / 2;
-    margin-bottom: $spacing-base / 2;
+    margin-right: $o-spacing-base / 2;
+    margin-bottom: $o-spacing-base / 2;
   }
 
   .docs__bg-color-item {
-    border-radius: $border-radius-main;
-    width: $spacing-base * 5;
-    height: $spacing-base * 5;
-    margin-bottom: $spacing-base
+    border-radius: $o-border-radius-main;
+    width: $o-spacing-base * 5;
+    height: $o-spacing-base * 5;
+    margin-bottom: $o-spacing-base
   }
 }
 
@@ -214,13 +214,13 @@ body {
 --------------------------------------------------*/
 
 .docs__sidebar {
-  margin-top: $spacing-base;
+  margin-top: $o-spacing-base;
 
   ul {
     list-style-type: none;
     padding: 0;
     margin-top: 0;
-    margin-bottom: $spacing-base;
+    margin-bottom: $o-spacing-base;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -230,12 +230,12 @@ body {
   }
 
   li {
-    margin-top: $spacing-base / 6;
-    bottom: $spacing-base / 6;
+    margin-top: $o-spacing-base / 6;
+    bottom: $o-spacing-base / 6;
   }
 
   h6 {
-    margin-bottom: $spacing-small / 2;
+    margin-bottom: $o-spacing-small / 2;
   }
 
   a {
@@ -244,7 +244,7 @@ body {
     z-index: 10;
     color: color('secondary');
     font-size: fontSize('zeta');
-    margin-left: $spacing-small;
+    margin-left: $o-spacing-small;
 
     &:hover {
       text-decoration: none;
@@ -263,7 +263,7 @@ body {
       right: -6px;
       top: -4px;
       bottom: -4px;
-      border-radius: $border-radius-main;
+      border-radius: $o-border-radius-main;
       background-color: rgba(color('secondary'), 0.05);
     }
   }
@@ -290,8 +290,8 @@ body {
   background-color: color('gray', 'lightest');
   position: relative;
   text-align: center;
-  margin: $spacing-small;
-  border-radius: $border-radius-main;
+  margin: $o-spacing-small;
+  border-radius: $o-border-radius-main;
 
   &:hover {
     color: color('white');
@@ -301,12 +301,12 @@ body {
 
 .docs__icons-text {
   position: absolute;
-  top: calc(100% + #{$spacing-small});
+  top: calc(100% + #{$o-spacing-small});
   left: 50%;
   transform: translateX(-50%);
   display: none;
-  padding: $spacing-small;
-  border-radius: $border-radius-main;
+  padding: $o-spacing-small;
+  border-radius: $o-border-radius-main;
   box-shadow: shadow('primary');
   color: color('black');
   background-color: color('white');
@@ -324,7 +324,7 @@ body {
 
 /** Header */
 .docs__header {
-  padding: $spacing-base ($spacing-base * 2) 0 ($spacing-base * 2);
+  padding: $o-spacing-base ($o-spacing-base * 2) 0 ($o-spacing-base * 2);
   display: flex;
   align-items: center;
 
@@ -332,22 +332,22 @@ body {
     display: inline-block;
     margin-bottom: 0;
     margin-top: 0;
-    margin-right: $spacing-small
+    margin-right: $o-spacing-small
   }
 
   & + .docs__item {
-    margin-top: -$spacing-base;
+    margin-top: -$o-spacing-base;
   }
 }
 
 /** Item */
 .docs__item {
-  border-bottom: $border;
-  padding: $spacing-base * 2;
+  border-bottom: $o-border;
+  padding: $o-spacing-base * 2;
 
   // limit the width of explanation text blocks
   &.explanation > div {
-    max-width: $spacing-base * 28;
+    max-width: $o-spacing-base * 28;
   }
 
   & > h2:first-child {
@@ -359,7 +359,7 @@ body {
   }
 
   & > div > h3 {
-    margin-top: $spacing-base * 2;
+    margin-top: $o-spacing-base * 2;
   }
 
   & > div > ul li p:last-child {

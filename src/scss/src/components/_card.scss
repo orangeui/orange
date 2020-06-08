@@ -2,47 +2,47 @@
  * Card
  */
 
-.card {
-  border-radius: $card-border-radius;
-  background-color: $card-background-color;
-  box-shadow: $card-shadow;
+.o-card {
+  border-radius: $o-card-border-radius;
+  background-color: $o-card-background-color;
+  box-shadow: $o-card-shadow;
 }
 
 /** Image
 --------------------------------------------------*/
 
-.card__image {
+.o-card__image {
   img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: $card-border-radius $card-border-radius 0 0;
+    border-radius: $o-card-border-radius $o-card-border-radius 0 0;
   }
 }
 
 /** Header
 --------------------------------------------------*/
 
-.card__header {
-  border-bottom: $card-header-border;
-  border-radius: $card-header-border-radius;
-  padding: $card-header-padding;
+.o-card__header {
+  border-bottom: $o-card-header-border;
+  border-radius: $o-card-header-border-radius;
+  padding: $o-card-header-padding;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: $card-header-height;
+  height: $o-card-header-height;
   // spacing base accounts for 12px top and 12px bottom padding
   // 40px is large button's size
 
-  .form {
-    min-width: $card-header-form-min-width;
+  .o-form {
+    min-width: $o-card-header-form-min-width;
   }
 
   // Card Title
   h1, h2, h3, h4, h5, h6 {
-    font-weight: $card-header-heading-font-weight;
-    color: $card-header-heading-color;
-    padding-left: $card-header-heading-padding-left;
+    font-weight: $o-card-header-heading-font-weight;
+    color: $o-card-header-heading-color;
+    padding-left: $o-card-header-heading-padding-left;
     margin-bottom: 0;
     margin-top: 0;
   }
@@ -51,78 +51,78 @@
 /** Body
 --------------------------------------------------*/
 
-.card__body {
-  padding: $card-body-padding;
+.o-card__body {
+  padding: $o-card-body-padding;
 }
 
 
 /** Section
 --------------------------------------------------*/
 
-.card__section {
-  border-bottom: $card-section-border;
-  padding-bottom: $card-section-padding;
+.o-card__section {
+  border-bottom: $o-card-section-border;
+  padding-bottom: $o-card-section-padding;
 
   &:last-of-type {
-    border: $card-section-last-border;
+    border: $o-card-section-last-border;
   }
 
-  .card__header {
+  .o-card__header {
     h1, h2, h3, h4, h5, h6 {
       padding-left: 0;
     }
   }
 
-  .card__header {
-    margin-left: $card-section-header-horizontal-margin;
-    margin-right: $card-section-header-horizontal-margin;
-    padding-left: $card-section-header-horizontal-padding;
-    padding-right: $card-section-header-horizontal-padding;
+  .o-card__header {
+    margin-left: $o-card-section-header-horizontal-margin;
+    margin-right: $o-card-section-header-horizontal-margin;
+    padding-left: $o-card-section-header-horizontal-padding;
+    padding-right: $o-card-section-header-horizontal-padding;
   }
 
-  .card__body {
-    margin-left: $card-section-body-horizontal-margin;
-    margin-right: $card-section-body-horizontal-margin;
-    padding-left: $card-section-body-horizontal-padding;
-    padding-right: $card-section-body-horizontal-padding;
+  .o-card__body {
+    margin-left: $o-card-section-body-horizontal-margin;
+    margin-right: $o-card-section-body-horizontal-margin;
+    padding-left: $o-card-section-body-horizontal-padding;
+    padding-right: $o-card-section-body-horizontal-padding;
   }
 
-  .card__footer {
-    margin-left: $card-section-footer-horizontal-margin;
-    margin-right: $card-section-footer-horizontal-margin;
-    padding-left: $card-section-footer-horizontal-padding;
-    padding-right: $card-section-footer-horizontal-padding;
+  .o-card__footer {
+    margin-left: $o-card-section-footer-horizontal-margin;
+    margin-right: $o-card-section-footer-horizontal-margin;
+    padding-left: $o-card-section-footer-horizontal-padding;
+    padding-right: $o-card-section-footer-horizontal-padding;
   }
 }
 
 /** Footer
 --------------------------------------------------*/
 
-.card__footer {
-  border-radius: $card-footer-border-radius;
-  border-top: $card-footer-border;
-  min-height: $card-footer-min-height;
+.o-card__footer {
+  border-radius: $o-card-footer-border-radius;
+  border-top: $o-card-footer-border;
+  min-height: $o-card-footer-min-height;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: $card-footer-padding;
-  transition: $card-footer-transition;
+  padding: $o-card-footer-padding;
+  transition: $o-card-footer-transition;
 
   &:empty {
-    min-height: $card-footer-empty-min-height;
-    height: $card-footer-empty-height;
-    padding: $card-footer-empty-padding;
-    border-top: $card-footer-empty-border-top;
+    min-height: $o-card-footer-empty-min-height;
+    height: $o-card-footer-empty-height;
+    padding: $o-card-footer-empty-padding;
+    border-top: $o-card-footer-empty-border-top;
   }
 }
 
-.card__footer--click {
-  color: $card-footer-click-color;
+.o-card__footer--click {
+  color: $o-card-footer-click-color;
 
   &:hover {
-    color: $card-footer-click-hover-color;
+    color: $o-card-footer-click-hover-color;
     cursor: pointer;
-    background-color: $card-footer-click-hover-background-color;
+    background-color: $o-card-footer-click-hover-background-color;
   }
 }
 
@@ -131,8 +131,8 @@
 --------------------------------------------------*/
 
 /** With navigation */
-.card__header .nav {
-  margin-left: $card-header-nav-margin;
+.o-card__header .o-nav {
+  margin-left: $o-card-header-nav-margin;
 
   > ul {
     padding: 0;
@@ -140,12 +140,12 @@
 }
 
 /** No gutter */
-.card--full {
-  .card__body {
+.o-card--full {
+  .o-card__body {
     padding: 0;
   }
 
-  .card__section-header {
+  .o-card__section-header {
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;

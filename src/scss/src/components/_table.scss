@@ -2,11 +2,11 @@
  * Table Wrapper
  */
 
-.table-wrapper {
+.o-table-wrapper {
   overflow: auto;
 }
 
-.table-wrapper--fixed-header {
+.o-table-wrapper--fixed-header {
   position: relative;
 
   th {
@@ -15,7 +15,7 @@
     z-index: 2;
   }
   
-  .table:not(.table--celled) {
+  .o-table:not(.o-table--celled) {
     th {
       background-color: color('white');
     }
@@ -25,15 +25,15 @@
 /** Table
  --------------------------------------------------*/
   
-.table {
+.o-table {
   width: 100%;
-  margin: $table-vertical-margin;
+  margin: $o-table-vertical-margin;
   
-  font-size: $table-font-size;
-  color: $table-text-color;
+  font-size: $o-table-font-size;
+  color: $o-table-text-color;
   text-align: left;
   
-  border-radius: $table-border-radius;
+  border-radius: $o-table-border-radius;
   border-collapse: separate;
   border-spacing: 0;
 
@@ -46,41 +46,41 @@
   }
 
   th {
-    font-weight: $table-head-cell-font-weight;
-    color: $table-head-cell-text-color;
-    padding: $table-head-cell-padding;
+    font-weight: $o-table-head-cell-font-weight;
+    color: $o-table-head-cell-text-color;
+    padding: $o-table-head-cell-padding;
 
-    @media #{$sm-and-down} {
+    @media #{$o-sm-and-down} {
       width: 100%;
       display: block;
     }
   }
 
   th:first-child{
-    padding-left: $table-head-cell-first-left-padding;
+    padding-left: $o-table-head-cell-first-left-padding;
   }
 
   td {
-    border-top: $table-body-cell-border-top;
-    padding: $table-body-cell-padding;
+    border-top: $o-table-body-cell-border-top;
+    padding: $o-table-body-cell-padding;
 
-    @media #{$sm-and-down} {
+    @media #{$o-sm-and-down} {
       width: 100%;
       display: block;
     }
   }
 
   td:first-child {
-    font-size: $table-body-cell-first-font-size;
-    color: $table-body-cell-first-color;
-    padding-left: $table-body-cell-first-padding-left;
+    font-size: $o-table-body-cell-first-font-size;
+    color: $o-table-body-cell-first-color;
+    padding-left: $o-table-body-cell-first-padding-left;
 
     a {
-      color: $table-body-cell-first-color;
+      color: $o-table-body-cell-first-color;
     }
   }
 
-  td.collapsing {
+  td.o-collapsing {
     width: 1px;
     white-space: nowrap;
   }
@@ -92,66 +92,66 @@
 
 
 /** With a bottom border */
-.table--border-bottom {
-  border-bottom: $table-bottom-border;
+.o-table--border-bottom {
+  border-bottom: $o-table-bottom-border;
 }
 
 /** Equal column widths */
-.table--fixed {
+.o-table--fixed {
   table-layout: fixed;
 }
 
 /** Celled */
-.table--celled {
-  border: $table-celled-border;
+.o-table--celled {
+  border: $o-table-celled-border;
 
   th {
-    border-left: $table-celled-head-cell-border-left;
-    background-color: $table-celled-head-cell-background-color;
-    color: $table-celled-head-cell-text-color;
-    font-weight: $table-celled-head-cell-font-weight;
+    border-left: $o-table-celled-head-cell-border-left;
+    background-color: $o-table-celled-head-cell-background-color;
+    color: $o-table-celled-head-cell-text-color;
+    font-weight: $o-table-celled-head-cell-font-weight;
 
     &:first-child {
-      border-left-color: $table-celled-head-cell-first-border-color;
+      border-left-color: $o-table-celled-head-cell-first-border-color;
     }
   }
 
   td {
-    border-left: $table-celled-body-cell-border-left;
+    border-left: $o-table-celled-body-cell-border-left;
 
     &:first-child {
-      border-left-color: $table-celled-body-cell-first-border-color;
+      border-left-color: $o-table-celled-body-cell-first-border-color;
     }
   }
 }
 
 /** Compact */
-.table--compact {
-  color: $table-compact-text-color;
+.o-table--compact {
+  color: $o-table-compact-text-color;
 
   td {
-    padding: $table-compact-body-cell-padding;
+    padding: $o-table-compact-body-cell-padding;
   }
 
   td:first-child {
-    padding-left: $table-compact-body-cell-first-left-padding;
-    font-size: $table-compact-body-cell-first-font-size;
+    padding-left: $o-table-compact-body-cell-first-left-padding;
+    font-size: $o-table-compact-body-cell-first-font-size;
   }
 }
 
 /** With heads left of the content */
-.table--definition {
+.o-table--definition {
   th {
-    vertical-align: $table-definition-vertical-align;
-    padding-bottom: $table-definition-vertical-padding;
-    padding-top: $table-definition-vertical-padding;
+    vertical-align: $o-table-definition-vertical-align;
+    padding-bottom: $o-table-definition-vertical-padding;
+    padding-top: $o-table-definition-vertical-padding;
   }
 
   td:nth-child(2) {
-    border-left: $table-definition-body-cell-second-border-left;
+    border-left: $o-table-definition-body-cell-second-border-left;
   }
 
-  td.ignored {
-    color: $table-definition-body-cell-ignored-text-color;
+  td.o-ignored {
+    color: $o-table-definition-body-cell-ignored-text-color;
   }
 }

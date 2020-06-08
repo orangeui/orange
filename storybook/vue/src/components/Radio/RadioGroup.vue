@@ -1,13 +1,13 @@
 <template>
-  <div class="form__item">
-    <div class="radio-group">
-      <div class="radio-group__label">{{ label }}</div>
+  <div class="o-form__item">
+    <div class="o-radio-group">
+      <div class="o-radio-group__label">{{ label }}</div>
 
       <!-- @slot Default slot to pass in <o-radio> components -->
       <slot />
     </div>
 
-    <div v-if="description" class="form__description">{{ description }}</div>
+    <div v-if="description" class="o-form__description">{{ description }}</div>
   </div>
 </template>
 

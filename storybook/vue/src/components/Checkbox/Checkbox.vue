@@ -1,5 +1,5 @@
 <template>
-  <div class="checkbox" :class="checkboxClasses">
+  <div class="o-checkbox" :class="checkboxClasses">
     <input
       type="checkbox"
       :disabled="disabled"

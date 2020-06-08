@@ -2,12 +2,12 @@
  * Image
  */
 
-.image {
+.o-image {
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
-  transition: $image-transition;
-  margin-bottom: $image-margin-bottom;
+  transition: $o-image-transition;
+  margin-bottom: $o-image-margin-bottom;
 
   > img {
     display: block;
@@ -17,11 +17,11 @@
 
 /** Looks
 --------------------------------------------------*/
-.image--rounded {
-  border-radius: $image-border-radius;
+.o-image--rounded {
+  border-radius: $o-image-border-radius;
 }
 
-.image--circle {
+.o-image--circle {
   border-radius: 100%;
 
   > img {
@@ -29,32 +29,32 @@
   }
 }
 
-.image--shadow {
-  box-shadow: $image-shadow-shadow;
+.o-image--shadow {
+  box-shadow: $o-image-shadow-shadow;
 }
 
-.image--action {
+.o-image--action {
   &:hover {
-    opacity: $image-action-hover-opacity;
+    opacity: $o-image-action-hover-opacity;
   }
 }
 
 /** Sizes
 --------------------------------------------------*/
-@each $name, $size in $image-sizes {
-  .image--size-#{$name} {
-    width: $size;
+@each $o-name, $o-size in $o-image-sizes {
+  .o-image--size-#{$o-name} {
+    width: $o-size;
   }
 }
 
 /** Square/circle in any dimension
 --------------------------------------------------*/
-.image-wrapper {
+.o-image-wrapper {
   display: inline-block;
-  width: $image-wrapper-basic-size;
+  width: $o-image-wrapper-basic-size;
   max-width: 100%;
 
-   .image {
+   .o-image {
     position: relative;
     width: 100%;
     height: 0;
@@ -71,14 +71,14 @@
   }
 }
 
-@each $name, $size in $image-sizes {
-  .image-wrapper--size-#{$name} {
-    width: $size;
+@each $o-name, $o-size in $o-image-sizes {
+  .o-image-wrapper--size-#{$o-name} {
+    width: $o-size;
   }
 }
 
 /** Remove margin in grid as grid have gap
 --------------------------------------------------*/
-.grid [class*="col"] .image {
+.o-grid [class*="col"] .o-image {
   margin-bottom: 0;
 }

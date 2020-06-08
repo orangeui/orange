@@ -6,18 +6,18 @@
  * Gap
  */
 /* Desktop */
-$grid-gap: 12px !default;
-$container-gap: 12px !default;
+$o-grid-gap: 12px !default;
+$o-container-gap: 12px !default;
 
 /* Mobile */
-$grid-gap-mobile: $grid-gap !default;
-$container-gap-mobile: $container-gap !default;
+$o-grid-gap-mobile: $o-grid-gap !default;
+$o-container-gap-mobile: $o-container-gap !default;
 
 /**
  * Container
  */
-$container-max-width: 100% !default;
-$container-max-widths: (
+$o-container-max-width: 100% !default;
+$o-container-max-widths: (
   xs: 480px,
   sm: 580px,
   md: 720px,
@@ -30,31 +30,31 @@ $container-max-widths: (
  * Column
  */
 /** Includes */
-$include-grid-column: true !default;
-$include-grid-column-span: true !default;
-$include-grid-column-exact: true !default;
-$include-grid-column-from-to: true !default;
-$include-grid-column-auto-fill: true !default;
-$include-grid-number-of-columns: true !default;
+$o-include-grid-column: true !default;
+$o-include-grid-column-span: true !default;
+$o-include-grid-column-exact: true !default;
+$o-include-grid-column-from-to: true !default;
+$o-include-grid-column-auto-fill: true !default;
+$o-include-grid-number-of-columns: true !default;
 
 /** Basic */
-$grid-column-number: 12 !default;
+$o-grid-column-number: 12 !default;
 
 /** Width */
-$grid-column-narrow-min-width: 120px !default;
-$grid-column-regular-min-width: 240px !default;
-$grid-column-wide-min-width: 360px !default;
-$grid-column-max-width: 1fr !default;
+$o-grid-column-narrow-min-width: 120px !default;
+$o-grid-column-regular-min-width: 240px !default;
+$o-grid-column-wide-min-width: 360px !default;
+$o-grid-column-max-width: 1fr !default;
 
 /**
  * Row
  */
 /** Includes */
-$include-grid-row: true !default;
-$include-grid-row-span: true !default;
-$include-grid-row-exact: true !default;
-$include-grid-row-from-to: true !default;
+$o-include-grid-row: true !default;
+$o-include-grid-row-span: true !default;
+$o-include-grid-row-exact: true !default;
+$o-include-grid-row-from-to: true !default;
 
 /** Basic */
-$grid-row-number: 12 !default;
+$o-grid-row-number: 12 !default;
 

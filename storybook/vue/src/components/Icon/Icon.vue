@@ -27,7 +27,7 @@ export default {
   computed: {
     classes() {
       return {
-        [`icon-${this.symbol}`]: this.symbol,
+        [`o-icon-${this.symbol}`]: this.symbol,
         [`color-${this.color}`]: this.color
       };
     }

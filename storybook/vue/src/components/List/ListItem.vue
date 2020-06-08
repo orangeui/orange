@@ -1,5 +1,5 @@
 <template>
-  <li class="list__item">
+  <li class="o-list__item">
     <!-- @slot Default slot for List Item Slot components -->
     <slot />
   </li>

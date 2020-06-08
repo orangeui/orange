@@ -1,13 +1,13 @@
 <template>
-  <div class="form__item">
-    <div class="checkbox-group">
-      <div class="checkbox-group__label">{{ label }}</div>
+  <div class="o-form__item">
+    <div class="o-checkbox-group">
+      <div class="o-checkbox-group__label">{{ label }}</div>
 
       <!-- @slot Default slot to pass in <o-checkbox> components -->
       <slot />
     </div>
 
-    <div v-if="description" class="form__description">{{ description }}</div>
+    <div v-if="description" class="o-form__description">{{ description }}</div>
   </div>
 </template>
 

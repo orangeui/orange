@@ -1,5 +1,5 @@
 <template>
-  <div class="radio" :class="radioClasses">
+  <div class="o-radio" :class="radioClasses">
     <input
       type="radio"
       :name="name"

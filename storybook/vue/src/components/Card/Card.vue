@@ -1,5 +1,5 @@
 <template>
-  <div class="card" :class="classes">
+  <div class="o-card" :class="classes">
     <slot />
   </div>
 </template>
@@ -22,7 +22,7 @@ export default {
   computed: {
     classes() {
       return {
-        "card--full": this.full
+        "o-card--full": this.full
       };
     }
   }

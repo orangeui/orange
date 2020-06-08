@@ -41,7 +41,7 @@
   margin-right: 0;
 }
 
-@each $breakpoint-key, $breakpoint-value in $breakpoints {
+@each $breakpoint-key, $breakpoint-value in $o-breakpoints {
   @include breakpoint-and-up($breakpoint-key) {
     /** Block */
     .#{$breakpoint-key}\:block-left {
