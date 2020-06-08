@@ -1,5 +1,5 @@
 <template>
-  <section class="card__section">
+  <section class="o-card__section">
     <slot></slot>
   </section>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="card__header">
+  <div class="o-card__header">
     <slot></slot>
   </div>
 </template>

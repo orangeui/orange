@@ -1,5 +1,5 @@
 <template>
-  <ul class="list" :class="classes">
+  <ul class="o-list" :class="classes">
     <!-- @slot Default slot for List Item components -->
     <slot />
   </ul>
@@ -65,11 +65,11 @@ export default {
   computed: {
     classes() {
       return {
-        [`list--${this.size}`]: this.size,
-        "list--divide": this.divide,
-        "list--no-gutter": this.no_gutter,
-        "list--hover": this.hover,
-        "list--pointer": this.pointer
+        [`o-list--${this.size}`]: this.size,
+        "o-list--divide": this.divide,
+        "o-list--no-gutter": this.no_gutter,
+        "o-list--hover": this.hover,
+        "o-list--pointer": this.pointer
       };
     }
   },

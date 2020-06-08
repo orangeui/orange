@@ -1,5 +1,5 @@
 <template>
-  <div class="avatar" :class="classes">
+  <div class="o-avatar" :class="classes">
     <slot />
   </div>
 </template>
@@ -46,9 +46,9 @@ export default {
   computed: {
     classes() {
       return {
-        [`avatar--color-${this.color}`]: this.color,
-        [`avatar--size-${this.size}`]: this.size,
-        [`avatar--${this.look}`]: this.look
+        [`o-avatar--color-${this.color}`]: this.color,
+        [`o-avatar--size-${this.size}`]: this.size,
+        [`o-avatar--${this.look}`]: this.look
       };
     }
   }

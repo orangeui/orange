@@ -2,26 +2,26 @@
  * Callout
  */
 
-.callout {
+.o-callout {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 
-  padding: $callout-padding;
-  border-radius: $callout-border-radius;
-  margin-bottom: $callout-margin-bottom;
-  transition: $callout-transition;
+  padding: $o-callout-padding;
+  border-radius: $o-callout-border-radius;
+  margin-bottom: $o-callout-margin-bottom;
+  transition: $o-callout-transition;
 
-  background-color: $callout-background-color;
-  color: $callout-text-color;
+  background-color: $o-callout-background-color;
+  color: $o-callout-text-color;
   text-align: center;
-  font-size: $callout-font-size;
+  font-size: $o-callout-font-size;
   cursor: default;
 
   p {
-    margin-bottom: $spacing-base / 2;
+    margin-bottom: $o-spacing-base / 2;
 
     &:last-of-type {
       margin-bottom: auto;
@@ -29,7 +29,7 @@
   }
 
   a {
-    color: $callout-link-color;
+    color: $o-callout-link-color;
     font-weight: fontWeight('bold');
     text-decoration: underline;
 
@@ -43,13 +43,13 @@
 /** Colors
 --------------------------------------------------*/
 
-@each $name, $value in $colors {
-  @if $name == 'white' {
-    .callout--color-#{$name} {
+@each $o-name, $o-value in $o-colors {
+  @if $o-name == 'white' {
+    .o-callout--color-#{$o-name} {
       color: color('gray', 'dark');
       background-color: color('white');
 
-      &.callout--action:hover {
+      &.o-callout--action:hover {
         background-color: color('gray', 'lightest');
       }
 
@@ -58,33 +58,33 @@
       }
     }
   } @else {
-    @each $colorKey, $colorValue in $value {
-      @if ($colorKey == 'base') {
-        .callout--color-#{$name} {
-          background-color: color(#{$name});
+    @each $o-colorKey, $o-colorValue in $o-value {
+      @if ($o-colorKey == 'base') {
+        .o-callout--color-#{$o-name} {
+          background-color: color(#{$o-name});
           color: color('white');
           border-width: 0;
 
           a {
-            color: color(#{$name});
+            color: color(#{$o-name});
           }
 
-          &.callout--action:hover {
-            background-color: lighten(color(#{$name}), $callout-color-action-hover-background-color-lighten);
+          &.o-callout--action:hover {
+            background-color: lighten(color(#{$o-name}), $o-callout-color-action-hover-background-color-lighten);
           }
         }
       } @else {
-        .callout--color-#{$name}-#{$colorKey} {
-          background-color: #{$colorValue};
+        .o-callout--color-#{$o-name}-#{$o-colorKey} {
+          background-color: #{$o-colorValue};
           color: color('white');
           border-width: 0;
 
           a {
-            color: #{$colorValue};
+            color: #{$o-colorValue};
           }
 
-          &.callout--action:hover {
-            background-color: adjust-color($colorValue, $lightness: $callout-color-action-hover-background-color-lightness);
+          &.o-callout--action:hover {
+            background-color: adjust-color($o-colorValue, $lightness: $o-callout-color-action-hover-background-color-lightness);
           }
         }
       }
@@ -97,19 +97,19 @@
 --------------------------------------------------*/
 
 /** With a shadow */
-.callout--shadow {
-  box-shadow: $callout-shadow-box-shadow;
+.o-callout--shadow {
+  box-shadow: $o-callout-shadow-box-shadow;
 }
 
 /** With an image */
-.callout__image {
-  padding: $callout-image-padding;
+.o-callout__image {
+  padding: $o-callout-image-padding;
 }
 
 /* Hover action */
-.callout--action {
+.o-callout--action {
   &:hover {
     cursor: pointer;
-    background-color: $callout-action-hover-background-color;
+    background-color: $o-callout-action-hover-background-color;
   }
 }

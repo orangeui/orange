@@ -7,75 +7,75 @@
 */
 
 /* Screen */
-$screen: "only screen" !default;
+$o-screen: "only screen" !default;
 
 /* XX Small Query */
-$xxs-and-down: "#{$screen} and (max-width : #{$xxs-screen-to})" !default;
-$xxs-and-up: "#{$screen} and (min-width : #{$xxs-screen-from})" !default;
-$xxs-only: "#{$screen} and (min-width: #{$xxs-screen-from}) and (max-width: #{$xxs-screen-to})" !default;
+$o-xxs-and-down: "#{$o-screen} and (max-width : #{$o-xxs-screen-to})" !default;
+$o-xxs-and-up: "#{$o-screen} and (min-width : #{$o-xxs-screen-from})" !default;
+$o-xxs-only: "#{$o-screen} and (min-width: #{$o-xxs-screen-from}) and (max-width: #{$o-xxs-screen-to})" !default;
 
 /* X Small Query */
-$xs-and-down: "#{$screen} and (max-width : #{$xs-screen-to})" !default;
-$xs-and-up: "#{$screen} and (min-width : #{$xs-screen-from})" !default;
-$xs-only: "#{$screen} and (min-width: #{$xs-screen-from}) and (max-width: #{$xs-screen-to})" !default;
+$o-xs-and-down: "#{$o-screen} and (max-width : #{$o-xs-screen-to})" !default;
+$o-xs-and-up: "#{$o-screen} and (min-width : #{$o-xs-screen-from})" !default;
+$o-xs-only: "#{$o-screen} and (min-width: #{$o-xs-screen-from}) and (max-width: #{$o-xs-screen-to})" !default;
 
 /* Small Query */
-$sm-and-down: "#{$screen} and (max-width : #{$sm-screen-to})" !default;
-$sm-and-up: "#{$screen} and (min-width : #{$sm-screen-from})" !default;
-$sm-only: "#{$screen} and (min-width: #{$sm-screen-from}) and (max-width: #{$sm-screen-to})" !default;
+$o-sm-and-down: "#{$o-screen} and (max-width : #{$o-sm-screen-to})" !default;
+$o-sm-and-up: "#{$o-screen} and (min-width : #{$o-sm-screen-from})" !default;
+$o-sm-only: "#{$o-screen} and (min-width: #{$o-sm-screen-from}) and (max-width: #{$o-sm-screen-to})" !default;
 
 /* Medium Query */
-$md-and-down: "#{$screen} and (max-width : #{$md-screen-to})" !default;
-$md-and-up: "#{$screen} and (min-width : #{$md-screen-from})" !default;
-$md-only: "#{$screen} and (min-width: #{$md-screen-from}) and (max-width: #{$md-screen-to})" !default;
+$o-md-and-down: "#{$o-screen} and (max-width : #{$o-md-screen-to})" !default;
+$o-md-and-up: "#{$o-screen} and (min-width : #{$o-md-screen-from})" !default;
+$o-md-only: "#{$o-screen} and (min-width: #{$o-md-screen-from}) and (max-width: #{$o-md-screen-to})" !default;
 
 /* Large Query */
-$lg-and-down: "#{$screen} and (max-width : #{$lg-screen-to})" !default;
-$lg-and-up: "#{$screen} and (min-width : #{$lg-screen-from})" !default;
-$lg-only: "#{$screen} and (min-width: #{$lg-screen-from}) and (max-width: #{$lg-screen-to})" !default;
+$o-lg-and-down: "#{$o-screen} and (max-width : #{$o-lg-screen-to})" !default;
+$o-lg-and-up: "#{$o-screen} and (min-width : #{$o-lg-screen-from})" !default;
+$o-lg-only: "#{$o-screen} and (min-width: #{$o-lg-screen-from}) and (max-width: #{$o-lg-screen-to})" !default;
 
 /* Large Query */
-$xl-and-down: "#{$screen} and (max-width : #{$xl-screen-to})" !default;
-$xl-and-up: "#{$screen} and (min-width : #{$xl-screen-from})" !default;
-$xl-only: "#{$screen} and (min-width: #{$xl-screen-from}) and (max-width: #{$xl-screen-to})" !default;
+$o-xl-and-down: "#{$o-screen} and (max-width : #{$o-xl-screen-to})" !default;
+$o-xl-and-up: "#{$o-screen} and (min-width : #{$o-xl-screen-from})" !default;
+$o-xl-only: "#{$o-screen} and (min-width: #{$o-xl-screen-from}) and (max-width: #{$o-xl-screen-to})" !default;
 
 /* Extra Large Query */
-$xxl-and-up: "#{$screen} and (min-width : #{$xxl-screen-from})" !default;
+$o-xxl-and-up: "#{$o-screen} and (min-width : #{$o-xxl-screen-from})" !default;
 
 /*
 	Media Query Properties
 */
 /* Number of Columns */
-$grid: 12 !default;
+$o-grid: 12 !default;
 
 /* Breakpoints query breakpoint and up */
-$breakpoints-up: (
-  "xxsm": $xxs-and-up,
-  "xsm": $xs-and-up,
-  "sm": $sm-and-up,
-  "md": $md-and-up,
-  "lg": $lg-and-up,
-  "xl": $xl-and-up,
-  "xxl": $xxl-and-up
+$o-breakpoints-up: (
+  "xxsm": $o-xxs-and-up,
+  "xsm": $o-xs-and-up,
+  "sm": $o-sm-and-up,
+  "md": $o-md-and-up,
+  "lg": $o-lg-and-up,
+  "xl": $o-xl-and-up,
+  "xxl": $o-xxl-and-up
 );
 
 /* Breakpoints query breakpoint and down */
-$breakpoints-down: (
-  "lg-down": $xl-and-down,
-  "md-down": $lg-and-down,
-  "sm-down": $md-and-down,
-  "xs-down": $sm-and-down,
-  "micro-down": $xs-and-down,
-  "nano-down": $xxs-and-down
+$o-breakpoints-down: (
+  "lg-down": $o-xl-and-down,
+  "md-down": $o-lg-and-down,
+  "sm-down": $o-md-and-down,
+  "xs-down": $o-sm-and-down,
+  "micro-down": $o-xs-and-down,
+  "nano-down": $o-xxs-and-down
 );
 
 /* Breakpoints query breakpoint only */
-$breakpoints-only: (
-  "xl-only": $xxl-and-up,
-  "lg-only": $xl-only,
-  "md-only": $lg-only,
-  "sm-only": $md-only,
-  "xs-only": $sm-only,
-  "micro-only": $xs-only,
-  "nano-only": $xxs-only
+$o-breakpoints-only: (
+  "xl-only": $o-xxl-and-up,
+  "lg-only": $o-xl-only,
+  "md-only": $o-lg-only,
+  "sm-only": $o-md-only,
+  "xs-only": $o-sm-only,
+  "micro-only": $o-xs-only,
+  "nano-only": $o-xxs-only
 );

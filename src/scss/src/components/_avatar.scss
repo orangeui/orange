@@ -2,10 +2,10 @@
  * Avatar
  */
 
-.avatar {
-  width: $avatar-width-height;
-  height: $avatar-width-height;
-  color: $avatar-color;
+.o-avatar {
+  width: $o-avatar-width-height;
+  height: $o-avatar-width-height;
+  color: $o-avatar-color;
   overflow: hidden;
 
   svg {
@@ -20,34 +20,34 @@
 
 /** Sizes
 --------------------------------------------------*/
-.avatar--size-auto {
+.o-avatar--size-auto {
   width: 100%;
   height: 100%;
 }
 
-.avatar--size-small {
-  width: $avatar-small-width-height;
-  height: $avatar-small-width-height;
+.o-avatar--size-small {
+  width: $o-avatar-small-width-height;
+  height: $o-avatar-small-width-height;
 }
 
-.avatar--size-large {
-  width: $avatar-large-width-height;
-  height: $avatar-large-width-height;
+.o-avatar--size-large {
+  width: $o-avatar-large-width-height;
+  height: $o-avatar-large-width-height;
 }
 
 /** Looks
 --------------------------------------------------*/
 
-.avatar--circle {
+.o-avatar--circle {
   border-radius: 100%;
-  border: 1px solid $avatar-color;
+  border: 1px solid $o-avatar-color;
 }
 
 /** Colors
 --------------------------------------------------*/
-@each $name, $value in $colors {
-  .avatar--color-#{$name} {
-    color: color(#{$name});
-    border-color: color(#{$name});
+@each $o-name, $o-value in $o-colors {
+  .o-avatar--color-#{$o-name} {
+    color: color(#{$o-name});
+    border-color: color(#{$o-name});
   }
 }

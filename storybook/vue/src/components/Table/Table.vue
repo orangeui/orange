@@ -1,5 +1,5 @@
 <template>
-  <table class="table" :class="classes">
+  <table class="o-table" :class="classes">
     <!-- @slot Default slot for table elements -->
     <slot />
   </table>
@@ -63,11 +63,11 @@ export default {
   computed: {
     classes() {
       return {
-        [`table--border-bottom`]: this.border_bottom,
-        [`table--fixed`]: this.evenly_distributed,
-        [`table--compact`]: this.compact,
-        [`table--celled`]: this.celled,
-        [`table--definition`]: this.definition
+        [`o-table--border-bottom`]: this.border_bottom,
+        [`o-table--fixed`]: this.evenly_distributed,
+        [`o-table--compact`]: this.compact,
+        [`o-table--celled`]: this.celled,
+        [`o-table--definition`]: this.definition
       };
     }
   }

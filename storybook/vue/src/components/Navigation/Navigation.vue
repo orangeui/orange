@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav" :class="nav_classes">
+  <nav class="o-nav" :class="nav_classes">
     <ul>
       <slot />
     </ul>
@@ -37,8 +37,8 @@ export default {
   computed: {
     nav_classes() {
       return {
-        [`nav--color-${this.color}`]: this.color,
-        [`nav--${this.align}`]: this.align
+        [`o-nav--color-${this.color}`]: this.color,
+        [`o-nav--${this.align}`]: this.align
       };
     }
   }

@@ -1,30 +1,30 @@
 <template>
-  <div class="form__item">
-    <div class="toggle" :class="toggleClasses">
-      <div class="toggle__button">
+  <div class="o-form__item">
+    <div class="o-toggle" :class="toggleClasses">
+      <div class="o-toggle__button">
         <input
-          class="toggle__input"
+          class="o-toggle__input"
           type="checkbox"
           :disabled="disabled"
           v-model="toggleValue"
           @change="onChange"
           :id="id"
         />
-        <label class="toggle__label" @click="onToggle">
+        <label class="o-toggle__label" @click="onToggle">
           <span v-if="size !== 'large'">{{ label }}</span>
         </label>
       </div>
 
       <!-- Extra elements for large  -->
       <div v-if="size === 'large'">
-        <label class="toggle__text" @click="onToggle">{{ label }}</label>
-        <div class="toggle__value" v-if="toggleValue">{{ valueText }}</div>
-        <div class="toggle__value toggle__value--disabled" v-else>
+        <label class="o-toggle__text" @click="onToggle">{{ label }}</label>
+        <div class="o-toggle__value" v-if="toggleValue">{{ valueText }}</div>
+        <div class="o-toggle__value o-toggle__value--disabled" v-else>
           {{ valueTextDisabled }}
         </div>
       </div>
     </div>
-    <div class="form__description" v-if="description">{{ description }}</div>
+    <div class="o-form__description" v-if="description">{{ description }}</div>
   </div>
 </template>
 
@@ -39,9 +39,9 @@ export default {
   computed: {
     toggleClasses() {
       return {
-        "toggle--label": this.label,
-        [`toggle--color-${this.color}`]: this.color,
-        [`toggle--${this.size}`]: this.size,
+        "o-toggle--label": this.label,
+        [`o-toggle--color-${this.color}`]: this.color,
+        [`o-toggle--${this.size}`]: this.size,
         "is-disabled": this.disabled,
         "is-checked": this.value
       };

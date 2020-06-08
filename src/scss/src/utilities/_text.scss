@@ -4,15 +4,15 @@
 
 /** Align
 --------------------------------------------------*/
-@each $alignment in $text-alignments {
+@each $alignment in $o-text-alignments {
   .text-#{$alignment} {
     text-align: #{$alignment};
   }
 }
 
 /** Responsive */
-@each $breakpoint-key, $breakpoint-value in $breakpoints {
-  @each $alignment in $text-alignments {
+@each $breakpoint-key, $breakpoint-value in $o-breakpoints {
+  @each $alignment in $o-text-alignments {
     @include breakpoint-and-up($breakpoint-key) {
       .#{$breakpoint-key}\:text-#{$alignment} {
         text-align: #{$alignment};
@@ -49,15 +49,15 @@
 /** Sizes
 --------------------------------------------------*/
 
-@each $name, $size in $font-sizes {
+@each $name, $size in $o-font-sizes {
   .fs-#{$name} {
     font-size: $size;
   }
 }
 
 /** Responsive */
-@each $breakpoint-key, $breakpoint-value in $breakpoints {
-  @each $name, $size in $font-sizes {
+@each $breakpoint-key, $breakpoint-value in $o-breakpoints {
+  @each $name, $size in $o-font-sizes {
     @include breakpoint-and-up($breakpoint-key) {
       .#{$breakpoint-key}\:fs-#{$name} {
         font-size: #{$size};
@@ -101,7 +101,7 @@
 
 /** Font Weights
 --------------------------------------------------*/
-@each $name, $weight in $font-weights {
+@each $name, $weight in $o-font-weights {
   .font-#{$name} {
     font-weight: $weight;
   }

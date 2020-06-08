@@ -1,16 +1,16 @@
 <template>
-  <div class="message" :class="classes">
+  <div class="o-message" :class="classes">
     <!-- @slot Avatar slot -->
     <slot name="avatar"></slot>
 
-    <div class="message__body">
+    <div class="o-message__body">
       <h6 v-if="heading">{{ heading }}</h6>
 
       <!-- @slot Main Body slot for paragraphs -->
       <slot></slot>
     </div>
 
-    <div class="message__action">
+    <div class="o-message__action">
       <!-- @slot Action slot for button -->
       <slot name="action"></slot>
     </div>
@@ -57,8 +57,8 @@ export default {
   computed: {
     classes() {
       return {
-        [`message--color-${this.color}`]: this.color,
-        [`message--${this.size}`]: this.size
+        [`o-message--color-${this.color}`]: this.color,
+        [`o-message--${this.size}`]: this.size
       };
     }
   }

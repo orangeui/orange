@@ -1,10 +1,10 @@
 <template>
-  <span class="label" :class="classes" @[clickEnabled]="click">
+  <span class="o-label" :class="classes" @[clickEnabled]="click">
     {{ text }}
 
     <i
       v-if="dismiss || icon"
-      :class="`icon-${dismiss ? 'x' : icon}`"
+      :class="`o-icon-${dismiss ? 'x' : icon}`"
       @[dismissClickEnabled]="dismissClick"
     ></i>
   </span>
@@ -70,9 +70,9 @@ export default {
   computed: {
     classes() {
       return {
-        [`label--${this.color}`]: this.color,
-        [`label--${this.size}`]: this.size,
-        [`label--dismiss`]: this.dismiss
+        [`o-label--${this.color}`]: this.color,
+        [`o-label--${this.size}`]: this.size,
+        [`o-label--dismiss`]: this.dismiss
       };
     },
 

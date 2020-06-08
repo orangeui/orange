@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ list__action: action }">
+  <div :class="{ 'o-list__action': action }">
     <slot />
   </div>
 </template>

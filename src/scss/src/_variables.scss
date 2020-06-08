@@ -9,24 +9,24 @@
 @import "./variables/grid/media-queries";
 @import "./variables/spacings";
 
-$transition: all 150ms ease-out !default;
+$o-transition: all 150ms ease-out !default;
 
 /** Sidebar */
-$sidebar-width: 243px !default;
+$o-sidebar-width: 243px !default;
 
 
 /** Typography
 --------------------------------------------------*/
 
-$include-fonts: true !default;
-$font-url: 'https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i|Roboto+Mono&display=swap' !default;
-$font-primary: "Rubik", arial, sans-serif !default;
-$font-monospace: 'Roboto Mono', monospace !default;
-$font-icon-url: '../../fonts' !default;
+$o-include-fonts: true !default;
+$o-font-url: 'https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i|Roboto+Mono&display=swap' !default;
+$o-font-primary: "Rubik", arial, sans-serif !default;
+$o-font-monospace: 'Roboto Mono', monospace !default;
+$o-font-icon-url: '../../fonts' !default;
 
-$line-height: 1.5 !default;
+$o-line-height: 1.5 !default;
 
-$font-sizes: (
+$o-font-sizes: (
   'giga': 76px,
   'mega': 54px,
   'alpha': 36px,
@@ -38,7 +38,7 @@ $font-sizes: (
   'omega': 12px
 ) !default;
 
-$font-weights: (
+$o-font-weights: (
   'thin': 100,
   'extralight': 200,
   'light': 300,
@@ -49,68 +49,67 @@ $font-weights: (
   'black': 800
 ) !default;
 
-$text-alignments: 'left', 'center', 'right', 'justify' !default;
+$o-text-alignments: 'left', 'center', 'right', 'justify' !default;
 
 /** Include fonts */
-@if ($include-fonts) {
-  @import url($font-url);
+@if ($o-include-fonts) {
+  @import url($o-font-url);
 }
 
 
 /** Colors
 --------------------------------------------------*/
-$darken: 20%;
-$lighten: 20%;
-$saturate: 20%;
+$o-darken: 20%;
+$o-lighten: 20%;
+$o-saturate: 20%;
 
-$colors: (
+$o-colors: (
   'primary': (
     'base': #ffa941,
-    'dark': adjust-color(#ffa941, $lightness: -$darken, $saturation: $saturate),
-    'light': adjust-color(#ffa941, $lightness: $lighten, $saturation: $saturate),
+    'dark': adjust-color(#ffa941, $lightness: -$o-darken, $saturation: $o-saturate),
+    'light': adjust-color(#ffa941, $lightness: $o-lighten, $saturation: $o-saturate),
   ),
   'secondary': (
     'base': #4648d2,
-    'dark': adjust-color(#4648d2, $lightness: -$darken, $saturation: $saturate),
-    'light': adjust-color(#4648d2, $lightness: $lighten, $saturation: $saturate),
+    'dark': adjust-color(#4648d2, $lightness: -$o-darken, $saturation: $o-saturate),
+    'light': adjust-color(#4648d2, $lightness: $o-lighten, $saturation: $o-saturate),
   ),
 
   'red': (
     'base': #FA3D49,
-    'dark': adjust-color(#FA3D49, $lightness: -$darken, $saturation: $saturate),
-    'light': adjust-color(#FA3D49, $lightness: $lighten, $saturation: $saturate),
+    'dark': adjust-color(#FA3D49, $lightness: -$o-darken, $saturation: $o-saturate),
+    'light': adjust-color(#FA3D49, $lightness: $o-lighten, $saturation: $o-saturate),
   ),
   'orange': (
     'base': #ffa941,
-    'dark': adjust-color(#ffa941, $lightness: -$darken, $saturation: $saturate),
-    'light': adjust-color(#ffa941, $lightness: $lighten, $saturation: $saturate),
+    'dark': adjust-color(#ffa941, $lightness: -$o-darken, $saturation: $o-saturate),
+    'light': adjust-color(#ffa941, $lightness: $o-lighten, $saturation: $o-saturate),
   ),
   'yellow': (
     'base': #ffe433,
-    'dark': adjust-color(#ffe433, $lightness: -$darken, $saturation: $saturate),
-    'light': adjust-color(#ffe433, $lightness: $lighten, $saturation: $saturate),
+    'dark': adjust-color(#ffe433, $lightness: -$o-darken, $saturation: $o-saturate),
+    'light': adjust-color(#ffe433, $lightness: $o-lighten, $saturation: $o-saturate),
   ),
   'green': (
     'base': #4BC45F,
-    'dark': adjust-color(#4BC45F, $lightness: -$darken, $saturation: $saturate),
-    'light': adjust-color(#4BC45F, $lightness: $lighten, $saturation: $saturate),
+    'dark': adjust-color(#4BC45F, $lightness: -$o-darken, $saturation: $o-saturate),
+    'light': adjust-color(#4BC45F, $lightness: $o-lighten, $saturation: $o-saturate),
   ),
   'blue': (
     'base': #3333f3,
-    'dark': adjust-color(#3333f3, $lightness: -$darken, $saturation: $saturate),
-    'light': adjust-color(#3333f3, $lightness: $lighten, $saturation: $saturate),
+    'dark': adjust-color(#3333f3, $lightness: -$o-darken, $saturation: $o-saturate),
+    'light': adjust-color(#3333f3, $lightness: $o-lighten, $saturation: $o-saturate),
   ),
   'indigo': (
     'base': #178cd6,
-    'dark': adjust-color(#178cd6, $lightness: -$darken, $saturation: $saturate),
-    'light': adjust-color(#178cd6, $lightness: $lighten, $saturation: $saturate),
+    'dark': adjust-color(#178cd6, $lightness: -$o-darken, $saturation: $o-saturate),
+    'light': adjust-color(#178cd6, $lightness: $o-lighten, $saturation: $o-saturate),
   ),
   'violet': (
     'base': #8b26f1,
-    'dark': adjust-color(#8b26f1, $lightness: -$darken, $saturation: $saturate),
-    'light': adjust-color(#8b26f1, $lightness: $lighten, $saturation: $saturate),
+    'dark': adjust-color(#8b26f1, $lightness: -$o-darken, $saturation: $o-saturate),
+    'light': adjust-color(#8b26f1, $lightness: $o-lighten, $saturation: $o-saturate),
   ),
-
   'black': (
     'base': adjust-color(#000000, $lightness: 0%),
   ),
@@ -129,7 +128,7 @@ $colors: (
 /** Shadows
 --------------------------------------------------*/
 
-$shadows: (
+$o-shadows: (
   'primary': (8px 14px 38px transparentize(color('black'), 0.96), 0px 3px 5px transparentize(color('black'), 0.96)),
   'secondary': (0px 1px 4px transparentize(color('black'), 0.80)),
   'input': 0 0 12px 6px transparentize(color('secondary'), 0.93),
@@ -139,34 +138,34 @@ $shadows: (
 /** Spacings - for others check variables/_spacings
 --------------------------------------------------*/
 
-$spacing-base: 24px !default;
-$spacing-extra-small: $spacing-base / 3 !default;
-$spacing-small: $spacing-base / 2 !default;
-$spacing-medium: $spacing-base * 1.5 !default;
-$spacing-large: $spacing-base * 2 !default;
-$spacing-extra-large: $spacing-base * 3 !default;
+$o-spacing-base: 24px !default;
+$o-spacing-extra-small: $o-spacing-base / 3 !default;
+$o-spacing-small: $o-spacing-base / 2 !default;
+$o-spacing-medium: $o-spacing-base * 1.5 !default;
+$o-spacing-large: $o-spacing-base * 2 !default;
+$o-spacing-extra-large: $o-spacing-base * 3 !default;
 
 
 /** Global properties
 --------------------------------------------------*/
 
-$border: 1px solid color('gray', 'lightest') !default;
-$border-radius-main: 3px !default;
-$border-radius-medium: 6px !default;
-$border-radius-full: 9999px !default;
-$border-radius-progress-bar: 9px !default;
-$ul-ol-padding-left: $spacing-base !default;
+$o-border: 1px solid color('gray', 'lightest') !default;
+$o-border-radius-main: 3px !default;
+$o-border-radius-medium: 6px !default;
+$o-border-radius-full: 9999px !default;
+$o-border-radius-progress-bar: 9px !default;
+$o-ul-ol-padding-left: $o-spacing-base !default;
 
 /**
  * Border radius
  */
 
-$border-radius-base: 3px !default;
+$o-border-radius-base: 3px !default;
 
-$border-radiuses: (
+$o-border-radiuses: (
   0: 0,                         // 0px
-  'base': $border-radius-base,  // 3px
-  1: $border-radius-base * 2,   // 6px
+  'base': $o-border-radius-base,  // 3px
+  1: $o-border-radius-base * 2,   // 6px
   'full': 50%                   // 50%
 ) !default;
 
@@ -175,7 +174,7 @@ $border-radiuses: (
  * Display
  */
 
-$displays: (
+$o-displays: (
   'block': block,
   'inline-block': inline-block,
   'inline': inline,
@@ -195,89 +194,89 @@ $displays: (
 /**
  * Button
  */
-$button-padding: 0 $spacing-small !default;
-$button-background-color: color('primary') !default;
-$button-border-width: 1px !default;
-$button-border-color: transparent !default;
-$button-border-radius: $border-radius-main !default;
-$button-font-size: fontSize('epsilon') !default;
-$button-line-height: $button-font-size !default;
-$button-font-weight: fontWeight('normal') !default;
-$button-color: color('white') !default;
-$button-transition: $transition !default;
-$button-height: 40px !default;
-$button-next-button-margin-left: $spacing-base / 2 !default;
+$o-button-padding: 0 $o-spacing-small !default;
+$o-button-background-color: color('primary') !default;
+$o-button-border-width: 1px !default;
+$o-button-border-color: transparent !default;
+$o-button-border-radius: $o-border-radius-main !default;
+$o-button-font-size: fontSize('epsilon') !default;
+$o-button-line-height: $o-button-font-size !default;
+$o-button-font-weight: fontWeight('normal') !default;
+$o-button-color: color('white') !default;
+$o-button-transition: $o-transition !default;
+$o-button-height: 40px !default;
+$o-button-next-button-margin-left: $o-spacing-base / 2 !default;
 
 // Action
-$button-action-color: $button-color !default;
-$button-action-border-color: $button-border-color !default;
-$button-action-background-color: transparentize(color('primary'), 0.33) !default;
+$o-button-action-color: $o-button-color !default;
+$o-button-action-border-color: $o-button-border-color !default;
+$o-button-action-background-color: transparentize(color('primary'), 0.33) !default;
 
 // Icon
-$button-icon-margin-left: $spacing-small / 2 !default;
+$o-button-icon-margin-left: $o-spacing-small / 2 !default;
 
 // Inverted
-$button-inverted-color: color('primary') !default;
-$button-inverted-background-color: color('white') !default;
+$o-button-inverted-color: color('primary') !default;
+$o-button-inverted-background-color: color('white') !default;
 
-$button-inverted-action-color: color('white') !default;
-$button-inverted-action-background-color: transparentize(color('white'), 0.66) !default;
+$o-button-inverted-action-color: color('white') !default;
+$o-button-inverted-action-background-color: transparentize(color('white'), 0.66) !default;
 
 // Disabled
-$button-disabled-opacity: 0.5 !default;
+$o-button-disabled-opacity: 0.5 !default;
 
 /** Icon only */
-$button-icon-only-padding: 0 1px 0 0 !default;
+$o-button-icon-only-padding: 0 1px 0 0 !default;
 
 /** Basic */
-$button-basic-color: color('gray') !default;
-$button-basic-background-color: color('gray', 'lightest') !default;
-$button-basic-action-color: color('white') !default;
-$button-basic-action-background-color: transparentize(color('primary'), 0.33) !default;
+$o-button-basic-color: color('gray') !default;
+$o-button-basic-background-color: color('gray', 'lightest') !default;
+$o-button-basic-action-color: color('white') !default;
+$o-button-basic-action-background-color: transparentize(color('primary'), 0.33) !default;
 
 // Secondary
-$button-basic-secondary-background-color: transparent !default;
-$button-basic-secondary-border-color: color('gray', 'lightest') !default;
-$button-basic-secondary-action-background-color: transparentize(color('primary'), 0.33) !default;
-$button-basic-secondary-action-border-color: transparent !default;
-$button-basic-secondary-action-color: color('white') !default;
+$o-button-basic-secondary-background-color: transparent !default;
+$o-button-basic-secondary-border-color: color('gray', 'lightest') !default;
+$o-button-basic-secondary-action-background-color: transparentize(color('primary'), 0.33) !default;
+$o-button-basic-secondary-action-border-color: transparent !default;
+$o-button-basic-secondary-action-color: color('white') !default;
 
 /** Secondary */
-$button-secondary-border-color: color('primary') !default;
-$button-secondary-border-color-action: transparent !default;
-$button-secondary-color: color('primary') !default;
-$button-secondary-color-action: color('white') !default;
-$button-secondary-background-color: transparent !default;
+$o-button-secondary-border-color: color('primary') !default;
+$o-button-secondary-border-color-action: transparent !default;
+$o-button-secondary-color: color('primary') !default;
+$o-button-secondary-color-action: color('white') !default;
+$o-button-secondary-background-color: transparent !default;
 
 // Inverted
-$button-secondary-inverted-color: color('white') !default;
-$button-secondary-inverted-background-color: $button-secondary-background-color !default;
-$button-secondary-inverted-border-color: color('white') !default;
+$o-button-secondary-inverted-color: color('white') !default;
+$o-button-secondary-inverted-background-color: $o-button-secondary-background-color !default;
+$o-button-secondary-inverted-border-color: color('white') !default;
 
 // Inverted Action
-$button-secondary-inverted-action-color: $button-secondary-inverted-color !default;
-$button-secondary-inverted-action-background-color: transparentize(color('white'), 0.66) !default;
-$button-secondary-inverted-action-border-color: transparent !default;
+$o-button-secondary-inverted-action-color: $o-button-secondary-inverted-color !default;
+$o-button-secondary-inverted-action-background-color: transparentize(color('white'), 0.66) !default;
+$o-button-secondary-inverted-action-border-color: transparent !default;
 
 /** Small */
-$button-small-height: 28px !default;
-$button-small-padding: ($spacing-small / 4) ($spacing-small / 2) !default;
-$button-small-font-size: fontSize('zeta') !default;
-$button-small-line-height: $button-small-font-size !default;
+$o-button-small-height: 28px !default;
+$o-button-small-padding: ($o-spacing-small / 4) ($o-spacing-small / 2) !default;
+$o-button-small-font-size: fontSize('zeta') !default;
+$o-button-small-line-height: $o-button-small-font-size !default;
 
 // Icon only
-$button-small-icon-only-icon-font-size: 20px !default;
-$button-small-icon-only-icon-height: 20px !default;
+$o-button-small-icon-only-icon-font-size: 20px !default;
+$o-button-small-icon-only-icon-height: 20px !default;
 
 /** Large */
-$button-large-height: 54px !default;
-$button-large-padding: $spacing-small ($spacing-base * 0.75) !default;
-$button-large-font-size: $button-font-size !default;
-$button-large-line-height: $button-font-size !default;
+$o-button-large-height: 54px !default;
+$o-button-large-padding: $o-spacing-small ($o-spacing-base * 0.75) !default;
+$o-button-large-font-size: $o-button-font-size !default;
+$o-button-large-line-height: $o-button-font-size !default;
 
 // Icon only
-$button-large-icon-only-icon-font-size: $spacing-base !default;
-$button-large-icon-only-icon-height: $spacing-base !default;
+$o-button-large-icon-only-icon-font-size: $o-spacing-base !default;
+$o-button-large-icon-only-icon-height: $o-spacing-base !default;
 
 /** Icon only */
 
@@ -286,754 +285,754 @@ $button-large-icon-only-icon-height: $spacing-base !default;
 /**
  * Navigation
  */
-$nav-padding-bottom: $spacing-base / 2 !default;
+$o-nav-padding-bottom: $o-spacing-base / 2 !default;
 
 /** Item */
-$nav-item-first-margin-left: -$spacing-base / 2 !default;
+$o-nav-item-first-margin-left: -$o-spacing-base / 2 !default;
 
 /** Link */
-$nav-link-padding: $spacing-base / 2 !default;
-$nav-link-height: 40px !default;
-$nav-link-font-size: fontSize('zeta') !default;
+$o-nav-link-padding: $o-spacing-base / 2 !default;
+$o-nav-link-height: 40px !default;
+$o-nav-link-font-size: fontSize('zeta') !default;
 
 // Color
-$nav-link-color: color('black') !default;
-$nav-link-color-opacity: 0.3 !default;
-$nav-link-hover-color-opacity: 1 !default;
-$nav-link-active-color-opacity: 1 !default;
+$o-nav-link-color: color('black') !default;
+$o-nav-link-color-opacity: 0.3 !default;
+$o-nav-link-hover-color-opacity: 1 !default;
+$o-nav-link-active-color-opacity: 1 !default;
 
 // Background
-$nav-link-background-color-opacity: 0.03 !default;
+$o-nav-link-background-color-opacity: 0.03 !default;
 
 // Active
-$nav-link-active-after-width: calc(100% - #{$spacing-base}) !default;
-$nav-link-active-after-left: $spacing-small !default;
-$nav-link-active-after-bottom:  -$spacing-base / 2 !default;
+$o-nav-link-active-after-width: calc(100% - #{$o-spacing-base}) !default;
+$o-nav-link-active-after-left: $o-spacing-small !default;
+$o-nav-link-active-after-bottom:  -$o-spacing-base / 2 !default;
 
 // Disabled
-$nav-link-disabled-opacity: 0.5 !default;
+$o-nav-link-disabled-opacity: 0.5 !default;
 
 // Before
-$nav-link-before-width: calc(100% - #{$spacing-base} / 4) !default;
-$nav-link-before-height: calc(100% - #{$spacing-base} / 4) !default;
-$nav-link-before-left: $spacing-base / 8 !default;
-$nav-link-before-top: $spacing-base / 8 !default;
-$nav-link-before-border-radius: $border-radius-main !default;
-$nav-link-before-opacity: 0!default;
+$o-nav-link-before-width: calc(100% - #{$o-spacing-base} / 4) !default;
+$o-nav-link-before-height: calc(100% - #{$o-spacing-base} / 4) !default;
+$o-nav-link-before-left: $o-spacing-base / 8 !default;
+$o-nav-link-before-top: $o-spacing-base / 8 !default;
+$o-nav-link-before-border-radius: $o-border-radius-main !default;
+$o-nav-link-before-opacity: 0!default;
 
 /** Icon */
-$nav-icon-margin-right: $spacing-base / 4 !default;
+$o-nav-icon-margin-right: $o-spacing-base / 4 !default;
 
 /** Color */
 // Change link properties based on navigation color
-$nav-color-link-color-opacity: 0.5 !default;
-$nav-color-link-color-opacity-hover: 1 !default;
-$nav-color-link-color-opacity-active: 1 !default;
+$o-nav-color-link-color-opacity: 0.5 !default;
+$o-nav-color-link-color-opacity-hover: 1 !default;
+$o-nav-color-link-color-opacity-active: 1 !default;
 
 // Background
-$nav-color-link-background-color-opacity: 0.05 !default;
+$o-nav-color-link-background-color-opacity: 0.05 !default;
 
 /** Right */
-$nav-right-item-last-margin-right: -$spacing-small !default;
+$o-nav-right-item-last-margin-right: -$o-spacing-small !default;
 
 /**
  * Avatar
  */
-$avatar-color: color('primary') !default;
-$avatar-width-height: $spacing-base * 4 !default;
+$o-avatar-color: color('primary') !default;
+$o-avatar-width-height: $o-spacing-base * 4 !default;
 
 /** Small */
-$avatar-small-width-height: $spacing-base * 2 !default;
+$o-avatar-small-width-height: $o-spacing-base * 2 !default;
 
 /** Large */
-$avatar-large-width-height: $spacing-base * 8 !default;
+$o-avatar-large-width-height: $o-spacing-base * 8 !default;
 
 /**
  * Breadcrumbs
  */
-$breadcrumbs-color: color('black') !default;
-$breadcrumbs-font-size: fontSize('zeta') !default;
-$breadcrumbs-height: 36px !default;
-$breadcrumbs-spacing: $spacing-small !default;
+$o-breadcrumbs-color: color('black') !default;
+$o-breadcrumbs-font-size: fontSize('zeta') !default;
+$o-breadcrumbs-height: 36px !default;
+$o-breadcrumbs-spacing: $o-spacing-small !default;
 
 /** Background */
-$breadcrumbs-background-transparency: 0.05 !default;
+$o-breadcrumbs-background-transparency: 0.05 !default;
 
 // Active
-$breadcrumbs-active-background-transparency: 0.12 !default;
+$o-breadcrumbs-active-background-transparency: 0.12 !default;
 
 /** Color */
-$breadcrumbs-color-transparency: 0.5 !default;
+$o-breadcrumbs-color-transparency: 0.5 !default;
 
 /** Item */
-$breadcrumbs-item-margin-right: 3px !default;
-$breadcrumbs-item-last-padding-right: ($breadcrumbs-spacing) + ($breadcrumbs-spacing / 2) !default;
+$o-breadcrumbs-item-margin-right: 3px !default;
+$o-breadcrumbs-item-last-padding-right: ($o-breadcrumbs-spacing) + ($o-breadcrumbs-spacing / 2) !default;
 
 /** Link */
-$breadcrumbs-link-padding: 0 $breadcrumbs-spacing !default;
-$breadcrumbs-link-margin-left: $breadcrumbs-spacing !default;
+$o-breadcrumbs-link-padding: 0 $o-breadcrumbs-spacing !default;
+$o-breadcrumbs-link-margin-left: $o-breadcrumbs-spacing !default;
 
 // Before
-$breadcrumbs-link-before-left: -$breadcrumbs-spacing !default;
-$breadcrumbs-link-before-border-top: $breadcrumbs-height / 2 solid rgba($breadcrumbs-color, $breadcrumbs-background-transparency) !default;
-$breadcrumbs-link-before-border-bottom: $breadcrumbs-height / 2 solid rgba($breadcrumbs-color, $breadcrumbs-background-transparency) !default;
-$breadcrumbs-link-before-border-right: $breadcrumbs-spacing solid transparent !default;
+$o-breadcrumbs-link-before-left: -$o-breadcrumbs-spacing !default;
+$o-breadcrumbs-link-before-border-top: $o-breadcrumbs-height / 2 solid rgba($o-breadcrumbs-color, $o-breadcrumbs-background-transparency) !default;
+$o-breadcrumbs-link-before-border-bottom: $o-breadcrumbs-height / 2 solid rgba($o-breadcrumbs-color, $o-breadcrumbs-background-transparency) !default;
+$o-breadcrumbs-link-before-border-right: $o-breadcrumbs-spacing solid transparent !default;
 
 // After
-$breadcrumbs-link-after-right: -$breadcrumbs-spacing !default;
-$breadcrumbs-link-after-border-top: $breadcrumbs-height / 2 solid transparent !default;
-$breadcrumbs-link-after-border-bottom: $breadcrumbs-height / 2 solid transparent !default;
-$breadcrumbs-link-after-border-left: $breadcrumbs-spacing solid rgba($breadcrumbs-color, $breadcrumbs-background-transparency) !default;
+$o-breadcrumbs-link-after-right: -$o-breadcrumbs-spacing !default;
+$o-breadcrumbs-link-after-border-top: $o-breadcrumbs-height / 2 solid transparent !default;
+$o-breadcrumbs-link-after-border-bottom: $o-breadcrumbs-height / 2 solid transparent !default;
+$o-breadcrumbs-link-after-border-left: $o-breadcrumbs-spacing solid rgba($o-breadcrumbs-color, $o-breadcrumbs-background-transparency) !default;
 
 // Disabled
-$breadcrumbs-link-disabled-transparency: 0.5 !default;
+$o-breadcrumbs-link-disabled-transparency: 0.5 !default;
 
 /** Icon */
-$breadcrumbs-icon-margin-left: -$breadcrumbs-spacing / 4 !default;
-$breadcrumbs-icon-margin-right: $spacing-base / 4 !default;
+$o-breadcrumbs-icon-margin-left: -$o-breadcrumbs-spacing / 4 !default;
+$o-breadcrumbs-icon-margin-right: $o-spacing-base / 4 !default;
 
 /** Button */
-$breadcrumbs-button-border-radius: 0 $border-radius-main $border-radius-main 0 !default
-$breadcrumbs-button-padding: 0 ($breadcrumbs-spacing * 1.5) 0 $breadcrumbs-spacing !default;
-$breadcrumbs-button-margin-left: $breadcrumbs-spacing !default;
-$breadcrumbs-button-margin-right: $spacing-base !default;
+$o-breadcrumbs-button-border-radius: 0 $o-border-radius-main $o-border-radius-main 0 !default
+$o-breadcrumbs-button-padding: 0 ($o-breadcrumbs-spacing * 1.5) 0 $o-breadcrumbs-spacing !default;
+$o-breadcrumbs-button-margin-left: $o-breadcrumbs-spacing !default;
+$o-breadcrumbs-button-margin-right: $o-spacing-base !default;
 
 // Before
-$breadcrumbs-button-before-left: -$breadcrumbs-spacing !default;
-$breadcrumbs-button-before-border-top: $breadcrumbs-height / 2 solid transparent !default;
-$breadcrumbs-button-before-border-right: $breadcrumbs-spacing solid rgba($breadcrumbs-color, $breadcrumbs-background-transparency) !default;
-$breadcrumbs-button-before-border-bottom: $breadcrumbs-height / 2 solid transparent !default;
+$o-breadcrumbs-button-before-left: -$o-breadcrumbs-spacing !default;
+$o-breadcrumbs-button-before-border-top: $o-breadcrumbs-height / 2 solid transparent !default;
+$o-breadcrumbs-button-before-border-right: $o-breadcrumbs-spacing solid rgba($o-breadcrumbs-color, $o-breadcrumbs-background-transparency) !default;
+$o-breadcrumbs-button-before-border-bottom: $o-breadcrumbs-height / 2 solid transparent !default;
 
 // Disabled
-$breadcrumbs-button-disabled-opacity: $breadcrumbs-link-disabled-transparency !default;
+$o-breadcrumbs-button-disabled-opacity: $o-breadcrumbs-link-disabled-transparency !default;
 
 /**
  * Callout
  */
-$callout-font-size: fontSize('zeta') !default;
-$callout-text-color: color('black') !default;
-$callout-link-color: color('black') !default;
-$callout-background-color: color('gray', 'lightest') !default;
-$callout-padding: $spacing-small !default;
-$callout-border-radius: $border-radius-main !default;
-$callout-margin-bottom: $spacing-base / 2 !default;
-$callout-transition: 0.2s ease-in-out !default;
+$o-callout-font-size: fontSize('zeta') !default;
+$o-callout-text-color: color('black') !default;
+$o-callout-link-color: color('black') !default;
+$o-callout-background-color: color('gray', 'lightest') !default;
+$o-callout-padding: $o-spacing-small !default;
+$o-callout-border-radius: $o-border-radius-main !default;
+$o-callout-margin-bottom: $o-spacing-base / 2 !default;
+$o-callout-transition: 0.2s ease-in-out !default;
 
 /** Shadow */
-$callout-shadow-box-shadow: shadow('primary') !default;
+$o-callout-shadow-box-shadow: shadow('primary') !default;
 
 /** Image */
-$callout-image-padding: ($spacing-base / 2) 0 !default;
+$o-callout-image-padding: ($o-spacing-base / 2) 0 !default;
 
 /** Action */
-$callout-action-hover-background-color: lighten(color('gray', 'light'), 2) !default;
+$o-callout-action-hover-background-color: lighten(color('gray', 'light'), 2) !default;
 
 /** Color */
 // Action
-$callout-color-action-hover-background-color-lighten: 5 !default;
-$callout-color-action-hover-background-color-lightness: 5% !default;
+$o-callout-color-action-hover-background-color-lighten: 5 !default;
+$o-callout-color-action-hover-background-color-lightness: 5% !default;
 
 /**
  * Card
  */
-$card-border-radius: $border-radius-main !default;
-$card-background-color: color('white') !default;
-$card-shadow: shadow('primary') !default;
+$o-card-border-radius: $o-border-radius-main !default;
+$o-card-background-color: color('white') !default;
+$o-card-shadow: shadow('primary') !default;
 
 /** Header */
-$card-header-border: $border !default;
-$card-header-border-radius: $border-radius-main $border-radius-main 0 0 !default;
-$card-header-padding: $spacing-base / 2 !default;
-$card-header-height: $spacing-base + $button-height !default;
+$o-card-header-border: $o-border !default;
+$o-card-header-border-radius: $o-border-radius-main $o-border-radius-main 0 0 !default;
+$o-card-header-padding: $o-spacing-base / 2 !default;
+$o-card-header-height: $o-spacing-base + $o-button-height !default;
 
 // Header Navigation
-$card-header-nav-margin: $card-header-padding !default; // Default value will not work if you change $card-header-padding to multiple numbers
+$o-card-header-nav-margin: $o-card-header-padding !default; // Default value will not work if you change $o-card-header-padding to multiple numbers
 
 // Header Heading
-$card-header-heading-font-weight: fontWeight('normal') !default;
-$card-header-heading-color: color('black') !default;
-$card-header-heading-padding-left: $spacing-small !default;
+$o-card-header-heading-font-weight: fontWeight('normal') !default;
+$o-card-header-heading-color: color('black') !default;
+$o-card-header-heading-padding-left: $o-spacing-small !default;
 
 // Header form
-$card-header-form-min-width: $spacing-base * 10 !default;
+$o-card-header-form-min-width: $o-spacing-base * 10 !default;
 
 /** Body */
-$card-body-padding: $spacing-base !default;
+$o-card-body-padding: $o-spacing-base !default;
 
 /** Section */
-$card-section-border: $border !default;
-$card-section-padding: $spacing-small !default;
-$card-section-last-border: none !default;
+$o-card-section-border: $o-border !default;
+$o-card-section-padding: $o-spacing-small !default;
+$o-card-section-last-border: none !default;
 
 // Header
-$card-section-header-horizontal-margin: $spacing-base !default;
-$card-section-header-horizontal-padding: 0 !default;
+$o-card-section-header-horizontal-margin: $o-spacing-base !default;
+$o-card-section-header-horizontal-padding: 0 !default;
 
 // Body
-$card-section-body-horizontal-margin: $spacing-base !default;
-$card-section-body-horizontal-padding: 0 !default;
+$o-card-section-body-horizontal-margin: $o-spacing-base !default;
+$o-card-section-body-horizontal-padding: 0 !default;
 
 // Footer
-$card-section-footer-horizontal-margin: $spacing-base !default;
-$card-section-footer-horizontal-padding: 0 !default;
+$o-card-section-footer-horizontal-margin: $o-spacing-base !default;
+$o-card-section-footer-horizontal-padding: 0 !default;
 
 
 /** Footer */
-$card-footer-border-radius: 0 0 $border-radius-main $border-radius-main !default;
-$card-footer-border: $border !default;
-$card-footer-min-height: $spacing-large !default;
-$card-footer-padding: 0 $spacing-base !default;
-$card-footer-transition: 0.15s ease-in-out !default;
+$o-card-footer-border-radius: 0 0 $o-border-radius-main $o-border-radius-main !default;
+$o-card-footer-border: $o-border !default;
+$o-card-footer-min-height: $o-spacing-large !default;
+$o-card-footer-padding: 0 $o-spacing-base !default;
+$o-card-footer-transition: 0.15s ease-in-out !default;
 
 // Empty
-$card-footer-empty-height: $spacing-base !default;
-$card-footer-empty-min-height: 0 !default;
-$card-footer-empty-padding: 0 !default;
-$card-footer-empty-border-top: 0 !default;
+$o-card-footer-empty-height: $o-spacing-base !default;
+$o-card-footer-empty-min-height: 0 !default;
+$o-card-footer-empty-padding: 0 !default;
+$o-card-footer-empty-border-top: 0 !default;
 
 
 // Click
-$card-footer-click-color: color('gray') !default;
-$card-footer-click-hover-color: $card-footer-click-color !default;
-$card-footer-click-hover-background-color: color('gray', 'lightest') !default;
+$o-card-footer-click-color: color('gray') !default;
+$o-card-footer-click-hover-color: $o-card-footer-click-color !default;
+$o-card-footer-click-hover-background-color: color('gray', 'lightest') !default;
 
 /**
  * Empty State
  */
-$empty-state-margin-left: $spacing-base * 2 !default;
-$empty-state-margin-right: $spacing-base * 2 !default;
+$o-empty-state-margin-left: $o-spacing-base * 2 !default;
+$o-empty-state-margin-right: $o-spacing-base * 2 !default;
 
 /** Description */
-$empty-state-description-font-size: fontSize('delta') !default;
-$empty-state-description-color: color('gray') !default;
-$empty-state-description-max-width: $spacing-base * 16 !default;
+$o-empty-state-description-font-size: fontSize('delta') !default;
+$o-empty-state-description-color: color('gray') !default;
+$o-empty-state-description-max-width: $o-spacing-base * 16 !default;
 
 /** Buttons */
-$empty-state-buttons-margin-top: $spacing-small !default;
+$o-empty-state-buttons-margin-top: $o-spacing-small !default;
 
 /**
  * Image
  */
-$image-border-radius: $border-radius-main !default;
-$image-margin-bottom: $spacing-base / 2 !default;
-$image-transition: $transition !default;
-$image-sizes: (
+$o-image-border-radius: $o-border-radius-main !default;
+$o-image-margin-bottom: $o-spacing-base / 2 !default;
+$o-image-transition: $o-transition !default;
+$o-image-sizes: (
   'xsmall': 60px,
   'small': 120px,
   'medium': 240px,
   'large': 480px
 ) !default;
-$image-wrapper-basic-size: map-get($image-sizes, 'small') !default;
+$o-image-wrapper-basic-size: map-get($o-image-sizes, 'small') !default;
 
 /** Shadow */
-$image-shadow-shadow: shadow('primary') !default;
+$o-image-shadow-shadow: shadow('primary') !default;
 
 /** Action */
-$image-action-hover-opacity: 0.8 !default;
+$o-image-action-hover-opacity: 0.8 !default;
 
 /**
  * Message
  */
-$message-font-size: fontSize('zeta') !default;
-$message-padding: $spacing-small !default;
-$message-border-radius: $border-radius-main !default;
-$message-color: color('gray') !default;
-$message-background-color: rgba(color('gray'), 0.05) !default;
-$message-font-style: italic !default;
-$message-margin-bottom: $spacing-small !default;
-$message-shadow: shadow('primary') !default;
+$o-message-font-size: fontSize('zeta') !default;
+$o-message-padding: $o-spacing-small !default;
+$o-message-border-radius: $o-border-radius-main !default;
+$o-message-color: color('gray') !default;
+$o-message-background-color: rgba(color('gray'), 0.05) !default;
+$o-message-font-style: italic !default;
+$o-message-margin-bottom: $o-spacing-small !default;
+$o-message-shadow: shadow('primary') !default;
 
 /** Link */
-$message-link-font-weight: fontWeight('bold') !default;
-$message-link-text-decoration: underline !default;
-$message-link-color: color('gray', 'dark') !default;
-$message-link-hover-text-decoration: none !default;
+$o-message-link-font-weight: fontWeight('bold') !default;
+$o-message-link-text-decoration: underline !default;
+$o-message-link-color: color('gray', 'dark') !default;
+$o-message-link-hover-text-decoration: none !default;
 
 /** Body */
-$message-body-headings-font-weight: fontWeight('bold') !default;
+$o-message-body-headings-font-weight: fontWeight('bold') !default;
 
 // Avatar
-$message-avatar-margin-right: $spacing-small !default;
+$o-message-avatar-margin-right: $o-spacing-small !default;
 
 /**
  * Input
  */
-$input-height: 40px !default;
-$input-width: 100% !default;
-$input-font-size: fontSize('delta') !default;
-$input-line-height: $input-font-size + 4px !default;
-$input-padding: ($spacing-base / 3) ($spacing-base / 2) !default;
-$input-color: color('secondary') !default;
-$input-border-radius: $border-radius-main !default;
-$input-border: $border !default;
+$o-input-height: 40px !default;
+$o-input-width: 100% !default;
+$o-input-font-size: fontSize('delta') !default;
+$o-input-line-height: $o-input-font-size + 4px !default;
+$o-input-padding: ($o-spacing-base / 3) ($o-spacing-base / 2) !default;
+$o-input-color: color('secondary') !default;
+$o-input-border-radius: $o-border-radius-main !default;
+$o-input-border: $o-border !default;
 
-$input-webkit-autofill-border-color: color('gray', 'lightest') !important !default;
-$input-webkit-autofill-text-fill-color: color('secondary') !important !default;
+$o-input-webkit-autofill-border-color: color('gray', 'lightest') !important !default;
+$o-input-webkit-autofill-text-fill-color: color('secondary') !important !default;
 
 /** Large */
-$input-large-height: 64px !default;
-$input-large-line-height: 22px !default;
-$input-large-padding: (($input-large-height / 2) - ($input-large-line-height / 2) - 2px) $spacing-small !default; // the 2px account for the border
-$input-large-min-height: $input-large-height !default;
+$o-input-large-height: 64px !default;
+$o-input-large-line-height: 22px !default;
+$o-input-large-padding: (($o-input-large-height / 2) - ($o-input-large-line-height / 2) - 2px) $o-spacing-small !default; // the 2px account for the border
+$o-input-large-min-height: $o-input-large-height !default;
 
 // Label
-$input-large-label-margin: ($spacing-base - 1px) $spacing-base / 2 !default; // -1px because of borders
+$o-input-large-label-margin: ($o-spacing-base - 1px) $o-spacing-base / 2 !default; // -1px because of borders
 
 // Action
-$input-large-action-padding: ($spacing-base + 4px) ($spacing-base / 2) ($spacing-base / 2) !default;
+$o-input-large-action-padding: ($o-spacing-base + 4px) ($o-spacing-base / 2) ($o-spacing-base / 2) !default;
 // Action Label
-$input-large-action-label-line-height: 1 !default;
-$input-large-action-label-height: auto !default;
-$input-large-action-label-font-size: fontSize('omega') !default;
-$input-large-action-label-color: color('black') !default;
-$input-large-action-label-margin: $spacing-small 0 0 $spacing-small !default;
-$input-large-action-label-before-width: calc(100% + #{$spacing-small}) !default;
-$input-large-action-label-before-height: calc( 100% + #{$spacing-small} / 2) !default;
-$input-large-action-label-before-left: -$spacing-small / 2 !default;
-$input-large-action-label-before-top: -$spacing-small / 4 !default;
-$input-large-action-label-before-background-color: color('white') !default;
-$input-large-action-label-before-transition: none !default;
-$input-large-action-label-before-border-radius: $spacing-small !default;
+$o-input-large-action-label-line-height: 1 !default;
+$o-input-large-action-label-height: auto !default;
+$o-input-large-action-label-font-size: fontSize('omega') !default;
+$o-input-large-action-label-color: color('black') !default;
+$o-input-large-action-label-margin: $o-spacing-small 0 0 $o-spacing-small !default;
+$o-input-large-action-label-before-width: calc(100% + #{$o-spacing-small}) !default;
+$o-input-large-action-label-before-height: calc( 100% + #{$o-spacing-small} / 2) !default;
+$o-input-large-action-label-before-left: -$o-spacing-small / 2 !default;
+$o-input-large-action-label-before-top: -$o-spacing-small / 4 !default;
+$o-input-large-action-label-before-background-color: color('white') !default;
+$o-input-large-action-label-before-transition: none !default;
+$o-input-large-action-label-before-border-radius: $o-spacing-small !default;
 
 /** Focus */
-$input-focus-color: color('secondary') !default;
-$input-focus-shadow: shadow('input') !default;
-$input-focus-border-color: transparentize(color('secondary'), 0.66) !default;
+$o-input-focus-color: color('secondary') !default;
+$o-input-focus-shadow: shadow('input') !default;
+$o-input-focus-border-color: transparentize(color('secondary'), 0.66) !default;
 
 /** Disabled */
-$input-disabled-background-color: transparent !default;
-$input-disabled-opacity: 1 !default;
-$input-disabled-color: color('gray') !default;
+$o-input-disabled-background-color: transparent !default;
+$o-input-disabled-opacity: 1 !default;
+$o-input-disabled-color: color('gray') !default;
 
 // Focus
-$input-disabled-focus-shadow: none !default;
-$input-disabled-focus-border: $border !default;
+$o-input-disabled-focus-shadow: none !default;
+$o-input-disabled-focus-border: $o-border !default;
 
 /** Readonly */
-$input-readonly-background-color: transparent !default;
-$input-readonly-opacity: 1 !default;
-$input-readonly-color: color('gray') !default;
+$o-input-readonly-background-color: transparent !default;
+$o-input-readonly-opacity: 1 !default;
+$o-input-readonly-color: color('gray') !default;
 
 // Focus
-$input-readonly-focus-shadow: none !default;
-$input-readonly-focus-border: $border !default;
+$o-input-readonly-focus-shadow: none !default;
+$o-input-readonly-focus-border: $o-border !default;
 
 /** Label */
-$input-label-top: 0 !default;
-$input-label-left: 0 !default;
-$input-label-margin: ($spacing-base / 2 - 1px) $spacing-base / 2 !default; // -1px because of borders
-$input-label-font-size: fontSize('delta') !default;
-$input-label-font-weight: fontWeight('normal') !default;
-$input-label-line-height: fontSize('delta') !default;
-$input-label-color: color('gray', 'light') !default;
+$o-input-label-top: 0 !default;
+$o-input-label-left: 0 !default;
+$o-input-label-margin: ($o-spacing-base / 2 - 1px) $o-spacing-base / 2 !default; // -1px because of borders
+$o-input-label-font-size: fontSize('delta') !default;
+$o-input-label-font-weight: fontWeight('normal') !default;
+$o-input-label-line-height: fontSize('delta') !default;
+$o-input-label-color: color('gray', 'light') !default;
 
 /** Action / Extras */ // This action does not stand for focus and hover, but for action/extras elements inside of input
-$input-action-padding: 0 $spacing-base / 4 !default;
-$input-action-border: $border !default;
-$input-action-border-top-left-radius: $border-radius-main !default;
-$input-action-border-bottom-left-radius: $border-radius-main !default;
-$input-action-background-color: adjust-color(#000000, $lightness: 97%) !default;
-$input-action-readonly-color: color('secondary') !default;
+$o-input-action-padding: 0 $o-spacing-base / 4 !default;
+$o-input-action-border: $o-border !default;
+$o-input-action-border-top-left-radius: $o-border-radius-main !default;
+$o-input-action-border-bottom-left-radius: $o-border-radius-main !default;
+$o-input-action-background-color: adjust-color(#000000, $lightness: 97%) !default;
+$o-input-action-readonly-color: color('secondary') !default;
 
 /** Message */
-$input-message-margin-top: $spacing-small !default;
-$input-message-font-size: fontSize('zeta') !default;
-$input-message-color: color('red') !default;
+$o-input-message-margin-top: $o-spacing-small !default;
+$o-input-message-font-size: fontSize('zeta') !default;
+$o-input-message-color: color('red') !default;
 
 /** Description */
-$input-description-color: color('gray', 'light') !default;
-$input-description-font-size: fontSize('zeta') !default;
-$input-description-margin-top: $spacing-small !default;
-$input-description-margin-bottom: 0 !default;
+$o-input-description-color: color('gray', 'light') !default;
+$o-input-description-font-size: fontSize('zeta') !default;
+$o-input-description-margin-top: $o-spacing-small !default;
+$o-input-description-margin-bottom: 0 !default;
 
 /** Error */
-$input-error-border-color: rgba(color('red'), 0.75) !default;
+$o-input-error-border-color: rgba(color('red'), 0.75) !default;
 
 /**
  * Checkbox
  */
-$checkbox-bottom-margin: $spacing-base / 6 !default;
-$checkbox-border-radius: $border-radius-main !default;
-$checkbox-color: color('secondary') !default;
-$checkbox-font-size: fontSize('epsilon') !default;
-$checkbox-next-checkbox-margin-left: $spacing-base !default;
+$o-checkbox-bottom-margin: $o-spacing-base / 6 !default;
+$o-checkbox-border-radius: $o-border-radius-main !default;
+$o-checkbox-color: color('secondary') !default;
+$o-checkbox-font-size: fontSize('epsilon') !default;
+$o-checkbox-next-checkbox-margin-left: $o-spacing-base !default;
 
 /** Group */
-$checkbox-group-height: $input-large-height !default;
-$checkbox-group-padding: $spacing-base / 2 !default;
-$checkbox-group-border: $border !default;
-$checkbox-group-border-radius: $border-radius-main !default;
+$o-checkbox-group-height: $o-input-large-height !default;
+$o-checkbox-group-padding: $o-spacing-base / 2 !default;
+$o-checkbox-group-border: $o-border !default;
+$o-checkbox-group-border-radius: $o-border-radius-main !default;
 
 /** Label */
-$checkbox-label-width-height: $spacing-base * 0.75 !default;
-$checkbox-label-font-size: fontSize('omega') !default;
-$checkbox-label-text-color: color('black') !default;
-$checkbox-label-padding-left: $checkbox-label-width-height + $spacing-base / 3 !default;
-$checkbox-label-opacity: 0.5 !default;
+$o-checkbox-label-width-height: $o-spacing-base * 0.75 !default;
+$o-checkbox-label-font-size: fontSize('omega') !default;
+$o-checkbox-label-text-color: color('black') !default;
+$o-checkbox-label-padding-left: $o-checkbox-label-width-height + $o-spacing-base / 3 !default;
+$o-checkbox-label-opacity: 0.5 !default;
 
 // Before
-$checkbox-label-before-text-color: color('white') !default;
-$checkbox-label-before-font-size: $spacing-base !default;
-$checkbox-label-before-transition: $transition !default;
+$o-checkbox-label-before-text-color: color('white') !default;
+$o-checkbox-label-before-font-size: $o-spacing-base !default;
+$o-checkbox-label-before-transition: $o-transition !default;
 
 /** Disabled */
-$checkbox-disabled-color: color('gray', 'dark') !default;
+$o-checkbox-disabled-color: color('gray', 'dark') !default;
 
 /** Checked */
-$checkbox-label-checked-opacity: 1 !default;
+$o-checkbox-label-checked-opacity: 1 !default;
 
 /**
  * Dropdown
  */
 /** Label */
-$dropdown-label-color: color('gray', 'light') !default;
-$dropdown-label-min-width: $spacing-base * 10 !default;
-$dropdown-label-border: $border !default;
-$dropdown-label-line-height: $line-height !default;
-$dropdown-label-border-radius: $border-radius-main !default;
-$dropdown-label-height: $input-height !default;
-$dropdown-label-font-size: fontSize('epsilon') !default;
-$dropdown-label-padding: (($dropdown-label-height / 2) - ($input-line-height / 2) - 2px) $spacing-small !default; // the 2px account for the border
+$o-dropdown-label-color: color('gray', 'light') !default;
+$o-dropdown-label-min-width: $o-spacing-base * 10 !default;
+$o-dropdown-label-border: $o-border !default;
+$o-dropdown-label-line-height: $o-line-height !default;
+$o-dropdown-label-border-radius: $o-border-radius-main !default;
+$o-dropdown-label-height: $o-input-height !default;
+$o-dropdown-label-font-size: fontSize('epsilon') !default;
+$o-dropdown-label-padding: (($o-dropdown-label-height / 2) - ($o-input-line-height / 2) - 2px) $o-spacing-small !default; // the 2px account for the border
 
 /** Large */
 // Label
-$dropdown-large-label-line-height: $input-large-line-height !default;
-$dropdown-large-label-height: $input-large-height !default;
-$dropdown-large-label-font-size: fontSize('delta') !default;
-$dropdown-large-label-padding: (($dropdown-large-label-height / 2) - ($dropdown-large-label-line-height / 2) - 2px) $spacing-small !default; // the 2px account for the border
+$o-dropdown-large-label-line-height: $o-input-large-line-height !default;
+$o-dropdown-large-label-height: $o-input-large-height !default;
+$o-dropdown-large-label-font-size: fontSize('delta') !default;
+$o-dropdown-large-label-padding: (($o-dropdown-large-label-height / 2) - ($o-dropdown-large-label-line-height / 2) - 2px) $o-spacing-small !default; // the 2px account for the border
 
 // Icon
-$dropdown-large-icon-right: $spacing-small !default;
+$o-dropdown-large-icon-right: $o-spacing-small !default;
 
 // Text
-$dropdown-large-text-font-size: fontSize('delta') !default;
-$dropdown-large-text-padding: ($spacing-base + 4px) ($spacing-base / 2) ($spacing-base / 2) !default;
+$o-dropdown-large-text-font-size: fontSize('delta') !default;
+$o-dropdown-large-text-padding: ($o-spacing-base + 4px) ($o-spacing-base / 2) ($o-spacing-base / 2) !default;
 
 // Icon
-$dropdown-large-icon-height: $spacing-base * 2 !default;
-$dropdown-large-icon-width: $spacing-base !default;
+$o-dropdown-large-icon-height: $o-spacing-base * 2 !default;
+$o-dropdown-large-icon-width: $o-spacing-base !default;
 
 // Content
-$dropdown-large-content-padding-top: $dropdown-large-label-height !default;
+$o-dropdown-large-content-padding-top: $o-dropdown-large-label-height !default;
 
 // Menu
-$dropdown-large-menu-margin: ($spacing-base / 2) 0 !default;
+$o-dropdown-large-menu-margin: ($o-spacing-base / 2) 0 !default;
 
 // Item
-$dropdown-large-item-font-size: fontSize('delta') !default;
-$dropdown-large-item-padding: ($spacing-base / 4) $spacing-base !default;
+$o-dropdown-large-item-font-size: fontSize('delta') !default;
+$o-dropdown-large-item-padding: ($o-spacing-base / 4) $o-spacing-base !default;
 
 // Action
-$dropdown-large-action-label-font-size: fontSize('omega') !default;
-$dropdown-large-action-label-padding: ($spacing-base / 2) ($spacing-base / 2) 0 !default; // the 2px account for the border
+$o-dropdown-large-action-label-font-size: fontSize('omega') !default;
+$o-dropdown-large-action-label-padding: ($o-spacing-base / 2) ($o-spacing-base / 2) 0 !default; // the 2px account for the border
 
 /** Action */
-$dropdown-action-label-color: color('black') !default;
-$dropdown-action-label-font-size: fontSize('omega') - 2px !default;
-$dropdown-action-label-padding: ($spacing-base / 4) ($spacing-base / 2) 0 !default; // the 2px account for the border
+$o-dropdown-action-label-color: color('black') !default;
+$o-dropdown-action-label-font-size: fontSize('omega') - 2px !default;
+$o-dropdown-action-label-padding: ($o-spacing-base / 4) ($o-spacing-base / 2) 0 !default; // the 2px account for the border
 
 /** Open */
 // Label
-$dropdown-open-label-border-color: color('secondary', 'light') !default;
-$dropdown-open-label-border-bottom-color: color('gray', 'lightest') !default;
+$o-dropdown-open-label-border-color: color('secondary', 'light') !default;
+$o-dropdown-open-label-border-bottom-color: color('gray', 'lightest') !default;
 
 // Text
-$dropdown-open-text-border-color: color('secondary', 'light') !default;
+$o-dropdown-open-text-border-color: color('secondary', 'light') !default;
 
 /** Text */
-$dropdown-text-color: color('gray', 'light') !default;
-$dropdown-text-border-radius: $dropdown-label-border-radius !default;
-$dropdown-text-height: $dropdown-label-height !default;
-$dropdown-text-font-size: fontSize('zeta') !default;
-$dropdown-text-padding: ($spacing-base / 1.2 - 2) ($spacing-base / 2) ($spacing-base / 4) !default;
+$o-dropdown-text-color: color('gray', 'light') !default;
+$o-dropdown-text-border-radius: $o-dropdown-label-border-radius !default;
+$o-dropdown-text-height: $o-dropdown-label-height !default;
+$o-dropdown-text-font-size: fontSize('zeta') !default;
+$o-dropdown-text-padding: ($o-spacing-base / 1.2 - 2) ($o-spacing-base / 2) ($o-spacing-base / 4) !default;
 
 // No Label
-$dropdown-text-no-label-padding-top: $spacing-base !default;
+$o-dropdown-text-no-label-padding-top: $o-spacing-base !default;
 
 /** Icon */
-$dropdown-icon-height: $spacing-base * 1.5 !default;
-$dropdown-icon-width: $spacing-base * 0.75 !default;
-$dropdown-icon-right: $spacing-base / 8 !default;
-$dropdown-icon-height: $spacing-base * 0.75 !default;
-$dropdown-icon-width: $spacing-base * 0.75 !default;
-$dropdown-icon-fill: color('secondary') !default;
+$o-dropdown-icon-height: $o-spacing-base * 1.5 !default;
+$o-dropdown-icon-width: $o-spacing-base * 0.75 !default;
+$o-dropdown-icon-right: $o-spacing-base / 8 !default;
+$o-dropdown-icon-height: $o-spacing-base * 0.75 !default;
+$o-dropdown-icon-width: $o-spacing-base * 0.75 !default;
+$o-dropdown-icon-fill: color('secondary') !default;
 
 /** Action */
-$dropdown-action-text-color: color('secondary') !default;
-$dropdown-action-text-opacity: 1 !default;
+$o-dropdown-action-text-color: color('secondary') !default;
+$o-dropdown-action-text-opacity: 1 !default;
 
 /** Open */
 // Text
-$dropdown-open-text-border-bottom-color: color('gray', 'lightest') !default;
+$o-dropdown-open-text-border-bottom-color: color('gray', 'lightest') !default;
 
 // Icon
-$dropdown-open-icon-fill: $dropdown-icon-fill !default;
+$o-dropdown-open-icon-fill: $o-dropdown-icon-fill !default;
 
 // Content
-$dropdown-open-content-opacity: 1 !default;
+$o-dropdown-open-content-opacity: 1 !default;
 
 /** Disabled */
 // Label
-$dropdown-disabled-label-border-color: color('gray', 'lightest') !default;
+$o-dropdown-disabled-label-border-color: color('gray', 'lightest') !default;
 
 // Text
-$dropdown-disabled-text-color: color('gray') !default;
+$o-dropdown-disabled-text-color: color('gray') !default;
 
 // Icon
-$dropdown-disabled-icon-fill: color('gray') !default;
+$o-dropdown-disabled-icon-fill: color('gray') !default;
 
 /** Content */
-$dropdown-content-border-radius: $border-radius-main !default;
-$dropdown-content-border: 1px solid color('secondary', 'light') !default;
-$dropdown-content-padding-top: $dropdown-label-height !default;
-$dropdown-content-shadow: shadow('input') !default;
-$dropdown-content-background-color: color('white') !default;
+$o-dropdown-content-border-radius: $o-border-radius-main !default;
+$o-dropdown-content-border: 1px solid color('secondary', 'light') !default;
+$o-dropdown-content-padding-top: $o-dropdown-label-height !default;
+$o-dropdown-content-shadow: shadow('input') !default;
+$o-dropdown-content-background-color: color('white') !default;
 
 /** Menu */
-$dropdown-menu-margin: ($spacing-base / 4) 0 !default;
-$dropdown-menu-max-height: 200px !default;
+$o-dropdown-menu-margin: ($o-spacing-base / 4) 0 !default;
+$o-dropdown-menu-max-height: 200px !default;
 
 /** Item */
-$dropdown-item-color: color('gray', 'light') !default;
-$dropdown-item-font-size: fontSize('zeta') !default;
-$dropdown-item-padding: ($spacing-base / 4) ($spacing-base / 2) !default;
+$o-dropdown-item-color: color('gray', 'light') !default;
+$o-dropdown-item-font-size: fontSize('zeta') !default;
+$o-dropdown-item-padding: ($o-spacing-base / 4) ($o-spacing-base / 2) !default;
 
 // Hover
-$dropdown-item-hover-color: color('secondary') !default;
-$dropdown-item-hover-background-color: color('gray', 'lightest') !default;
+$o-dropdown-item-hover-color: color('secondary') !default;
+$o-dropdown-item-hover-background-color: color('gray', 'lightest') !default;
 
 // Selected
-$dropdown-item-selected-color: color('gray') !default;
+$o-dropdown-item-selected-color: color('gray') !default;
 
 /**
  * Label
  */
-$label-font-size: fontSize('omega') !default;
-$label-border-radius: 30px !default;
-$label-height: $spacing-base + 4px !default;
-$label-padding: 0 $spacing-base / 2 !default;
-$label-margin-left: $spacing-base / 4 !default;
-$label-text-color: color('gray') !default;
-$label-background-color: rgba(color('gray'), 0.1) !default;
+$o-label-font-size: fontSize('omega') !default;
+$o-label-border-radius: 30px !default;
+$o-label-height: $o-spacing-base + 4px !default;
+$o-label-padding: 0 $o-spacing-base / 2 !default;
+$o-label-margin-left: $o-spacing-base / 4 !default;
+$o-label-text-color: color('gray') !default;
+$o-label-background-color: rgba(color('gray'), 0.1) !default;
 
 /** Icon */
-$label-icon-font-size: fontSize('delta') !default;
-$label-icon-margin-right: -$spacing-base / 4 !default;
+$o-label-icon-font-size: fontSize('delta') !default;
+$o-label-icon-margin-right: -$o-spacing-base / 4 !default;
 
 /** Small */
-$label-small-padding: 0 $spacing-small - 2px !default;
-$label-small-height: $spacing-base - 2px !default;
+$o-label-small-padding: 0 $o-spacing-small - 2px !default;
+$o-label-small-height: $o-spacing-base - 2px !default;
 
 /** Dot */
-$label-dot-width-height: $spacing-small !default;
+$o-label-dot-width-height: $o-spacing-small !default;
 
 /** Pill */
-$label-pill-width: $spacing-base * 3 !default;
-$label-pill-height: $spacing-base / 2 !default;
+$o-label-pill-width: $o-spacing-base * 3 !default;
+$o-label-pill-height: $o-spacing-base / 2 !default;
 
 /** Dismiss */
-$label-dismiss-icon-hover-color: color('gray', 'dark') !default;
+$o-label-dismiss-icon-hover-color: color('gray', 'dark') !default;
 
 /**
  * List
  */
-$list-padding: 0 !default;
+$o-list-padding: 0 !default;
 
 /** Item */
-$list-item-horizontal-padding: $spacing-base !default;
+$o-list-item-horizontal-padding: $o-spacing-base !default;
 
 // Disabled
-$list-item-disabled-background-color: darken(color('white'), 3) !default;
+$o-list-item-disabled-background-color: darken(color('white'), 3) !default;
 
 // Description
-$list-item-description-color: color('gray', 'light') !default;
-$list-item-description-font-size: 90% !default;
+$o-list-item-description-color: color('gray', 'light') !default;
+$o-list-item-description-font-size: 90% !default;
 
 /** Divide */
-$list-divide-item-top-border: $border !default;
+$o-list-divide-item-top-border: $o-border !default;
 
 /** Large */
-$list-large-font-size: fontSize('delta') !default;
+$o-list-large-font-size: fontSize('delta') !default;
 
 // Item
-$list-large-item-vertical-padding: $spacing-base !default;
-$list-large-item-title-margin-bottom: $spacing-base / 4 !default;
-$list-large-item-description-font-size: fontSize('epsilon') !default;
+$o-list-large-item-vertical-padding: $o-spacing-base !default;
+$o-list-large-item-title-margin-bottom: $o-spacing-base / 4 !default;
+$o-list-large-item-description-font-size: fontSize('epsilon') !default;
 
 /** Medium */
-$list-medium-font-size: fontSize('epsilon') !default;
+$o-list-medium-font-size: fontSize('epsilon') !default;
 
 // Item
-$list-medium-item-vertical-padding: $spacing-base / 2 !default;
-$list-medium-item-title-margin-bottom: $spacing-base / 8 !default;
-$list-medium-item-description-font-size: fontSize('zeta') !default;
+$o-list-medium-item-vertical-padding: $o-spacing-base / 2 !default;
+$o-list-medium-item-title-margin-bottom: $o-spacing-base / 8 !default;
+$o-list-medium-item-description-font-size: fontSize('zeta') !default;
 
 /** Small */
-$list-small-font-size: fontSize('zeta') !default;
+$o-list-small-font-size: fontSize('zeta') !default;
 
 // Item
-$list-small-item-vertical-padding: $spacing-base / 4 !default;
-$list-small-item-title-margin-bottom: 0 !default;
-$list-small-item-description-font-size: fontSize('omega') !default;
-$list-small-item-icon-font-size: fontSize('delta') !default;
+$o-list-small-item-vertical-padding: $o-spacing-base / 4 !default;
+$o-list-small-item-title-margin-bottom: 0 !default;
+$o-list-small-item-description-font-size: fontSize('omega') !default;
+$o-list-small-item-icon-font-size: fontSize('delta') !default;
 
 /** No Gutter */
-$list-no-gutter-margin: -$card-body-padding !default;
+$o-list-no-gutter-margin: -$o-card-body-padding !default;
 
 /** Hover */
 // Item
-$list-hover-item-hover-background-color: darken(color('white'), 1) !default;
+$o-list-hover-item-hover-background-color: darken(color('white'), 1) !default;
 
 /**
  * Radio
  */
-$radio-bottom-margin: $spacing-base / 6 !default;
-$radio-border-radius: 100% !default;
-$radio-color: color('secondary') !default;
-$radio-font-size: fontSize('epsilon') !default;
-$radio-width-height: $spacing-base * 0.75 !default;
+$o-radio-bottom-margin: $o-spacing-base / 6 !default;
+$o-radio-border-radius: 100% !default;
+$o-radio-color: color('secondary') !default;
+$o-radio-font-size: fontSize('epsilon') !default;
+$o-radio-width-height: $o-spacing-base * 0.75 !default;
 
 /** Label */
-$radio-label-font-size: fontSize('omega') !default;
-$radio-label-text-color: color('black') !default;
-$radio-label-opacity: 0.5 !default;
-$radio-label-padding-left: $radio-width-height + $spacing-base / 4 !default;
+$o-radio-label-font-size: fontSize('omega') !default;
+$o-radio-label-text-color: color('black') !default;
+$o-radio-label-opacity: 0.5 !default;
+$o-radio-label-padding-left: $o-radio-width-height + $o-spacing-base / 4 !default;
 
 // After
-$radio-label-after-top: $spacing-base / 8 !default;
-$radio-label-after-left: $spacing-base / 8 !default;
+$o-radio-label-after-top: $o-spacing-base / 8 !default;
+$o-radio-label-after-left: $o-spacing-base / 8 !default;
 
 /** Disabled */
-$radio-disabled-color: color('gray', 'dark') !default;
+$o-radio-disabled-color: color('gray', 'dark') !default;
 
 /** Group */
-$radio-group-height: $input-large-height !default;
-$radio-group-padding: $spacing-base / 2 !default;
-$radio-group-border: $border !default;
-$radio-group-border-radius: $border-radius-main !default;
+$o-radio-group-height: $o-input-large-height !default;
+$o-radio-group-padding: $o-spacing-base / 2 !default;
+$o-radio-group-border: $o-border !default;
+$o-radio-group-border-radius: $o-border-radius-main !default;
 
 /**
  * Table
  */
-$table-vertical-margin: ($spacing-base / 2) 0 !default;
-$table-font-size: fontSize('zeta') !default;
-$table-text-color: color('gray') !default;
-$table-border-radius: $border-radius-main !default;
-$table-bottom-border: $border !default;
+$o-table-vertical-margin: ($o-spacing-base / 2) 0 !default;
+$o-table-font-size: fontSize('zeta') !default;
+$o-table-text-color: color('gray') !default;
+$o-table-border-radius: $o-border-radius-main !default;
+$o-table-bottom-border: $o-border !default;
 
 /** Table Head */
-$table-head-cell-font-weight: fontWeight('normal') !default;
-$table-head-cell-text-color: color('gray', 'light') !default;
-$table-head-cell-padding: $spacing-small !default;
-$table-head-cell-first-left-padding: $spacing-base !default;
+$o-table-head-cell-font-weight: fontWeight('normal') !default;
+$o-table-head-cell-text-color: color('gray', 'light') !default;
+$o-table-head-cell-padding: $o-spacing-small !default;
+$o-table-head-cell-first-left-padding: $o-spacing-base !default;
 
 /** Table Body*/
-$table-body-cell-border-top: $border !default;
-$table-body-cell-padding: $spacing-base $spacing-small !default;
-$table-body-cell-first-font-size: fontSize('gamma') !default;
-$table-body-cell-first-color: color('black') !default;
-$table-body-cell-first-padding-left: $spacing-base !default;
+$o-table-body-cell-border-top: $o-border !default;
+$o-table-body-cell-padding: $o-spacing-base $o-spacing-small !default;
+$o-table-body-cell-first-font-size: fontSize('gamma') !default;
+$o-table-body-cell-first-color: color('black') !default;
+$o-table-body-cell-first-padding-left: $o-spacing-base !default;
 
 /** Celled */
-$table-celled-border: $border !default;
+$o-table-celled-border: $o-border !default;
 
-$table-celled-head-cell-border-left: $border !default;
-$table-celled-head-cell-background-color: transparentize(color('gray', 'lightest'), 0.5) !default;
-$table-celled-head-cell-text-color: color('black') !default;
-$table-celled-head-cell-font-weight: fontWeight('bold') !default;
-$table-celled-head-cell-first-border-color: transparent !default;
+$o-table-celled-head-cell-border-left: $o-border !default;
+$o-table-celled-head-cell-background-color: transparentize(color('gray', 'lightest'), 0.5) !default;
+$o-table-celled-head-cell-text-color: color('black') !default;
+$o-table-celled-head-cell-font-weight: fontWeight('bold') !default;
+$o-table-celled-head-cell-first-border-color: transparent !default;
 
-$table-celled-body-cell-border-left: $border !default;
-$table-celled-body-cell-first-border-color: transparent !default;
+$o-table-celled-body-cell-border-left: $o-border !default;
+$o-table-celled-body-cell-first-border-color: transparent !default;
 
 /** Compact */
-$table-compact-text-color: color('gray', 'dark') !default;
+$o-table-compact-text-color: color('gray', 'dark') !default;
 
-$table-compact-body-cell-padding: $spacing-small !default;
-$table-compact-body-cell-first-left-padding: $spacing-base !default;
-$table-compact-body-cell-first-font-size: fontSize('zeta') !default;
+$o-table-compact-body-cell-padding: $o-spacing-small !default;
+$o-table-compact-body-cell-first-left-padding: $o-spacing-base !default;
+$o-table-compact-body-cell-first-font-size: fontSize('zeta') !default;
 
 /** Definition */
-$table-definition-vertical-align: text-top !default;
-$table-definition-vertical-padding: $spacing-base !default;
+$o-table-definition-vertical-align: text-top !default;
+$o-table-definition-vertical-padding: $o-spacing-base !default;
 
-$table-definition-body-cell-second-border-left: 0 !default;
-$table-definition-body-cell-ignored-text-color: color('gray', 'light') !default;
+$o-table-definition-body-cell-second-border-left: 0 !default;
+$o-table-definition-body-cell-ignored-text-color: color('gray', 'light') !default;
 
 /**
  * Toggle
  */
-$toggle-width: $spacing-base * 2.25 !default;
-$toggle-height: $spacing-base * 1.25 !default;
-$toggle-transition: $transition !default;
+$o-toggle-width: $o-spacing-base * 2.25 !default;
+$o-toggle-height: $o-spacing-base * 1.25 !default;
+$o-toggle-transition: $o-transition !default;
 
 /** Button */
-$toggle-button-height: $toggle-height !default;
+$o-toggle-button-height: $o-toggle-height !default;
 
 /** Input */
-$toggle-input-height: 100% !default;
-$toggle-input-width: $toggle-width;
+$o-toggle-input-height: 100% !default;
+$o-toggle-input-width: $o-toggle-width;
 
 /** Label */
-$toggle-label-height: 100% !default;
-$toggle-label-padding-left: $toggle-width !default;
-$toggle-label-line-height: 24px !default;
+$o-toggle-label-height: 100% !default;
+$o-toggle-label-padding-left: $o-toggle-width !default;
+$o-toggle-label-line-height: 24px !default;
 
 // Before
-$toggle-label-before-border-radius: 24px !default;
-$toggle-label-before-height: 100% !default;
-$toggle-label-before-width: $toggle-width !default;
-$toggle-label-before-background-color: color('gray', 'light') !default;
-$toggle-label-before-opacity: 0.5 !default;
+$o-toggle-label-before-border-radius: 24px !default;
+$o-toggle-label-before-height: 100% !default;
+$o-toggle-label-before-width: $o-toggle-width !default;
+$o-toggle-label-before-background-color: color('gray', 'light') !default;
+$o-toggle-label-before-opacity: 0.5 !default;
 
 // After
-$toggle-label-after-width: $spacing-base !default;
-$toggle-label-after-height: $spacing-base !default;
-$toggle-label-after-top: $spacing-base / 8 !default;
-$toggle-label-after-left: $spacing-base / 8 !default;
-$toggle-label-after-border-radius: $spacing-base !default;
-$toggle-label-after-background-color: color('white') !default;
-$toggle-label-after-box-shadow: shadow('secondary') !default;
+$o-toggle-label-after-width: $o-spacing-base !default;
+$o-toggle-label-after-height: $o-spacing-base !default;
+$o-toggle-label-after-top: $o-spacing-base / 8 !default;
+$o-toggle-label-after-left: $o-spacing-base / 8 !default;
+$o-toggle-label-after-border-radius: $o-spacing-base !default;
+$o-toggle-label-after-background-color: color('white') !default;
+$o-toggle-label-after-box-shadow: shadow('secondary') !default;
 
 /** Checked */
 // Label
-$toggle-checked-label-text-color: rgba(color('black'), 0.95) !default;
-$toggle-checked-label-before-background-color: color('secondary') !default;
-$toggle-checked-label-after-left: $spacing-base + $spacing-base / 8 !default;
+$o-toggle-checked-label-text-color: rgba(color('black'), 0.95) !default;
+$o-toggle-checked-label-before-background-color: color('secondary') !default;
+$o-toggle-checked-label-after-left: $o-spacing-base + $o-spacing-base / 8 !default;
 
 /** Disabled */
 // Label
-$toggle-disabled-label-before-opacity: 0.5 !default;
+$o-toggle-disabled-label-before-opacity: 0.5 !default;
 
 /** Label */
 // Label
-$toggle-label-label-padding-left: $spacing-base * 3 !default;
+$o-toggle-label-label-padding-left: $o-spacing-base * 3 !default;
 
 /** Large */
 // Value
-$toggle-large-value-padding: ($spacing-base + 4px) ($spacing-base / 2) ($spacing-base / 2) !default;
-$toggle-large-value-font-size: fontSize('delta') !default;
-$toggle-large-value-text-color: color('secondary') !default;
-$toggle-large-value-width: 100% !default;
-$toggle-large-value-line-height: $input-large-line-height !default;
-$toggle-large-value-min-height: $input-large-height !default;
+$o-toggle-large-value-padding: ($o-spacing-base + 4px) ($o-spacing-base / 2) ($o-spacing-base / 2) !default;
+$o-toggle-large-value-font-size: fontSize('delta') !default;
+$o-toggle-large-value-text-color: color('secondary') !default;
+$o-toggle-large-value-width: 100% !default;
+$o-toggle-large-value-line-height: $o-input-large-line-height !default;
+$o-toggle-large-value-min-height: $o-input-large-height !default;
 
 // Text
-$toggle-large-text-min-height: $input-large-height !default;
-$toggle-large-text-border: $border !default;
-$toggle-large-text-border-radius: $border-radius-main !default;
-$toggle-large-text-width: 100% !default;
-$toggle-large-text-line-height: $line-height !default;
-$toggle-large-text-padding: $spacing-small $spacing-small 0 !default;
-$toggle-large-text-font-size: fontSize('omega') !default;
-$toggle-large-text-text-color: color('black') !default;
+$o-toggle-large-text-min-height: $o-input-large-height !default;
+$o-toggle-large-text-border: $o-border !default;
+$o-toggle-large-text-border-radius: $o-border-radius-main !default;
+$o-toggle-large-text-width: 100% !default;
+$o-toggle-large-text-line-height: $o-line-height !default;
+$o-toggle-large-text-padding: $o-spacing-small $o-spacing-small 0 !default;
+$o-toggle-large-text-font-size: fontSize('omega') !default;
+$o-toggle-large-text-text-color: color('black') !default;
 
 // Button
-$toggle-large-button-right: $spacing-base / 2 !default;
-$toggle-large-button-top: ($input-large-height / 2) -  ($toggle-height / 2) !default;
+$o-toggle-large-button-right: $o-spacing-base / 2 !default;
+$o-toggle-large-button-top: ($o-input-large-height / 2) -  ($o-toggle-height / 2) !default;
 
 // Label
-$toggle-large-label-padding-left: $toggle-width !default;
+$o-toggle-large-label-padding-left: $o-toggle-width !default;
 
 // Disabled
-$toggle-large-disabled-value-text-color: color('gray') !default;
+$o-toggle-large-disabled-value-text-color: color('gray') !default;

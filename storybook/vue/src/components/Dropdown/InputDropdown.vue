@@ -3,11 +3,11 @@
     <div
       :id="id"
       v-on-clickaway="closeMenu"
-      class="form-dropdown"
+      class="o-form-dropdown"
       :class="classes"
       @click="toggleMenu($event)"
     >
-      <label class="form-dropdown__label" :for="id">{{ label }}</label>
+      <label class="o-form-dropdown__label" :for="id">{{ label }}</label>
 
       <input
         v-if="search"
@@ -15,7 +15,7 @@
         ref="input"
         v-model="search_value"
         type="text"
-        class="form-dropdown__input"
+        class="o-form-dropdown__input"
       />
       <input
         v-else
@@ -24,23 +24,23 @@
         v-model="value"
         type="text"
         :name="id"
-        class="form-dropdown__input"
+        class="o-form-dropdown__input"
       />
 
       <div
         v-if="dropdown_item_title"
         :class="[
-          search ? 'form-dropdown__search-text' : 'form-dropdown__text',
+          search ? 'o-form-dropdown__search-text' : 'o-form-dropdown__text',
           { 'no-label': !label }
         ]"
       >
         {{ dropdown_item_title }}
       </div>
-      <div v-else-if="!search" class="form-dropdown__text">
+      <div v-else-if="!search" class="o-form-dropdown__text">
         {{ placeholder }}
       </div>
 
-      <div class="form-dropdown__icon">
+      <div class="o-form-dropdown__icon">
         <svg viewBox="0 0 24 24">
           <path
             fill="#000000"
@@ -55,8 +55,8 @@
         </svg>
       </div>
 
-      <div class="form-dropdown__content">
-        <ul class="form-dropdown__menu">
+      <div class="o-form-dropdown__content">
+        <ul class="o-form-dropdown__menu">
           <li
             v-for="item in !search ? dropdown_items : dropdown_items_search"
             :key="item.id ? item.id : item"
@@ -73,7 +73,7 @@
       </div>
     </div>
 
-    <div v-if="description" class="form__description">{{ description }}</div>
+    <div v-if="description" class="o-form__description">{{ description }}</div>
   </div>
 </template>
 
@@ -233,7 +233,7 @@ export default {
         "is-open": this.is_open,
         "has-value": this.dropdown_item_title || (this.search && this.value),
         "is-disabled": this.disabled,
-        "form-dropdown--search": this.search
+        "o-form-dropdown--search": this.search
         // 'error': this.errors.has(this.id)
       };
     },

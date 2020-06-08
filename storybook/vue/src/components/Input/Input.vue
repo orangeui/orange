@@ -1,21 +1,21 @@
 <template>
   <div
-    class="form__item"
+    class="o-form__item"
     :class="{
       'has-extras has-action': hasActionSlot
     }"
   >
     <div
       v-if="hasActionSlot && action_position === 'left'"
-      class="form__action"
+      class="o-form__action"
     >
       <!-- @slot Action slot to pass in <o-button> component or text -->
       <slot name="action"></slot>
     </div>
 
-    <div class="form__input-wrapper">
+    <div class="o-form__input-wrapper">
       <input
-        class="form__input"
+        class="o-form__input"
         :id="id"
         ref="input"
         :type="type"
@@ -29,17 +29,17 @@
         autocomplete="off"
         v-on="input_listeners"
       />
-      <label class="form__label" :for="id">{{ label }}</label>
+      <label class="o-form__label" :for="id">{{ label }}</label>
     </div>
 
     <div
       v-if="hasActionSlot && action_position === 'right'"
-      class="form__action"
+      class="o-form__action"
     >
       <slot name="action"></slot>
     </div>
 
-    <p v-if="description" class="form__description">{{ description }}</p>
+    <p v-if="description" class="o-form__description">{{ description }}</p>
   </div>
 </template>
 

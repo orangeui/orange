@@ -1,5 +1,5 @@
 <template>
-  <img class="image" :class="classes" :src="path" :alt="alt_text" />
+  <img class="o-image" :class="classes" :src="path" :alt="alt_text" />
 </template>
 
 <script>
@@ -69,10 +69,10 @@ export default {
   computed: {
     classes() {
       return {
-        [`image--${this.rounded}`]: this.rounded,
-        [`image--size-${this.size}`]: this.size,
-        [`image--shadow`]: this.shadow,
-        [`image--action`]: this.action
+        [`o-image--${this.rounded}`]: this.rounded,
+        [`o-image--size-${this.size}`]: this.size,
+        [`o-image--shadow`]: this.shadow,
+        [`o-image--action`]: this.action
       };
     }
   }

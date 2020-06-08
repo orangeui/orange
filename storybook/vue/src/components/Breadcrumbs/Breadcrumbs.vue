@@ -1,9 +1,9 @@
 <template>
-  <nav class="breadcrumbs" :class="nav_classes">
+  <nav class="o-breadcrumbs" :class="nav_classes">
     <router-link
       v-if="back_route"
       :to="{ name: back_route }"
-      class="breadcrumbs__button"
+      class="o-breadcrumbs__button"
     >
       {{ back_route_text }}
     </router-link>
@@ -62,8 +62,8 @@ export default {
   computed: {
     nav_classes() {
       return {
-        [`breadcrumbs--${this.size}`]: this.size,
-        [`breadcrumbs--color-${this.color}`]: this.color
+        [`o-breadcrumbs--${this.size}`]: this.size,
+        [`o-breadcrumbs--color-${this.color}`]: this.color
       };
     }
   }

@@ -1,5 +1,5 @@
 <template>
-  <div class="card__footer" :class="classes" @[clickEnabled]="click">
+  <div class="o-card__footer" :class="classes" @[clickEnabled]="click">
     <slot></slot>
   </div>
 </template>
@@ -22,7 +22,7 @@ export default {
   computed: {
     classes() {
       return {
-        "card__footer--click": this.action
+        "o-card__footer--click": this.action
       };
     },
 

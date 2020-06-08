@@ -8,9 +8,9 @@
 body {
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: $line-height;
+  line-height: $o-line-height;
   font-size: fontSize('epsilon');
-  font-family: $font-primary;
+  font-family: $o-font-primary;
 }
 
 
@@ -32,22 +32,22 @@ a {
 --------------------------------------------------*/
 
 p {
-  margin: 0 0 $spacing-base * 1;
+  margin: 0 0 $o-spacing-base * 1;
 }
 
 pre {
-  margin: 0 0 $spacing-base * 1;  
+  margin: 0 0 $o-spacing-base * 1;  
 }
 
 code {
-  font-family: $font-monospace;
+  font-family: $o-font-monospace;
 }
 
 
 /** Inline mark element */
 mark {
-  border-radius: $border-radius-main;
-  padding: $spacing-small / 8 $spacing-small / 4;
+  border-radius: $o-border-radius-main;
+  padding: $o-spacing-small / 8 $o-spacing-small / 4;
   color: color('secondary');
   background-color: transparentize(color('secondary'), 0.95);
 }
@@ -55,7 +55,7 @@ mark {
 /** Inline code element */
 p code,
 .table code {
-  padding: $spacing-small / 8 $spacing-small / 4;
+  padding: $o-spacing-small / 8 $o-spacing-small / 4;
   color: color('secondary');
   background-color: transparentize(color('secondary'), 0.95);
 
@@ -78,40 +78,40 @@ h1,
 .h1 {
   font-size: fontSize('mega');
   font-weight: fontWeight('bold');
-  margin: $spacing-base 0;
+  margin: $o-spacing-base 0;
 }
 
 h2,
 .h2 {
   font-size: fontSize('alpha');
   font-weight: fontWeight('normal');
-  margin: $spacing-base 0;
+  margin: $o-spacing-base 0;
 }
 
 h3,
 .h3 {
   font-size: fontSize('gamma');
   font-weight: fontWeight('normal');
-  margin: $spacing-small 0;
+  margin: $o-spacing-small 0;
 }
 
 h4,
 .h4 {
   font-size: fontSize('delta');
   font-weight: fontWeight('normal');
-  margin: $spacing-small 0;
+  margin: $o-spacing-small 0;
 }
 
 h5,
 .h5 {
   font-size: fontSize('epsilon');
   font-weight: fontWeight('normal');
-  margin: $spacing-small 0;
+  margin: $o-spacing-small 0;
 }
 
 h6,
 .h6 {
   font-size: fontSize('zeta');
   font-weight: fontWeight('normal');
-  margin: $spacing-small 0;
+  margin: $o-spacing-small 0;
 }

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="table-wrapper"
+    class="o-table-wrapper"
     :class="classes"
     :style="{ height: height + 'px' }"
   >
@@ -42,7 +42,7 @@ export default {
   computed: {
     classes() {
       return {
-        [`table-wrapper--fixed-header`]: this.fixed_header
+        [`o-table-wrapper--fixed-header`]: this.fixed_header
       };
     }
   }

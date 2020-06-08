@@ -3,7 +3,7 @@
  */
 
 
-.nav {
+.o-nav {
 
   /** Menu
   --------------------------------------------------*/
@@ -11,7 +11,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-bottom: $nav-padding-bottom;
+    padding-bottom: $o-nav-padding-bottom;
     display: flex;
     user-select: none;
   }
@@ -21,23 +21,23 @@
   --------------------------------------------------*/
   > ul > li {
     &:first-child {
-      margin-left: $nav-item-first-margin-left;
+      margin-left: $o-nav-item-first-margin-left;
     }
   }
 
   /** Link
   --------------------------------------------------*/
   > ul > li > a {
-    font-size: $nav-link-font-size;
+    font-size: $o-nav-link-font-size;
     display: flex;
     align-items: center;
     position: relative;
-    padding: $nav-link-padding;
-    color: rgba($nav-link-color, $nav-link-color-opacity);
-    height: $nav-link-height;
+    padding: $o-nav-link-padding;
+    color: rgba($o-nav-link-color, $o-nav-link-color-opacity);
+    height: $o-nav-link-height;
 
     &:hover {
-      color: rgba($nav-link-color, $nav-link-hover-color-opacity);
+      color: rgba($o-nav-link-color, $o-nav-link-hover-color-opacity);
       text-decoration: none;
 
       &::before {
@@ -50,17 +50,17 @@
     &.is-active,
     &.is-exact-active.is-active,
     &.router-link-exact-active {
-      color: rgba($nav-link-color, $nav-link-active-color-opacity);
+      color: rgba($o-nav-link-color, $o-nav-link-active-color-opacity);
 
       &::after {
         content: " ";
         position: absolute;
         border-bottom: 1px solid;
-        border-bottom-color: $nav-link-color;
+        border-bottom-color: $o-nav-link-color;
         z-index: 1;
-        width: $nav-link-active-after-width;
-        left: $nav-link-active-after-left;
-        bottom: $nav-link-active-after-bottom;
+        width: $o-nav-link-active-after-width;
+        left: $o-nav-link-active-after-left;
+        bottom: $o-nav-link-active-after-bottom;
       }
     }
 
@@ -68,28 +68,28 @@
     &.is-disabled {
       cursor: default;
       pointer-events: none;
-      opacity: $nav-link-disabled-opacity;
+      opacity: $o-nav-link-disabled-opacity;
     }
 
     &::before {
       content: '';
       position: absolute;
-      background-color: rgba($nav-link-color, $nav-link-background-color-opacity);
+      background-color: rgba($o-nav-link-color, $o-nav-link-background-color-opacity);
       pointer-events: none;
-      width: $nav-link-before-width;
-      height: $nav-link-before-height;
-      left: $nav-link-before-left;
-      top: $nav-link-before-top;
-      border-radius: $nav-link-before-border-radius;
-      opacity: $nav-link-before-opacity;
+      width: $o-nav-link-before-width;
+      height: $o-nav-link-before-height;
+      left: $o-nav-link-before-left;
+      top: $o-nav-link-before-top;
+      border-radius: $o-nav-link-before-border-radius;
+      opacity: $o-nav-link-before-opacity;
     }
   }
 
   /** Icon
   --------------------------------------------------*/
-  [class^="icon-"],
-  [class*=" icon-"] {
-    margin-right: $nav-icon-margin-right;
+  [class^="o-icon-"],
+  [class*=" o-icon-"] {
+    margin-right: $o-nav-icon-margin-right;
   }
 }
 
@@ -98,30 +98,30 @@
 /** Colors
 --------------------------------------------------*/
 
-@each $name, $value in $colors {
-  .nav--color-#{$name} {
+@each $o-name, $o-value in $o-colors {
+  .o-nav--color-#{$o-name} {
     ul > li > a {
-      color: rgba(color(#{$name}), $nav-color-link-color-opacity);
+      color: rgba(color(#{$o-name}), $o-nav-color-link-color-opacity);
 
       &:hover {
-        color: rgba(color(#{$name}), $nav-color-link-color-opacity-hover);
+        color: rgba(color(#{$o-name}), $o-nav-color-link-color-opacity-hover);
       }
 
       &::after {
-        border-bottom-color: color(#{$name});
+        border-bottom-color: color(#{$o-name});
       }
 
       &::before {
-        background-color: rgba(color(#{$name}), $nav-color-link-background-color-opacity);
+        background-color: rgba(color(#{$o-name}), $o-nav-color-link-background-color-opacity);
       }
 
       &.is-active,
       &.is-exact-active.is-active,
       &.router-link-exact-active {
-        color: rgba(color(#{$name}), $nav-color-link-color-opacity-active);
+        color: rgba(color(#{$o-name}), $o-nav-color-link-color-opacity-active);
 
         &::after {
-          border-bottom-color: color(#{$name});
+          border-bottom-color: color(#{$o-name});
         }
       }
     }
@@ -130,7 +130,7 @@
 
 /** Alignments
 --------------------------------------------------*/
-.nav--center {
+.o-nav--center {
   > ul {
     justify-content: center;
   }
@@ -142,7 +142,7 @@
   }
 }
 
-.nav--right {
+.o-nav--right {
   > ul {
     justify-content: flex-end;
   }
@@ -153,7 +153,7 @@
     }
 
     &:last-child {
-      margin-right: $nav-right-item-last-margin-right;
+      margin-right: $o-nav-right-item-last-margin-right;
     }
   }
 }

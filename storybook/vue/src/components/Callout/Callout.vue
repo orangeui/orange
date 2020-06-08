@@ -1,5 +1,5 @@
 <template>
-  <div class="callout" :class="classes" @click="click">
+  <div class="o-callout" :class="classes" @click="click">
     <slot></slot>
   </div>
 </template>
@@ -42,10 +42,10 @@ export default {
   computed: {
     classes() {
       return {
-        [`callout--color-${this.color}`]: this.color,
-        [`callout--${this.size}`]: this.size,
-        "callout--shadow": this.shadow,
-        "callout--action": this.action
+        [`o-callout--color-${this.color}`]: this.color,
+        [`o-callout--${this.size}`]: this.size,
+        "o-callout--shadow": this.shadow,
+        "o-callout--action": this.action
       };
     }
   },

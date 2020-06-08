@@ -2,7 +2,7 @@
  * Colors
  */
 
-@each $prefix, $meaning in $colors {
+@each $prefix, $meaning in $o-colors {
   @each $colorKey, $colorValue in $meaning {
     @if ($colorKey == 'base') {
       .color-#{$prefix} {
@@ -16,7 +16,7 @@
   }
 }
 
-@each $prefix, $meaning in $colors {
+@each $prefix, $meaning in $o-colors {
   @each $colorKey, $colorValue in $meaning {
     @if ($colorKey == 'base') {
       .bg-#{$prefix} {

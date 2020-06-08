@@ -1,13 +1,13 @@
 <template>
   <button
     :type="type"
-    class="button"
+    class="o-button"
     :class="[button_classes, button_color]"
     @click="click"
     :disabled="is_disabled"
   >
     <template v-if="text">{{ text }}</template>
-    <i v-if="icon" :class="[`icon-${icon}`]" />
+    <i v-if="icon" :class="[`o-icon-${icon}`]" />
   </button>
 </template>
 
@@ -111,12 +111,12 @@ export default {
   computed: {
     button_classes() {
       return {
-        [`button--${this.role}`]: this.role,
-        [`button--${this.variant}`]: this.variant,
-        [`button--${this.size}`]: this.size,
-        [`button--icon-only`]: !this.text && this.icon,
-        "button--inverted": this.inverted,
-        "button--wide": this.wide
+        [`o-button--${this.role}`]: this.role,
+        [`o-button--${this.variant}`]: this.variant,
+        [`o-button--${this.size}`]: this.size,
+        [`o-button--icon-only`]: !this.text && this.icon,
+        "o-button--inverted": this.inverted,
+        "o-button--wide": this.wide
       };
     },
     button_color() {
@@ -124,11 +124,11 @@ export default {
       if (this.$parent.$options._componentTag === "o-message") {
         let message_color = this.$parent.$options.propsData.color;
         return message_color == null
-          ? "button--color-gray"
-          : `button--color-${message_color}`;
+          ? "o-button--color-gray"
+          : `o-button--color-${message_color}`;
       } else {
         return {
-          [`button--color-${this.color}`]: this.color
+          [`o-button--color-${this.color}`]: this.color
         };
       }
     }
