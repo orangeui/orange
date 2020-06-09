@@ -19,7 +19,7 @@ const Input = (function() {
   }
 
   const Selectors = {
-    _input: '.form .form__input',
+    _input: '.o-form .o-form__input',
   }
 
   const text_inputs = document.querySelectorAll(Selectors._input);
@@ -51,7 +51,7 @@ const Input = (function() {
   function toggleFocusClass (event) {
     let input = event.target;
 
-    if (input.classList.contains('form__input')) {
+    if (input.classList.contains('o-form__input')) {
       return event.type === 'focusin' && input.getAttribute('readonly') === null ? input.classList.add(Classes._focus_class) : input.classList.remove(Classes._focus_class)
     }
   }
@@ -60,7 +60,7 @@ const Input = (function() {
     let input = event.target
     let input_has_text = input.value !== '' && input.value !== null;
 
-    if (input.classList.contains('form__input')) {
+    if (input.classList.contains('o-form__input')) {
       return input_has_text ? input.classList.add(Classes._value_class) : input.classList.remove(Classes._value_class)
     }
   }

@@ -13,17 +13,17 @@
 
     <!-- Basic  -->
     <docs-item title="Basic" :code="input_html" v-if="is_html">
-      <form class="form" slot="body">
-        <div class="form__item">
-          <input id="form_id" type="text" name="form_id" class="form__input">
-          <label for="form_id" class="form__label">Label</label>
-          <p class="form__description">Description text</p>
+      <form class="o-form" slot="body">
+        <div class="o-form__item">
+          <input id="form_id" type="text" name="form_id" class="o-form__input">
+          <label for="form_id" class="o-form__label">Label</label>
+          <p class="o-form__description">Description text</p>
         </div>
       </form>
     </docs-item>
 
     <docs-item title="Basic" :code="input_html" v-else>
-      <form class="form" slot="body">
+      <form class="o-form" slot="body">
         <o-input
           id="form_id"
           v-model="form_model"
@@ -36,7 +36,7 @@
     <!-- Validation  -->
     <docs-item title="Validation - required" :code="input_validation_small" v-if="!is_html">
       <p>To validate an input on mount add <code>:validate_initial="true"</code> to your configuration.</p>
-      <form class="form" slot="body">
+      <form class="o-form" slot="body">
         <o-input
           id="form_validation"
           v-model="form_model_validation"
@@ -50,7 +50,7 @@
 
     <!-- Validation with rules  -->
     <docs-item title="Validation - required with rules" :code="input_validation_rules_small" v-if="!is_html">
-      <form class="form" slot="body">
+      <form class="o-form" slot="body">
         <o-input
           id="form_validation_rules"
           v-model="form_model_validation_rules"
@@ -64,92 +64,92 @@
 
     <!-- Read-only  -->
     <docs-item title="Read-only" :code="input_read_only_html" v-if="is_html">
-      <form class="form" slot="body">
-        <div class="form__item">
-          <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
-          <label for="form_read_only" class="form__label">Label</label>
-          <p class="form__description">Description text</p>
+      <form class="o-form" slot="body">
+        <div class="o-form__item">
+          <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="o-form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+          <label for="form_read_only" class="o-form__label">Label</label>
+          <p class="o-form__description">Description text</p>
         </div>
       </form>
     </docs-item>
 
     <!-- With action/extras -->
     <docs-item title="With action/extras" :code="input_action_html" v-if="is_html">
-      <form class="form" slot="body">
-        <div class="form__item has-action">
-          <div class="form__action">
+      <form class="o-form" slot="body">
+        <div class="o-form__item has-action">
+          <div class="o-form__action">
             +386
           </div>
 
-          <div class="form__input-wrapper">
-            <input id="form_action_left" type="text" name="form_action_left" class="form__input">
-            <label for="form_action_left" class="form__label">Your phone number</label>
+          <div class="o-form__input-wrapper">
+            <input id="form_action_left" type="text" name="form_action_left" class="o-form__input">
+            <label for="form_action_left" class="o-form__label">Your phone number</label>
           </div>
-          <p class="form__description">Description text</p>
+          <p class="o-form__description">Description text</p>
         </div>
 
-        <div class="form__item has-action">
-          <div class="form__input-wrapper">
-            <input id="form_action_right" type="text" name="form_action_right" class="form__input">
-            <label for="form_action_right" class="form__label">https://example.com</label>
+        <div class="o-form__item has-action">
+          <div class="o-form__input-wrapper">
+            <input id="form_action_right" type="text" name="form_action_right" class="o-form__input">
+            <label for="form_action_right" class="o-form__label">https://example.com</label>
           </div>
 
-          <div class="form__action">
+          <div class="o-form__action">
             /orange
           </div>
-          <p class="form__description">Description text</p>
+          <p class="o-form__description">Description text</p>
         </div>
       </form>
     </docs-item>
 
     <!-- Read-only with action/extras -->
     <docs-item title="Read-only with action/extras" :code="input_action_button_html" v-if="is_html">
-      <form class="form" slot="body">
-        <div class="form__item has-action">
-          <div class="form__action">
-            <button type="button" class="button button--small">
+      <form class="o-form" slot="body">
+        <div class="o-form__item has-action">
+          <div class="o-form__action">
+            <button type="button" class="o-button o-button--small">
               copy to clipboard
             </button>
           </div>
 
-          <div class="form__input-wrapper">
-            <input id="form_action_button_left" type="text" name="form_action_button_left" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
-            <label for="form_action_button_left" class="form__label">Your API key</label>
+          <div class="o-form__input-wrapper">
+            <input id="form_action_button_left" type="text" name="form_action_button_left" class="o-form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+            <label for="form_action_button_left" class="o-form__label">Your API key</label>
           </div>
-          <p class="form__description">To change your API key please contact support</p>
+          <p class="o-form__description">To change your API key please contact support</p>
         </div>
 
-        <div class="form__item has-action">
-          <div class="form__input-wrapper">
-            <input id="form_action_button_right" type="text" name="form_action_button_right" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
-            <label for="form_action_button_right" class="form__label">Your API key</label>
+        <div class="o-form__item has-action">
+          <div class="o-form__input-wrapper">
+            <input id="form_action_button_right" type="text" name="form_action_button_right" class="o-form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+            <label for="form_action_button_right" class="o-form__label">Your API key</label>
           </div>
 
-          <div class="form__action">
-            <button type="button" class="button button--small">
+          <div class="o-form__action">
+            <button type="button" class="o-button o-button--small">
               copy to clipboard
             </button>
           </div>
-          <p class="form__description">To change your API key please contact support</p>
+          <p class="o-form__description">To change your API key please contact support</p>
         </div>
       </form>
     </docs-item>
 
     <!-- Size Large  -->
     <docs-item title="Large" :code="input_large_html" v-if="is_html">
-      <form class="form form--large" slot="body">
-        <div class="form__item">
-          <input id="form_large" type="text" name="form_large" class="form__input">
-          <label for="form_large" class="form__label">Label</label>
+      <form class="o-form o-form--large" slot="body">
+        <div class="o-form__item">
+          <input id="form_large" type="text" name="form_large" class="o-form__input">
+          <label for="form_large" class="o-form__label">Label</label>
 
-          <p class="form__description">Description text</p>
+          <p class="o-form__description">Description text</p>
         </div>
       </form>
     </docs-item>
 
     <!-- Size Large  -->
     <docs-item title="Large" :code="input_large_html" v-else>
-      <form class="form form--large" slot="body">
+      <form class="o-form o-form--large" slot="body">
         <o-input
           id="form_large"
           v-model="form_model_large"
@@ -161,7 +161,7 @@
 
     <!-- Large with validation  -->
     <docs-item title="Large with validation" :code="input_validation_large" v-if="!is_html">
-      <form class="form form--large" slot="body">
+      <form class="o-form o-form--large" slot="body">
         <o-input
           id="form_large_validation"
           v-model="form_model_validation_large"
@@ -175,18 +175,18 @@
 
     <!-- Large read-only  -->
     <docs-item title="Large and read-only" :code="input_read_only_large" v-if="is_html">
-      <form class="form form--large" slot="body">
-        <div class="form__item">
-          <input id="form_large_read_only" type="text" name="form_large_read_only" readonly="readonly" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
-          <label for="form_large_read_only" class="form__label">Label</label>
-          <p class="form__description">Description text</p>
+      <form class="o-form o-form--large" slot="body">
+        <div class="o-form__item">
+          <input id="form_large_read_only" type="text" name="form_large_read_only" readonly="readonly" class="o-form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+          <label for="form_large_read_only" class="o-form__label">Label</label>
+          <p class="o-form__description">Description text</p>
         </div>
       </form>
     </docs-item>
 
     <!-- Large with validation and a button  -->
     <docs-item title="Large with validation and a button" :code="input_large_validation_button" v-if="!is_html">
-      <form class="form form--large" slot="body">
+      <form class="o-form o-form--large" slot="body">
         <o-input
           id="form_large_button"
           v-model="form_model_large_validation_button"
@@ -205,33 +205,33 @@
     
     <!-- Large with action/extras -->
     <docs-item title="Large with action/extras" :code="input_large_action_html" v-if="is_html">
-      <form class="form form--large" slot="body">
-        <div class="form__item has-action">
-          <div class="form__input-wrapper">
-            <input id="form_large_action_right" type="text" name="form_large_action_right" class="form__input">
-            <label for="form_large_action_right" class="form__label">https://example.com</label>
+      <form class="o-form o-form--large" slot="body">
+        <div class="o-form__item has-action">
+          <div class="o-form__input-wrapper">
+            <input id="form_large_action_right" type="text" name="form_large_action_right" class="o-form__input">
+            <label for="form_large_action_right" class="o-form__label">https://example.com</label>
           </div>
 
-          <div class="form__action">
+          <div class="o-form__action">
             /orange
           </div>
         </div>
 
-        <div class="form__item has-action">
-          <div class="form__action">
+        <div class="o-form__item has-action">
+          <div class="o-form__action">
             +386
           </div>
 
-          <div class="form__input-wrapper">
-            <input id="form_large_action_left" type="text" name="form_large_action_left" class="form__input">
-            <label for="form_large_action_left" class="form__label">Your phone number</label>
+          <div class="o-form__input-wrapper">
+            <input id="form_large_action_left" type="text" name="form_large_action_left" class="o-form__input">
+            <label for="form_large_action_left" class="o-form__label">Your phone number</label>
           </div>
         </div>
       </form>
     </docs-item>
 
     <docs-item title="Large, read-only with a button" :code="input_large_read_only_button_html" v-else>
-      <form class="form form--large" slot="body">
+      <form class="o-form o-form--large" slot="body">
         <o-input
           id="form_large_button_read_only"
           v-model="form_model_read_only_button_large"
@@ -247,42 +247,42 @@
 
     <!-- Large read-only with a Button  -->
     <docs-item title="Large, read-only with action/extras" :code="input_large_action_button_html" v-if="is_html">
-      <form class="form form--large" slot="body">
-        <div class="form__item has-action">
-          <div class="form__action">
-            <button type="button" class="button button--small">
+      <form class="o-form o-form--large" slot="body">
+        <div class="o-form__item has-action">
+          <div class="o-form__action">
+            <button type="button" class="o-button o-button--small">
               copy to clipboard
             </button>
           </div>
 
-          <div class="form__input-wrapper">
-            <input id="form_large_action_button_left" type="text" name="form_large_action_button_left" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
-            <label for="form_large_action_button_left" class="form__label">Your API key</label>
+          <div class="o-form__input-wrapper">
+            <input id="form_large_action_button_left" type="text" name="form_large_action_button_left" class="o-form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+            <label for="form_large_action_button_left" class="o-form__label">Your API key</label>
           </div>
 
-          <p class="form__description">To change your API key please contact support</p>
+          <p class="o-form__description">To change your API key please contact support</p>
         </div>
 
-        <div class="form__item has-action">
-          <div class="form__input-wrapper">
-            <input id="form_large_action_button_right" type="text" name="form_large_action_button_right" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
-            <label for="form_large_action_button_right" class="form__label">Your API key</label>
+        <div class="o-form__item has-action">
+          <div class="o-form__input-wrapper">
+            <input id="form_large_action_button_right" type="text" name="form_large_action_button_right" class="o-form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+            <label for="form_large_action_button_right" class="o-form__label">Your API key</label>
           </div>
 
-          <div class="form__action">
-            <button type="button" class="button button--small">
+          <div class="o-form__action">
+            <button type="button" class="o-button o-button--small">
               copy to clipboard
             </button>
           </div>
 
-          <p class="form__description">To change your API key please contact support</p>
+          <p class="o-form__description">To change your API key please contact support</p>
         </div>
       </form>
     </docs-item>
 
     <!-- Large with a placeholder  -->
     <docs-item title="Large with a placeholder" :code="input_placeholder_large" v-if="!is_html">
-      <form class="form form--large" slot="body">
+      <form class="o-form o-form--large" slot="body">
         <o-input
           id="form_large_placeholder"
           v-model="form_model_placeholder_large"
@@ -304,7 +304,7 @@
             </o-card-header>
 
             <o-card-body>
-              <form class="form">
+              <form class="o-form">
                 <o-input
                   id="form_example_name"
                   v-model="form_example_name"
@@ -333,7 +333,7 @@
                   validate_name="Password"
                 />
 
-                <div class="form__item">
+                <div class="o-form__item">
                   <o-button text="Sign up" wide />
                 </div>
               </form>
@@ -347,7 +347,7 @@
             </o-card-header>
 
             <o-card-body>
-              <form class="form form--large">
+              <form class="o-form o-form--large">
                 <o-input
                   id="form_example_name_large"
                   v-model="form_example_name_large"
@@ -376,7 +376,7 @@
                   validate_name="Password"
                 />
 
-                <div class="form__item">
+                <div class="o-form__item">
                   <o-button text="Sign up" size="large" wide />
                 </div>
               </form>
@@ -388,7 +388,7 @@
 
     <!-- Input Field - Usage  -->
     <docs-item title="Usage" v-if="is_html">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
           <tr>
             <th>Attribute</th>
@@ -402,7 +402,7 @@
         <tbody>
         <tr>
           <td>size</td>
-          <td>Set with <code>.form--large</code> on <code>.form</code></td>
+          <td>Set with <code>.o-form--large</code> on <code>.o-form</code></td>
           <td><code>large</code></td>
           <td>string</td>
           <td>-</td>
@@ -426,7 +426,7 @@
         </tr>
         <tr>
           <td>action</td>
-          <td>Set with <code>.has-action</code> class on <code>.form__item</code> to color up input value if read-only</td>
+          <td>Set with <code>.has-action</code> class on <code>.o-form__item</code> to color up input value if read-only</td>
           <td><code>has-action</code></td>
           <td>string</td>
           <td>-</td>
@@ -437,7 +437,7 @@
     </docs-item>
 
     <docs-item title="Usage" v-else>
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
           <tr>
             <th>Attribute</th>
@@ -576,7 +576,7 @@ export default {
       form_example_name_large: null,
       form_example_email_large: null,
       form_example_password_large: null,
-      input: `<form class="form">
+      input: `<form class="o-form">
   <o-input
     id="form_id"
     v-model="form_model"
@@ -584,15 +584,15 @@ export default {
     description="Description text"
   />
 </form>`,
-      input_html: `<form class="form">
-  <div class="form__item">
-    <input id="form_id" type="text" name="form_id" placeholder="Label" class="form__input">
-    <label for="form_id" class="form__label">Label</label>
-    <p class="form__description">Description text</p>
+      input_html: `<form class="o-form">
+  <div class="o-form__item">
+    <input id="form_id" type="text" name="form_id" placeholder="Label" class="o-form__input">
+    <label for="form_id" class="o-form__label">Label</label>
+    <p class="o-form__description">Description text</p>
   </div>
 </form>`,
 
-      input_validation_small: `<form class="form">
+      input_validation_small: `<form class="o-form">
   <o-input
     id="form_validation"
     v-model="form_model"
@@ -602,7 +602,7 @@ export default {
     validate_name="Required field"
   />
 </form>`,
-      input_validation_rules_small: `<form class="form">
+      input_validation_rules_small: `<form class="o-form">
   <o-input
     id="form_validation_rules"
     v-model="form_model"
@@ -613,7 +613,7 @@ export default {
   />
 </form>`,
 
-      input_validation_read_only: `<form class="form">
+      input_validation_read_only: `<form class="o-form">
   <o-input
     id="form_read_only"
     v-model="form_model"
@@ -622,71 +622,71 @@ export default {
   />
 </form>`,
       
-      input_read_only_html: `<form class="form">
-  <div class="form__item">
-    <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
-    <label for="form_id" class="form__label">Label</label>
-    <p class="form__description">Description text</p>
+      input_read_only_html: `<form class="o-form">
+  <div class="o-form__item">
+    <input id="form_read_only" type="text" name="form_read_only" placeholder="Label" readonly="readonly" class="o-form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+    <label for="form_id" class="o-form__label">Label</label>
+    <p class="o-form__description">Description text</p>
   </div>
 </form>`,
       
-      input_action_html: `<form class="form">
-  <div class="form__item has-action">
-    <div class="form__action">
+      input_action_html: `<form class="o-form">
+  <div class="o-form__item has-action">
+    <div class="o-form__action">
       +386
     </div>
 
-    <div class="form__input-wrapper">
-      <input id="form_action_left" type="text" name="form_action_left" class="form__input">
-      <label for="form_action_left" class="form__label">Your phone number</label>
+    <div class="o-form__input-wrapper">
+      <input id="form_action_left" type="text" name="form_action_left" class="o-form__input">
+      <label for="form_action_left" class="o-form__label">Your phone number</label>
     </div>
-    <p class="form__description">Description text</p>
+    <p class="o-form__description">Description text</p>
   </div>
 
-  <div class="form__item has-action">
-    <div class="form__input-wrapper">
-      <input id="form_action_right" type="text" name="form_action_right" class="form__input">
-      <label for="form_action_right" class="form__label">https://example.com</label>
+  <div class="o-form__item has-action">
+    <div class="o-form__input-wrapper">
+      <input id="form_action_right" type="text" name="form_action_right" class="o-form__input">
+      <label for="form_action_right" class="o-form__label">https://example.com</label>
     </div>
 
-    <div class="form__action">
+    <div class="o-form__action">
       /orange
     </div>
-    <p class="form__description">Description text</p>
+    <p class="o-form__description">Description text</p>
   </div>
 </form>`,
 
-      input_action_button_html: `<form class="form">
-  <div class="form__item has-action">
-    <div class="form__action">
-      <button type="button" class="button button--small">
+      input_action_button_html: `<form class="o-form">
+  <div class="o-form__item has-action">
+    <div class="o-form__action">
+      <button type="button" class="o-button o-button--small">
         copy to clipboard
       </button>
     </div>
 
-    <div class="form__input-wrapper">
-      <input id="form_action_button_left" type="text" name="form_action_button_left" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
-      <label for="form_action_button_left" class="form__label">Your API key</label>
+    <div class="o-form__input-wrapper">
+      <input id="form_action_button_left" type="text" name="form_action_button_left" class="o-form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+      <label for="form_action_button_left" class="o-form__label">Your API key</label>
     </div>
-    <p class="form__description">To change your API key please contact support</p>
+    <p class="o-form__description">To change your API key please contact support</p>
   </div>
 
-  <div class="form__item has-action">
-    <div class="form__input-wrapper">
-      <input id="form_action_button_right" type="text" name="form_action_button_right" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
-      <label for="form_action_button_right" class="form__label">Your API key</label>
+  <div class="o-form__item has-action">
+    <div class="o-form__input-wrapper">
+      <input id="form_action_button_right" type="text" name="form_action_button_right" class="o-form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+      <label for="form_action_button_right" class="o-form__label">Your API key</label>
     </div>
 
-    <div class="form__action">
-      <button type="button" class="button button--small">
+    <div class="o-form__action">
+      <button type="button" class="o-button o-button--small">
         copy to clipboard
       </button>
     </div>
-    <p class="form__description">To change your API key please contact support</p>
+    <p class="o-form__description">To change your API key please contact support</p>
   </div>
 </form>`,
 
-      input_large: `<form class="form form--large">
+      input_large: `<form class="o-form o-form--large">
   <o-input
     id="form_large"
     v-model="form_model"
@@ -694,15 +694,15 @@ export default {
     label="Label"
   />
 </form>`,
-      input_large_html: `<form class="form form--large">
-  <div class="form__item">
-    <input id="form_large" type="text" name="form_large" class="form__input">
-    <label for="form_large" class="form__label">Label</label>
-    <p class="form__description">Description text</p>
+      input_large_html: `<form class="o-form o-form--large">
+  <div class="o-form__item">
+    <input id="form_large" type="text" name="form_large" class="o-form__input">
+    <label for="form_large" class="o-form__label">Label</label>
+    <p class="o-form__description">Description text</p>
   </div>
 </form>`,
 
-      input_validation_large: `<form class="form form--large">
+      input_validation_large: `<form class="o-form o-form--large">
   <o-input
     id="form_large_validation"
     v-model="form_model"
@@ -712,15 +712,15 @@ export default {
     validate_name="Name"
   />
 </form>`,
-      input_read_only_large: `<form class="form form--large">
-  <div class="form__item">
-    <input id="form_large_read_only" type="text" name="form_large_read_only" readonly="readonly" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
-    <label for="form_large_read_only" class="form__label">Label</label>
-    <p class="form__description">Description text</p>
+      input_read_only_large: `<form class="o-form o-form--large">
+  <div class="o-form__item">
+    <input id="form_large_read_only" type="text" name="form_large_read_only" readonly="readonly" class="o-form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs">
+    <label for="form_large_read_only" class="o-form__label">Label</label>
+    <p class="o-form__description">Description text</p>
   </div>
 </form>`,
 
-      input_large_validation_button: `<form class="form form--large">
+      input_large_validation_button: `<form class="o-form o-form--large">
   <o-input
     id="form_large_button"
     v-model="form_model"
@@ -735,7 +735,7 @@ export default {
 
   </o-input>
 </form>`,
-      input_large_read_only_button: `<form class="form form--large">
+      input_large_read_only_button: `<form class="o-form o-form--large">
   <o-input
     id="form_large_button_read_only"
     v-model="form_model_read_only"
@@ -748,64 +748,64 @@ export default {
 
   </o-input>
 </form>`,
-      input_large_action_button_html: `<form class="form form--large">
-  <div class="form__item has-action">
-    <div class="form__action">
-      <button type="button" class="button button--small">
+      input_large_action_button_html: `<form class="o-form o-form--large">
+  <div class="o-form__item has-action">
+    <div class="o-form__action">
+      <button type="button" class="o-button o-button--small">
         copy to clipboard
       </button>
     </div>
 
-    <div class="form__input-wrapper">
-      <input id="form_large_action_button_left" type="text" name="form_large_action_button_left" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
-      <label for="form_large_action_button_left" class="form__label">Your API key</label>
+    <div class="o-form__input-wrapper">
+      <input id="form_large_action_button_left" type="text" name="form_large_action_button_left" class="o-form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+      <label for="form_large_action_button_left" class="o-form__label">Your API key</label>
     </div>
 
-    <p class="form__description">To change your API key please contact support</p>
+    <p class="o-form__description">To change your API key please contact support</p>
   </div>
 
-  <div class="form__item has-action">
-    <div class="form__input-wrapper">
-      <input id="form_large_action_button_right" type="text" name="form_large_action_button_right" class="form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
-      <label for="form_large_action_button_right" class="form__label">Your API key</label>
+  <div class="o-form__item has-action">
+    <div class="o-form__input-wrapper">
+      <input id="form_large_action_button_right" type="text" name="form_large_action_button_right" class="o-form__input has-value" value="cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs" readonly="readonly">
+      <label for="form_large_action_button_right" class="o-form__label">Your API key</label>
     </div>
 
-    <div class="form__action">
-      <button type="button" class="button button--small">
+    <div class="o-form__action">
+      <button type="button" class="o-button o-button--small">
         copy to clipboard
       </button>
     </div>
 
-    <p class="form__description">To change your API key please contact support</p>
+    <p class="o-form__description">To change your API key please contact support</p>
   </div>
 </form>`,
 
-    input_large_action_html: `<form class="form form--large">
-  <div class="form__item has-action">
-    <div class="form__input-wrapper">
-      <input id="form_large_action_right" type="text" name="form_large_action_right" class="form__input">
-      <label for="form_large_action_right" class="form__label">https://example.com</label>
+    input_large_action_html: `<form class="o-form o-form--large">
+  <div class="o-form__item has-action">
+    <div class="o-form__input-wrapper">
+      <input id="form_large_action_right" type="text" name="form_large_action_right" class="o-form__input">
+      <label for="form_large_action_right" class="o-form__label">https://example.com</label>
     </div>
 
-    <div class="form__action">
+    <div class="o-form__action">
       /orange
     </div>
   </div>
 
-  <div class="form__item has-action">
-    <div class="form__action">
+  <div class="o-form__item has-action">
+    <div class="o-form__action">
       +386
     </div>
 
-    <div class="form__input-wrapper">
-      <input id="form_large_action_left" type="text" name="form_large_action_left" class="form__input">
-      <label for="form_large_action_left" class="form__label">Your phone number</label>
+    <div class="o-form__input-wrapper">
+      <input id="form_large_action_left" type="text" name="form_large_action_left" class="o-form__input">
+      <label for="form_large_action_left" class="o-form__label">Your phone number</label>
     </div>
   </div>
 </form>
     `,
 
-      input_placeholder_large: `<form class="form form--large">
+      input_placeholder_large: `<form class="o-form o-form--large">
   <o-input
     id="form_large_placeholder"
     v-model="form_model"
@@ -821,7 +821,7 @@ export default {
   </o-card-header>
 
   <o-card-body>
-    <form class="form">
+    <form class="o-form">
       <o-input
         id="form_example_name"
         v-model="form_example_name"
@@ -850,7 +850,7 @@ export default {
         validate_name="Password"
       />
 
-      <div class="form__item">
+      <div class="o-form__item">
         <o-button text="Sign up" wide />
       </div>
     </form>
@@ -864,7 +864,7 @@ export default {
   </o-card-header>
 
   <o-card-body>
-    <form class="form form--large">
+    <form class="o-form o-form--large">
       <o-input
         id="form_example_name_large"
         v-model="form_example_name_large"
@@ -893,7 +893,7 @@ export default {
         validate_name="Password"
       />
 
-      <div class="form__item">
+      <div class="o-form__item">
         <o-button text="Sign up" size="large" wide />
       </div>
     </form>

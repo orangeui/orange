@@ -12,9 +12,9 @@
 
     <!-- Basic  -->
     <docs-item title="Basic" :code="radio_basic_html" v-if="is_html">
-      <form class="form" slot="body">
-        <div class="form__item">
-          <div class="radio">
+      <form class="o-form" slot="body">
+        <div class="o-form__item">
+          <div class="o-radio">
             <input type="radio" name="Radio" id="radio_single" value="radio">
             <label for="radio_single">Label</label>
           </div>
@@ -37,30 +37,30 @@
 
     <!-- Group  -->
     <docs-item title="Group" :code="radio_group_html" v-if="is_html">
-      <form class="form" slot="body">
+      <form class="o-form" slot="body">
 
-        <div class="form__item">
-          <div class="radio-group">
-            <div class="radio-group__label">Group label</div>
+        <div class="o-form__item">
+          <div class="o-radio-group">
+            <div class="o-radio-group__label">Group label</div>
 
-            <div class="radio">
+            <div class="o-radio">
               <input type="radio" name="Radio" id="radio_1" value="radio_1"><label for="radio_1">First label</label>
             </div>
 
-            <div class="radio">
+            <div class="o-radio">
               <input type="radio" name="Radio" id="radio_2" value="radio_2"><label for="radio_2">Second label</label>
             </div>
 
-            <div class="radio">
+            <div class="o-radio">
               <input type="radio" name="Radio" id="radio_3" value="radio_3"><label for="radio_3">Third label</label>
             </div>
 
-            <div class="radio">
+            <div class="o-radio">
               <input type="radio" name="Radio" disabled="disabled" id="radio_4" value="radio_4">
               <label for="radio_4">Fourth label</label>
             </div>
           </div>
-          <div class="form__description">Description</div>
+          <div class="o-form__description">Description</div>
         </div>
 
       </form>
@@ -105,7 +105,7 @@
 
     <!-- usage  -->
     <docs-item title="Usage" v-if="is_html">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
           <tr>
             <th>Attribute</th>
@@ -140,7 +140,7 @@
 
     <!-- Usage  -->
     <docs-item title="Usage" v-if="!is_html">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
           <tr>
             <th>Attribute</th>
@@ -191,7 +191,7 @@
     </docs-item>
 
     <docs-item title="Radio Group Usage"  v-if="!is_html">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
           <tr>
             <th>Attribute</th>
@@ -237,9 +237,9 @@ export default {
   :label="'Label'"
   :name="'Radio'"
 />`,
-      radio_basic_html: `<form class="form">
-  <div class="form__item">
-    <div class="radio">
+      radio_basic_html: `<form class="o-form">
+  <div class="o-form__item">
+    <div class="o-radio">
       <input type="radio" name="Radio" id="radio_single" value="radio">
       <label for="radio_single">Label</label>
     </div>
@@ -276,32 +276,32 @@ export default {
     :disabled="true"
   />
 </o-radio-group>`,
-      radio_group_html: `<form class="form">
-  <div class="form__item">
-    <div class="radio-group">
-      <div class="radio-group__label">Group label</div>
+      radio_group_html: `<form class="o-form">
+  <div class="o-form__item">
+    <div class="o-radio-group">
+      <div class="o-radio-group__label">Group label</div>
 
-      <div class="radio">
+      <div class="o-radio">
         <input type="radio" name="Radio" id="radio_1" value="radio_1">
         <label for="radio_1">First label</label>
       </div>
 
-      <div class="radio">
+      <div class="o-radio">
         <input type="radio" name="Radio" id="radio_2" value="radio_2">
         <label for="radio_2">Second label</label>
       </div>
 
-      <div class="radio">
+      <div class="o-radio">
         <input type="radio" name="Radio" id="radio_3" value="radio_3">
         <label for="radio_3">Third label</label>
       </div>
 
-      <div class="radio">
+      <div class="o-radio">
         <input type="radio" name="Radio" disabled="disabled" id="radio_4" value="radio_4">
         <label for="radio_4">Fourth label</label>
       </div>
     </div>
-    <div class="form__description">Description</div>
+    <div class="o-form__description">Description</div>
   </div>
 </form>`
 

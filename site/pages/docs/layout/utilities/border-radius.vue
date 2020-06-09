@@ -39,12 +39,12 @@ export default {
 
   data () {
     return {
-      mapCss: `$border-radius-base: 3px;
+      mapCss: `$o-border-radius-base: 3px;
 
-$border-radiuses: (
+$o-border-radiuses: (
   0: 0,                         // 0px
-  'base': $border-radius-base,  // 3px
-  1: $border-radius-base * 2,   // 6px
+  'base': $o-border-radius-base,  // 3px
+  1: $o-border-radius-base * 2,   // 6px
   'full': 50%                   // 50%
 );`,
       border_radius_html: `<img class="image rounded-0" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Doggo" />

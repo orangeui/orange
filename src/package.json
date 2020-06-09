@@ -4,7 +4,7 @@
   "description": "Open-source UI library by Fomo.",
   "scripts": {
     "watch": "nodemon --watch src/ -e js,scss -x \"npm run build\"",
-    "build-js": "uglifyjs --compress --mangle -o ../dist/js/orange.min.js -- ./js/src/**/*.js ./js/src/*.js",
+    "build-js": "terser --compress --mangle -o ../dist/js/orange.min.js -- ./js/src/**/*.js ./js/src/*.js",
     "build-scss": "node-sass --include-path sass ./scss/src/styles.scss ../dist/css/orange.min.css --output-style compressed",
     "build": "npm run build-js & npm run build-scss"
   },
@@ -16,6 +16,6 @@
   "devDependencies": {
     "node-sass": "^4.12.0",
     "nodemon": "^1.19.1",
-    "uglify-js": "^3.6.0"
+    "terser": "^4.7.0"
   }
 }

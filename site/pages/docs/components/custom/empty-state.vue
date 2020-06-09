@@ -13,32 +13,32 @@
 
     <!-- Inside a card -->
     <docs-item title="Inside a card" :code="empty_state_default_list_html" v-if="is_html">
-      <div class="card" slot="body">
-        <div class="card__body">
-          <div class="empty-state">
-            <div class="empty-state__content">
-              <div class="empty-state__title">
+      <div class="o-card" slot="body">
+        <div class="o-card__body">
+          <div class="o-empty-state">
+            <div class="o-empty-state__content">
+              <div class="o-empty-state__title">
                 <h2>It's your first time here</h2>
               </div>
 
-              <div class="empty-state__description">
+              <div class="o-empty-state__description">
                 <p>A short explanation of this view or why it is empty. Longer texts span into multiple lines.</p>
               </div>
 
-              <div class="empty-state__buttons">
-                <button type="button" class="button">Continue</button>
+              <div class="o-empty-state__buttons">
+                <button type="button" class="o-button">Continue</button>
               </div>
             </div>
 
-            <div class="empty-state__image"><img src="/images/empty-state.svg"></div>
+            <div class="o-empty-state__image"><img src="/images/empty-state.svg"></div>
           </div>
         </div>
       </div>
     </docs-item>
 
     <docs-item title="Inside a card" :code="empty_state_default_list" v-else>
-      <div class="card" slot="body">
-        <div class="card__body">
+      <div class="o-card" slot="body">
+        <div class="o-card__body">
           <o-empty-state image_path="/images/empty-state.svg">
             <h2 slot="heading">It's your first time here</h2>
             <p>A short explanation of this view or why it is empty. Longer texts span into multiple lines.</p>
@@ -52,24 +52,24 @@
 
     <!-- No gutter -->
     <docs-item title="No gutter" :code="empty_state_no_gutter_list_html" v-if="is_html">
-      <div class="empty-state empty-state--no-gutter" slot="body">
-        <div class="empty-state__content">
-          <div class="empty-state__title">
+      <div class="o-empty-state o-empty-state--no-gutter" slot="body">
+        <div class="o-empty-state__content">
+          <div class="o-empty-state__title">
             <h2>It's your first time here</h2>
           </div>
 
-          <div class="empty-state__description">
+          <div class="o-empty-state__description">
             <p>A short explanation of this view or why it is empty. Longer texts span into multiple lines.</p>
           </div>
 
-          <div class="empty-state__buttons">
-            <button type="button" class="button">
+          <div class="o-empty-state__buttons">
+            <button type="button" class="o-button">
               Continue
             </button>
           </div>
         </div>
 
-        <div class="empty-state__image"><img src="/images/empty-state.svg"></div>
+        <div class="o-empty-state__image"><img src="/images/empty-state.svg"></div>
       </div>
     </docs-item>
 
@@ -85,7 +85,7 @@
 
     <!-- Empty State - Usage  -->
     <docs-item title="Usage" v-if="is_html">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -99,7 +99,7 @@
         <tbody>
         <tr>
           <td>no-gutter</td>
-          <td>Remove side margins. Set with <code>.empty-state--no-gutter</code></td>
+          <td>Remove side margins. Set with <code>.o-empty-state--no-gutter</code></td>
           <td><code>no-gutter</code></td>
           <td>String</td>
           <td>-</td>
@@ -110,7 +110,7 @@
     </docs-item>
 
     <docs-item title="Usage" v-else>
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -149,8 +149,8 @@ export default {
   data () {
     return {
       is_html: true,
-      empty_state_default_list: `<div class="card">
-  <div class="card__body">
+      empty_state_default_list: `<div class="o-card">
+  <div class="o-card__body">
     <o-empty-state image_path="/images/empty-state.svg">
       <h2 slot="heading">It's your first time here</h2>
       <p>A short explanation of this view or why it is empty. Longer texts span into multiple lines.</p>
@@ -160,24 +160,24 @@ export default {
     </o-empty-state>
   </div>
 </div>`,
-      empty_state_default_list_html: `<div class="card">
-  <div class="card__body">
-    <div class="empty-state">
-      <div class="empty-state__content">
-        <div class="empty-state__title">
+      empty_state_default_list_html: `<div class="o-card">
+  <div class="o-card__body">
+    <div class="o-empty-state">
+      <div class="o-empty-state__content">
+        <div class="o-empty-state__title">
           <h2>It's your first time here</h2>
         </div>
 
-        <div class="empty-state__description">
+        <div class="o-empty-state__description">
           <p>A short explanation of this view or why it is empty. Longer texts span into multiple lines.</p>
         </div>
 
-        <div class="empty-state__buttons">
-          <button type="button" class="button">Continue</button>
+        <div class="o-empty-state__buttons">
+          <button type="button" class="o-button">Continue</button>
         </div>
       </div>
 
-      <div class="empty-state__image"><img src="/images/empty-state.svg"></div>
+      <div class="o-empty-state__image"><img src="/images/empty-state.svg"></div>
     </div>
   </div>
 </div>`,
@@ -189,24 +189,24 @@ export default {
     <o-button text="Continue" />
   </template>
 </o-empty-state>`,
-      empty_state_no_gutter_list_html: `<div class="empty-state empty-state--no-gutter">
-  <div class="empty-state__content">
-    <div class="empty-state__title">
+      empty_state_no_gutter_list_html: `<div class="o-empty-state o-empty-state--no-gutter">
+  <div class="o-empty-state__content">
+    <div class="o-empty-state__title">
       <h2>It's your first time here</h2>
     </div>
 
-    <div class="empty-state__description">
+    <div class="o-empty-state__description">
       <p>A short explanation of this view or why it is empty. Longer texts span into multiple lines.</p>
     </div>
 
-    <div class="empty-state__buttons">
-      <button type="button" class="button">
+    <div class="o-empty-state__buttons">
+      <button type="button" class="o-button">
         Continue
       </button>
     </div>
   </div>
 
-  <div class="empty-state__image"><img src="/images/empty-state.svg"></div>
+  <div class="o-empty-state__image"><img src="/images/empty-state.svg"></div>
 </div>`
     }
   }

@@ -14,10 +14,10 @@
     <docs-item title="Roles" :code="button_roles_html" v-if="is_html">
       <ul slot="body" class="docs__simple-list">
         <li>
-          <button type="button" class="button">Primary</button>
+          <button type="button" class="o-button">Primary</button>
         </li>
         <li>
-          <button type="button" class="button button--secondary">Secondary</button>
+          <button type="button" class="o-button o-button--secondary">Secondary</button>
         </li>
       </ul>
     </docs-item>
@@ -35,19 +35,19 @@
     <docs-item title="Sizes" :code="button_sizes_html" v-if="is_html">
       <ul slot="body" class="docs__simple-list">
         <li>
-          <p>Out of the box buttons are displayed in basic size. Add a <code>.button--small</code> or <code>.button--large</code> class to change sizes.</p>
+          <p>Out of the box buttons are displayed in basic size. Add a <code>.o-button--small</code> or <code>.o-button--large</code> class to change sizes.</p>
         </li>
       </ul>
 
       <ul slot="body" class="docs__simple-list">
         <li>
-          <button type="button" class="button button--large">Large</button>
+          <button type="button" class="o-button o-button--large">Large</button>
         </li>
         <li>
-          <button type="button" class="button">Regular</button>
+          <button type="button" class="o-button">Regular</button>
         </li>
         <li>
-          <button type="button" class="button button--small">Small</button>
+          <button type="button" class="o-button o-button--small">Small</button>
         </li>
       </ul>
     </docs-item>
@@ -72,13 +72,13 @@
     <docs-item title="Wide" :code="button_wide_html" v-if="is_html">
       <ul slot="body" class="docs__simple-list">
         <li>
-          <p>To make a button horizontally fit inside it's parent element add a <code>.button--wide</code> class to it. Buttons of any size and types can be wide.</p>
+          <p>To make a button horizontally fit inside it's parent element add a <code>.o-button--wide</code> class to it. Buttons of any size and types can be wide.</p>
         </li>
       </ul>
 
       <ul slot="body" class="docs__simple-list">
         <li>
-          <button type="button" class="button button--large button--wide">Continue<i class="icon-arrow-right"></i></button>
+          <button type="button" class="o-button o-button--large o-button--wide">Continue<i class="o-icon-arrow-right"></i></button>
         </li>
       </ul>
     </docs-item>
@@ -101,10 +101,10 @@
     <docs-item title="Variants" :code="button_variants_html" v-if="is_html">
       <ul slot="body" class="docs__simple-list">
         <li>
-          <button type="button" class="button button--basic">Primary basic</button>
+          <button type="button" class="o-button o-button--basic">Primary basic</button>
         </li>
         <li>
-          <button type="button" class="button button--secondary button--basic">Secondary basic</button>
+          <button type="button" class="o-button o-button--secondary o-button--basic">Secondary basic</button>
         </li>
       </ul>
     </docs-item>
@@ -123,11 +123,11 @@
       <ul slot="body" class="docs__simple-list">
         <li>
           <p>Icon only</p>
-          <button type="button" class="button button--icon-only"><i class="icon-remove"></i></button>
+          <button type="button" class="o-button o-button--icon-only"><i class="o-icon-remove"></i></button>
         </li>
         <li>
           <p>With an icon</p>
-          <button type="button" class="button">Continue<i class="icon-arrow-right"></i></button>
+          <button type="button" class="o-button">Continue<i class="o-icon-arrow-right"></i></button>
         </li>
       </ul>
     </docs-item>
@@ -151,7 +151,7 @@
     <docs-item title="Disabled" :code="button_disabled_html" v-if="is_html">
       <ul slot="body" class="docs__simple-list">
         <li>
-          <button type="button" class="button" disabled="disabled">Can't touch this</button>
+          <button type="button" class="o-button" disabled="disabled">Can't touch this</button>
         </li>
       </ul>
     </docs-item>
@@ -169,13 +169,13 @@
       <ul slot="body" class="docs__simple-list">
         <li>
           <li>
-            <button type="button" class="button">Button</button>
-            <button type="button" class="button button--secondary">Button</button>
+            <button type="button" class="o-button">Button</button>
+            <button type="button" class="o-button o-button--secondary">Button</button>
           </li>
         </li>
         <li>
-          <button type="button" class="button button--color-secondary">Button</button>
-          <button type="button" class="button button--secondary button--color-secondary">Button</button>
+          <button type="button" class="o-button o-button--color-secondary">Button</button>
+          <button type="button" class="o-button o-button--secondary o-button--color-secondary">Button</button>
         </li>
       </ul>
     </docs-item>
@@ -239,12 +239,12 @@
     <docs-item title="Inverted" :code="button_inverted_html" v-if="is_html">
       <ul slot="body" class="docs__simple-list">
         <li class="bg-primary">
-          <button type="button" class="button button--inverted">Button</button>
-          <button type="button" class="button button--secondary button--inverted">Button</button>
+          <button type="button" class="o-button o-button--inverted">Button</button>
+          <button type="button" class="o-button o-button--secondary o-button--inverted">Button</button>
         </li>
         <li class="bg-secondary">
-          <button type="button" class="button button--inverted button--color-secondary">Button</button>
-          <button type="button" class="button button--secondary button--inverted button--color-secondary">Button</button>
+          <button type="button" class="o-button o-button--inverted o-button--color-secondary">Button</button>
+          <button type="button" class="o-button o-button--secondary o-button--inverted o-button--color-secondary">Button</button>
         </li>
       </ul>
     </docs-item>
@@ -306,7 +306,7 @@
 
     <!-- Usage  -->
     <docs-item title="Usage" v-if="is_html">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -320,7 +320,7 @@
         <tbody>
         <tr>
           <td>role</td>
-          <td>Set with <code>.button--{role}</code> class</td>
+          <td>Set with <code>.o-button--{role}</code> class</td>
           <td><code>primary</code>, <code>secondary</code> or <code>basic</code></td>
           <td>String</td>
           <td>-</td>
@@ -336,7 +336,7 @@
         </tr>
         <tr>
           <td>color</td>
-          <td>Set with <code>.button--color-{color}</code></td>
+          <td>Set with <code>.o-button--color-{color}</code></td>
           <td>See <router-link :to="{ name: 'docs-global'}"><span>Colors</span></router-link> page</td>
           <td>String</td>
           <td>-</td>
@@ -344,7 +344,7 @@
         </tr>
         <tr>
           <td>size</td>
-          <td>Set with <code>.button--{size}</code></td>
+          <td>Set with <code>.o-button--{size}</code></td>
           <td><code>small</code>, <code>large</code></td>
           <td>String</td>
           <td>-</td>
@@ -352,7 +352,7 @@
         </tr>
         <tr>
           <td>wide</td>
-          <td>Make a button of any size horizontally fit inside it's parent element. Set with <code>.button--wide</code></td>
+          <td>Make a button of any size horizontally fit inside it's parent element. Set with <code>.o-button--wide</code></td>
           <td><code>wide</code></td>
           <td>String</td>
           <td>-</td>
@@ -360,7 +360,7 @@
         </tr>
         <tr>
           <td>invert</td>
-          <td>Invert a button so it can be placed on a solid color background. Set with <code>.button--inverted</code></td>
+          <td>Invert a button so it can be placed on a solid color background. Set with <code>.o-button--inverted</code></td>
           <td><code>inverted</code></td>
           <td>String</td>
           <td>-</td>
@@ -371,7 +371,7 @@
     </docs-item>
 
     <docs-item title="Usage" v-else>
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -454,39 +454,39 @@ export default {
       is_html: true,
       button_roles: `<o-button text="Primary" />
 <o-button text="Secondary" role="secondary" />`,
-      button_roles_html: `<button type="button" class="button">Primary</button>
-<button type="button" class="button button--secondary">Secondary</button>`,
+      button_roles_html: `<button type="button" class="o-button">Primary</button>
+<button type="button" class="o-button o-button--secondary">Secondary</button>`,
 
       button_sizes: `<o-button text="Large" size="large" />
 <o-button text="Regular" />
 <o-button text="Small" size="small" />`,
-      button_sizes_html: `<button type="button" class="button button--large">
+      button_sizes_html: `<button type="button" class="o-button o-button--large">
   Large
 </button>
 
-<button type="button" class="button">
+<button type="button" class="o-button">
   Regular
 </button>
 
-<button type="button" class="button button--small">
+<button type="button" class="o-button o-button--small">
   Small
 </button>`,
 
       button_wide: `<o-button text="Continue" size="large" icon="arrow-right" wide />`,
-      button_wide_html: `<button type="button" class="button button--large button--wide">Continue<i class="icon-arrow-right"></i></button>`,
+      button_wide_html: `<button type="button" class="o-button o-button--large o-button--wide">Continue<i class="o-icon-arrow-right"></i></button>`,
 
       button_variants: `<o-button text="Primary basic" variant="basic" />
 <o-button text="Secondary basic" role="secondary" variant="basic" />`,
-      button_variants_html: `<button type="button" class="button button--basic">Primary basic</button>
-<button type="button" class="button button--secondary button--basic">Secondary basic</button>`,
+      button_variants_html: `<button type="button" class="o-button o-button--basic">Primary basic</button>
+<button type="button" class="o-button o-button--secondary o-button--basic">Secondary basic</button>`,
 
       button_icon: `<o-button icon="delete" />
 <o-button text="Continue" icon="arrow-right" />`,
-      button_icon_html: `<button type="button" class="button button--icon-only"><i class="icon-remove"></i></button>
-<button type="button" class="button">Continue<i class="icon-arrow-right"></i></button>`,
+      button_icon_html: `<button type="button" class="o-button o-button--icon-only"><i class="o-icon-remove"></i></button>
+<button type="button" class="o-button">Continue<i class="o-icon-arrow-right"></i></button>`,
 
       button_disabled: `<o-button text="Can't touch this" disabled />`,
-      button_disabled_html: `<button type="button" class="button" disabled="disabled">Can't touch this</button>`,
+      button_disabled_html: `<button type="button" class="o-button" disabled="disabled">Can't touch this</button>`,
 
       button_colors: `<o-button text="Button" />
 <o-button text="Button" role="secondary" />
@@ -512,8 +512,8 @@ export default {
 <o-button text="Button" color="gray" role="secondary" />
 <o-button text="Button" color="white" />
 <o-button text="Button" color="white" role="secondary" />`,
-      button_colors_html: `<button type="button" class="button button--color-{color}">Button</button>
-<button type="button" class="button button--color-{color} button--{role}">Button</button>`,
+      button_colors_html: `<button type="button" class="o-button o-button--color-{color}">Button</button>
+<button type="button" class="o-button o-button--color-{color} o-button--{role}">Button</button>`,
 
       button_inverted: `<o-button text="Button" inverted />
 <o-button text="Button" role="secondary" inverted />
@@ -539,8 +539,8 @@ export default {
 <o-button text="Button" color="gray" role="secondary" inverted />
 <o-button text="Button" color="white" inverted />
 <o-button text="Button" color="white" role="secondary" inverted />`,
-      button_inverted_html: `<button type="button" class="button button--color-{color} button--inverted">Button</button>
-<button type="button" class="button button--color-{color} button--{role} button--inverted">Button</button>`
+      button_inverted_html: `<button type="button" class="o-button o-button--color-{color} o-button--inverted">Button</button>
+<button type="button" class="o-button o-button--color-{color} o-button--{role} o-button--inverted">Button</button>`
     }
   }
 }

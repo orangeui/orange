@@ -19,7 +19,7 @@ const Textarea = (function() {
   }
 
   const Selectors = {
-    _textarea: '.form .form__textarea',
+    _textarea: '.o-form .o-form__textarea',
     _read_only: 'readonly',
     auto_expand: 'data-auto-expand'
   }
@@ -54,7 +54,7 @@ const Textarea = (function() {
     let textarea = event.target;
     let textarea_readonly = textarea.getAttribute('readonly') === 'readonly' || textarea.getAttribute('readonly') === '';
 
-    if (textarea.classList.contains('form__textarea')) {
+    if (textarea.classList.contains('o-form__textarea')) {
       return event.type === 'focusin' && !textarea_readonly ? textarea.classList.add(Classes._focus_class) : textarea.classList.remove(Classes._focus_class)
     }
   }
@@ -77,7 +77,7 @@ const Textarea = (function() {
     let textarea_has_text = textarea.value !== '' && textarea.value !== null;
     let auto_expand_enabled = event.target.hasAttribute(Textarea.auto_expand)
 
-    if (textarea.classList.contains('form__textarea')) {
+    if (textarea.classList.contains('o-form__textarea')) {
       if (auto_expand_enabled) {
         autoExpandTextarea(event)
       }

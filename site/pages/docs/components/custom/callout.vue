@@ -14,7 +14,7 @@
     <!-- Basic -->
     <docs-item title="Basic" :code="callout_html" v-if="is_html">
       <div slot="body">
-        <div class="callout">
+        <div class="o-callout">
           <p>Orange color lies between red and yellow on the light spectrum</p>
         </div>
       </div>
@@ -33,7 +33,7 @@
     <!-- With a shadow  -->
     <docs-item title="With a shadow" :code="callout_shadow_html" v-if="is_html">
       <div slot="body">
-        <div class="callout callout--color-white callout--shadow">
+        <div class="o-callout o-callout--color-white o-callout--shadow">
           <p>Orange color lies between red and yellow on the light spectrum</p>
         </div>
       </div>
@@ -53,7 +53,7 @@
     <!-- With action  -->
     <docs-item title="With an action" :code="callout_action_html" v-if="is_html">
       <div slot="body">
-        <div class="callout callout--color-green callout--action">
+        <div class="o-callout o-callout--color-green o-callout--action">
           <p>Click here to claim a free hat</p>
         </div>
       </div>
@@ -67,7 +67,7 @@
       <div slot="body">
         <div class="grid">
           <div class="col-3">
-            <div class="callout">
+            <div class="o-callout">
               <h1>28K</h1>
               <p>
                 <strong>Impressions</strong><br>
@@ -76,7 +76,7 @@
             </div>
           </div>
           <div class="col-3">
-            <div class="callout">
+            <div class="o-callout">
               <h1>285</h1>
               <p>
                 <strong>Clicks</strong><br>
@@ -85,7 +85,7 @@
             </div>
           </div>
           <div class="col-3">
-            <div class="callout">
+            <div class="o-callout">
               <h1>1106</h1>
               <p>
                 <strong>Engagements</strong><br>
@@ -94,7 +94,7 @@
             </div>
           </div>
           <div class="col-3">
-            <div class="callout">
+            <div class="o-callout">
               <h1>$724</h1>
               <p>
                 <strong>Sales</strong><br>
@@ -114,24 +114,24 @@
       <div slot="body">
         <div class="grid">
           <div class="col-3">
-            <div class="callout callout--color-primary callout--action">
-              <div class="callout__image"><img src="https://fomo.com/static/images/app/dashboard/google-analytics.svg" alt="Callout #1"></div>
+            <div class="o-callout o-callout--color-primary o-callout--action">
+              <div class="o-callout__image"><img src="https://fomo.com/static/images/app/dashboard/google-analytics.svg" alt="Callout #1"></div>
               <p><strong>Conversion metrics</strong><br>
                 Connect Google Analytics to see Conversions &amp; Sales metrics.
               </p>
             </div>
           </div>
           <div class="col-3">
-            <div class="callout callout callout--color-primary callout--action">
-              <div class="callout__image"><img src="https://fomo.com/static/images/app/dashboard/badges.svg" alt="Callout #3"></div>
+            <div class="o-callout o-callout--color-primary o-callout--action">
+              <div class="o-callout__image"><img src="https://fomo.com/static/images/app/dashboard/badges.svg" alt="Callout #3"></div>
               <p><strong>Achievements</strong><br>
                 Take note on your wins. Receive Badges for every milestone.
               </p>
             </div>
           </div>
           <div class="col-3">
-            <div class="callout callout callout--color-primary callout--action">
-              <div class="callout__image"><img src="https://fomo.com/static/images/app/dashboard/slack.svg" alt="Callout #4"></div>
+            <div class="o-callout o-callout--color-primary o-callout--action">
+              <div class="o-callout__image"><img src="https://fomo.com/static/images/app/dashboard/slack.svg" alt="Callout #4"></div>
               <p><strong>Real-time updates</strong><br>
                 Get informed by sending Fomo events to any #channel.
               </p>
@@ -148,27 +148,27 @@
     <docs-item title="Colors" :code="callout_colors_html" v-if="is_html">
       <ul slot="body" class="docs__simple-list">
         <li>
-          <div class="callout callout--color-white callout--shadow">
+          <div class="o-callout o-callout--color-white o-callout--shadow">
             <p>Click here to claim a free hat</p>
           </div>
         </li>
         <li>
-          <div class="callout callout--color-gray callout--shadow">
+          <div class="o-callout o-callout--color-gray o-callout--shadow">
             <p>Click here to claim a free hat</p>
           </div>
         </li>
         <li>
-          <div class="callout callout--color-black callout--shadow">
+          <div class="o-callout o-callout--color-black o-callout--shadow">
             <p>Click here to claim a free hat</p>
           </div>
         </li>
         <li>
-          <div class="callout callout--color-primary callout--shadow">
+          <div class="o-callout o-callout--color-primary o-callout--shadow">
             <p>Click here to claim a free hat</p>
           </div>
         </li>
         <li>
-          <div class="callout callout--color-secondary callout--shadow">
+          <div class="o-callout o-callout--color-secondary o-callout--shadow">
             <p>Click here to claim a free hat</p>
           </div>
         </li>
@@ -179,7 +179,7 @@
 
     <!-- Usage  -->
     <docs-item title="Usage" v-if="is_html">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -193,7 +193,7 @@
         <tbody>
         <tr>
           <td>color</td>
-          <td>Set with <code>.callout--color-{color}</code></td>
+          <td>Set with <code>.o-callout--color-{color}</code></td>
           <td>See <router-link :to="{ name: 'docs-global'}"><span>Colors</span></router-link> page</td>
           <td>String</td>
           <td>-</td>
@@ -202,7 +202,7 @@
         <tr>
           <td>shadow</td>
           <td>Throw a shadow</td>
-          <td><code>.callout--shadow</code></td>
+          <td><code>.o-callout--shadow</code></td>
           <td>String</td>
           <td>-</td>
           <td>-</td>
@@ -210,7 +210,7 @@
         <tr>
           <td>action</td>
           <td>Show hover effects</td>
-          <td><code>.callout--action</code></td>
+          <td><code>.o-callout--action</code></td>
           <td>String</td>
           <td>-</td>
           <td>-</td>
@@ -221,7 +221,7 @@
 
     <!-- Usage  -->
     <docs-item title="Usage" v-else>
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -267,21 +267,21 @@ export default {
   data () {
     return {
       is_html: true,
-      callout_html: `<div class="callout">
+      callout_html: `<div class="o-callout">
   <p>Orange color lies between red and yellow on the light spectrum</p>
 </div>`,
 
-      callout_shadow_html: `<div class="callout callout--color-white callout--shadow">
+      callout_shadow_html: `<div class="o-callout o-callout--color-white o-callout--shadow">
   <p>Orange color lies between red and yellow on the light spectrum</p>
 </div>`,
 
-      callout_action_html: `<div class="callout callout--color-green callout--action">
+      callout_action_html: `<div class="o-callout o-callout--color-green o-callout--action">
   <p>Click here to claim a free hat</p>
 </div>`,
 
       callout_stats_html: `<div class="grid">
   <div class="col-3">
-    <div class="callout">
+    <div class="o-callout">
       <h1>28K</h1>
       <p>
         <strong>Impressions</strong><br>
@@ -290,7 +290,7 @@ export default {
     </div>
   </div>
   <div class="col-3">
-    <div class="callout">
+    <div class="o-callout">
       <h1>285</h1>
       <p>
         <strong>Clicks</strong><br>
@@ -299,7 +299,7 @@ export default {
     </div>
   </div>
   <div class="col-3">
-    <div class="callout">
+    <div class="o-callout">
       <h1>1106</h1>
       <p>
         <strong>Engagements</strong><br>
@@ -308,7 +308,7 @@ export default {
     </div>
   </div>
   <div class="col-3">
-    <div class="callout">
+    <div class="o-callout">
       <h1>$724</h1>
       <p>
         <strong>Sales</strong><br>
@@ -320,24 +320,24 @@ export default {
 
       callout_image_html: `<div class="grid">
   <div class="col-3">
-    <div class="callout callout--color-primary callout--action">
-      <div class="callout__image"><img src="https://fomo.com/static/images/app/dashboard/google-analytics.svg" alt="Callout #1"></div>
+    <div class="o-callout o-callout--color-primary o-callout--action">
+      <div class="o-callout__image"><img src="https://fomo.com/static/images/app/dashboard/google-analytics.svg" alt="Callout #1"></div>
       <p><strong>Conversion metrics</strong><br>
         Connect Google Analytics to see Conversions &amp; Sales metrics.
       </p>
     </div>
   </div>
   <div class="col-3">
-    <div class="callout callout callout--color-primary callout--action">
-      <div class="callout__image"><img src="https://fomo.com/static/images/app/dashboard/badges.svg" alt="Callout #3"></div>
+    <div class="o-callout o-callout--color-primary o-callout--action">
+      <div class="o-callout__image"><img src="https://fomo.com/static/images/app/dashboard/badges.svg" alt="Callout #3"></div>
       <p><strong>Achievements</strong><br>
         Take note on your wins. Receive Badges for every milestone.
       </p>
     </div>
   </div>
   <div class="col-3">
-    <div class="callout callout callout--color-primary callout--action">
-      <div class="callout__image"><img src="https://fomo.com/static/images/app/dashboard/slack.svg" alt="Callout #4"></div>
+    <div class="o-callout o-callout--color-primary o-callout--action">
+      <div class="o-callout__image"><img src="https://fomo.com/static/images/app/dashboard/slack.svg" alt="Callout #4"></div>
       <p><strong>Real-time updates</strong><br>
         Get informed by sending Fomo events to any #channel.
       </p>
@@ -345,7 +345,7 @@ export default {
   </div>
 </div>`,
       
-      callout_colors_html: `<div class="callout callout--color-{color} callout--shadow">
+      callout_colors_html: `<div class="o-callout o-callout--color-{color} o-callout--shadow">
   <p>Click here to claim a free hat</p>
 </div>`
     }

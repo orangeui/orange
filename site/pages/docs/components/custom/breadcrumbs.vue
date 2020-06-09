@@ -15,11 +15,11 @@
     <docs-item title="Basic" :code="breadcrumbs_html" v-if="is_html">
 
       <div slot="body">
-        <nav class="breadcrumbs">
+        <nav class="o-breadcrumbs">
           <ul>
             <li>
               <a class="is-active">
-                <span class="icon-integrations"></span>
+                <span class="o-icon-integrations"></span>
                 First
               </a>
             </li>
@@ -63,15 +63,15 @@
     <docs-item title="With a back button" :code="breadcrumbs_back_button_html" v-if="is_html">
 
       <div slot="body">
-        <nav class="breadcrumbs">
-          <a href="/" class="breadcrumbs__button">
+        <nav class="o-breadcrumbs">
+          <a href="/" class="o-breadcrumbs__button">
             Back
           </a>
 
           <ul>
             <li>
               <a class="is-active">
-                <span class="icon-integrations"></span>
+                <span class="o-icon-integrations"></span>
                 First
               </a>
             </li>
@@ -116,11 +116,11 @@
     <docs-item title="Full width" :code="breadcrumbs_full_width_html" v-if="is_html">
 
       <div slot="body">
-        <nav class="breadcrumbs breadcrumbs--full">
+        <nav class="o-breadcrumbs o-breadcrumbs--full">
           <ul>
             <li>
               <a class="is-active">
-                <span class="icon-integrations"></span>
+                <span class="o-icon-integrations"></span>
                 First
               </a>
             </li>
@@ -162,11 +162,11 @@
     <docs-item title="Steps" :code="breadcrumbs_steps_html" v-if="is_html">
 
       <div slot="body">
-        <nav class="breadcrumbs breadcrumbs--full">
+        <nav class="o-breadcrumbs o-breadcrumbs--full">
           <ul>
             <li>
               <a class="is-active">
-                <span class="icon-integrations"></span>
+                <span class="o-icon-integrations"></span>
                 First
               </a>
             </li>
@@ -209,11 +209,11 @@
 
       <ul slot="body" class="docs__simple-list">
         <li>
-          <nav class="breadcrumbs breadcrumbs--color-primary">
+          <nav class="o-breadcrumbs o-breadcrumbs--color-primary">
             <ul>
               <li>
                 <a class="is-active">
-                  <span class="icon-integrations"></span>
+                  <span class="o-icon-integrations"></span>
                   First
                 </a>
               </li>
@@ -236,11 +236,11 @@
           </nav>
         </li>
         <li>
-          <nav class="breadcrumbs breadcrumbs--color-secondary">
+          <nav class="o-breadcrumbs o-breadcrumbs--color-secondary">
             <ul>
               <li>
                 <a class="is-active">
-                  <span class="icon-integrations"></span>
+                  <span class="o-icon-integrations"></span>
                   First
                 </a>
               </li>
@@ -364,7 +364,7 @@
 
     <!-- Usage  -->
     <docs-item title="Usage" v-if="is_html">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -378,7 +378,7 @@
         <tbody>
         <tr>
           <td>size</td>
-          <td>Set with <code>.breadcrumbs--{size}</code></td>
+          <td>Set with <code>.o-breadcrumbs--{size}</code></td>
           <td><code>full</code>.</td>
           <td>String</td>
           <td>-</td>
@@ -386,7 +386,7 @@
         </tr>
         <tr>
           <td>color</td>
-          <td>Set with <code>.breadcrumbs--color-{color}</code> class</td>
+          <td>Set with <code>.o-breadcrumbs--color-{color}</code> class</td>
           <td>See <router-link :to="{ name: 'docs-global'}"><span>Colors</span></router-link> page</td>
           <td>String</td>
           <td>-</td>
@@ -397,7 +397,7 @@
     </docs-item>
 
     <docs-item title="Usage" v-else>
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -455,11 +455,11 @@ export default {
   <o-breadcrumbs-item tag="a">Third</o-breadcrumbs-item>
   <o-breadcrumbs-item tag="a">Fourth</o-breadcrumbs-item>
 </o-breadcrumbs>`,
-      breadcrumbs_html: `<nav class="breadcrumbs">
+      breadcrumbs_html: `<nav class="o-breadcrumbs">
   <ul>
     <li>
       <a class="is-active">
-        <span class="icon-integrations"></span>
+        <span class="o-icon-integrations"></span>
         First
       </a>
     </li>
@@ -487,15 +487,15 @@ export default {
   <o-breadcrumbs-item tag="a">Third</o-breadcrumbs-item>
   <o-breadcrumbs-item tag="a">Fourth</o-breadcrumbs-item>
 </o-breadcrumbs>`,
-      breadcrumbs_back_button_html: `<nav class="breadcrumbs">
-  <a href="/" class="breadcrumbs__button is-active">
+      breadcrumbs_back_button_html: `<nav class="o-breadcrumbs">
+  <a href="/" class="o-breadcrumbs__button is-active">
     Back
   </a>
 
   <ul>
     <li>
       <a class="is-active">
-        <span class="icon-integrations"></span>
+        <span class="o-icon-integrations"></span>
         First
       </a>
     </li>
@@ -523,11 +523,11 @@ export default {
   <o-breadcrumbs-item tag="a">Third</o-breadcrumbs-item>
   <o-breadcrumbs-item tag="a">Fourth</o-breadcrumbs-item>
 </o-breadcrumbs>`,
-      breadcrumbs_full_width_html: `<nav class="breadcrumbs breadcrumbs--full">
+      breadcrumbs_full_width_html: `<nav class="o-breadcrumbs o-breadcrumbs--full">
   <ul>
     <li>
       <a class="is-active">
-        <span class="icon-integrations"></span>
+        <span class="o-icon-integrations"></span>
         First
       </a>
     </li>
@@ -555,11 +555,11 @@ export default {
   <o-breadcrumbs-item tag="a">Third</o-breadcrumbs-item>
   <o-breadcrumbs-item tag="a">Fourth</o-breadcrumbs-item>
 </o-breadcrumbs>`,
-      breadcrumbs_steps_html: `<nav class="breadcrumbs breadcrumbs--full">
+      breadcrumbs_steps_html: `<nav class="o-breadcrumbs o-breadcrumbs--full">
   <ul>
     <li>
       <a class="is-active">
-        <span class="icon-integrations"></span>
+        <span class="o-icon-integrations"></span>
         First
       </a>
     </li>
@@ -630,11 +630,11 @@ export default {
 <o-breadcrumbs color="white">
   ...
 </o-breadcrumbs>`,
-      breadcrumbs_colors_html: `<nav class="breadcrumbs breadcrumbs--color-{color}">
+      breadcrumbs_colors_html: `<nav class="o-breadcrumbs o-breadcrumbs--color-{color}">
   <ul>
     <li>
       <a class="is-active">
-        <span class="icon-integrations"></span>
+        <span class="o-icon-integrations"></span>
         First
       </a>
     </li>

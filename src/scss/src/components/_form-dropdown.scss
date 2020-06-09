@@ -145,7 +145,7 @@
 --------------------------------------------------*/
 
 /** Open and with a value */
-.o-form-dropdown.o-is-open,
+.o-form-dropdown.is-open,
 .o-form-dropdown.has-focus,
 .o-form-dropdown.has-value {
 
@@ -164,7 +164,7 @@
 }
 
 /** Open */
-.o-form-dropdown.o-is-open {
+.o-form-dropdown.is-open {
   z-index: 10;
 
   .o-form-dropdown__label {
@@ -256,8 +256,8 @@
     height: $o-input-height;
   }
 
-  &.o-is-opened,
-  &.o-is-open {
+  &.is-opened,
+  &.is-open {
     .o-form-dropdown__search-text {
       z-index: -1;
     }
@@ -286,7 +286,7 @@
 
     &.has-focus,
     &.has-value,
-    &.o-is-open {
+    &.is-open {
       .o-form-dropdown__label {
         padding: $o-dropdown-large-action-label-padding;
         font-size: $o-dropdown-large-action-label-font-size;

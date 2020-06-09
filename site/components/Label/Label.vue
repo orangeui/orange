@@ -1,8 +1,8 @@
 <template>
-  <span class="label" :class="classes">
+  <span class="o-label" :class="classes">
     {{ text }}
 
-    <i v-if="dismiss || icon" :class="`icon-${dismiss ? 'x' : icon}`"></i>
+    <i v-if="dismiss || icon" :class="`o-icon-${dismiss ? 'x' : icon}`"></i>
   </span>
 </template>
 
@@ -41,9 +41,9 @@ export default {
   computed: {
     classes () {
       return {
-        [`label--${this.color}`]: this.color,
-        [`label--${this.size}`]: this.size,
-        [`label--dismiss`]: this.dismiss
+        [`o-label--${this.color}`]: this.color,
+        [`o-label--${this.size}`]: this.size,
+        [`o-label--dismiss`]: this.dismiss
       }
     }
   }
