@@ -41,7 +41,7 @@
         <tbody>
           <tr>
             <td>bg-color</td>
-            <td>See <router-link :to="{ name: 'docs-global'}"><span>Colors</span></router-link> page for possible values</td>
+            <td>See <router-link :to="{ name: 'docs-global-colors'}"><span>Colors</span></router-link> page for possible values</td>
             <td>Class</td>
             <td><code>.bg-{color}</code></td>
           </tr>

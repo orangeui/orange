@@ -328,7 +328,7 @@
         </tr>
         <tr>
           <td>icon</td>
-          <td>Add an icon to a button like <code>.icon-{icon-name}</code></td>
+          <td>Add an icon to a button like <code>.o-icon-{icon-name}</code></td>
           <td>See <router-link :to="{ name: 'docs-global-icons'}"><span>Icons</span></router-link> page</td>
           <td>String</td>
           <td>-</td>
@@ -337,7 +337,7 @@
         <tr>
           <td>color</td>
           <td>Set with <code>.o-button--color-{color}</code></td>
-          <td>See <router-link :to="{ name: 'docs-global'}"><span>Colors</span></router-link> page</td>
+          <td>See <router-link :to="{ name: 'docs-global-colors'}"><span>Colors</span></router-link> page</td>
           <td>String</td>
           <td>-</td>
           <td>primary</td>
@@ -412,7 +412,7 @@
         </tr>
         <tr>
           <td>color</td>
-          <td>See <router-link :to="{ name: 'docs-global'}"><span>Colors</span></router-link> page for possible values</td>
+          <td>See <router-link :to="{ name: 'docs-global-colors'}"><span>Colors</span></router-link> page for possible values</td>
           <td>String</td>
           <td>false</td>
           <td>primary</td>
