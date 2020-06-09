@@ -19,21 +19,21 @@
     <!-- Usage  -->
     <docs-item title="Block" :code="block_html">
       <div slot="body">
-        <img class="image block-left" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
+        <img class="o-image block-left" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
 
-        <img class="image block-center" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
+        <img class="o-image block-center" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
 
-        <img class="image block-right" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />
+        <img class="o-image block-right" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />
       </div>
     </docs-item>
 
     <docs-item title="Flex" :code="flex_html">
       <div slot="body">
-        <img class="image flex-left" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
+        <img class="o-image flex-left" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
 
-        <img class="image flex-center" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
+        <img class="o-image flex-center" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
 
-        <img class="image flex-right" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />
+        <img class="o-image flex-right" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />
       </div>
     </docs-item>
 
@@ -41,11 +41,11 @@
       <div slot="body">
         <p>Apply responsive align to elements <code>.{breakpoint}:block-{align}</code> or <code>.{breakpoint}:flex-{align}</code> classes</p>
 
-        <img class="image block-left lg:block-center" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
+        <img class="o-image block-left lg:block-center" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
 
-        <img class="image flex-center lg:flex-right" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
+        <img class="o-image flex-center lg:flex-right" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
 
-        <img class="image flex-right lg:flex-left" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />
+        <img class="o-image flex-right lg:flex-left" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />
       </div>
     </docs-item>
 
@@ -100,21 +100,21 @@ $border-radiuses: (
   1: $border-radius-base * 2,   // 6px
   'full': 50%                   // 50%
 );`,   
-      block_html: `<img class="image block-left" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
+      block_html: `<img class="o-image block-left" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
 
-<img class="image block-center" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
+<img class="o-image block-center" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
 
-<img class="image block-right" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />`,
-      flex_html: `<img class="image flex-left" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
+<img class="o-image block-right" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />`,
+      flex_html: `<img class="o-image flex-left" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
 
-<img class="image flex-center" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
+<img class="o-image flex-center" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
 
-<img class="image flex-right" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />`,
-      responsive_html: `<img class="image block-left lg:block-center" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
+<img class="o-image flex-right" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />`,
+      responsive_html: `<img class="o-image block-left lg:block-center" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
 
-<img class="image flex-center lg:flex-right" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
+<img class="o-image flex-center lg:flex-right" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
 
-<img class="image flex-right lg:flex-left" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />`
+<img class="o-image flex-right lg:flex-left" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />`
     }
   }
 }

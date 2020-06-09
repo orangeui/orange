@@ -262,7 +262,7 @@
         <tr>
           <td>color</td>
           <td>Set with <code>.o-nav--color-{color}</code></td>
-          <td>See <router-link :to="{ name: 'docs-global'}"><span>Colors</span></router-link> page</td>
+          <td>See <router-link :to="{ name: 'docs-global-colors'}"><span>Colors</span></router-link> page</td>
           <td>String</td>
           <td>-</td>
           <td>-</td>

@@ -90,7 +90,7 @@
         <tbody>
         <tr>
           <td>size</td>
-          <td>Set with <code>.o-form--large</code> on <code>.form</code></td>
+          <td>Set with <code>.o-form--large</code> on <code>.o-form</code></td>
           <td><code>large</code></td>
           <td>string</td>
           <td>-</td>
@@ -98,7 +98,7 @@
         </tr>
         <tr>
           <td>disabled</td>
-          <td>Set with <code>.is-disabled</code> on <code>.form-dropdown</code></td>
+          <td>Set with <code>.is-disabled</code> on <code>.o-form-dropdown</code></td>
           <td><code>disabled</code></td>
           <td>string</td>
           <td>-</td>
