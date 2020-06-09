@@ -12,8 +12,8 @@
 
     <!-- Basic  -->
     <docs-item title="Basic" :code="checkbox_basic_html" v-if="is_html">
-      <form class="form" slot="body">
-        <div class="checkbox">
+      <form class="o-form" slot="body">
+        <div class="o-checkbox">
           <input type="checkbox" id="checkbox_basic">
           <label for="checkbox_basic">Label</label>
         </div>
@@ -21,7 +21,7 @@
     </docs-item>
 
     <docs-item title="Basic" :code="checkbox_basic" v-else>
-      <form class="form" slot="body">
+      <form class="o-form" slot="body">
         <o-checkbox
           v-model="form_model_checkbox_basic"
           id="checkbox_basic"
@@ -32,39 +32,39 @@
 
     <!-- Group  -->
     <docs-item title="Group" :code="checkbox_group_html" v-if="is_html">
-      <form class="form" slot="body">
-        <div class="form__item">
-          <div class="checkbox-group">
-            <div class="checkbox-group__label">Group label</div>
+      <form class="o-form" slot="body">
+        <div class="o-form__item">
+          <div class="o-checkbox-group">
+            <div class="o-checkbox-group__label">Group label</div>
 
-            <div class="checkbox">
+            <div class="o-checkbox">
               <input type="checkbox" id="checkbox_1">
               <label for="checkbox_1">First label</label>
             </div>
 
-            <div class="checkbox">
+            <div class="o-checkbox">
               <input type="checkbox" id="checkbox_2">
               <label for="checkbox_2">Second label</label>
             </div>
 
-            <div class="checkbox">
+            <div class="o-checkbox">
               <input type="checkbox" id="checkbox_3">
               <label for="checkbox_3">Third label</label>
             </div>
 
-            <div class="checkbox">
+            <div class="o-checkbox">
               <input type="checkbox" disabled="disabled" id="checkbox_4">
               <label for="checkbox_4">Fourth label</label>
             </div>
           </div>
 
-          <div class="form__description">Description text</div>
+          <div class="o-form__description">Description text</div>
         </div>
       </form>
     </docs-item>
 
     <docs-item title="Group" :code="checkbox_group" v-else>
-      <form class="form" slot="body">
+      <form class="o-form" slot="body">
         <o-checkbox-group label="Group label" description="Description text">
 
           <o-checkbox
@@ -97,7 +97,7 @@
 
     <!-- Usage  -->
     <docs-item title="Usage" v-if="is_html">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
           <tr>
           <th>Attribute</th>
@@ -130,7 +130,7 @@
     </docs-item>
 
     <docs-item title="Usage" v-else>
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
           <tr>
             <th>Attribute</th>
@@ -175,7 +175,7 @@
 
     <!-- Group usage  -->
     <docs-item title="Usage (group)" v-if="!is_html">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
           <tr>
             <th>Attribute</th>
@@ -224,8 +224,8 @@ export default {
   id="checkbox_basic"
   :label="'Label'"
 />`,
-      checkbox_basic_html: `<form class="form">
-  <div class="checkbox">
+      checkbox_basic_html: `<form class="o-form">
+  <div class="o-checkbox">
     <input type="checkbox" id="checkbox_basic">
     <label for="checkbox_basic">Label</label>
   </div>
@@ -259,33 +259,33 @@ export default {
   />
 
 </o-checkbox-group>`,
-      checkbox_group_html: `<form class="form">
-  <div class="form__item">
-    <div class="checkbox-group">
-      <div class="checkbox-group__label">Group label</div>
+      checkbox_group_html: `<form class="o-form">
+  <div class="o-form__item">
+    <div class="o-checkbox-group">
+      <div class="o-checkbox-group__label">Group label</div>
 
-      <div class="checkbox">
+      <div class="o-checkbox">
         <input type="checkbox" id="checkbox_1">
         <label for="checkbox_1">First label</label>
       </div>
 
-      <div class="checkbox">
+      <div class="o-checkbox">
         <input type="checkbox" id="checkbox_2">
         <label for="checkbox_2">Second label</label>
       </div>
 
-      <div class="checkbox">
+      <div class="o-checkbox">
         <input type="checkbox" id="checkbox_3">
         <label for="checkbox_3">Third label</label>
       </div>
 
-      <div class="checkbox">
+      <div class="o-checkbox">
         <input type="checkbox" disabled="disabled" id="checkbox_4">
         <label for="checkbox_4">Fourth label</label>
       </div>
     </div>
 
-    <div class="form__description">Description text</div>
+    <div class="o-form__description">Description text</div>
   </div>
 </form>`
     }

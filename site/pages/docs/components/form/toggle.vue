@@ -14,12 +14,12 @@
     <docs-item title="Basic" :code="toggle_basic">
       <ul slot="body" class="docs__simple-list">
         <li>
-          <form class="form">
-            <div class="form__item">
-              <div class="toggle is-checked">
-                <div class="toggle__button">
-                  <input type="checkbox" id="toggle_basic" class="toggle__input" checked>
-                  <label class="toggle__label" for="toggle_basic"></label>
+          <form class="o-form">
+            <div class="o-form__item">
+              <div class="o-toggle is-checked">
+                <div class="o-toggle__button">
+                  <input type="checkbox" id="toggle_basic" class="o-toggle__input" checked>
+                  <label class="o-toggle__label" for="toggle_basic"></label>
                 </div>
               </div>
             </div>
@@ -32,11 +32,11 @@
     <docs-item title="With a label" :code="toggle_label">
       <ul slot="body" class="docs__simple-list">
         <li>
-          <div class="form__item">
-            <div class="toggle toggle--label">
-              <div class="toggle__button">
-                <input type="checkbox" id="toggle_with_label" class="toggle__input">
-                <label class="toggle__label" for="toggle_with_label">Label</label>
+          <div class="o-form__item">
+            <div class="o-toggle o-toggle--label">
+              <div class="o-toggle__button">
+                <input type="checkbox" id="toggle_with_label" class="o-toggle__input">
+                <label class="o-toggle__label" for="toggle_with_label">Label</label>
               </div>
             </div>
           </div>
@@ -46,40 +46,40 @@
 
     <!-- Sizes -->
     <docs-item title="Large" :code="toggle_large">
-      <form class="form" slot="body">
-        <div class="form__item">
-          <div class="toggle toggle--label toggle--large is-checked">
-            <div class="toggle__button">
-              <input type="checkbox" id="toggle_large" class="toggle__input" checked>
-              <label class="toggle__label" for="toggle_large"></label>
+      <form class="o-form" slot="body">
+        <div class="o-form__item">
+          <div class="o-toggle o-toggle--label o-toggle--large is-checked">
+            <div class="o-toggle__button">
+              <input type="checkbox" id="toggle_large" class="o-toggle__input" checked>
+              <label class="o-toggle__label" for="toggle_large"></label>
             </div>
             <div>
-              <label class="toggle__text" for="toggle_large">Label</label>
-              <div class="toggle__value">On</div>
+              <label class="o-toggle__text" for="toggle_large">Label</label>
+              <div class="o-toggle__value">On</div>
             </div>
           </div>
-          <div class="form__description">Description text</div>
+          <div class="o-form__description">Description text</div>
         </div>
       </form>
     </docs-item>
 
     <!-- Custom value names -->
     <docs-item title="Custom value names" :code="toggle_large_custom">
-      <form class="form" slot="body">
-        <div class="form__item">
-          <div class="toggle toggle--label toggle--large is-checked">
-            <div class="toggle__button">
-              <input type="checkbox" id="toggle_large_custom" class="toggle__input" checked>
-              <label class="toggle__label" for="toggle_large_custom"></label>
+      <form class="o-form" slot="body">
+        <div class="o-form__item">
+          <div class="o-toggle o-toggle--label o-toggle--large is-checked">
+            <div class="o-toggle__button">
+              <input type="checkbox" id="toggle_large_custom" class="o-toggle__input" checked>
+              <label class="o-toggle__label" for="toggle_large_custom"></label>
             </div>
             <div>
-              <label class="toggle__text" for="toggle_large_custom">Custom value</label>
-              <div class="toggle__value" data-enabled="Enabled" data-disabled="Disabled">
+              <label class="o-toggle__text" for="toggle_large_custom">Custom value</label>
+              <div class="o-toggle__value" data-enabled="Enabled" data-disabled="Disabled">
                 Enabled
               </div>
             </div>
           </div>
-          <div class="form__description">Description text</div>
+          <div class="o-form__description">Description text</div>
         </div>
       </form>
     </docs-item>
@@ -88,11 +88,11 @@
     <docs-item title="Colors" :code="toggle_colors">
       <ul slot="body" class="docs__simple-list">
         <li v-for="color in toggle_colors_array">
-          <div class="form__item">
-            <div class="toggle toggle--color-primary is-checked" :class="[ color ? `toggle--color-${color}` : '' ]">
-              <div class="toggle__button">
-                <input type="checkbox" :id="[ color ? `toggle--color-${color}` : '' ]" class="toggle__input" checked>
-                <label class="toggle__label" :for="[ color ? `toggle--color-${color}` : '' ]"></label>
+          <div class="o-form__item">
+            <div class="o-toggle o-toggle--color-primary is-checked" :class="[ color ? `o-toggle--color-${color}` : '' ]">
+              <div class="o-toggle__button">
+                <input type="checkbox" :id="[ color ? `o-toggle--color-${color}` : '' ]" class="o-toggle__input" checked>
+                <label class="o-toggle__label" :for="[ color ? `o-toggle--color-${color}` : '' ]"></label>
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@
 
     <!-- Toggle usage  -->
     <docs-item title="Usage">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
           <tr>
             <th>Attribute</th>
@@ -116,15 +116,15 @@
         <tbody>
           <tr>
             <td>label</td>
-            <td>To use it with label set <code>.toggle--label</code> class</td>
-            <td><code>toggle--label</code></td>
+            <td>To use it with label set <code>.o-toggle--label</code> class</td>
+            <td><code>o-toggle--label</code></td>
             <td>String</td>
             <td>-</td>
             <td>-</td>
           </tr>
           <tr>
             <td>color</td>
-            <td>Set with <code>.toggle--color-{color}</code> class</td>
+            <td>Set with <code>.o-toggle--color-{color}</code> class</td>
             <td>See <router-link :to="{ name: 'docs-global'}"><span>Colors</span></router-link> page</td>
             <td>String</td>
             <td>-</td>
@@ -132,7 +132,7 @@
           </tr>
           <tr>
             <td>size</td>
-            <td>Set with <code>.toggle--large</code> class</td>
+            <td>Set with <code>.o-toggle--large</code> class</td>
             <td><code>large</code></td>
             <td>String</td>
             <td>-</td>
@@ -140,7 +140,7 @@
           </tr>
           <tr>
             <td>disabled</td>
-            <td>Set with <code>.is-disabled</code> on <code>.toggle</code> and put <code>disabled</code> to input</td>
+            <td>Set with <code>.is-disabled</code> on <code>.o-toggle</code> and put <code>disabled</code> to input</td>
             <td><code>is-disabled</code></td>
             <td>String</td>
             <td>-</td>
@@ -148,7 +148,7 @@
           </tr>
           <tr>
             <td>data-enabled</td>
-            <td>Set with data attribute <code>data-enabled="Custom enabled string"</code> on <code>.toggle__value</code></td>
+            <td>Set with data attribute <code>data-enabled="Custom enabled string"</code> on <code>.o-toggle__value</code></td>
             <td><code>data-enabled</code></td>
             <td>String</td>
             <td>-</td>
@@ -156,7 +156,7 @@
           </tr>
           <tr>
             <td>data-disabled</td>
-            <td>Set with data attribute <code>data-disabled="Custom disabled string"</code> on <code>.toggle__value</code></td>
+            <td>Set with data attribute <code>data-disabled="Custom disabled string"</code> on <code>.o-toggle__value</code></td>
             <td><code>data-disabled</code></td>
             <td>String</td>
             <td>-</td>
@@ -191,64 +191,64 @@ export default {
         'black',
         'gray'
       ],
-      toggle_basic: `<form class="form">
-  <div class="form__item">
-    <div class="toggle is-checked">
-      <div class="toggle__button">
-        <input type="checkbox" id="toggle_basic" class="toggle__input" checked>
-        <label class="toggle__label" for="toggle_basic"></label>
+      toggle_basic: `<form class="o-form">
+  <div class="o-form__item">
+    <div class="o-toggle is-checked">
+      <div class="o-toggle__button">
+        <input type="checkbox" id="toggle_basic" class="o-toggle__input" checked>
+        <label class="o-toggle__label" for="toggle_basic"></label>
       </div>
     </div>
   </div>
 </form>`,
-      toggle_label: `<form class="form">
-  <div class="form__item">
-    <div class="toggle toggle--label">
-      <div class="toggle__button">
-        <input type="checkbox" id="toggle_with_label" class="toggle__input">
-        <label class="toggle__label" for="toggle_with_label">Label</label>
+      toggle_label: `<form class="o-form">
+  <div class="o-form__item">
+    <div class="o-toggle o-toggle--label">
+      <div class="o-toggle__button">
+        <input type="checkbox" id="toggle_with_label" class="o-toggle__input">
+        <label class="o-toggle__label" for="toggle_with_label">Label</label>
       </div>
     </div>
   </div>
 </form>`,
-      toggle_large: `<form class="form">
-  <div class="form__item">
-    <div class="toggle toggle--label toggle--large is-checked">
-      <div class="toggle__button">
-        <input type="checkbox" id="toggle_large" class="toggle__input" checked>
-        <label class="toggle__label"></label>
+      toggle_large: `<form class="o-form">
+  <div class="o-form__item">
+    <div class="o-toggle o-toggle--label o-toggle--large is-checked">
+      <div class="o-toggle__button">
+        <input type="checkbox" id="toggle_large" class="o-toggle__input" checked>
+        <label class="o-toggle__label"></label>
       </div>
       <div>
-        <label class="toggle__text" for="toggle_large">Label</label>
-        <div class="toggle__value">On</div>
+        <label class="o-toggle__text" for="toggle_large">Label</label>
+        <div class="o-toggle__value">On</div>
       </div>
     </div>
-    <div class="form__description">Description text</div>
+    <div class="o-form__description">Description text</div>
   </div>
 </form>`,
-      toggle_large_custom: `<form class="form">
-  <div class="form__item">
-    <div class="toggle toggle--label toggle--large is-checked">
-      <div class="toggle__button">
-        <input type="checkbox" id="toggle_large_custom" class="toggle__input" checked>
-        <label class="toggle__label" for="toggle_large_custom"></label>
+      toggle_large_custom: `<form class="o-form">
+  <div class="o-form__item">
+    <div class="o-toggle o-toggle--label o-toggle--large is-checked">
+      <div class="o-toggle__button">
+        <input type="checkbox" id="toggle_large_custom" class="o-toggle__input" checked>
+        <label class="o-toggle__label" for="toggle_large_custom"></label>
       </div>
       <div>
-        <label class="toggle__text" for="toggle_large_custom">Custom value</label>
-        <div class="toggle__value" data-enabled="Enabled" data-disabled="Disabled">
+        <label class="o-toggle__text" for="toggle_large_custom">Custom value</label>
+        <div class="o-toggle__value" data-enabled="Enabled" data-disabled="Disabled">
           Enabled
         </div>
       </div>
     </div>
-    <div class="form__description">Description text</div>
+    <div class="o-form__description">Description text</div>
   </div>
 </form>`,
-      toggle_colors: `<form class="form">
-  <div class="form__item">
-    <div class="toggle toggle--color-{color}">
-      <div class="toggle__button">
-        <input type="checkbox" id="toggle_color" class="toggle__input">
-        <label class="toggle__label" for="toggle_color"></label>
+      toggle_colors: `<form class="o-form">
+  <div class="o-form__item">
+    <div class="o-toggle o-toggle--color-{color}">
+      <div class="o-toggle__button">
+        <input type="checkbox" id="toggle_color" class="o-toggle__input">
+        <label class="o-toggle__label" for="toggle_color"></label>
       </div>
     </div>
   </div>

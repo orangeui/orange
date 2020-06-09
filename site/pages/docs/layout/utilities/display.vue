@@ -96,7 +96,7 @@
       <div slot="body">
         <p>Apply responsive display to elements <code>.{breakpoint}:d-{key}</code> class</p>
         
-        <table class="table table--fixed table--compact table--definition table--border-bottom">
+        <table class="o-table o-table--fixed o-table--compact o-table--definition o-table--border-bottom">
           <thead>
             <th></th>
             <th>
@@ -183,7 +183,7 @@
 
     data () {
       return {
-        mapCss: `$displays: (
+        mapCss: `$o-displays: (
   'block': block,
   'inline-block': inline-block,
   'inline': inline,

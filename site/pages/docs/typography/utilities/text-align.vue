@@ -17,7 +17,7 @@
       <div slot="body">
         <p>Apply responsive align with <code>.{breakpoint}:text-{align}</code> class to text elements</p>
         
-        <table class="table table--fixed table--compact table--definition table--border-bottom">
+        <table class="o-table o-table--fixed o-table--compact o-table--definition o-table--border-bottom">
           <thead>
             <th></th>
             <th>

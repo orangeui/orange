@@ -54,7 +54,7 @@ mark {
 
 /** Inline code element */
 p code,
-.table code {
+.o-table code {
   padding: $o-spacing-small / 8 $o-spacing-small / 4;
   color: color('secondary');
   background-color: transparentize(color('secondary'), 0.95);

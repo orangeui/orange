@@ -14,7 +14,7 @@
     <docs-item title="Basic" :code="avatar_html" v-if="is_html">
       <ul slot="body" class="docs__simple-list">
         <li>
-          <div class="avatar">
+          <div class="o-avatar">
             <svg viewBox="0 0 80 80" width="80px" height="auto" xmlns="http://www.w3.org/2000/svg">
               <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
             </svg>
@@ -35,7 +35,7 @@
     <docs-item title="In circle" :code="avatar_circle_html" v-if="is_html">
       <ul slot="body" class="docs__simple-list">
         <li>
-          <div class="avatar avatar--circle">
+          <div class="o-avatar o-avatar--circle">
             <svg viewBox="0 0 80 80" width="80px" height="auto" xmlns="http://www.w3.org/2000/svg">
               <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
             </svg>
@@ -56,21 +56,21 @@
     <docs-item title="Sizes" :code="avatar_sizes_html" v-if="is_html">
       <ul slot="body" class="docs__simple-list">
         <li>
-          <div class="avatar avatar--size-small">
+          <div class="o-avatar o-avatar--size-small">
             <svg viewBox="0 0 80 80" width="80px" height="auto" xmlns="http://www.w3.org/2000/svg">
               <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
             </svg>
           </div>
         </li>
         <li>
-          <div class="avatar">
+          <div class="o-avatar">
             <svg viewBox="0 0 80 80" width="80px" height="auto" xmlns="http://www.w3.org/2000/svg">
               <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
             </svg>
           </div>
         </li>
         <li>
-          <div class="avatar avatar--size-large">
+          <div class="o-avatar o-avatar--size-large">
             <svg viewBox="0 0 80 80" width="80px" height="auto" xmlns="http://www.w3.org/2000/svg">
               <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
             </svg>
@@ -78,7 +78,7 @@
         </li>
         <li>
           <div style="width: 128px;">
-            <div class="avatar avatar--size-auto">
+            <div class="o-avatar o-avatar--size-auto">
               <svg viewBox="0 0 80 80" width="80px" height="auto" xmlns="http://www.w3.org/2000/svg">
                 <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
               </svg>
@@ -107,14 +107,14 @@
     <docs-item title="Colors" :code="avatar_colors_html" v-if="is_html">
       <ul slot="body" class="docs__simple-list">
         <li>
-          <div class="avatar avatar--color-primary">
+          <div class="o-avatar o-avatar--color-primary">
             <svg viewBox="0 0 80 80" width="80px" height="auto" xmlns="http://www.w3.org/2000/svg">
               <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
             </svg>
           </div>
         </li>
         <li>
-          <div class="avatar avatar--color-secondary">
+          <div class="o-avatar o-avatar--color-secondary">
             <svg viewBox="0 0 80 80" width="80px" height="auto" xmlns="http://www.w3.org/2000/svg">
               <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
             </svg>
@@ -142,7 +142,7 @@
 
     <!-- Usage  -->
     <docs-item title="Usage" v-if="is_html">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -156,7 +156,7 @@
         <tbody>
         <tr>
           <td>size</td>
-          <td>Set with <code>.avatar--{size}</code> class</td>
+          <td>Set with <code>.o-avatar--{size}</code> class</td>
           <td><code>null</code> - basic, <code>small</code>, <code>large</code>, <code>auto</code></td>
           <td>String</td>
           <td>-</td>
@@ -164,7 +164,7 @@
         </tr>
         <tr>
           <td>look</td>
-          <td>Set with <code>.avatar--{look}</code> class</td>
+          <td>Set with <code>.o-avatar--{look}</code> class</td>
           <td><code>circle</code></td>
           <td>String</td>
           <td>-</td>
@@ -172,7 +172,7 @@
         </tr>
         <tr>
           <td>color</td>
-          <td>Set with <code>.avatar--color-{color}</code> class</td>
+          <td>Set with <code>.o-avatar--color-{color}</code> class</td>
           <td>See <router-link :to="{ name: 'docs-global'}"><span>Colors</span></router-link> page</td>
           <td>String</td>
           <td>-</td>
@@ -184,7 +184,7 @@
 
     <!-- Usage  -->
     <docs-item title="Usage" v-else>
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -230,14 +230,14 @@ export default {
     return {
       is_html: true,
       avatar: `<o-avatar />`,
-      avatar_html: `<div class="avatar">
+      avatar_html: `<div class="o-avatar">
   <svg viewBox="0 0 80 80" width="80px" height="auto" xmlns="http://www.w3.org/2000/svg">
     <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
   </svg>
 </div>`,
 
       avatar_circle: `<o-avatar look="circle" />`,
-      avatar_circle_html: `<div class="avatar avatar--circle">
+      avatar_circle_html: `<div class="o-avatar o-avatar--circle">
   <svg viewBox="0 0 80 80" width="80px" height="auto" xmlns="http://www.w3.org/2000/svg">
     <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
   </svg>
@@ -250,26 +250,26 @@ export default {
 <div style="width: 128px">
   <o-avatar size="auto" />
 </div>`,
-      avatar_sizes_html: `<div class="avatar avatar--size-small">
+      avatar_sizes_html: `<div class="o-avatar o-avatar--size-small">
   <svg viewBox="0 0 80 80" width="80px" height="auto" xmlns="http://www.w3.org/2000/svg">
     <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
   </svg>
 </div>
 
-<div class="avatar">
+<div class="o-avatar">
   <svg viewBox="0 0 80 80" width="80px" height="auto" xmlns="http://www.w3.org/2000/svg">
     <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
   </svg>
 </div>
 
-<div class="avatar avatar--size-large">
+<div class="o-avatar o-avatar--size-large">
   <svg viewBox="0 0 80 80" width="80px" height="auto" xmlns="http://www.w3.org/2000/svg">
     <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
   </svg>
 </div>
 
 <div style="width: 128px;">
-  <div class="avatar avatar--size-auto">
+  <div class="o-avatar o-avatar--size-auto">
     <svg viewBox="0 0 80 80" width="80px" height="auto" xmlns="http://www.w3.org/2000/svg">
       <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
     </svg>
@@ -288,7 +288,7 @@ export default {
 <o-avatar color="black" />
 <o-avatar color="gray" />
 <o-avatar color="white" />`,
-      avatar_colors_html: `<div class="avatar avatar--color-{color}">
+      avatar_colors_html: `<div class="o-avatar o-avatar--color-{color}">
   <svg viewBox="0 0 80 80" width="80px" height="auto" xmlns="http://www.w3.org/2000/svg">
     <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
   </svg>

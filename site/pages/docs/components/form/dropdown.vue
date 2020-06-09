@@ -13,13 +13,13 @@
 
     <!-- Basic  -->
     <docs-item title="Basic" :code="dropdown_html">
-      <form class="form" slot="body">
-        <div class="form__item">
-          <div class="form-dropdown">
-            <label for="form_dropdown" class="form-dropdown__label">Label</label>
-            <input id="form_dropdown" type="text" name="form_dropdown" class="form-dropdown__input" >
-            <div class="form-dropdown__text">Placeholder</div>
-            <div class="form-dropdown__icon">
+      <form class="o-form" slot="body">
+        <div class="o-form__item">
+          <div class="o-form-dropdown">
+            <label for="form_dropdown" class="o-form-dropdown__label">Label</label>
+            <input id="form_dropdown" type="text" name="form_dropdown" class="o-form-dropdown__input" >
+            <div class="o-form-dropdown__text">Placeholder</div>
+            <div class="o-form-dropdown__icon">
               <svg viewBox="0 0 24 24">
                 <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
               </svg>
@@ -27,8 +27,8 @@
                 <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
               </svg>
             </div>
-            <div class="form-dropdown__content">
-              <ul class="form-dropdown__menu">
+            <div class="o-form-dropdown__content">
+              <ul class="o-form-dropdown__menu">
                 <li>Google</li>
                 <li>Word</li>
                 <li>Advertisement</li>
@@ -37,21 +37,21 @@
               </ul>
             </div>
           </div>
-          <div class="form__description">Description of the dropdown field</div>
+          <div class="o-form__description">Description of the dropdown field</div>
         </div>
       </form>
     </docs-item>
 
     <!-- Size large  -->
     <docs-item title="Large" :code="dropdown_large_html">
-      <form class="form form--large" slot="body">
-        <div class="form__item">
-          <div class="form-dropdown">
-            <label for="form_dropdown_large" class="form-dropdown__label">Label</label>
-            <input id="form_dropdown_large" type="text" name="form_dropdown_large" class="form-dropdown__input">
+      <form class="o-form o-form--large" slot="body">
+        <div class="o-form__item">
+          <div class="o-form-dropdown">
+            <label for="form_dropdown_large" class="o-form-dropdown__label">Label</label>
+            <input id="form_dropdown_large" type="text" name="form_dropdown_large" class="o-form-dropdown__input">
 
-            <div class="form-dropdown__text">Placeholder</div>
-            <div class="form-dropdown__icon">
+            <div class="o-form-dropdown__text">Placeholder</div>
+            <div class="o-form-dropdown__icon">
               <svg viewBox="0 0 24 24">
                 <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
               </svg>
@@ -59,8 +59,8 @@
                 <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
               </svg>
             </div>
-            <div class="form-dropdown__content">
-              <ul class="form-dropdown__menu">
+            <div class="o-form-dropdown__content">
+              <ul class="o-form-dropdown__menu">
                 <li>Google</li>
                 <li>Word</li>
                 <li>Advertisement</li>
@@ -69,14 +69,14 @@
               </ul>
             </div>
           </div>
-          <div class="form__description">Description of the dropdown field</div>
+          <div class="o-form__description">Description of the dropdown field</div>
         </div>
       </form>
     </docs-item>
 
     <!-- Usage  -->
     <docs-item title="Usage">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
           <tr>
             <th>Attribute</th>
@@ -90,7 +90,7 @@
         <tbody>
         <tr>
           <td>size</td>
-          <td>Set with <code>.form--large</code> on <code>.form</code></td>
+          <td>Set with <code>.o-form--large</code> on <code>.form</code></td>
           <td><code>large</code></td>
           <td>string</td>
           <td>-</td>
@@ -121,13 +121,13 @@ export default {
 
   data () {
     return {
-      dropdown_html: `<form class="form">
-  <div class="form__item">
-    <div id="form_dropdown" class="form-dropdown">
-      <label for="form_dropdown" class="form-dropdown__label">Label</label>
-      <input id="form_dropdown" type="text" name="form_dropdown" class="form-dropdown__input" >
-      <div class="form-dropdown__text">Placeholder</div>
-      <div class="form-dropdown__icon">
+      dropdown_html: `<form class="o-form">
+  <div class="o-form__item">
+    <div id="form_dropdown" class="o-form-dropdown">
+      <label for="form_dropdown" class="o-form-dropdown__label">Label</label>
+      <input id="form_dropdown" type="text" name="form_dropdown" class="o-form-dropdown__input" >
+      <div class="o-form-dropdown__text">Placeholder</div>
+      <div class="o-form-dropdown__icon">
         <svg viewBox="0 0 24 24">
           <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
         </svg>
@@ -135,8 +135,8 @@ export default {
           <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
         </svg>
       </div>
-      <div class="form-dropdown__content">
-        <ul class="form-dropdown__menu">
+      <div class="o-form-dropdown__content">
+        <ul class="o-form-dropdown__menu">
           <li>Google</li>
           <li>Word</li>
           <li>Advertisement</li>
@@ -145,17 +145,17 @@ export default {
         </ul>
       </div>
     </div>
-    <div class="form__description">Description of the dropdown field</div>
+    <div class="o-form__description">Description of the dropdown field</div>
   </div>
 </form>`,
-      dropdown_large_html: `<form class="form form--large">
-  <div class="form__item">
-    <div id="form_dropdown_large" class="form-dropdown">
-      <label for="form_dropdown_large" class="form-dropdown__label">Label</label>
-      <input id="form_dropdown_large" type="text" name="form_dropdown_large" class="form-dropdown__input">
+      dropdown_large_html: `<form class="o-form o-form--large">
+  <div class="o-form__item">
+    <div id="form_dropdown_large" class="o-form-dropdown">
+      <label for="form_dropdown_large" class="o-form-dropdown__label">Label</label>
+      <input id="form_dropdown_large" type="text" name="form_dropdown_large" class="o-form-dropdown__input">
 
-      <div class="form-dropdown__text">Placeholder</div>
-      <div class="form-dropdown__icon">
+      <div class="o-form-dropdown__text">Placeholder</div>
+      <div class="o-form-dropdown__icon">
         <svg viewBox="0 0 24 24">
           <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
         </svg>
@@ -163,8 +163,8 @@ export default {
           <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
         </svg>
       </div>
-      <div class="form-dropdown__content">
-        <ul class="form-dropdown__menu">
+      <div class="o-form-dropdown__content">
+        <ul class="o-form-dropdown__menu">
           <li>Google</li>
           <li>Word</li>
           <li>Advertisement</li>
@@ -173,7 +173,7 @@ export default {
         </ul>
       </div>
     </div>
-    <div class="form__description">Description of the dropdown field</div>
+    <div class="o-form__description">Description of the dropdown field</div>
   </div>
 </form>`
     }

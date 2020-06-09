@@ -19,7 +19,7 @@
           Container is an element that wraps content and has gap on sides. Class <code>.container</code> limits the
           width, while <code>.container-fluid</code> is full width.
           <br>
-          Side gap can be changed with variable <code>$container-gap</code>. Default is <code>12px</code>
+          Side gap can be changed with variable <code>$o-container-gap</code>. Default is <code>12px</code>
         </p>
 
         <p>Default container widths on all the breakpoints are shown below.</p>
@@ -34,11 +34,11 @@
 
     data () {
       return {
-        container_widths: `$container-gap: 12px !default;
-$container-gap-mobile: $container-gap !default;
-$container-max-width: 100% !default;
+        container_widths: `$o-container-gap: 12px !default;
+$o-container-gap-mobile: $o-container-gap !default;
+$o-container-max-width: 100% !default;
 
-$container-max-widths: (
+$o-container-max-widths: (
   xs: 480px,
   sm: 580px,
   md: 720px,

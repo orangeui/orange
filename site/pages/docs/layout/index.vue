@@ -28,7 +28,7 @@
 
     data () {
       return {
-        breakpoints: `$breakpoints: (
+        breakpoints: `$o-breakpoints: (
   xxs: 320px,
   xs: 480px,
   sm: 640px,

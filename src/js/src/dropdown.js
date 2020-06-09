@@ -19,10 +19,10 @@ const Dropdown = (function() {
   }
 
   const Selectors = {
-    dropdown: '.form-dropdown',
-    _input: '.form-dropdown__input',
-    _option: '.form-dropdown__menu li',
-    _text: '.form-dropdown__text'
+    dropdown: '.o-form-dropdown',
+    _input: '.o-form-dropdown__input',
+    _option: '.o-form-dropdown__menu li',
+    _text: '.o-form-dropdown__text'
   }
 
   let dropdowns;
@@ -152,8 +152,8 @@ document.addEventListener('click', function (event) {
     Dropdown.activateDropdowns()
   }
 
-  const isDropdownLabel = event.target.classList.contains('form-dropdown__label') ||
-                          event.target.classList.contains('form-dropdown__text')
+  const isDropdownLabel = event.target.classList.contains('o-form-dropdown__label') ||
+                          event.target.classList.contains('o-form-dropdown__text')
 
   if (isDropdownLabel) {
     Dropdown.closeDropdowns()

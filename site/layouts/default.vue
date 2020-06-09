@@ -17,7 +17,7 @@
         </o-navigation>
       </div>
 
-      <router-link :to="{ name: 'docs'}" class="button">Get Orange</router-link>
+      <router-link :to="{ name: 'docs'}" class="o-button">Get Orange</router-link>
     </div>
 
     <nuxt />

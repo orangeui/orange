@@ -12,17 +12,17 @@
 
     <!-- Basic  -->
     <docs-item title="Basic" :code="textarea_html" v-if="is_html">
-      <form class="form form--large" slot="body">
-        <div class="form__item">
-          <textarea name="textarea" id="textarea" rows="3" class="form__textarea"></textarea>
-          <label for="textarea" class="form__label">Label</label>
-          <div class="form__description">Description text</div>
+      <form class="o-form o-form--large" slot="body">
+        <div class="o-form__item">
+          <textarea name="textarea" id="textarea" rows="3" class="o-form__textarea"></textarea>
+          <label for="textarea" class="o-form__label">Label</label>
+          <div class="o-form__description">Description text</div>
         </div>
       </form>
     </docs-item>
 
     <docs-item title="Basic" :code="textarea" v-else>
-      <form class="form form--large" slot="body">
+      <form class="o-form o-form--large" slot="body">
         <o-textarea
           v-model="form_model"
           id="textarea"
@@ -34,19 +34,19 @@
 
     <!-- Read-only  -->
     <docs-item title="Read-only" :code="textarea_read_only_html" v-if="is_html">
-      <form class="form form--large" slot="body">
-        <div class="form__item">
-          <textarea name="textarea_read_only" id="textarea_read_only" readonly rows="10" class="form__textarea has-value">Nam diam odio, aliquam at libero vel, tristique varius odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque dictum purus vitae accumsan tempor. Proin non ante purus. Proin ornare consequat sem. Integer in leo eu dolor lobortis vehicula vitae sed augue. Integer ac lorem quis urna lobortis mattis. Aenean ac metus non enim tempor pharetra maximus ut leo. Nunc imperdiet purus a felis consectetur, quis dignissim lorem semper. Etiam tristique, massa quis efficitur aliquet, ex leo efficitur magna, ac feugiat lectus tellus et risus.
+      <form class="o-form o-form--large" slot="body">
+        <div class="o-form__item">
+          <textarea name="textarea_read_only" id="textarea_read_only" readonly rows="10" class="o-form__textarea has-value">Nam diam odio, aliquam at libero vel, tristique varius odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque dictum purus vitae accumsan tempor. Proin non ante purus. Proin ornare consequat sem. Integer in leo eu dolor lobortis vehicula vitae sed augue. Integer ac lorem quis urna lobortis mattis. Aenean ac metus non enim tempor pharetra maximus ut leo. Nunc imperdiet purus a felis consectetur, quis dignissim lorem semper. Etiam tristique, massa quis efficitur aliquet, ex leo efficitur magna, ac feugiat lectus tellus et risus.
 
 Phasellus condimentum ultrices nisl, quis accumsan tortor malesuada ut. Donec mollis volutpat varius. Maecenas consequat nunc massa, non cursus magna commodo volutpat. Ut ut risus est. Pellentesque quis rutrum tellus. Proin vel lobortis velit, non consequat massa. Nam imperdiet sodales justo, pretium suscipit nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ut aliquam libero. Nunc pharetra, lorem a ultricies tristique, turpis nisi varius ligula, nec iaculis mauris ante vel lectus. Curabitur consectetur mauris nec sapien pharetra ultricies. Curabitur tempus volutpat leo finibus vulputate.</textarea>
-          <label for="textarea_read_only" class="form__label">Label</label>
-          <div class="form__description">Description text</div>
+          <label for="textarea_read_only" class="o-form__label">Label</label>
+          <div class="o-form__description">Description text</div>
         </div>
       </form>
     </docs-item>
 
     <docs-item title="Read-only" :code="textarea_read_only" v-else>
-      <form class="form form--large" slot="body">
+      <form class="o-form o-form--large" slot="body">
         <o-textarea
           v-model="form_model_read_only"
           id="textarea_read_only"
@@ -61,7 +61,7 @@ Phasellus condimentum ultrices nisl, quis accumsan tortor malesuada ut. Donec mo
 
     <!-- Validate  -->
     <docs-item title="Validate" :code="textarea_validate" v-if="!is_html">
-      <form class="form form--large" slot="body">
+      <form class="o-form o-form--large" slot="body">
         <o-textarea
           v-model="form_model_validate"
           id="textarea_validate"
@@ -75,17 +75,17 @@ Phasellus condimentum ultrices nisl, quis accumsan tortor malesuada ut. Donec mo
 
     <!-- Disabled  -->
     <docs-item title="Disabled" :code="textarea_disabled_html" v-if="is_html">
-      <form class="form form--large" slot="body">
-        <div class="form__item">
-          <textarea name="textarea_disabled" id="textarea_disabled" disabled="disabled" rows="3" class="form__textarea"></textarea>
-          <label for="textarea_disabled" class="form__label">Label</label>
-          <div class="form__description">Description text</div>
+      <form class="o-form o-form--large" slot="body">
+        <div class="o-form__item">
+          <textarea name="textarea_disabled" id="textarea_disabled" disabled="disabled" rows="3" class="o-form__textarea"></textarea>
+          <label for="textarea_disabled" class="o-form__label">Label</label>
+          <div class="o-form__description">Description text</div>
         </div>
       </form>
     </docs-item>
 
     <docs-item title="Disabled" :code="textarea_disabled" v-else>
-      <form class="form form--large" slot="body">
+      <form class="o-form o-form--large" slot="body">
         <o-textarea
           v-model="form_model_disabled"
           id="textarea_disabled"
@@ -97,18 +97,18 @@ Phasellus condimentum ultrices nisl, quis accumsan tortor malesuada ut. Donec mo
 
     <!-- Auto expand  -->
     <docs-item title="Auto expand" :code="textarea_auto_expand_html" v-if="is_html">
-      <form class="form form--large" slot="body">
-        <div class="form__item">
-          <textarea name="textarea_auto_expand" id="textarea_auto_expand" data-auto-expand rows="3" class="form__textarea"></textarea>
-          <label for="textarea_auto_expand" class="form__label">Label</label>
-          <div class="form__description">Description text</div>
+      <form class="o-form o-form--large" slot="body">
+        <div class="o-form__item">
+          <textarea name="textarea_auto_expand" id="textarea_auto_expand" data-auto-expand rows="3" class="o-form__textarea"></textarea>
+          <label for="textarea_auto_expand" class="o-form__label">Label</label>
+          <div class="o-form__description">Description text</div>
         </div>
       </form>
     </docs-item>
 
     <!-- Usage  -->
     <docs-item title="Usage" v-if="is_html">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
           <tr>
             <th>Attribute</th>
@@ -122,7 +122,7 @@ Phasellus condimentum ultrices nisl, quis accumsan tortor malesuada ut. Donec mo
         <tbody>
         <tr>
           <td>size</td>
-          <td>Set with <code>.form--large</code> on <code>.form</code></td>
+          <td>Set with <code>.o-form--large</code> on <code>.o-form</code></td>
           <td><code>large</code></td>
           <td>string</td>
           <td>-</td>
@@ -157,7 +157,7 @@ Phasellus condimentum ultrices nisl, quis accumsan tortor malesuada ut. Donec mo
     </docs-item>
 
     <docs-item title="Usage" v-else>
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -284,7 +284,7 @@ export default {
       form_model_read_only: null,
       form_model_validate: null,
       form_model_disabled: null,
-      textarea: `<form class="form form--large">
+      textarea: `<form class="o-form o-form--large">
   <o-textarea
     v-model="form_model"
     id="textarea"
@@ -292,15 +292,15 @@ export default {
     description="Description text"
   />
 </form>`,
-      textarea_html: `<form class="form form--large">
-  <div class="form__item">
-    <textarea name="textarea" id="textarea" rows="3" class="form__textarea"></textarea>
-    <label for="textarea" class="form__label">Label</label>
-    <div class="form__description">Description text</div>
+      textarea_html: `<form class="o-form o-form--large">
+  <div class="o-form__item">
+    <textarea name="textarea" id="textarea" rows="3" class="o-form__textarea"></textarea>
+    <label for="textarea" class="o-form__label">Label</label>
+    <div class="o-form__description">Description text</div>
   </div>
 </form>`,
 
-      textarea_read_only: `<form class="form form--large">
+      textarea_read_only: `<form class="o-form o-form--large">
   <o-textarea
     v-model="form_model_read_only"
     id="textarea_read_only"
@@ -309,15 +309,15 @@ export default {
     :read_only="true"
   />
 </form>`,
-      textarea_read_only_html: `<form class="form form--large">
-  <div class="form__item">
-    <textarea name="textarea_read_only" id="textarea_read_only" readonly rows="10" class="form__textarea has-value">{{ value }}</textarea>
-    <label for="textarea_read_only" class="form__label">Label</label>
-    <div class="form__description">Description text</div>
+      textarea_read_only_html: `<form class="o-form o-form--large">
+  <div class="o-form__item">
+    <textarea name="textarea_read_only" id="textarea_read_only" readonly rows="10" class="o-form__textarea has-value">{{ value }}</textarea>
+    <label for="textarea_read_only" class="o-form__label">Label</label>
+    <div class="o-form__description">Description text</div>
   </div>
 </form>`,
 
-      textarea_validate: `<form class="form form--large">
+      textarea_validate: `<form class="o-form o-form--large">
   <o-textarea
     v-model="form_model_validate"
     id="textarea_validate"
@@ -329,7 +329,7 @@ export default {
   />
 </form>`,
 
-      textarea_disabled: `<form class="form form--large">
+      textarea_disabled: `<form class="o-form o-form--large">
   <o-textarea
     v-model="form_model_disabled"
     id="textarea_disabled"
@@ -338,18 +338,18 @@ export default {
     :disabled="true"
   />
 </form>`,
-      textarea_disabled_html: `<form class="form form--large">
-  <div class="form__item">
-    <textarea name="textarea_disabled" id="textarea_disabled" disabled="disabled" rows="3" class="form__textarea"></textarea>
-    <label for="textarea_disabled" class="form__label">Label</label>
-    <div class="form__description">Description text</div>
+      textarea_disabled_html: `<form class="o-form o-form--large">
+  <div class="o-form__item">
+    <textarea name="textarea_disabled" id="textarea_disabled" disabled="disabled" rows="3" class="o-form__textarea"></textarea>
+    <label for="textarea_disabled" class="o-form__label">Label</label>
+    <div class="o-form__description">Description text</div>
   </div>
 </form>`,
-      textarea_auto_expand_html: `<form class="form form--large">
-  <div class="form__item">
-    <textarea name="textarea_auto_expand" id="textarea_auto_expand" data-auto-expand rows="3" class="form__textarea"></textarea>
-    <label for="textarea_auto_expand" class="form__label">Label</label>
-    <div class="form__description">Description text</div>
+      textarea_auto_expand_html: `<form class="o-form o-form--large">
+  <div class="o-form__item">
+    <textarea name="textarea_auto_expand" id="textarea_auto_expand" data-auto-expand rows="3" class="o-form__textarea"></textarea>
+    <label for="textarea_auto_expand" class="o-form__label">Label</label>
+    <div class="o-form__description">Description text</div>
   </div>
 </form>`
     }

@@ -20,15 +20,15 @@
     <!-- Large Size -->
     <docs-item title="Large size" :code="list_large_html" v-if="is_html">
       <div slot="body">
-        <ul class="list list--large">
+        <ul class="o-list o-list--large">
           <li>
             <div>
               <h3>First item</h3>
               <p>Description of the first item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
 
@@ -38,8 +38,8 @@
               <p>Description of the second item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
 
@@ -49,8 +49,8 @@
               <p>Description of the third item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
         </ul>
@@ -99,15 +99,15 @@
     <!-- Medium Size -->
     <docs-item title="Medium size" :code="list_medium_html" v-if="is_html">
       <div slot="body">
-        <ul class="list list--medium">
+        <ul class="o-list o-list--medium">
           <li>
             <div>
               <h3>First item</h3>
               <p>Description of the first item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
           <li>
@@ -116,8 +116,8 @@
               <p>Description of the second item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
           <li>
@@ -126,8 +126,8 @@
               <p>Description of the third item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
         </ul>
@@ -178,15 +178,15 @@
     <!-- Small Size -->
     <docs-item title="Small size" :code="list_small_html" v-if="is_html">
       <div slot="body">
-        <ul class="list list--small">
+        <ul class="o-list o-list--small">
           <li>
             <div>
               <h3>First item</h3>
               <p>Description of the first item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
 
@@ -196,8 +196,8 @@
               <p>Description of the second item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
 
@@ -207,8 +207,8 @@
               <p>Description of the third item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
         </ul>
@@ -258,15 +258,15 @@
     <!-- Divide style -->
     <docs-item title="Divide style" :code="list_divide_html" v-if="is_html">
       <div slot="body">
-        <ul class="list list--large list--divide">
+        <ul class="o-list o-list--large o-list--divide">
           <li>
             <div>
               <h3>First item</h3>
               <p>Description of the first item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
 
@@ -276,8 +276,8 @@
               <p>Description of the second item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
 
@@ -287,8 +287,8 @@
               <p>Description of the third item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
         </ul>
@@ -339,15 +339,15 @@
     <!-- Hover style -->
     <docs-item title="Hover style" :code="list_hover_html" v-if="is_html">
       <div slot="body">
-        <ul class="list list--large list--hover">
+        <ul class="o-list o-list--large o-list--hover">
           <li>
             <div>
               <h3>First item</h3>
               <p>Description of the first item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
 
@@ -357,8 +357,8 @@
               <p>Description of the second item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
 
@@ -368,8 +368,8 @@
               <p>Description of the third item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
         </ul>
@@ -420,15 +420,15 @@
     <!-- Pointer style -->
     <docs-item title="Pointer style" :code="list_pointer_html" v-if="is_html">
       <div slot="body">
-        <ul class="list list--large list--pointer">
+        <ul class="o-list o-list--large o-list--pointer">
           <li>
             <div>
               <h3>First item</h3>
               <p>Description of the first item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
 
@@ -438,8 +438,8 @@
               <p>Description of the second item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
 
@@ -449,8 +449,8 @@
               <p>Description of the third item</p>
             </div>
 
-            <div class="list__action">
-              <button type="button" class="button button--small">Action</button>
+            <div class="o-list__action">
+              <button type="button" class="o-button o-button--small">Action</button>
             </div>
           </li>
         </ul>
@@ -503,15 +503,15 @@
           <h3>List title</h3>
         </div>
         <div class="card__body">
-          <ul class="list list--large list--divide list--no-gutter list--hover list--pointer">
+          <ul class="o-list o-list--large o-list--divide o-list--no-gutter o-list--hover o-list--pointer">
             <li>
               <div>
                 <h3>First item</h3>
                 <p>Description of the first item</p>
               </div>
 
-              <div class="list__action">
-                <button type="button" class="button button--small button--icon-only"><i class="icon-remove"></i></button>
+              <div class="o-list__action">
+                <button type="button" class="o-button o-button--small o-button--icon-only"><i class="icon-remove"></i></button>
               </div>
             </li>
             <li>
@@ -520,8 +520,8 @@
                 <p>Description of the second item</p>
               </div>
 
-              <div class="list__action">
-                <button type="button" class="button button--small button--icon-only"><i class="icon-remove"></i></button>
+              <div class="o-list__action">
+                <button type="button" class="o-button o-button--small o-button--icon-only"><i class="icon-remove"></i></button>
               </div>
             </li>
             <li>
@@ -530,8 +530,8 @@
                 <p>Description of the third item</p>
               </div>
 
-              <div class="list__action">
-                <button type="button" class="button button--small button--icon-only"><i class="icon-remove"></i></button>
+              <div class="o-list__action">
+                <button type="button" class="o-button o-button--small o-button--icon-only"><i class="icon-remove"></i></button>
               </div>
             </li>
           </ul>
@@ -587,7 +587,7 @@
 
     <!-- List - Usage  -->
     <docs-item title="Usage" v-if="is_html">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -598,22 +598,22 @@
         <tbody>
         <tr>
           <td>size</td>
-          <td>Set with <code>.list--{size}</code> class</td>
+          <td>Set with <code>.o-list--{size}</code> class</td>
           <td><code>large</code>, <code>medium</code>, <code>small</code></td>
         </tr>
         <tr>
           <td>divide</td>
-          <td>Set with <code>.list--divide</code> class</td>
+          <td>Set with <code>.o-list--divide</code> class</td>
           <td><code>divide</code></td>
         </tr>
         <tr>
           <td>hover</td>
-          <td>Set with <code>.list--hover</code> class</td>
+          <td>Set with <code>.o-list--hover</code> class</td>
           <td><code>hover</code></td>
         </tr>
         <tr>
           <td>no-gutter</td>
-          <td>Set with <code>.list--no-gutter</code> class. Add negative margins to side at the <code>$spacing-base</code> size. It's common use in cards.</td>
+          <td>Set with <code>.o-list--no-gutter</code> class. Add negative margins to side at the <code>$o-spacing-base</code> size. It's common use in cards.</td>
           <td><code>no-gutter</code></td>
         </tr>
         </tbody>
@@ -621,7 +621,7 @@
     </docs-item>
 
     <docs-item title="Usage" v-else>
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -655,7 +655,7 @@
         </tr>
         <tr>
           <td>no_gutter</td>
-          <td>Add negative margins to side at the <code>$spacing-base</code> size. It's common use in cards.</td>
+          <td>Add negative margins to side at the <code>$o-spacing-base</code> size. It's common use in cards.</td>
           <td>Boolean</td>
           <td>-</td>
           <td>false</td>
@@ -757,15 +757,15 @@ export default {
     </list-item-slot>
   </list-item>
 </list>`,
-      list_large_html: `<ul class="list list--large">
+      list_large_html: `<ul class="o-list o-list--large">
   <li>
     <div>
       <h3>First item</h3>
       <p>Description of the first item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 
@@ -775,8 +775,8 @@ export default {
       <p>Description of the second item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 
@@ -786,8 +786,8 @@ export default {
       <p>Description of the third item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 </ul>`,
@@ -826,15 +826,15 @@ export default {
     </list-item-slot>
   </list-item>
 </list>`,
-      list_medium_html: `<ul class="list list--medium">
+      list_medium_html: `<ul class="o-list o-list--medium">
   <li>
     <div>
       <h3>First item</h3>
       <p>Description of the first item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 
@@ -844,8 +844,8 @@ export default {
       <p>Description of the second item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 
@@ -855,8 +855,8 @@ export default {
       <p>Description of the third item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 </ul>`,
@@ -895,15 +895,15 @@ export default {
     </list-item-slot>
   </list-item>
 </list>`,
-      list_small_html: `<ul class="list list--small">
+      list_small_html: `<ul class="o-list o-list--small">
   <li>
     <div>
       <h3>First item</h3>
       <p>Description of the first item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 
@@ -913,8 +913,8 @@ export default {
       <p>Description of the second item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 
@@ -924,8 +924,8 @@ export default {
       <p>Description of the third item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 </ul>`,
@@ -964,15 +964,15 @@ export default {
     </list-item-slot>
   </list-item>
 </list>`,
-      list_divide_html: `<ul class="list list--large list--divide">
+      list_divide_html: `<ul class="o-list o-list--large o-list--divide">
   <li>
     <div>
       <h3>First item</h3>
       <p>Description of the first item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 
@@ -982,8 +982,8 @@ export default {
       <p>Description of the second item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 
@@ -993,8 +993,8 @@ export default {
       <p>Description of the third item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 </ul>`,
@@ -1033,15 +1033,15 @@ export default {
     </list-item-slot>
   </list-item>
 </list>`,
-      list_hover_html: `<ul class="list list--large list--hover">
+      list_hover_html: `<ul class="o-list o-list--large o-list--hover">
   <li>
     <div>
       <h3>First item</h3>
       <p>Description of the first item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 
@@ -1051,8 +1051,8 @@ export default {
       <p>Description of the second item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 
@@ -1062,8 +1062,8 @@ export default {
       <p>Description of the third item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 </ul>`,
@@ -1102,15 +1102,15 @@ export default {
     </list-item-slot>
   </list-item>
 </list>`,
-      list_pointer_html: `<ul class="list list--large list--pointer">
+      list_pointer_html: `<ul class="o-list o-list--large o-list--pointer">
   <li>
     <div>
       <h3>First item</h3>
       <p>Description of the first item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 
@@ -1120,8 +1120,8 @@ export default {
       <p>Description of the second item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 
@@ -1131,8 +1131,8 @@ export default {
       <p>Description of the third item</p>
     </div>
 
-    <div class="list__action">
-      <button type="button" class="button button--small">Action</button>
+    <div class="o-list__action">
+      <button type="button" class="o-button o-button--small">Action</button>
     </div>
   </li>
 </ul>`,
@@ -1184,15 +1184,15 @@ export default {
     <h3>List title</h3>
   </div>
   <div class="card__body">
-    <ul class="list list--large list--divide list--no-gutter list--hover list--pointer">
+    <ul class="o-list o-list--large o-list--divide o-list--no-gutter o-list--hover o-list--pointer">
       <li>
         <div>
           <h3>First item</h3>
           <p>Description of the first item</p>
         </div>
 
-        <div class="list__action">
-          <button type="button" class="button button--small button--icon-only"><i class="icon-remove"></i></button>
+        <div class="o-list__action">
+          <button type="button" class="o-button o-button--small o-button--icon-only"><i class="icon-remove"></i></button>
         </div>
       </li>
 
@@ -1202,8 +1202,8 @@ export default {
           <p>Description of the second item</p>
         </div>
 
-        <div class="list__action">
-          <button type="button" class="button button--small button--icon-only"><i class="icon-remove"></i></button>
+        <div class="o-list__action">
+          <button type="button" class="o-button o-button--small o-button--icon-only"><i class="icon-remove"></i></button>
         </div>
       </li>
 
@@ -1213,8 +1213,8 @@ export default {
           <p>Description of the third item</p>
         </div>
 
-        <div class="list__action">
-          <button type="button" class="button button--small button--icon-only"><i class="icon-remove"></i></button>
+        <div class="o-list__action">
+          <button type="button" class="o-button o-button--small o-button--icon-only"><i class="icon-remove"></i></button>
         </div>
       </li>
     </ul>

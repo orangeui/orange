@@ -23,9 +23,9 @@ const Toggle = (function() {
   }
 
   const Selectors = {
-    _toggle: ".toggle",
+    _toggle: ".o-toggle",
     _input: "input[type='checkbox']",
-    _value: ".toggle__value",
+    _value: ".o-toggle__value",
     _enabled_data_setting: "data-enabled",
     _disabled_data_setting: "data-disabled"
   }

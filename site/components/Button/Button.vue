@@ -1,8 +1,8 @@
 <template>
-  <button :type="type" class="button" :class="[button_classes, button_color]">
-    <span v-if="back" class="button__arrow-tail" />
+  <button :type="type" class="o-button" :class="[button_classes, button_color]">
+    <span v-if="back" class="o-button__arrow-tail" />
     <template v-if="text">{{ text }}</template>
-    <i v-if="icon" :class="[ `icon-${icon}`]" />
+    <i v-if="icon" :class="[ `o-icon-${icon}`]" />
   </button>
 </template>`
 
@@ -79,13 +79,13 @@ export default {
   computed: {
     button_classes () {
       return {
-        [`button--${this.role}`]: this.role,
-        [`button--${this.variant}`]: this.variant,
-        [`button--${this.size}`]: this.size,
-        [`button--icon-only`]: !this.text && this.icon,
-        [`button--back`]: this.back,
-        'button--inverted': this.inverted,
-        'button--wide': this.wide
+        [`o-button--${this.role}`]: this.role,
+        [`o-button--${this.variant}`]: this.variant,
+        [`o-button--${this.size}`]: this.size,
+        [`o-button--icon-only`]: !this.text && this.icon,
+        [`o-button--back`]: this.back,
+        'o-button--inverted': this.inverted,
+        'o-button--wide': this.wide
       }
     },
 
@@ -93,10 +93,10 @@ export default {
       // Check if button is inside message component
       if (this.$parent.$options._componentTag === 'o-message') {
         let message_color = this.$parent.$options.propsData.color
-        return message_color !== undefined ? `button--color-${message_color}` : 'button--color-gray'
+        return message_color !== undefined ? `o-button--color-${message_color}` : 'o-button--color-gray'
       } else {
         return {
-          [`button--color-${this.color}`]: this.color,
+          [`o-button--color-${this.color}`]: this.color,
         }
       }
     }
