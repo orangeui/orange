@@ -115,7 +115,7 @@ if (Toggle.all_toggles.length) {
 
 // Add click event
 document.addEventListener('click', function (event) {
-  const isToggleInput = event.target.classList.contains('toggle__input')
+  const isToggleInput = event.target.classList.contains('o-toggle__input')
 
   if (isToggleInput) {
     Toggle.toggleValue(event)
