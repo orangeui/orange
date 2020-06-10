@@ -218,7 +218,7 @@
         </tr>
         <tr>
           <td>rounded</td>
-          <td>Add <code>$border-radius-main</code> (3px) border radius</td>
+          <td>Add <code>$o-border-radius-main</code> (3px) border radius</td>
           <td><code>.o-image--rounded</code></td>
           <td>String</td>
           <td>-</td>

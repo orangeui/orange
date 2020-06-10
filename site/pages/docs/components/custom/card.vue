@@ -264,7 +264,7 @@
         <tbody>
         <tr>
           <td>full</td>
-          <td>Set with <code>.card--full</code></td>
+          <td>Set with <code>.o-card--full</code></td>
           <td><code>full</code></td>
           <td>String</td>
           <td>-</td>
@@ -272,7 +272,7 @@
         </tr>
         <tr>
           <td>clickable footer</td>
-          <td>Set with <code>.card__footer--click</code> class on <code>.card__footer</code></td>
+          <td>Set with <code>.o-card__footer--click</code> class on <code>.o-card__footer</code></td>
           <td><code>click</code></td>
           <td>String</td>
           <td>-</td>
