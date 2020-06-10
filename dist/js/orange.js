@@ -141,10 +141,10 @@ const Dropdown = function () {
     _open_class: 'is-open'
   };
   const Selectors = {
-    dropdown: '.form-dropdown',
-    _input: '.form-dropdown__input',
-    _option: '.form-dropdown__menu li',
-    _text: '.form-dropdown__text'
+    dropdown: '.o-form-dropdown',
+    _input: '.o-form-dropdown__input',
+    _option: '.o-form-dropdown__menu li',
+    _text: '.o-form-dropdown__text'
   };
   let dropdowns;
   /**
@@ -266,7 +266,7 @@ document.addEventListener('click', function (event) {
     Dropdown.activateDropdowns();
   }
 
-  const isDropdownLabel = event.target.classList.contains('form-dropdown__label') || event.target.classList.contains('form-dropdown__text');
+  const isDropdownLabel = event.target.classList.contains('o-form-dropdown__label') || event.target.classList.contains('o-form-dropdown__text');
 
   if (isDropdownLabel) {
     Dropdown.closeDropdowns();
@@ -308,7 +308,7 @@ const Input = function () {
     _value_class: 'has-value'
   };
   const Selectors = {
-    _input: '.form .form__input'
+    _input: '.o-form .o-form__input'
   };
   const text_inputs = document.querySelectorAll(Selectors._input);
   /**
@@ -336,7 +336,7 @@ const Input = function () {
   function toggleFocusClass(event) {
     let input = event.target;
 
-    if (input.classList.contains('form__input')) {
+    if (input.classList.contains('o-form__input')) {
       return event.type === 'focusin' && input.getAttribute('readonly') === null ? input.classList.add(Classes._focus_class) : input.classList.remove(Classes._focus_class);
     }
   }
@@ -345,7 +345,7 @@ const Input = function () {
     let input = event.target;
     let input_has_text = input.value !== '' && input.value !== null;
 
-    if (input.classList.contains('form__input')) {
+    if (input.classList.contains('o-form__input')) {
       return input_has_text ? input.classList.add(Classes._value_class) : input.classList.remove(Classes._value_class);
     }
   }
@@ -428,7 +428,7 @@ const Textarea = function () {
     _value_class: 'has-value'
   };
   const Selectors = {
-    _textarea: '.form .form__textarea',
+    _textarea: '.o-form .o-form__textarea',
     _read_only: 'readonly',
     auto_expand: 'data-auto-expand'
   };
@@ -459,7 +459,7 @@ const Textarea = function () {
     let textarea = event.target;
     let textarea_readonly = textarea.getAttribute('readonly') === 'readonly' || textarea.getAttribute('readonly') === '';
 
-    if (textarea.classList.contains('form__textarea')) {
+    if (textarea.classList.contains('o-form__textarea')) {
       return event.type === 'focusin' && !textarea_readonly ? textarea.classList.add(Classes._focus_class) : textarea.classList.remove(Classes._focus_class);
     }
   } // Function to add posibility for auto expanding textarea
@@ -482,7 +482,7 @@ const Textarea = function () {
     let textarea_has_text = textarea.value !== '' && textarea.value !== null;
     let auto_expand_enabled = event.target.hasAttribute(Textarea.auto_expand);
 
-    if (textarea.classList.contains('form__textarea')) {
+    if (textarea.classList.contains('o-form__textarea')) {
       if (auto_expand_enabled) {
         autoExpandTextarea(event);
       }
@@ -550,9 +550,9 @@ const Toggle = function () {
     _active_class: "is-checked"
   };
   const Selectors = {
-    _toggle: ".toggle",
+    _toggle: ".o-toggle",
     _input: "input[type='checkbox']",
-    _value: ".toggle__value",
+    _value: ".o-toggle__value",
     _enabled_data_setting: "data-enabled",
     _disabled_data_setting: "data-disabled"
   };
@@ -634,7 +634,7 @@ if (Toggle.all_toggles.length) {
 
 
 document.addEventListener('click', function (event) {
-  const isToggleInput = event.target.classList.contains('toggle__input');
+  const isToggleInput = event.target.classList.contains('o-toggle__input');
 
   if (isToggleInput) {
     Toggle.toggleValue(event);
