@@ -1,19 +1,18 @@
 {
   "name": "@orange-ui/vue",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "main": "dist/orangevue.common.js",
   "files": [
     "dist/*",
     "src/*"
   ],
   "scripts": {
-    "build": "yarn copy-src && NODE_ENV=production vue-cli-service build --target lib --config vue.config.js --name orangevue ./index.js && cp dist/orangevue.css dist/style.css && yarn copy-fonts",
-    "copy-src": "rm -rf src && mkdir src && cp -R ../storybook/vue/src/components src/ && cp -R ../storybook/vue/src/directives src/ && cp -R ../src/scss src/scss && cp -R ../src/vendor src/vendor",
-    "copy-fonts": "cp -R ../src/fonts/* dist/fonts",
+    "build": "yarn copy-src && NODE_ENV=production vue-cli-service build --target lib --config vue.config.js --name orangevue ./index.js && cp dist/orangevue.css dist/style.css && yarn copy-fonts-dist",
+    "copy-src": "rm -rf src && mkdir src && cp -R ../storybook/vue/src/components src/ && cp -R ../storybook/vue/src/directives src/ && cp -R ../src/scss src/scss && cp -R ../src/vendor src/vendor && cp -R ../src/fonts src/fonts",
+    "copy-fonts-dist": "cp -R ../src/fonts/* dist/fonts",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@orange-ui/orange": "^1.4.2",
     "core-js": "^3.6.4",
     "eslint-plugin-prettier": "^3.1.3",
     "lodash": "^4.17.15",
