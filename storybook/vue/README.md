@@ -25,7 +25,7 @@ There's a couple ways to get you started with Orange. At this time we provide:
 ### Node.js
 If you're working on an app powered by Node.js it might make most sense to have Orange among your project's dependencies. But besides version control, this setup let you [customize](#customize) Orange's styling.
 
-You can find this package listed on npm, under the name [@orange-ui/orange](https://www.npmjs.com/package/@orange-ui/orange).
+You can find this package listed on npm, under the name [@orange-ui/vue](https://www.npmjs.com/package/@orange-ui/vue).
 
 ###### Installation
 
@@ -36,7 +36,7 @@ yarn add @orange-ui/orange
 ###### Styles and components
 The simplest way to setup styles is by using the pre-built versions that can be found in the `/dist` folder within this package.
 
-For this setup import styles `import "~@orange-ui/orange/dist/css/orange.min.css"` and import components like `import OButton from "~@orange-ui/orange/components/Button/Button"` to your `main.js` file and register them as `Vue.component('o-button', OButton)`. Done!
+For this setup import styles `import "~@orange-ui/vue/dist/orangevue.css"` and import components like `import OButton from "~@orange-ui/vue/src/components/Button/Button"` to your `main.js` file and register them as `Vue.component('o-button', OButton)`. Done!
 
 You'll probably want to [read the documentation](https://vue.orangecss.com//?path=/docs/1-getting-started-install--install) for examples and explanations of available components and their props.
 
@@ -69,27 +69,27 @@ Next, comment out anything you don't need.
 /** Orange (example configuration) */
 
 /** Core (required) */
-@import '~@orange-ui/orange/src/scss/src/_functions';
-@import '~@orange-ui/orange/src/scss/src/_variables';
-@import '~@orange-ui/orange/src/scss/src/_typography';
-@import '~@orange-ui/orange/src/scss/src/_global';
+@import '~@orange-ui/vue/src/scss/src/_functions';
+@import '~@orange-ui/vue/src/scss/src/_variables';
+@import '~@orange-ui/vue/src/scss/src/_typography';
+@import '~@orange-ui/vue/src/scss/src/_global';
 
 /** Icons (required) */
 @import "icons/fontello";
 @import "icons/fontello-reset";
 
 /** Utilities (optional) */
-@import '~@orange-ui/orange/src/scss/src/utilities/_spacings';
-@import '~@orange-ui/orange/src/scss/src/utilities/_colors';
-// @import '~@orange-ui/orange/src/scss/src/utilities/_shadows';
-// @import '~@orange-ui/orange/src/scss/src/utilities/_text';
+@import '~@orange-ui/vue/src/scss/src/utilities/_spacings';
+@import '~@orange-ui/vue/src/scss/src/utilities/_colors';
+// @import '~@orange-ui/vue/src/scss/src/utilities/_shadows';
+// @import '~@orange-ui/vue/src/scss/src/utilities/_text';
 
 /** Components (optional) */
-@import '~@orange-ui/orange/src/scss/src/components/_avatar';
-@import '~@orange-ui/orange/src/scss/src/components/_breadcrumbs';
-@import '~@orange-ui/orange/src/scss/src/components/_card';
-// @import '~@orange-ui/orange/src/scss/src/components/_checkbox';
-// @import '~@orange-ui/orange/src/scss/src/components/_empty-state';
+@import '~@orange-ui/vue/src/scss/src/components/_avatar';
+@import '~@orange-ui/vue/src/scss/src/components/_breadcrumbs';
+@import '~@orange-ui/vue/src/scss/src/components/_card';
+// @import '~@orange-ui/vue/src/scss/src/components/_checkbox';
+// @import '~@orange-ui/vue/src/scss/src/components/_empty-state';
 ...
 ```
 
@@ -102,8 +102,6 @@ Make a copy of [_variables.scss](https://github.com/orangeui/orange/blob/master/
 ```
 Remove all `!default` modifiers from your newely created file - this will allow values you set to override the defaults.
 
-###### 3. Set up scripts
-Add all scripts from `~@orange-ui/orange/src/js/src/*` to your scripts.
 
 ---
 
