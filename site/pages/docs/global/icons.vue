@@ -35,16 +35,16 @@
             <span class="docs__icons-text">arrow-right</span>
           </div>
           <div class="docs__icons-item">
-            <span class="o-icon-arrow-skip"></span>
-            <span class="docs__icons-text">skip</span>
-          </div>
-          <div class="docs__icons-item">
             <span class="o-icon-arrow-up"></span>
             <span class="docs__icons-text">arrow-up</span>
           </div>
           <div class="docs__icons-item">
             <span class="o-icon-arrow-down"></span>
             <span class="docs__icons-text">arrow-down</span>
+          </div>
+          <div class="docs__icons-item">
+            <span class="o-icon-arrow-skip"></span>
+            <span class="docs__icons-text">arrow-skip</span>
           </div>
         </li>
         <li class="docs__icons-list">
@@ -71,6 +71,10 @@
           <div class="docs__icons-item">
             <span class="o-icon-burger"></span>
             <span class="docs__icons-text">burger</span>
+          </div>
+          <div class="docs__icons-item">
+            <span class="o-icon-archive"></span>
+            <span class="docs__icons-text">archive</span>
           </div>
         </li>
         <li class="docs__icons-list">
@@ -113,6 +117,10 @@
           <div class="docs__icons-item">
             <span class="o-icon-external"></span>
             <span class="docs__icons-text">external</span>
+          </div>
+          <div class="docs__icons-item">
+            <span class="o-icon-loading"></span>
+            <span class="docs__icons-text">loading</span>
           </div>
         </li>
         <li class="docs__icons-list">
@@ -165,6 +173,26 @@
           <div class="docs__icons-item">
             <span class="o-icon-target"></span>
             <span class="docs__icons-text">target</span>
+          </div>
+          <div class="docs__icons-item">
+            <span class="o-icon-circles"></span>
+            <span class="docs__icons-text">circles</span>
+          </div>
+          <div class="docs__icons-item">
+            <span class="o-icon-eye"></span>
+            <span class="docs__icons-text">eye</span>
+          </div>
+          <div class="docs__icons-item">
+            <span class="o-icon-mail"></span>
+            <span class="docs__icons-text">mail</span>
+          </div>
+          <div class="docs__icons-item">
+            <span class="o-icon-palette"></span>
+            <span class="docs__icons-text">palette</span>
+          </div>
+          <div class="docs__icons-item">
+            <span class="o-icon-play"></span>
+            <span class="docs__icons-text">play</span>
           </div>
         </li>
       </ul>
