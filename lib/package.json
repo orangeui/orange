@@ -1,14 +1,15 @@
 {
   "name": "@orange-ui/vue",
-  "version": "0.0.9",
+  "version": "0.0.13",
   "main": "dist/orangevue.common.js",
   "files": [
     "dist/*",
     "src/*"
   ],
   "scripts": {
-    "build": "yarn copy-src && NODE_ENV=production vue-cli-service build --target lib --config vue.config.js --name orangevue ./index.js && cp dist/orangevue.css dist/style.css",
-    "copy-src": "rm -rf src && mkdir src && cp -R ../storybook/vue/src/components src/ && cp -R ../storybook/vue/src/directives src/",
+    "build": "yarn copy-src && NODE_ENV=production vue-cli-service build --target lib --config vue.config.js --name orangevue ./index.js && cp dist/orangevue.css dist/style.css && yarn copy-fonts",
+    "copy-src": "rm -rf src && mkdir src && cp -R ../storybook/vue/src/components src/ && cp -R ../storybook/vue/src/directives src/ && cp -R ../src/scss src/scss && cp -R ../src/vendor src/vendor",
+    "copy-fonts": "cp -R ../src/fonts/* dist/fonts",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
