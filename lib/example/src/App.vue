@@ -14,7 +14,7 @@
                 <p>Description of the first item</p>
               </o-list-item-slot>
               <o-list-item-slot :action="true">
-                <o-button text="Action" role="small" />
+                <o-button text="Action" role="small" icon="tick" />
               </o-list-item-slot>
             </o-list-item>
             <o-list-item>
