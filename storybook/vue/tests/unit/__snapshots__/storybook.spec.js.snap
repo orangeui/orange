@@ -1,0 +1,11054 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots 0. Overview|Changelog Changelog 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <h1>
+      Changelog
+    </h1>
+     
+    <p>
+      We use GitHub for version release, please check 
+      <a
+        href="https://github.com/orangeui/orange/releases"
+        target="_blank"
+      >
+        Changelog
+      </a>
+      .
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 0. Overview|Contribute Contribute 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <h1>
+      Contribute
+    </h1>
+     
+    <p>
+      We use GitHub to track features and issues, we will be glad for your 
+      <a
+        href="https://github.com/orangeui/orange/issues"
+        target="_blank"
+      >
+        Contribution
+      </a>
+      .
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 0. Overview|Manifesto Manifesto 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <h1>
+      Manifesto
+    </h1>
+     
+    <h2>
+      Sorry we're late
+    </h2>
+     
+    <p>
+      <span
+        class="text-italic"
+      >
+        "You have good design,"
+      </span>
+       they said. But we kept it to ourselves. For years. We're not sure why. So here it is. The juice behind 
+      <a
+        href="https://fomo.com"
+      >
+        Fomo.com
+      </a>
+      .
+      
+    </p>
+     
+    <p>
+      
+        Orange is 
+      <strong>
+        opinionated
+      </strong>
+      . Some thoughts:
+      
+    </p>
+     
+    <ul>
+      <li>
+        most websites look the same
+      </li>
+       
+      <li>
+        design is a marketing channel
+      </li>
+       
+      <li>
+        free ideas _spread_
+      </li>
+    </ul>
+     
+    <p>
+      
+        So why are you still using Bootstrap? 
+      <a
+        href="/?path=/docs/1-getting-started-install--install"
+      >
+        Get started
+      </a>
+      .
+      
+    </p>
+     
+    <h6>
+      
+        Orange was imagined by Jan, Matevz, and Lucian.
+      
+    </h6>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 1. Getting Started|Install Install 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    Check 
+    <mark>
+      Docs
+    </mark>
+     tab for informations
+  </div>
+</div>
+`;
+
+exports[`Storyshots 2. Global|Background Colors Backgrounds 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <ul
+      class="docs__bg-color-list"
+    >
+      <li>
+        <div
+          class="docs__bg-color-item bg-white"
+        />
+         
+        <p>
+          White
+        </p>
+      </li>
+       
+      <li>
+        <div
+          class="docs__bg-color-item bg-gray"
+        />
+         
+        <p>
+          Gray
+        </p>
+      </li>
+       
+      <li>
+        <div
+          class="docs__bg-color-item bg-black"
+        />
+         
+        <p>
+          Black
+        </p>
+      </li>
+       
+      <li>
+        <div
+          class="docs__bg-color-item bg-primary"
+        />
+         
+        <p>
+          Primary
+        </p>
+      </li>
+       
+      <li>
+        <div
+          class="docs__bg-color-item bg-secondary"
+        />
+         
+        <p>
+          Secondary
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 2. Global|Background Colors Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <ul
+      class="docs__bg-color-list"
+    >
+      <li>
+        <div
+          class="docs__bg-color-item bg-primary-light"
+        />
+         
+        <p>
+          
+              primary-light
+            
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 2. Global|Background Colors Usage 1`] = `
+<div
+  class="p-4"
+>
+  <table
+    class="table table--compact table--celled"
+  >
+    <thead>
+      <tr>
+        <th>
+          Attribute
+        </th>
+         
+        <th>
+          Description
+        </th>
+         
+        <th>
+          Type
+        </th>
+         
+        <th>
+          Syntax
+        </th>
+      </tr>
+    </thead>
+     
+    <tbody>
+      <tr>
+        <td>
+          bg-color
+        </td>
+         
+        <td>
+          See 
+          <a
+            href="/?path=/docs/2-global-colors--list"
+          >
+            <span>
+              Colors
+            </span>
+          </a>
+           page for possible values
+        </td>
+         
+        <td>
+          Class
+        </td>
+         
+        <td>
+          <code>
+            .bg-color
+          </code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots 2. Global|Colors List 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div>
+      <h2>
+        Primary
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-primary-dark"
+          />
+           
+          <p>
+            
+              Primary dark
+            <br />
+            
+              primary-dark
+            <br />
+            
+              #da7700
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-primary"
+          />
+           
+          <p>
+            
+              Primary
+            <br />
+            
+              primary
+            <br />
+            
+              #ffa941
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-primary-light"
+          />
+           
+          <p>
+            
+              Primary Light
+            <br />
+            
+              primary-light
+            <br />
+            
+              #ffd7a7
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Secondary
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-secondary-dark"
+          />
+           
+          <p>
+            
+              Secondary dark
+            <br />
+            
+              secondary-dark
+            <br />
+            
+              #1113a1
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-secondary"
+          />
+           
+          <p>
+            
+              Secondary
+            <br />
+            
+              secondary
+            <br />
+            
+              #4648d2
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-secondary-light"
+          />
+           
+          <p>
+            
+              Secondary Light
+            <br />
+            
+              secondary-light
+            <br />
+            
+              #8b8df3
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Red
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-red-dark"
+          />
+           
+          <p>
+            
+              Red dark
+            <br />
+            
+              red-dark
+            <br />
+            
+              #d1000d
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-red"
+          />
+           
+          <p>
+            
+              Red
+            <br />
+            
+              red
+            <br />
+            
+              #fa3d49
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-red-light"
+          />
+           
+          <p>
+            
+              Red Light
+            <br />
+            
+              red-light
+            <br />
+            
+              #ff9ea4
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Orange
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-orange-dark"
+          />
+           
+          <p>
+            
+              Orange dark
+            <br />
+            
+              orange-dark
+            <br />
+            
+              #da7700
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-orange"
+          />
+           
+          <p>
+            
+              Orange
+            <br />
+            
+              orange
+            <br />
+            
+              #ffa941
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-orange-light"
+          />
+           
+          <p>
+            
+              Orange Light
+            <br />
+            
+              orange-light
+            <br />
+            
+              #ffd7a7
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Yellow
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-yellow-dark"
+          />
+           
+          <p>
+            
+              Yellow dark
+            <br />
+            
+              yellow-dark
+            <br />
+            
+              #ccb100
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-yellow"
+          />
+           
+          <p>
+            
+              Yellow
+            <br />
+            
+              yellow
+            <br />
+            
+              #ffe433
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-yellow-light"
+          />
+           
+          <p>
+            
+              Yellow Light
+            <br />
+            
+              yellow-light
+            <br />
+            
+              #fff299
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Green
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-green-dark"
+          />
+           
+          <p>
+            
+              Green dark
+            <br />
+            
+              green-dark
+            <br />
+            
+              #19902d
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-green"
+          />
+           
+          <p>
+            
+              Green
+            <br />
+            
+              green
+            <br />
+            
+              #4bc45f
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-green-light"
+          />
+           
+          <p>
+            
+              Green Light
+            <br />
+            
+              green-light
+            <br />
+            
+              #8aeb9a
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Indigo
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-indigo-dark"
+          />
+           
+          <p>
+            
+              Indigo dark
+            <br />
+            
+              indigo-dark
+            <br />
+            
+              #005387
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-indigo"
+          />
+           
+          <p>
+            
+              Indigo
+            <br />
+            
+              indigo
+            <br />
+            
+              #178cd6
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-indigo-light"
+          />
+           
+          <p>
+            
+              Indigo Light
+            <br />
+            
+              indigo-light
+            <br />
+            
+              #54bdff
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Blue
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-blue-dark"
+          />
+           
+          <p>
+            
+              Blue dark
+            <br />
+            
+              blue-dark
+            <br />
+            
+              #0000c0
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-blue"
+          />
+           
+          <p>
+            
+              Blue
+            <br />
+            
+              blue
+            <br />
+            
+              #3333f3
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-blue-light"
+          />
+           
+          <p>
+            
+              Blue Light
+            <br />
+            
+              blue-light
+            <br />
+            
+              #8d8dff
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Violet
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-violet-dark"
+          />
+           
+          <p>
+            
+              Violet dark
+            <br />
+            
+              violet-dark
+            <br />
+            
+              #5800b1
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-violet"
+          />
+           
+          <p>
+            
+              Violet
+            <br />
+            
+              violet
+            <br />
+            
+              #8b26f1
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-violet-light"
+          />
+           
+          <p>
+            
+              Violet Light
+            <br />
+            
+              violet-light
+            <br />
+            
+              #be7eff
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Black
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-black"
+          />
+           
+          <p>
+            
+              Black
+            <br />
+            
+              black
+            <br />
+            
+              #000
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        Gray
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-gray-darkest"
+          />
+           
+          <p>
+            
+              Gray darkest
+            <br />
+            
+              gray-darkest
+            <br />
+            
+              #333
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-gray-dark"
+          />
+           
+          <p>
+            
+              Gray dark
+            <br />
+            
+              gray-dark
+            <br />
+            
+              #6b6b6b
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-gray"
+          />
+           
+          <p>
+            
+              Gray
+            <br />
+            
+              gray
+            <br />
+            
+              #999
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-gray-light"
+          />
+           
+          <p>
+            
+              Gray Light
+            <br />
+            
+              gray-light
+            <br />
+            
+              #ccc
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-gray-light"
+          />
+           
+          <p>
+            
+              Gray Light
+            <br />
+            
+              gray-light
+            <br />
+            
+              #ebebeb
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        White
+      </h2>
+       
+      <ul
+        class="docs__bg-color-list"
+      >
+        <li>
+          <div
+            class="docs__bg-color-item bg-white"
+          />
+           
+          <p>
+            
+              White
+            <br />
+            
+              white
+            <br />
+            
+              #fff
+            
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 2. Global|Colors Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <ul
+      class="docs__bg-color-list"
+    >
+      <li>
+        <div
+          class="docs__bg-color-item bg-primary-light"
+        />
+         
+        <p>
+          
+              primary-light
+            
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 2. Global|Icon Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <span
+      class="icon-arrow-down"
+    />
+     
+    <span
+      class="icon-arrow-left color-primary"
+    />
+     
+    <span
+      class="icon-arrow-right color-secondary"
+    />
+     
+    <span
+      class="icon-arrow-up color-secondary"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots 2. Global|Icon Symbols 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="docs__simple-list"
+  >
+    <li
+      class="docs__icons-list"
+    >
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-arrow-down"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          arrow-down
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-arrow-left"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          arrow-left
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-arrow-right"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          arrow-right
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-arrow-skip"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          arrow-skip
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-arrow-up"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          arrow-up
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-audience"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          audience
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-billing"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          billing
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-breadcrumb"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          breadcrumb
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-budget"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          budget
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-burger"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          burger
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-caret-down"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          caret-down
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-caret-up"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          caret-up
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-code"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          code
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-dashboard"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          dashboard
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-desktop"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          desktop
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-editor"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          editor
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-events"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          events
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-external"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          external
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-heart"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          heart
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-launch"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          launch
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-lock"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          lock
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-mobile"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          mobile
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-plan"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          plan
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-plus"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          plus
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-profile"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          profile
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-refresh"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          refresh
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-remove"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          remove
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-rules"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          rules
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-settings"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          settings
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-target"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          target
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-team"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          team
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-theme"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          theme
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-tick"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          tick
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-x"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          x
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-integrations"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          integrations
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="icon-more"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          more
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 2. Global|Icon Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <span
+    class="icon-arrow-down color-primary"
+  />
+</div>
+`;
+
+exports[`Storyshots 3. Layout|Breakpoints Variables 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    Check 
+    <mark>
+      Docs
+    </mark>
+     tab for informations
+  </div>
+</div>
+`;
+
+exports[`Storyshots 3. Layout|Container Variables 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    Check 
+    <mark>
+      Docs
+    </mark>
+     tab for informations
+  </div>
+</div>
+`;
+
+exports[`Storyshots 3. Layout|Grid 3 columns - responsive 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="page-docs-layout-grid"
+  >
+    <div
+      class="grid grid--2 sm:grid--3"
+    >
+      <div>
+        1
+      </div>
+       
+      <div>
+        2
+      </div>
+       
+      <div>
+        3
+      </div>
+       
+      <div>
+        4
+      </div>
+       
+      <div>
+        5
+      </div>
+       
+      <div>
+        6
+      </div>
+       
+      <div>
+        7
+      </div>
+       
+      <div>
+        8
+      </div>
+       
+      <div>
+        9
+      </div>
+       
+      <div>
+        10
+      </div>
+       
+      <div>
+        11
+      </div>
+       
+      <div>
+        12
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 3. Layout|Grid Auto Fill - Narrow 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="page-docs-layout-grid"
+  >
+    <div
+      class="grid grid--columns-auto-narrow"
+    >
+      <div>
+        1
+      </div>
+       
+      <div>
+        2
+      </div>
+       
+      <div>
+        3
+      </div>
+       
+      <div>
+        4
+      </div>
+       
+      <div>
+        5
+      </div>
+       
+      <div>
+        6
+      </div>
+       
+      <div>
+        7
+      </div>
+       
+      <div>
+        8
+      </div>
+       
+      <div>
+        9
+      </div>
+       
+      <div>
+        10
+      </div>
+       
+      <div>
+        11
+      </div>
+       
+      <div>
+        12
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 3. Layout|Grid Auto Fill - Regular (default) 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="page-docs-layout-grid"
+  >
+    <div
+      class="grid"
+    >
+      <div>
+        1
+      </div>
+       
+      <div>
+        2
+      </div>
+       
+      <div>
+        3
+      </div>
+       
+      <div>
+        4
+      </div>
+       
+      <div>
+        5
+      </div>
+       
+      <div>
+        6
+      </div>
+       
+      <div>
+        7
+      </div>
+       
+      <div>
+        8
+      </div>
+       
+      <div>
+        9
+      </div>
+       
+      <div>
+        10
+      </div>
+       
+      <div>
+        11
+      </div>
+       
+      <div>
+        12
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 3. Layout|Grid Auto Fill - Wide 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="page-docs-layout-grid"
+  >
+    <div
+      class="grid grid--columns-auto-wide"
+    >
+      <div>
+        1
+      </div>
+       
+      <div>
+        2
+      </div>
+       
+      <div>
+        3
+      </div>
+       
+      <div>
+        4
+      </div>
+       
+      <div>
+        5
+      </div>
+       
+      <div>
+        6
+      </div>
+       
+      <div>
+        7
+      </div>
+       
+      <div>
+        8
+      </div>
+       
+      <div>
+        9
+      </div>
+       
+      <div>
+        10
+      </div>
+       
+      <div>
+        11
+      </div>
+       
+      <div>
+        12
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 3. Layout|Grid Different column width 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="page-docs-layout-grid"
+  >
+    <div
+      class="grid"
+    >
+      <div
+        class="col-6"
+      >
+        1
+      </div>
+       
+      <div
+        class="col-6"
+      >
+        2
+      </div>
+       
+      <div
+        class="col-4"
+      >
+        3
+      </div>
+       
+      <div
+        class="col-3"
+      >
+        4
+      </div>
+       
+      <div
+        class="col-5"
+      >
+        5
+      </div>
+       
+      <div
+        class="col-1"
+      >
+        6
+      </div>
+       
+      <div
+        class="col-2"
+      >
+        7
+      </div>
+       
+      <div
+        class="col-7"
+      >
+        8
+      </div>
+       
+      <div
+        class="col-2"
+      >
+        9
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 3. Layout|Grid Grid Usage 1`] = `
+<div
+  class="p-4"
+>
+  <table
+    class="table table--fixed table--compact table--definition table--border-bottom"
+  >
+    <thead>
+      <th />
+       
+      <th>
+        
+          Max container width
+        
+      </th>
+       
+      <th>
+        
+          Class prefix
+        
+      </th>
+    </thead>
+     
+    <tbody>
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Default
+          </span>
+          <br />
+          
+            &gt; 0px
+          
+        </td>
+         
+        <td>
+          
+            100%
+          
+        </td>
+         
+        <td>
+          <code>
+            col-
+          </code>
+           and 
+          <code>
+            row-
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra extra small
+          </span>
+          <br />
+          
+            &gt; 320px
+          
+        </td>
+         
+        <td>
+          
+            100%
+          
+        </td>
+         
+        <td>
+          <code>
+            xxs:col-
+          </code>
+           and 
+          <code>
+            xxs:row-
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra small
+          </span>
+          <br />
+          
+            &gt; 480px
+          
+        </td>
+         
+        <td>
+          
+            480px
+          
+        </td>
+         
+        <td>
+          <code>
+            xs:col-
+          </code>
+           and 
+          <code>
+            xs:row-
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Small
+          </span>
+          <br />
+          
+            &gt; 640px
+          
+        </td>
+         
+        <td>
+          580px
+        </td>
+         
+        <td>
+          <code>
+            sm:col-
+          </code>
+           and 
+          <code>
+            sm:row-
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Medium
+          </span>
+          <br />
+          
+            &gt; 768px
+          
+        </td>
+         
+        <td>
+          720px
+        </td>
+         
+        <td>
+          <code>
+            md:col-
+          </code>
+           and 
+          <code>
+            md:row-
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Large
+          </span>
+          <br />
+          
+            &gt; 991px
+          
+        </td>
+         
+        <td>
+          960px
+        </td>
+         
+        <td>
+          <code>
+            lg:col-
+          </code>
+           and 
+          <code>
+            lg:row-
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra large
+          </span>
+          <br />
+          
+            &gt; 1200px
+          
+        </td>
+         
+        <td>
+          1140px
+        </td>
+         
+        <td>
+          <code>
+            xl:col-
+          </code>
+           and 
+          <code>
+            xl:row-
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra extra large
+          </span>
+          <br />
+          
+            &gt; 1440px
+          
+        </td>
+         
+        <td>
+          1280px
+        </td>
+         
+        <td>
+          <code>
+            xxl:col-
+          </code>
+           and 
+          <code>
+            xxl:row-
+          </code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots 3. Layout|Grid Regular (default) 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="page-docs-layout-grid"
+  >
+    <div
+      class="grid"
+    >
+      <div>
+        1
+      </div>
+       
+      <div>
+        2
+      </div>
+       
+      <div>
+        3
+      </div>
+       
+      <div>
+        4
+      </div>
+       
+      <div>
+        5
+      </div>
+       
+      <div>
+        6
+      </div>
+       
+      <div>
+        7
+      </div>
+       
+      <div>
+        8
+      </div>
+       
+      <div>
+        9
+      </div>
+       
+      <div>
+        10
+      </div>
+       
+      <div>
+        11
+      </div>
+       
+      <div>
+        12
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 4. Typography|Font Italic 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="docs__simple-list"
+  >
+    <li>
+      <h5>
+        700 Extra Bold
+      </h5>
+       
+      <p
+        class="fs-gamma text-italic font-extrabold"
+      >
+        700 Extra Bold
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        600 Bold
+      </h5>
+       
+      <p
+        class="fs-gamma text-italic font-bold"
+      >
+        600 Bold
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        500 Medium
+      </h5>
+       
+      <p
+        class="fs-gamma text-italic font-medium"
+      >
+        500 Medium
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        400 Normal
+      </h5>
+       
+      <p
+        class="fs-gamma text-italic font-normal"
+      >
+        400 Normal
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 4. Typography|Font Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <p
+    class="font-normal"
+  >
+    
+      normal
+    
+  </p>
+</div>
+`;
+
+exports[`Storyshots 4. Typography|Font Weights 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="docs__simple-list"
+  >
+    <li>
+      <h5>
+        700 Extra Bold
+      </h5>
+       
+      <p
+        class="fs-gamma font-extrabold"
+      >
+        700 Extra Bold
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        600 Bold
+      </h5>
+       
+      <p
+        class="fs-gamma font-bold"
+      >
+        600 Bold
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        500 Medium
+      </h5>
+       
+      <p
+        class="fs-gamma font-medium"
+      >
+        500 Medium
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        400 Normal
+      </h5>
+       
+      <p
+        class="fs-gamma font-normal"
+      >
+        400 Normal
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 4. Typography|Sizes Responsive 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="docs__simple-list"
+  >
+    <li>
+      <h5>
+        Epsilon with Gamma
+      </h5>
+       
+      <p
+        class="fs-epsilon sm:fs-gamma"
+      >
+        16 Epsilon with 21 Gamma on viewport size SM or wider
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Zeta with Epsilon
+      </h5>
+       
+      <p
+        class="fs-zeta md:fs-epsilon"
+      >
+        14 Zeta with 16 Epsilon on viewport size MD or wider
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 4. Typography|Sizes Sizes 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="docs__simple-list"
+  >
+    <li>
+      <h5>
+        Giga
+      </h5>
+       
+      <p
+        class="fs-giga font-bold"
+      >
+        76 Giga
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Mega
+      </h5>
+       
+      <p
+        class="fs-mega font-bold"
+      >
+        54 Mega
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Alpha
+      </h5>
+       
+      <p
+        class="fs-alpha"
+      >
+        36 Alpha
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Beta
+      </h5>
+       
+      <p
+        class="fs-beta"
+      >
+        28 Beta
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Gamma
+      </h5>
+       
+      <p
+        class="fs-gamma"
+      >
+        21 Gamma
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Delta
+      </h5>
+       
+      <p
+        class="fs-delta"
+      >
+        18 Delta
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Epsilon
+      </h5>
+       
+      <p
+        class="fs-epsilon"
+      >
+        16 Epsilon
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Zeta
+      </h5>
+       
+      <p
+        class="fs-zeta"
+      >
+        14 Zeta
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Omega
+      </h5>
+       
+      <p
+        class="fs-omega"
+      >
+        12 Omega
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Epsilon with Gamma
+      </h5>
+       
+      <p
+        class="fs-epsilon sm:fs-gamma"
+      >
+        16 Epsilon with 21 Gamma on viewport size SM or wider
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Zeta with Epsilon
+      </h5>
+       
+      <p
+        class="fs-zeta md:fs-epsilon"
+      >
+        14 Zeta with 16 Epsilon on viewport size MD or wider
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 4. Typography|Sizes Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <p
+    class="fs-alpha"
+  >
+    
+      fs-alpha
+    
+  </p>
+</div>
+`;
+
+exports[`Storyshots 4. Typography|Styles Body text 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="docs__simple-list"
+  >
+    <li>
+      <h5>
+        paragraph
+      </h5>
+       
+      <p>
+        
+            Suspendisse id nisi a magna lacinia lacinia sed sed purus. Integer mauris enim, dignissim eu vestibulum a, semper id velit. Donec rhoncus commodo leo, egestas tempus eros commodo eu. Suspendisse eu eleifend nibh. Nulla blandit felis
+            et mattis auctor. Ut porta diam justo, eu dapibus ligula interdum ac. Suspendisse potenti.
+          
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        paragraph (small)
+      </h5>
+       
+      <p
+        class="fs-zeta"
+      >
+        
+            Suspendisse id nisi a magna lacinia lacinia sed sed purus. Integer mauris enim, dignissim eu vestibulum a, semper id velit. Donec rhoncus commodo leo, egestas tempus eros commodo eu. Suspendisse eu eleifend nibh. Nulla blandit felis
+            et mattis auctor. Ut porta diam justo, eu dapibus ligula interdum ac. Suspendisse potenti.
+          
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        paragraph (light)
+      </h5>
+       
+      <p
+        class="color-gray-light"
+      >
+        
+            Suspendisse id nisi a magna lacinia lacinia sed sed purus. Integer mauris enim, dignissim eu vestibulum a, semper id velit. Donec rhoncus commodo leo, egestas tempus eros commodo eu. Suspendisse eu eleifend nibh. Nulla blandit felis
+            et mattis auctor. Ut porta diam justo, eu dapibus ligula interdum ac. Suspendisse potenti.
+          
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        paragraph (small, light)
+      </h5>
+       
+      <p
+        class="fs-zeta color-gray-light"
+      >
+        
+            Suspendisse id nisi a magna lacinia lacinia sed sed purus. Integer mauris enim, dignissim eu vestibulum a, semper id velit. Donec rhoncus commodo leo, egestas tempus eros commodo eu. Suspendisse eu eleifend nibh. Nulla blandit felis
+            et mattis auctor. Ut porta diam justo, eu dapibus ligula interdum ac. Suspendisse potenti.
+          
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        paragraph (strong)
+      </h5>
+       
+      <p
+        class="font-bold"
+      >
+        strong
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        paragraph (italic)
+      </h5>
+       
+      <p
+        class="text-italic"
+      >
+        italic
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 4. Typography|Styles Colors 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="docs__simple-list"
+  >
+    <li>
+      <h5>
+        Primary
+      </h5>
+       
+      <p
+        class="color-primary"
+      >
+        Suspendisse id nisi a magna lacinia lacinia sed sed purus.
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Secondary
+      </h5>
+       
+      <p
+        class="color-secondary"
+      >
+        Suspendisse id nisi a magna lacinia lacinia sed sed purus.
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Yellow
+      </h5>
+       
+      <p
+        class="color-yellow"
+      >
+        Suspendisse id nisi a magna lacinia lacinia sed sed purus.
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Green
+      </h5>
+       
+      <p
+        class="color-green"
+      >
+        Suspendisse id nisi a magna lacinia lacinia sed sed purus.
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Red
+      </h5>
+       
+      <p
+        class="color-red"
+      >
+        Suspendisse id nisi a magna lacinia lacinia sed sed purus.
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 4. Typography|Styles Grayscale 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="docs__simple-list"
+  >
+    <li>
+      <h5>
+        Black
+      </h5>
+       
+      <p
+        class="color-black"
+      >
+        Suspendisse id nisi a magna lacinia lacinia sed sed purus.
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Gray Dark
+      </h5>
+       
+      <p
+        class="color-gray-dark"
+      >
+        Suspendisse id nisi a magna lacinia lacinia sed sed purus.
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Gray
+      </h5>
+       
+      <p
+        class="color-gray"
+      >
+        Suspendisse id nisi a magna lacinia lacinia sed sed purus.
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Gray Light
+      </h5>
+       
+      <p
+        class="color-gray-light"
+      >
+        Suspendisse id nisi a magna lacinia lacinia sed sed purus.
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        Gray Off
+      </h5>
+       
+      <p
+        class="color-gray-off"
+      >
+        Suspendisse id nisi a magna lacinia lacinia sed sed purus.
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        White Dark
+      </h5>
+       
+      <p
+        class="color-white-dark"
+      >
+        Suspendisse id nisi a magna lacinia lacinia sed sed purus.
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        White Off
+      </h5>
+       
+      <p
+        class="color-white-off"
+      >
+        Suspendisse id nisi a magna lacinia lacinia sed sed purus.
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        White
+      </h5>
+       
+      <p
+        class="color-white"
+      >
+        Suspendisse id nisi a magna lacinia lacinia sed sed purus.
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 4. Typography|Styles Headings 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="docs__simple-list"
+  >
+    <li>
+      <h5>
+        heading 1
+      </h5>
+       
+      <p
+        class="h1"
+      >
+        social proof is the holy grail of marketing
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        heading 2
+      </h5>
+       
+      <p
+        class="h2"
+      >
+        social proof is the holy grail of marketing
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        heading 3
+      </h5>
+       
+      <p
+        class="h3"
+      >
+        social proof is the holy grail of marketing
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        heading 4
+      </h5>
+       
+      <p
+        class="h4"
+      >
+        social proof is the holy grail of marketing
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        heading 5
+      </h5>
+       
+      <p
+        class="h5"
+      >
+        social proof is the holy grail of marketing
+      </p>
+    </li>
+     
+    <li>
+      <h5>
+        heading 6
+      </h5>
+       
+      <p
+        class="h6"
+      >
+        social proof is the holy grail of marketing
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 4. Typography|Styles Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <p
+    class="color-primary"
+  >
+    
+      Suspendisse id nisi a magna lacinia lacinia sed sed purus.
+    
+  </p>
+</div>
+`;
+
+exports[`Storyshots 4. Typography|Text align Basic 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="docs__simple-list"
+  >
+    <li>
+      <h5 />
+       
+      <p
+        class="fs-gamma text-left"
+      >
+        Text align left
+      </p>
+    </li>
+     
+    <li>
+      <h5 />
+       
+      <p
+        class="fs-gamma text-right"
+      >
+        Text align right
+      </p>
+    </li>
+     
+    <li>
+      <h5 />
+       
+      <p
+        class="fs-gamma text-center"
+      >
+        Text align center
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 4. Typography|Text align Responsive 1`] = `
+<div
+  class="p-4"
+>
+  <table
+    class="table table--fixed table--compact table--definition table--border-bottom"
+  >
+    <thead>
+      <th />
+       
+      <th>
+        
+        Class prefix example
+      
+      </th>
+    </thead>
+     
+    <tbody>
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Default
+          </span>
+          <br />
+          
+          &gt; 0px
+        
+        </td>
+         
+        <td>
+          <code>
+            text-{align}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra extra small
+          </span>
+          <br />
+          
+          &gt; 320px
+        
+        </td>
+         
+        <td>
+          <code>
+            xxs:text-{align}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra small
+          </span>
+          <br />
+          
+          &gt; 480px
+        
+        </td>
+         
+        <td>
+          <code>
+            xs:text-{align}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Small
+          </span>
+          <br />
+          
+          &gt; 640px
+        
+        </td>
+         
+        <td>
+          <code>
+            sm:text-{align}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Medium
+          </span>
+          <br />
+          
+          &gt; 768px
+        
+        </td>
+         
+        <td>
+          <code>
+            md:text-{align}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Large
+          </span>
+          <br />
+          
+          &gt; 991px
+        
+        </td>
+         
+        <td>
+          <code>
+            lg:text-{align}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra large
+          </span>
+          <br />
+          
+          &gt; 1200px
+        
+        </td>
+         
+        <td>
+          <code>
+            xl:text-{align}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra extra large
+          </span>
+          <br />
+          
+          &gt; 1440px
+        
+        </td>
+         
+        <td>
+          <code>
+            xxl:text-{align}
+          </code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots 4. Typography|Text align Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <p
+    class="text-left"
+  >
+    
+      Try me out in Canvas tab
+    
+  </p>
+</div>
+`;
+
+exports[`Storyshots 4. Typography|Text decoration Basic 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="docs__simple-list"
+  >
+    <li>
+      <h5 />
+       
+      <p
+        class="fs-gamma text-underline"
+      >
+        Text decoration underline
+      </p>
+    </li>
+     
+    <li>
+      <h5 />
+       
+      <p
+        class="fs-gamma text-line-through"
+      >
+        Text decoration line-through
+      </p>
+    </li>
+     
+    <li>
+      <h5 />
+       
+      <p
+        class="fs-gamma text-no-underline"
+      >
+        Text decoration none
+      </p>
+    </li>
+     
+    <li>
+      <h5 />
+       
+      <p
+        class="fs-gamma hover:text-underline"
+      >
+        Text decoration underline on hover
+      </p>
+    </li>
+     
+    <li>
+      <h5 />
+       
+      <p
+        class="fs-gamma hover:text-line-through"
+      >
+        Text decoration line-through on hover
+      </p>
+    </li>
+     
+    <li>
+      <h5 />
+       
+      <p
+        class="fs-gamma text-underline hover:text-no-underline"
+      >
+        Text decoration none on hover
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 4. Typography|Text decoration Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <p
+    class="text-left"
+  >
+    
+      Try me out in Canvas tab
+    
+  </p>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Button Colors 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <button
+      class="button button--primary"
+      type="button"
+    >
+      Button 
+      <!---->
+    </button>
+     
+    <button
+      class="button button--secondary"
+      type="button"
+    >
+      Button 
+      <!---->
+    </button>
+     
+    <hr />
+     
+    <button
+      class="button button--primary button--color-secondary"
+      type="button"
+    >
+      Button 
+      <!---->
+    </button>
+     
+    <button
+      class="button button--secondary button--color-secondary"
+      type="button"
+    >
+      Button 
+      <!---->
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Button Disabled 1`] = `
+<div
+  class="p-4"
+>
+  <button
+    class="button button--primary"
+    disabled="disabled"
+    type="button"
+  >
+    Can't touch this 
+    <!---->
+  </button>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Button Icon 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <button
+      class="button button--primary button--icon-only"
+      type="button"
+    >
+      <!---->
+       
+      <i
+        class="icon-remove"
+      />
+    </button>
+    <hr />
+     
+    <button
+      class="button button--primary"
+      type="button"
+    >
+      With an icon 
+      <i
+        class="icon-arrow-right"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Button Inverted 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="p-3 bg-primary"
+  >
+    <button
+      class="button button--primary button--inverted"
+      type="button"
+    >
+      Button 
+      <!---->
+    </button>
+     
+    <button
+      class="button button--secondary button--inverted"
+      type="button"
+    >
+      Button 
+      <!---->
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Button Roles 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <button
+      class="button button--primary"
+      type="button"
+    >
+      Primary 
+      <!---->
+    </button>
+    <hr />
+     
+    <button
+      class="button button--secondary"
+      type="button"
+    >
+      Secondary 
+      <!---->
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Button Sizes 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <button
+      class="button button--large"
+      type="button"
+    >
+      Large 
+      <!---->
+    </button>
+    <hr />
+     
+    <button
+      class="button button--primary"
+      type="button"
+    >
+      Regular 
+      <!---->
+    </button>
+    <hr />
+     
+    <button
+      class="button button--small"
+      type="button"
+    >
+      Small 
+      <!---->
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Button Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class=""
+  >
+    <button
+      class="button button--primary button--color-primary"
+      type="button"
+    >
+      Hello Storybook 
+      <i
+        class="icon-arrow-down"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Button Wide 1`] = `
+<div
+  class="p-4"
+>
+  <button
+    class="button button--primary button--wide"
+    type="button"
+  >
+    Wide button 
+    <!---->
+  </button>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Label Basic 1`] = `
+<div
+  class="p-4"
+>
+  <span
+    class="label"
+  >
+    
+  Basic
+
+  
+    <!---->
+  </span>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Label Colors 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <span
+      class="label"
+    >
+      
+  Basic
+
+  
+      <!---->
+    </span>
+     
+    <hr />
+     
+    <span
+      class="label label--primary"
+    >
+      
+  Primary
+
+  
+      <!---->
+    </span>
+     
+    <span
+      class="label label--secondary"
+    >
+      
+  Secondary
+
+  
+      <!---->
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Label Dismissible 1`] = `
+<div
+  class="p-4"
+>
+  <span
+    class="label label--dismiss"
+  >
+    
+  Dismissible
+
+  
+    <i
+      class="icon-x"
+    />
+  </span>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Label Size 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <span
+      class="label label--small"
+    >
+      
+  Small
+
+  
+      <!---->
+    </span>
+     
+    <span
+      class="label label--primary label--small"
+    >
+      
+  Small
+
+  
+      <!---->
+    </span>
+     
+    <span
+      class="label label--secondary label--small"
+    >
+      
+  Small
+
+  
+      <!---->
+    </span>
+     
+    <hr />
+     
+    <span
+      class="label label--pill"
+    >
+      
+  
+
+  
+      <!---->
+    </span>
+     
+    <span
+      class="label label--primary label--pill"
+    >
+      
+  
+
+  
+      <!---->
+    </span>
+     
+    <span
+      class="label label--secondary label--pill"
+    >
+      
+  
+
+  
+      <!---->
+    </span>
+     
+    <hr />
+     
+    <span
+      class="label label--dot"
+    >
+      
+  
+
+  
+      <!---->
+    </span>
+     
+    <span
+      class="label label--primary label--dot"
+    >
+      
+  
+
+  
+      <!---->
+    </span>
+     
+    <span
+      class="label label--secondary label--dot"
+    >
+      
+  
+
+  
+      <!---->
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Label Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <span
+    class="label label--secondary label--small"
+  >
+    
+  Hello Storybook
+
+  
+    <i
+      class="icon-plus"
+    />
+  </span>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Label With an icon 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <span
+      class="label"
+    >
+      
+  More
+
+  
+      <i
+        class="icon-more"
+      />
+    </span>
+     
+    <hr />
+     
+    <span
+      class="label label--primary"
+    >
+      
+  Add
+
+  
+      <i
+        class="icon-plus"
+      />
+    </span>
+     
+    <span
+      class="label label--secondary"
+    >
+      
+  Secondary
+
+  
+      <i
+        class="icon-arrow-skip"
+      />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/List Card, divided, hover, pointer 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card"
+  >
+    <div
+      class="card__header"
+    >
+      <h3>
+        Title
+      </h3>
+    </div>
+     
+    <div
+      class="card__body"
+    >
+      <ul
+        class="list list--large list--divide list--no-gutter list--hover list--pointer"
+      >
+        <li
+          class="list__item"
+        >
+          <div
+            class=""
+          >
+            <h3>
+              First item
+            </h3>
+             
+            <p>
+              Description of the first item
+            </p>
+          </div>
+           
+          <div
+            class="list__action"
+          >
+            <button
+              class="button button--small"
+              type="button"
+            >
+              Action 
+              <!---->
+            </button>
+          </div>
+        </li>
+         
+        <li
+          class="list__item"
+        >
+          <div
+            class=""
+          >
+            <h3>
+              Second item
+            </h3>
+             
+            <p>
+              Description of the second item
+            </p>
+          </div>
+           
+          <div
+            class="list__action"
+          >
+            <button
+              class="button button--small"
+              type="button"
+            >
+              Action 
+              <!---->
+            </button>
+          </div>
+        </li>
+         
+        <li
+          class="list__item"
+        >
+          <div
+            class=""
+          >
+            <h3>
+              Third item
+            </h3>
+             
+            <p>
+              Description of the third item
+            </p>
+          </div>
+           
+          <div
+            class="list__action"
+          >
+            <button
+              class="button button--small"
+              type="button"
+            >
+              Action 
+              <!---->
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/List Divide style 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="list list--large list--divide"
+  >
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          First item
+        </h3>
+         
+        <p>
+          Description of the first item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Second item
+        </h3>
+         
+        <p>
+          Description of the second item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Third item
+        </h3>
+         
+        <p>
+          Description of the third item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/List Hover style 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="list list--large list--hover"
+  >
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          First item
+        </h3>
+         
+        <p>
+          Description of the first item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Second item
+        </h3>
+         
+        <p>
+          Description of the second item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Third item
+        </h3>
+         
+        <p>
+          Description of the third item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/List Large 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="list list--large"
+  >
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          First item
+        </h3>
+         
+        <p>
+          Description of the first item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Second item
+        </h3>
+         
+        <p>
+          Description of the second item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Third item
+        </h3>
+         
+        <p>
+          Description of the third item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/List Medium 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="list list--medium"
+  >
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          First item
+        </h3>
+         
+        <p>
+          Description of the first item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Second item
+        </h3>
+         
+        <p>
+          Description of the second item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Third item
+        </h3>
+         
+        <p>
+          Description of the third item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/List Pointer style 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="list list--large list--pointer"
+  >
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          First item
+        </h3>
+         
+        <p>
+          Description of the first item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Second item
+        </h3>
+         
+        <p>
+          Description of the second item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Third item
+        </h3>
+         
+        <p>
+          Description of the third item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/List Small 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="list list--small"
+  >
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          First item
+        </h3>
+         
+        <p>
+          Description of the first item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Second item
+        </h3>
+         
+        <p>
+          Description of the second item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Third item
+        </h3>
+         
+        <p>
+          Description of the third item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/List Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="list list--large"
+  >
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          First item
+        </h3>
+         
+        <p>
+          Description of the first item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Second item
+        </h3>
+         
+        <p>
+          Description of the second item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+     
+    <li
+      class="list__item"
+    >
+      <div
+        class=""
+      >
+        <h3>
+          Third item
+        </h3>
+         
+        <p>
+          Description of the third item
+        </p>
+      </div>
+       
+      <div
+        class="list__action"
+      >
+        <button
+          class="button button--small"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Navigation Align Center 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <nav
+      class="nav nav--center"
+    >
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active"
+            href="#/"
+          >
+            <!---->
+             Navigation
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/breadcrumbs"
+          >
+            <!---->
+             Breadcrumbs
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/message"
+          >
+            <!---->
+             Message
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/empty-state"
+          >
+            <!---->
+             Empty State
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Navigation Align Right 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <nav
+      class="nav nav--right"
+    >
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active"
+            href="#/"
+          >
+            <!---->
+             Navigation
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/breadcrumbs"
+          >
+            <!---->
+             Breadcrumbs
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/message"
+          >
+            <!---->
+             Message
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/empty-state"
+          >
+            <!---->
+             Empty State
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Navigation Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <nav
+      class="nav nav--left"
+    >
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active"
+            href="#/"
+          >
+            <!---->
+             Navigation
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/breadcrumbs"
+          >
+            <!---->
+             Breadcrumbs
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/message"
+          >
+            <!---->
+             Message
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/empty-state"
+          >
+            <!---->
+             Empty State
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Navigation Disabled item 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <nav
+      class="nav nav--left"
+    >
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active"
+            href="#/"
+          >
+            <!---->
+             Navigation
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/breadcrumbs"
+          >
+            <!---->
+             Breadcrumbs
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/message"
+          >
+            <!---->
+             Message
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class="is-disabled"
+            href="#/empty-state"
+          >
+            <!---->
+             Empty State
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Navigation Toned in color 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <nav
+      class="nav nav--color-secondary nav--left"
+    >
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active"
+            href="#/"
+          >
+            <!---->
+             Navigation
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/breadcrumbs"
+          >
+            <!---->
+             Breadcrumbs
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/message"
+          >
+            <!---->
+             Message
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/empty-state"
+          >
+            <!---->
+             Empty State
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Navigation Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <nav
+      class="nav nav--left"
+    >
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active"
+            href="#/"
+          >
+            <span
+              class="icon-integrations"
+            />
+             Navigation
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/breadcrumbs"
+          >
+            <!---->
+             Breadcrumbs
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/message"
+          >
+            <!---->
+             Message
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/empty-state"
+          >
+            <!---->
+             Empty State
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Navigation With icons 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <nav
+      class="nav nav--left"
+    >
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active"
+            href="#/"
+          >
+            <span
+              class="icon-integrations"
+            />
+             Navigation
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/breadcrumbs"
+          >
+            <span
+              class="icon-theme"
+            />
+             Breadcrumbs
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/message"
+          >
+            <span
+              class="icon-rules"
+            />
+             Message
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+            href="#/empty-state"
+          >
+            <span
+              class="icon-code"
+            />
+             Empty State
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <!---->
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Table Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper"
+  >
+    <table
+      class="table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Title
+          </th>
+           
+          <th>
+            Impressions
+          </th>
+           
+          <th>
+            Clicks
+          </th>
+           
+          <th>
+            Spend
+          </th>
+           
+          <th>
+            Type
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td>
+            Shopify sales
+          </td>
+           
+          <td>
+            4,230
+          </td>
+           
+          <td>
+            520
+          </td>
+           
+          <td>
+            $78
+          </td>
+           
+          <td>
+            Simple
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Table Celled 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper"
+  >
+    <table
+      class="table table--celled"
+    >
+      <thead>
+        <tr>
+          <th>
+            Budget
+          </th>
+           
+          <th>
+            Spent Budget
+          </th>
+           
+          <th>
+            Date added
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td>
+            $30,000
+          </td>
+           
+          <td>
+            $768
+          </td>
+           
+          <td>
+            Wed, May 9th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            Tue, May 8th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            Mon, May 7th 2018
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Table Compact 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper"
+  >
+    <table
+      class="table table--compact"
+    >
+      <thead>
+        <tr>
+          <th>
+            Budget
+          </th>
+           
+          <th>
+            Spent Budget
+          </th>
+           
+          <th>
+            Date added
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td>
+            $30,000
+          </td>
+           
+          <td>
+            $768
+          </td>
+           
+          <td>
+            Wed, May 9th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            Tue, May 8th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            Mon, May 7th 2018
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Table Definition 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper"
+  >
+    <table
+      class="table table--compact table--definition"
+    >
+      <thead>
+        <tr>
+          <th>
+            Plan
+          </th>
+           
+          <th>
+            Fomo Essential
+          </th>
+           
+          <th>
+            
+                Fomo Plus 
+            <span
+              class="label label--green label--small"
+            >
+              
+  current plan
+
+  
+              <!---->
+            </span>
+          </th>
+           
+          <th>
+            Fomo Advanced
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td />
+           
+          <td>
+            <button
+              class="button button--primary button--small"
+              type="button"
+              variant="basic"
+            >
+              Downgrade to Essential 
+              <!---->
+            </button>
+          </td>
+           
+          <td>
+            <button
+              class="button button--primary button--small"
+              type="button"
+              variant="basic"
+            >
+              Cancel subscription 
+              <!---->
+            </button>
+          </td>
+           
+          <td>
+            <button
+              class="button button--primary button--small"
+              type="button"
+            >
+              Upgrade to Advanced 
+              <!---->
+            </button>
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            Price
+          </td>
+           
+          <td>
+            $39 / month
+          </td>
+           
+          <td>
+            $79 / month
+          </td>
+           
+          <td>
+            $199 / month
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            Notifications
+          </td>
+           
+          <td>
+            50,000
+          </td>
+           
+          <td>
+            200,000
+          </td>
+           
+          <td>
+            3,000,000
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            Website domains
+          </td>
+           
+          <td>
+            unlimited
+          </td>
+           
+          <td>
+            unlimited
+          </td>
+           
+          <td>
+            unlimited
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            Custom page rules
+          </td>
+           
+          <td>
+            <span
+              class="icon-tick"
+            />
+          </td>
+           
+          <td>
+            <span
+              class="icon-tick"
+            />
+          </td>
+           
+          <td>
+            <span
+              class="icon-tick"
+            />
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            Email support
+          </td>
+           
+          <td>
+            <span
+              class="icon-tick"
+            />
+          </td>
+           
+          <td>
+            <span
+              class="icon-tick"
+            />
+          </td>
+           
+          <td>
+            <span
+              class="icon-tick"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Table Fixed 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper"
+  >
+    <table
+      class="table table--fixed"
+    >
+      <thead>
+        <tr>
+          <th>
+            Budget
+          </th>
+           
+          <th>
+            Spent Budget
+          </th>
+           
+          <th>
+            Date added
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td>
+            $30,000
+          </td>
+           
+          <td>
+            $768
+          </td>
+           
+          <td>
+            Wed, May 9th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            Tue, May 8th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            Mon, May 7th 2018
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Table Fixed header 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper table-wrapper--fixed-header"
+    style="height: 200px;"
+  >
+    <table
+      class="table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Budget
+          </th>
+           
+          <th>
+            Spent Budget
+          </th>
+           
+          <th>
+            Date added
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td>
+            $30,000
+          </td>
+           
+          <td>
+            $768
+          </td>
+           
+          <td>
+            Wed, May 9th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            Tue, May 8th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            Mon, May 7th 2018
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Table Height limit 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper"
+    style="height: 200px;"
+  >
+    <table
+      class="table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Budget
+          </th>
+           
+          <th>
+            Spent Budget
+          </th>
+           
+          <th>
+            Date added
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td>
+            $30,000
+          </td>
+           
+          <td>
+            $768
+          </td>
+           
+          <td>
+            Wed, May 9th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            Tue, May 8th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            Mon, May 7th 2018
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Table Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper"
+  >
+    <table
+      class="table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Budget
+          </th>
+           
+          <th>
+            Spent Budget
+          </th>
+           
+          <th>
+            Date added
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td>
+            $30,000
+          </td>
+           
+          <td>
+            $768
+          </td>
+           
+          <td>
+            Wed, May 9th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            $10,000
+          </td>
+           
+          <td>
+            Tue, May 8th 2018
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            $2,000
+          </td>
+           
+          <td>
+            Mon, May 7th 2018
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Basic/Table With a bottom border 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="table-wrapper"
+  >
+    <table
+      class="table table--border-bottom"
+    >
+      <thead>
+        <tr>
+          <th>
+            Title
+          </th>
+           
+          <th>
+            Impressions
+          </th>
+           
+          <th>
+            Clicks
+          </th>
+           
+          <th>
+            Spend
+          </th>
+           
+          <th>
+            Type
+          </th>
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td>
+            Shopify sales
+          </td>
+           
+          <td>
+            4,230
+          </td>
+           
+          <td>
+            520
+          </td>
+           
+          <td>
+            $78
+          </td>
+           
+          <td>
+            Simple
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            Shopify sales
+          </td>
+           
+          <td>
+            4,230
+          </td>
+           
+          <td>
+            520
+          </td>
+           
+          <td>
+            $78
+          </td>
+           
+          <td>
+            Simple
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Avatar Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      class="avatar"
+    >
+      <svg
+        viewBox="0 0 80 80"
+        width="80px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+     
+    <hr />
+     
+    <div
+      class="avatar"
+    >
+      <img
+        alt=""
+        src="https://cdn.pixabay.com/photo/2020/04/15/17/32/medical-5047582_1280.png"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Avatar Colors 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      class="avatar avatar--color-primary"
+    >
+      <svg
+        viewBox="0 0 80 80"
+        width="80px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+     
+    <hr />
+     
+    <div
+      class="avatar avatar--color-secondary"
+    >
+      <svg
+        viewBox="0 0 80 80"
+        width="80px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Avatar In circle 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      class="avatar avatar--circle"
+    >
+      <svg
+        viewBox="0 0 80 80"
+        width="80px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+     
+    <hr />
+     
+    <div
+      class="avatar avatar--circle"
+    >
+      <img
+        alt=""
+        src="https://cdn.pixabay.com/photo/2020/04/15/17/32/medical-5047582_1280.png"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Avatar Sizes 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      class="avatar avatar--size-small"
+    >
+      <svg
+        viewBox="0 0 80 80"
+        width="80px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+     
+    <hr />
+     
+    <div
+      class="avatar"
+    >
+      <svg
+        viewBox="0 0 80 80"
+        width="80px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+     
+    <hr />
+     
+    <div
+      class="avatar avatar--size-large"
+    >
+      <svg
+        viewBox="0 0 80 80"
+        width="80px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Avatar Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      class="avatar avatar--color-primary"
+    >
+      <svg
+        viewBox="0 0 80 80"
+        width="80px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+     
+    <hr />
+     
+    <div
+      class="avatar"
+    >
+      <img
+        alt=""
+        src="https://cdn.pixabay.com/photo/2020/04/15/17/32/medical-5047582_1280.png"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Breadcrumbs Basic 1`] = `
+<div
+  class="p-4"
+>
+  <nav
+    class="breadcrumbs"
+  >
+    <!---->
+     
+    <ul>
+      <li>
+        <a
+          class="router-link-exact-active router-link-active"
+        >
+          <span
+            class="icon-integrations"
+          />
+           First
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Second
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Three
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Four
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Breadcrumbs Colors 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <nav
+      class="breadcrumbs breadcrumbs--color-primary"
+    >
+      <!---->
+       
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active is-active"
+          >
+            <span
+              class="icon-integrations"
+            />
+             First
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class="router-link-exact-active router-link-active is-active"
+          >
+            <!---->
+             Second
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+          >
+            <!---->
+             Three
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+          >
+            <!---->
+             Four
+          </a>
+        </li>
+      </ul>
+    </nav>
+     
+    <hr />
+     
+    <nav
+      class="breadcrumbs breadcrumbs--color-secondary"
+    >
+      <!---->
+       
+      <ul>
+        <li>
+          <a
+            class="router-link-exact-active router-link-active is-active"
+          >
+            <span
+              class="icon-integrations"
+            />
+             First
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class="router-link-exact-active router-link-active is-active"
+          >
+            <!---->
+             Second
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+          >
+            <!---->
+             Three
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class=""
+          >
+            <!---->
+             Four
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Breadcrumbs Full width 1`] = `
+<div
+  class="p-4"
+>
+  <nav
+    class="breadcrumbs breadcrumbs--full"
+  >
+    <!---->
+     
+    <ul>
+      <li>
+        <a
+          class="router-link-exact-active router-link-active"
+        >
+          <span
+            class="icon-integrations"
+          />
+           First
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Second
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Three
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Four
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Breadcrumbs Steps 1`] = `
+<div
+  class="p-4"
+>
+  <nav
+    class="breadcrumbs"
+  >
+    <!---->
+     
+    <ul>
+      <li>
+        <a
+          class="router-link-exact-active router-link-active is-active"
+        >
+          <span
+            class="icon-integrations"
+          />
+           First
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class="router-link-exact-active router-link-active is-active"
+        >
+          <!---->
+           Second
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Three
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Four
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Breadcrumbs Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <nav
+    class="breadcrumbs"
+  >
+    <!---->
+     
+    <ul>
+      <li>
+        <a
+          class="router-link-exact-active router-link-active"
+        >
+          <span
+            class="icon-integrations"
+          />
+           First
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Second
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Three
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Four
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Breadcrumbs With a back button 1`] = `
+<div
+  class="p-4"
+>
+  <nav
+    class="breadcrumbs"
+  >
+    <a
+      class="breadcrumbs__button router-link-exact-active router-link-active"
+      href="#/"
+    >
+      
+    Back text
+  
+    </a>
+     
+    <ul>
+      <li>
+        <a
+          class="router-link-exact-active router-link-active"
+        >
+          <span
+            class="icon-integrations"
+          />
+           First
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Second
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Three
+        </a>
+      </li>
+       
+      <li>
+        <a
+          class=""
+        >
+          <!---->
+           Four
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Callout As stats 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="grid"
+  >
+    <div
+      class="col-3"
+    >
+      <div
+        class="callout"
+      >
+        <h1>
+          28K
+        </h1>
+         
+        <p>
+          <strong>
+            Impressions
+          </strong>
+          <br />
+          
+              Quantity of notifications shown
+            
+        </p>
+      </div>
+    </div>
+     
+    <div
+      class="col-3"
+    >
+      <div
+        class="callout"
+      >
+        <h1>
+          285
+        </h1>
+         
+        <p>
+          <strong>
+            Clicks
+          </strong>
+          <br />
+          
+              Traffic from linked notifications
+            
+        </p>
+      </div>
+    </div>
+     
+    <div
+      class="col-3"
+    >
+      <div
+        class="callout"
+      >
+        <h1>
+          1106
+        </h1>
+         
+        <p>
+          <strong>
+            Engagements
+          </strong>
+          <br />
+          
+              Mouse hovers, which pause the animation
+            
+        </p>
+      </div>
+    </div>
+     
+    <div
+      class="col-3"
+    >
+      <div
+        class="callout"
+      >
+        <h1>
+          $724
+        </h1>
+         
+        <p>
+          <strong>
+            Sales
+          </strong>
+          <br />
+          
+              Goal completion value in dollars
+            
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Callout Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="callout"
+  >
+    
+        Orange color lies between red and yellow on the light spectrum
+      
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Callout Colors 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      class="callout callout--color-white callout--shadow"
+    >
+      
+          Click here to claim a free hat
+        
+    </div>
+     
+    <div
+      class="callout callout--color-gray callout--shadow"
+    >
+      
+          Click here to claim a free hat
+        
+    </div>
+     
+    <div
+      class="callout callout--color-black callout--shadow"
+    >
+      
+          Click here to claim a free hat
+        
+    </div>
+     
+    <div
+      class="callout callout--color-primary callout--shadow"
+    >
+      
+          Click here to claim a free hat
+        
+    </div>
+     
+    <div
+      class="callout callout--color-secondary callout--shadow"
+    >
+      
+          Click here to claim a free hat
+        
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Callout Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="callout"
+  >
+    
+      Orange color lies between red and yellow on the light spectrum
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Callout With a shadow 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="callout callout--color-white callout--shadow"
+  >
+    
+        Orange color lies between red and yellow on the light spectrum
+      
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Callout With an action 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="callout callout--color-green callout--action"
+  >
+    
+        Click here to claim a free hat
+      
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Callout With an image 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="grid"
+  >
+    <div
+      class="col-3"
+    >
+      <div
+        class="callout callout--color-primary callout--action"
+      >
+        <div
+          class="callout__image"
+        >
+          <img
+            alt="Callout #1"
+            src="https://fomo.com/static/images/app/dashboard/google-analytics.svg"
+          />
+        </div>
+         
+        <p>
+          <strong>
+            Conversion metrics
+          </strong>
+          <br />
+          
+              Connect Google Analytics to see Conversions & Sales metrics.
+            
+        </p>
+      </div>
+    </div>
+     
+    <div
+      class="col-3"
+    >
+      <div
+        class="callout callout--color-primary callout--action"
+      >
+        <div
+          class="callout__image"
+        >
+          <img
+            alt="Callout #3"
+            src="https://fomo.com/static/images/app/dashboard/badges.svg"
+          />
+        </div>
+         
+        <p>
+          <strong>
+            Achievements
+          </strong>
+          <br />
+          
+              Take note on your wins. Receive Badges for every milestone.
+            
+        </p>
+      </div>
+    </div>
+     
+    <div
+      class="col-3"
+    >
+      <div
+        class="callout callout--color-primary callout--action"
+      >
+        <div
+          class="callout__image"
+        >
+          <img
+            alt="Callout #4"
+            src="https://fomo.com/static/images/app/dashboard/slack.svg"
+          />
+        </div>
+         
+        <p>
+          <strong>
+            Real-time updates
+          </strong>
+          <br />
+          
+              Get informed by sending Fomo events to any #channel.
+            
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Card Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card"
+  >
+    <div
+      class="card__header"
+    >
+      <h3>
+        Title
+      </h3>
+    </div>
+     
+    <div
+      class="card__body"
+    >
+      
+          Body
+        
+    </div>
+     
+    <div
+      class="card__footer"
+    >
+      
+          Footer
+        
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Card Clickable footer 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card"
+  >
+    <div
+      class="card__header"
+    >
+      <h3>
+        Title
+      </h3>
+    </div>
+     
+    <div
+      class="card__body"
+    >
+      
+          Body
+        
+    </div>
+     
+    <div
+      class="card__footer card__footer--click"
+    >
+      
+          Footer
+          
+      <span
+        class="icon-plus"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Card Multiple sections 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card"
+  >
+    <div
+      class="card__header"
+    >
+      <h3>
+        Title
+      </h3>
+       
+      <button
+        class="button button--primary"
+        type="button"
+      >
+        Action 
+        <!---->
+      </button>
+    </div>
+     
+    <section
+      class="card__section"
+    >
+      <div
+        class="card__header"
+      >
+        <h4>
+          First section
+        </h4>
+         
+        <button
+          class="button button--primary button--small button--color-gray"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+       
+      <div
+        class="card__body"
+      >
+        
+            Body of first section
+          
+      </div>
+    </section>
+     
+    <section
+      class="card__section"
+    >
+      <div
+        class="card__header"
+      >
+        <h4>
+          Second section
+        </h4>
+         
+        <button
+          class="button button--primary button--small button--color-gray"
+          type="button"
+        >
+          Action 
+          <!---->
+        </button>
+      </div>
+       
+      <div
+        class="card__body"
+      >
+        
+            Body of second section
+          
+      </div>
+    </section>
+     
+    <div
+      class="card__footer"
+    >
+      
+          Footer
+        
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Card Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card"
+  >
+    <div
+      class="card__header"
+    >
+      <h3>
+        Title
+      </h3>
+       
+      <!---->
+    </div>
+     
+    <div
+      class="card__body"
+    >
+      
+        Body
+      
+    </div>
+     
+    <div
+      class="card__footer"
+    >
+      
+        Footer
+        
+      <!---->
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Card With a button 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card"
+  >
+    <div
+      class="card__header"
+    >
+      <h3>
+        Title
+      </h3>
+       
+      <button
+        class="button button--primary"
+        type="button"
+      >
+        Action 
+        <!---->
+      </button>
+    </div>
+     
+    <div
+      class="card__body"
+    >
+      
+          Body
+        
+    </div>
+     
+    <div
+      class="card__footer"
+    >
+      
+          Footer
+        
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Card With a list 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card card--full"
+  >
+    <div
+      class="card__header"
+    >
+      <h3>
+        Title
+      </h3>
+    </div>
+     
+    <div
+      class="card__body"
+    >
+      <ul
+        class="list list--large list--divide list--hover"
+      >
+        <li
+          class="list__item"
+        >
+          <div
+            class=""
+          >
+            <h3>
+              First item
+            </h3>
+             
+            <p>
+              Description of the first item
+            </p>
+          </div>
+           
+          <div
+            class="list__action"
+          >
+            <button
+              class="button button--small"
+              type="button"
+            >
+              Action 
+              <!---->
+            </button>
+          </div>
+        </li>
+         
+        <li
+          class="list__item"
+        >
+          <div
+            class=""
+          >
+            <h3>
+              Second item
+            </h3>
+             
+            <p>
+              Description of the second item
+            </p>
+          </div>
+           
+          <div
+            class="list__action"
+          >
+            <button
+              class="button button--small"
+              type="button"
+            >
+              Action 
+              <!---->
+            </button>
+          </div>
+        </li>
+         
+        <li
+          class="list__item"
+        >
+          <div
+            class=""
+          >
+            <h3>
+              Third item
+            </h3>
+             
+            <p>
+              Description of the third item
+            </p>
+          </div>
+           
+          <div
+            class="list__action"
+          >
+            <button
+              class="button button--small"
+              type="button"
+            >
+              Action 
+              <!---->
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Card With image 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="grid grid--1 md:grid--2"
+  >
+    <div
+      class="card"
+    >
+      <div
+        class="card__image"
+      >
+        <img
+          alt="Card image"
+          src="https://orangecss.com/images/thumbnails/width-480/hedgehog-480.jpg"
+        />
+      </div>
+       
+      <div
+        class="card__header"
+      >
+        <h3>
+          Title
+        </h3>
+      </div>
+       
+      <div
+        class="card__body"
+      >
+        
+            Body
+          
+      </div>
+       
+      <div
+        class="card__footer"
+      >
+        
+            Footer
+          
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Card With navigation and button 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card"
+  >
+    <div
+      class="card__header"
+    >
+      <nav
+        class="nav nav--left"
+      >
+        <ul>
+          <li>
+            <a
+              class="router-link-exact-active router-link-active"
+              href="#/"
+            >
+              <!---->
+               First item
+            </a>
+          </li>
+           
+          <li>
+            <a
+              class=""
+              href="#/breadcrumbs"
+            >
+              <!---->
+               Second item
+            </a>
+          </li>
+           
+          <li>
+            <a
+              class=""
+              href="#/message"
+            >
+              <!---->
+               Third item
+            </a>
+          </li>
+           
+          <li>
+            <a
+              class=""
+              href="#/empty-state"
+            >
+              <!---->
+               Fourth item
+            </a>
+          </li>
+        </ul>
+      </nav>
+       
+      <button
+        class="button button--primary"
+        type="button"
+      >
+        Action 
+        <!---->
+      </button>
+    </div>
+     
+    <div
+      class="card__body"
+    >
+      
+          Body
+        
+    </div>
+     
+    <div
+      class="card__footer"
+    >
+      
+          Footer
+        
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Card Without gutter 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card card--full"
+  >
+    <div
+      class="card__body"
+    >
+      
+          Body without gutter
+        
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/EmptyState Inside card 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="card"
+  >
+    <div
+      class="card__body"
+    >
+      <div
+        class="empty-state"
+      >
+        <div
+          class="empty-state__content"
+        >
+          <div
+            class="empty-state__title"
+          >
+            <h2>
+              
+            It's your first time here
+          
+            </h2>
+          </div>
+           
+          <div
+            class="empty-state__description"
+          >
+             
+            <p>
+              
+            A short explanation of this view or why it is empty. Longer texts span into multiple lines.
+          
+            </p>
+             
+          </div>
+           
+          <div
+            class="empty-state__buttons"
+          >
+            <button
+              class="button button--primary"
+              type="button"
+            >
+              Continue 
+              <!---->
+            </button>
+          </div>
+        </div>
+         
+        <div
+          class="empty-state__image"
+        >
+          <img
+            src="https://orangecss.com/images/empty-state.svg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/EmptyState No gutter 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="empty-state"
+  >
+    <div
+      class="empty-state__content"
+    >
+      <div
+        class="empty-state__title"
+      >
+        <h2>
+          
+        It's your first time here
+      
+        </h2>
+      </div>
+       
+      <div
+        class="empty-state__description"
+      >
+         
+        <p>
+          
+        A short explanation of this view or why it is empty. Longer texts span into multiple lines.
+      
+        </p>
+         
+      </div>
+       
+      <div
+        class="empty-state__buttons"
+      >
+        <button
+          class="button button--primary"
+          type="button"
+        >
+          Continue 
+          <!---->
+        </button>
+      </div>
+    </div>
+     
+    <div
+      class="empty-state__image"
+    >
+      <img
+        src="https://orangecss.com/images/empty-state.svg"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/EmptyState Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="empty-state"
+  >
+    <div
+      class="empty-state__content"
+    >
+      <div
+        class="empty-state__title"
+      >
+        <h2>
+          
+        It's your first time here
+      
+        </h2>
+      </div>
+       
+      <div
+        class="empty-state__description"
+      >
+         
+        <p>
+          
+        A short explanation of this view or why it is empty. Longer texts span into multiple lines.
+      
+        </p>
+         
+      </div>
+       
+      <div
+        class="empty-state__buttons"
+      >
+        <button
+          class="button button--primary"
+          type="button"
+        >
+          Continue 
+          <!---->
+        </button>
+      </div>
+    </div>
+     
+    <div
+      class="empty-state__image"
+    >
+      <img
+        src="https://orangecss.com/images/empty-state.svg"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Image Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Katzee"
+      class="image"
+      src="https://orangecss.com/images/thumbnails/cat.jpg"
+    />
+     
+    <a
+      class=""
+      href="#/somewhere"
+    >
+      <img
+        alt="Foxy"
+        class="image"
+        src="https://orangecss.com/images/thumbnails/fox.jpg"
+      />
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Image Rounded - circle 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Doggo"
+      class="image image--circle"
+      src="https://orangecss.com/images/thumbnails/square/dog-square.jpg"
+    />
+     
+    <a
+      class=""
+      href="#/somewhere"
+    >
+      <img
+        alt="Foxy"
+        class="image image--circle"
+        src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
+      />
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Image Rounded 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Katzee"
+      class="image image--rounded"
+      src="https://orangecss.com/images/thumbnails/cat.jpg"
+    />
+     
+    <a
+      class=""
+      href="#/somewhere"
+    >
+      <img
+        alt="Foxy"
+        class="image image--rounded"
+        src="https://orangecss.com/images/thumbnails/fox.jpg"
+      />
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Image Sizes 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <p>
+      Default - auto size
+    </p>
+     
+    <img
+      alt="Katzee"
+      class="image"
+      src="https://orangecss.com/images/thumbnails/cat.jpg"
+    />
+     
+    <p>
+      Extra small - 60px
+    </p>
+     
+    <img
+      alt="Foxy"
+      class="image image--size-xsmall"
+      src="https://orangecss.com/images/thumbnails/width-60/fox-60.jpg"
+    />
+     
+    <p>
+      Small - 120px
+    </p>
+     
+    <img
+      alt="Hedgy"
+      class="image image--size-small"
+      src="https://orangecss.com/images/thumbnails/width-120/hedgehog-120.jpg"
+    />
+     
+    <p>
+      Medium - 240px
+    </p>
+     
+    <img
+      alt="Doggo"
+      class="image image--size-medium"
+      src="https://orangecss.com/images/thumbnails/width-240/dog-240.jpg"
+    />
+     
+    <p>
+      Large - 480px
+    </p>
+     
+    <img
+      alt="Hedgy"
+      class="image image--size-large"
+      src="https://orangecss.com/images/thumbnails/width-480/hedgehog-480.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Image Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Katzze"
+      class="image image---"
+      src="https://orangecss.com/images/thumbnails/cat.jpg"
+    />
+     
+    <a
+      href="#"
+    >
+      <img
+        alt="Katzze"
+        class="image image---"
+        src="https://orangecss.com/images/thumbnails/square/dog-square.jpg"
+      />
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Image With action, in grid 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="grid"
+  >
+    <div
+      class="col-2"
+    >
+      <img
+        alt="Hedgy"
+        class="image image--action"
+        src="https://orangecss.com/images/thumbnails/hedgehog.jpg"
+      />
+    </div>
+     
+    <div
+      class="col-2"
+    >
+      <img
+        alt="Katzee"
+        class="image image--action"
+        src="https://orangecss.com/images/thumbnails/cat.jpg"
+      />
+    </div>
+     
+    <div
+      class="col-2"
+    >
+      <img
+        alt="Doggo"
+        class="image image--action"
+        src="https://orangecss.com/images/thumbnails/square/dog-square.jpg"
+      />
+    </div>
+     
+    <div
+      class="col-2"
+    >
+      <img
+        alt="Foxy"
+        class="image image--action"
+        src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
+      />
+    </div>
+     
+    <div
+      class="col-2"
+    >
+      <img
+        alt="Katzee"
+        class="image image--circle image--action"
+        src="https://orangecss.com/images/thumbnails/square/cat-square.jpg"
+      />
+    </div>
+     
+    <div
+      class="col-2"
+    >
+      <img
+        alt="Hedgy"
+        class="image image--circle image--action"
+        src="https://orangecss.com/images/thumbnails/square/hedgehog-square.jpg"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Image With shadow 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Katzee"
+      class="image image--shadow"
+      src="https://orangecss.com/images/thumbnails/cat.jpg"
+    />
+     
+    <a
+      class=""
+      href="#/somewhere"
+    >
+      <img
+        alt="Foxy"
+        class="image image--shadow"
+        src="https://orangecss.com/images/thumbnails/fox.jpg"
+      />
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Message Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="message"
+  >
+     
+    <div
+      class="message__body"
+    >
+      <!---->
+       
+      <p>
+        
+          Some text and a 
+        <a
+          href="#"
+        >
+          link
+        </a>
+        .
+        
+      </p>
+    </div>
+     
+    <div
+      class="message__action"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Message Colors 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      class="message"
+    >
+       
+      <div
+        class="message__body"
+      >
+        <h6>
+          Heading
+        </h6>
+         
+        <p>
+          
+            Some text and a 
+          <a
+            href="#"
+          >
+            link
+          </a>
+          .
+          
+        </p>
+         
+      </div>
+       
+      <div
+        class="message__action"
+      >
+        <button
+          class="button button--primary button--small button--color-gray"
+          type="button"
+        >
+          action 
+          <!---->
+        </button>
+      </div>
+    </div>
+     
+    <hr />
+     
+    <div
+      class="message message--color-secondary"
+    >
+       
+      <div
+        class="message__body"
+      >
+        <h6>
+          Heading
+        </h6>
+         
+        <p>
+          
+            Some text and a 
+          <a
+            href="#"
+          >
+            link
+          </a>
+          .
+          
+        </p>
+         
+      </div>
+       
+      <div
+        class="message__action"
+      >
+        <button
+          class="button button--primary button--small button--color-secondary"
+          type="button"
+        >
+          action 
+          <!---->
+        </button>
+      </div>
+    </div>
+     
+    <hr />
+     
+    <div
+      class="message message--color-yellow"
+    >
+       
+      <div
+        class="message__body"
+      >
+        <h6>
+          Heading
+        </h6>
+         
+        <p>
+          
+            Some text and a 
+          <a
+            href="#"
+          >
+            link
+          </a>
+          .
+          
+        </p>
+         
+      </div>
+       
+      <div
+        class="message__action"
+      >
+        <button
+          class="button button--primary button--small button--color-yellow"
+          type="button"
+        >
+          action 
+          <!---->
+        </button>
+      </div>
+    </div>
+     
+    <hr />
+     
+    <div
+      class="message message--color-green"
+    >
+       
+      <div
+        class="message__body"
+      >
+        <h6>
+          Heading
+        </h6>
+         
+        <p>
+          
+            Some text and a 
+          <a
+            href="#"
+          >
+            link
+          </a>
+          .
+          
+        </p>
+         
+      </div>
+       
+      <div
+        class="message__action"
+      >
+        <button
+          class="button button--primary button--small button--color-green"
+          type="button"
+        >
+          action 
+          <!---->
+        </button>
+      </div>
+    </div>
+     
+    <hr />
+     
+    <div
+      class="message message--color-red"
+    >
+       
+      <div
+        class="message__body"
+      >
+        <h6>
+          Heading
+        </h6>
+         
+        <p>
+          
+            Some text and a 
+          <a
+            href="#"
+          >
+            link
+          </a>
+          .
+          
+        </p>
+         
+      </div>
+       
+      <div
+        class="message__action"
+      >
+        <button
+          class="button button--primary button--small button--color-red"
+          type="button"
+        >
+          action 
+          <!---->
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Message No border radius 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="message message--color-secondary message--full"
+  >
+     
+    <div
+      class="message__body"
+    >
+      <h6>
+        heading
+      </h6>
+       
+      <p>
+        
+          Body text.
+        
+      </p>
+    </div>
+     
+    <div
+      class="message__action"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Message Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="message"
+  >
+     
+    <div
+      class="message__body"
+    >
+      <h6>
+        Heading
+      </h6>
+       
+      <!---->
+       
+      <p>
+        
+        Body text
+      
+      </p>
+       
+      <!---->
+    </div>
+     
+    <div
+      class="message__action"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/Message With an avatar 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="message message--color-secondary"
+  >
+    <div
+      class="avatar avatar--size-small avatar--circle"
+    >
+      <svg
+        viewBox="0 0 80 80"
+        width="80px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+     
+    <div
+      class="message__body"
+    >
+      <!---->
+        
+      <p>
+        
+          Body text.
+        
+      </p>
+       
+    </div>
+     
+    <div
+      class="message__action"
+    >
+      <button
+        class="button button--primary button--small button--color-secondary"
+        type="button"
+      >
+        action 
+        <!---->
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Checkbox Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="checkbox"
+  >
+    <input
+      id="checkbox_basic"
+      type="checkbox"
+    />
+     
+    <label>
+      Label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Checkbox Group 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="form__item"
+  >
+    <div
+      class="checkbox-group"
+    >
+      <div
+        class="checkbox-group__label"
+      >
+        Group label
+      </div>
+       
+      <div
+        class="checkbox"
+      >
+        <input
+          id="checkbox_basic_1"
+          type="checkbox"
+        />
+         
+        <label>
+          First label
+        </label>
+      </div>
+       
+      <div
+        class="checkbox"
+      >
+        <input
+          id="checkbox_basic_2"
+          type="checkbox"
+        />
+         
+        <label>
+          Second label
+        </label>
+      </div>
+       
+      <div
+        class="checkbox"
+      >
+        <input
+          id="checkbox_basic_3"
+          type="checkbox"
+        />
+         
+        <label>
+          Third label
+        </label>
+      </div>
+       
+      <div
+        class="checkbox is-disabled"
+      >
+        <input
+          disabled="disabled"
+          id="checkbox_basic_4"
+          type="checkbox"
+        />
+         
+        <label>
+          Forth label
+        </label>
+      </div>
+    </div>
+     
+    <div
+      class="form__description"
+    >
+      Description text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Checkbox Tryout - Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="checkbox"
+  >
+    <input
+      id="checkbox_basic_tryout"
+      type="checkbox"
+    />
+     
+    <label>
+      Label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Checkbox Tryout - Group 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="form__item"
+  >
+    <div
+      class="checkbox-group"
+    >
+      <div
+        class="checkbox-group__label"
+      >
+        Group label
+      </div>
+       
+      <div
+        class="checkbox"
+      >
+        <input
+          id="checkbox_basic_tryout_1"
+          type="checkbox"
+        />
+         
+        <label>
+          First label
+        </label>
+      </div>
+       
+      <div
+        class="checkbox"
+      >
+        <input
+          id="checkbox_basic_tryout_2"
+          type="checkbox"
+        />
+         
+        <label>
+          Second label
+        </label>
+      </div>
+       
+      <div
+        class="checkbox is-checked"
+      >
+        <input
+          id="checkbox_basic_tryout_3"
+          type="checkbox"
+        />
+         
+        <label>
+          Third label
+        </label>
+      </div>
+       
+      <div
+        class="checkbox is-checked"
+      >
+        <input
+          id="checkbox_basic_tryout_4"
+          type="checkbox"
+        />
+         
+        <label>
+          Forth label
+        </label>
+      </div>
+    </div>
+     
+    <div
+      class="form__description"
+    >
+      Description text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Dropdown Basic with strings 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <div
+        class="form-dropdown"
+        id="form_dropdown_basic"
+      >
+        <label
+          class="form-dropdown__label"
+          for="form_dropdown_basic"
+        >
+          Dropdown label
+        </label>
+         
+        <input
+          class="form-dropdown__input"
+          id="form_dropdown_basic"
+          name="form_dropdown_basic"
+          type="text"
+        />
+         
+        <div
+          class="form-dropdown__text"
+        >
+          
+      placeholder
+    
+        </div>
+         
+        <div
+          class="form-dropdown__icon"
+        >
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+              fill="#000000"
+            />
+          </svg>
+           
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+              fill="#000000"
+            />
+          </svg>
+        </div>
+         
+        <div
+          class="form-dropdown__content"
+        >
+          <ul
+            class="form-dropdown__menu"
+          >
+            <li
+              class=""
+            >
+              google 
+              <!---->
+            </li>
+            <li
+              class=""
+            >
+              word 
+              <!---->
+            </li>
+            <li
+              class=""
+            >
+              Advertisement 
+              <!---->
+            </li>
+            <li
+              class=""
+            >
+              Competitor 
+              <!---->
+            </li>
+            <li
+              class=""
+            >
+              Other 
+              <!---->
+            </li>
+          </ul>
+        </div>
+      </div>
+       
+      <div
+        class="form__description"
+      >
+        Description of the dropdown field
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Dropdown Large with objects 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form form--large"
+  >
+    <div
+      class="form__item"
+    >
+      <div
+        class="form-dropdown"
+        id="form_dropdown_basic"
+      >
+        <label
+          class="form-dropdown__label"
+          for="form_dropdown_basic"
+        >
+          Dropdown label
+        </label>
+         
+        <input
+          class="form-dropdown__input"
+          id="form_dropdown_basic"
+          name="form_dropdown_basic"
+          type="text"
+        />
+         
+        <div
+          class="form-dropdown__text"
+        >
+          
+      placeholder
+    
+        </div>
+         
+        <div
+          class="form-dropdown__icon"
+        >
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+              fill="#000000"
+            />
+          </svg>
+           
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+              fill="#000000"
+            />
+          </svg>
+        </div>
+         
+        <div
+          class="form-dropdown__content"
+        >
+          <ul
+            class="form-dropdown__menu"
+          >
+            <li
+              class=""
+            >
+              Penguin 
+              <!---->
+            </li>
+            <li
+              class=""
+            >
+              Bear 
+              <!---->
+            </li>
+            <li
+              class=""
+            >
+              Bird 
+              <!---->
+            </li>
+            <li
+              class=""
+            >
+              Klemen 
+              <!---->
+            </li>
+            <li
+              class=""
+            >
+              Ryan 
+              <!---->
+            </li>
+          </ul>
+        </div>
+      </div>
+       
+      <div
+        class="form__description"
+      >
+        Description of the dropdown field
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Dropdown Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <form
+      class="form form--large"
+    >
+      <div
+        class="form__item"
+      >
+        <div
+          class="form-dropdown"
+          id="form_dropdown_tryout"
+        >
+          <label
+            class="form-dropdown__label"
+            for="form_dropdown_tryout"
+          >
+            Label
+          </label>
+           
+          <input
+            class="form-dropdown__input"
+            id="form_dropdown_tryout"
+            name="form_dropdown_tryout"
+            type="text"
+          />
+           
+          <div
+            class="form-dropdown__text"
+          >
+            
+      Placeholder
+    
+          </div>
+           
+          <div
+            class="form-dropdown__icon"
+          >
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                fill="#000000"
+              />
+            </svg>
+             
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                fill="#000000"
+              />
+            </svg>
+          </div>
+           
+          <div
+            class="form-dropdown__content"
+          >
+            <ul
+              class="form-dropdown__menu"
+            >
+              <li
+                class=""
+              >
+                google 
+                <!---->
+              </li>
+              <li
+                class=""
+              >
+                word 
+                <!---->
+              </li>
+              <li
+                class=""
+              >
+                Advertisement 
+                <!---->
+              </li>
+              <li
+                class=""
+              >
+                Competitor 
+                <!---->
+              </li>
+              <li
+                class=""
+              >
+                Other 
+                <!---->
+              </li>
+            </ul>
+          </div>
+        </div>
+         
+        <div
+          class="form__description"
+        >
+          Description of the dropdown field
+        </div>
+      </div>
+    </form>
+     
+    <code
+      class="d-block mt-4"
+    >
+      
+        Return value: 
+      
+    </code>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Input Basic 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <!---->
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input"
+          id="form_basic"
+          name="form_basic"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Label
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Input Large - Basic 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form form--large"
+  >
+    <div
+      class="form__item"
+    >
+      <!---->
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input"
+          id="form_basic"
+          name="form_basic"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Large
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Input Large - Read-only 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form form--large"
+  >
+    <div
+      class="form__item"
+    >
+      <!---->
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input has-value"
+          id="form_basic"
+          name="form_basic"
+          readonly="readonly"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Label
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Input Large - Read-only with action/extras 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form form--large"
+  >
+    <div
+      class="form__item has-extras has-action"
+    >
+      <div
+        class="form__action"
+      >
+        <div>
+          <button
+            class="button button--primary button--small"
+            type="button"
+          >
+            copy to clipboard 
+            <!---->
+          </button>
+        </div>
+      </div>
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input has-value"
+          id="form_basic"
+          name="form_basic"
+          readonly="readonly"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Your phone number
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        To change your API key please contact support
+      </p>
+    </div>
+     
+    <div
+      class="form__item has-extras has-action"
+    >
+      <!---->
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input has-value"
+          id="form_basic_2"
+          name="form_basic_2"
+          readonly="readonly"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic_2"
+        >
+          Your API key
+        </label>
+      </div>
+       
+      <div
+        class="form__action"
+      >
+        <div>
+          <button
+            class="button button--primary button--small"
+            type="button"
+          >
+            copy to clipboard 
+            <!---->
+          </button>
+        </div>
+      </div>
+       
+      <p
+        class="form__description"
+      >
+        To change your API key please contact support
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Input Large - With action/extras 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form form--large"
+  >
+    <div
+      class="form__item has-extras has-action"
+    >
+      <div
+        class="form__action"
+      >
+        <div>
+          
+            +386
+          
+        </div>
+      </div>
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input"
+          id="form_basic"
+          name="form_basic"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Your phone number
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+     
+    <div
+      class="form__item has-extras has-action"
+    >
+      <!---->
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input"
+          id="form_basic_2"
+          name="form_basic_2"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic_2"
+        >
+          https://example.com
+        </label>
+      </div>
+       
+      <div
+        class="form__action"
+      >
+        <div>
+          
+            /orange
+          
+        </div>
+      </div>
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Input Read-only 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <!---->
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input has-value"
+          id="form_basic"
+          name="form_basic"
+          readonly="readonly"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Label
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Input Read-only with action/extras 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item has-extras has-action"
+    >
+      <div
+        class="form__action"
+      >
+        <div>
+          <button
+            class="button button--primary button--small"
+            type="button"
+          >
+            copy to clipboard 
+            <!---->
+          </button>
+        </div>
+      </div>
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input has-value"
+          id="form_basic"
+          name="form_basic"
+          readonly="readonly"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Your phone number
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        To change your API key please contact support
+      </p>
+    </div>
+     
+    <div
+      class="form__item has-extras has-action"
+    >
+      <!---->
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input has-value"
+          id="form_basic_2"
+          name="form_basic_2"
+          readonly="readonly"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic_2"
+        >
+          Your API key
+        </label>
+      </div>
+       
+      <div
+        class="form__action"
+      >
+        <div>
+          <button
+            class="button button--primary button--small"
+            type="button"
+          >
+            copy to clipboard 
+            <!---->
+          </button>
+        </div>
+      </div>
+       
+      <p
+        class="form__description"
+      >
+        To change your API key please contact support
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Input Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item has-extras has-action"
+    >
+      <div
+        class="form__action"
+      >
+        <div>
+          <button
+            class="button button--primary button--small"
+            type="button"
+          >
+            copy to clipboard 
+            <!---->
+          </button>
+        </div>
+      </div>
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input"
+          id="form_basic"
+          name="form_basic"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Label
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Input With action/extras 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item has-extras has-action"
+    >
+      <div
+        class="form__action"
+      >
+        <div>
+          
+            +386
+          
+        </div>
+      </div>
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input"
+          id="form_basic"
+          name="form_basic"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic"
+        >
+          Your phone number
+        </label>
+      </div>
+       
+      <!---->
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+     
+    <div
+      class="form__item has-extras has-action"
+    >
+      <!---->
+       
+      <div
+        class="form__input-wrapper"
+      >
+        <input
+          autocomplete="off"
+          class="form__input"
+          id="form_basic_2"
+          name="form_basic_2"
+          type="text"
+        />
+         
+        <label
+          class="form__label"
+          for="form_basic_2"
+        >
+          https://example.com
+        </label>
+      </div>
+       
+      <div
+        class="form__action"
+      >
+        <div>
+          
+            /orange
+          
+        </div>
+      </div>
+       
+      <p
+        class="form__description"
+      >
+        Description text
+      </p>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Radio Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="radio"
+  >
+    <input
+      id="radio_basic"
+      name="form_radio_name"
+      type="radio"
+      value="radio_basic"
+    />
+     
+    <label
+      for="radio_basic"
+    >
+      Label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Radio Group 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="form__item"
+  >
+    <div
+      class="radio-group"
+    >
+      <div
+        class="radio-group__label"
+      >
+        Group label
+      </div>
+       
+      <div
+        class="radio"
+      >
+        <input
+          id="radio_basic_1"
+          name="form_radio_group_name"
+          type="radio"
+          value="radio_basic_1"
+        />
+         
+        <label
+          for="radio_basic_1"
+        >
+          First label
+        </label>
+      </div>
+       
+      <div
+        class="radio"
+      >
+        <input
+          id="radio_basic_2"
+          name="form_radio_group_name"
+          type="radio"
+          value="radio_basic_2"
+        />
+         
+        <label
+          for="radio_basic_2"
+        >
+          Second label
+        </label>
+      </div>
+       
+      <div
+        class="radio"
+      >
+        <input
+          id="radio_basic_3"
+          name="form_radio_group_name"
+          type="radio"
+          value="radio_basic_3"
+        />
+         
+        <label
+          for="radio_basic_3"
+        >
+          Third label
+        </label>
+      </div>
+       
+      <div
+        class="radio is-disabled"
+      >
+        <input
+          disabled="disabled"
+          id="radio_basic_4"
+          name="form_radio_group_name"
+          type="radio"
+          value="radio_basic_4"
+        />
+         
+        <label
+          for="radio_basic_4"
+        >
+          Forth label
+        </label>
+      </div>
+    </div>
+     
+    <div
+      class="form__description"
+    >
+      Description text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Radio Tryout - Basic 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="radio"
+  >
+    <input
+      id="radio_basic_tryout"
+      name="form_radio_tryout_name"
+      type="radio"
+      value="radio_basic_tryout"
+    />
+     
+    <label
+      for="radio_basic_tryout"
+    >
+      Label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Radio Tryout - Group 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="form__item"
+  >
+    <div
+      class="radio-group"
+    >
+      <div
+        class="radio-group__label"
+      >
+        Group label
+      </div>
+       
+      <div
+        class="radio"
+      >
+        <input
+          id="radio_basic_tryout_1"
+          name="form_radio_group_tryout_name"
+          type="radio"
+          value="radio_basic_tryout_1"
+        />
+         
+        <label
+          for="radio_basic_tryout_1"
+        >
+          First label
+        </label>
+      </div>
+       
+      <div
+        class="radio"
+      >
+        <input
+          id="radio_basic_tryout_2"
+          name="form_radio_group_tryout_name"
+          type="radio"
+          value="radio_basic_tryout_2"
+        />
+         
+        <label
+          for="radio_basic_tryout_2"
+        >
+          Second label
+        </label>
+      </div>
+       
+      <div
+        class="radio"
+      >
+        <input
+          id="radio_basic_tryout_3"
+          name="form_radio_group_tryout_name"
+          type="radio"
+          value="radio_basic_tryout_3"
+        />
+         
+        <label
+          for="radio_basic_tryout_3"
+        >
+          Third label
+        </label>
+      </div>
+       
+      <div
+        class="radio"
+      >
+        <input
+          id="radio_basic_tryout_4"
+          name="form_radio_group_tryout_name"
+          type="radio"
+          value="radio_basic_tryout_4"
+        />
+         
+        <label
+          for="radio_basic_tryout_4"
+        >
+          Forth label
+        </label>
+      </div>
+    </div>
+     
+    <div
+      class="form__description"
+    >
+      Description text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Textarea Auto expand 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <textarea
+        class="form__textarea"
+        id="form_basic"
+        name="form_basic"
+        rows="3"
+      />
+       
+      <label
+        class="form__label"
+        for="form_basic"
+      >
+        Label
+      </label>
+       
+      <div
+        class="form__description"
+      >
+        Description text
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Textarea Disabled 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <textarea
+        class="form__textarea"
+        disabled="disabled"
+        id="form_basic"
+        name="form_basic"
+        rows="3"
+      />
+       
+      <label
+        class="form__label"
+        for="form_basic"
+      >
+        Label
+      </label>
+       
+      <div
+        class="form__description"
+      >
+        Description text
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Textarea Large - Basic 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form form--large"
+  >
+    <div
+      class="form__item"
+    >
+      <textarea
+        class="form__textarea"
+        id="form_basic"
+        name="form_basic"
+        rows="3"
+      />
+       
+      <label
+        class="form__label"
+        for="form_basic"
+      >
+        Label
+      </label>
+       
+      <div
+        class="form__description"
+      >
+        Description text
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Textarea Large - Read-only 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form form--large"
+  >
+    <div
+      class="form__item"
+    >
+      <textarea
+        class="form__textarea has-value"
+        id="form_basic"
+        name="form_basic"
+        readonly="readonly"
+        rows="3"
+      />
+       
+      <label
+        class="form__label"
+        for="form_basic"
+      >
+        Label
+      </label>
+       
+      <div
+        class="form__description"
+      >
+        Description text
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Textarea Read-only with rows 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <textarea
+        class="form__textarea has-value"
+        id="form_basic"
+        name="form_basic"
+        readonly="readonly"
+        rows="5"
+      />
+       
+      <label
+        class="form__label"
+        for="form_basic"
+      >
+        Label
+      </label>
+       
+      <div
+        class="form__description"
+      >
+        Description text
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Textarea Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <textarea
+        class="form__textarea"
+        id="form_basic"
+        name="form_basic"
+        rows="3"
+      />
+       
+      <label
+        class="form__label"
+        for="form_basic"
+      >
+        Label
+      </label>
+       
+      <div
+        class="form__description"
+      >
+        Description text
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Toggle Basic 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Toggle Colors 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-primary is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-secondary is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-red is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-orange is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-yellow is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-green is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-indigo is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-blue is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-violet is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-black is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--color-gray is-checked"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Toggle Custom value names 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--label toggle--large"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <!---->
+          </label>
+        </div>
+         
+        <div>
+          <label
+            class="toggle__text"
+          >
+            Custom value
+          </label>
+           
+          <div
+            class="toggle__value toggle__value--disabled"
+          >
+            
+        Custom Disabled Value Text
+      
+          </div>
+        </div>
+      </div>
+       
+      <!---->
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Toggle Large 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--label toggle--large"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <!---->
+          </label>
+        </div>
+         
+        <div>
+          <label
+            class="toggle__text"
+          >
+            Label
+          </label>
+           
+          <div
+            class="toggle__value toggle__value--disabled"
+          >
+            
+        Disabled
+      
+          </div>
+        </div>
+      </div>
+       
+      <!---->
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Toggle Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--label toggle--color-secondary"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              Label
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <div
+        class="form__description"
+      >
+        Description text
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Forms/Toggle With label 1`] = `
+<div
+  class="p-4"
+>
+  <form
+    class="form"
+  >
+    <div
+      class="form__item"
+    >
+      <div
+        class="toggle toggle--label"
+      >
+        <div
+          class="toggle__button"
+        >
+          <input
+            class="toggle__input"
+            id="toggle_tryout"
+            type="checkbox"
+          />
+           
+          <label
+            class="toggle__label"
+          >
+            <span>
+              Label
+            </span>
+          </label>
+        </div>
+         
+        <!---->
+      </div>
+       
+      <!---->
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Align Block 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Foxy"
+      class="image block-left"
+      src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
+    />
+     
+    <img
+      alt="Doggo"
+      class="image block-center"
+      src="https://orangecss.com/images/thumbnails/square/dog-square.jpg"
+    />
+     
+    <img
+      alt="Katze"
+      class="image block-right"
+      src="https://orangecss.com/images/thumbnails/square/cat-square.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Align Flex 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Foxy"
+      class="image flex-left"
+      src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
+    />
+     
+    <img
+      alt="Doggo"
+      class="image flex-center"
+      src="https://orangecss.com/images/thumbnails/square/dog-square.jpg"
+    />
+     
+    <img
+      alt="Katze"
+      class="image flex-right"
+      src="https://orangecss.com/images/thumbnails/square/cat-square.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Align Responsive 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Foxy"
+      class="image block-left lg:block-center"
+      src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
+    />
+     
+    <img
+      alt="Doggo"
+      class="image flex-center lg:flex-right"
+      src="https://orangecss.com/images/thumbnails/square/dog-square.jpg"
+    />
+     
+    <img
+      alt="Katze"
+      class="image flex-right lg:flex-left"
+      src="https://orangecss.com/images/thumbnails/square/cat-square.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Align Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Foxy"
+      class="image block-left"
+      src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Align Usage 1`] = `
+<div
+  class="p-4"
+>
+  <table
+    class="table table--compact table--celled"
+  >
+    <thead>
+      <tr>
+        <th>
+          Attribute
+        </th>
+         
+        <th>
+          Description
+        </th>
+         
+        <th>
+          Type
+        </th>
+         
+        <th>
+          Syntax
+        </th>
+      </tr>
+    </thead>
+     
+    <tbody>
+      <tr>
+        <td>
+          role
+        </td>
+         
+        <td>
+          
+            Set with 
+          <code>
+            .{role}-left
+          </code>
+           class 
+          <br />
+          <br />
+          
+            Possible values: 
+          <code>
+            block
+          </code>
+           or 
+          <code>
+            flex
+          </code>
+        </td>
+         
+        <td>
+          Class
+        </td>
+         
+        <td>
+          <code>
+            .block-left
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          align
+        </td>
+         
+        <td>
+          
+            Set with 
+          <code>
+            .block-{align}
+          </code>
+           class 
+          <br />
+          <br />
+          
+            Possible values: 
+          <code>
+            left
+          </code>
+          , 
+          <code>
+            center
+          </code>
+           or 
+          <code>
+            right
+          </code>
+        </td>
+         
+        <td>
+          Class
+        </td>
+         
+        <td>
+          <code>
+            .block-left
+          </code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Border Radius Styles 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Doggo"
+      class="image rounded-0"
+      src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
+    />
+     
+    <img
+      alt="Doggo"
+      class="image rounded"
+      src="https://orangecss.com/images/thumbnails/square/cat-square.jpg"
+    />
+     
+    <img
+      alt="Hedgehog"
+      class="image rounded-1"
+      src="https://orangecss.com/images/thumbnails/square/hedgehog-square.jpg"
+    />
+     
+    <img
+      alt="Katze"
+      class="image rounded-full"
+      src="https://orangecss.com/images/thumbnails/square/dog-square.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Border Radius Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <img
+      alt="Foxy"
+      class="image rounded"
+      src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Border Radius Usage 1`] = `
+<div
+  class="p-4"
+>
+  <table
+    class="table table--compact table--celled"
+  >
+    <thead>
+      <tr>
+        <th>
+          Attribute
+        </th>
+         
+        <th>
+          Description
+        </th>
+         
+        <th>
+          Type
+        </th>
+         
+        <th>
+          Syntax
+        </th>
+      </tr>
+    </thead>
+     
+    <tbody>
+      <tr>
+        <td>
+          rounded
+        </td>
+         
+        <td>
+          
+            Set with 
+          <code>
+            .rounded-{size}
+          </code>
+           class 
+          <br />
+          <br />
+          
+            Possible values: 
+          <code>
+            0
+          </code>
+          , 
+          <code>
+            base (just rounded)
+          </code>
+          , 
+          <code>
+            1
+          </code>
+          , 
+          <code>
+            full
+          </code>
+        </td>
+         
+        <td>
+          Class
+        </td>
+         
+        <td>
+          <code>
+            .rounded-full
+          </code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Box Shadow Styles 1`] = `
+<div
+  class="p-4"
+>
+  <ul
+    class="docs__bg-color-list"
+  >
+    <li>
+      <div
+        class="docs__bg-color-item shadow-primary bg-white"
+      />
+       
+      <p>
+        Primary
+      </p>
+    </li>
+     
+    <li>
+      <div
+        class="docs__bg-color-item shadow-secondary bg-white"
+      />
+       
+      <p>
+        Secondary
+      </p>
+    </li>
+     
+    <li>
+      <div
+        class="docs__bg-color-item shadow-input bg-white"
+      />
+       
+      <p>
+        Input
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Box Shadow Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="d-inline-block p-5 bg-white shadow-primary"
+  >
+    
+      shadow-primary
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Box Shadow Usage 1`] = `
+<div
+  class="p-4"
+>
+  <table
+    class="table table--compact table--celled"
+  >
+    <thead>
+      <tr>
+        <th>
+          Attribute
+        </th>
+         
+        <th>
+          Description
+        </th>
+         
+        <th>
+          Type
+        </th>
+         
+        <th>
+          Syntax
+        </th>
+      </tr>
+    </thead>
+     
+    <tbody>
+      <tr>
+        <td>
+          shadow
+        </td>
+         
+        <td>
+          
+            Set with 
+          <code>
+            .shadow-{shadow}
+          </code>
+           class 
+          <br />
+          <br />
+          
+            Possible values: 
+          <code>
+            primary
+          </code>
+          , 
+          <code>
+            secondary
+          </code>
+           or 
+          <code>
+            input
+          </code>
+        </td>
+         
+        <td>
+          Class
+        </td>
+         
+        <td>
+          <code>
+            .shadow-primary
+          </code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Display Block 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      class="d-block p-4 bg-primary text-center color-white mb-3"
+    >
+      1
+    </div>
+     
+    <div
+      class="d-block p-4 bg-primary text-center color-white mb-3"
+    >
+      2
+    </div>
+     
+    <div
+      class="d-block p-4 bg-primary text-center color-white mb-3"
+    >
+      3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Display Flex 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      class="d-flex p-4 bg-primary text-center color-white mb-3"
+    >
+      1
+    </div>
+     
+    <div
+      class="d-flex p-4 bg-primary text-center color-white mb-3"
+    >
+      2
+    </div>
+     
+    <div
+      class="d-flex p-4 bg-primary text-center color-white mb-3"
+    >
+      3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Display Inline 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      class="d-inline p-4 bg-primary text-center color-white mb-3"
+    >
+      1
+    </div>
+     
+    <div
+      class="d-inline p-4 bg-primary text-center color-white mb-3"
+    >
+      2
+    </div>
+     
+    <div
+      class="d-inline p-4 bg-primary text-center color-white mb-3"
+    >
+      3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Display Inline Block 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      class="d-inline-block p-4 bg-primary text-center color-white mb-3"
+    >
+      1
+    </div>
+     
+    <div
+      class="d-inline-block p-4 bg-primary text-center color-white mb-3"
+    >
+      2
+    </div>
+     
+    <div
+      class="d-inline-block p-4 bg-primary text-center color-white mb-3"
+    >
+      3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Display Inline Flex 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      class="d-inline-flex p-4 bg-primary text-center color-white mb-3"
+    >
+      1
+    </div>
+     
+    <div
+      class="d-inline-flex p-4 bg-primary text-center color-white mb-3"
+    >
+      2
+    </div>
+     
+    <div
+      class="d-inline-flex p-4 bg-primary text-center color-white mb-3"
+    >
+      3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Display None / Hidden 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      class="d-inline-block p-4 bg-primary text-center color-white mb-3"
+    >
+      1
+    </div>
+     
+    <div
+      class="d-inline-block p-4 bg-primary text-center color-white mb-3"
+    >
+      2
+    </div>
+     
+    <div
+      class="d-none p-4 bg-primary text-center color-white mb-3"
+    >
+      3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Display Responsive 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      class="d-block md:d-inline-block lg:d-inline-flex p-4 bg-primary text-center color-white mb-3"
+    >
+      1
+    </div>
+     
+    <div
+      class="d-block md:d-inline-block lg:d-inline-flex p-4 bg-primary text-center color-white mb-3"
+    >
+      2
+    </div>
+     
+    <div
+      class="d-block md:d-inline-block lg:d-inline-flex p-4 bg-primary text-center color-white mb-3"
+    >
+      3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Display Responsive Usage 1`] = `
+<div
+  class="p-4"
+>
+  <table
+    class="table table--fixed table--compact table--definition table--border-bottom"
+  >
+    <thead>
+      <th />
+       
+      <th>
+        
+          Class prefix
+        
+      </th>
+    </thead>
+     
+    <tbody>
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Default
+          </span>
+          <br />
+          
+            &gt; 0px
+          
+        </td>
+         
+        <td>
+          <code>
+            d-
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra extra small
+          </span>
+          <br />
+          
+            &gt; 320px
+          
+        </td>
+         
+        <td>
+          <code>
+            xxs:d-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra small
+          </span>
+          <br />
+          
+            &gt; 480px
+          
+        </td>
+         
+        <td>
+          <code>
+            xs:d-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Small
+          </span>
+          <br />
+          
+            &gt; 640px
+          
+        </td>
+         
+        <td>
+          <code>
+            sm:d-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Medium
+          </span>
+          <br />
+          
+            &gt; 768px
+          
+        </td>
+         
+        <td>
+          <code>
+            md:d-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Large
+          </span>
+          <br />
+          
+            &gt; 991px
+          
+        </td>
+         
+        <td>
+          <code>
+            lg:d-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra large
+          </span>
+          <br />
+          
+            &gt; 1200px
+          
+        </td>
+         
+        <td>
+          <code>
+            xl:d-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra extra large
+          </span>
+          <br />
+          
+            &gt; 1440px
+          
+        </td>
+         
+        <td>
+          <code>
+            xxl:d-{key}
+          </code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Display Table 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="d-table"
+  >
+    <div
+      class="d-table-row"
+    >
+      <div
+        class="d-table-cell p-4 bg-primary text-center color-white mb-3"
+      >
+        Table cell 1
+      </div>
+       
+      <div
+        class="d-table-cell p-4 bg-primary-dark text-center color-white mb-3"
+      >
+        2
+      </div>
+       
+      <div
+        class="d-table-cell p-4 bg-primary text-center color-white mb-3"
+      >
+        3
+      </div>
+    </div>
+     
+    <div
+      class="d-table-row"
+    >
+      <div
+        class="d-table-cell p-4 bg-primary-dark text-center color-white mb-3"
+      >
+        4
+      </div>
+       
+      <div
+        class="d-table-cell p-4 bg-primary text-center color-white mb-3"
+      >
+        Table cell 5
+      </div>
+       
+      <div
+        class="d-table-cell p-4 bg-primary-dark text-center color-white mb-3"
+      >
+        Table cell 6
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Display Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="p-5 bg-primary color-white text-center d-block"
+  >
+    
+      d-block
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Spacings Responsive 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="grid"
+  >
+    <div
+      class="col-12 md:col-4"
+    >
+      <div
+        class="text-center color-white bg-primary p-1 md:p-2"
+      >
+        .p-1 
+        <br />
+         .md:p-2
+      </div>
+    </div>
+     
+    <div
+      class="col-12 md:col-4"
+    >
+      <div
+        class="text-center color-white bg-primary p-1 md:p-3"
+      >
+        .p-1 
+        <br />
+         .md:p-3
+      </div>
+    </div>
+     
+    <div
+      class="col-12 md:col-4"
+    >
+      <div
+        class="text-center color-white bg-primary p-1 md:p-4"
+      >
+        .p-1 
+        <br />
+         .md:p-4
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Spacings Responsive Usage 1`] = `
+<div
+  class="p-4"
+>
+  <table
+    class="table table--fixed table--compact table--definition table--border-bottom"
+  >
+    <thead>
+      <th />
+       
+      <th>
+        
+          Class prefix example
+        
+      </th>
+    </thead>
+     
+    <tbody>
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Default
+          </span>
+          <br />
+          
+            &gt; 0px
+          
+        </td>
+         
+        <td>
+          <code>
+            m-
+          </code>
+          , 
+          <code>
+            p-
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra extra small
+          </span>
+          <br />
+          
+            &gt; 320px
+          
+        </td>
+         
+        <td>
+          <code>
+            xxs:m-{key}
+          </code>
+          , 
+          <code>
+            xxs:p-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra small
+          </span>
+          <br />
+          
+            &gt; 480px
+          
+        </td>
+         
+        <td>
+          <code>
+            xs:m-{key}
+          </code>
+          , 
+          <code>
+            xs:p-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Small
+          </span>
+          <br />
+          
+            &gt; 640px
+          
+        </td>
+         
+        <td>
+          <code>
+            sm:m-{key}
+          </code>
+          , 
+          <code>
+            sm:p-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Medium
+          </span>
+          <br />
+          
+            &gt; 768px
+          
+        </td>
+         
+        <td>
+          <code>
+            md:m-{key}
+          </code>
+          , 
+          <code>
+            md:p-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Large
+          </span>
+          <br />
+          
+            &gt; 991px
+          
+        </td>
+         
+        <td>
+          <code>
+            lg:m-{key}
+          </code>
+          , 
+          <code>
+            lg:p-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra large
+          </span>
+          <br />
+          
+            &gt; 1200px
+          
+        </td>
+         
+        <td>
+          <code>
+            xl:m-{key}
+          </code>
+          , 
+          <code>
+            xl:p-{key}
+          </code>
+        </td>
+      </tr>
+       
+      <tr>
+        <td>
+          <span
+            class="fs-epsilon color-secondary"
+          >
+            Extra extra large
+          </span>
+          <br />
+          
+            &gt; 1440px
+          
+        </td>
+         
+        <td>
+          <code>
+            xxl:m-{key}
+          </code>
+          , 
+          <code>
+            xxl:p-{key}
+          </code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots 6. Utilities|Spacings Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    class="grid"
+  >
+    <div
+      class="col-4"
+    >
+      <div
+        class="text-center color-white bg-primary p-4"
+      >
+        .p-4
+      </div>
+    </div>
+     
+    <div
+      class="col-4"
+    >
+      <div
+        class="text-center color-white bg-primary p-5"
+      >
+        .p-5
+      </div>
+    </div>
+     
+    <div
+      class="col-4"
+    >
+      <div
+        class="text-center color-white bg-primary p-6"
+      >
+        .p-6
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,53 @@
+{
+  "name": "orange-vue-storybook",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit --no-cache",
+    "lint": "vue-cli-service lint",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "lodash": "^4.17.15",
+    "storybook-vue-router": "^1.0.7",
+    "vue": "^2.6.11",
+    "vue-clickaway": "^2.2.2",
+    "vue-router": "^3.1.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@storybook/addon-a11y": "^5.3.19",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-docs": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addon-storyshots": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/theming": "^5.3.19",
+    "@storybook/vue": "^5.3.19",
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-plugin-unit-jest": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/test-utils": "1.0.0-beta.31",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-preset-vue": "^2.0.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest-vue-preprocessor": "^1.7.1",
+    "node-sass": "^4.14.0",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.2",
+    "vue-docgen-api": "^4.19.1",
+    "vue-docgen-loader": "^1.5.0",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

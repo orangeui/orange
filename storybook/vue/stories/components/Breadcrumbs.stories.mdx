@@ -1,0 +1,171 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OBreadcrumbs from '../../src/components/Breadcrumbs/Breadcrumbs';
+import OBreadcrumbsItem from '../../src/components/Breadcrumbs/BreadcrumbsItem';
+
+<!-- Additional Helpers -->
+import ColorBase from '../../src/global/ColorBase.js';
+import IconList from '../../src/components/Icon/IconList';
+
+<!-- Need to add decorator to Story, for router-link to be recognized -->
+import BasicRouterDecorator from '../../src/global/BasicRouterDecorator.js';
+
+
+<Meta title='5. Components|Custom/Breadcrumbs' component={ OBreadcrumbs } />
+
+# Breadcrumbs
+
+Show a path
+
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of Breadcrumbs on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout' decorators={[BasicRouterDecorator]}>
+  {{
+    components: { OBreadcrumbs, OBreadcrumbsItem },
+    template: `<o-breadcrumbs :color="color">
+        <o-breadcrumbs-item to="/" :icon="navigationItem1Icon">First</o-breadcrumbs-item>
+        <o-breadcrumbs-item to="/second" :active="active">Second</o-breadcrumbs-item>
+        <o-breadcrumbs-item to="/three">Three</o-breadcrumbs-item>
+        <o-breadcrumbs-item to="/four">Four</o-breadcrumbs-item>
+      </o-breadcrumbs>`,
+    props: {
+      color: {
+        default: select('Color', ColorBase, null)
+      },
+      navigationItem1Icon: {
+        default: select('Navigation Item 1 Icon', IconList, 'integrations')
+      },
+      active: {
+        default: boolean('Active Navigation Item 2', false)
+      },
+      tag: {
+        default: text('Tag (use a or router-link)', 'router-link')
+      }
+    }
+  }}
+</Story>
+
+
+<hr />
+
+# Basic
+
+<Preview>
+  <Story name='Basic' decorators={[BasicRouterDecorator]}>
+    {{
+      components: { OBreadcrumbs, OBreadcrumbsItem },
+      template: `<o-breadcrumbs>
+          <o-breadcrumbs-item to="/" icon="integrations">First</o-breadcrumbs-item>
+          <o-breadcrumbs-item to="/second">Second</o-breadcrumbs-item>
+          <o-breadcrumbs-item to="/three">Three</o-breadcrumbs-item>
+          <o-breadcrumbs-item to="/four">Four</o-breadcrumbs-item>
+        </o-breadcrumbs>`,
+    }}
+  </Story>
+</Preview>
+
+
+<hr />
+
+# With a back button
+
+<Preview>
+  <Story name='With a back button' decorators={[BasicRouterDecorator]}>
+    {{
+      components: { OBreadcrumbs, OBreadcrumbsItem },
+      template: `<o-breadcrumbs back_route="back" back_route_text="Back text">
+          <o-breadcrumbs-item to="/" icon="integrations">First</o-breadcrumbs-item>
+          <o-breadcrumbs-item to="/second">Second</o-breadcrumbs-item>
+          <o-breadcrumbs-item to="/three">Three</o-breadcrumbs-item>
+          <o-breadcrumbs-item to="/four">Four</o-breadcrumbs-item>
+        </o-breadcrumbs>`,
+    }}
+  </Story>
+</Preview>
+
+
+<hr />
+
+# Full width
+
+<Preview>
+  <Story name='Full width' decorators={[BasicRouterDecorator]}>
+    {{
+      components: { OBreadcrumbs, OBreadcrumbsItem },
+      template: `<o-breadcrumbs size="full">
+          <o-breadcrumbs-item to="/" icon="integrations">First</o-breadcrumbs-item>
+          <o-breadcrumbs-item to="/second">Second</o-breadcrumbs-item>
+          <o-breadcrumbs-item to="/three">Three</o-breadcrumbs-item>
+          <o-breadcrumbs-item to="/four">Four</o-breadcrumbs-item>
+        </o-breadcrumbs>`,
+    }}
+  </Story>
+</Preview>
+
+
+<hr />
+
+# Steps
+
+<Preview>
+  <Story name='Steps' decorators={[BasicRouterDecorator]}>
+    {{
+      components: { OBreadcrumbs, OBreadcrumbsItem },
+      template: `<o-breadcrumbs>
+          <o-breadcrumbs-item icon="integrations" :active="true">First</o-breadcrumbs-item>
+          <o-breadcrumbs-item :active="true">Second</o-breadcrumbs-item>
+          <o-breadcrumbs-item to="#">Three</o-breadcrumbs-item>
+          <o-breadcrumbs-item to="#">Four</o-breadcrumbs-item>
+        </o-breadcrumbs>`,
+    }}
+  </Story>
+</Preview>
+
+
+<hr />
+
+# Colors
+
+<Preview>
+  <Story name='Colors' decorators={[BasicRouterDecorator]}>
+    {{
+      components: { OBreadcrumbs, OBreadcrumbsItem },
+      template: `<div>
+        <o-breadcrumbs color="primary">
+          <o-breadcrumbs-item icon="integrations" :active="true">First</o-breadcrumbs-item>
+          <o-breadcrumbs-item :active="true">Second</o-breadcrumbs-item>
+          <o-breadcrumbs-item to="#">Three</o-breadcrumbs-item>
+          <o-breadcrumbs-item to="#">Four</o-breadcrumbs-item>
+        </o-breadcrumbs>
+        <hr />
+        <o-breadcrumbs color="secondary">
+          <o-breadcrumbs-item icon="integrations" :active="true">First</o-breadcrumbs-item>
+          <o-breadcrumbs-item :active="true">Second</o-breadcrumbs-item>
+          <o-breadcrumbs-item to="#">Three</o-breadcrumbs-item>
+          <o-breadcrumbs-item to="#">Four</o-breadcrumbs-item>
+        </o-breadcrumbs>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+
+## Breadcrumbs Props
+
+<Props of={OBreadcrumbs} />
+
+
+
+## BreadcrumbsItem Props
+
+<Props of={OBreadcrumbsItem} />

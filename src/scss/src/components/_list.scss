@@ -3,39 +3,39 @@
  */
 
 ul, ol {
-  padding-left: $ul-ol-padding-left;
+  padding-left: $o-ul-ol-padding-left;
   margin: 0;
 }
 
-.list {
-  padding: $list-padding;
+.o-list {
+  padding: $o-list-padding;
 }
 
 /** Item
 --------------------------------------------------*/
 
-.list__item, .list > li {
+.o-list__item, .o-list > li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 
-  padding-left: $list-item-horizontal-padding;
-  padding-right: $list-item-horizontal-padding;
+  padding-left: $o-list-item-horizontal-padding;
+  padding-right: $o-list-item-horizontal-padding;
 
   /** Disabled state */
   &.is-disabled {
-    background-color: $list-item-disabled-background-color;
+    background-color: $o-list-item-disabled-background-color;
   }
 
-  .list__item-title, h1, h2, h3, h4, h5, h6 {
+  .o-list__item-title, h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     font-size: inherit;
   }
 
-  .list__item-description, p {
+  .o-list__item-description, p {
     margin-bottom: 0;
-    color: $list-item-description-color;
-    font-size: $list-item-description-font-size; /** set description text to 90% size relative to style's font size */
+    color: $o-list-item-description-color;
+    font-size: $o-list-item-description-font-size; /** set description text to 90% size relative to style's font size */
   }
 }
 
@@ -43,7 +43,7 @@ ul, ol {
 /** Action
 --------------------------------------------------*/
 
-.list__action {
+.o-list__action {
   margin-left: auto;
 }
 
@@ -52,9 +52,9 @@ ul, ol {
 --------------------------------------------------*/
 
 /** Divide */
-.list--divide {
-  .list__item, > li {
-    border-top: $list-divide-item-top-border;
+.o-list--divide {
+  .o-list__item, > li {
+    border-top: $o-list-divide-item-top-border;
 
     &:first-child {
       border-top: none;
@@ -63,81 +63,81 @@ ul, ol {
 }
 
 /** Large */
-.list--large {
-  font-size: $list-large-font-size;
+.o-list--large {
+  font-size: $o-list-large-font-size;
 
-  .list__item, > li {
-    padding-top: $list-large-item-vertical-padding;
-    padding-bottom: $list-large-item-vertical-padding;
+  .o-list__item, > li {
+    padding-top: $o-list-large-item-vertical-padding;
+    padding-bottom: $o-list-large-item-vertical-padding;
   }
 
-  .list__item-title, h1, h2, h3, h4, h5, h6 {
-    margin-bottom: $list-large-item-title-margin-bottom;
+  .o-list__item-title, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: $o-list-large-item-title-margin-bottom;
   }
 
-  .list__item-description, p {
-    font-size: $list-large-item-description-font-size;
+  .o-list__item-description, p {
+    font-size: $o-list-large-item-description-font-size;
   }
 }
 
 /** Medium */
-.list--medium {
-  font-size: $list-medium-font-size;
+.o-list--medium {
+  font-size: $o-list-medium-font-size;
 
-  .list__item, > li {
-    padding-top: $list-medium-item-vertical-padding;
-    padding-bottom: $list-medium-item-vertical-padding;
+  .o-list__item, > li {
+    padding-top: $o-list-medium-item-vertical-padding;
+    padding-bottom: $o-list-medium-item-vertical-padding;
   }
 
-  .list__item-title, h1, h2, h3, h4, h5, h6 {
-    margin-bottom: $list-medium-item-title-margin-bottom;
+  .o-list__item-title, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: $o-list-medium-item-title-margin-bottom;
   }
 
-  .list__item-description, p {
-    font-size: $list-medium-item-description-font-size;
+  .o-list__item-description, p {
+    font-size: $o-list-medium-item-description-font-size;
   }
 }
 
 /** Small */
-.list--small {
-  font-size: $list-small-font-size;
+.o-list--small {
+  font-size: $o-list-small-font-size;
 
-  .list__item, > li {
-    padding-top: $list-small-item-vertical-padding;
-    padding-bottom: $list-small-item-vertical-padding;
+  .o-list__item, > li {
+    padding-top: $o-list-small-item-vertical-padding;
+    padding-bottom: $o-list-small-item-vertical-padding;
   }
 
-  .list__item-title, h1, h2, h3, h4, h5, h6 {
-    margin-bottom: $list-small-item-title-margin-bottom;
+  .o-list__item-title, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: $o-list-small-item-title-margin-bottom;
   }
 
-  .list__item-description, p {
-    font-size: $list-small-item-description-font-size;
+  .o-list__item-description, p {
+    font-size: $o-list-small-item-description-font-size;
   }
 
-  [class^="icon-"],
-  [class*=" icon-"] {
-    font-size: $list-small-item-icon-font-size;
+  [class^="o-icon-"],
+  [class*=" o-icon-"] {
+    font-size: $o-list-small-item-icon-font-size;
   }
 }
 
 /** Without gutter */
-.list--no-gutter {
-  margin: $list-no-gutter-margin;
+.o-list--no-gutter {
+  margin: $o-list-no-gutter-margin;
 }
 
 /** Hover */
-.list--hover {
-  .list__item, > li {
+.o-list--hover {
+  .o-list__item, > li {
     &:hover {
-      background-color: $list-hover-item-hover-background-color;
+      background-color: $o-list-hover-item-hover-background-color;
     }
   }
 }
 
 /** Pointer */
-.list--pointer {
-  .list__item, > li {
+.o-list--pointer {
+  .o-list__item, > li {
     &:hover {
       cursor: pointer;
     }

@@ -1,0 +1,107 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+
+<Meta title='6. Utilities|Border Radius' />
+
+
+# Border Radius
+
+Values that define border radius of element.
+
+<hr/>
+
+Apply border radius to elements with <mark>.rounded-{key}</mark> class
+
+Recall border radius with <mark>rounded({key})</mark> function in <mark>SCSS</mark>
+
+```scss
+$o-border-radius-base: 3px;
+
+$o-border-radiuses: (
+  0: 0,                         // 0px
+  'base': $o-border-radius-base,  // 3px
+  1: $o-border-radius-base * 2,   // 6px
+  'full': 50%                   // 50%
+);
+```
+
+<hr />
+
+
+# Tryout
+
+Tryout is for live example of Border Radius on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<div>
+      <img class="image" :class="classes" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
+    </div>`,
+    props: {
+      rounded: {
+        default: select('Rounded', ['rounded-0', 'rounded', 'rounded-1', 'rounded-full'], 'rounded')
+      }
+    },
+    computed: {
+      classes () {
+        return {
+          [`${this.rounded}`]: this.rounded,
+        }
+      }
+    }
+  }}
+</Story>
+
+<hr/>
+
+# Styles
+
+<Preview>
+  <Story name='Styles'>
+    {{
+      components: {},
+      template: `<div>
+        <img class="image rounded-0" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Doggo" />
+        <img class="image rounded" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Doggo" />
+        <img class="image rounded-1" src="https://orangecss.com/images/thumbnails/square/hedgehog-square.jpg" alt="Hedgehog" />
+        <img class="image rounded-full" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Katze" />
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Usage 
+
+<Story name='Usage'>
+  {{
+    components: {},
+    template: `<table class="o-table o-table--compact o-table--celled">
+      <thead>
+        <tr>
+          <th>Attribute</th>
+          <th>Description</th>
+          <th>Type</th>
+          <th>Syntax</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>rounded</td>
+          <td>
+            Set with <code>.rounded-{size}</code> class <br/><br />
+            Possible values: <code>0</code>, <code>base (just rounded)</code>, <code>1</code>, <code>full</code>
+          </td>
+          <td>Class</td>
+          <td><code>.rounded-full</code></td>
+        </tr>
+      </tbody>
+    </table>`,
+  }}
+</Story>

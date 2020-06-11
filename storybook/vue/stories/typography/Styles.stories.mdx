@@ -1,0 +1,221 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Additional Helpers -->
+import ColorSlugs from '../../src/global/ColorSlugs.js';
+
+
+<Meta title='4. Typography|Styles' />
+
+
+# Styles
+
+Apply a color by adding <mark>.color-{color}</mark> class
+
+Recall color values with the <mark>color('{color}')</mark> function
+
+<hr />
+
+# Tryout
+
+Tryout is for live example of Styles on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<p :class="classes">
+      Suspendisse id nisi a magna lacinia lacinia sed sed purus.
+    </p>`,
+    props: {
+      color: {
+        default: select('Color', ColorSlugs, ColorSlugs[1])
+      },
+      heading: {
+        default: select('Heading', [null, 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'], null)
+      }
+    },
+    computed: {
+      classes () {
+        return {
+          [`color-${this.color}`]: this.color,
+          [`${this.heading}`]: this.heading,
+        }
+      }
+    }
+  }}
+</Story>
+
+<hr />
+
+<Preview>
+  <Story name='Grayscale'>
+    {{
+      components: {},
+      template: `<ul class="docs__simple-list">
+        <li>
+          <h5>Black</h5>
+          <p class="color-black">Suspendisse id nisi a magna lacinia lacinia sed sed purus.</p>
+        </li>
+        <li>
+          <h5>Gray Dark</h5>
+          <p class="color-gray-dark">Suspendisse id nisi a magna lacinia lacinia sed sed purus.</p>
+        </li>
+        <li>
+          <h5>Gray</h5>
+          <p class="color-gray">Suspendisse id nisi a magna lacinia lacinia sed sed purus.</p>
+        </li>
+        <li>
+          <h5>Gray Light</h5>
+          <p class="color-gray-light">Suspendisse id nisi a magna lacinia lacinia sed sed purus.</p>
+        </li>
+        <li>
+          <h5>Gray Off</h5>
+          <p class="color-gray-off">Suspendisse id nisi a magna lacinia lacinia sed sed purus.</p>
+        </li>
+        <li>
+          <h5>White Dark</h5>
+          <p class="color-white-dark">Suspendisse id nisi a magna lacinia lacinia sed sed purus.</p>
+        </li>
+        <li>
+          <h5>White Off</h5>
+          <p class="color-white-off">Suspendisse id nisi a magna lacinia lacinia sed sed purus.</p>
+        </li>
+        <li>
+          <h5>White</h5>
+          <p class="color-white">Suspendisse id nisi a magna lacinia lacinia sed sed purus.</p>
+        </li>
+      </ul>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Colors
+
+<Preview>
+  <Story name='Colors'>
+    {{
+      components: {},
+      template: `<ul class="docs__simple-list">
+        <li>
+          <h5>Primary</h5>
+          <p class="color-primary">Suspendisse id nisi a magna lacinia lacinia sed sed purus.</p>
+        </li>
+        <li>
+          <h5>Secondary</h5>
+          <p class="color-secondary">Suspendisse id nisi a magna lacinia lacinia sed sed purus.</p>
+        </li>
+        <li>
+          <h5>Yellow</h5>
+          <p class="color-yellow">Suspendisse id nisi a magna lacinia lacinia sed sed purus.</p>
+        </li>
+        <li>
+          <h5>Green</h5>
+          <p class="color-green">Suspendisse id nisi a magna lacinia lacinia sed sed purus.</p>
+        </li>
+        <li>
+          <h5>Red</h5>
+          <p class="color-red">Suspendisse id nisi a magna lacinia lacinia sed sed purus.</p>
+        </li>
+      </ul>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Headings
+
+<Preview>
+  <Story name='Headings'>
+    {{
+      components: {},
+      template: `<ul class="docs__simple-list">
+        <li>
+          <h5>heading 1</h5>
+          <p class="h1">social proof is the holy grail of marketing</p>
+        </li>
+        <li>
+          <h5>heading 2</h5>
+          <p class="h2">social proof is the holy grail of marketing</p>
+        </li>
+        <li>
+          <h5>heading 3</h5>
+          <p class="h3">social proof is the holy grail of marketing</p>
+        </li>
+        <li>
+          <h5>heading 4</h5>
+          <p class="h4">social proof is the holy grail of marketing</p>
+        </li>
+        <li>
+          <h5>heading 5</h5>
+          <p class="h5">social proof is the holy grail of marketing</p>
+        </li>
+        <li>
+          <h5>heading 6</h5>
+          <p class="h6">social proof is the holy grail of marketing</p>
+        </li>
+      </ul>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Body text
+
+<Preview>
+  <Story name='Body text'>
+    {{
+      components: {},
+      template: `<ul class="docs__simple-list">
+        <li>
+          <h5>paragraph</h5>
+          <p>
+            Suspendisse id nisi a magna lacinia lacinia sed sed purus. Integer mauris enim, dignissim eu vestibulum a, semper id velit. Donec rhoncus commodo leo, egestas tempus eros commodo eu. Suspendisse eu eleifend nibh. Nulla blandit felis
+            et mattis auctor. Ut porta diam justo, eu dapibus ligula interdum ac. Suspendisse potenti.
+          </p>
+        </li>
+        <li>
+          <h5>paragraph (small)</h5>
+          <p class="fs-zeta">
+            Suspendisse id nisi a magna lacinia lacinia sed sed purus. Integer mauris enim, dignissim eu vestibulum a, semper id velit. Donec rhoncus commodo leo, egestas tempus eros commodo eu. Suspendisse eu eleifend nibh. Nulla blandit felis
+            et mattis auctor. Ut porta diam justo, eu dapibus ligula interdum ac. Suspendisse potenti.
+          </p>
+        </li>
+        <li>
+          <h5>paragraph (light)</h5>
+          <p class="color-gray-light">
+            Suspendisse id nisi a magna lacinia lacinia sed sed purus. Integer mauris enim, dignissim eu vestibulum a, semper id velit. Donec rhoncus commodo leo, egestas tempus eros commodo eu. Suspendisse eu eleifend nibh. Nulla blandit felis
+            et mattis auctor. Ut porta diam justo, eu dapibus ligula interdum ac. Suspendisse potenti.
+          </p>
+        </li>
+        <li>
+          <h5>paragraph (small, light)</h5>
+          <p class="fs-zeta color-gray-light">
+            Suspendisse id nisi a magna lacinia lacinia sed sed purus. Integer mauris enim, dignissim eu vestibulum a, semper id velit. Donec rhoncus commodo leo, egestas tempus eros commodo eu. Suspendisse eu eleifend nibh. Nulla blandit felis
+            et mattis auctor. Ut porta diam justo, eu dapibus ligula interdum ac. Suspendisse potenti.
+          </p>
+        </li>
+        <li>
+          <h5>paragraph (strong)</h5>
+          <p class="font-bold">strong</p>
+        </li>
+        <li>
+          <h5>paragraph (italic)</h5>
+          <p class="text-italic">italic</p>
+        </li>
+      </ul>`,
+    }}
+  </Story>
+</Preview>
+
+
+
+

@@ -1,0 +1,335 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OFormInput from '../../src/components/Input/Input';
+
+<!-- Additional subcomponents -->
+import OButton from '../../src/components/Button/Button';
+
+
+<Meta title='5. Components|Forms/Input' />
+
+# Input
+
+An input component is used to <mark>elicit a response from a user</mark>.
+
+The Input comes in <mark>small (default)</mark> and <mark>large size</mark>, and can hold other components like Buttons when needed.
+
+<hr/>
+
+# Tryout
+
+Tryout is for live example of Input on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OFormInput, OButton },
+    template: `<form class="form" :class="size_class">
+      <o-form-input id="form_basic" 
+        v-model="form_model" 
+        :label="label"
+        :description="description"
+        :disabled="disabled"
+        :read_only="read_only"
+        :action_position="action_position">
+        <div slot="action">
+          <o-button text="copy to clipboard" size="small" />
+        </div>
+      </o-form-input>
+    </form>`,
+    props: {
+      label: {
+        default: text('Label', 'Label')
+      },
+      description: {
+        default: text('Description', 'Description text')
+      },
+      disabled: {
+        default: boolean('Disabled', false)
+      },
+      read_only: {
+        default: boolean('Readonly', false)
+      },
+      action_position: {
+        default: select('Action position', ['hide', 'left', 'right'], 'left')
+      },
+      form_size: {
+        default: select('Size (apply to form class)', ['', 'large'], '')
+      },
+    },
+    data() {
+      return {
+        form_model: null,
+      }
+    },
+    computed: {
+      size_class() {
+        return { [`form--${this.form_size}`]: this.form_size }
+      }
+    }
+  }}
+</Story>
+
+<hr/>
+
+
+# Basic
+
+<Preview>
+  <Story name='Basic'>
+    {{
+      components: { OFormInput },
+      template: `<form class="form">
+        <o-form-input id="form_basic" 
+          v-model="form_model" 
+          label="Label"
+          description="Description text" />
+      </form>`,
+      data() {
+        return {
+          form_model: null,
+        }
+      },
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Read-only
+
+<Preview>
+  <Story name='Read-only'>
+    {{
+      components: { OFormInput },
+      template: `<form class="form">
+        <o-form-input id="form_basic" 
+          v-model="form_model" 
+          label="Label"
+          description="Description text"
+          :read_only="true" />
+      </form>`,
+      data() {
+        return {
+          form_model: 'cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs',
+        }
+      },
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# With action/extras
+
+<Preview>
+  <Story name='With action/extras'>
+    {{
+      components: { OFormInput },
+      template: `<form class="form">
+        <o-form-input id="form_basic" 
+          v-model="form_model" 
+          label="Your phone number"
+          description="Description text">
+          <div slot="action">
+            +386
+          </div>
+        </o-form-input>
+        <o-form-input id="form_basic_2" 
+          v-model="form_model_2" 
+          label="https://example.com"
+          description="Description text"
+          action_position="right">
+          <div slot="action">
+            /orange
+          </div>
+        </o-form-input>
+      </form>`,
+      data() {
+        return {
+          form_model: null,
+          form_model_2: null,
+        }
+      },
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Read-only with action/extras
+
+<Preview>
+  <Story name='Read-only with action/extras'>
+    {{
+      components: { OFormInput, OButton },
+      template: `<form class="form">
+        <o-form-input id="form_basic" 
+          v-model="form_model" 
+          label="Your phone number"
+          description="To change your API key please contact support"
+          :read_only="true">
+          <div slot="action">
+            <o-button text="copy to clipboard" size="small" />
+          </div>
+        </o-form-input>
+        <o-form-input id="form_basic_2" 
+          v-model="form_model_2" 
+          label="Your API key"
+          description="To change your API key please contact support"
+          :read_only="true"
+          action_position="right">
+          <div slot="action">
+            <o-button text="copy to clipboard" size="small" />
+          </div>
+        </o-form-input>
+      </form>`,
+      data() {
+        return {
+          form_model: 'cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs',
+          form_model_2: 'cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs',
+        }
+      },
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Large - Basic
+
+<Preview>
+  <Story name='Large - Basic'>
+    {{
+      components: { OFormInput },
+      template: `<form class="form form--large">
+        <o-form-input id="form_basic" 
+          v-model="form_model" 
+          label="Large"
+          description="Description text" />
+      </form>`,
+      data() {
+        return {
+          form_model: null,
+        }
+      },
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Large - Read-only
+
+<Preview>
+  <Story name='Large - Read-only'>
+    {{
+      components: { OFormInput },
+      template: `<form class="form form--large">
+        <o-form-input id="form_basic" 
+          v-model="form_model" 
+          label="Label"
+          description="Description text"
+          :read_only="true" />
+      </form>`,
+      data() {
+        return {
+          form_model: 'cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs',
+        }
+      },
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Large - With action/extras
+
+<Preview>
+  <Story name='Large - With action/extras'>
+    {{
+      components: { OFormInput },
+      template: `<form class="form form--large">
+        <o-form-input id="form_basic" 
+          v-model="form_model" 
+          label="Your phone number"
+          description="Description text">
+          <div slot="action">
+            +386
+          </div>
+        </o-form-input>
+        <o-form-input id="form_basic_2" 
+          v-model="form_model_2" 
+          label="https://example.com"
+          description="Description text"
+          action_position="right">
+          <div slot="action">
+            /orange
+          </div>
+        </o-form-input>
+      </form>`,
+      data() {
+        return {
+          form_model: null,
+          form_model_2: null,
+        }
+      },
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Large - Read-only with action/extras
+
+<Preview>
+  <Story name='Large - Read-only with action/extras'>
+    {{
+      components: { OFormInput, OButton },
+      template: `<form class="form form--large">
+        <o-form-input id="form_basic" 
+          v-model="form_model" 
+          label="Your phone number"
+          description="To change your API key please contact support"
+          :read_only="true">
+          <div slot="action">
+            <o-button text="copy to clipboard" size="small" />
+          </div>
+        </o-form-input>
+        <o-form-input id="form_basic_2" 
+          v-model="form_model_2" 
+          label="Your API key"
+          description="To change your API key please contact support"
+          :read_only="true"
+          action_position="right">
+          <div slot="action">
+            <o-button text="copy to clipboard" size="small" />
+          </div>
+        </o-form-input>
+      </form>`,
+      data() {
+        return {
+          form_model: 'cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs',
+          form_model_2: 'cw8BT7BcJzZQqlnwGZ53XD3cdfEXArGs',
+        }
+      },
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+## Input Props
+
+<Props of={OFormInput} />
+

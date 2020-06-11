@@ -7,48 +7,48 @@
 --------------------------------------------------*/
 
 /** Primary */
-.button,
-a.button {
+.o-button,
+a.o-button {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
   vertical-align: middle;
 
-  height: $button-height;
-  padding: $button-padding;
+  height: $o-button-height;
+  padding: $o-button-padding;
 
-  border-radius: $button-border-radius;
-  border: $button-border-width solid $button-border-color;
+  border-radius: $o-button-border-radius;
+  border: $o-button-border-width solid $o-button-border-color;
 
   font-style: normal;
-  font-size: $button-font-size;
-  font-weight: $button-font-weight;
-  line-height: $button-line-height;
+  font-size: $o-button-font-size;
+  font-weight: $o-button-font-weight;
+  line-height: $o-button-line-height;
 
   text-decoration: none;
   user-select: none;
 
-  color: $button-color;
-  background-color: $button-background-color;
+  color: $o-button-color;
+  background-color: $o-button-background-color;
 
-  transition: $button-transition;
+  transition: $o-button-transition;
 
-  [class^="icon-"], [class*=" icon-"] {
-    margin-left: $button-icon-margin-left;
+  [class^="o-icon-"], [class*=" o-icon-"] {
+    margin-left: $o-button-icon-margin-left;
   }
 
   &:hover,
   &:focus {
-    border-color: $button-action-border-color;
-    background-color: $button-action-background-color;
+    border-color: $o-button-action-border-color;
+    background-color: $o-button-action-background-color;
     cursor: pointer;
     outline: none;
-    color: $button-action-color;
+    color: $o-button-action-color;
   }
 
   /** Disabled state */
   &[disabled] {
-    opacity: $button-disabled-opacity;
+    opacity: $o-button-disabled-opacity;
     pointer-events: none;
 
     &:hover,
@@ -59,7 +59,7 @@ a.button {
 
   /** Add a margin when buttons are next to each other */
   & + & {
-    margin-left: $button-next-button-margin-left;
+    margin-left: $o-button-next-button-margin-left;
   }
 
   /** Loading state */
@@ -74,70 +74,41 @@ a.button {
   }
 
   /** Inverted modifier */
-  &.button--inverted {
-    color: $button-inverted-color;
-    background-color: $button-inverted-background-color;
+  &.o-button--inverted {
+    color: $o-button-inverted-color;
+    background-color: $o-button-inverted-background-color;
 
     &:hover,
     &:focus {
-      color: $button-inverted-action-color;
-      background-color: $button-inverted-action-background-color;
+      color: $o-button-inverted-action-color;
+      background-color: $o-button-inverted-action-background-color;
     }
   }
 }
 
 /** Secondary */
-.button--secondary,
-a.button--secondary {
-  background-color: $button-secondary-background-color;
-  color: $button-secondary-color;
-  border-color: $button-secondary-border-color;
+.o-button--secondary,
+a.o-button--secondary {
+  background-color: $o-button-secondary-background-color;
+  color: $o-button-secondary-color;
+  border-color: $o-button-secondary-border-color;
 
   &:hover,
   &:focus {
-    border-color: $button-secondary-border-color-action;
-    color: $button-secondary-color-action;
+    border-color: $o-button-secondary-border-color-action;
+    color: $o-button-secondary-color-action;
   }
 
-  &.button--inverted {
-    color: $button-secondary-inverted-color;
-    background-color: $button-secondary-inverted-background-color;
-    border-color: $button-secondary-inverted-border-color;
+  &.o-button--inverted {
+    color: $o-button-secondary-inverted-color;
+    background-color: $o-button-secondary-inverted-background-color;
+    border-color: $o-button-secondary-inverted-border-color;
 
     &:hover,
     &:focus {
-      color: $button-secondary-inverted-action-color;
-      background-color: $button-secondary-inverted-action-background-color;
-      border-color: $button-secondary-inverted-action-border-color;
-    }
-  }
-}
-
-
-/** Variants
---------------------------------------------------*/
-
-/** Basic */
-.button--basic,
-a.button--basic {
-  color: $button-basic-color;
-  background-color: $button-basic-background-color;
-
-  &:hover,
-  &:focus {
-    color: $button-basic-action-color;
-    background-color: $button-basic-action-background-color;
-  }
-
-  &.button--secondary {
-    background-color: $button-basic-secondary-background-color;
-    border-color: $button-basic-secondary-border-color;
-
-    &:hover,
-    &:focus {
-      background-color: $button-basic-secondary-action-background-color;
-      border-color: $button-basic-secondary-action-border-color;
-      color: $button-basic-secondary-action-color;
+      color: $o-button-secondary-inverted-action-color;
+      background-color: $o-button-secondary-inverted-action-background-color;
+      border-color: $o-button-secondary-inverted-action-border-color;
     }
   }
 }
@@ -146,19 +117,19 @@ a.button--basic {
 /** Colors
 --------------------------------------------------*/
 
-@each $name, $value in $colors {
-  @if $name == 'white' {
-    .button--color-#{$name},
-    a.button--color-#{$name} {
+@each $o-name, $o-value in $o-colors {
+  @if $o-name == 'white' {
+    .o-button--color-#{$o-name},
+    a.o-button--color-#{$o-name} {
       color: color('black');
-      background-color: color(#{$name});
+      background-color: color(#{$o-name});
 
       &:hover,
       &:focus {
-        background-color: transparentize(color(#{$name}), 0.33);
+        background-color: transparentize(color(#{$o-name}), 0.33);
       }
 
-      &.button--inverted {
+      &.o-button--inverted {
         color: color('white');
         background-color: color('black');
 
@@ -169,19 +140,19 @@ a.button--basic {
         }
       }
 
-      &.button--secondary{
-        color: color(#{$name});
-        border-color: color(#{$name});
+      &.o-button--secondary{
+        color: color(#{$o-name});
+        border-color: color(#{$o-name});
         background-color: transparent;
 
         &:hover,
         &:focus {
           color: color('black');
-          background-color: transparentize(color(#{$name}), 0.33);
+          background-color: transparentize(color(#{$o-name}), 0.33);
           border-color: transparent;
         }
 
-        &.button--inverted {
+        &.o-button--inverted {
           color: color('black');
           border-color: color('black');
 
@@ -196,18 +167,18 @@ a.button--basic {
     }
   }
   @else {
-    .button--color-#{$name},
-    a.button--color-#{$name} {
+    .o-button--color-#{$o-name},
+    a.o-button--color-#{$o-name} {
       color: color('white');
-      background-color: color(#{$name});
+      background-color: color(#{$o-name});
 
       &:hover,
       &:focus {
-        background-color: transparentize(color(#{$name}), 0.33);
+        background-color: transparentize(color(#{$o-name}), 0.33);
       }
 
-      &.button--inverted {
-        color: color(#{$name});
+      &.o-button--inverted {
+        color: color(#{$o-name});
         background-color: color('white');
 
         &:hover,
@@ -217,19 +188,19 @@ a.button--basic {
         }
       }
 
-      &.button--secondary {
-        color: color(#{$name});
+      &.o-button--secondary {
+        color: color(#{$o-name});
         background-color: transparent;
-        border-color: color(#{$name});
+        border-color: color(#{$o-name});
 
         &:hover,
         &:focus {
           color: color('white');
-          background-color: transparentize(color(#{$name}), 0.33);
+          background-color: transparentize(color(#{$o-name}), 0.33);
           border-color: transparent;
         }
 
-        &.button--inverted {
+        &.o-button--inverted {
           color: color('white');
           border-color: color('white');
 
@@ -241,7 +212,35 @@ a.button--basic {
           }
         }
       }
+    }
+  }
+}
 
+
+/** Variants
+--------------------------------------------------*/
+
+/** Basic */
+.o-button--basic,
+a.o-button--basic {
+  color: $o-button-basic-color;
+  background-color: $o-button-basic-background-color;
+
+  &:hover,
+  &:focus {
+    color: $o-button-basic-action-color;
+    background-color: $o-button-basic-action-background-color;
+  }
+
+  &.o-button--secondary {
+    background-color: $o-button-basic-secondary-background-color;
+    border-color: $o-button-basic-secondary-border-color;
+
+    &:hover,
+    &:focus {
+      background-color: $o-button-basic-secondary-action-background-color;
+      border-color: $o-button-basic-secondary-action-border-color;
+      color: $o-button-basic-secondary-action-color;
     }
   }
 }
@@ -251,55 +250,55 @@ a.button--basic {
 --------------------------------------------------*/
 
 /** Small */
-.button--small,
-a.button--small {
-  padding: $button-small-padding;
-  font-size: $button-small-font-size;
-  line-height: $button-small-line-height;
-  height: $button-small-height;
+.o-button--small,
+a.o-button--small {
+  padding: $o-button-small-padding;
+  font-size: $o-button-small-font-size;
+  line-height: $o-button-small-line-height;
+  height: $o-button-small-height;
 
-  &.button--icon-only,
-  &a.button--icon-only {
-    width: $button-small-height;
+  &.o-button--icon-only,
+  &a.o-button--icon-only {
+    width: $o-button-small-height;
     padding: 0;
 
-    [class^="icon-"], [class*=" icon-"] {
-      font-size: $button-small-icon-only-icon-font-size;
-      height: $button-small-icon-only-icon-height;
+    [class^="o-icon-"], [class*=" o-icon-"] {
+      font-size: $o-button-small-icon-only-icon-font-size;
+      height: $o-button-small-icon-only-icon-height;
     }
   }
 }
 
 /** Large */
-.button--large,
-a.button--large {
-  padding: $button-large-padding;
-  font-size: $button-large-font-size;
-  line-height: $button-large-line-height;
-  height: $button-large-height;
+.o-button--large,
+a.o-button--large {
+  padding: $o-button-large-padding;
+  font-size: $o-button-large-font-size;
+  line-height: $o-button-large-line-height;
+  height: $o-button-large-height;
 
-  &.button--icon-only,
-  &a.button--icon-only {
-    width: $button-large-height;
+  &.o-button--icon-only,
+  &a.o-button--icon-only {
+    width: $o-button-large-height;
     padding: 0;
 
-    [class^="icon-"], [class*=" icon-"] {
-      font-size: $button-large-icon-only-icon-font-size;
-      height: $button-large-icon-only-icon-height;
+    [class^="o-icon-"], [class*=" o-icon-"] {
+      font-size: $o-button-large-icon-only-icon-font-size;
+      height: $o-button-large-icon-only-icon-height;
     }
   }
 }
 
 /** Wide
 --------------------------------------------------*/
-.button--wide,
-a.button--wide {
+.o-button--wide,
+a.o-button--wide {
   width: 100%;
   justify-content: center;
 
   & + & {
     margin-left: 0;
-    margin-top: $spacing-small;
+    margin-top: $o-spacing-small;
   }
 }
 
@@ -308,15 +307,15 @@ a.button--wide {
 --------------------------------------------------*/
 
 /** Icon only */
-.button--icon-only,
-a.button--icon-only {
-  width: $button-height;
-  padding: $button-icon-only-padding;
+.o-button--icon-only,
+a.o-button--icon-only {
+  width: $o-button-height;
+  padding: $o-button-icon-only-padding;
   align-items: center;
   justify-content: center;
 
-  [class^="icon-"],
-  [class*=" icon-"] {
+  [class^="o-icon-"],
+  [class*=" o-icon-"] {
     margin: auto;
   }
 }

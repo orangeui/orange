@@ -1,0 +1,187 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OMessage from '../../src/components/Message/Message';
+
+<!-- Additional subcomponents -->
+import OButton from '../../src/components/Button/Button';
+import OAvatar from '../../src/components/Avatar/Avatar';
+
+<!-- Additional Helpers -->
+import ColorBase from '../../src/global/ColorBase.js';
+
+
+<Meta title='5. Components|Custom/Message' component={ OMessage } />
+
+# Message
+
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of Message on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OMessage, OButton, OAvatar },
+    template: `<o-message :heading="heading" :color="color">
+      <o-avatar size="small" look="circle" slot="avatar" v-if="avatar">
+        <svg viewBox="0 0 80 80" width="80px" xmlns="http://www.w3.org/2000/svg">
+          <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd" />
+        </svg>
+      </o-avatar>
+      <p>
+        {{ text }}
+      </p>
+      <o-button slot="action" text="action" size="small" v-if="action" @click="handleClick" />
+    </o-message>`,
+    methods: { handleClick: action('click') },
+    props: {
+      heading: {
+        default: text('Heading', 'Heading')
+      },
+      text: {
+        default: text('Body text', 'Body text')
+      },
+      color: {
+        default: select('Color', ColorBase, null)
+      },
+      note: {
+        default: text('If Action is checked and you change color re-toggle Action checkbox')
+      },
+      avatar: {
+        default: boolean('Avatar', false)
+      },
+      action: {
+        default: boolean('Action', false)
+      },
+    },
+  }}
+</Story>
+
+<hr />
+
+
+# Basic
+
+<Preview>
+  <Story name='Basic'>
+    {{
+      components: { OMessage },
+      template: `<o-message>
+        <p>
+          Some text and a <a href="#">link</a>.
+        </p>
+      </o-message>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# Colors
+
+<Preview>
+  <Story name='Colors'>
+    {{
+      components: { OMessage, OButton },
+      template: `<div>
+        <o-message heading="Heading">
+          <p>
+            Some text and a <a href="#">link</a>.
+          </p>
+          <o-button slot="action" text="action" size="small" @click="handleClick" />
+        </o-message>
+        <hr />
+        <o-message heading="Heading" color="secondary">
+          <p>
+            Some text and a <a href="#">link</a>.
+          </p>
+          <o-button slot="action" text="action" size="small" @click="handleClick" />
+        </o-message>
+        <hr />
+        <o-message heading="Heading" color="yellow">
+          <p>
+            Some text and a <a href="#">link</a>.
+          </p>
+          <o-button slot="action" text="action" size="small" @click="handleClick" />
+        </o-message>
+        <hr />
+        <o-message heading="Heading" color="green">
+          <p>
+            Some text and a <a href="#">link</a>.
+          </p>
+          <o-button slot="action" text="action" size="small" @click="handleClick" />
+        </o-message>
+        <hr />
+        <o-message heading="Heading" color="red">
+          <p>
+            Some text and a <a href="#">link</a>.
+          </p>
+          <o-button slot="action" text="action" size="small" @click="handleClick" />
+        </o-message>
+      </div>`,
+      methods: { handleClick: action('click') },
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# With an avatar
+
+<Preview>
+  <Story name='With an avatar'>
+    {{
+      components: { OMessage, OButton, OAvatar },
+      template: `<o-message color="secondary">
+        <o-avatar size="small" look="circle" slot="avatar">
+          <svg viewBox="0 0 80 80" width="80px" xmlns="http://www.w3.org/2000/svg">
+            <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd" />
+          </svg>
+        </o-avatar>
+        <p>
+          Body text.
+        </p>
+        <o-button slot="action" text="action" size="small" @click="handleClick" />
+      </o-message>`,
+      methods: { handleClick: action('click') },
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# No border radius
+
+Meant to be used outside containers in order to take full browser width.
+
+<Preview>
+  <Story name='No border radius'>
+    {{
+      components: { OMessage, OAvatar },
+      template: `<o-message heading="heading" color="secondary" size="full">
+        <p>
+          Body text.
+        </p>
+      </o-message>`,
+    }}
+  </Story>
+</Preview>
+
+
+<hr />
+
+
+## Message Props
+
+<Props of={OMessage} />
+

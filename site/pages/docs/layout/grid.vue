@@ -128,7 +128,7 @@
     <docs-item title="Grid options">
       <div slot="body">
 
-        <table class="table table--fixed table--compact table--definition table--border-bottom">
+        <table class="o-table o-table--fixed o-table--compact o-table--definition o-table--border-bottom">
           <thead>
           <th></th>
           <th>

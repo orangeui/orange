@@ -8,9 +8,9 @@
 .container {
   width: 100%;
 
-  @each $breakpoint-key, $breakpoint-value in $breakpoints {
+  @each $breakpoint-key, $breakpoint-value in $o-breakpoints {
     @include breakpoint-and-up($breakpoint-key) {
-      max-width: map-get($container-max-widths, $breakpoint-key);
+      max-width: map-get($o-container-max-widths, $breakpoint-key);
     }
   }
 }
@@ -18,34 +18,34 @@
 .container, .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-right: $container-gap;
-  padding-left: $container-gap;
+  padding-right: $o-container-gap;
+  padding-left: $o-container-gap;
 }
 
 /**
   Grid
 */
 @mixin grid-column-auto-fill ($min-width) {
-  grid-template-columns: repeat(auto-fill, minmax($min-width, $grid-column-max-width));
+  grid-template-columns: repeat(auto-fill, minmax($min-width, $o-grid-column-max-width));
 }
 
 /* Grid (usually it was called row) */
 .grid {
   display: grid;
-  grid-gap: $grid-gap;
-  grid-template-columns: repeat($grid-column-number, 1fr);
+  grid-gap: $o-grid-gap;
+  grid-template-columns: repeat($o-grid-column-number, 1fr);
 }
 
 /** Exact number of columns in grid */
-@if $include-grid-number-of-columns {
-  @for $i from 1 through $grid-column-number {
+@if $o-include-grid-number-of-columns {
+  @for $i from 1 through $o-grid-column-number {
     .grid--#{$i} {
       grid-template-columns: repeat($i, 1fr);
     }
   }
 
-  @each $breakpoint-key, $breakpoint-value in $breakpoints {
-    @for $i from 1 through $grid-column-number {
+  @each $breakpoint-key, $breakpoint-value in $o-breakpoints {
+    @for $i from 1 through $o-grid-column-number {
       @include breakpoint-and-up($breakpoint-key) {
         .#{$breakpoint-key}\:grid--#{$i} {
           grid-template-columns: repeat($i, 1fr);
@@ -56,16 +56,16 @@
 }
 
 /* Auto Layout */
-@if $include-grid-column-auto-fill {
+@if $o-include-grid-column-auto-fill {
   .grid--columns-auto {
-    @include grid-column-auto-fill($grid-column-regular-min-width);
+    @include grid-column-auto-fill($o-grid-column-regular-min-width);
 
     &-narrow {
-      @include grid-column-auto-fill($grid-column-narrow-min-width);
+      @include grid-column-auto-fill($o-grid-column-narrow-min-width);
     }
 
     &-wide {
-      @include grid-column-auto-fill($grid-column-wide-min-width);
+      @include grid-column-auto-fill($o-grid-column-wide-min-width);
     }
   }
 }
@@ -84,7 +84,7 @@
   }
 
   /** Responsive */
-  @each $breakpoint-key, $breakpoint-value in $breakpoints {
+  @each $breakpoint-key, $breakpoint-value in $o-breakpoints {
     @for $i from 1 through $end {
 
       @if ($span == false) {
@@ -105,29 +105,29 @@
 }
 
 /* Column span */
-@if $include-grid-column-span {
-  @include grid-span($grid-column-number, 'column', 'col', false);
+@if $o-include-grid-column-span {
+  @include grid-span($o-grid-column-number, 'column', 'col', false);
 }
 
 /* Column exact positions */
-@if $include-grid-column-exact {
-  @include grid-span($grid-column-number, 'column', 'col', true);
+@if $o-include-grid-column-exact {
+  @include grid-span($o-grid-column-number, 'column', 'col', true);
 }
 
 /** Currently not supporting these because of too much bugs with other grid possibilities */
 /* Row span */
-/*@if $include-grid-row-span {
-  @include grid-span($grid-row-number, 'row', 'row', false);
+/*@if $o-include-grid-row-span {
+  @include grid-span($o-grid-row-number, 'row', 'row', false);
 }
 
 !* Row exact positions *!
-@if $include-grid-row-exact {
-  @include grid-span($grid-row-number, 'row', 'row', true);
+@if $o-include-grid-row-exact {
+  @include grid-span($o-grid-row-number, 'row', 'row', true);
 }*/
 
 /* Column from - to position */
-@if $include-grid-column-from-to {
-  @for $column from 1 through $grid-column-number {
+@if $o-include-grid-column-from-to {
+  @for $column from 1 through $o-grid-column-number {
     @for $i from 1 through $column {
       @if $i < $column {
         .col-#{$i}\/#{$column} {
@@ -138,8 +138,8 @@
   }
 
   /** Responsive */
-  @each $breakpoint-key, $breakpoint-value in $breakpoints {
-    @for $column from 1 through $grid-column-number {
+  @each $breakpoint-key, $breakpoint-value in $o-breakpoints {
+    @for $column from 1 through $o-grid-column-number {
       @for $i from 1 through $column {
         @if $i < $column {
           @include breakpoint-and-up($breakpoint-key) {
@@ -155,8 +155,8 @@
 
 /** Currently not supporting these because of too much bugs with other grid possibilities */
 /* Row from - to position */
-@if $include-grid-row-from-to {
-  @for $row from 1 through $grid-row-number {
+@if $o-include-grid-row-from-to {
+  @for $row from 1 through $o-grid-row-number {
     @for $i from 1 through $row {
       /*@if $i < $row {
         .row-#{$i}\/#{$row} {
@@ -167,8 +167,8 @@
   }
 
   /** Responsive */
-  @each $breakpoint-key, $breakpoint-value in $breakpoints {
-    @for $row from 1 through $grid-row-number {
+  @each $breakpoint-key, $breakpoint-value in $o-breakpoints {
+    @for $row from 1 through $o-grid-row-number {
       @for $i from 1 through $row {
         /*@if $i < $row {
           @include breakpoint-and-up($breakpoint-key) {

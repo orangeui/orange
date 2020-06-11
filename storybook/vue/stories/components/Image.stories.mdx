@@ -1,0 +1,190 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OImage from '../../src/components/Image/Image';
+
+<!-- Need to add decorator to Story, for router-link to be recognized -->
+import BasicRouterDecorator from '../../src/global/BasicRouterDecorator.js';
+
+
+<Meta title='5. Components|Custom/Image' component={ OImage } />
+
+# Image
+
+Add styling to images.
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of Image on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OImage },
+    template: `<div>
+      <o-image :path="path" :alt_text="alt_text" :shadow="shadow" :rounded="rounded" :action="action" />
+      <a href="#">
+        <o-image :path="path2" :alt_text="alt_text" :shadow="shadow" :rounded="rounded" :action="action" />
+      </a>
+    </div>`,
+    props: {
+      path: {
+        default: text('Image path', 'https://orangecss.com/images/thumbnails/cat.jpg')
+      },
+      path2: {
+        default: text('Image path 2', 'https://orangecss.com/images/thumbnails/square/dog-square.jpg')
+      },
+      alt_text: {
+        default: text('Alt text', 'Katzze')
+      },
+      shadow: {
+        default: boolean('Drop shadow', false)
+      },
+      rounded: {
+        default: select('Rounded', ['-', 'rounded', 'circle'], '-')
+      },
+      action: {
+        default: boolean('Action', false)
+      },
+    },
+  }}
+</Story>
+
+<hr/>
+
+
+# Basic
+
+<Preview>
+  <Story name='Basic' decorators={[BasicRouterDecorator]}>{{
+    components: { OImage },
+    template: `<div>
+      <o-image path="https://orangecss.com/images/thumbnails/cat.jpg" alt_text="Katzee" />
+      <router-link to="/somewhere">
+        <o-image path="https://orangecss.com/images/thumbnails/fox.jpg" alt_text="Foxy" />
+      </router-link>
+    </div>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# With shadow
+
+<Preview>
+  <Story name='With shadow' decorators={[BasicRouterDecorator]}>{{
+    components: { OImage },
+    template: `<div>
+      <o-image path="https://orangecss.com/images/thumbnails/cat.jpg" alt_text="Katzee" :shadow="true" />
+      <router-link to="/somewhere">
+        <o-image path="https://orangecss.com/images/thumbnails/fox.jpg" alt_text="Foxy" :shadow="true" />
+      </router-link>
+    </div>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Rounded
+
+Add border radius to image
+
+<Preview>
+  <Story name='Rounded' decorators={[BasicRouterDecorator]}>{{
+    components: { OImage },
+    template: `<div>
+      <o-image path="https://orangecss.com/images/thumbnails/cat.jpg" alt_text="Katzee" rounded="rounded" />
+      <router-link to="/somewhere">
+        <o-image path="https://orangecss.com/images/thumbnails/fox.jpg" alt_text="Foxy" rounded="rounded" />
+      </router-link>
+    </div>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Rounded - Circle
+
+Please note that images have to be square for this style to work as expected.
+
+<Preview>
+  <Story name='Rounded - circle' decorators={[BasicRouterDecorator]}>{{
+    components: { OImage },
+    template: `<div>
+      <o-image path="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt_text="Doggo" rounded="circle" />
+      <router-link to="/somewhere">
+        <o-image path="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt_text="Foxy" rounded="circle" />
+      </router-link>
+    </div>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Sizes
+
+<Preview>
+  <Story name='Sizes'>{{
+    components: { OImage },
+    template: `<div>
+      <p>Default - auto size</p>
+      <o-image path="https://orangecss.com/images/thumbnails/cat.jpg" alt_text="Katzee" />
+      <p>Extra small - 60px</p>
+      <o-image path="https://orangecss.com/images/thumbnails/width-60/fox-60.jpg" alt_text="Foxy" size="xsmall" />
+      <p>Small - 120px</p>
+      <o-image path="https://orangecss.com/images/thumbnails/width-120/hedgehog-120.jpg" alt_text="Hedgy" size="small" />
+      <p>Medium - 240px</p>
+      <o-image path="https://orangecss.com/images/thumbnails/width-240/dog-240.jpg" alt_text="Doggo" size="medium" />
+      <p>Large - 480px</p>
+      <o-image path="https://orangecss.com/images/thumbnails/width-480/hedgehog-480.jpg" alt_text="Hedgy" size="large" />
+    </div>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# With action, in grid
+
+<Preview>
+  <Story name='With action, in grid'>{{
+    components: { OImage },
+    template: `<div class="grid">
+      <div class="col-2">
+        <o-image path="https://orangecss.com/images/thumbnails/hedgehog.jpg" alt_text="Hedgy" :action="true" />
+      </div>
+      <div class="col-2">
+        <o-image path="https://orangecss.com/images/thumbnails/cat.jpg" alt_text="Katzee" :action="true" />
+      </div>
+      <div class="col-2">
+        <o-image path="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt_text="Doggo" :action="true" />
+      </div>
+      <div class="col-2">
+        <o-image path="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt_text="Foxy" :action="true" />
+      </div>
+      <div class="col-2">
+        <o-image path="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt_text="Katzee" :action="true" rounded="circle" />
+      </div>
+      <div class="col-2">
+        <o-image path="https://orangecss.com/images/thumbnails/square/hedgehog-square.jpg" alt_text="Hedgy" :action="true" rounded="circle" />
+      </div>
+    </div>`
+  }}</Story>
+</Preview>
+
+
+<hr />
+
+
+## Image Props
+
+<Props of={OImage} />

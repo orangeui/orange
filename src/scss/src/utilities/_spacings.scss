@@ -3,8 +3,8 @@
 \*----------------------------------*/
 
 /* Spacings class loop with names */
-@each $prefix, $meaning in $spacing-classes {
-  @each $name, $size in $spaces {
+@each $prefix, $meaning in $o-spacing-classes {
+  @each $name, $size in $o-spaces {
     .#{$prefix}-#{$name} {
       #{$meaning}: #{$size};
     }
@@ -13,10 +13,10 @@
 
 
 /* Spacings class loop - Responsive */
-@if $spacing-classes-with-breakpoints {
-  @each $breakpoint-key, $breakpoint-value in $breakpoints {
-    @each $prefix, $meaning in $spacing-classes {
-      @each $name, $size in $spaces {
+@if $o-spacing-classes-with-breakpoints {
+  @each $breakpoint-key, $breakpoint-value in $o-breakpoints {
+    @each $prefix, $meaning in $o-spacing-classes {
+      @each $name, $size in $o-spaces {
         @include breakpoint-and-up($breakpoint-key) {
           .#{$breakpoint-key}\:#{$prefix}-#{$name} {
             #{$meaning}: #{$size};

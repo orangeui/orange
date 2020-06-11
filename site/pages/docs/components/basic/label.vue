@@ -16,11 +16,11 @@
     <docs-item title="Basic" :code="label_html" v-if="is_html">
       <ul class="docs__simple-list" slot="body">
         <li>
-          <span class="label">Basic</span>
+          <span class="o-label">Basic</span>
         </li>
         <li>
-          <span class="label label--primary">Primary</span>
-          <span class="label label--secondary">Secondary</span>
+          <span class="o-label o-label--primary">Primary</span>
+          <span class="o-label o-label--secondary">Secondary</span>
         </li>
       </ul>
     </docs-item>
@@ -52,11 +52,11 @@
     <docs-item title="With an icon" :code="label_icon_html" v-if="is_html">
       <ul class="docs__simple-list" slot="body">
         <li>
-          <span class="label">More <i class="icon-more"></i></span>
+          <span class="o-label">More <i class="o-icon-more"></i></span>
         </li>
         <li>
-          <span class="label label--primary">Add <i class="icon-plus"></i></span>
-          <span class="label label--secondary">Skip <i class="icon-arrow-skip"></i></span>
+          <span class="o-label o-label--primary">Add <i class="o-icon-plus"></i></span>
+          <span class="o-label o-label--secondary">Skip <i class="o-icon-arrow-skip"></i></span>
         </li>
       </ul>
     </docs-item>
@@ -87,7 +87,7 @@
     <!-- Dismiss -->
     <docs-item title="Dismissible" :code="label_dismissible_html" v-if="is_html">
       <div slot="body">
-        <span class="label label--dismiss">Dismissible <i class="icon-x"></i></span>
+        <span class="o-label o-label--dismiss">Dismissible <i class="o-icon-x"></i></span>
       </div>
     </docs-item>
 
@@ -102,7 +102,7 @@
     <!-- Small -->
     <docs-item title="Small" :code="label_small_html" v-if="is_html">
       <div slot="body">
-        <span class="label label--small">Small</span>
+        <span class="o-label o-label--small">Small</span>
       </div>
     </docs-item>
 
@@ -118,8 +118,8 @@
     <docs-item title="Pill" :code="label_pill_html" v-if="is_html">
       <ul slot="body" class="docs__simple-list">
         <li>
-          <span class="label label--primary label--pill"></span>
-          <span class="label label--secondary label--pill"></span>
+          <span class="o-label o-label--primary o-label--pill"></span>
+          <span class="o-label o-label--secondary o-label--pill"></span>
         </li>
       </ul>
     </docs-item>
@@ -157,8 +157,8 @@
     <docs-item title="Dot" :code="label_dot_html" v-if="is_html">
       <ul slot="body" class="docs__simple-list">
         <li>
-          <span class="label label--primary label--dot"></span>
-          <span class="label label--secondary label--dot"></span>
+          <span class="o-label o-label--primary o-label--dot"></span>
+          <span class="o-label o-label--secondary o-label--dot"></span>
         </li>
       </ul>
     </docs-item>
@@ -192,7 +192,7 @@
 
     <!-- Label - Usage  -->
     <docs-item title="Usage" v-if="is_html">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -206,7 +206,7 @@
         <tbody>
         <tr>
           <td>size</td>
-          <td>Set with <code>.label--{size}</code> class</td>
+          <td>Set with <code>.o-label--{size}</code> class</td>
           <td><code>small</code>, <code>pill</code>, <code>dot</code></td>
           <td>String</td>
           <td>-</td>
@@ -214,15 +214,15 @@
         </tr>
         <tr>
           <td>color</td>
-          <td>Set with <code>.label--{color}</code> class</td>
-          <td>See <router-link :to="{ name: 'docs-global'}"><span>Colors</span></router-link> page</td>
+          <td>Set with <code>.o-label--{color}</code> class</td>
+          <td>See <router-link :to="{ name: 'docs-global-colors'}"><span>Colors</span></router-link> page</td>
           <td>String</td>
           <td>-</td>
           <td>-</td>
         </tr>
         <tr>
           <td>icon</td>
-          <td>Add an icon to a label like <code>.icon-{icon-name}</code></td>
+          <td>Add an icon to a label like <code>.o-icon-{icon-name}</code></td>
           <td>See <router-link :to="{ name: 'docs-global-icons'}"><span>Icons</span></router-link> page</td>
           <td>String</td>
           <td>-</td>
@@ -230,7 +230,7 @@
         </tr>
         <tr>
           <td>dismiss</td>
-          <td>Set with <code>.label--dissmis</code>. It only adds hover style to icon.</td>
+          <td>Set with <code>.o-label--dissmis</code>. It only adds hover style to icon.</td>
           <td><code>dismiss</code></td>
           <td>string</td>
           <td>-</td>
@@ -241,7 +241,7 @@
     </docs-item>
 
     <docs-item title="Usage" v-else>
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -305,9 +305,9 @@ export default {
 <o-label text="Indigo" color="indigo" />
 <o-label text="Blue" color="blue" />
 <o-label text="Violet" color="violet" />`,
-      label_html: `<span class="label">Basic</span>
+      label_html: `<span class="o-label">Basic</span>
 
-<span class="label label--{color}">Primary</span>`,
+<span class="o-label o-label--{color}">Primary</span>`,
 
       label_icon: `<o-label text="More" icon="more" />
 
@@ -321,15 +321,15 @@ export default {
 <o-label text="Edit" color="indigo" icon="settings" />
 <o-label text="Connect" color="blue" icon="integrations" />
 <o-label text="Code" color="violet" icon="code" />`,
-      label_icon_html: `<span class="label">More <i class="icon-{icon}"></i></span>
+      label_icon_html: `<span class="o-label">More <i class="o-icon-{icon}"></i></span>
 
-<span class="label label--{color}">Add <i class="icon-{icon}"></i></span>`,
+<span class="o-label o-label--{color}">Add <i class="o-icon-{icon}"></i></span>`,
 
       label_dismissible: `<o-label text="Dismissible" dismiss />`,
-      label_dismissible_html: `<span class="label label--dismiss">Dismissible <i class="icon-x"></i></span>`,
+      label_dismissible_html: `<span class="o-label o-label--dismiss">Dismissible <i class="o-icon-x"></i></span>`,
 
       label_small: `<o-label text="Small" size="small" />`,
-      label_small_html: `<span class="label label--small">Small</span>`,
+      label_small_html: `<span class="o-label o-label--small">Small</span>`,
 
       label_pill: `<o-label size="pill" color="primary" />
 <o-label size="pill" color="secondary" />
@@ -349,7 +349,7 @@ export default {
 <o-label size="pill" color="gray-dark" />
 <o-label size="pill" color="gray-darkest" />
 <o-label size="pill" color="black" />`,
-      label_pill_html: `<span class="label label--{color} label--pill"></span>`,
+      label_pill_html: `<span class="o-label o-label--{color} o-label--pill"></span>`,
 
       label_dot: `<o-label size="dot" color="primary" />
 <o-label size="dot" color="secondary" />
@@ -369,7 +369,7 @@ export default {
 <o-label size="dot" color="gray-dark" />
 <o-label size="dot" color="gray-darkest" />
 <o-label size="dot" color="black" />`,
-      label_dot_html: `<span class="label label--{color} label--dot"></span>`
+      label_dot_html: `<span class="o-label o-label--{color} o-label--dot"></span>`
     }
   }
 }

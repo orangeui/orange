@@ -2,15 +2,15 @@
  * Display
  */
 
- @each $displayKey, $displayValue in $displays {
+ @each $displayKey, $displayValue in $o-displays {
   .d-#{$displayKey} {
     display: $displayValue;
   }
 }
 
 /* Display class loop - Responsive */
-@each $breakpoint-key, $breakpoint-value in $breakpoints {
-  @each $displayKey, $displayValue in $displays {
+@each $breakpoint-key, $breakpoint-value in $o-breakpoints {
+  @each $displayKey, $displayValue in $o-displays {
     @include breakpoint-and-up($breakpoint-key) {
       .#{$breakpoint-key}\:d-#{$displayKey} {
         display: #{$displayValue};

@@ -40,7 +40,7 @@ export default {
   data () {
     return {
       fontFamilyCSS: `.example {
-  font-family: $font-primary;
+  font-family: $o-font-primary;
 }`,
       fontWeightsHTML: `<p class="font-extrabold">700 Extra Bold</p>
 <p class="font-bold">600 Bold</p>

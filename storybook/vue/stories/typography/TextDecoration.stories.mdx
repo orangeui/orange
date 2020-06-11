@@ -1,0 +1,87 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+
+<Meta title='4. Typography|Text decoration' />
+
+
+# Text decoration
+
+Apply text decoration by adding <mark>.text-{decoration}</mark> class to text elements
+
+To control text decoration on hover apply text decoration by adding <mark>.hover:text-{decoration}</mark> class to text elements
+
+<hr />
+
+# Tryout
+
+Tryout is for live example of Text decoration on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<p :class="classes">
+      Try me out in Canvas tab
+    </p>`,
+    props: {
+      textDecoration: {
+        default: select('Text decoration', ['text-underline', 'text-line-trough', 'text-no-underline', 'hover:text-underline', 'hover:text-line-through', 'text-underline hover:text-no-underline'], 'text-left')
+      }
+    },
+    computed: {
+      classes () {
+        return {
+          [`${this.textDecoration}`]: this.textDecoration,
+        }
+      }
+    }
+  }}
+</Story>
+
+<Preview>
+  <Story name='Basic'>
+    {{
+      components: {},
+      template: `<ul class="docs__simple-list">
+        <li>
+          <h5></h5>
+          <p class="fs-gamma text-underline">Text decoration underline</p>
+        </li>
+        <li>
+          <h5></h5>
+          <p class="fs-gamma text-line-through">Text decoration line-through</p>
+        </li>
+        <li>
+          <h5></h5>
+          <p class="fs-gamma text-no-underline">Text decoration none</p>
+        </li>
+        <li>
+          <h5></h5>
+          <p class="fs-gamma hover:text-underline">Text decoration underline on hover</p>
+        </li>
+        <li>
+          <h5></h5>
+          <p class="fs-gamma hover:text-line-through">Text decoration line-through on hover</p>
+        </li>
+        <li>
+          <h5></h5>
+          <p class="fs-gamma text-underline hover:text-no-underline">Text decoration none on hover</p>
+        </li>
+      </ul>`,
+    }}
+  </Story>
+</Preview>
+
+```html
+<p class="text-underline">Text decoration underline</p>
+<p class="text-line-through">Text decoration line-through</p>
+<p class="text-no-underline">Text decoration none</p>
+
+<p class="hover:text-underline">Text decoration underline on hover</p>
+<p class="hover:text-line-through">Text decoration line-through on hover</p>
+<p class="text-underline hover:text-no-underline">Text decoration none on hover</p>
+```
+
+

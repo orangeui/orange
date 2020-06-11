@@ -29,7 +29,7 @@
 
     <!-- Backgrounds - Usage  -->
     <docs-item title="Usage">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
           <tr>
             <th>Attribute</th>
@@ -41,7 +41,7 @@
         <tbody>
           <tr>
             <td>bg-color</td>
-            <td>See <router-link :to="{ name: 'docs-global'}"><span>Colors</span></router-link> page for possible values</td>
+            <td>See <router-link :to="{ name: 'docs-global-colors'}"><span>Colors</span></router-link> page for possible values</td>
             <td>Class</td>
             <td><code>.bg-{color}</code></td>
           </tr>

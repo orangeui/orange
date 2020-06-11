@@ -18,9 +18,9 @@
 
 @function color($color, $shade...) {
   @if ($shade == ()) {
-    @return map-deep-get($colors, $color, 'base');
+    @return map-deep-get($o-colors, $color, 'base');
   } @else {
-    @return map-deep-get($colors, $color, nth($shade, 1));
+    @return map-deep-get($o-colors, $color, nth($shade, 1));
   }
 }
 
@@ -30,12 +30,12 @@
 
 /** Font sizes */
 @function fontSize($size) {
-  @return map-get($font-sizes, $size);
+  @return map-get($o-font-sizes, $size);
 }
 
 /** Font weights */
 @function fontWeight($weight) {
-  @return map-get($font-weights, $weight);
+  @return map-get($o-font-weights, $weight);
 }
 
 
@@ -43,31 +43,31 @@
 --------------------------------------------------*/
 
 @function shadow($shadow) {
-  @return map-get($shadows, $shadow);
+  @return map-get($o-shadows, $shadow);
 }
 
 /** Breakpoints
 --------------------------------------------------*/
 @function breakpoint($breakpoint) {
-  @return map-get($breakpoints, $breakpoint);
+  @return map-get($o-breakpoints, $breakpoint);
 }
 
 /** Border radius
 --------------------------------------------------*/
 @function rounded($border-radius) {
-  @return map-get($border-radiuses, $border-radius);
+  @return map-get($o-border-radiuses, $border-radius);
 }
 
 /** Display
 --------------------------------------------------*/
 @function display($display) {
-  @return map-get($displays, $display);
+  @return map-get($o-displays, $display);
 }
 
 /** Spacing
 --------------------------------------------------*/
 @function space($space) {
-  @return map-get($spaces, $space);
+  @return map-get($o-spaces, $space);
 }
 
 /** Components
@@ -78,6 +78,6 @@
  */
 /** Button */
 // Before
-@function breadcrumbs-back-button-arrow-color($color, $transparency: $breadcrumbs-background-transparency) {
-  @return $breadcrumbs-spacing solid rgba($color, $transparency);
+@function breadcrumbs-back-button-arrow-color($color, $transparency: $o-breadcrumbs-background-transparency) {
+  @return $o-breadcrumbs-spacing solid rgba($color, $transparency);
 }

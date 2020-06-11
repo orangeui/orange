@@ -1,0 +1,141 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+
+<Meta title='6. Utilities|Align' />
+
+
+# Align
+
+Values that position/align element.
+
+<hr/>
+
+apply alignment to elements with <mark>.block-{align}</mark> or <mark>.flex-{align}</mark> class.
+
+<hr />
+
+
+# Tryout
+
+Tryout is for live example of Align on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<div>
+      <img class="image" :class="classes" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
+    </div>`,
+    props: {
+      align: {
+        default: select('Align', ['block-left', 'block-center', 'block-right', 'flex-left', 'flex-center', 'flex-right', 'block-left lg:block-center', 'flex-left sm:flex-right'], 'block-left')
+      }
+    },
+    computed: {
+      classes () {
+        return {
+          [`${this.align}`]: this.align,
+        }
+      }
+    }
+  }}
+</Story>
+
+<hr/>
+
+# Block
+
+<Preview>
+  <Story name='Block'>
+    {{
+      components: {},
+      template: `<div>
+        <img class="image block-left" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
+        <img class="image block-center" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
+        <img class="image block-right" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Flex
+
+<Preview>
+  <Story name='Flex'>
+    {{
+      components: {},
+      template: `<div>
+        <img class="image flex-left" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
+        <img class="image flex-center" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
+        <img class="image flex-right" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+
+<hr/>
+
+
+# Responsive
+
+Apply responsive align to elements <mark>.{breakpoint}:block-{align}</mark> or <mark>.{breakpoint}:flex-{align}</mark> classes
+
+<Preview>
+  <Story name='Responsive'>
+    {{
+      components: {},
+      template: `<div>
+        <img class="image block-left lg:block-center" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Foxy" />
+        <img class="image flex-center lg:flex-right" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Doggo" />
+        <img class="image flex-right lg:flex-left" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Katze" />
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Usage 
+
+<Story name='Usage'>
+  {{
+    components: {},
+    template: `<table class="o-table o-table--compact o-table--celled">
+      <thead>
+        <tr>
+          <th>Attribute</th>
+          <th>Description</th>
+          <th>Type</th>
+          <th>Syntax</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>role</td>
+          <td>
+            Set with <code>.{role}-left</code> class <br/><br />
+            Possible values: <code>block</code> or <code>flex</code>
+          </td>
+          <td>Class</td>
+          <td><code>.block-left</code></td>
+        </tr>
+        <tr>
+          <td>align</td>
+          <td>
+            Set with <code>.block-{align}</code> class <br/><br />
+            Possible values: <code>left</code>, <code>center</code> or <code>right</code>
+          </td>
+          <td>Class</td>
+          <td><code>.block-left</code></td>
+        </tr>
+      </tbody>
+    </table>`,
+  }}
+</Story>

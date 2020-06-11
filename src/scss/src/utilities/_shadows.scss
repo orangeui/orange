@@ -2,7 +2,7 @@
  * Shadows
  */
 
-@each $prefix, $meaning in $shadows {
+@each $prefix, $meaning in $o-shadows {
   .shadow-#{$prefix} {
     box-shadow: $meaning;
   }

@@ -1,0 +1,207 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OFormToggle from '../../src/components/Toggle/Toggle';
+
+<!-- Additional Helpers -->
+import ColorBase from '../../src/global/ColorBase.js';
+
+
+<Meta title='5. Components|Forms/Toggle' />
+
+# Toggle
+
+A Toggle allows users to <mark>decide on a state of an object</mark>.
+
+
+<hr/>
+
+# Tryout
+
+Tryout is for live example of Toggle on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OFormToggle },
+    template: `<form class="form">
+      <o-form-toggle 
+        v-model="toggle_model"
+        id="toggle_tryout"
+        :label="label"
+        :description="description"
+        :disabled="disabled"
+        :size="size"
+        :color="color"
+        @input="handleClick" />
+    </form>`,
+    methods: { handleClick: action('change') },
+    props: {
+      label: {
+        default: text('Label', 'Label')
+      },
+      description: {
+        default: text('Description', 'Description text')
+      },
+      disabled: {
+        default: boolean('Disabled', false)
+      },
+      size: {
+        default: select('Size', ['', 'large'], '')
+      },
+      valueText: {
+        default: text('Value text (for size large)', 'Enabled')
+      },
+      valueTextDisabled: {
+        default: text('Value text disabled (for size large)', 'Disabled')
+      },
+      color: {
+        default: select('Color', ColorBase, ColorBase[1])
+      }
+    },
+    data() {
+      return {
+        toggle_model: false,
+      }
+    },
+  }}
+</Story>
+
+<hr/>
+
+
+# Basic
+
+<Preview>
+  <Story name='Basic'>
+    {{
+      components: { OFormToggle },
+      template: `<form class="form">
+        <o-form-toggle 
+          v-model="toggle_model"
+          id="toggle_tryout" />
+      </form>`,
+      data() {
+        return {
+          toggle_model: false,
+        }
+      },
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# With label
+
+<Preview>
+  <Story name='With label'>
+    {{
+      components: { OFormToggle },
+      template: `<form class="form">
+        <o-form-toggle 
+          v-model="toggle_model"
+          id="toggle_tryout"
+          label="Label" />
+      </form>`,
+      data() {
+        return {
+          toggle_model: false,
+        }
+      },
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Large
+
+<Preview>
+  <Story name='Large'>
+    {{
+      components: { OFormToggle },
+      template: `<form class="form">
+        <o-form-toggle 
+          v-model="toggle_model"
+          id="toggle_tryout"
+          label="Label"
+          size="large" />
+      </form>`,
+      data() {
+        return {
+          toggle_model: false,
+        }
+      },
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Custom value names
+
+<Preview>
+  <Story name='Custom value names'>
+    {{
+      components: { OFormToggle },
+      template: `<form class="form">
+        <o-form-toggle 
+          v-model="toggle_model"
+          id="toggle_tryout"
+          label="Custom value"
+          valueText="Custom Value Text"
+          valueTextDisabled="Custom Disabled Value Text"
+          size="large" />
+      </form>`,
+      data() {
+        return {
+          toggle_model: false,
+        }
+      },
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Colors
+
+<Preview>
+  <Story name='Colors'>
+    {{
+      components: { OFormToggle },
+      template: `<form class="form">
+        <o-form-toggle 
+          v-model="toggle_model"
+          id="toggle_tryout"
+          v-for="color, index in colors"
+          :key="index"
+          :color="color" />
+      </form>`,
+      data() {
+        return {
+          toggle_model: true,
+        }
+      },
+      props: {
+        colors: {
+          default: () => ColorBase
+        }
+      }
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+## Toggle Props
+
+<Props of={OFormToggle} />
+

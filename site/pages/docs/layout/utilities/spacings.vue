@@ -41,7 +41,7 @@
         <p>Apply responsive padding to elements <code>.{breakpoint}:p-{key}</code>, <code>.{breakpoint}:pl-{key}</code>, <code>.{breakpoint}:pr-{key}</code>, <code>.{breakpoint}:pt-{key}</code>, <code>.{breakpoint}:pb-{key}</code> classes</p>
         
 
-        <table class="table table--fixed table--compact table--definition table--border-bottom">
+        <table class="o-table o-table--fixed o-table--compact o-table--definition o-table--border-bottom">
           <thead>
             <th></th>
             <th>
@@ -140,17 +140,17 @@ export default {
   data () {
     return {
       mapCss: `
-$space-base: 24px;
+$o-space-base: 24px;
 
-$spaces: (
+$o-spaces: (
   0: 0,                 // 0px
-  1: $space-base / 6,   // 4px
-  2: $space-base / 3,   // 8px
-  3: $space-base / 2,   // 12px
-  4: $space-base,       // 24px
-  5: $space-base * 2,   // 48px
-  6: $space-base * 3,   // 72px
-  7: $space-base * 6    // 144px
+  1: $o-space-base / 6,   // 4px
+  2: $o-space-base / 3,   // 8px
+  3: $o-space-base / 2,   // 12px
+  4: $o-space-base,       // 24px
+  5: $o-space-base * 2,   // 48px
+  6: $o-space-base * 3,   // 72px
+  7: $o-space-base * 6    // 144px
 );`,
       space_html: `<div class="grid">
   <div class="col-4">

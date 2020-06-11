@@ -1,0 +1,141 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OCheckbox from '../../src/components/Checkbox/Checkbox';
+import OCheckboxGroup from '../../src/components/Checkbox/CheckboxGroup';
+
+
+<Meta title='5. Components|Forms/Checkbox' />
+
+# Checkbox
+
+A checkbox allows users to <code>decide on a state of an object</code>.
+
+<hr/>
+
+# Tryout - Basic
+
+Tryout is for live example of Checkbox on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout - Basic'>
+  {{
+    components: { OCheckbox },
+    template: `<o-checkbox v-model="form_model_checkbox_basic_tryout" id="checkbox_basic_tryout" :label="label" :disabled="disabled" @input="handleClick" />`,
+    methods: { handleClick: action('click') },
+    props: {
+      label: {
+        default: text('Label', 'Label')
+      },
+      disabled: {
+        default: boolean('Disabled', false)
+      }
+    },
+    data() {
+      return {
+        form_model_checkbox_basic_tryout: false
+      }
+    }
+  }}
+</Story>
+
+<hr/>
+
+
+# Tryout - Group
+
+Tryout is for live example of Checkbox in group on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout - Group'>
+  {{
+    components: { OCheckbox, OCheckboxGroup },
+    template: `<o-checkbox-group :label="group_label" :description="group_description">
+      <o-checkbox v-model="form_model_checkbox_tryout_1" id="checkbox_basic_tryout_1" label="First label" @input="handleClick" />
+      <o-checkbox v-model="form_model_checkbox_tryout_2" id="checkbox_basic_tryout_2" label="Second label" @input="handleClick" />
+      <o-checkbox v-model="form_model_checkbox_tryout_3" id="checkbox_basic_tryout_3" label="Third label" @input="handleClick" />
+      <o-checkbox v-model="form_model_checkbox_tryout_4" id="checkbox_basic_tryout_4" label="Forth label" @input="handleClick" :disabled="disabled" />
+    </o-checkbox-group>`,
+    methods: { handleClick: action('click') },
+    props: {
+      group_label: {
+        default: text('Group label', 'Group label')
+      },
+      group_description: {
+        default: text('Group description', 'Description text')
+      },
+      disabled: {
+        default: boolean('Disabled 4th checkbox', false)
+      }
+    },
+    data() {
+      return {
+        form_model_checkbox_tryout_1: false,
+        form_model_checkbox_tryout_2: false,
+        form_model_checkbox_tryout_3: true,
+        form_model_checkbox_tryout_4: true,
+      }
+    }
+  }}
+</Story>
+
+<hr/>
+
+
+# Basic
+
+<Preview>
+  <Story name='Basic'>
+    {{
+      components: { OCheckbox },
+      template: `<o-checkbox v-model="form_model_checkbox_basic" id="checkbox_basic" label="Label"  @input="handleClick" />`,
+      methods: { handleClick: action('click') },
+      data() {
+        return {
+          form_model_checkbox_basic: false
+        }
+      }
+    }}
+  </Story>
+</Preview>
+
+
+<hr/>
+
+
+# Group
+
+<Preview>
+  <Story name='Group'>
+    {{
+      components: { OCheckbox, OCheckboxGroup },
+      template: `<o-checkbox-group label="Group label" description="Description text">
+        <o-checkbox v-model="form_model_checkbox_1" id="checkbox_basic_1" label="First label" @input="handleClick" />
+        <o-checkbox v-model="form_model_checkbox_2" id="checkbox_basic_2" label="Second label" @input="handleClick" />
+        <o-checkbox v-model="form_model_checkbox_3" id="checkbox_basic_3" label="Third label" @input="handleClick" />
+        <o-checkbox v-model="form_model_checkbox_4" id="checkbox_basic_4" label="Forth label" @input="handleClick" :disabled="true" />
+      </o-checkbox-group>`,
+      methods: { handleClick: action('click') },
+      data() {
+        return {
+          form_model_checkbox_1: false,
+          form_model_checkbox_2: false,
+          form_model_checkbox_3: false,
+          form_model_checkbox_4: false,
+        }
+      }
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+## Checkbox Props
+
+<Props of={OCheckbox} />
+
+
+## Checkbox Group Props
+
+<Props of={OCheckboxGroup} />

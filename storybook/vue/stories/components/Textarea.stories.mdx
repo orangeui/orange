@@ -1,0 +1,212 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OFormTextarea from '../../src/components/Textarea/Textarea';
+
+<!-- Additional subcomponents -->
+import OButton from '../../src/components/Button/Button';
+
+
+<Meta title='5. Components|Forms/Textarea' />
+
+# Textarea
+
+A textarea is an input field that allows for <mark>extended user input</mark>.
+
+
+<hr/>
+
+# Tryout
+
+Tryout is for live example of Textarea on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OFormTextarea },
+    template: `<form class="form" :class="size_class">
+      <o-form-textarea id="form_basic" 
+        v-model="form_model" 
+        :label="label"
+        :description="description"
+        :disabled="disabled"
+        :read_only="read_only"
+        :rows="rows"
+        :autoexpand="autoexpand">
+      </o-form-textarea>
+    </form>`,
+    props: {
+      label: {
+        default: text('Label', 'Label')
+      },
+      description: {
+        default: text('Description', 'Description text')
+      },
+      disabled: {
+        default: boolean('Disabled', false)
+      },
+      read_only: {
+        default: boolean('Readonly', false)
+      },
+      rows: {
+        default: number('Rows', 3)
+      },
+      autoexpand: {
+        default: boolean('Auto expand size', false)
+      },
+      form_size: {
+        default: select('Size (apply to form class)', ['', 'large'], '')
+      },
+    },
+    data() {
+      return {
+        form_model: null,
+      }
+    },
+    computed: {
+      size_class() {
+        return { [`form--${this.form_size}`]: this.form_size }
+      }
+    }
+  }}
+</Story>
+
+<hr/>
+
+
+# Read-only with rows
+
+<Preview>
+  <Story name='Read-only with rows'>
+    {{
+      components: { OFormTextarea },
+      template: `<form class="form">
+        <o-form-textarea id="form_basic" 
+          v-model="form_model" 
+          label="Label"
+          description="Description text"
+          :read_only="true"
+          :rows="5">
+        </o-form-textarea>
+      </form>`,
+      data() {
+        return {
+          form_model: 'Nam diam odio, aliquam at libero vel, tristique varius odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque dictum purus vitae accumsan tempor. Proin non ante purus. Proin ornare consequat sem. Integer in leo eu dolor lobortis vehicula vitae sed augue. Integer ac lorem quis urna lobortis mattis. Aenean ac metus non enim tempor pharetra maximus ut leo. Nunc imperdiet purus a felis consectetur, quis dignissim lorem semper. Etiam tristique, massa quis efficitur aliquet, ex leo efficitur magna, ac feugiat lectus tellus et risus. Phasellus condimentum ultrices nisl, quis accumsan tortor malesuada ut. Donec mollis volutpat varius. Maecenas consequat nunc massa, non cursus magna commodo volutpat. Ut ut risus est. Pellentesque quis rutrum tellus. Proin vel lobortis velit, non consequat massa. Nam imperdiet sodales justo, pretium suscipit.',
+        }
+      }
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Disabled
+
+<Preview>
+  <Story name='Disabled'>
+    {{
+      components: { OFormTextarea },
+      template: `<form class="form">
+        <o-form-textarea id="form_basic" 
+          v-model="form_model" 
+          label="Label"
+          description="Description text"
+          :disabled="true">
+        </o-form-textarea>
+      </form>`,
+      data() {
+        return {
+          form_model: null,
+        }
+      }
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Auto expand
+
+<Preview>
+  <Story name='Auto expand'>
+    {{
+      components: { OFormTextarea },
+      template: `<form class="form">
+        <o-form-textarea id="form_basic" 
+          v-model="form_model" 
+          label="Label"
+          description="Description text"
+          :autoexpand="true">
+        </o-form-textarea>
+      </form>`,
+      data() {
+        return {
+          form_model: null,
+        }
+      }
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Large - Basic
+
+<Preview>
+  <Story name='Large - Basic'>
+    {{
+      components: { OFormTextarea },
+      template: `<form class="form form--large">
+        <o-form-textarea id="form_basic" 
+          v-model="form_model" 
+          label="Label"
+          description="Description text">
+        </o-form-textarea>
+      </form>`,
+      data() {
+        return {
+          form_model: null,
+        }
+      }
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Large - Read-only
+
+<Preview>
+  <Story name='Large - Read-only'>
+    {{
+      components: { OFormTextarea },
+      template: `<form class="form form--large">
+        <o-form-textarea id="form_basic" 
+          v-model="form_model" 
+          label="Label"
+          description="Description text"
+          :read_only="true">
+        </o-form-textarea>
+      </form>`,
+      data() {
+        return {
+          form_model: 'Nam diam odio, aliquam at libero vel, tristique varius odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque dictum purus vitae accumsan tempor. Proin non ante purus. Proin ornare consequat sem. Integer in leo eu dolor lobortis vehicula vitae sed augue. Integer ac lorem quis urna lobortis mattis. Aenean ac metus non enim tempor pharetra maximus ut leo. Nunc imperdiet purus a felis consectetur, quis dignissim lorem semper. Etiam tristique, massa quis efficitur aliquet, ex leo efficitur magna, ac feugiat lectus tellus et risus. Phasellus condimentum ultrices nisl, quis accumsan tortor malesuada ut. Donec mollis volutpat varius. Maecenas consequat nunc massa, non cursus magna commodo volutpat. Ut ut risus est. Pellentesque quis rutrum tellus. Proin vel lobortis velit, non consequat massa. Nam imperdiet sodales justo, pretium suscipit.',
+        }
+      }
+    }}
+  </Story>
+</Preview>
+
+
+<hr/>
+
+## Textarea Props
+
+<Props of={OFormTextarea} />
+

@@ -14,8 +14,8 @@
     <!-- Basic -->
     <docs-item title="Basic" :code="message_html" v-if="is_html">
       <div slot="body">
-        <div class="message">
-          <div class="message__body">
+        <div class="o-message">
+          <div class="o-message__body">
             <p>
               Some text and a <a href="#">link</a>.
             </p>
@@ -38,75 +38,75 @@
     <docs-item title="Colors" :code="message_colors_html" v-if="is_html">
       <ul class="docs__simple-list" slot="body">
         <li>
-          <div class="message">
-            <div class="message__body">
+          <div class="o-message">
+            <div class="o-message__body">
               <h6>Heading</h6>
               <p>
                 Body text
               </p>
             </div>
-            <div class="message__action">
-              <button type="button" class="button button--small button--color-gray">
+            <div class="o-message__action">
+              <button type="button" class="o-button o-button--small o-button--color-gray">
                 action
               </button>
             </div>
           </div>
         </li>
         <li>
-          <div class="message message--color-secondary">
-            <div class="message__body">
+          <div class="o-message o-message--color-secondary">
+            <div class="o-message__body">
               <h6>Heading</h6>
               <p>
                 Body text
               </p>
             </div>
-            <div class="message__action">
-              <button type="button" class="button button--small button--color-secondary">
+            <div class="o-message__action">
+              <button type="button" class="o-button o-button--small o-button--color-secondary">
                 action
               </button>
             </div>
           </div>
         </li>
         <li>
-          <div class="message message--color-yellow">
-            <div class="message__body">
+          <div class="o-message o-message--color-yellow">
+            <div class="o-message__body">
               <h6>Heading</h6>
               <p>
                 Body text
               </p>
             </div>
-            <div class="message__action">
-              <button type="button" class="button button--small button--color-yellow">
+            <div class="o-message__action">
+              <button type="button" class="o-button o-button--small o-button--color-yellow">
                 action
               </button>
             </div>
           </div>
         </li>
         <li>
-          <div class="message message--color-green">
-            <div class="message__body">
+          <div class="o-message o-message--color-green">
+            <div class="o-message__body">
               <h6>Heading</h6>
               <p>
                 Body text
               </p>
             </div>
-            <div class="message__action">
-              <button type="button" class="button button--small button--color-green">
+            <div class="o-message__action">
+              <button type="button" class="o-button o-button--small o-button--color-green">
                 action
               </button>
             </div>
           </div>
         </li>
         <li>
-          <div class="message message--color-red">
-            <div class="message__body">
+          <div class="o-message o-message--color-red">
+            <div class="o-message__body">
               <h6>Heading</h6>
               <p>
                 Body text
               </p>
             </div>
-            <div class="message__action">
-              <button type="button" class="button button--small button--color-red">
+            <div class="o-message__action">
+              <button type="button" class="o-button o-button--small o-button--color-red">
                 action
               </button>
             </div>
@@ -168,19 +168,19 @@
     <!-- With an avatar -->
     <docs-item title="With an avatar" :code="message_avatar_html" v-if="is_html">
       <div slot="body">
-        <div class="message message--color-secondary">
-          <div class="avatar avatar--size-small avatar--circle">
+        <div class="o-message o-message--color-secondary">
+          <div class="o-avatar o-avatar--size-small o-avatar--circle">
             <svg viewBox="0 0 80 80" width="80px" xmlns="http://www.w3.org/2000/svg">
               <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
             </svg>
           </div>
-          <div class="message__body">
+          <div class="o-message__body">
             <p>
               Body text
             </p>
           </div>
-          <div class="message__action">
-            <button type="button" class="button button--small button--color-secondary">
+          <div class="o-message__action">
+            <button type="button" class="o-button o-button--small o-button--color-secondary">
               action
             </button>
           </div>
@@ -207,8 +207,8 @@
       <div slot="body">
         <p>Meant to be used outside containers in order to take full browser width.</p>
 
-        <div class="message message--color-secondary message--full">
-          <div class="message__body">
+        <div class="o-message o-message--color-secondary o-message--full">
+          <div class="o-message__body">
             <h6>Heading</h6>
             <p>
               Body text
@@ -232,7 +232,7 @@
 
     <!-- Usage  -->
     <docs-item title="Usage" v-if="is_html">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -246,15 +246,15 @@
         <tbody>
         <tr>
           <td>color</td>
-          <td>Set with <code>.message--color-{color}</code> class</td>
-          <td>See <router-link :to="{ name: 'docs-global'}"><span>Colors</span></router-link> page</td>
+          <td>Set with <code>.o-message--color-{color}</code> class</td>
+          <td>See <router-link :to="{ name: 'docs-global-colors'}"><span>Colors</span></router-link> page</td>
           <td>String</td>
           <td>-</td>
           <td>-</td>
         </tr>
         <tr>
           <td>size</td>
-          <td>Set with <code>.message--full</code>. Meant to be used outside containers in order to take full browser width.</td>
+          <td>Set with <code>.o-message--full</code>. Meant to be used outside containers in order to take full browser width.</td>
           <td><code>full</code></td>
           <td>String</td>
           <td>-</td>
@@ -265,7 +265,7 @@
     </docs-item>
 
     <docs-item title="Usage" v-else>
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -278,7 +278,7 @@
         <tbody>
         <tr>
           <td>color</td>
-          <td>See <router-link :to="{ name: 'docs-global'}"><span>Colors</span></router-link> page for possible values</td>
+          <td>See <router-link :to="{ name: 'docs-global-colors'}"><span>Colors</span></router-link> page for possible values</td>
           <td>String</td>
           <td>-</td>
           <td>-</td>
@@ -322,8 +322,8 @@ export default {
     Some text and a <a href='#'>link</a>.
   </p>
 </o-message>`,
-      message_html: `<div class="message">
-  <div class="message__body">
+      message_html: `<div class="o-message">
+  <div class="o-message__body">
     <p>
       Some text and a <a href="#">link</a>.
     </p>
@@ -369,15 +369,15 @@ export default {
   </p>
   <o-button text="action" size="small" />
 </o-message>`,
-      message_colors_html: `<div class="message message--color-{color}">
-  <div class="message__body">
+      message_colors_html: `<div class="o-message o-message--color-{color}">
+  <div class="o-message__body">
     <h6>Heading</h6>
     <p>
       Body text
     </p>
   </div>
-  <div class="message__action">
-    <button type="button" class="button button--small button--color-{color}">
+  <div class="o-message__action">
+    <button type="button" class="o-button o-button--small o-button--color-{color}">
       action
     </button>
   </div>
@@ -390,19 +390,19 @@ export default {
   </div>
   <o-button text="action" size="small" />
 </o-message>`,
-      message_avatar_html: `<div class="message message--color-{color}">
-  <div class="avatar avatar--size-small avatar--circle">
+      message_avatar_html: `<div class="o-message o-message--color-{color}">
+  <div class="o-avatar o-avatar--size-small o-avatar--circle">
     <svg viewBox="0 0 80 80" width="80px" height="auto" xmlns="http://www.w3.org/2000/svg">
       <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd"></path>
     </svg>
   </div>
-  <div class="message__body">
+  <div class="o-message__body">
     <p>
       Body text
     </p>
   </div>
-  <div class="message__action">
-    <button type="button" class="button button--small button--color-{color}">
+  <div class="o-message__action">
+    <button type="button" class="o-button o-button--small o-button--color-{color}">
       action
     </button>
   </div>
@@ -414,8 +414,8 @@ export default {
     Body text
   </p>
 </o-message>`,
-      message_no_border_radius_html: `<div class="message message--color-{color} message--full">
-  <div class="message__body">
+      message_no_border_radius_html: `<div class="o-message o-message--color-{color} o-message--full">
+  <div class="o-message__body">
     <h6>Heading</h6>
     <p>
       Body text

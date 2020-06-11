@@ -1,0 +1,155 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OAvatar from '../../src/components/Avatar/Avatar';
+
+<!-- Additional Helpers -->
+import ColorBase from '../../src/global/ColorBase.js';
+
+
+<Meta title='5. Components|Custom/Avatar' component={ OAvatar } />
+
+# Avatar
+
+Represents a character
+
+<hr/>
+
+# Tryout
+
+Tryout is for live example of Avatar on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OAvatar },
+    template: `<div>
+      <o-avatar :color="color" :look="look" :size="size">
+        <svg viewBox="0 0 80 80" width="80px" xmlns="http://www.w3.org/2000/svg">
+          <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd" />
+        </svg>
+      </o-avatar>
+      <hr />
+      <o-avatar :size="size" :look="look">
+        <img src="https://cdn.pixabay.com/photo/2020/04/15/17/32/medical-5047582_1280.png" alt="">
+      </o-avatar>
+    </div>`,
+    props: {
+      color: {
+        default: select('Color', ColorBase, ColorBase[0])
+      },
+      look: {
+        default: select('Look', ['', 'circle'], '')
+      },
+      size: {
+        default: select('Size', ['', 'small', 'large', 'auto'], '')
+      }
+    }
+  }}
+</Story>
+
+<hr/>
+
+
+# Basic
+
+<Preview>
+  <Story name='Basic'>{{
+    components: { OAvatar },
+    template: `<div>
+      <o-avatar>
+        <svg viewBox="0 0 80 80" width="80px" xmlns="http://www.w3.org/2000/svg">
+          <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd" />
+        </svg>
+      </o-avatar>
+      <hr />
+      <o-avatar>
+        <img src="https://cdn.pixabay.com/photo/2020/04/15/17/32/medical-5047582_1280.png" alt="">
+      </o-avatar>
+    </div>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# In circle
+
+<Preview>
+  <Story name='In circle'>{{
+    components: { OAvatar },
+    template: `<div>
+      <o-avatar look="circle">
+        <svg viewBox="0 0 80 80" width="80px" xmlns="http://www.w3.org/2000/svg">
+          <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd" />
+        </svg>
+      </o-avatar>
+      <hr />
+      <o-avatar look="circle">
+        <img src="https://cdn.pixabay.com/photo/2020/04/15/17/32/medical-5047582_1280.png" alt="">
+      </o-avatar>
+    </div>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Sizes
+
+<Preview>
+  <Story name='Sizes'>{{
+    components: { OAvatar },
+    template: `<div>
+      <o-avatar size="small">
+        <svg viewBox="0 0 80 80" width="80px" xmlns="http://www.w3.org/2000/svg">
+          <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd" />
+        </svg>
+      </o-avatar>
+      <hr />
+      <o-avatar>
+        <svg viewBox="0 0 80 80" width="80px" xmlns="http://www.w3.org/2000/svg">
+          <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd" />
+        </svg>
+      </o-avatar>
+      <hr />
+      <o-avatar size="large">
+        <svg viewBox="0 0 80 80" width="80px" xmlns="http://www.w3.org/2000/svg">
+          <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd" />
+        </svg>
+      </o-avatar>
+    </div>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Colors
+
+<Preview>
+  <Story name='Colors'>{{
+    components: { OAvatar },
+    template: `<div>
+      <o-avatar color="primary">
+        <svg viewBox="0 0 80 80" width="80px" xmlns="http://www.w3.org/2000/svg">
+          <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd" />
+        </svg>
+      </o-avatar>
+      <hr />
+      <o-avatar color="secondary">
+        <svg viewBox="0 0 80 80" width="80px" xmlns="http://www.w3.org/2000/svg">
+          <path d="m28.6091684 41.6452381c3.2812101 2.1225413 7.1921206 3.3547619 11.3908316 3.3547619s8.1096215-1.2322206 11.3908316-3.3547619c16.5421837 4.9053348 28.6091684 20.2208507 28.6091684 38.3547619 0 22.09139-17.90861 40-40 40s-40-17.90861-40-40c0-18.1339112 12.0669847-33.4494271 28.6091684-38.3547619zm11.3908316.3547619c-9.9411255 0-18-8.0588745-18-18s8.0588745-18 18-18 18 8.0588745 18 18-8.0588745 18-18 18z" fill-rule="evenodd" />
+        </svg>
+      </o-avatar>
+    </div>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+## Props
+
+<Props of={OAvatar} />

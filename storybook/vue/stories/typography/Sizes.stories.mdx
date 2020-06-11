@@ -1,0 +1,160 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+
+<Meta title='4. Typography|Sizes' />
+
+
+# Sizes
+
+Apply sizes by adding <mark>.fs-{size}</mark> class to text elements
+
+Recall size values with the <mark>fontSize('{size}')</mark> function
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of Font Size on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<p :class="classes">
+      fs-{{ fontSize }}
+    </p>`,
+    props: {
+      fontSize: {
+        default: select('Font size',
+        {
+          '76 Giga': 'giga',
+          '54 Mega': 'mega',
+          '36 Alpha': 'alpha',
+          '28 Beta': 'beta',
+          '21 Gamma': 'gamma',
+          '18 Delta': 'delta',
+          '16 Epsilon': 'epsilon',
+          '14 Zeta': 'zeta',
+          '12 Omega': 'omega'
+        }
+        , 'alpha')
+      },
+    },
+    computed: {
+      classes () {
+        return {
+          [`fs-${this.fontSize}`]: this.fontSize
+        }
+      }
+    }
+  }}
+</Story>
+
+<hr />
+
+
+# Sizes
+
+<Story name='Sizes'>
+  {{
+    components: {},
+    template: `<ul class="docs__simple-list">
+      <li>
+        <h5>Giga</h5>
+        <p class="fs-giga font-bold">76 Giga</p>
+      </li>
+      <li>
+        <h5>Mega</h5>
+        <p class="fs-mega font-bold">54 Mega</p>
+      </li>
+      <li>
+        <h5>Alpha</h5>
+        <p class="fs-alpha">36 Alpha</p>
+      </li>
+      <li>
+        <h5>Beta</h5>
+        <p class="fs-beta">28 Beta</p>
+      </li>
+      <li>
+        <h5>Gamma</h5>
+        <p class="fs-gamma">21 Gamma</p>
+      </li>
+      <li>
+        <h5>Delta</h5>
+        <p class="fs-delta">18 Delta</p>
+      </li>
+      <li>
+        <h5>Epsilon</h5>
+        <p class="fs-epsilon">16 Epsilon</p>
+      </li>
+      <li>
+        <h5>Zeta</h5>
+        <p class="fs-zeta">14 Zeta</p>
+      </li>
+      <li>
+        <h5>Omega</h5>
+        <p class="fs-omega">12 Omega</p>
+      </li>
+      <li>
+        <h5>Epsilon with Gamma</h5>
+        <p class="fs-epsilon sm:fs-gamma">16 Epsilon with 21 Gamma on viewport size SM or wider</p>
+      </li>
+      <li>
+        <h5>Zeta with Epsilon</h5>
+        <p class="fs-zeta md:fs-epsilon">14 Zeta with 16 Epsilon on viewport size MD or wider</p>
+      </li>
+    </ul>`,
+  }}
+</Story>
+
+```html
+<p class="fs-giga">76 Giga</p>
+<p class="fs-mega">54 Mega</p>
+<p class="fs-alpha">36 Alpha</p>
+<p class="fs-beta">28 Beta</p>
+<p class="fs-gamma">20 Gamma</p>
+<p class="fs-delta">18 Delta</p>
+<p class="fs-epsilon">16 Epsilon</p>
+<p class="fs-zeta">14 Zeta</p>
+<p class="fs-omega">12 Omega</p>
+
+<p class="fs-epsilon sm:fs-gamma">16 Epsilon with 21 Gamma on viewport size SM or wider</p>
+<p class="fs-zeta md:fs-epsilon">14 Zeta with 16 Epsilon on viewport size MD or wider</p>
+```
+
+```scss
+.example-class {
+  font-size: fontSize('giga');
+}
+```
+
+<hr/>
+
+
+# Responsive
+
+Apply responsive sizes by adding <mark>.{breakpoint}:fs-{size}</mark> class to text elements
+
+<Story name='Responsive'>
+  {{
+    components: {},
+    template: `<ul class="docs__simple-list">
+      <li>
+        <h5>Epsilon with Gamma</h5>
+        <p class="fs-epsilon sm:fs-gamma">16 Epsilon with 21 Gamma on viewport size SM or wider</p>
+      </li>
+      <li>
+        <h5>Zeta with Epsilon</h5>
+        <p class="fs-zeta md:fs-epsilon">14 Zeta with 16 Epsilon on viewport size MD or wider</p>
+      </li>
+    </ul>`,
+  }}
+</Story>
+
+```html
+<p class="fs-epsilon sm:fs-gamma">16 Epsilon with 21 Gamma on viewport size SM or wider</p>
+<p class="fs-zeta md:fs-epsilon">14 Zeta with 16 Epsilon on viewport size MD or wider</p>
+```

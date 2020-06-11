@@ -1,0 +1,34 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+
+<Meta title='0. Overview|Manifesto' />
+
+<Story name='Manifesto'>
+  {{
+    components: { },
+    template: `<div>
+      <h1>Manifesto</h1>
+      <h2>Sorry we're late</h2>
+      <p>
+        <span class="text-italic">"You have good design,"</span> they said. But we kept it to ourselves. For years. We're not sure why. So here it is. The juice behind <a href="https://fomo.com">Fomo.com</a>.
+      </p>
+      <p>
+        Orange is <strong>opinionated</strong>. Some thoughts:
+      </p>
+      <ul>
+        <li>most websites look the same</li>
+        <li>design is a marketing channel</li>
+        <li>free ideas _spread_</li>
+      </ul>
+      <p>
+        So why are you still using Bootstrap? <a href="/?path=/docs/1-getting-started-install--install">Get started</a>.
+      </p>
+      <h6>
+        Orange was imagined by Jan, Matevz, and Lucian.
+      </h6>
+    </div>`,
+  }}
+</Story>

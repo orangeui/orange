@@ -1,0 +1,134 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+
+<Meta title='4. Typography|Font' />
+
+
+# Font
+
+Orange's default typeface is <mark>Rubik</mark>, designed by Philipp Hubert and Sebastian Fischer at Hubert & Fischer.
+
+```scss
+.example {
+  font-family: $o-font-primary;
+}
+```
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of Font on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<p :class="classes">
+      {{ fontWeight }}
+    </p>`,
+    props: {
+      fontWeight: {
+        default: select('Font weight', ['normal', 'medium', 'bold', 'extrabold'], 'normal')
+      },
+      textItalic: {
+        default: boolean('Text italic', false)
+      }
+    },
+    computed: {
+      classes () {
+        return {
+          [`font-${this.fontWeight}`]: this.fontWeight,
+          [`text-italic`]: this.textItalic
+        }
+      }
+    }
+  }}
+</Story>
+
+<hr/>
+
+
+# Weights
+
+Apply weights by adding <mark>.font-{weight}</mark> class to text elements
+
+Recall weights with the <mark>fontWeight('{weight}')</mark> function
+
+<Story name='Weights'>
+  {{
+    components: {},
+    template: `<ul class="docs__simple-list">
+      <li>
+        <h5>700 Extra Bold</h5>
+        <p class="fs-gamma font-extrabold">700 Extra Bold</p>
+      </li>
+      <li>
+        <h5>600 Bold</h5>
+        <p class="fs-gamma font-bold">600 Bold</p>
+      </li>
+      <li>
+        <h5>500 Medium</h5>
+        <p class="fs-gamma font-medium">500 Medium</p>
+      </li>
+      <li>
+        <h5>400 Normal</h5>
+        <p class="fs-gamma font-normal">400 Normal</p>
+      </li>
+    </ul>`,
+  }}
+</Story>
+
+```html
+<p class="font-extrabold">700 Extra Bold</p>
+<p class="font-bold">600 Bold</p>
+<p class="font-medium">500 Medium</p>
+<p class="font-normal">400 Normal</p>
+```
+
+```scss
+.example {
+  font-weight: fontWeight('extrabold');
+}
+```
+
+<hr/>
+
+
+# Italic
+
+Apply italic font style by adding <mark>.text-italic</mark> class to text elements
+
+<Story name='Italic'>
+  {{
+    components: {},
+    template: `<ul class="docs__simple-list">
+      <li>
+        <h5>700 Extra Bold</h5>
+        <p class="fs-gamma text-italic font-extrabold">700 Extra Bold</p>
+      </li>
+      <li>
+        <h5>600 Bold</h5>
+        <p class="fs-gamma text-italic font-bold">600 Bold</p>
+      </li>
+      <li>
+        <h5>500 Medium</h5>
+        <p class="fs-gamma text-italic font-medium">500 Medium</p>
+      </li>
+      <li>
+        <h5>400 Normal</h5>
+        <p class="fs-gamma text-italic font-normal">400 Normal</p>
+      </li>
+    </ul>`,
+  }}
+</Story>
+
+```html
+<p class="font-extrabold text-italic">700 Extra Bold</p>
+<p class="font-bold text-italic">600 Bold</p>
+<p class="font-medium text-italic">500 Medium</p>
+<p class="font-normal text-italic">400 Normal</p>
+```

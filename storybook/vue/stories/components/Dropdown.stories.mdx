@@ -1,0 +1,195 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OFormDropdown from '../../src/components/Dropdown/InputDropdown';
+
+
+<Meta title='5. Components|Forms/Dropdown' />
+
+# Dropdown
+
+A dropdown field is used to <mark>elicit a response</mark> from a user, offering a <mark>list of options</mark> to choose from.
+
+The Dropdown component comes with an optional Search mechanism, that enables users to quickly filter the available options by name.
+
+<hr/>
+
+# Tryout
+
+Tryout is for live example of Dropdown on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OFormDropdown },
+    template: `<div>
+      <form class="form form--large">
+        <o-form-dropdown 
+          id="form_dropdown_tryout"
+          :label="label"
+          v-model="form_model_value"
+          :items="dropdown_items"
+          :placeholder="placeholder"
+          :description="description"
+          :value_property="value_property"
+          :title_property="title_property"
+          :value_as_object="value_as_object"
+          :search="search"
+          :disabled="disabled" />
+      </form>
+      <code class="d-block mt-4">
+        Return value: {{ form_model_value }}
+      </code>
+    </div>`,
+    props: {
+      label: {
+        default: text('Label', 'Label')
+      },
+      placeholder: {
+        default: text('Placeholder', 'Placeholder')
+      },
+      description: {
+        default: text('Description', 'Description of the dropdown field')
+      },
+      array_of_objects: {
+        default: boolean('Use array of objects (reopen dropdown after toggle)', false)
+      },
+      value_property: {
+        default: text('Return value of object by key', 'id')
+      },
+      title_property: {
+        default: text('Display dropdown items by key', 'name')
+      },
+      value_as_object: {
+        default: boolean('Return value as full object', false)
+      },
+      search: {
+        default: boolean('Enable search', false)
+      },
+      disabled: {
+        default: boolean('Disabled', false)
+      },
+    },
+    data() {
+      return {
+        dropdown_items_strings: ['google', 'word', 'Advertisement', 'Competitor', 'Other'],
+        dropdown_items_objects: [
+          {
+            id: 1,
+            name: 'Penguin'
+          },
+          {
+            id: 2 ,
+            name: 'Bear'
+          },
+          {
+            id: 3 ,
+            name: 'Bird'
+          },
+          {
+            id: 4,
+            name: 'Klemen'
+          },
+          {
+            id: 5 ,
+            name: 'Ryan'
+          }
+        ],
+        form_model_value: null,
+      }
+    },
+    computed: {
+      dropdown_items() {
+        return this.array_of_objects ? this.dropdown_items_objects : this.dropdown_items_strings
+      }
+    }
+  }}
+</Story>
+
+
+<hr/>
+
+# Basic with strings
+
+<Preview>
+  <Story name='Basic with strings'>
+    {{
+      components: { OFormDropdown },
+      template: `<form class="form">
+        <o-form-dropdown 
+          id="form_dropdown_basic"
+          label="Dropdown label"
+          v-model="form_model_value"
+          :items="dropdown_items_strings"
+          placeholder="placeholder"
+          description="Description of the dropdown field" />
+      </form>`,
+      data() {
+        return {
+          dropdown_items_strings: ['google', 'word', 'Advertisement', 'Competitor', 'Other'],
+          form_model_value: null,
+        }
+      }
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Large with objects
+
+<Preview>
+  <Story name='Large with objects'>
+    {{
+      components: { OFormDropdown },
+      template: `<form class="form form--large">
+        <o-form-dropdown 
+          id="form_dropdown_basic"
+          label="Dropdown label"
+          v-model="form_model_value"
+          :items="dropdown_items_objects"
+          placeholder="placeholder"
+          description="Description of the dropdown field"
+          :value_as_object="true" />
+      </form>`,
+      data() {
+        return {
+          dropdown_items_objects: [
+            {
+              id: 1,
+              name: 'Penguin'
+            },
+            {
+              id: 2,
+              name: 'Bear'
+            },
+            {
+              id: 3,
+              name: 'Bird'
+            },
+            {
+              id: 4,
+              name: 'Klemen'
+            },
+            {
+              id: 5,
+              name: 'Ryan'
+            }
+          ],
+          form_model_value: null,
+        }
+      }
+    }}
+  </Story>
+</Preview>
+
+
+<hr/>
+
+## Dropdown Props
+
+<Props of={OFormDropdown} />
+

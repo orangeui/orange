@@ -1,0 +1,121 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Additional Helpers -->
+import ColorList from '../../src/global/ColorList.js';
+import ColorSlugs from '../../src/global/ColorSlugs.js';
+
+
+<Meta title='2. Global|Background Colors' />
+
+
+# Background Colors
+
+Helpers that give color to an interface.
+
+
+<hr/>
+
+# Tryout
+
+Tryout is for live example of Background Colors on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: {},
+    template: `<div>
+        <ul class="docs__bg-color-list">
+          <li>
+            <div class="docs__bg-color-item" :class="'bg-' + color"></div>
+            <p>
+              {{ color }}
+            </p>
+          </li>
+        </ul>
+      </div>`,
+    props: {
+      color: {
+        default: select('Color', ColorSlugs, ColorSlugs[0])
+      }
+    }
+  }}
+</Story>
+
+<hr/>
+
+
+# Backgrounds as HTML/SCSS
+
+Apply a background color by adding <mark>.bg-{color}</mark> class to an element
+
+Apply a background color to <mark>SCSS</mark> by using color function 
+
+```scss
+.example-class {
+  background-color: color('{color}');
+}
+```
+
+<Preview>
+  <Story name='Backgrounds'>
+    {{
+      components: {},
+      template: `<div>
+        <ul class="docs__bg-color-list">
+          <li>
+            <div class="docs__bg-color-item bg-white"></div>
+            <p>White</p>
+          </li>
+          <li>
+            <div class="docs__bg-color-item bg-gray"></div>
+            <p>Gray</p>
+          </li>
+          <li>
+            <div class="docs__bg-color-item bg-black"></div>
+            <p>Black</p>
+          </li>
+          <li>
+            <div class="docs__bg-color-item bg-primary"></div>
+            <p>Primary</p>
+          </li>
+          <li>
+            <div class="docs__bg-color-item bg-secondary"></div>
+            <p>Secondary</p>
+          </li>
+        </ul>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# Usage 
+
+<Story name='Usage'>
+  {{
+    components: {},
+    template: `<table class="o-table o-table--compact o-table--celled">
+      <thead>
+        <tr>
+          <th>Attribute</th>
+          <th>Description</th>
+          <th>Type</th>
+          <th>Syntax</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>bg-color</td>
+          <td>See <a href="/?path=/docs/2-global-colors--list"><span>Colors</span></a> page for possible values</td>
+          <td>Class</td>
+          <td><code>.bg-color</code></td>
+        </tr>
+      </tbody>
+  </table>`,
+  }}
+</Story>
+

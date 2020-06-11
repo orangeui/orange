@@ -1,0 +1,458 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OTableWrapper from '../../src/components/Table/TableWrapper';
+import OTable from '../../src/components/Table/Table';
+
+<!-- Additional subcomponents -->
+import OButton from '../../src/components/Button/Button';
+import OLabel from '../../src/components/Label/Label';
+import OIcon from '../../src/components/Icon/Icon';
+
+
+<Meta title='5. Components|Basic/Table' />
+
+# Table
+
+A table displays a collections of data grouped into rows. Just a bunch of good old tables.
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of button on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OTableWrapper, OTable },
+    template: `<o-table-wrapper :height="height" :fixed_header="fixed_header">
+      <o-table 
+        :border_bottom="border_bottom"
+        :evenly_distributed="evenly_distributed"
+        :compact="compact"
+        :celled="celled"
+        :definition="definition">
+        <thead>
+          <tr>
+            <th>Budget</th>
+            <th>Spent Budget</th>
+            <th>Date added</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$30,000</td>
+            <td>$768</td>
+            <td>Wed, May 9th 2018</td>
+          </tr>
+          <tr>
+            <td>$10,000</td>
+            <td>$10,000</td>
+            <td>Tue, May 8th 2018</td>
+          </tr>
+          <tr>
+            <td>$2,000</td>
+            <td>$2,000</td>
+            <td>Mon, May 7th 2018</td>
+          </tr>
+        </tbody>
+      </o-table>
+    </o-table-wrapper>`,
+    props: {
+      height: {
+        default: number('Height', '')
+      },
+      fixed_header: {
+        default: boolean('Fixed header', false)
+      },
+      border_bottom: {
+        default: boolean('Border on bottom', false)
+      },
+      evenly_distributed: {
+        default: boolean('Distribute columns evenly', false)
+      },
+      compact: {
+        default: boolean('Compact', false)
+      },
+      celled: {
+        default: boolean('Celled', false)
+      },
+      definition: {
+        default: boolean('Definition', false)
+      }
+    },
+  }}
+</Story>
+
+<hr/>
+
+
+# Basic
+
+<Preview>
+  <Story name='Basic'>
+    {{
+      components: { OTableWrapper, OTable },
+      template: `<o-table-wrapper>
+        <o-table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Impressions</th>
+              <th>Clicks</th>
+              <th>Spend</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Shopify sales</td>
+              <td>4,230</td>
+              <td>520</td>
+              <td>$78</td>
+              <td>Simple</td>
+            </tr>
+          </tbody>
+        </o-table>
+      </o-table-wrapper>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# With a bottom border
+
+<Preview>
+  <Story name='With a bottom border'>
+    {{
+      components: { OTableWrapper, OTable },
+      template: `<o-table-wrapper>
+        <o-table :border_bottom="true">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Impressions</th>
+              <th>Clicks</th>
+              <th>Spend</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Shopify sales</td>
+              <td>4,230</td>
+              <td>520</td>
+              <td>$78</td>
+              <td>Simple</td>
+            </tr>
+            <tr>
+              <td>Shopify sales</td>
+              <td>4,230</td>
+              <td>520</td>
+              <td>$78</td>
+              <td>Simple</td>
+            </tr>
+          </tbody>
+        </o-table>
+      </o-table-wrapper>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Fixed
+
+Distribute columns evenly
+
+<Preview>
+  <Story name='Fixed'>
+    {{
+      components: { OTableWrapper, OTable },
+      template: `<o-table-wrapper>
+        <o-table :evenly_distributed="true">
+          <thead>
+            <tr>
+              <th>Budget</th>
+              <th>Spent Budget</th>
+              <th>Date added</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$30,000</td>
+              <td>$768</td>
+              <td>Wed, May 9th 2018</td>
+            </tr>
+            <tr>
+              <td>$10,000</td>
+              <td>$10,000</td>
+              <td>Tue, May 8th 2018</td>
+            </tr>
+            <tr>
+              <td>$2,000</td>
+              <td>$2,000</td>
+              <td>Mon, May 7th 2018</td>
+            </tr>
+          </tbody>
+        </o-table>
+      </o-table-wrapper>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Compact
+
+<Preview>
+  <Story name='Compact'>
+    {{
+      components: { OTableWrapper, OTable },
+      template: `<o-table-wrapper>
+        <o-table :compact="true">
+          <thead>
+            <tr>
+              <th>Budget</th>
+              <th>Spent Budget</th>
+              <th>Date added</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$30,000</td>
+              <td>$768</td>
+              <td>Wed, May 9th 2018</td>
+            </tr>
+            <tr>
+              <td>$10,000</td>
+              <td>$10,000</td>
+              <td>Tue, May 8th 2018</td>
+            </tr>
+            <tr>
+              <td>$2,000</td>
+              <td>$2,000</td>
+              <td>Mon, May 7th 2018</td>
+            </tr>
+          </tbody>
+        </o-table>
+      </o-table-wrapper>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Celled
+
+<Preview>
+  <Story name='Celled'>
+    {{
+      components: { OTableWrapper, OTable },
+      template: `<o-table-wrapper>
+        <o-table :celled="true">
+          <thead>
+            <tr>
+              <th>Budget</th>
+              <th>Spent Budget</th>
+              <th>Date added</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$30,000</td>
+              <td>$768</td>
+              <td>Wed, May 9th 2018</td>
+            </tr>
+            <tr>
+              <td>$10,000</td>
+              <td>$10,000</td>
+              <td>Tue, May 8th 2018</td>
+            </tr>
+            <tr>
+              <td>$2,000</td>
+              <td>$2,000</td>
+              <td>Mon, May 7th 2018</td>
+            </tr>
+          </tbody>
+        </o-table>
+      </o-table-wrapper>`,
+    }}
+  </Story>
+</Preview>
+
+
+<hr/>
+
+
+# Definition
+
+<Preview>
+  <Story name='Definition'>
+    {{
+      components: { OTableWrapper, OTable, OButton, OLabel, OIcon },
+      template: `<o-table-wrapper>
+        <o-table :definition="true" :compact="true">
+          <thead>
+            <tr>
+              <th>Plan</th>
+              <th>Fomo Essential</th>
+              <th>
+                Fomo Plus <o-label color="green" text="current plan" size="small" />
+              </th>
+              <th>Fomo Advanced</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>
+                <o-button size="small" variant="basic" text="Downgrade to Essential" />
+              </td>
+              <td>
+                <o-button size="small" variant="basic" text="Cancel subscription" />
+              </td>
+              <td>
+                <o-button size="small" text="Upgrade to Advanced" />
+              </td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td>$39 / month</td>
+              <td>$79 / month</td>
+              <td>$199 / month</td>
+            </tr>
+            <tr>
+              <td>Notifications</td>
+              <td>50,000</td>
+              <td>200,000</td>
+              <td>3,000,000</td>
+            </tr>
+            <tr>
+              <td>Website domains</td>
+              <td>unlimited</td>
+              <td>unlimited</td>
+              <td>unlimited</td>
+            </tr>
+            <tr>
+              <td>Custom page rules</td>
+              <td><o-icon symbol="tick" /></td>
+              <td><o-icon symbol="tick" /></td>
+              <td><o-icon symbol="tick" /></td>
+            </tr>
+            <tr>
+              <td>Email support</td>
+              <td><o-icon symbol="tick" /></td>
+              <td><o-icon symbol="tick" /></td>
+              <td><o-icon symbol="tick" /></td>
+            </tr>
+          </tbody>
+        </o-table>
+      </o-table-wrapper>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Height limit
+
+<Preview>
+  <Story name='Height limit'>
+    {{
+      components: { OTableWrapper, OTable },
+      template: `<o-table-wrapper :height="200">
+        <o-table>
+          <thead>
+            <tr>
+              <th>Budget</th>
+              <th>Spent Budget</th>
+              <th>Date added</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$30,000</td>
+              <td>$768</td>
+              <td>Wed, May 9th 2018</td>
+            </tr>
+            <tr>
+              <td>$10,000</td>
+              <td>$10,000</td>
+              <td>Tue, May 8th 2018</td>
+            </tr>
+            <tr>
+              <td>$2,000</td>
+              <td>$2,000</td>
+              <td>Mon, May 7th 2018</td>
+            </tr>
+          </tbody>
+        </o-table>
+      </o-table-wrapper>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Fixed header
+
+<Preview>
+  <Story name='Fixed header'>
+    {{
+      components: { OTableWrapper, OTable },
+      template: `<o-table-wrapper :height="200" :fixed_header="true">
+        <o-table>
+          <thead>
+            <tr>
+              <th>Budget</th>
+              <th>Spent Budget</th>
+              <th>Date added</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$30,000</td>
+              <td>$768</td>
+              <td>Wed, May 9th 2018</td>
+            </tr>
+            <tr>
+              <td>$10,000</td>
+              <td>$10,000</td>
+              <td>Tue, May 8th 2018</td>
+            </tr>
+            <tr>
+              <td>$2,000</td>
+              <td>$2,000</td>
+              <td>Mon, May 7th 2018</td>
+            </tr>
+          </tbody>
+        </o-table>
+      </o-table-wrapper>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+## Table Wrapper Props
+
+<Props of={OTableWrapper} />
+
+
+<hr/>
+
+## Table Props
+
+<Props of={OTable} />

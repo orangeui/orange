@@ -1,0 +1,302 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+
+<Meta title='3. Layout|Grid' />
+
+
+# Grid
+
+Grid is _not yet_ in Vue component structure.
+
+<hr/>
+
+
+# Number of columns in a row
+
+By default, <mark>.grid</mark> is using 12 column system with auto responsive columns.
+All the columns are equal width and you can put as many columns in a grid as you want and columns will be moved to a new row when there is not enough space in a container.
+
+## Regular (default)
+
+<Preview>
+  <Story name='Regular (default)'>
+    {{
+      components: {},
+      template: `
+      <!-- page-docs-layout-grid is just style helper for docs -->
+      <div class="page-docs-layout-grid">
+        <div class="grid">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+        </div>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+## 3 columns - responsive
+
+<Preview>
+  <Story name='3 columns - responsive'>
+    {{
+      components: {},
+      template: `
+      <!-- page-docs-layout-grid is just style helper for docs -->
+      <div class="page-docs-layout-grid">
+        <div class="grid grid--2 sm:grid--3">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+        </div>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+## Auto Fill Column
+
+By default, <mark>.grid</mark> is using 12 column system with auto responsive columns.
+All the columns are equal width and you can put as many columns in a grid as you want and columns will be moved to a new row when there is not enough space in a container.
+
+<hr />
+
+### Auto Fill - Narrow
+
+<Preview>
+  <Story name='Auto Fill - Narrow'>
+    {{
+      components: {},
+      template: `
+      <!-- page-docs-layout-grid is just style helper for docs -->
+      <div class="page-docs-layout-grid">
+        <div class="grid grid--columns-auto-narrow">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+        </div>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+### Auto Fill - Regular (default)
+
+<Preview>
+  <Story name='Auto Fill - Regular (default)'>
+    {{
+      components: {},
+      template: `
+      <!-- page-docs-layout-grid is just style helper for docs -->
+      <div class="page-docs-layout-grid">
+        <div class="grid">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+        </div>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+### Auto Fill - Wide
+
+<Preview>
+  <Story name='Auto Fill - Wide'>
+    {{
+      components: {},
+      template: `
+      <!-- page-docs-layout-grid is just style helper for docs -->
+      <div class="page-docs-layout-grid">
+        <div class="grid grid--columns-auto-wide">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+        </div>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+### Different column width
+
+<Preview>
+  <Story name='Different column width'>
+    {{
+      components: {},
+      template: `
+      <!-- page-docs-layout-grid is just style helper for docs -->
+      <div class="page-docs-layout-grid">
+        <div class="grid">
+          <div class="col-6">1</div>
+          <div class="col-6">2</div>
+          <div class="col-4">3</div>
+          <div class="col-3">4</div>
+          <div class="col-5">5</div>
+          <div class="col-1">6</div>
+          <div class="col-2">7</div>
+          <div class="col-7">8</div>
+          <div class="col-2">9</div>
+        </div>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+## Grid Usage
+
+<Story name='Grid Usage'>
+  {{
+    components: {},
+    template: `<table class="o-table o-table--fixed o-table--compact o-table--definition o-table--border-bottom">
+      <thead>
+        <th></th>
+        <th>
+          Max container width
+        </th>
+        <th>
+          Class prefix
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Default</span><br />
+            &gt; 0px
+          </td>
+          <td>
+            100%
+          </td>
+          <td><code>col-</code> and <code>row-</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Extra extra small</span><br />
+            &gt; 320px
+          </td>
+          <td>
+            100%
+          </td>
+          <td><code>xxs:col-</code> and <code>xxs:row-</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Extra small</span><br />
+            &gt; 480px
+          </td>
+          <td>
+            480px
+          </td>
+          <td><code>xs:col-</code> and <code>xs:row-</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Small</span><br />
+            &gt; 640px
+          </td>
+          <td>580px</td>
+          <td><code>sm:col-</code> and <code>sm:row-</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Medium</span><br />
+            &gt; 768px
+          </td>
+          <td>720px</td>
+          <td><code>md:col-</code> and <code>md:row-</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Large</span><br />
+            &gt; 991px
+          </td>
+          <td>960px</td>
+          <td><code>lg:col-</code> and <code>lg:row-</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Extra large</span><br />
+            &gt; 1200px
+          </td>
+          <td>1140px</td>
+          <td><code>xl:col-</code> and <code>xl:row-</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Extra extra large</span><br />
+            &gt; 1440px
+          </td>
+          <td>1280px</td>
+          <td><code>xxl:col-</code> and <code>xxl:row-</code></td>
+        </tr>
+      </tbody>
+    </table>`,
+  }}
+</Story>
+

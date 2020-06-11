@@ -1,0 +1,136 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import ORadio from '../../src/components/Radio/Radio';
+import ORadioGroup from '../../src/components/Radio/RadioGroup';
+
+
+<Meta title='5. Components|Forms/Radio' />
+
+# Radio
+
+Radio buttons allow selection of <code>one of multiple</code> options.
+
+<hr/>
+
+# Tryout - Basic
+
+Tryout is for live example of Radio on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout - Basic'>
+  {{
+    components: { ORadio },
+    template: `<o-radio v-model="form_model_radio_basic_tryout" name="form_radio_tryout_name" id="radio_basic_tryout" :label="label" :disabled="disabled" @input="handleClick" />`,
+    methods: { handleClick: action('click') },
+    props: {
+      label: {
+        default: text('Label', 'Label')
+      },
+      disabled: {
+        default: boolean('Disabled', false)
+      }
+    },
+    data() {
+      return {
+        form_model_radio_basic_tryout: false
+      }
+    }
+  }}
+</Story>
+
+<hr/>
+
+
+# Tryout - Group
+
+Tryout is for live example of Radio in group on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout - Group'>
+  {{
+    components: { ORadio, ORadioGroup },
+    template: `<o-radio-group :label="group_label" :description="group_description">
+      <o-radio v-model="form_model_radio_tryout" name="form_radio_group_tryout_name" id="radio_basic_tryout_1" label="First label" @input="handleClick" />
+      <o-radio v-model="form_model_radio_tryout" name="form_radio_group_tryout_name" id="radio_basic_tryout_2" label="Second label" @input="handleClick" />
+      <o-radio v-model="form_model_radio_tryout" name="form_radio_group_tryout_name" id="radio_basic_tryout_3" label="Third label" @input="handleClick" />
+      <o-radio v-model="form_model_radio_tryout" name="form_radio_group_tryout_name" id="radio_basic_tryout_4" label="Forth label" @input="handleClick" :disabled="disabled" />
+    </o-radio-group>`,
+    methods: { handleClick: action('click') },
+    props: {
+      group_label: {
+        default: text('Group label', 'Group label')
+      },
+      group_description: {
+        default: text('Group description', 'Description text')
+      },
+      disabled: {
+        default: boolean('Disabled 4th Radio', false)
+      }
+    },
+    data() {
+      return {
+        form_model_radio_tryout: false,
+      }
+    }
+  }}
+</Story>
+
+<hr/>
+
+
+# Basic
+
+<Preview>
+  <Story name='Basic'>
+    {{
+      components: { ORadio },
+      template: `<o-radio v-model="form_model_radio_basic" name="form_radio_name" id="radio_basic" label="Label"  @input="handleClick" />`,
+      methods: { handleClick: action('click') },
+      data() {
+        return {
+          form_model_radio_basic: false
+        }
+      }
+    }}
+  </Story>
+</Preview>
+
+
+<hr/>
+
+
+# Group
+
+<Preview>
+  <Story name='Group'>
+    {{
+      components: { ORadio, ORadioGroup },
+      template: `<o-radio-group label="Group label" description="Description text">
+        <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_1" label="First label" @input="handleClick" />
+        <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_2" label="Second label" @input="handleClick" />
+        <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_3" label="Third label" @input="handleClick" />
+        <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_4" label="Forth label" @input="handleClick" :disabled="true" />
+      </o-radio-group>`,
+      methods: { handleClick: action('click') },
+      data() {
+        return {
+          form_model_radio: false,
+        }
+      }
+    }}
+  </Story>
+</Preview>
+
+
+<hr/>
+
+## Radio Props
+
+<Props of={ORadio} />
+
+
+## Radio Group Props
+
+<Props of={ORadioGroup} />

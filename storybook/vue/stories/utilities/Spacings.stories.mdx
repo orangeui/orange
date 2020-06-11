@@ -1,0 +1,176 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+
+<Meta title='6. Utilities|Spacings' />
+
+
+# Spacings
+
+Values that define empty space between elements.
+
+<hr />
+
+Apply margin to elements with <mark>.m-{key}</mark>, <mark>.ml-{key}</mark>, <mark>.mr-{key}</mark>, <mark>.mt-{key}</mark>, <mark>.mb-{key}</mark> classes
+
+Apply padding to elements with <mark>.p-{key}</mark>, <mark>.pl-{key}</mark>, <mark>.pr-{key}</mark>, <mark>.pt-{key}</mark>, <mark>.pb-{key}</mark> classes
+
+Recall spacings with <mark>space({key})</mark> function in <mark>SCSS</mark>
+
+```scss
+$o-space-base: 24px;
+
+$o-spaces: (
+  0: 0,                 // 0px
+  1: $space-base / 6,   // 4px
+  2: $space-base / 3,   // 8px
+  3: $space-base / 2,   // 12px
+  4: $space-base,       // 24px
+  5: $space-base * 2,   // 48px
+  6: $space-base * 3,   // 72px
+  7: $space-base * 6    // 144px
+);
+```
+
+<hr/>
+
+
+# Tryout
+
+<Preview>
+  <Story name='Tryout'>
+    {{
+      components: {},
+      template: `<div class="grid">
+        <div class="col-4">
+          <div class="text-center color-white bg-primary" :class="item1">.{{ item1 }}</div>
+        </div>
+        <div class="col-4">
+          <div class="text-center color-white bg-primary" :class="item2">.{{ item2 }}</div>
+        </div>
+        <div class="col-4">
+          <div class="text-center color-white bg-primary" :class="item3">.{{ item3 }}</div>
+        </div>
+      </div>`,
+      props: {
+        item1: {
+          default: select('Item 1 (padding)', ['p-0', 'p-1', 'p-2', 'p-3', 'p-4', 'p-5', 'p-6', 'p-7'], 'p-4')
+        },
+        item2: {
+          default: select('Item 2 (padding)', ['p-0', 'p-1', 'p-2', 'p-3', 'p-4', 'p-5', 'p-6', 'p-7'], 'p-5')
+        },
+        item3: {
+          default: select('Item 3 (padding)', ['p-0', 'p-1', 'p-2', 'p-3', 'p-4', 'p-5', 'p-6', 'p-7'], 'p-6')
+        },
+      }
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Responsive
+
+Apply responsive margin to elements with <mark>.{breakpoint}:m-{key}</mark>, <mark>.{breakpoint}:ml-{key}</mark>, <mark>.{breakpoint}:mr-{key}</mark>, <mark>.{breakpoint}:mt-{key}</mark>, <mark>.{breakpoint}:mb-{key}</mark> classes
+
+Apply responsive padding to elements with <mark>.{breakpoint}:p-{key}</mark>, <mark>.{breakpoint}:pl-{key}</mark>, <mark>.{breakpoint}:pr-{key}</mark>, <mark>.{breakpoint}:pt-{key}</mark>, <mark>.{breakpoint}:pb-{key}</mark> classes
+
+<Preview>
+  <Story name='Responsive'>
+    {{
+      components: {},
+      template: `<div class="grid">
+        <div class="col-12 md:col-4">
+          <div class="text-center color-white bg-primary p-1 md:p-2">.p-1 <br /> .md:p-2</div>
+        </div>
+        <div class="col-12 md:col-4">
+          <div class="text-center color-white bg-primary p-1 md:p-3">.p-1 <br /> .md:p-3</div>
+        </div>
+        <div class="col-12 md:col-4">
+          <div class="text-center color-white bg-primary p-1 md:p-4">.p-1 <br /> .md:p-4</div>
+        </div>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+
+<hr/>
+
+
+# Responsive Usage 
+
+<Story name='Responsive Usage'>
+  {{
+    components: {},
+    template: `<table class="o-table o-table--fixed o-table--compact o-table--definition o-table--border-bottom">
+      <thead>
+        <th></th>
+        <th>
+          Class prefix example
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Default</span><br />
+            &gt; 0px
+          </td>
+          <td><code>m-</code>, <code>p-</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Extra extra small</span><br />
+            &gt; 320px
+          </td>
+          <td><code>xxs:m-{key}</code>, <code>xxs:p-{key}</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Extra small</span><br />
+            &gt; 480px
+          </td>
+          <td><code>xs:m-{key}</code>, <code>xs:p-{key}</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Small</span><br />
+            &gt; 640px
+          </td>
+          <td><code>sm:m-{key}</code>, <code>sm:p-{key}</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Medium</span><br />
+            &gt; 768px
+          </td>
+          <td><code>md:m-{key}</code>, <code>md:p-{key}</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Large</span><br />
+            &gt; 991px
+          </td>
+          <td><code>lg:m-{key}</code>, <code>lg:p-{key}</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Extra large</span><br />
+            &gt; 1200px
+          </td>
+          <td><code>xl:m-{key}</code>, <code>xl:p-{key}</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Extra extra large</span><br />
+            &gt; 1440px
+          </td>
+          <td><code>xxl:m-{key}</code>, <code>xxl:p-{key}</code></td>
+        </tr>
+      </tbody>
+    </table>`,
+  }}
+</Story>

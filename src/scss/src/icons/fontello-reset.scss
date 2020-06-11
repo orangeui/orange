@@ -1,11 +1,11 @@
-[class^="icon-"],
-[class*=" icon-"] {
-	font-size: $spacing-base;
+[class^="o-icon-"],
+[class*=" o-icon-"] {
+	font-size: $o-spacing-base;
 	line-height: 0;
 }
 
-[class^="icon-"]::before,
-[class*=" icon-"]::before {
+[class^="o-icon-"]::before,
+[class*=" o-icon-"]::before {
 	margin-right: 0;
 	margin-left: 0;
 }

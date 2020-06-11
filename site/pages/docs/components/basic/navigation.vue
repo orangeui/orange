@@ -15,7 +15,7 @@
     <!-- Basic -->
     <docs-item title="Basic" :code="navigation_default_html" v-if="is_html">
       <div slot="body">
-        <nav class="nav">
+        <nav class="o-nav">
           <ul>
             <li>
               <a href="/docs/navigation" class="is-active">Navigation</a>
@@ -59,26 +59,26 @@
     <!-- With icons -->
     <docs-item title="With icons" :code="navigation_icons_html" v-if="is_html">
       <div slot="body">
-        <nav class="nav">
+        <nav class="o-nav">
           <ul>
             <li>
               <a href="/docs/navigation" class="is-active">
-                <span class="icon-integrations"></span> Navigation
+                <span class="o-icon-integrations"></span> Navigation
               </a>
             </li>
             <li>
               <a href="/docs/breadcrumbs">
-                <span class="icon-theme"></span> Breadcrumbs
+                <span class="o-icon-theme"></span> Breadcrumbs
               </a>
             </li>
             <li>
               <a href="/docs/message">
-                <span class="icon-rules"></span> Message
+                <span class="o-icon-rules"></span> Message
               </a>
             </li>
             <li>
               <a href="/docs/empty-state">
-                <span class="icon-code"></span> Empty State
+                <span class="o-icon-code"></span> Empty State
               </a>
             </li>
           </ul>
@@ -111,7 +111,7 @@
     <!-- Align Center -->
     <docs-item title="Align center" :code="navigation_center">
       <div slot="body">
-        <nav class="nav nav--center">
+        <nav class="o-nav o-nav--center">
           <ul>
             <li>
               <a href="/docs/navigation" class="is-active">Navigation</a>
@@ -133,7 +133,7 @@
     <!-- Align Right -->
     <docs-item title="Align right" :code="navigation_right">
       <div slot="body">
-        <nav class="nav nav--right">
+        <nav class="o-nav o-nav--right">
           <ul>
             <li>
               <a href="/docs/navigation" class="is-active">Navigation</a>
@@ -155,7 +155,7 @@
     <!-- Colors -->
     <docs-item title="Toned in color" :code="navigation_colors_html" v-if="is_html">
       <div slot="body">
-        <nav class="nav nav--color-secondary">
+        <nav class="o-nav o-nav--color-secondary">
           <ul>
             <li>
               <a href="/docs/navigation" class="is-active">Navigation</a>
@@ -199,7 +199,7 @@
     <!-- Disabled item -->
     <docs-item title="Disabled item" :code="navigation_disabled_html" v-if="is_html">
       <div slot="body">
-        <nav class="nav">
+        <nav class="o-nav">
           <ul>
             <li>
               <a href="/docs/navigation" class="is-active">Navigation</a>
@@ -247,7 +247,7 @@
 
     <!-- - Usage  -->
     <docs-item title="Usage" v-if="is_html">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -261,15 +261,15 @@
         <tbody>
         <tr>
           <td>color</td>
-          <td>Set with <code>.nav--color-{color}</code></td>
-          <td>See <router-link :to="{ name: 'docs-global'}"><span>Colors</span></router-link> page</td>
+          <td>Set with <code>.o-nav--color-{color}</code></td>
+          <td>See <router-link :to="{ name: 'docs-global-colors'}"><span>Colors</span></router-link> page</td>
           <td>String</td>
           <td>-</td>
           <td>-</td>
         </tr>
         <tr>
           <td>icon</td>
-          <td>Add an icon to a navigation item like <code>.icon-{icon-name}</code></td>
+          <td>Add an icon to a navigation item like <code>.o-icon-{icon-name}</code></td>
           <td>See <router-link :to="{ name: 'docs-global-icons'}"><span>Icons</span></router-link> page</td>
           <td>String</td>
           <td>-</td>
@@ -288,7 +288,7 @@
     </docs-item>
 
     <docs-item title="Usage" v-else>
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -351,7 +351,7 @@ export default {
     Empty State
   </o-navigation-item>
 </o-navigation>`,
-      navigation_default_html: `<nav class="nav">
+      navigation_default_html: `<nav class="o-nav">
   <ul>
     <li>
       <a href="/docs/navigation" class="is-active">Navigation</a>
@@ -385,34 +385,34 @@ export default {
     Empty State
   </o-navigation-item>
 </o-navigation>`,
-      navigation_icons_html: `<nav class="nav">
+      navigation_icons_html: `<nav class="o-nav">
   <ul>
     <li>
       <a href="/docs/navigation" class="is-active">
-        <span class="icon-integrations"></span> Navigation
+        <span class="o-icon-integrations"></span> Navigation
       </a>
     </li>
 
     <li>
       <a href="/docs/breadcrumbs">
-        <span class="icon-theme"></span> Breadcrumbs
+        <span class="o-icon-theme"></span> Breadcrumbs
       </a>
     </li>
 
     <li>
       <a href="/docs/message">
-        <span class="icon-rules"></span> Message
+        <span class="o-icon-rules"></span> Message
       </a>
     </li>
 
     <li>
       <a href="/docs/empty-state">
-        <span class="icon-code"></span> Empty State
+        <span class="o-icon-code"></span> Empty State
       </a>
     </li>
   </ul>
 </nav>`,
-      navigation_right: `<nav class="nav nav--right">
+      navigation_right: `<nav class="o-nav o-nav--right">
   <ul>
     <li>
       <a href="/docs/navigation" class="is-active">Navigation</a>
@@ -428,7 +428,7 @@ export default {
     </li>
   </ul>
 </nav>`,
-      navigation_center: `<nav class="nav nav--center">
+      navigation_center: `<nav class="o-nav o-nav--center">
   <ul>
     <li>
       <a href="/docs/navigation" class="is-active">Navigation</a>
@@ -461,7 +461,7 @@ export default {
     Empty State
   </o-navigation-item>
 </o-navigation>`,
-      navigation_colors_html: `<nav class="nav nav--color-{color}">
+      navigation_colors_html: `<nav class="o-nav o-nav--color-{color}">
   <ul>
     <li>
       <a href="/docs/navigation" class="is-active">Navigation</a>
@@ -499,7 +499,7 @@ export default {
     Disabled item
   </o-navigation-item>
 </o-navigation>`,
-      navigation_disabled_html: `<nav class="nav">
+      navigation_disabled_html: `<nav class="o-nav">
   <ul>
     <li>
       <a href="/docs/navigation" class="is-active">Navigation</a>

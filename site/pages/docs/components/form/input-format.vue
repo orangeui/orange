@@ -130,7 +130,7 @@
 
     <!-- Input Field - Usage  -->
     <docs-item title="Usage">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
           <tr>
             <th>Attribute</th>

@@ -14,7 +14,7 @@
     <!-- Basic -->
     <docs-item title="Basic" :code="table_html" v-if="is_html">
       <div slot="body">
-        <table class="table">
+        <table class="o-table">
           <thead>
             <tr>
               <th>Title</th>
@@ -39,7 +39,7 @@
 
     <docs-item title="Basic" :code="table" v-else>
       <div slot="body">
-        <table class="table">
+        <table class="o-table">
           <thead>
             <tr>
               <th>Title</th>
@@ -65,7 +65,7 @@
     <!-- With border -->
     <docs-item title="With a bottom border" :code="table_border_bottom_html" v-if="is_html">
       <div slot="body">
-        <table class="table table--border-bottom">
+        <table class="o-table o-table--border-bottom">
           <thead>
             <tr>
               <th>Title</th>
@@ -97,7 +97,7 @@
 
     <docs-item title="With a bottom border" :code="table_border_bottom" v-else>
       <div slot="body">
-        <table class="table table--border-bottom">
+        <table class="o-table o-table--border-bottom">
           <thead>
             <tr>
               <th>Title</th>
@@ -133,7 +133,7 @@
     <docs-item title="Fixed" :code="table_fixed_html" v-if="is_html">
       <div slot="body">
         <p>Distribute columns evenly</p>
-        <table class="table table--fixed">
+        <table class="o-table o-table--fixed">
           <thead>
             <tr>
               <th>Budget</th>
@@ -165,7 +165,7 @@
     <docs-item title="Fixed" :code="table_fixed" v-else>
       <div slot="body">
         <p>Distribute columns evenly</p>
-        <table class="table table--fixed">
+        <table class="o-table o-table--fixed">
           <thead>
             <tr>
               <th>Budget</th>
@@ -199,7 +199,7 @@
     <!-- Compact -->
     <docs-item title="Compact" :code="table_compact_html" v-if="is_html">
       <div slot="body">
-        <table class="table table--fixed table--compact table--border-bottom">
+        <table class="o-table o-table--fixed o-table--compact o-table--border-bottom">
           <thead>
             <tr>
               <th>Budget</th>
@@ -230,7 +230,7 @@
 
     <docs-item title="Compact" :code="table_compact" v-else>
       <div slot="body">
-        <table class="table table--fixed table--compact table--border-bottom">
+        <table class="o-table o-table--fixed o-table--compact o-table--border-bottom">
           <thead>
             <tr>
               <th>Budget</th>
@@ -264,7 +264,7 @@
     <!-- Celled -->
     <docs-item title="Celled" :code="table_celled_html" v-if="is_html">
       <div slot="body">
-        <table class="table table--celled">
+        <table class="o-table o-table--celled">
           <thead>
             <tr>
               <th>Budget</th>
@@ -295,7 +295,7 @@
 
     <docs-item title="Celled" :code="table_celled" v-else>
       <div slot="body">
-        <table class="table table--celled">
+        <table class="o-table o-table--celled">
           <thead>
             <tr>
               <th>Budget</th>
@@ -329,12 +329,12 @@
     <!-- Definition -->
     <docs-item title="Definition" :code="table_definition_html" v-if="is_html">
       <div slot="body">
-        <table class="table table--fixed table--compact table--definition table--border-bottom">
+        <table class="o-table o-table--fixed o-table--compact o-table--definition o-table--border-bottom">
           <thead>
             <th>Plan</th>
             <th>Fomo Essential</th>
             <th>
-              Fomo Plus <span class="label label--green label--small">current plan</span>
+              Fomo Plus <span class="o-label o-label--green o-label--small">current plan</span>
             </th>
             <th>Fomo Advanced</th>
           </thead>
@@ -342,13 +342,13 @@
             <tr>
               <td></td>
               <td>
-                <button type="button" class="button button--basic button--small">Downgrade to Essential</button>
+                <button type="button" class="o-button o-button--basic o-button--small">Downgrade to Essential</button>
               </td>
               <td>
-                <button type="button" class="button button--basic button--small">Cancel subscription</button>
+                <button type="button" class="o-button o-button--basic o-button--small">Cancel subscription</button>
               </td>
               <td>
-                <button type="button" class="button button--small">Upgrade to Advanced</button>
+                <button type="button" class="o-button o-button--small">Upgrade to Advanced</button>
               </td>
             </tr>
             <tr>
@@ -371,15 +371,15 @@
             </tr>
             <tr>
               <td>Custom page rules</td>
-              <td><span class="icon-tick"></span></td>
-              <td><span class="icon-tick"></span></td>
-              <td><span class="icon-tick"></span></td>
+              <td><span class="o-icon-tick"></span></td>
+              <td><span class="o-icon-tick"></span></td>
+              <td><span class="o-icon-tick"></span></td>
             </tr>
             <tr>
               <td>Email support</td>
-              <td><span class="icon-tick"></span></td>
-              <td><span class="icon-tick"></span></td>
-              <td><span class="icon-tick"></span></td>
+              <td><span class="o-icon-tick"></span></td>
+              <td><span class="o-icon-tick"></span></td>
+              <td><span class="o-icon-tick"></span></td>
             </tr>
           </tbody>
         </table>
@@ -388,7 +388,7 @@
 
     <docs-item title="Definition" :code="table_definition" v-else>
       <div slot="body">
-        <table class="table table--fixed table--compact table--definition table--border-bottom">
+        <table class="o-table o-table--fixed o-table--compact o-table--definition o-table--border-bottom">
 
           <!-- Head -->
           <thead>
@@ -437,15 +437,15 @@
             </tr>
             <tr>
               <td>Custom page rules</td>
-              <td><span class="icon-tick"></span></td>
-              <td><span class="icon-tick"></span></td>
-              <td><span class="icon-tick"></span></td>
+              <td><span class="o-icon-tick"></span></td>
+              <td><span class="o-icon-tick"></span></td>
+              <td><span class="o-icon-tick"></span></td>
             </tr>
             <tr>
               <td>Email support</td>
-              <td><span class="icon-tick"></span></td>
-              <td><span class="icon-tick"></span></td>
-              <td><span class="icon-tick"></span></td>
+              <td><span class="o-icon-tick"></span></td>
+              <td><span class="o-icon-tick"></span></td>
+              <td><span class="o-icon-tick"></span></td>
             </tr>
           </tbody>
         </table>
@@ -456,13 +456,13 @@
     <!-- in a Card -->
     <docs-item title="In a card" :code="table_card_html" v-if="is_html">
       <div slot="body">
-        <div class="card card--full">
-          <div class="card__header">
-            <h3 class="card__title">Budgets</h3>
+        <div class="o-card o-card--full">
+          <div class="o-card__header">
+            <h3 class="o-card__title">Budgets</h3>
           </div>
 
-          <div class="card__body">
-            <table class="table table--fixed">
+          <div class="o-card__body">
+            <table class="o-table o-table--fixed">
               <thead>
               <tr>
                 <th>Budget</th>
@@ -495,16 +495,16 @@
 
     <docs-item title="In a card" :code="table_card" v-else>
       <div slot="body">
-        <div class="card card--full">
+        <div class="o-card o-card--full">
 
           <!-- Card header  -->
-          <div class="card__header">
-            <h3 class="card__title">Budgets</h3>
+          <div class="o-card__header">
+            <h3 class="o-card__title">Budgets</h3>
           </div>
 
           <!-- Card body  -->
-          <div class="card__body">
-            <table class="table table--fixed">
+          <div class="o-card__body">
+            <table class="o-table o-table--fixed">
               <thead>
               <tr>
                 <th>Budget</th>
@@ -539,7 +539,7 @@
 
     <!-- Usage  -->
     <docs-item title="Usage" v-if="is_html">
-      <table class="table table--compact table--celled" slot="body">
+      <table class="o-table o-table--compact o-table--celled" slot="body">
         <thead>
         <tr>
           <th>Attribute</th>
@@ -553,7 +553,7 @@
         <tbody>
         <tr>
           <td>bottom-border</td>
-          <td>Set with <code>.table--border-bottom</code> class</td>
+          <td>Set with <code>.o-table--border-bottom</code> class</td>
           <td><code>border-bottom</code></td>
           <td>String</td>
           <td>-</td>
@@ -561,7 +561,7 @@
         </tr>
         <tr>
           <td>fixed</td>
-          <td>Set with <code>.table--fixed</code> class to distribute columns evenly</td>
+          <td>Set with <code>.o-table--fixed</code> class to distribute columns evenly</td>
           <td><code>fixed</code></td>
           <td>String</td>
           <td>-</td>
@@ -569,7 +569,7 @@
         </tr>
         <tr>
           <td>compact</td>
-          <td>Set with <code>.table--compact</code> class</td>
+          <td>Set with <code>.o-table--compact</code> class</td>
           <td><code>compact</code></td>
           <td>String</td>
           <td>-</td>
@@ -577,7 +577,7 @@
         </tr>
         <tr>
           <td>definition</td>
-          <td>Set with <code>.table--defintion</code> class to add more spacing to <code>th</code> tags</td>
+          <td>Set with <code>.o-table--definition</code> class to add more spacing to <code>th</code> tags</td>
           <td><code>definition</code></td>
           <td>String</td>
           <td>-</td>
@@ -596,7 +596,7 @@ export default {
   data () {
     return {
       is_html: true,
-      table: `<table class="table">
+      table: `<table class="o-table">
   <thead>
     <tr>
       <th>Title</th>
@@ -617,7 +617,7 @@ export default {
     </tr>
   </tbody>
 </table>`,
-      table_html: `<table class="table">
+      table_html: `<table class="o-table">
   <thead>
     <tr>
       <th>Title</th>
@@ -639,35 +639,7 @@ export default {
   </tbody>
 </table>`,
 
-      table_border_bottom: `<table class="table table--border-bottom">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Impressions</th>
-      <th>Clicks</th>
-      <th>Spend</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>Shopify sales</td>
-      <td>4,230</td>
-      <td>520</td>
-      <td>$78</td>
-      <td>Simple</td>
-    </tr>
-    <tr>
-      <td>Shopify sales</td>
-      <td>4,230</td>
-      <td>520</td>
-      <td>$78</td>
-      <td>Simple</td>
-    </tr>
-  </tbody>
-</table>`,
-      table_border_bottom_html: `<table class="table table--border-bottom">
+      table_border_bottom: `<table class="o-table o-table--border-bottom">
   <thead>
     <tr>
       <th>Title</th>
@@ -695,8 +667,36 @@ export default {
     </tr>
   </tbody>
 </table>`,
+      table_border_bottom_html: `<table class="o-table o-table--border-bottom">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Impressions</th>
+      <th>Clicks</th>
+      <th>Spend</th>
+      <th>Type</th>
+    </tr>
+  </thead>
 
-      table_fixed: `<table class="table table--fixed">
+  <tbody>
+    <tr>
+      <td>Shopify sales</td>
+      <td>4,230</td>
+      <td>520</td>
+      <td>$78</td>
+      <td>Simple</td>
+    </tr>
+    <tr>
+      <td>Shopify sales</td>
+      <td>4,230</td>
+      <td>520</td>
+      <td>$78</td>
+      <td>Simple</td>
+    </tr>
+  </tbody>
+</table>`,
+
+      table_fixed: `<table class="o-table o-table--fixed">
   <thead>
     <tr>
       <th>Budget</th>
@@ -723,7 +723,7 @@ export default {
     </tr>
   </tbody>
 </table>`,
-      table_fixed_html: `<table class="table table--fixed">
+      table_fixed_html: `<table class="o-table o-table--fixed">
   <thead>
     <tr>
       <th>Budget</th>
@@ -750,7 +750,7 @@ export default {
     </tr>
   </tbody>
 </table>`,
-      table_compact: `<table class="table table--fixed table--compact table--border-bottom">
+      table_compact: `<table class="o-table o-table--fixed o-table--compact o-table--border-bottom">
   <thead>
     <tr>
       <th>Budget</th>
@@ -777,7 +777,7 @@ export default {
     </tr>
   </tbody>
 </table>`,
-      table_compact_html: `<table class="table table--fixed table--compact table--border-bottom">
+      table_compact_html: `<table class="o-table o-table--fixed o-table--compact o-table--border-bottom">
   <thead>
     <tr>
       <th>Budget</th>
@@ -805,7 +805,7 @@ export default {
   </tbody>
 </table>`,
 
-      table_celled: `<table class="table table--celled">
+      table_celled: `<table class="o-table o-table--celled">
   <thead>
     <tr>
       <th>Budget</th>
@@ -831,7 +831,7 @@ export default {
     </tr>
   </tbody>
 </table>`,
-      table_celled_html: `<table class="table table--celled">
+      table_celled_html: `<table class="o-table o-table--celled">
   <thead>
     <tr>
       <th>Budget</th>
@@ -858,7 +858,7 @@ export default {
   </tbody>
 </table>`,
 
-      table_definition: `<table class="table table--fixed table--compact table--definition table--border-bottom">
+      table_definition: `<table class="o-table o-table--fixed o-table--compact o-table--definition o-table--border-bottom">
   <thead>
     <th>Plan</th>
     <th>Fomo Essential</th>
@@ -904,24 +904,24 @@ export default {
     </tr>
     <tr>
       <td>Custom page rules</td>
-      <td><span class="icon-tick"></span></td>
-      <td><span class="icon-tick"></span></td>
-      <td><span class="icon-tick"></span></td>
+      <td><span class="o-icon-tick"></span></td>
+      <td><span class="o-icon-tick"></span></td>
+      <td><span class="o-icon-tick"></span></td>
     </tr>
     <tr>
       <td>Email support</td>
-      <td><span class="icon-tick"></span></td>
-      <td><span class="icon-tick"></span></td>
-      <td><span class="icon-tick"></span></td>
+      <td><span class="o-icon-tick"></span></td>
+      <td><span class="o-icon-tick"></span></td>
+      <td><span class="o-icon-tick"></span></td>
     </tr>
   </tbody>
 </table>`,
-      table_definition_html: `<table class="table table--fixed table--compact table--definition table--border-bottom">
+      table_definition_html: `<table class="o-table o-table--fixed o-table--compact o-table--definition o-table--border-bottom">
   <thead>
     <th>Plan</th>
     <th>Fomo Essential</th>
     <th>
-      Fomo Plus <span class="label label--green label--small">current plan</span>
+      Fomo Plus <span class="o-label o-label--green o-label--small">current plan</span>
     </th>
     <th>Fomo Advanced</th>
   </thead>
@@ -929,13 +929,13 @@ export default {
     <tr>
       <td></td>
       <td>
-        <button type="button" class="button button--basic button--small">Downgrade to Essential</button>
+        <button type="button" class="o-button o-button--basic o-button--small">Downgrade to Essential</button>
       </td>
       <td>
-        <button type="button" class="button button--basic button--small">Cancel subscription</button>
+        <button type="button" class="o-button o-button--basic o-button--small">Cancel subscription</button>
       </td>
       <td>
-        <button type="button" class="button button--small">Upgrade to Advanced</button>
+        <button type="button" class="o-button o-button--small">Upgrade to Advanced</button>
       </td>
     </tr>
     <tr>
@@ -958,31 +958,31 @@ export default {
     </tr>
     <tr>
       <td>Custom page rules</td>
-      <td><span class="icon-tick"></span></td>
-      <td><span class="icon-tick"></span></td>
-      <td><span class="icon-tick"></span></td>
+      <td><span class="o-icon-tick"></span></td>
+      <td><span class="o-icon-tick"></span></td>
+      <td><span class="o-icon-tick"></span></td>
     </tr>
     <tr>
       <td>Email support</td>
-      <td><span class="icon-tick"></span></td>
-      <td><span class="icon-tick"></span></td>
-      <td><span class="icon-tick"></span></td>
+      <td><span class="o-icon-tick"></span></td>
+      <td><span class="o-icon-tick"></span></td>
+      <td><span class="o-icon-tick"></span></td>
     </tr>
   </tbody>
 </table>`,
 
-      table_card: `<div class="card card--full">
-  <div class="card__header">
-    <h3 class="card__title">In a card</h3>
+      table_card: `<div class="o-card o-card--full">
+  <div class="o-card__header">
+    <h3 class="o-card__title">In a card</h3>
 
-    <button class="button button--color-primary button--icon">
+    <button class="o-button o-button--color-primary o-button--icon">
       Add
-      <i class="button__icon icon-add"></i>
+      <i class="o-button__icon o-icon-add"></i>
     </button>
   </div>
 
-  <div class="card__body">
-    <table class="table table--fixed">
+  <div class="o-card__body">
+    <table class="o-table o-table--fixed">
       <thead>
         <tr>
           <th>Budget</th>
@@ -1011,13 +1011,13 @@ export default {
     </table>
   </div>
 </div>`,
-      table_card_html: `<div class="card card--full">
-  <div class="card__header">
-    <h3 class="card__title">Budgets</h3>
+      table_card_html: `<div class="o-card o-card--full">
+  <div class="o-card__header">
+    <h3 class="o-card__title">Budgets</h3>
   </div>
 
-  <div class="card__body">
-    <table class="table table--fixed">
+  <div class="o-card__body">
+    <table class="o-table o-table--fixed">
       <thead>
       <tr>
         <th>Budget</th>

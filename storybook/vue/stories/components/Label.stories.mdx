@@ -1,0 +1,140 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OLabel from '../../src/components/Label/Label';
+
+
+<Meta title='5. Components|Basic/Label' component={ OLabel } />
+
+# Label
+
+Use a label when you want to <mark>classify content or data</mark>. It is often used as simple visual cue, but can also have interactive properties and act as a button (example: tags, that can be removed from a list).
+
+The Label component is an <mark>inline-block</mark> element meant to be used inline along elements such as text, buttons and forms. It's width is defined by the lenght of content that's passed inside.
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of label on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OLabel },
+    template: `<o-label @click="handleRegularClick" @dismissClick="handleDismissClick" :text="text" :icon="icon" :size="size" :color="color" :dismiss="dismiss" />`,
+    methods: { 
+      handleRegularClick: action('click'),
+      handleDismissClick: action('dismiss-click')
+    },
+    props: {
+      text: {
+        default: text('Text', 'Hello Storybook')
+      },
+      icon: {
+        default: text('Icon', 'plus')
+      },
+      size: {
+        default: text('Size', 'small')
+      },
+      color: {
+        default: text('Color', 'secondary')
+      },
+      dismiss: {
+        default: boolean('Dismiss', false)
+      }
+    },
+  }}
+</Story>
+
+<hr/>
+
+
+# Basic
+
+<Preview>
+  <Story name='Basic'>{{
+    components: { OLabel },
+    template: `<o-label text="Basic" />`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Colors
+
+<Preview>
+  <Story name='Colors'>{{
+    components: { OLabel },
+    template: `<div>
+      <o-label text="Basic" /> <hr />
+      <o-label text="Primary" color="primary" /> <o-label text="Secondary" color="secondary" />
+    </div>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# With an icon
+
+<Preview>
+  <Story name='With an icon'>{{
+    components: { OLabel },
+    template: `<div>
+      <o-label text="More" icon="more" /> <hr />
+      <o-label text="Add" icon="plus" color="primary" /> <o-label text="Secondary" icon="arrow-skip" color="secondary" />
+    </div>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Dismissible
+
+It will force to use <mark>X</mark> icon and add ability to <mark>click</mark> event on icon.
+
+<Preview>
+  <Story name='Dismissible'>{{
+    components: { OLabel },
+    template: `<o-label text="Dismissible" @dismissClick="handleDismissClick" :dismiss="true" />`,
+    methods: {
+      handleDismissClick: action('dismiss-click')
+    },
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Size
+
+<Preview>
+  <Story name='Size'>{{
+    components: { OLabel },
+    template: `<div>
+      <o-label text="Small" size="small" />
+      <o-label text="Small" size="small" color="primary" />
+      <o-label text="Small" size="small" color="secondary" />
+      <hr />
+      <o-label size="pill" />
+      <o-label size="pill" color="primary" />
+      <o-label size="pill" color="secondary" />
+      <hr />
+      <o-label size="dot" />
+      <o-label size="dot" color="primary" />
+      <o-label size="dot" color="secondary" />
+    </div>`
+  }}</Story>
+</Preview>
+
+
+
+## Props
+
+<Props of={OLabel} />

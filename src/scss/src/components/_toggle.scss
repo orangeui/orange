@@ -2,29 +2,29 @@
  * Toggle
  */
 
-.toggle {
+.o-toggle {
   position: relative;
   
   * {
-    transition: $toggle-transition;
+    transition: $o-toggle-transition;
   }
 }
 
 /** Toggle button
 --------------------------------------------------*/
 
-.toggle__button {
+.o-toggle__button {
   position: relative;
-  height: $toggle-button-height;
+  height: $o-toggle-button-height;
 }
 
 
 /** Toggle input
 --------------------------------------------------*/
 
-.toggle__input {
-  height: $toggle-input-height;
-  width: $toggle-input-width;
+.o-toggle__input {
+  height: $o-toggle-input-height;
+  width: $o-toggle-input-width;
   position: absolute;
   z-index: 3;
   opacity: 0;
@@ -35,13 +35,13 @@
 /** Toggle label
 --------------------------------------------------*/
 
-.toggle__label {
+.o-toggle__label {
   display: inline-flex;
   align-items: center;
   position: relative;
-  height: $toggle-label-height;
-  padding-left: $toggle-label-padding-left;
-  line-height: $toggle-label-line-height;
+  height: $o-toggle-label-height;
+  padding-left: $o-toggle-label-padding-left;
+  line-height: $o-toggle-label-line-height;
 
   &:hover {
     cursor: pointer;
@@ -54,26 +54,26 @@
 
   &:before {
     content: '';
-    border-radius: $toggle-label-before-border-radius;
-    height: $toggle-label-before-height;
-    width: $toggle-label-before-width;
-    background-color: $toggle-label-before-background-color;
-    opacity: $toggle-label-before-opacity;
+    border-radius: $o-toggle-label-before-border-radius;
+    height: $o-toggle-label-before-height;
+    width: $o-toggle-label-before-width;
+    background-color: $o-toggle-label-before-background-color;
+    opacity: $o-toggle-label-before-opacity;
     top: 0;
     left: 0;
-    transition: $toggle-transition;
+    transition: $o-toggle-transition;
   }
 
   &:after {
     content: '';
-    width: $toggle-label-after-width;
-    height: $toggle-label-after-height;
-    top: $toggle-label-after-top;
-    left: $toggle-label-after-left;
-    border-radius: $toggle-label-after-border-radius;
-    background-color: $toggle-label-after-background-color;
-    box-shadow: $toggle-label-after-box-shadow;
-    transition: $toggle-transition;
+    width: $o-toggle-label-after-width;
+    height: $o-toggle-label-after-height;
+    top: $o-toggle-label-after-top;
+    left: $o-toggle-label-after-left;
+    border-radius: $o-toggle-label-after-border-radius;
+    background-color: $o-toggle-label-after-background-color;
+    box-shadow: $o-toggle-label-after-box-shadow;
+    transition: $o-toggle-transition;
   }
 }
 
@@ -82,35 +82,35 @@
 --------------------------------------------------*/
 
 /** Checked */
-.toggle.is-checked {
-  .toggle__label {
-    color: $toggle-checked-label-text-color;
+.o-toggle.is-checked {
+  .o-toggle__label {
+    color: $o-toggle-checked-label-text-color;
   }
 
-  .toggle__label:before {
-    background: $toggle-checked-label-before-background-color;
+  .o-toggle__label:before {
+    background: $o-toggle-checked-label-before-background-color;
     opacity: 1;
   }
 
-  .toggle__label:after {
-    left: $toggle-checked-label-after-left;
+  .o-toggle__label:after {
+    left: $o-toggle-checked-label-after-left;
   }
 }
 
 /** Disabled */
-.toggle.is-disabled {
+.o-toggle.is-disabled {
   cursor: default;
   pointer-events: none;
 
-  .toggle__label::before {
-    opacity: $toggle-disabled-label-before-opacity;
+  .o-toggle__label::before {
+    opacity: $o-toggle-disabled-label-before-opacity;
   }
 }
 
 /** With label */
-.toggle--label {
-  .toggle__label {
-    padding-left: $toggle-label-label-padding-left;
+.o-toggle--label {
+  .o-toggle__label {
+    padding-left: $o-toggle-label-label-padding-left;
   }
 }
 
@@ -118,51 +118,51 @@
 --------------------------------------------------*/
 
 /** Large */
-.toggle--large {
-  .toggle__value {
+.o-toggle--large {
+  .o-toggle__value {
     border: 1px solid transparent;
-    padding: $toggle-large-value-padding;
-    font-size: $toggle-large-value-font-size;
-    color: $toggle-large-value-text-color;
-    width: $toggle-large-value-width;
-    line-height: $toggle-large-value-line-height;
-    min-height: $toggle-large-value-min-height;
+    padding: $o-toggle-large-value-padding;
+    font-size: $o-toggle-large-value-font-size;
+    color: $o-toggle-large-value-text-color;
+    width: $o-toggle-large-value-width;
+    line-height: $o-toggle-large-value-line-height;
+    min-height: $o-toggle-large-value-min-height;
   }
 
-  .toggle__text {
+  .o-toggle__text {
     position: absolute;
     top: 0;
     left: 0;
-    min-height: $toggle-large-text-min-height;
-    border: $toggle-large-text-border;
-    border-radius: $toggle-large-text-border-radius;
-    width: $toggle-large-text-width;
-    line-height: $toggle-large-text-line-height;
-    padding: $toggle-large-text-padding;
-    font-size: $toggle-large-text-font-size;
-    color: $toggle-large-text-text-color;
+    min-height: $o-toggle-large-text-min-height;
+    border: $o-toggle-large-text-border;
+    border-radius: $o-toggle-large-text-border-radius;
+    width: $o-toggle-large-text-width;
+    line-height: $o-toggle-large-text-line-height;
+    padding: $o-toggle-large-text-padding;
+    font-size: $o-toggle-large-text-font-size;
+    color: $o-toggle-large-text-text-color;
 
     &:hover {
       cursor: pointer;
     }
   }
 
-  .toggle__button {
+  .o-toggle__button {
     position: absolute;
-    right: $toggle-large-button-right;
-    top: $toggle-large-button-top;
+    right: $o-toggle-large-button-right;
+    top: $o-toggle-large-button-top;
   }
   
-  .toggle__label {
-    padding-left: $toggle-large-label-padding-left;
+  .o-toggle__label {
+    padding-left: $o-toggle-large-label-padding-left;
   }
 
   &.is-disabled {
     cursor: default;
     pointer-events: none;
 
-    .toggle__value {
-      color: $toggle-large-disabled-value-text-color;
+    .o-toggle__value {
+      color: $o-toggle-large-disabled-value-text-color;
     }
   }
 }
@@ -172,11 +172,11 @@
 /** Colors
 --------------------------------------------------*/
 
-@each $name, $value in $colors {
-  .toggle--color-#{$name} {
+@each $o-name, $o-value in $o-colors {
+  .o-toggle--color-#{$o-name} {
     &.is-checked {
-      .toggle__label:before {
-        background: color(#{$name});
+      .o-toggle__label:before {
+        background: color(#{$o-name});
       }
     }
   }

@@ -1,0 +1,401 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OList from '../../src/components/List/List';
+import OListItem from '../../src/components/List/ListItem';
+import OListItemSlot from '../../src/components/List/ListItemSlot';
+
+<!-- Additional subcomponents -->
+import OButton from '../../src/components/Button/Button';
+
+import OCard from '../../src/components/Card/Card';
+import OCardHeader from '../../src/components/Card/CardHeader';
+import OCardBody from '../../src/components/Card/CardBody';
+
+
+<Meta title='5. Components|Basic/List' component={ OList } />
+
+# List
+
+A list is <mark>a container</mark> that <mark>groups items</mark>.
+
+When wrapping a list with a <mark>.card</mark> element use the <mark>no_gutter</mark> attribute that overflows card's body gutter. This makes the list take full width of it's parent card.
+
+You can add horizontal dividers between list items by specifying <mark>divide</mark> attribute.
+
+Add a hover effect to a list with <mark>hover</mark> attribute.
+
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of list on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OList, OListItem, OListItemSlot, OButton },
+    template: `<o-list :size="size" :divide="divide" :no_gutter="no_gutter" :hover="hover" :pointer="pointer">
+      <o-list-item>
+        <o-list-item-slot>
+          <h3>First item</h3>
+          <p>Description of the first item</p>
+        </o-list-item-slot>
+        <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+      </o-list-item>
+      <o-list-item>
+        <o-list-item-slot>
+          <h3>Second item</h3>
+          <p>Description of the second item</p>
+        </o-list-item-slot>
+        <o-list-item-slot :action="true">
+          <o-button text="Action" role="small" />
+        </o-list-item-slot>
+      </o-list-item>
+      <o-list-item>
+        <o-list-item-slot>
+          <h3>Third item</h3>
+          <p>Description of the third item</p>
+        </o-list-item-slot>
+        <o-list-item-slot :action="true">
+          <o-button text="Action" role="small" />
+        </o-list-item-slot>
+      </o-list-item>
+    </o-list>`,
+    props: {
+      size: {
+        default: select('Size', ['small', 'medium', 'large'], 'large')
+      },
+      divide: {
+        default: boolean('Divide', false)
+      },
+      no_gutter: {
+        default: boolean('No Gutter', false)
+      },
+      hover: {
+        default: boolean('Hover', false)
+      },
+      pointer: {
+        default: boolean('Pointer', false)
+      }
+    },
+  }}
+</Story>
+
+<hr/>
+
+
+# Large size
+
+<Preview>
+  <Story name='Large'>
+    {{
+      components: { OList, OListItem, OListItemSlot, OButton },
+      template: `<o-list size="large">
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>First item</h3>
+            <p>Description of the first item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>Second item</h3>
+            <p>Description of the second item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>Third item</h3>
+            <p>Description of the third item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+      </o-list>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Medium size
+
+<Preview>
+  <Story name='Medium'>
+    {{
+      components: { OList, OListItem, OListItemSlot, OButton },
+      template: `<o-list size="medium">
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>First item</h3>
+            <p>Description of the first item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>Second item</h3>
+            <p>Description of the second item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>Third item</h3>
+            <p>Description of the third item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+      </o-list>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Small size
+
+<Preview>
+  <Story name='Small'>
+    {{
+      components: { OList, OListItem, OListItemSlot, OButton },
+      template: `<o-list size="small">
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>First item</h3>
+            <p>Description of the first item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>Second item</h3>
+            <p>Description of the second item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>Third item</h3>
+            <p>Description of the third item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+      </o-list>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Divide style
+
+<Preview>
+  <Story name='Divide style'>
+    {{
+      components: { OList, OListItem, OListItemSlot, OButton },
+      template: `<o-list :divide="true">
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>First item</h3>
+            <p>Description of the first item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>Second item</h3>
+            <p>Description of the second item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>Third item</h3>
+            <p>Description of the third item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+      </o-list>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# Hover style
+
+<Preview>
+  <Story name='Hover style'>
+    {{
+      components: { OList, OListItem, OListItemSlot, OButton },
+      template: `<o-list :hover="true">
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>First item</h3>
+            <p>Description of the first item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>Second item</h3>
+            <p>Description of the second item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>Third item</h3>
+            <p>Description of the third item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+      </o-list>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# Pointer style
+
+<Preview>
+  <Story name='Pointer style'>
+    {{
+      components: { OList, OListItem, OListItemSlot, OButton },
+      template: `<o-list :pointer="true">
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>First item</h3>
+            <p>Description of the first item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>Second item</h3>
+            <p>Description of the second item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+        <o-list-item>
+          <o-list-item-slot>
+            <h3>Third item</h3>
+            <p>Description of the third item</p>
+          </o-list-item-slot>
+          <o-list-item-slot :action="true">
+            <o-button text="Action" role="small" />
+          </o-list-item-slot>
+        </o-list-item>
+      </o-list>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# Inside a card, divided, hover, pointer
+
+<Preview>
+  <Story name='Card, divided, hover, pointer'>
+    {{
+      components: { OList, OListItem, OListItemSlot, OButton, OCard, OCardHeader, OCardBody },
+      template: `<o-card>
+        <o-card-header>
+          <h3>Title</h3>
+        </o-card-header>
+        <o-card-body>
+          <o-list :divide="true" :hover="true" :pointer="true" :no_gutter="true">
+            <o-list-item>
+              <o-list-item-slot>
+                <h3>First item</h3>
+                <p>Description of the first item</p>
+              </o-list-item-slot>
+              <o-list-item-slot :action="true">
+                <o-button text="Action" role="small" />
+              </o-list-item-slot>
+            </o-list-item>
+            <o-list-item>
+              <o-list-item-slot>
+                <h3>Second item</h3>
+                <p>Description of the second item</p>
+              </o-list-item-slot>
+              <o-list-item-slot :action="true">
+                <o-button text="Action" role="small" />
+              </o-list-item-slot>
+            </o-list-item>
+            <o-list-item>
+              <o-list-item-slot>
+                <h3>Third item</h3>
+                <p>Description of the third item</p>
+              </o-list-item-slot>
+              <o-list-item-slot :action="true">
+                <o-button text="Action" role="small" />
+              </o-list-item-slot>
+            </o-list-item>
+          </o-list>
+        </o-card-body>
+      </o-card>`,
+    }}
+  </Story>
+</Preview>
+
+
+## List Props
+
+<Props of={OList} />
+
+
+
+## Item Slot Props
+
+<Props of={OListItemSlot} />

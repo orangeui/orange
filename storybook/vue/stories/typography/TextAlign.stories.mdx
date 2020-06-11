@@ -1,0 +1,144 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+
+<Meta title='4. Typography|Text align' />
+
+
+# Text align
+
+Apply align by adding <mark>.text-{align}</mark> class to text elements
+
+<hr />
+
+# Tryout
+
+Tryout is for live example of Text align on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<p :class="classes">
+      Try me out in Canvas tab
+    </p>`,
+    props: {
+      textAlign: {
+        default: select('Text align', ['text-left', 'text-center', 'text-right'], 'text-left')
+      }
+    },
+    computed: {
+      classes () {
+        return {
+          [`${this.textAlign}`]: this.textAlign,
+        }
+      }
+    }
+  }}
+</Story>
+
+<Preview>
+  <Story name='Basic'>
+    {{
+      components: {},
+      template: `<ul class="docs__simple-list">
+        <li>
+          <h5></h5>
+          <p class="fs-gamma text-left">Text align left</p>
+        </li>
+        <li>
+          <h5></h5>
+          <p class="fs-gamma text-right">Text align right</p>
+        </li>
+        <li>
+          <h5></h5>
+          <p class="fs-gamma text-center">Text align center</p>
+        </li>
+      </ul>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Responsive
+
+Apply responsive align with <mark>.{breakpoint}:text-{align}</mark> class to text elements
+
+<Story name='Responsive'>
+  {{
+    components: {},
+    template: `<table class="o-table o-table--fixed o-table--compact o-table--definition o-table--border-bottom">
+    <thead>
+      <th></th>
+      <th>
+        Class prefix example
+      </th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <span class="fs-epsilon color-secondary">Default</span><br />
+          &gt; 0px
+        </td>
+        <td><code>text-{align}</code></td>
+      </tr>
+      <tr>
+        <td>
+          <span class="fs-epsilon color-secondary">Extra extra small</span><br />
+          &gt; 320px
+        </td>
+        <td><code>xxs:text-{align}</code></td>
+      </tr>
+      <tr>
+        <td>
+          <span class="fs-epsilon color-secondary">Extra small</span><br />
+          &gt; 480px
+        </td>
+        <td><code>xs:text-{align}</code></td>
+      </tr>
+      <tr>
+        <td>
+          <span class="fs-epsilon color-secondary">Small</span><br />
+          &gt; 640px
+        </td>
+        <td><code>sm:text-{align}</code></td>
+      </tr>
+      <tr>
+        <td>
+          <span class="fs-epsilon color-secondary">Medium</span><br />
+          &gt; 768px
+        </td>
+        <td><code>md:text-{align}</code></td>
+      </tr>
+      <tr>
+        <td>
+          <span class="fs-epsilon color-secondary">Large</span><br />
+          &gt; 991px
+        </td>
+        <td><code>lg:text-{align}</code></td>
+      </tr>
+      <tr>
+        <td>
+          <span class="fs-epsilon color-secondary">Extra large</span><br />
+          &gt; 1200px
+        </td>
+        <td><code>xl:text-{align}</code></td>
+      </tr>
+      <tr>
+        <td>
+          <span class="fs-epsilon color-secondary">Extra extra large</span><br />
+          &gt; 1440px
+        </td>
+        <td><code>xxl:text-{align}</code></td>
+      </tr>
+    </tbody>
+  </table>`,
+  }}
+</Story>
+
+
+
+

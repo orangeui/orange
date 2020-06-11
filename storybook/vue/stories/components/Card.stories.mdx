@@ -1,0 +1,348 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OCard from '../../src/components/Card/Card';
+import OCardHeader from '../../src/components/Card/CardHeader';
+import OCardBody from '../../src/components/Card/CardBody';
+import OCardFooter from '../../src/components/Card/CardFooter';
+import OCardImage from '../../src/components/Card/CardImage';
+import OCardSection from '../../src/components/Card/CardSection';
+
+<!-- Additional subcomponents -->
+import ONavigation from '../../src/components/Navigation/Navigation';
+import ONavigationItem from '../../src/components/Navigation/NavigationItem';
+
+import OList from '../../src/components/List/List';
+import OListItem from '../../src/components/List/ListItem';
+import OListItemSlot from '../../src/components/List/ListItemSlot';
+
+import OButton from '../../src/components/Button/Button';
+import OIcon from '../../src/components/Icon/Icon';
+
+<!-- Additional Helpers -->
+import ColorBase from '../../src/global/ColorBase.js';
+import IconList from '../../src/components/Icon/IconList';
+
+<!-- Need to add decorator to Story, for router-link to be recognized -->
+import BasicRouterDecorator from '../../src/global/BasicRouterDecorator.js';
+
+
+<Meta title='5. Components|Custom/Card' component={ OCard } />
+
+# Card
+
+A card <mark>groups content in a context</mark>.
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of Card on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OCard, OCardHeader, OCardBody, OCardFooter, OButton, OIcon },
+    template: `<o-card :full="full">
+      <o-card-header>
+        <h3>Title</h3>
+        <o-button text="Action" v-if="button" />
+      </o-card-header>
+      <o-card-body>
+        Body
+      </o-card-body>
+      <o-card-footer :action="action" @click="handleClick">
+        Footer
+        <o-icon symbol="plus" v-if="action"></o-icon>
+      </o-card-footer>
+    </o-card>`,
+    methods: { handleClick: action('click') },
+    props: {
+      full: {
+        default: boolean('Full - no gutter on body', false)
+      },
+      action: {
+        default: boolean('Action on footer with icon', false)
+      },
+      button: {
+        default: boolean('Display button in header', false)
+      },
+    },
+  }}
+</Story>
+
+<hr />
+
+
+# Basic
+
+<Preview>
+  <Story name='Basic'>
+    {{
+      components: { OCard, OCardHeader, OCardBody, OCardFooter },
+      template: `<o-card>
+        <o-card-header>
+          <h3>Title</h3>
+        </o-card-header>
+        <o-card-body>
+          Body
+        </o-card-body>
+        <o-card-footer>
+          Footer
+        </o-card-footer>
+      </o-card>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# With a button
+
+<Preview>
+  <Story name='With a button'>
+    {{
+      components: { OCard, OCardHeader, OCardBody, OCardFooter, OButton },
+      template: `<o-card>
+        <o-card-header>
+          <h3>Title</h3>
+          <o-button text="Action" />
+        </o-card-header>
+        <o-card-body>
+          Body
+        </o-card-body>
+        <o-card-footer>
+          Footer
+        </o-card-footer>
+      </o-card>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# With navigation and button
+
+<Preview>
+  <Story name='With navigation and button' decorators={[BasicRouterDecorator]}>
+    {{
+      components: { OCard, OCardHeader, OCardBody, OCardFooter, OButton, ONavigation, ONavigationItem },
+      template: `<o-card>
+        <o-card-header>
+          <o-navigation>
+            <o-navigation-item to="/">First item</o-navigation-item>
+            <o-navigation-item to="/breadcrumbs">Second item</o-navigation-item>
+            <o-navigation-item to="/message">Third item</o-navigation-item>
+            <o-navigation-item to="/empty-state">Fourth item</o-navigation-item>
+          </o-navigation>
+          <o-button text="Action" />
+        </o-card-header>
+        <o-card-body>
+          Body
+        </o-card-body>
+        <o-card-footer>
+          Footer
+        </o-card-footer>
+      </o-card>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# With image
+
+<Preview>
+  <Story name='With image'>
+    {{
+      components: { OCard, OCardHeader, OCardBody, OCardFooter, OCardImage },
+      template: `<div class="grid grid--1 md:grid--2">
+        <o-card>
+          <o-card-image>
+            <img src="https://orangecss.com/images/thumbnails/width-480/hedgehog-480.jpg" alt="Card image">
+          </o-card-image>
+          <o-card-header>
+            <h3>Title</h3>
+          </o-card-header>
+          <o-card-body>
+            Body
+          </o-card-body>
+          <o-card-footer>
+            Footer
+          </o-card-footer>
+        </o-card>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# With a list
+
+<Preview>
+  <Story name='With a list'>
+    {{
+      components: { OCard, OCardHeader, OCardBody, OCardFooter, OButton, OList, OListItem, OListItemSlot },
+      template: `<o-card :full="true">
+        <o-card-header>
+          <h3>Title</h3>
+        </o-card-header>
+        <o-card-body>
+          <o-list :hover="true" :divide="true">
+            <o-list-item>
+              <o-list-item-slot>
+                <h3>First item</h3>
+                <p>Description of the first item</p>
+              </o-list-item-slot>
+              <o-list-item-slot :action="true">
+                <o-button text="Action" role="small" />
+              </o-list-item-slot>
+            </o-list-item>
+            <o-list-item>
+              <o-list-item-slot>
+                <h3>Second item</h3>
+                <p>Description of the second item</p>
+              </o-list-item-slot>
+              <o-list-item-slot :action="true">
+                <o-button text="Action" role="small" />
+              </o-list-item-slot>
+            </o-list-item>
+            <o-list-item>
+              <o-list-item-slot>
+                <h3>Third item</h3>
+                <p>Description of the third item</p>
+              </o-list-item-slot>
+              <o-list-item-slot :action="true">
+                <o-button text="Action" role="small" />
+              </o-list-item-slot>
+            </o-list-item>
+          </o-list>
+        </o-card-body>
+      </o-card>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# Clickable footer
+
+<Preview>
+  <Story name='Clickable footer'>
+    {{
+      components: { OCard, OCardHeader, OCardBody, OCardFooter, OIcon },
+      template: `<o-card>
+        <o-card-header>
+          <h3>Title</h3>
+        </o-card-header>
+        <o-card-body>
+          Body
+        </o-card-body>
+        <o-card-footer :action="true" @click="handleClick">
+          Footer
+          <o-icon symbol="plus"></o-icon>
+        </o-card-footer>
+      </o-card>`,
+      methods: { handleClick: action('click') },
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# Multiple sections
+
+<Preview>
+  <Story name='Multiple sections'>
+    {{
+      components: { OCard, OCardHeader, OCardBody, OCardFooter, OCardSection, OButton },
+      template: `<o-card>
+        <o-card-header>
+          <h3>Title</h3>
+          <o-button text="Action" />
+        </o-card-header>
+        <o-card-section>
+          <o-card-header>
+            <h4>First section</h4>
+            <o-button text="Action" size="small" color="gray" />
+          </o-card-header>
+          <o-card-body>
+            Body of first section
+          </o-card-body>
+        </o-card-section>
+        <o-card-section>
+          <o-card-header>
+            <h4>Second section</h4>
+            <o-button text="Action" size="small" color="gray" />
+          </o-card-header>
+          <o-card-body>
+            Body of second section
+          </o-card-body>
+        </o-card-section>
+        <o-card-footer>
+          Footer
+        </o-card-footer>
+      </o-card>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# Without gutter
+
+<Preview>
+  <Story name='Without gutter'>
+    {{
+      components: { OCard, OCardHeader, OCardBody, OCardFooter },
+      template: `<o-card :full="true">
+        <o-card-body>
+          Body without gutter
+        </o-card-body>
+      </o-card>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+## Card Props
+
+<Props of={OCard} />
+
+
+## Card Header Props
+
+<Props of={OCardHeader} />
+
+
+## Card Body Props
+
+<Props of={OCardBody} />
+
+
+## Card Footer Props
+
+<Props of={OCardFooter} />
+
+
+## Card Image Props
+
+<Props of={OCardImage} />
+
+
+## Card Section Props
+
+<Props of={OCardSection} />

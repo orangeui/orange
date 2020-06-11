@@ -20,13 +20,13 @@
 
     <docs-item title="Styles" :code="border_radius_html">
       <div slot="body">
-        <img class="image rounded-0" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Doggo" />
+        <img class="o-image rounded-0" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Doggo" />
 
-        <img class="image rounded" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Doggo" />
+        <img class="o-image rounded" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Doggo" />
 
-        <img class="image rounded-1" src="https://orangecss.com/images/thumbnails/square/hedgehog-square.jpg" alt="Hedgehog" />
+        <img class="o-image rounded-1" src="https://orangecss.com/images/thumbnails/square/hedgehog-square.jpg" alt="Hedgehog" />
 
-        <img class="image rounded-full" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Katze" />
+        <img class="o-image rounded-full" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Katze" />
       </div>
     </docs-item>
 
@@ -39,21 +39,21 @@ export default {
 
   data () {
     return {
-      mapCss: `$border-radius-base: 3px;
+      mapCss: `$o-border-radius-base: 3px;
 
-$border-radiuses: (
+$o-border-radiuses: (
   0: 0,                         // 0px
-  'base': $border-radius-base,  // 3px
-  1: $border-radius-base * 2,   // 6px
+  'base': $o-border-radius-base,  // 3px
+  1: $o-border-radius-base * 2,   // 6px
   'full': 50%                   // 50%
 );`,
-      border_radius_html: `<img class="image rounded-0" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Doggo" />
+      border_radius_html: `<img class="o-image rounded-0" src="https://orangecss.com/images/thumbnails/square/fox-square.jpg" alt="Doggo" />
 
-<img class="image rounded" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Doggo" />
+<img class="o-image rounded" src="https://orangecss.com/images/thumbnails/square/cat-square.jpg" alt="Doggo" />
 
-<img class="image rounded-1" src="https://orangecss.com/images/thumbnails/square/hedgehog-square.jpg" alt="Hedgehog" />
+<img class="o-image rounded-1" src="https://orangecss.com/images/thumbnails/square/hedgehog-square.jpg" alt="Hedgehog" />
 
-<img class="image rounded-full" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Katze" />`
+<img class="o-image rounded-full" src="https://orangecss.com/images/thumbnails/square/dog-square.jpg" alt="Katze" />`
     }
   }
 }

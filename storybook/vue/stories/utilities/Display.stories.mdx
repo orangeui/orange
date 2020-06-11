@@ -1,0 +1,293 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+
+<Meta title='6. Utilities|Display' />
+
+
+# Display
+
+Display class define display class of elements.
+
+<hr />
+
+Apply display to elements with <mark>.d-{key}</mark> class
+
+Recall display with <mark>display({key})</mark> function in <mark>SCSS</mark>
+
+```scss
+$o-displays: (
+  'block': block,
+  'inline-block': inline-block,
+  'inline': inline,
+  'flex': flex,
+  'inline-flex': inline-flex,
+  'table': table,
+  'table-row': table-row,
+  'table-cell': table-cell,
+  'grid': grid,
+  'none': none
+) !default;
+```
+
+<hr />
+
+
+# Tryout
+
+Tryout is for live example of Display on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<div class="p-5 bg-primary color-white text-center" :class="classes">
+      {{ display }}
+    </div>`,
+    props: {
+      display: {
+        default: select('Display', ['d-block', 'd-inline-block', 'd-inline', 'd-flex', 'd-inline-flex', 'd-table', 'd-table-row', 'd-table-cell', 'd-grid', 'd-none', 'd-block md:d-inline-block'], 'd-block')
+      }
+    },
+    computed: {
+      classes () {
+        return {
+          [`${this.display}`]: this.display,
+        }
+      }
+    }
+  }}
+</Story>
+
+<hr/>
+
+
+# Block
+
+<Preview>
+  <Story name='Block'>
+    {{
+      components: {},
+      template: `<div>
+        <div class="d-block p-4 bg-primary text-center color-white mb-3">1</div>
+        <div class="d-block p-4 bg-primary text-center color-white mb-3">2</div>
+        <div class="d-block p-4 bg-primary text-center color-white mb-3">3</div>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Inline Block
+
+<Preview>
+  <Story name='Inline Block'>
+    {{
+      components: {},
+      template: `<div>
+        <div class="d-inline-block p-4 bg-primary text-center color-white mb-3">1</div>
+        <div class="d-inline-block p-4 bg-primary text-center color-white mb-3">2</div>
+        <div class="d-inline-block p-4 bg-primary text-center color-white mb-3">3</div>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Inline
+
+<Preview>
+  <Story name='Inline'>
+    {{
+      components: {},
+      template: `<div>
+        <div class="d-inline p-4 bg-primary text-center color-white mb-3">1</div>
+        <div class="d-inline p-4 bg-primary text-center color-white mb-3">2</div>
+        <div class="d-inline p-4 bg-primary text-center color-white mb-3">3</div>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Flex
+
+<Preview>
+  <Story name='Flex'>
+    {{
+      components: {},
+      template: `<div>
+        <div class="d-flex p-4 bg-primary text-center color-white mb-3">1</div>
+        <div class="d-flex p-4 bg-primary text-center color-white mb-3">2</div>
+        <div class="d-flex p-4 bg-primary text-center color-white mb-3">3</div>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Inline Flex
+
+<Preview>
+  <Story name='Inline Flex'>
+    {{
+      components: {},
+      template: `<div>
+        <div class="d-inline-flex p-4 bg-primary text-center color-white mb-3">1</div>
+        <div class="d-inline-flex p-4 bg-primary text-center color-white mb-3">2</div>
+        <div class="d-inline-flex p-4 bg-primary text-center color-white mb-3">3</div>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Table
+
+Use the <mark>.d-table</mark>, <mark>.d-table-row</mark>, and <mark>.d-table-cell</mark> to create elements that behave like a <mark>table</mark>, <mark>tr</mark>, or <mark>td</mark> element.
+
+<Preview>
+  <Story name='Table'>
+    {{
+      components: {},
+      template: `<div class="d-table">
+        <div class="d-table-row">
+          <div class="d-table-cell p-4 bg-primary text-center color-white mb-3">Table cell 1</div>
+          <div class="d-table-cell p-4 bg-primary-dark text-center color-white mb-3">2</div>
+          <div class="d-table-cell p-4 bg-primary text-center color-white mb-3">3</div>
+        </div>
+        <div class="d-table-row">
+          <div class="d-table-cell p-4 bg-primary-dark text-center color-white mb-3">4</div>
+          <div class="d-table-cell p-4 bg-primary text-center color-white mb-3">Table cell 5</div>
+          <div class="d-table-cell p-4 bg-primary-dark text-center color-white mb-3">Table cell 6</div>
+        </div>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# None / Hidden
+
+<Preview>
+  <Story name='None / Hidden'>
+    {{
+      components: {},
+      template: `<div>
+        <div class="d-inline-block p-4 bg-primary text-center color-white mb-3">1</div>
+        <div class="d-inline-block p-4 bg-primary text-center color-white mb-3">2</div>
+        <div class="d-none p-4 bg-primary text-center color-white mb-3">3</div>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Responsive
+
+Apply responsive display to elements <mark>.{breakpoint}:d-{key}</mark> class
+
+<Preview>
+  <Story name='Responsive'>
+    {{
+      components: {},
+      template: `<div>
+        <div class="d-block md:d-inline-block lg:d-inline-flex p-4 bg-primary text-center color-white mb-3">1</div>
+        <div class="d-block md:d-inline-block lg:d-inline-flex p-4 bg-primary text-center color-white mb-3">2</div>
+        <div class="d-block md:d-inline-block lg:d-inline-flex p-4 bg-primary text-center color-white mb-3">3</div>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Responsive Usage 
+
+<Story name='Responsive Usage'>
+  {{
+    components: {},
+    template: `<table class="o-table o-table--fixed o-table--compact o-table--definition o-table--border-bottom">
+      <thead>
+        <th></th>
+        <th>
+          Class prefix
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Default</span><br />
+            &gt; 0px
+          </td>
+          <td><code>d-</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Extra extra small</span><br />
+            &gt; 320px
+          </td>
+          <td><code>xxs:d-{key}</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Extra small</span><br />
+            &gt; 480px
+          </td>
+          <td><code>xs:d-{key}</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Small</span><br />
+            &gt; 640px
+          </td>
+          <td><code>sm:d-{key}</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Medium</span><br />
+            &gt; 768px
+          </td>
+          <td><code>md:d-{key}</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Large</span><br />
+            &gt; 991px
+          </td>
+          <td><code>lg:d-{key}</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Extra large</span><br />
+            &gt; 1200px
+          </td>
+          <td><code>xl:d-{key}</code></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fs-epsilon color-secondary">Extra extra large</span><br />
+            &gt; 1440px
+          </td>
+          <td><code>xxl:d-{key}</code></td>
+        </tr>
+      </tbody>
+    </table>`,
+  }}
+</Story>

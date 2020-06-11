@@ -1,0 +1,11 @@
+/**
+ * Storybook
+ */
+
+// Hide text on Docs tab
+#story--1-getting-started-install--compiled,
+#story--1-getting-started-install--source,
+#story--3-layout-breakpoints--variables,
+#story--3-layout-container--variables {
+  display: none;
+}

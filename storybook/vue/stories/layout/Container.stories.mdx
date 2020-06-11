@@ -1,0 +1,43 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+
+<Meta title='3. Layout|Container' />
+
+
+# Container
+
+<hr/>
+
+<Story name='Variables'>
+  {{
+    components: {},
+    template: `<div>Check <mark>Docs</mark> tab for informations</div>`,
+  }}
+</Story>
+
+# Variables
+
+Container is an element that wraps content and has gap on sides. Class <mark>.container</mark> limits the width, while <mark>.container-fluid</mark> is full width.
+Side gap can be changed with variable <mark>$container-gap</mark>. Default is <mark>12px</mark>
+
+Default container widths on all the breakpoints are shown below.
+
+
+```scss
+$o-container-gap: 12px !default;
+$o-container-gap-mobile: $o-container-gap !default;
+$o-container-max-width: 100% !default;
+
+$o-container-max-widths: (
+  xs: 480px,
+  sm: 580px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1280px
+) !default;
+```
+

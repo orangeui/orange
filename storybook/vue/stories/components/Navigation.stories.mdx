@@ -1,0 +1,195 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import ONavigation from '../../src/components/Navigation/Navigation';
+import ONavigationItem from '../../src/components/Navigation/NavigationItem';
+
+<!-- Additional Helpers -->
+import IconList from '../../src/components/Icon/IconList';
+import ColorBase from '../../src/global/ColorBase.js';
+
+<!-- Need to add decorator to Story, for router-link to be recognized -->
+import BasicRouterDecorator from '../../src/global/BasicRouterDecorator.js';
+
+
+<Meta title='5. Components|Basic/Navigation' component={ ONavigation } />
+
+# Navigation
+
+A navigation enables users to <mark>move around an app</mark>, visiting areas that are currently not in view.
+
+The component is a custom Vue component written in semantic markup, and comes in <mark>default</mark>, <mark>with Icons</mark>, and <mark>toned in color</mark> styles.
+
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of navigation on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout' decorators={[BasicRouterDecorator]}>
+  {{
+    components: { ONavigation, ONavigationItem },
+    template: `<div>
+        <o-navigation :color="color" :align="align">
+          <o-navigation-item to="/" :icon="navigationItem1Icon" :disabled="disabled" :tag="tag">Navigation</o-navigation-item>
+          <o-navigation-item to="/breadcrumbs" :tag="tag">Breadcrumbs</o-navigation-item>
+          <o-navigation-item to="/message" :tag="tag">Message</o-navigation-item>
+          <o-navigation-item to="/empty-state" :tag="tag">Empty State</o-navigation-item>
+        </o-navigation>
+        <router-view/>
+      </div>`,
+    props: {
+      color: {
+        default: select('Color', ColorBase, null)
+      },
+      align: {
+        default: select('Align', ['left', 'center', 'right'], 'left')
+      },
+      navigationItem1Icon: {
+        default: select('Navigation Item 1 Icon', IconList, 'integrations')
+      },
+      disabled: {
+        default: boolean('Disabled Navigation Item 1', false)
+      },
+      tag: {
+        default: text('Tag (use a or router-link)', 'a')
+      }
+    }
+  }}
+</Story>
+
+<hr/>
+
+
+# Basic
+
+<Preview>
+  <Story name='Basic' decorators={[BasicRouterDecorator]}>{{
+    components: { ONavigation, ONavigationItem },
+    template: `<div>
+        <o-navigation>
+          <o-navigation-item to="/">Navigation</o-navigation-item>
+          <o-navigation-item to="/breadcrumbs">Breadcrumbs</o-navigation-item>
+          <o-navigation-item to="/message">Message</o-navigation-item>
+          <o-navigation-item to="/empty-state">Empty State</o-navigation-item>
+        </o-navigation>
+        <router-view/>
+      </div>`,
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# With icons
+
+<Preview>
+  <Story name='With icons' decorators={[BasicRouterDecorator]}>{{
+    components: { ONavigation, ONavigationItem },
+    template: `<div>
+        <o-navigation>
+          <o-navigation-item to="/" icon="integrations">Navigation</o-navigation-item>
+          <o-navigation-item to="/breadcrumbs" icon="theme">Breadcrumbs</o-navigation-item>
+          <o-navigation-item to="/message" icon="rules">Message</o-navigation-item>
+          <o-navigation-item to="/empty-state" icon="code">Empty State</o-navigation-item>
+        </o-navigation>
+        <router-view/>
+      </div>`,
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Align Center
+
+<Preview>
+  <Story name='Align Center' decorators={[BasicRouterDecorator]}>{{
+    components: { ONavigation, ONavigationItem },
+    template: `<div>
+        <o-navigation align="center">
+          <o-navigation-item to="/">Navigation</o-navigation-item>
+          <o-navigation-item to="/breadcrumbs">Breadcrumbs</o-navigation-item>
+          <o-navigation-item to="/message">Message</o-navigation-item>
+          <o-navigation-item to="/empty-state">Empty State</o-navigation-item>
+        </o-navigation>
+        <router-view/>
+      </div>`,
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Align Right
+
+<Preview>
+  <Story name='Align Right' decorators={[BasicRouterDecorator]}>{{
+    components: { ONavigation, ONavigationItem },
+    template: `<div>
+        <o-navigation align="right">
+          <o-navigation-item to="/">Navigation</o-navigation-item>
+          <o-navigation-item to="/breadcrumbs">Breadcrumbs</o-navigation-item>
+          <o-navigation-item to="/message">Message</o-navigation-item>
+          <o-navigation-item to="/empty-state">Empty State</o-navigation-item>
+        </o-navigation>
+        <router-view/>
+      </div>`,
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Toned in color
+
+<Preview>
+  <Story name='Toned in color' decorators={[BasicRouterDecorator]}>{{
+    components: { ONavigation, ONavigationItem },
+    template: `<div>
+        <o-navigation color="secondary">
+          <o-navigation-item to="/">Navigation</o-navigation-item>
+          <o-navigation-item to="/breadcrumbs">Breadcrumbs</o-navigation-item>
+          <o-navigation-item to="/message">Message</o-navigation-item>
+          <o-navigation-item to="/empty-state">Empty State</o-navigation-item>
+        </o-navigation>
+        <router-view/>
+      </div>`,
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Disabled item
+
+<Preview>
+  <Story name='Disabled item' decorators={[BasicRouterDecorator]}>{{
+    components: { ONavigation, ONavigationItem },
+    template: `<div>
+        <o-navigation>
+          <o-navigation-item to="/">Navigation</o-navigation-item>
+          <o-navigation-item to="/breadcrumbs">Breadcrumbs</o-navigation-item>
+          <o-navigation-item to="/message">Message</o-navigation-item>
+          <o-navigation-item to="/empty-state" :disabled="true">Empty State</o-navigation-item>
+        </o-navigation>
+        <router-view/>
+      </div>`,
+  }}</Story>
+</Preview>
+
+
+## Navigation Props
+
+<Props of={ONavigation} />
+
+
+
+## NavigationItem Props
+
+<Props of={ONavigationItem} />

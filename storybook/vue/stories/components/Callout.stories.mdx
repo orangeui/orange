@@ -1,0 +1,218 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OCallout from '../../src/components/Callout/Callout';
+
+<!-- Additional Helpers -->
+import ColorBase from '../../src/global/ColorBase.js';
+
+
+<Meta title='5. Components|Custom/Callout' component={ OCallout } />
+
+# Callout
+
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of Callout on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OCallout },
+    template: `<o-callout :color="color" :shadow="shadow" :action="action" @click="handleClick">
+      Orange color lies between red and yellow on the light spectrum
+    </o-callout>`,
+    methods: { handleClick: action('click') },
+    props: {
+      color: {
+        default: select('Color', ColorBase, null)
+      },
+      shadow: {
+        default: boolean('Shadow', false)
+      },
+      action: {
+        default: boolean('Action', false)
+      },
+    },
+  }}
+</Story>
+
+<hr />
+
+
+# Basic
+
+<Preview>
+  <Story name='Basic'>
+    {{
+      components: { OCallout },
+      template: `<o-callout>
+        Orange color lies between red and yellow on the light spectrum
+      </o-callout>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# With a shadow
+
+<Preview>
+  <Story name='With a shadow'>
+    {{
+      components: { OCallout },
+      template: `<o-callout :shadow="true" color="white">
+        Orange color lies between red and yellow on the light spectrum
+      </o-callout>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# With an action
+
+<Preview>
+  <Story name='With an action'>
+    {{
+      components: { OCallout },
+      template: `<o-callout :action="true" color="green">
+        Click here to claim a free hat
+      </o-callout>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# Colors
+
+<Preview>
+  <Story name='Colors'>
+    {{
+      components: { OCallout },
+      template: `<div>
+        <o-callout color="white" :shadow="true">
+          Click here to claim a free hat
+        </o-callout>
+        <o-callout color="gray" :shadow="true">
+          Click here to claim a free hat
+        </o-callout>
+        <o-callout color="black" :shadow="true">
+          Click here to claim a free hat
+        </o-callout>
+        <o-callout color="primary" :shadow="true">
+          Click here to claim a free hat
+        </o-callout>
+        <o-callout color="secondary" :shadow="true">
+          Click here to claim a free hat
+        </o-callout>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# As stats
+
+<Preview>
+  <Story name='As stats'>
+    {{
+      components: { OCallout },
+      template: `<div class="grid">
+        <div class="col-3">
+          <o-callout>
+            <h1>28K</h1>
+            <p>
+              <strong>Impressions</strong><br>
+              Quantity of notifications shown
+            </p>
+          </o-callout>
+        </div>
+        <div class="col-3">
+          <o-callout>
+            <h1>285</h1>
+            <p>
+              <strong>Clicks</strong><br>
+              Traffic from linked notifications
+            </p>
+          </o-callout>
+        </div>
+        <div class="col-3">
+          <o-callout>
+            <h1>1106</h1>
+            <p>
+              <strong>Engagements</strong><br>
+              Mouse hovers, which pause the animation
+            </p>
+          </o-callout>
+        </div>
+        <div class="col-3">
+          <o-callout>
+            <h1>$724</h1>
+            <p>
+              <strong>Sales</strong><br>
+              Goal completion value in dollars
+            </p>
+          </o-callout>
+        </div>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr />
+
+
+# With an image
+
+<Preview>
+  <Story name='With an image'>
+    {{
+      components: { OCallout },
+      template: `<div class="grid">
+        <div class="col-3">
+          <o-callout color="primary" :action="true">
+            <div class="callout__image"><img src="https://fomo.com/static/images/app/dashboard/google-analytics.svg" alt="Callout #1"></div>
+            <p><strong>Conversion metrics</strong><br>
+              Connect Google Analytics to see Conversions &amp; Sales metrics.
+            </p>
+          </o-callout>
+        </div>
+        <div class="col-3">
+          <o-callout color="primary" :action="true">
+            <div class="callout__image"><img src="https://fomo.com/static/images/app/dashboard/badges.svg" alt="Callout #3"></div>
+            <p><strong>Achievements</strong><br>
+              Take note on your wins. Receive Badges for every milestone.
+            </p>
+          </o-callout>
+        </div>
+        <div class="col-3">
+          <o-callout color="primary" :action="true">
+            <div class="callout__image"><img src="https://fomo.com/static/images/app/dashboard/slack.svg" alt="Callout #4"></div>
+            <p><strong>Real-time updates</strong><br>
+              Get informed by sending Fomo events to any #channel.
+            </p>
+          </o-callout>
+        </div>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+
+## Callout Props
+
+<Props of={OCallout} />
+

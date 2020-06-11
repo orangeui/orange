@@ -1,0 +1,194 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OButton from '../../src/components/Button/Button';
+
+<!-- Additional Helpers -->
+import ColorBase from '../../src/global/ColorBase.js';
+import IconList from '../../src/components/Icon/IconList';
+
+
+<Meta title='5. Components|Basic/Button' component={ OButton } />
+
+# Button
+
+A button is an interactive element used to <mark>trigger an action.</mark>
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of Button on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OButton },
+    template: `<div :class="buttonExtraClass">
+      <o-button @click="handleClick" :type="type" :text="text" :role="role" :icon="icon" :color="color" :size="size" :wide="wide" :inverted="inverted" :is_disabled="is_disabled"></o-button>
+    </div>`,
+    computed: {
+      buttonExtraClass() {
+        return {
+          [`bg-${this.color}`]: this.inverted,
+          [`p-3`]: this.inverted
+        }
+      }
+    },
+    methods: { handleClick: action('click') },
+    props: {
+      type: {
+        default: text('Type', 'button')
+      },
+      text: {
+        default: text('Text', 'Hello Storybook')
+      },
+      role: {
+        default: select('Role', 
+          { 
+            Primary: 'primary',
+            Secondary: 'secondary',
+            Basic: 'basic',
+          }
+        )
+      },
+      icon: {
+        default: select('Icon', IconList, IconList[0])
+      },
+      color: {
+        default: select('Color', ColorBase, ColorBase[0])
+      },
+      size: {
+        default: select('Size', 
+          { 
+            Small: 'small',
+            Regular: 'regular',
+            Large: 'large',
+          }
+        )
+      },
+      wide: {
+        default: boolean('Wide', false)
+      },
+      inverted: {
+        default: boolean('Inverted', false)
+      },
+      is_disabled: {
+        default: boolean('Disabled', false)
+      }
+    },
+  }}
+</Story>
+
+<hr/>
+
+
+# Roles
+
+<Preview>
+  <Story name='Roles'>{{
+    components: { OButton },
+    template: `<div>
+      <o-button text="Primary" role="primary" /><hr />
+      <o-button text="Secondary" role="secondary" />
+    </div>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Sizes
+
+<Preview>
+  <Story name='Sizes'>{{
+    components: { OButton },
+    template: `<div>
+      <o-button text="Large" role="large" /><hr />
+      <o-button text="Regular" /><hr />
+      <o-button text="Small" role="small" />
+    </div>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Wide
+
+<Preview>
+  <Story name='Wide'>{{
+    components: { OButton },
+    template: `<o-button text="Wide button" :wide="true" />`
+  }}</Story>
+</Preview>
+
+
+<hr/>
+
+
+# Icon
+
+<Preview>
+  <Story name='Icon'>{{
+    components: { OButton },
+    template: `<div>
+      <o-button icon="remove" /><hr />
+      <o-button text="With an icon" icon="arrow-right" />
+    </div>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Disabled
+
+<Preview>
+  <Story name='Disabled'>{{
+    components: { OButton },
+    template: `<o-button text="Can't touch this" :is_disabled="true" />`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Colors
+
+<Preview>
+  <Story name='Colors'>{{
+    components: { OButton },
+    template: `<div>
+      <o-button text="Button" />
+      <o-button text="Button" role="secondary" />
+      <hr />
+      <o-button text="Button" color="secondary" />
+      <o-button text="Button" color="secondary" role="secondary" />
+    </div>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# Inverted
+
+<Preview>
+  <Story name='Inverted'>{{
+    components: { OButton },
+    template: `<div class="p-3 bg-primary">
+      <o-button text="Button" :inverted="true"  />
+      <o-button text="Button" :inverted="true" role="secondary" />
+    </div>`
+  }}</Story>
+</Preview>
+
+
+
+## Props
+
+<Props of={OButton} />

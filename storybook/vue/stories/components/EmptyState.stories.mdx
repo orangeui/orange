@@ -1,0 +1,101 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OEmptyState from '../../src/components/EmptyState/EmptyState';
+
+<!-- Additional subcomponents -->
+import OCard from '../../src/components/Card/Card';
+import OCardBody from '../../src/components/Card/CardBody';
+
+import OButton from '../../src/components/Button/Button';
+
+
+<Meta title='5. Components|Custom/EmptyState' component={ OEmptyState } />
+
+# Empty State
+
+An Empty State explains the view when it's empty.
+
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of Empty State on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OEmptyState, OButton },
+    template: `<o-empty-state :no_gutter="no_gutter" :image_path="image_path">
+      <h2 slot="heading">
+        It's your first time here
+      </h2>
+      <p>
+        A short explanation of this view or why it is empty. Longer texts span into multiple lines.
+      </p>
+      <o-button text="Continue" slot="buttons"/>
+    </o-empty-state>`,
+    props: {
+      image_path: {
+        default: text('Image path', 'https://orangecss.com/images/empty-state.svg')
+      },
+      no_gutter: {
+        default: boolean('No gutter', false)
+      }
+    },
+  }}
+</Story>
+
+<hr/>
+
+
+# Inside card
+
+<Preview>
+  <Story name='Inside card'>{{
+    components: { OEmptyState, OButton, OCard, OCardBody },
+    template: `<o-card>
+      <o-card-body>
+        <o-empty-state image_path="https://orangecss.com/images/empty-state.svg">
+          <h2 slot="heading">
+            It's your first time here
+          </h2>
+          <p>
+            A short explanation of this view or why it is empty. Longer texts span into multiple lines.
+          </p>
+          <o-button text="Continue" slot="buttons"/>
+        </o-empty-state>
+      </o-card-body>
+    </o-card>`
+  }}</Story>
+</Preview>
+
+<hr/>
+
+
+# No gutter
+
+<Preview>
+  <Story name='No gutter'>{{
+    components: { OEmptyState, OButton },
+    template: `<o-empty-state image_path="https://orangecss.com/images/empty-state.svg">
+      <h2 slot="heading">
+        It's your first time here
+      </h2>
+      <p>
+        A short explanation of this view or why it is empty. Longer texts span into multiple lines.
+      </p>
+      <o-button text="Continue" slot="buttons"/>
+    </o-empty-state>`
+  }}</Story>
+</Preview>
+
+
+
+## Props
+
+<Props of={OEmptyState} />

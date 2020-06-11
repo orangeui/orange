@@ -1,0 +1,94 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OIcon from '../../src/components/Icon/Icon';
+
+<!-- Additional Helpers -->
+import IconList from '../../src/components/Icon/IconList';
+import ColorSlugs from '../../src/global/ColorSlugs.js';
+
+
+<Meta title='2. Global|Icon' component={ OIcon } />
+
+
+# Icon
+
+Icons are graphical projections of <mark>objects, actions and ideas</mark>.
+
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of Icon on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OIcon },
+    template: `<o-icon :symbol="symbol" :color="color" />`,
+    props: {
+      symbol: {
+        default: select('Icon', IconList, IconList[0])
+      },
+      color: {
+        default: select('Color', ColorSlugs, ColorSlugs[1])
+      },
+    },
+  }}
+</Story>
+
+<hr/>
+
+
+# Basic
+
+<Preview>
+  <Story name='Basic'>
+    {{
+      components: { OIcon },
+      template: `<div>
+        <o-icon symbol="arrow-down" />
+        <o-icon symbol="arrow-left" color="primary" />
+        <o-icon symbol="arrow-right" color="secondary" />
+        <o-icon symbol="arrow-up" color="secondary" />
+      </div>`
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Symbols
+
+All possible icons we provide
+
+<Story name='Symbols'>{{
+  components: { OIcon },
+  template: `<ul class="docs__simple-list">
+    <li class="docs__icons-list">
+      <div class="docs__icons-item" v-for="icon in icons">
+        <o-icon :symbol="icon" />
+        <span class="docs__icons-text">{{ icon }}</span>
+      </div>
+    </li>
+  </ul>`,
+  props: {
+    icons: {
+      default: () => IconList
+    }
+  }
+}}</Story>
+
+<hr/>
+
+
+
+
+## Props
+
+<Props of={OIcon} />

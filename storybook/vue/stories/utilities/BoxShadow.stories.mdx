@@ -1,0 +1,112 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+
+<Meta title='6. Utilities|Box Shadow' />
+
+
+# Box Shadow
+
+Apply a shadow by adding <mark>.shadow-{shadow}</mark> class
+
+Apply a shadow with the <mark>shadow('{shadow}')</mark> function in <mark>SCSS</mark>
+
+
+<hr />
+
+
+# Tryout
+
+Tryout is for live example of Box Shadow on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { },
+    template: `<div class="d-inline-block p-5 bg-white" :class="classes">
+      {{ shadow }}
+    </div>`,
+    props: {
+      shadow: {
+        default: select('Box Shadow', ['shadow-primary', 'shadow-secondary', 'shadow-input'], 'shadow-primary')
+      }
+    },
+    computed: {
+      classes () {
+        return {
+          [`${this.shadow}`]: this.shadow,
+        }
+      }
+    }
+  }}
+</Story>
+
+<hr/>
+
+
+# Styles
+
+<Story name='Styles'>
+  {{
+    components: {},
+    template: `<ul class="docs__bg-color-list">
+      <li>
+        <div class="docs__bg-color-item shadow-primary bg-white"></div>
+        <p>Primary</p>
+      </li>
+      <li>
+        <div class="docs__bg-color-item shadow-secondary bg-white"></div>
+        <p>Secondary</p>
+      </li>
+      <li>
+        <div class="docs__bg-color-item shadow-input bg-white"></div>
+        <p>Input</p>
+      </li>
+    </ul>`,
+  }}
+</Story>
+
+<hr/>
+
+
+```html
+<div class="shadow-primary"></div>
+<div class="shadow-secondary"></div>
+<div class="shadow-input"></div>
+```
+
+```scss
+.example-class {
+  box-shadow: shadow('{shadow}');
+}
+```
+
+# Usage 
+
+<Story name='Usage'>
+  {{
+    components: {},
+    template: `<table class="o-table o-table--compact o-table--celled">
+      <thead>
+        <tr>
+          <th>Attribute</th>
+          <th>Description</th>
+          <th>Type</th>
+          <th>Syntax</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>shadow</td>
+          <td>
+            Set with <code>.shadow-{shadow}</code> class <br/><br />
+            Possible values: <code>primary</code>, <code>secondary</code> or <code>input</code>
+          </td>
+          <td>Class</td>
+          <td><code>.shadow-primary</code></td>
+        </tr>
+      </tbody>
+    </table>`,
+  }}
+</Story>

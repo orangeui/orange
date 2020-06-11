@@ -2,23 +2,23 @@
  * Label
  */
 
-.label {
-  border-radius: $label-border-radius;
-  font-size: $label-font-size;
+.o-label {
+  border-radius: $o-label-border-radius;
+  font-size: $o-label-font-size;
   display: inline-flex;
   align-items: center;
-  padding: $label-padding;
-  height: $label-height;
-  background-color: $label-background-color;
-  color: $label-text-color;
+  padding: $o-label-padding;
+  height: $o-label-height;
+  background-color: $o-label-background-color;
+  color: $o-label-text-color;
 
-  [class^="icon-"], [class*=" icon-"] {
-    font-size: $label-icon-font-size;
-    margin-right: $label-icon-margin-right;
+  [class^="o-icon-"], [class*=" o-icon-"] {
+    font-size: $o-label-icon-font-size;
+    margin-right: $o-label-icon-margin-right;
   }
 
-  + .label {
-    margin-left: $label-margin-left;
+  + .o-label {
+    margin-left: $o-label-margin-left;
   }
 }
 
@@ -26,33 +26,33 @@
 --------------------------------------------------*/
 
 /** Small */
-.label--small {
-  padding: $label-small-padding;
-  height: $label-small-height;
+.o-label--small {
+  padding: $o-label-small-padding;
+  height: $o-label-small-height;
 }
 
 /** Dot */
-.label--dot {
-  width: $label-dot-width-height;
-  height: $label-dot-width-height;
+.o-label--dot {
+  width: $o-label-dot-width-height;
+  height: $o-label-dot-width-height;
   padding: 0;
 }
 
 /** Pill */
-.label--pill {
-  width: $label-pill-width;
-  height: $label-pill-height;
+.o-label--pill {
+  width: $o-label-pill-width;
+  height: $o-label-pill-height;
 }
 
 
 /** States
 --------------------------------------------------*/
 
-.label--dismiss {
-  [class^="icon-"], [class*=" icon-"] {
+.o-label--dismiss {
+  [class^="o-icon-"], [class*=" o-icon-"] {
     &:hover {
       cursor: pointer;
-      color: $label-dismiss-icon-hover-color;
+      color: $o-label-dismiss-icon-hover-color;
     }
   }
 }
@@ -61,31 +61,31 @@
 --------------------------------------------------*/
 
 /** Regular style colors */
-@each $prefix, $meaning in $colors {
-  @each $colorKey, $colorValue in $meaning {
+@each $o-prefix, $o-meaning in $o-colors {
+  @each $o-colorKey, $o-colorValue in $o-meaning {
 
-    @if ($colorKey == 'base') {
-      .label--#{$prefix} {
-        background-color: rgba($colorValue, 0.1);
-        color: $colorValue;
+    @if ($o-colorKey == 'base') {
+      .o-label--#{$o-prefix} {
+        background-color: rgba($o-colorValue, 0.1);
+        color: $o-colorValue;
 
-        &.label--dismiss {
-          [class^="icon-"], [class*=" icon-"] {
+        &.o-label--dismiss {
+          [class^="o-icon-"], [class*=" o-icon-"] {
             &:hover {
-              color: color($prefix, 'dark');
+              color: color($o-prefix, 'dark');
             }
           }
         }
       }
     } @else {
-      .label--#{$prefix}-#{$colorKey} {
-        background-color: rgba($colorValue, 0.1);
-        color: $colorValue;
+      .o-label--#{$o-prefix}-#{$o-colorKey} {
+        background-color: rgba($o-colorValue, 0.1);
+        color: $o-colorValue;
 
-        &.label--dismiss {
-          [class^="icon-"], [class*=" icon-"] {
+        &.o-label--dismiss {
+          [class^="o-icon-"], [class*=" o-icon-"] {
             &:hover {
-              color: color($prefix, 'dark');
+              color: color($o-prefix, 'dark');
             }
           }
         }
@@ -95,18 +95,18 @@
 }
 
 /** Dot and pill colors */
-@each $prefix, $meaning in $colors {
-  @each $colorKey, $colorValue in $meaning {
+@each $o-prefix, $o-meaning in $o-colors {
+  @each $o-colorKey, $o-colorValue in $o-meaning {
 
-    @if ($colorKey == 'base') {
-      .label--dot.label--#{$prefix},
-      .label--pill.label--#{$prefix} {
-        background-color: $colorValue;
+    @if ($o-colorKey == 'base') {
+      .o-label--dot.o-label--#{$o-prefix},
+      .o-label--pill.o-label--#{$o-prefix} {
+        background-color: $o-colorValue;
       }
     } @else {
-      .label--dot.label--#{$prefix}-#{$colorKey},
-      .label--pill.label--#{$prefix}-#{$colorKey} {
-        background-color: $colorValue;
+      .o-label--dot.o-label--#{$o-prefix}-#{$o-colorKey},
+      .o-label--pill.o-label--#{$o-prefix}-#{$o-colorKey} {
+        background-color: $o-colorValue;
       }
     }
   }
