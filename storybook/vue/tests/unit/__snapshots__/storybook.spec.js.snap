@@ -120,7 +120,21 @@ exports[`Storyshots 0. Overview|Manifesto Manifesto 1`] = `
 </div>
 `;
 
-exports[`Storyshots 1. Getting Started|Install Install 1`] = `
+exports[`Storyshots 1. Getting Started|Install Compiled 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    Check 
+    <mark>
+      Docs
+    </mark>
+     tab for informations
+  </div>
+</div>
+`;
+
+exports[`Storyshots 1. Getting Started|Install Source 1`] = `
 <div
   class="p-4"
 >
@@ -225,7 +239,7 @@ exports[`Storyshots 2. Global|Background Colors Usage 1`] = `
   class="p-4"
 >
   <table
-    class="table table--compact table--celled"
+    class="o-table o-table--compact o-table--celled"
   >
     <thead>
       <tr>
@@ -1017,19 +1031,19 @@ exports[`Storyshots 2. Global|Icon Basic 1`] = `
 >
   <div>
     <span
-      class="icon-arrow-down"
+      class="o-icon-arrow-down"
     />
      
     <span
-      class="icon-arrow-left color-primary"
+      class="o-icon-arrow-left color-primary"
     />
      
     <span
-      class="icon-arrow-right color-secondary"
+      class="o-icon-arrow-right color-secondary"
     />
      
     <span
-      class="icon-arrow-up color-secondary"
+      class="o-icon-arrow-up color-secondary"
     />
   </div>
 </div>
@@ -1049,7 +1063,33 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-arrow-down"
+          class="o-icon-alert"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          alert
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-archive"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          archive
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-arrow-down"
         />
          
         <span
@@ -1062,7 +1102,7 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-arrow-left"
+          class="o-icon-arrow-left"
         />
          
         <span
@@ -1075,7 +1115,7 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-arrow-right"
+          class="o-icon-arrow-right"
         />
          
         <span
@@ -1088,20 +1128,7 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-arrow-skip"
-        />
-         
-        <span
-          class="docs__icons-text"
-        >
-          arrow-skip
-        </span>
-      </div>
-      <div
-        class="docs__icons-item"
-      >
-        <span
-          class="icon-arrow-up"
+          class="o-icon-arrow-up"
         />
          
         <span
@@ -1114,7 +1141,20 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-audience"
+          class="o-icon-arrow-skip"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          arrow-skip
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-audience"
         />
          
         <span
@@ -1127,7 +1167,7 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-billing"
+          class="o-icon-billing"
         />
          
         <span
@@ -1140,7 +1180,7 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-breadcrumb"
+          class="o-icon-breadcrumb"
         />
          
         <span
@@ -1153,7 +1193,7 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-budget"
+          class="o-icon-budget"
         />
          
         <span
@@ -1166,7 +1206,7 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-burger"
+          class="o-icon-burger"
         />
          
         <span
@@ -1179,7 +1219,7 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-caret-down"
+          class="o-icon-caret-down"
         />
          
         <span
@@ -1192,7 +1232,7 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-caret-up"
+          class="o-icon-caret-up"
         />
          
         <span
@@ -1205,7 +1245,20 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-code"
+          class="o-icon-circles"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          circles
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-code"
         />
          
         <span
@@ -1218,7 +1271,7 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-dashboard"
+          class="o-icon-dashboard"
         />
          
         <span
@@ -1231,7 +1284,7 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-desktop"
+          class="o-icon-desktop"
         />
          
         <span
@@ -1244,7 +1297,7 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-editor"
+          class="o-icon-editor"
         />
          
         <span
@@ -1257,7 +1310,7 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-events"
+          class="o-icon-events"
         />
          
         <span
@@ -1270,7 +1323,7 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-external"
+          class="o-icon-external"
         />
          
         <span
@@ -1283,7 +1336,20 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-heart"
+          class="o-icon-eye"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          eye
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-heart"
         />
          
         <span
@@ -1296,202 +1362,7 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-launch"
-        />
-         
-        <span
-          class="docs__icons-text"
-        >
-          launch
-        </span>
-      </div>
-      <div
-        class="docs__icons-item"
-      >
-        <span
-          class="icon-lock"
-        />
-         
-        <span
-          class="docs__icons-text"
-        >
-          lock
-        </span>
-      </div>
-      <div
-        class="docs__icons-item"
-      >
-        <span
-          class="icon-mobile"
-        />
-         
-        <span
-          class="docs__icons-text"
-        >
-          mobile
-        </span>
-      </div>
-      <div
-        class="docs__icons-item"
-      >
-        <span
-          class="icon-plan"
-        />
-         
-        <span
-          class="docs__icons-text"
-        >
-          plan
-        </span>
-      </div>
-      <div
-        class="docs__icons-item"
-      >
-        <span
-          class="icon-plus"
-        />
-         
-        <span
-          class="docs__icons-text"
-        >
-          plus
-        </span>
-      </div>
-      <div
-        class="docs__icons-item"
-      >
-        <span
-          class="icon-profile"
-        />
-         
-        <span
-          class="docs__icons-text"
-        >
-          profile
-        </span>
-      </div>
-      <div
-        class="docs__icons-item"
-      >
-        <span
-          class="icon-refresh"
-        />
-         
-        <span
-          class="docs__icons-text"
-        >
-          refresh
-        </span>
-      </div>
-      <div
-        class="docs__icons-item"
-      >
-        <span
-          class="icon-remove"
-        />
-         
-        <span
-          class="docs__icons-text"
-        >
-          remove
-        </span>
-      </div>
-      <div
-        class="docs__icons-item"
-      >
-        <span
-          class="icon-rules"
-        />
-         
-        <span
-          class="docs__icons-text"
-        >
-          rules
-        </span>
-      </div>
-      <div
-        class="docs__icons-item"
-      >
-        <span
-          class="icon-settings"
-        />
-         
-        <span
-          class="docs__icons-text"
-        >
-          settings
-        </span>
-      </div>
-      <div
-        class="docs__icons-item"
-      >
-        <span
-          class="icon-target"
-        />
-         
-        <span
-          class="docs__icons-text"
-        >
-          target
-        </span>
-      </div>
-      <div
-        class="docs__icons-item"
-      >
-        <span
-          class="icon-team"
-        />
-         
-        <span
-          class="docs__icons-text"
-        >
-          team
-        </span>
-      </div>
-      <div
-        class="docs__icons-item"
-      >
-        <span
-          class="icon-theme"
-        />
-         
-        <span
-          class="docs__icons-text"
-        >
-          theme
-        </span>
-      </div>
-      <div
-        class="docs__icons-item"
-      >
-        <span
-          class="icon-tick"
-        />
-         
-        <span
-          class="docs__icons-text"
-        >
-          tick
-        </span>
-      </div>
-      <div
-        class="docs__icons-item"
-      >
-        <span
-          class="icon-x"
-        />
-         
-        <span
-          class="docs__icons-text"
-        >
-          x
-        </span>
-      </div>
-      <div
-        class="docs__icons-item"
-      >
-        <span
-          class="icon-integrations"
+          class="o-icon-integrations"
         />
          
         <span
@@ -1504,13 +1375,260 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
         class="docs__icons-item"
       >
         <span
-          class="icon-more"
+          class="o-icon-launch"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          launch
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-loading"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          loading
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-lock"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          lock
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-mail"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          mail
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-mobile"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          mobile
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-more"
         />
          
         <span
           class="docs__icons-text"
         >
           more
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-palette"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          palette
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-plan"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          plan
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-play"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          play
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-plus"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          plus
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-profile"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          profile
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-refresh"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          refresh
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-remove"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          remove
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-rules"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          rules
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-settings"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          settings
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-target"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          target
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-team"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          team
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-theme"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          theme
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-tick"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          tick
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-x"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          x
         </span>
       </div>
     </li>
@@ -1523,7 +1641,7 @@ exports[`Storyshots 2. Global|Icon Tryout 1`] = `
   class="p-4"
 >
   <span
-    class="icon-arrow-down color-primary"
+    class="o-icon-alert color-primary"
   />
 </div>
 `;
@@ -1877,7 +1995,7 @@ exports[`Storyshots 3. Layout|Grid Grid Usage 1`] = `
   class="p-4"
 >
   <table
-    class="table table--fixed table--compact table--definition table--border-bottom"
+    class="o-table o-table--fixed o-table--compact o-table--definition o-table--border-bottom"
   >
     <thead>
       <th />
@@ -2921,7 +3039,7 @@ exports[`Storyshots 4. Typography|Text align Responsive 1`] = `
   class="p-4"
 >
   <table
-    class="table table--fixed table--compact table--definition table--border-bottom"
+    class="o-table o-table--fixed o-table--compact o-table--definition o-table--border-bottom"
   >
     <thead>
       <th />
@@ -3202,7 +3320,7 @@ exports[`Storyshots 5. Components|Basic/Button Colors 1`] = `
 >
   <div>
     <button
-      class="button button--primary"
+      class="o-button o-button--primary"
       type="button"
     >
       Button 
@@ -3210,7 +3328,7 @@ exports[`Storyshots 5. Components|Basic/Button Colors 1`] = `
     </button>
      
     <button
-      class="button button--secondary"
+      class="o-button o-button--secondary"
       type="button"
     >
       Button 
@@ -3220,7 +3338,7 @@ exports[`Storyshots 5. Components|Basic/Button Colors 1`] = `
     <hr />
      
     <button
-      class="button button--primary button--color-secondary"
+      class="o-button o-button--primary o-button--color-secondary"
       type="button"
     >
       Button 
@@ -3228,7 +3346,7 @@ exports[`Storyshots 5. Components|Basic/Button Colors 1`] = `
     </button>
      
     <button
-      class="button button--secondary button--color-secondary"
+      class="o-button o-button--secondary o-button--color-secondary"
       type="button"
     >
       Button 
@@ -3243,7 +3361,7 @@ exports[`Storyshots 5. Components|Basic/Button Disabled 1`] = `
   class="p-4"
 >
   <button
-    class="button button--primary"
+    class="o-button o-button--primary"
     disabled="disabled"
     type="button"
   >
@@ -3259,24 +3377,24 @@ exports[`Storyshots 5. Components|Basic/Button Icon 1`] = `
 >
   <div>
     <button
-      class="button button--primary button--icon-only"
+      class="o-button o-button--primary o-button--icon-only"
       type="button"
     >
       <!---->
        
       <i
-        class="icon-remove"
+        class="o-icon-remove"
       />
     </button>
     <hr />
      
     <button
-      class="button button--primary"
+      class="o-button o-button--primary"
       type="button"
     >
       With an icon 
       <i
-        class="icon-arrow-right"
+        class="o-icon-arrow-right"
       />
     </button>
   </div>
@@ -3291,7 +3409,7 @@ exports[`Storyshots 5. Components|Basic/Button Inverted 1`] = `
     class="p-3 bg-primary"
   >
     <button
-      class="button button--primary button--inverted"
+      class="o-button o-button--primary o-button--inverted"
       type="button"
     >
       Button 
@@ -3299,7 +3417,7 @@ exports[`Storyshots 5. Components|Basic/Button Inverted 1`] = `
     </button>
      
     <button
-      class="button button--secondary button--inverted"
+      class="o-button o-button--secondary o-button--inverted"
       type="button"
     >
       Button 
@@ -3315,7 +3433,7 @@ exports[`Storyshots 5. Components|Basic/Button Roles 1`] = `
 >
   <div>
     <button
-      class="button button--primary"
+      class="o-button o-button--primary"
       type="button"
     >
       Primary 
@@ -3324,7 +3442,7 @@ exports[`Storyshots 5. Components|Basic/Button Roles 1`] = `
     <hr />
      
     <button
-      class="button button--secondary"
+      class="o-button o-button--secondary"
       type="button"
     >
       Secondary 
@@ -3340,7 +3458,7 @@ exports[`Storyshots 5. Components|Basic/Button Sizes 1`] = `
 >
   <div>
     <button
-      class="button button--large"
+      class="o-button o-button--large"
       type="button"
     >
       Large 
@@ -3349,7 +3467,7 @@ exports[`Storyshots 5. Components|Basic/Button Sizes 1`] = `
     <hr />
      
     <button
-      class="button button--primary"
+      class="o-button o-button--primary"
       type="button"
     >
       Regular 
@@ -3358,7 +3476,7 @@ exports[`Storyshots 5. Components|Basic/Button Sizes 1`] = `
     <hr />
      
     <button
-      class="button button--small"
+      class="o-button o-button--small"
       type="button"
     >
       Small 
@@ -3376,12 +3494,12 @@ exports[`Storyshots 5. Components|Basic/Button Tryout 1`] = `
     class=""
   >
     <button
-      class="button button--primary button--color-primary"
+      class="o-button o-button--primary o-button--color-primary"
       type="button"
     >
       Hello Storybook 
       <i
-        class="icon-arrow-down"
+        class="o-icon-alert"
       />
     </button>
   </div>
@@ -3393,7 +3511,7 @@ exports[`Storyshots 5. Components|Basic/Button Wide 1`] = `
   class="p-4"
 >
   <button
-    class="button button--primary button--wide"
+    class="o-button o-button--primary o-button--wide"
     type="button"
   >
     Wide button 
@@ -3407,7 +3525,7 @@ exports[`Storyshots 5. Components|Basic/Label Basic 1`] = `
   class="p-4"
 >
   <span
-    class="label"
+    class="o-label"
   >
     
   Basic
@@ -3424,7 +3542,7 @@ exports[`Storyshots 5. Components|Basic/Label Colors 1`] = `
 >
   <div>
     <span
-      class="label"
+      class="o-label"
     >
       
   Basic
@@ -3436,7 +3554,7 @@ exports[`Storyshots 5. Components|Basic/Label Colors 1`] = `
     <hr />
      
     <span
-      class="label label--primary"
+      class="o-label o-label--primary"
     >
       
   Primary
@@ -3446,7 +3564,7 @@ exports[`Storyshots 5. Components|Basic/Label Colors 1`] = `
     </span>
      
     <span
-      class="label label--secondary"
+      class="o-label o-label--secondary"
     >
       
   Secondary
@@ -3463,14 +3581,14 @@ exports[`Storyshots 5. Components|Basic/Label Dismissible 1`] = `
   class="p-4"
 >
   <span
-    class="label label--dismiss"
+    class="o-label o-label--dismiss"
   >
     
   Dismissible
 
   
     <i
-      class="icon-x"
+      class="o-icon-x"
     />
   </span>
 </div>
@@ -3482,7 +3600,7 @@ exports[`Storyshots 5. Components|Basic/Label Size 1`] = `
 >
   <div>
     <span
-      class="label label--small"
+      class="o-label o-label--small"
     >
       
   Small
@@ -3492,7 +3610,7 @@ exports[`Storyshots 5. Components|Basic/Label Size 1`] = `
     </span>
      
     <span
-      class="label label--primary label--small"
+      class="o-label o-label--primary o-label--small"
     >
       
   Small
@@ -3502,7 +3620,7 @@ exports[`Storyshots 5. Components|Basic/Label Size 1`] = `
     </span>
      
     <span
-      class="label label--secondary label--small"
+      class="o-label o-label--secondary o-label--small"
     >
       
   Small
@@ -3514,7 +3632,7 @@ exports[`Storyshots 5. Components|Basic/Label Size 1`] = `
     <hr />
      
     <span
-      class="label label--pill"
+      class="o-label o-label--pill"
     >
       
   
@@ -3524,7 +3642,7 @@ exports[`Storyshots 5. Components|Basic/Label Size 1`] = `
     </span>
      
     <span
-      class="label label--primary label--pill"
+      class="o-label o-label--primary o-label--pill"
     >
       
   
@@ -3534,7 +3652,7 @@ exports[`Storyshots 5. Components|Basic/Label Size 1`] = `
     </span>
      
     <span
-      class="label label--secondary label--pill"
+      class="o-label o-label--secondary o-label--pill"
     >
       
   
@@ -3546,7 +3664,7 @@ exports[`Storyshots 5. Components|Basic/Label Size 1`] = `
     <hr />
      
     <span
-      class="label label--dot"
+      class="o-label o-label--dot"
     >
       
   
@@ -3556,7 +3674,7 @@ exports[`Storyshots 5. Components|Basic/Label Size 1`] = `
     </span>
      
     <span
-      class="label label--primary label--dot"
+      class="o-label o-label--primary o-label--dot"
     >
       
   
@@ -3566,7 +3684,7 @@ exports[`Storyshots 5. Components|Basic/Label Size 1`] = `
     </span>
      
     <span
-      class="label label--secondary label--dot"
+      class="o-label o-label--secondary o-label--dot"
     >
       
   
@@ -3583,14 +3701,14 @@ exports[`Storyshots 5. Components|Basic/Label Tryout 1`] = `
   class="p-4"
 >
   <span
-    class="label label--secondary label--small"
+    class="o-label o-label--secondary o-label--small"
   >
     
   Hello Storybook
 
   
     <i
-      class="icon-plus"
+      class="o-icon-plus"
     />
   </span>
 </div>
@@ -3602,40 +3720,40 @@ exports[`Storyshots 5. Components|Basic/Label With an icon 1`] = `
 >
   <div>
     <span
-      class="label"
+      class="o-label"
     >
       
   More
 
   
       <i
-        class="icon-more"
+        class="o-icon-more"
       />
     </span>
      
     <hr />
      
     <span
-      class="label label--primary"
+      class="o-label o-label--primary"
     >
       
   Add
 
   
       <i
-        class="icon-plus"
+        class="o-icon-plus"
       />
     </span>
      
     <span
-      class="label label--secondary"
+      class="o-label o-label--secondary"
     >
       
   Secondary
 
   
       <i
-        class="icon-arrow-skip"
+        class="o-icon-arrow-skip"
       />
     </span>
   </div>
@@ -3647,10 +3765,10 @@ exports[`Storyshots 5. Components|Basic/List Card, divided, hover, pointer 1`] =
   class="p-4"
 >
   <div
-    class="card"
+    class="o-card"
   >
     <div
-      class="card__header"
+      class="o-card__header"
     >
       <h3>
         Title
@@ -3658,13 +3776,13 @@ exports[`Storyshots 5. Components|Basic/List Card, divided, hover, pointer 1`] =
     </div>
      
     <div
-      class="card__body"
+      class="o-card__body"
     >
       <ul
-        class="list list--large list--divide list--no-gutter list--hover list--pointer"
+        class="o-list o-list--large o-list--divide o-list--no-gutter o-list--hover o-list--pointer"
       >
         <li
-          class="list__item"
+          class="o-list__item"
         >
           <div
             class=""
@@ -3679,10 +3797,10 @@ exports[`Storyshots 5. Components|Basic/List Card, divided, hover, pointer 1`] =
           </div>
            
           <div
-            class="list__action"
+            class="o-list__action"
           >
             <button
-              class="button button--small"
+              class="o-button o-button--small"
               type="button"
             >
               Action 
@@ -3692,7 +3810,7 @@ exports[`Storyshots 5. Components|Basic/List Card, divided, hover, pointer 1`] =
         </li>
          
         <li
-          class="list__item"
+          class="o-list__item"
         >
           <div
             class=""
@@ -3707,10 +3825,10 @@ exports[`Storyshots 5. Components|Basic/List Card, divided, hover, pointer 1`] =
           </div>
            
           <div
-            class="list__action"
+            class="o-list__action"
           >
             <button
-              class="button button--small"
+              class="o-button o-button--small"
               type="button"
             >
               Action 
@@ -3720,7 +3838,7 @@ exports[`Storyshots 5. Components|Basic/List Card, divided, hover, pointer 1`] =
         </li>
          
         <li
-          class="list__item"
+          class="o-list__item"
         >
           <div
             class=""
@@ -3735,10 +3853,10 @@ exports[`Storyshots 5. Components|Basic/List Card, divided, hover, pointer 1`] =
           </div>
            
           <div
-            class="list__action"
+            class="o-list__action"
           >
             <button
-              class="button button--small"
+              class="o-button o-button--small"
               type="button"
             >
               Action 
@@ -3757,10 +3875,10 @@ exports[`Storyshots 5. Components|Basic/List Divide style 1`] = `
   class="p-4"
 >
   <ul
-    class="list list--large list--divide"
+    class="o-list o-list--large o-list--divide"
   >
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -3775,10 +3893,10 @@ exports[`Storyshots 5. Components|Basic/List Divide style 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -3788,7 +3906,7 @@ exports[`Storyshots 5. Components|Basic/List Divide style 1`] = `
     </li>
      
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -3803,10 +3921,10 @@ exports[`Storyshots 5. Components|Basic/List Divide style 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -3816,7 +3934,7 @@ exports[`Storyshots 5. Components|Basic/List Divide style 1`] = `
     </li>
      
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -3831,10 +3949,10 @@ exports[`Storyshots 5. Components|Basic/List Divide style 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -3851,10 +3969,10 @@ exports[`Storyshots 5. Components|Basic/List Hover style 1`] = `
   class="p-4"
 >
   <ul
-    class="list list--large list--hover"
+    class="o-list o-list--large o-list--hover"
   >
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -3869,10 +3987,10 @@ exports[`Storyshots 5. Components|Basic/List Hover style 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -3882,7 +4000,7 @@ exports[`Storyshots 5. Components|Basic/List Hover style 1`] = `
     </li>
      
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -3897,10 +4015,10 @@ exports[`Storyshots 5. Components|Basic/List Hover style 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -3910,7 +4028,7 @@ exports[`Storyshots 5. Components|Basic/List Hover style 1`] = `
     </li>
      
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -3925,10 +4043,10 @@ exports[`Storyshots 5. Components|Basic/List Hover style 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -3945,10 +4063,10 @@ exports[`Storyshots 5. Components|Basic/List Large 1`] = `
   class="p-4"
 >
   <ul
-    class="list list--large"
+    class="o-list o-list--large"
   >
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -3963,10 +4081,10 @@ exports[`Storyshots 5. Components|Basic/List Large 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -3976,7 +4094,7 @@ exports[`Storyshots 5. Components|Basic/List Large 1`] = `
     </li>
      
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -3991,10 +4109,10 @@ exports[`Storyshots 5. Components|Basic/List Large 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -4004,7 +4122,7 @@ exports[`Storyshots 5. Components|Basic/List Large 1`] = `
     </li>
      
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -4019,10 +4137,10 @@ exports[`Storyshots 5. Components|Basic/List Large 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -4039,10 +4157,10 @@ exports[`Storyshots 5. Components|Basic/List Medium 1`] = `
   class="p-4"
 >
   <ul
-    class="list list--medium"
+    class="o-list o-list--medium"
   >
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -4057,10 +4175,10 @@ exports[`Storyshots 5. Components|Basic/List Medium 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -4070,7 +4188,7 @@ exports[`Storyshots 5. Components|Basic/List Medium 1`] = `
     </li>
      
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -4085,10 +4203,10 @@ exports[`Storyshots 5. Components|Basic/List Medium 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -4098,7 +4216,7 @@ exports[`Storyshots 5. Components|Basic/List Medium 1`] = `
     </li>
      
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -4113,10 +4231,10 @@ exports[`Storyshots 5. Components|Basic/List Medium 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -4133,10 +4251,10 @@ exports[`Storyshots 5. Components|Basic/List Pointer style 1`] = `
   class="p-4"
 >
   <ul
-    class="list list--large list--pointer"
+    class="o-list o-list--large o-list--pointer"
   >
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -4151,10 +4269,10 @@ exports[`Storyshots 5. Components|Basic/List Pointer style 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -4164,7 +4282,7 @@ exports[`Storyshots 5. Components|Basic/List Pointer style 1`] = `
     </li>
      
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -4179,10 +4297,10 @@ exports[`Storyshots 5. Components|Basic/List Pointer style 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -4192,7 +4310,7 @@ exports[`Storyshots 5. Components|Basic/List Pointer style 1`] = `
     </li>
      
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -4207,10 +4325,10 @@ exports[`Storyshots 5. Components|Basic/List Pointer style 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -4227,10 +4345,10 @@ exports[`Storyshots 5. Components|Basic/List Small 1`] = `
   class="p-4"
 >
   <ul
-    class="list list--small"
+    class="o-list o-list--small"
   >
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -4245,10 +4363,10 @@ exports[`Storyshots 5. Components|Basic/List Small 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -4258,7 +4376,7 @@ exports[`Storyshots 5. Components|Basic/List Small 1`] = `
     </li>
      
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -4273,10 +4391,10 @@ exports[`Storyshots 5. Components|Basic/List Small 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -4286,7 +4404,7 @@ exports[`Storyshots 5. Components|Basic/List Small 1`] = `
     </li>
      
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -4301,10 +4419,10 @@ exports[`Storyshots 5. Components|Basic/List Small 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -4321,10 +4439,10 @@ exports[`Storyshots 5. Components|Basic/List Tryout 1`] = `
   class="p-4"
 >
   <ul
-    class="list list--large"
+    class="o-list o-list--large"
   >
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -4339,10 +4457,10 @@ exports[`Storyshots 5. Components|Basic/List Tryout 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -4352,7 +4470,7 @@ exports[`Storyshots 5. Components|Basic/List Tryout 1`] = `
     </li>
      
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -4367,10 +4485,10 @@ exports[`Storyshots 5. Components|Basic/List Tryout 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -4380,7 +4498,7 @@ exports[`Storyshots 5. Components|Basic/List Tryout 1`] = `
     </li>
      
     <li
-      class="list__item"
+      class="o-list__item"
     >
       <div
         class=""
@@ -4395,10 +4513,10 @@ exports[`Storyshots 5. Components|Basic/List Tryout 1`] = `
       </div>
        
       <div
-        class="list__action"
+        class="o-list__action"
       >
         <button
-          class="button button--small"
+          class="o-button o-button--small"
           type="button"
         >
           Action 
@@ -4416,7 +4534,7 @@ exports[`Storyshots 5. Components|Basic/Navigation Align Center 1`] = `
 >
   <div>
     <nav
-      class="nav nav--center"
+      class="o-nav o-nav--center"
     >
       <ul>
         <li>
@@ -4472,7 +4590,7 @@ exports[`Storyshots 5. Components|Basic/Navigation Align Right 1`] = `
 >
   <div>
     <nav
-      class="nav nav--right"
+      class="o-nav o-nav--right"
     >
       <ul>
         <li>
@@ -4528,7 +4646,7 @@ exports[`Storyshots 5. Components|Basic/Navigation Basic 1`] = `
 >
   <div>
     <nav
-      class="nav nav--left"
+      class="o-nav o-nav--left"
     >
       <ul>
         <li>
@@ -4584,7 +4702,7 @@ exports[`Storyshots 5. Components|Basic/Navigation Disabled item 1`] = `
 >
   <div>
     <nav
-      class="nav nav--left"
+      class="o-nav o-nav--left"
     >
       <ul>
         <li>
@@ -4640,7 +4758,7 @@ exports[`Storyshots 5. Components|Basic/Navigation Toned in color 1`] = `
 >
   <div>
     <nav
-      class="nav nav--color-secondary nav--left"
+      class="o-nav o-nav--color-secondary o-nav--left"
     >
       <ul>
         <li>
@@ -4696,7 +4814,7 @@ exports[`Storyshots 5. Components|Basic/Navigation Tryout 1`] = `
 >
   <div>
     <nav
-      class="nav nav--left"
+      class="o-nav o-nav--left"
     >
       <ul>
         <li>
@@ -4705,7 +4823,7 @@ exports[`Storyshots 5. Components|Basic/Navigation Tryout 1`] = `
             href="#/"
           >
             <span
-              class="icon-integrations"
+              class="o-icon-integrations"
             />
              Navigation
           </a>
@@ -4754,7 +4872,7 @@ exports[`Storyshots 5. Components|Basic/Navigation With icons 1`] = `
 >
   <div>
     <nav
-      class="nav nav--left"
+      class="o-nav o-nav--left"
     >
       <ul>
         <li>
@@ -4763,7 +4881,7 @@ exports[`Storyshots 5. Components|Basic/Navigation With icons 1`] = `
             href="#/"
           >
             <span
-              class="icon-integrations"
+              class="o-icon-integrations"
             />
              Navigation
           </a>
@@ -4775,7 +4893,7 @@ exports[`Storyshots 5. Components|Basic/Navigation With icons 1`] = `
             href="#/breadcrumbs"
           >
             <span
-              class="icon-theme"
+              class="o-icon-theme"
             />
              Breadcrumbs
           </a>
@@ -4787,7 +4905,7 @@ exports[`Storyshots 5. Components|Basic/Navigation With icons 1`] = `
             href="#/message"
           >
             <span
-              class="icon-rules"
+              class="o-icon-rules"
             />
              Message
           </a>
@@ -4799,7 +4917,7 @@ exports[`Storyshots 5. Components|Basic/Navigation With icons 1`] = `
             href="#/empty-state"
           >
             <span
-              class="icon-code"
+              class="o-icon-code"
             />
              Empty State
           </a>
@@ -4817,10 +4935,10 @@ exports[`Storyshots 5. Components|Basic/Table Basic 1`] = `
   class="p-4"
 >
   <div
-    class="table-wrapper"
+    class="o-table-wrapper"
   >
     <table
-      class="table"
+      class="o-table"
     >
       <thead>
         <tr>
@@ -4879,10 +4997,10 @@ exports[`Storyshots 5. Components|Basic/Table Celled 1`] = `
   class="p-4"
 >
   <div
-    class="table-wrapper"
+    class="o-table-wrapper"
   >
     <table
-      class="table table--celled"
+      class="o-table o-table--celled"
     >
       <thead>
         <tr>
@@ -4953,10 +5071,10 @@ exports[`Storyshots 5. Components|Basic/Table Compact 1`] = `
   class="p-4"
 >
   <div
-    class="table-wrapper"
+    class="o-table-wrapper"
   >
     <table
-      class="table table--compact"
+      class="o-table o-table--compact"
     >
       <thead>
         <tr>
@@ -5027,10 +5145,10 @@ exports[`Storyshots 5. Components|Basic/Table Definition 1`] = `
   class="p-4"
 >
   <div
-    class="table-wrapper"
+    class="o-table-wrapper"
   >
     <table
-      class="table table--compact table--definition"
+      class="o-table o-table--compact o-table--definition"
     >
       <thead>
         <tr>
@@ -5046,7 +5164,7 @@ exports[`Storyshots 5. Components|Basic/Table Definition 1`] = `
             
                 Fomo Plus 
             <span
-              class="label label--green label--small"
+              class="o-label o-label--green o-label--small"
             >
               
   current plan
@@ -5068,7 +5186,7 @@ exports[`Storyshots 5. Components|Basic/Table Definition 1`] = `
            
           <td>
             <button
-              class="button button--primary button--small"
+              class="o-button o-button--primary o-button--small"
               type="button"
               variant="basic"
             >
@@ -5079,7 +5197,7 @@ exports[`Storyshots 5. Components|Basic/Table Definition 1`] = `
            
           <td>
             <button
-              class="button button--primary button--small"
+              class="o-button o-button--primary o-button--small"
               type="button"
               variant="basic"
             >
@@ -5090,7 +5208,7 @@ exports[`Storyshots 5. Components|Basic/Table Definition 1`] = `
            
           <td>
             <button
-              class="button button--primary button--small"
+              class="o-button o-button--primary o-button--small"
               type="button"
             >
               Upgrade to Advanced 
@@ -5160,19 +5278,19 @@ exports[`Storyshots 5. Components|Basic/Table Definition 1`] = `
            
           <td>
             <span
-              class="icon-tick"
+              class="o-icon-tick"
             />
           </td>
            
           <td>
             <span
-              class="icon-tick"
+              class="o-icon-tick"
             />
           </td>
            
           <td>
             <span
-              class="icon-tick"
+              class="o-icon-tick"
             />
           </td>
         </tr>
@@ -5184,19 +5302,19 @@ exports[`Storyshots 5. Components|Basic/Table Definition 1`] = `
            
           <td>
             <span
-              class="icon-tick"
+              class="o-icon-tick"
             />
           </td>
            
           <td>
             <span
-              class="icon-tick"
+              class="o-icon-tick"
             />
           </td>
            
           <td>
             <span
-              class="icon-tick"
+              class="o-icon-tick"
             />
           </td>
         </tr>
@@ -5211,10 +5329,10 @@ exports[`Storyshots 5. Components|Basic/Table Fixed 1`] = `
   class="p-4"
 >
   <div
-    class="table-wrapper"
+    class="o-table-wrapper"
   >
     <table
-      class="table table--fixed"
+      class="o-table o-table--fixed"
     >
       <thead>
         <tr>
@@ -5285,11 +5403,11 @@ exports[`Storyshots 5. Components|Basic/Table Fixed header 1`] = `
   class="p-4"
 >
   <div
-    class="table-wrapper table-wrapper--fixed-header"
+    class="o-table-wrapper o-table-wrapper--fixed-header"
     style="height: 200px;"
   >
     <table
-      class="table"
+      class="o-table"
     >
       <thead>
         <tr>
@@ -5360,11 +5478,11 @@ exports[`Storyshots 5. Components|Basic/Table Height limit 1`] = `
   class="p-4"
 >
   <div
-    class="table-wrapper"
+    class="o-table-wrapper"
     style="height: 200px;"
   >
     <table
-      class="table"
+      class="o-table"
     >
       <thead>
         <tr>
@@ -5435,10 +5553,10 @@ exports[`Storyshots 5. Components|Basic/Table Tryout 1`] = `
   class="p-4"
 >
   <div
-    class="table-wrapper"
+    class="o-table-wrapper"
   >
     <table
-      class="table"
+      class="o-table"
     >
       <thead>
         <tr>
@@ -5509,10 +5627,10 @@ exports[`Storyshots 5. Components|Basic/Table With a bottom border 1`] = `
   class="p-4"
 >
   <div
-    class="table-wrapper"
+    class="o-table-wrapper"
   >
     <table
-      class="table table--border-bottom"
+      class="o-table o-table--border-bottom"
     >
       <thead>
         <tr>
@@ -5594,7 +5712,7 @@ exports[`Storyshots 5. Components|Custom/Avatar Basic 1`] = `
 >
   <div>
     <div
-      class="avatar"
+      class="o-avatar"
     >
       <svg
         viewBox="0 0 80 80"
@@ -5611,7 +5729,7 @@ exports[`Storyshots 5. Components|Custom/Avatar Basic 1`] = `
     <hr />
      
     <div
-      class="avatar"
+      class="o-avatar"
     >
       <img
         alt=""
@@ -5628,7 +5746,7 @@ exports[`Storyshots 5. Components|Custom/Avatar Colors 1`] = `
 >
   <div>
     <div
-      class="avatar avatar--color-primary"
+      class="o-avatar o-avatar--color-primary"
     >
       <svg
         viewBox="0 0 80 80"
@@ -5645,7 +5763,7 @@ exports[`Storyshots 5. Components|Custom/Avatar Colors 1`] = `
     <hr />
      
     <div
-      class="avatar avatar--color-secondary"
+      class="o-avatar o-avatar--color-secondary"
     >
       <svg
         viewBox="0 0 80 80"
@@ -5668,7 +5786,7 @@ exports[`Storyshots 5. Components|Custom/Avatar In circle 1`] = `
 >
   <div>
     <div
-      class="avatar avatar--circle"
+      class="o-avatar o-avatar--circle"
     >
       <svg
         viewBox="0 0 80 80"
@@ -5685,7 +5803,7 @@ exports[`Storyshots 5. Components|Custom/Avatar In circle 1`] = `
     <hr />
      
     <div
-      class="avatar avatar--circle"
+      class="o-avatar o-avatar--circle"
     >
       <img
         alt=""
@@ -5702,7 +5820,7 @@ exports[`Storyshots 5. Components|Custom/Avatar Sizes 1`] = `
 >
   <div>
     <div
-      class="avatar avatar--size-small"
+      class="o-avatar o-avatar--size-small"
     >
       <svg
         viewBox="0 0 80 80"
@@ -5719,7 +5837,7 @@ exports[`Storyshots 5. Components|Custom/Avatar Sizes 1`] = `
     <hr />
      
     <div
-      class="avatar"
+      class="o-avatar"
     >
       <svg
         viewBox="0 0 80 80"
@@ -5736,7 +5854,7 @@ exports[`Storyshots 5. Components|Custom/Avatar Sizes 1`] = `
     <hr />
      
     <div
-      class="avatar avatar--size-large"
+      class="o-avatar o-avatar--size-large"
     >
       <svg
         viewBox="0 0 80 80"
@@ -5759,7 +5877,7 @@ exports[`Storyshots 5. Components|Custom/Avatar Tryout 1`] = `
 >
   <div>
     <div
-      class="avatar avatar--color-primary"
+      class="o-avatar o-avatar--color-primary"
     >
       <svg
         viewBox="0 0 80 80"
@@ -5776,7 +5894,7 @@ exports[`Storyshots 5. Components|Custom/Avatar Tryout 1`] = `
     <hr />
      
     <div
-      class="avatar"
+      class="o-avatar"
     >
       <img
         alt=""
@@ -5792,7 +5910,7 @@ exports[`Storyshots 5. Components|Custom/Breadcrumbs Basic 1`] = `
   class="p-4"
 >
   <nav
-    class="breadcrumbs"
+    class="o-breadcrumbs"
   >
     <!---->
      
@@ -5802,7 +5920,7 @@ exports[`Storyshots 5. Components|Custom/Breadcrumbs Basic 1`] = `
           class="router-link-exact-active router-link-active"
         >
           <span
-            class="icon-integrations"
+            class="o-icon-integrations"
           />
            First
         </a>
@@ -5845,7 +5963,7 @@ exports[`Storyshots 5. Components|Custom/Breadcrumbs Colors 1`] = `
 >
   <div>
     <nav
-      class="breadcrumbs breadcrumbs--color-primary"
+      class="o-breadcrumbs o-breadcrumbs--color-primary"
     >
       <!---->
        
@@ -5855,7 +5973,7 @@ exports[`Storyshots 5. Components|Custom/Breadcrumbs Colors 1`] = `
             class="router-link-exact-active router-link-active is-active"
           >
             <span
-              class="icon-integrations"
+              class="o-icon-integrations"
             />
              First
           </a>
@@ -5893,7 +6011,7 @@ exports[`Storyshots 5. Components|Custom/Breadcrumbs Colors 1`] = `
     <hr />
      
     <nav
-      class="breadcrumbs breadcrumbs--color-secondary"
+      class="o-breadcrumbs o-breadcrumbs--color-secondary"
     >
       <!---->
        
@@ -5903,7 +6021,7 @@ exports[`Storyshots 5. Components|Custom/Breadcrumbs Colors 1`] = `
             class="router-link-exact-active router-link-active is-active"
           >
             <span
-              class="icon-integrations"
+              class="o-icon-integrations"
             />
              First
           </a>
@@ -5946,7 +6064,7 @@ exports[`Storyshots 5. Components|Custom/Breadcrumbs Full width 1`] = `
   class="p-4"
 >
   <nav
-    class="breadcrumbs breadcrumbs--full"
+    class="o-breadcrumbs o-breadcrumbs--full"
   >
     <!---->
      
@@ -5956,7 +6074,7 @@ exports[`Storyshots 5. Components|Custom/Breadcrumbs Full width 1`] = `
           class="router-link-exact-active router-link-active"
         >
           <span
-            class="icon-integrations"
+            class="o-icon-integrations"
           />
            First
         </a>
@@ -5998,7 +6116,7 @@ exports[`Storyshots 5. Components|Custom/Breadcrumbs Steps 1`] = `
   class="p-4"
 >
   <nav
-    class="breadcrumbs"
+    class="o-breadcrumbs"
   >
     <!---->
      
@@ -6008,7 +6126,7 @@ exports[`Storyshots 5. Components|Custom/Breadcrumbs Steps 1`] = `
           class="router-link-exact-active router-link-active is-active"
         >
           <span
-            class="icon-integrations"
+            class="o-icon-integrations"
           />
            First
         </a>
@@ -6050,7 +6168,7 @@ exports[`Storyshots 5. Components|Custom/Breadcrumbs Tryout 1`] = `
   class="p-4"
 >
   <nav
-    class="breadcrumbs"
+    class="o-breadcrumbs"
   >
     <!---->
      
@@ -6060,7 +6178,7 @@ exports[`Storyshots 5. Components|Custom/Breadcrumbs Tryout 1`] = `
           class="router-link-exact-active router-link-active"
         >
           <span
-            class="icon-integrations"
+            class="o-icon-integrations"
           />
            First
         </a>
@@ -6102,10 +6220,10 @@ exports[`Storyshots 5. Components|Custom/Breadcrumbs With a back button 1`] = `
   class="p-4"
 >
   <nav
-    class="breadcrumbs"
+    class="o-breadcrumbs"
   >
     <a
-      class="breadcrumbs__button router-link-exact-active router-link-active"
+      class="o-breadcrumbs__button router-link-exact-active router-link-active"
       href="#/"
     >
       
@@ -6119,7 +6237,7 @@ exports[`Storyshots 5. Components|Custom/Breadcrumbs With a back button 1`] = `
           class="router-link-exact-active router-link-active"
         >
           <span
-            class="icon-integrations"
+            class="o-icon-integrations"
           />
            First
         </a>
@@ -6167,7 +6285,7 @@ exports[`Storyshots 5. Components|Custom/Callout As stats 1`] = `
       class="col-3"
     >
       <div
-        class="callout"
+        class="o-callout"
       >
         <h1>
           28K
@@ -6189,7 +6307,7 @@ exports[`Storyshots 5. Components|Custom/Callout As stats 1`] = `
       class="col-3"
     >
       <div
-        class="callout"
+        class="o-callout"
       >
         <h1>
           285
@@ -6211,7 +6329,7 @@ exports[`Storyshots 5. Components|Custom/Callout As stats 1`] = `
       class="col-3"
     >
       <div
-        class="callout"
+        class="o-callout"
       >
         <h1>
           1106
@@ -6233,7 +6351,7 @@ exports[`Storyshots 5. Components|Custom/Callout As stats 1`] = `
       class="col-3"
     >
       <div
-        class="callout"
+        class="o-callout"
       >
         <h1>
           $724
@@ -6259,7 +6377,7 @@ exports[`Storyshots 5. Components|Custom/Callout Basic 1`] = `
   class="p-4"
 >
   <div
-    class="callout"
+    class="o-callout"
   >
     
         Orange color lies between red and yellow on the light spectrum
@@ -6274,7 +6392,7 @@ exports[`Storyshots 5. Components|Custom/Callout Colors 1`] = `
 >
   <div>
     <div
-      class="callout callout--color-white callout--shadow"
+      class="o-callout o-callout--color-white o-callout--shadow"
     >
       
           Click here to claim a free hat
@@ -6282,7 +6400,7 @@ exports[`Storyshots 5. Components|Custom/Callout Colors 1`] = `
     </div>
      
     <div
-      class="callout callout--color-gray callout--shadow"
+      class="o-callout o-callout--color-gray o-callout--shadow"
     >
       
           Click here to claim a free hat
@@ -6290,7 +6408,7 @@ exports[`Storyshots 5. Components|Custom/Callout Colors 1`] = `
     </div>
      
     <div
-      class="callout callout--color-black callout--shadow"
+      class="o-callout o-callout--color-black o-callout--shadow"
     >
       
           Click here to claim a free hat
@@ -6298,7 +6416,7 @@ exports[`Storyshots 5. Components|Custom/Callout Colors 1`] = `
     </div>
      
     <div
-      class="callout callout--color-primary callout--shadow"
+      class="o-callout o-callout--color-primary o-callout--shadow"
     >
       
           Click here to claim a free hat
@@ -6306,7 +6424,7 @@ exports[`Storyshots 5. Components|Custom/Callout Colors 1`] = `
     </div>
      
     <div
-      class="callout callout--color-secondary callout--shadow"
+      class="o-callout o-callout--color-secondary o-callout--shadow"
     >
       
           Click here to claim a free hat
@@ -6321,7 +6439,7 @@ exports[`Storyshots 5. Components|Custom/Callout Tryout 1`] = `
   class="p-4"
 >
   <div
-    class="callout"
+    class="o-callout"
   >
     
       Orange color lies between red and yellow on the light spectrum
@@ -6335,7 +6453,7 @@ exports[`Storyshots 5. Components|Custom/Callout With a shadow 1`] = `
   class="p-4"
 >
   <div
-    class="callout callout--color-white callout--shadow"
+    class="o-callout o-callout--color-white o-callout--shadow"
   >
     
         Orange color lies between red and yellow on the light spectrum
@@ -6349,7 +6467,7 @@ exports[`Storyshots 5. Components|Custom/Callout With an action 1`] = `
   class="p-4"
 >
   <div
-    class="callout callout--color-green callout--action"
+    class="o-callout o-callout--color-green o-callout--action"
   >
     
         Click here to claim a free hat
@@ -6369,7 +6487,7 @@ exports[`Storyshots 5. Components|Custom/Callout With an image 1`] = `
       class="col-3"
     >
       <div
-        class="callout callout--color-primary callout--action"
+        class="o-callout o-callout--color-primary o-callout--action"
       >
         <div
           class="callout__image"
@@ -6396,7 +6514,7 @@ exports[`Storyshots 5. Components|Custom/Callout With an image 1`] = `
       class="col-3"
     >
       <div
-        class="callout callout--color-primary callout--action"
+        class="o-callout o-callout--color-primary o-callout--action"
       >
         <div
           class="callout__image"
@@ -6423,7 +6541,7 @@ exports[`Storyshots 5. Components|Custom/Callout With an image 1`] = `
       class="col-3"
     >
       <div
-        class="callout callout--color-primary callout--action"
+        class="o-callout o-callout--color-primary o-callout--action"
       >
         <div
           class="callout__image"
@@ -6454,10 +6572,10 @@ exports[`Storyshots 5. Components|Custom/Card Basic 1`] = `
   class="p-4"
 >
   <div
-    class="card"
+    class="o-card"
   >
     <div
-      class="card__header"
+      class="o-card__header"
     >
       <h3>
         Title
@@ -6465,7 +6583,7 @@ exports[`Storyshots 5. Components|Custom/Card Basic 1`] = `
     </div>
      
     <div
-      class="card__body"
+      class="o-card__body"
     >
       
           Body
@@ -6473,7 +6591,7 @@ exports[`Storyshots 5. Components|Custom/Card Basic 1`] = `
     </div>
      
     <div
-      class="card__footer"
+      class="o-card__footer"
     >
       
           Footer
@@ -6488,10 +6606,10 @@ exports[`Storyshots 5. Components|Custom/Card Clickable footer 1`] = `
   class="p-4"
 >
   <div
-    class="card"
+    class="o-card"
   >
     <div
-      class="card__header"
+      class="o-card__header"
     >
       <h3>
         Title
@@ -6499,7 +6617,7 @@ exports[`Storyshots 5. Components|Custom/Card Clickable footer 1`] = `
     </div>
      
     <div
-      class="card__body"
+      class="o-card__body"
     >
       
           Body
@@ -6507,13 +6625,13 @@ exports[`Storyshots 5. Components|Custom/Card Clickable footer 1`] = `
     </div>
      
     <div
-      class="card__footer card__footer--click"
+      class="o-card__footer o-card__footer--click"
     >
       
           Footer
           
       <span
-        class="icon-plus"
+        class="o-icon-plus"
       />
     </div>
   </div>
@@ -6525,17 +6643,17 @@ exports[`Storyshots 5. Components|Custom/Card Multiple sections 1`] = `
   class="p-4"
 >
   <div
-    class="card"
+    class="o-card"
   >
     <div
-      class="card__header"
+      class="o-card__header"
     >
       <h3>
         Title
       </h3>
        
       <button
-        class="button button--primary"
+        class="o-button o-button--primary"
         type="button"
       >
         Action 
@@ -6544,17 +6662,17 @@ exports[`Storyshots 5. Components|Custom/Card Multiple sections 1`] = `
     </div>
      
     <section
-      class="card__section"
+      class="o-card__section"
     >
       <div
-        class="card__header"
+        class="o-card__header"
       >
         <h4>
           First section
         </h4>
          
         <button
-          class="button button--primary button--small button--color-gray"
+          class="o-button o-button--primary o-button--small o-button--color-gray"
           type="button"
         >
           Action 
@@ -6563,7 +6681,7 @@ exports[`Storyshots 5. Components|Custom/Card Multiple sections 1`] = `
       </div>
        
       <div
-        class="card__body"
+        class="o-card__body"
       >
         
             Body of first section
@@ -6572,17 +6690,17 @@ exports[`Storyshots 5. Components|Custom/Card Multiple sections 1`] = `
     </section>
      
     <section
-      class="card__section"
+      class="o-card__section"
     >
       <div
-        class="card__header"
+        class="o-card__header"
       >
         <h4>
           Second section
         </h4>
          
         <button
-          class="button button--primary button--small button--color-gray"
+          class="o-button o-button--primary o-button--small o-button--color-gray"
           type="button"
         >
           Action 
@@ -6591,7 +6709,7 @@ exports[`Storyshots 5. Components|Custom/Card Multiple sections 1`] = `
       </div>
        
       <div
-        class="card__body"
+        class="o-card__body"
       >
         
             Body of second section
@@ -6600,7 +6718,7 @@ exports[`Storyshots 5. Components|Custom/Card Multiple sections 1`] = `
     </section>
      
     <div
-      class="card__footer"
+      class="o-card__footer"
     >
       
           Footer
@@ -6615,10 +6733,10 @@ exports[`Storyshots 5. Components|Custom/Card Tryout 1`] = `
   class="p-4"
 >
   <div
-    class="card"
+    class="o-card"
   >
     <div
-      class="card__header"
+      class="o-card__header"
     >
       <h3>
         Title
@@ -6628,7 +6746,7 @@ exports[`Storyshots 5. Components|Custom/Card Tryout 1`] = `
     </div>
      
     <div
-      class="card__body"
+      class="o-card__body"
     >
       
         Body
@@ -6636,7 +6754,7 @@ exports[`Storyshots 5. Components|Custom/Card Tryout 1`] = `
     </div>
      
     <div
-      class="card__footer"
+      class="o-card__footer"
     >
       
         Footer
@@ -6652,17 +6770,17 @@ exports[`Storyshots 5. Components|Custom/Card With a button 1`] = `
   class="p-4"
 >
   <div
-    class="card"
+    class="o-card"
   >
     <div
-      class="card__header"
+      class="o-card__header"
     >
       <h3>
         Title
       </h3>
        
       <button
-        class="button button--primary"
+        class="o-button o-button--primary"
         type="button"
       >
         Action 
@@ -6671,7 +6789,7 @@ exports[`Storyshots 5. Components|Custom/Card With a button 1`] = `
     </div>
      
     <div
-      class="card__body"
+      class="o-card__body"
     >
       
           Body
@@ -6679,7 +6797,7 @@ exports[`Storyshots 5. Components|Custom/Card With a button 1`] = `
     </div>
      
     <div
-      class="card__footer"
+      class="o-card__footer"
     >
       
           Footer
@@ -6694,10 +6812,10 @@ exports[`Storyshots 5. Components|Custom/Card With a list 1`] = `
   class="p-4"
 >
   <div
-    class="card card--full"
+    class="o-card o-card--full"
   >
     <div
-      class="card__header"
+      class="o-card__header"
     >
       <h3>
         Title
@@ -6705,13 +6823,13 @@ exports[`Storyshots 5. Components|Custom/Card With a list 1`] = `
     </div>
      
     <div
-      class="card__body"
+      class="o-card__body"
     >
       <ul
-        class="list list--large list--divide list--hover"
+        class="o-list o-list--large o-list--divide o-list--hover"
       >
         <li
-          class="list__item"
+          class="o-list__item"
         >
           <div
             class=""
@@ -6726,10 +6844,10 @@ exports[`Storyshots 5. Components|Custom/Card With a list 1`] = `
           </div>
            
           <div
-            class="list__action"
+            class="o-list__action"
           >
             <button
-              class="button button--small"
+              class="o-button o-button--small"
               type="button"
             >
               Action 
@@ -6739,7 +6857,7 @@ exports[`Storyshots 5. Components|Custom/Card With a list 1`] = `
         </li>
          
         <li
-          class="list__item"
+          class="o-list__item"
         >
           <div
             class=""
@@ -6754,10 +6872,10 @@ exports[`Storyshots 5. Components|Custom/Card With a list 1`] = `
           </div>
            
           <div
-            class="list__action"
+            class="o-list__action"
           >
             <button
-              class="button button--small"
+              class="o-button o-button--small"
               type="button"
             >
               Action 
@@ -6767,7 +6885,7 @@ exports[`Storyshots 5. Components|Custom/Card With a list 1`] = `
         </li>
          
         <li
-          class="list__item"
+          class="o-list__item"
         >
           <div
             class=""
@@ -6782,10 +6900,10 @@ exports[`Storyshots 5. Components|Custom/Card With a list 1`] = `
           </div>
            
           <div
-            class="list__action"
+            class="o-list__action"
           >
             <button
-              class="button button--small"
+              class="o-button o-button--small"
               type="button"
             >
               Action 
@@ -6807,10 +6925,10 @@ exports[`Storyshots 5. Components|Custom/Card With image 1`] = `
     class="grid grid--1 md:grid--2"
   >
     <div
-      class="card"
+      class="o-card"
     >
       <div
-        class="card__image"
+        class="o-card__image"
       >
         <img
           alt="Card image"
@@ -6819,7 +6937,7 @@ exports[`Storyshots 5. Components|Custom/Card With image 1`] = `
       </div>
        
       <div
-        class="card__header"
+        class="o-card__header"
       >
         <h3>
           Title
@@ -6827,7 +6945,7 @@ exports[`Storyshots 5. Components|Custom/Card With image 1`] = `
       </div>
        
       <div
-        class="card__body"
+        class="o-card__body"
       >
         
             Body
@@ -6835,7 +6953,7 @@ exports[`Storyshots 5. Components|Custom/Card With image 1`] = `
       </div>
        
       <div
-        class="card__footer"
+        class="o-card__footer"
       >
         
             Footer
@@ -6851,13 +6969,13 @@ exports[`Storyshots 5. Components|Custom/Card With navigation and button 1`] = `
   class="p-4"
 >
   <div
-    class="card"
+    class="o-card"
   >
     <div
-      class="card__header"
+      class="o-card__header"
     >
       <nav
-        class="nav nav--left"
+        class="o-nav o-nav--left"
       >
         <ul>
           <li>
@@ -6903,7 +7021,7 @@ exports[`Storyshots 5. Components|Custom/Card With navigation and button 1`] = `
       </nav>
        
       <button
-        class="button button--primary"
+        class="o-button o-button--primary"
         type="button"
       >
         Action 
@@ -6912,7 +7030,7 @@ exports[`Storyshots 5. Components|Custom/Card With navigation and button 1`] = `
     </div>
      
     <div
-      class="card__body"
+      class="o-card__body"
     >
       
           Body
@@ -6920,7 +7038,7 @@ exports[`Storyshots 5. Components|Custom/Card With navigation and button 1`] = `
     </div>
      
     <div
-      class="card__footer"
+      class="o-card__footer"
     >
       
           Footer
@@ -6935,10 +7053,10 @@ exports[`Storyshots 5. Components|Custom/Card Without gutter 1`] = `
   class="p-4"
 >
   <div
-    class="card card--full"
+    class="o-card o-card--full"
   >
     <div
-      class="card__body"
+      class="o-card__body"
     >
       
           Body without gutter
@@ -6953,19 +7071,19 @@ exports[`Storyshots 5. Components|Custom/EmptyState Inside card 1`] = `
   class="p-4"
 >
   <div
-    class="card"
+    class="o-card"
   >
     <div
-      class="card__body"
+      class="o-card__body"
     >
       <div
-        class="empty-state"
+        class="o-empty-state"
       >
         <div
-          class="empty-state__content"
+          class="o-empty-state__content"
         >
           <div
-            class="empty-state__title"
+            class="o-empty-state__title"
           >
             <h2>
               
@@ -6975,7 +7093,7 @@ exports[`Storyshots 5. Components|Custom/EmptyState Inside card 1`] = `
           </div>
            
           <div
-            class="empty-state__description"
+            class="o-empty-state__description"
           >
              
             <p>
@@ -6987,10 +7105,10 @@ exports[`Storyshots 5. Components|Custom/EmptyState Inside card 1`] = `
           </div>
            
           <div
-            class="empty-state__buttons"
+            class="o-empty-state__buttons"
           >
             <button
-              class="button button--primary"
+              class="o-button o-button--primary"
               type="button"
             >
               Continue 
@@ -7000,7 +7118,7 @@ exports[`Storyshots 5. Components|Custom/EmptyState Inside card 1`] = `
         </div>
          
         <div
-          class="empty-state__image"
+          class="o-empty-state__image"
         >
           <img
             src="https://orangecss.com/images/empty-state.svg"
@@ -7017,13 +7135,13 @@ exports[`Storyshots 5. Components|Custom/EmptyState No gutter 1`] = `
   class="p-4"
 >
   <div
-    class="empty-state"
+    class="o-empty-state"
   >
     <div
-      class="empty-state__content"
+      class="o-empty-state__content"
     >
       <div
-        class="empty-state__title"
+        class="o-empty-state__title"
       >
         <h2>
           
@@ -7033,7 +7151,7 @@ exports[`Storyshots 5. Components|Custom/EmptyState No gutter 1`] = `
       </div>
        
       <div
-        class="empty-state__description"
+        class="o-empty-state__description"
       >
          
         <p>
@@ -7045,10 +7163,10 @@ exports[`Storyshots 5. Components|Custom/EmptyState No gutter 1`] = `
       </div>
        
       <div
-        class="empty-state__buttons"
+        class="o-empty-state__buttons"
       >
         <button
-          class="button button--primary"
+          class="o-button o-button--primary"
           type="button"
         >
           Continue 
@@ -7058,7 +7176,7 @@ exports[`Storyshots 5. Components|Custom/EmptyState No gutter 1`] = `
     </div>
      
     <div
-      class="empty-state__image"
+      class="o-empty-state__image"
     >
       <img
         src="https://orangecss.com/images/empty-state.svg"
@@ -7073,13 +7191,13 @@ exports[`Storyshots 5. Components|Custom/EmptyState Tryout 1`] = `
   class="p-4"
 >
   <div
-    class="empty-state"
+    class="o-empty-state"
   >
     <div
-      class="empty-state__content"
+      class="o-empty-state__content"
     >
       <div
-        class="empty-state__title"
+        class="o-empty-state__title"
       >
         <h2>
           
@@ -7089,7 +7207,7 @@ exports[`Storyshots 5. Components|Custom/EmptyState Tryout 1`] = `
       </div>
        
       <div
-        class="empty-state__description"
+        class="o-empty-state__description"
       >
          
         <p>
@@ -7101,10 +7219,10 @@ exports[`Storyshots 5. Components|Custom/EmptyState Tryout 1`] = `
       </div>
        
       <div
-        class="empty-state__buttons"
+        class="o-empty-state__buttons"
       >
         <button
-          class="button button--primary"
+          class="o-button o-button--primary"
           type="button"
         >
           Continue 
@@ -7114,7 +7232,7 @@ exports[`Storyshots 5. Components|Custom/EmptyState Tryout 1`] = `
     </div>
      
     <div
-      class="empty-state__image"
+      class="o-empty-state__image"
     >
       <img
         src="https://orangecss.com/images/empty-state.svg"
@@ -7131,7 +7249,7 @@ exports[`Storyshots 5. Components|Custom/Image Basic 1`] = `
   <div>
     <img
       alt="Katzee"
-      class="image"
+      class="o-image"
       src="https://orangecss.com/images/thumbnails/cat.jpg"
     />
      
@@ -7141,7 +7259,7 @@ exports[`Storyshots 5. Components|Custom/Image Basic 1`] = `
     >
       <img
         alt="Foxy"
-        class="image"
+        class="o-image"
         src="https://orangecss.com/images/thumbnails/fox.jpg"
       />
     </a>
@@ -7156,7 +7274,7 @@ exports[`Storyshots 5. Components|Custom/Image Rounded - circle 1`] = `
   <div>
     <img
       alt="Doggo"
-      class="image image--circle"
+      class="o-image o-image--circle"
       src="https://orangecss.com/images/thumbnails/square/dog-square.jpg"
     />
      
@@ -7166,7 +7284,7 @@ exports[`Storyshots 5. Components|Custom/Image Rounded - circle 1`] = `
     >
       <img
         alt="Foxy"
-        class="image image--circle"
+        class="o-image o-image--circle"
         src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
       />
     </a>
@@ -7181,7 +7299,7 @@ exports[`Storyshots 5. Components|Custom/Image Rounded 1`] = `
   <div>
     <img
       alt="Katzee"
-      class="image image--rounded"
+      class="o-image o-image--rounded"
       src="https://orangecss.com/images/thumbnails/cat.jpg"
     />
      
@@ -7191,7 +7309,7 @@ exports[`Storyshots 5. Components|Custom/Image Rounded 1`] = `
     >
       <img
         alt="Foxy"
-        class="image image--rounded"
+        class="o-image o-image--rounded"
         src="https://orangecss.com/images/thumbnails/fox.jpg"
       />
     </a>
@@ -7210,7 +7328,7 @@ exports[`Storyshots 5. Components|Custom/Image Sizes 1`] = `
      
     <img
       alt="Katzee"
-      class="image"
+      class="o-image"
       src="https://orangecss.com/images/thumbnails/cat.jpg"
     />
      
@@ -7220,7 +7338,7 @@ exports[`Storyshots 5. Components|Custom/Image Sizes 1`] = `
      
     <img
       alt="Foxy"
-      class="image image--size-xsmall"
+      class="o-image o-image--size-xsmall"
       src="https://orangecss.com/images/thumbnails/width-60/fox-60.jpg"
     />
      
@@ -7230,7 +7348,7 @@ exports[`Storyshots 5. Components|Custom/Image Sizes 1`] = `
      
     <img
       alt="Hedgy"
-      class="image image--size-small"
+      class="o-image o-image--size-small"
       src="https://orangecss.com/images/thumbnails/width-120/hedgehog-120.jpg"
     />
      
@@ -7240,7 +7358,7 @@ exports[`Storyshots 5. Components|Custom/Image Sizes 1`] = `
      
     <img
       alt="Doggo"
-      class="image image--size-medium"
+      class="o-image o-image--size-medium"
       src="https://orangecss.com/images/thumbnails/width-240/dog-240.jpg"
     />
      
@@ -7250,7 +7368,7 @@ exports[`Storyshots 5. Components|Custom/Image Sizes 1`] = `
      
     <img
       alt="Hedgy"
-      class="image image--size-large"
+      class="o-image o-image--size-large"
       src="https://orangecss.com/images/thumbnails/width-480/hedgehog-480.jpg"
     />
   </div>
@@ -7264,7 +7382,7 @@ exports[`Storyshots 5. Components|Custom/Image Tryout 1`] = `
   <div>
     <img
       alt="Katzze"
-      class="image image---"
+      class="o-image o-image---"
       src="https://orangecss.com/images/thumbnails/cat.jpg"
     />
      
@@ -7273,7 +7391,7 @@ exports[`Storyshots 5. Components|Custom/Image Tryout 1`] = `
     >
       <img
         alt="Katzze"
-        class="image image---"
+        class="o-image o-image---"
         src="https://orangecss.com/images/thumbnails/square/dog-square.jpg"
       />
     </a>
@@ -7293,7 +7411,7 @@ exports[`Storyshots 5. Components|Custom/Image With action, in grid 1`] = `
     >
       <img
         alt="Hedgy"
-        class="image image--action"
+        class="o-image o-image--action"
         src="https://orangecss.com/images/thumbnails/hedgehog.jpg"
       />
     </div>
@@ -7303,7 +7421,7 @@ exports[`Storyshots 5. Components|Custom/Image With action, in grid 1`] = `
     >
       <img
         alt="Katzee"
-        class="image image--action"
+        class="o-image o-image--action"
         src="https://orangecss.com/images/thumbnails/cat.jpg"
       />
     </div>
@@ -7313,7 +7431,7 @@ exports[`Storyshots 5. Components|Custom/Image With action, in grid 1`] = `
     >
       <img
         alt="Doggo"
-        class="image image--action"
+        class="o-image o-image--action"
         src="https://orangecss.com/images/thumbnails/square/dog-square.jpg"
       />
     </div>
@@ -7323,7 +7441,7 @@ exports[`Storyshots 5. Components|Custom/Image With action, in grid 1`] = `
     >
       <img
         alt="Foxy"
-        class="image image--action"
+        class="o-image o-image--action"
         src="https://orangecss.com/images/thumbnails/square/fox-square.jpg"
       />
     </div>
@@ -7333,7 +7451,7 @@ exports[`Storyshots 5. Components|Custom/Image With action, in grid 1`] = `
     >
       <img
         alt="Katzee"
-        class="image image--circle image--action"
+        class="o-image o-image--circle o-image--action"
         src="https://orangecss.com/images/thumbnails/square/cat-square.jpg"
       />
     </div>
@@ -7343,7 +7461,7 @@ exports[`Storyshots 5. Components|Custom/Image With action, in grid 1`] = `
     >
       <img
         alt="Hedgy"
-        class="image image--circle image--action"
+        class="o-image o-image--circle o-image--action"
         src="https://orangecss.com/images/thumbnails/square/hedgehog-square.jpg"
       />
     </div>
@@ -7358,7 +7476,7 @@ exports[`Storyshots 5. Components|Custom/Image With shadow 1`] = `
   <div>
     <img
       alt="Katzee"
-      class="image image--shadow"
+      class="o-image o-image--shadow"
       src="https://orangecss.com/images/thumbnails/cat.jpg"
     />
      
@@ -7368,7 +7486,7 @@ exports[`Storyshots 5. Components|Custom/Image With shadow 1`] = `
     >
       <img
         alt="Foxy"
-        class="image image--shadow"
+        class="o-image o-image--shadow"
         src="https://orangecss.com/images/thumbnails/fox.jpg"
       />
     </a>
@@ -7381,11 +7499,11 @@ exports[`Storyshots 5. Components|Custom/Message Basic 1`] = `
   class="p-4"
 >
   <div
-    class="message"
+    class="o-message"
   >
      
     <div
-      class="message__body"
+      class="o-message__body"
     >
       <!---->
        
@@ -7403,7 +7521,7 @@ exports[`Storyshots 5. Components|Custom/Message Basic 1`] = `
     </div>
      
     <div
-      class="message__action"
+      class="o-message__action"
     />
   </div>
 </div>
@@ -7415,11 +7533,11 @@ exports[`Storyshots 5. Components|Custom/Message Colors 1`] = `
 >
   <div>
     <div
-      class="message"
+      class="o-message"
     >
        
       <div
-        class="message__body"
+        class="o-message__body"
       >
         <h6>
           Heading
@@ -7440,10 +7558,10 @@ exports[`Storyshots 5. Components|Custom/Message Colors 1`] = `
       </div>
        
       <div
-        class="message__action"
+        class="o-message__action"
       >
         <button
-          class="button button--primary button--small button--color-gray"
+          class="o-button o-button--primary o-button--small o-button--color-gray"
           type="button"
         >
           action 
@@ -7455,11 +7573,11 @@ exports[`Storyshots 5. Components|Custom/Message Colors 1`] = `
     <hr />
      
     <div
-      class="message message--color-secondary"
+      class="o-message o-message--color-secondary"
     >
        
       <div
-        class="message__body"
+        class="o-message__body"
       >
         <h6>
           Heading
@@ -7480,10 +7598,10 @@ exports[`Storyshots 5. Components|Custom/Message Colors 1`] = `
       </div>
        
       <div
-        class="message__action"
+        class="o-message__action"
       >
         <button
-          class="button button--primary button--small button--color-secondary"
+          class="o-button o-button--primary o-button--small o-button--color-secondary"
           type="button"
         >
           action 
@@ -7495,11 +7613,11 @@ exports[`Storyshots 5. Components|Custom/Message Colors 1`] = `
     <hr />
      
     <div
-      class="message message--color-yellow"
+      class="o-message o-message--color-yellow"
     >
        
       <div
-        class="message__body"
+        class="o-message__body"
       >
         <h6>
           Heading
@@ -7520,10 +7638,10 @@ exports[`Storyshots 5. Components|Custom/Message Colors 1`] = `
       </div>
        
       <div
-        class="message__action"
+        class="o-message__action"
       >
         <button
-          class="button button--primary button--small button--color-yellow"
+          class="o-button o-button--primary o-button--small o-button--color-yellow"
           type="button"
         >
           action 
@@ -7535,11 +7653,11 @@ exports[`Storyshots 5. Components|Custom/Message Colors 1`] = `
     <hr />
      
     <div
-      class="message message--color-green"
+      class="o-message o-message--color-green"
     >
        
       <div
-        class="message__body"
+        class="o-message__body"
       >
         <h6>
           Heading
@@ -7560,10 +7678,10 @@ exports[`Storyshots 5. Components|Custom/Message Colors 1`] = `
       </div>
        
       <div
-        class="message__action"
+        class="o-message__action"
       >
         <button
-          class="button button--primary button--small button--color-green"
+          class="o-button o-button--primary o-button--small o-button--color-green"
           type="button"
         >
           action 
@@ -7575,11 +7693,11 @@ exports[`Storyshots 5. Components|Custom/Message Colors 1`] = `
     <hr />
      
     <div
-      class="message message--color-red"
+      class="o-message o-message--color-red"
     >
        
       <div
-        class="message__body"
+        class="o-message__body"
       >
         <h6>
           Heading
@@ -7600,10 +7718,10 @@ exports[`Storyshots 5. Components|Custom/Message Colors 1`] = `
       </div>
        
       <div
-        class="message__action"
+        class="o-message__action"
       >
         <button
-          class="button button--primary button--small button--color-red"
+          class="o-button o-button--primary o-button--small o-button--color-red"
           type="button"
         >
           action 
@@ -7620,11 +7738,11 @@ exports[`Storyshots 5. Components|Custom/Message No border radius 1`] = `
   class="p-4"
 >
   <div
-    class="message message--color-secondary message--full"
+    class="o-message o-message--color-secondary o-message--full"
   >
      
     <div
-      class="message__body"
+      class="o-message__body"
     >
       <h6>
         heading
@@ -7638,7 +7756,7 @@ exports[`Storyshots 5. Components|Custom/Message No border radius 1`] = `
     </div>
      
     <div
-      class="message__action"
+      class="o-message__action"
     />
   </div>
 </div>
@@ -7649,11 +7767,11 @@ exports[`Storyshots 5. Components|Custom/Message Tryout 1`] = `
   class="p-4"
 >
   <div
-    class="message"
+    class="o-message"
   >
      
     <div
-      class="message__body"
+      class="o-message__body"
     >
       <h6>
         Heading
@@ -7671,7 +7789,7 @@ exports[`Storyshots 5. Components|Custom/Message Tryout 1`] = `
     </div>
      
     <div
-      class="message__action"
+      class="o-message__action"
     />
   </div>
 </div>
@@ -7682,10 +7800,10 @@ exports[`Storyshots 5. Components|Custom/Message With an avatar 1`] = `
   class="p-4"
 >
   <div
-    class="message message--color-secondary"
+    class="o-message o-message--color-secondary"
   >
     <div
-      class="avatar avatar--size-small avatar--circle"
+      class="o-avatar o-avatar--size-small o-avatar--circle"
     >
       <svg
         viewBox="0 0 80 80"
@@ -7700,7 +7818,7 @@ exports[`Storyshots 5. Components|Custom/Message With an avatar 1`] = `
     </div>
      
     <div
-      class="message__body"
+      class="o-message__body"
     >
       <!---->
         
@@ -7713,10 +7831,10 @@ exports[`Storyshots 5. Components|Custom/Message With an avatar 1`] = `
     </div>
      
     <div
-      class="message__action"
+      class="o-message__action"
     >
       <button
-        class="button button--primary button--small button--color-secondary"
+        class="o-button o-button--primary o-button--small o-button--color-secondary"
         type="button"
       >
         action 
@@ -7732,7 +7850,7 @@ exports[`Storyshots 5. Components|Forms/Checkbox Basic 1`] = `
   class="p-4"
 >
   <div
-    class="checkbox"
+    class="o-checkbox"
   >
     <input
       id="checkbox_basic"
@@ -7751,19 +7869,19 @@ exports[`Storyshots 5. Components|Forms/Checkbox Group 1`] = `
   class="p-4"
 >
   <div
-    class="form__item"
+    class="o-form__item"
   >
     <div
-      class="checkbox-group"
+      class="o-checkbox-group"
     >
       <div
-        class="checkbox-group__label"
+        class="o-checkbox-group__label"
       >
         Group label
       </div>
        
       <div
-        class="checkbox"
+        class="o-checkbox"
       >
         <input
           id="checkbox_basic_1"
@@ -7776,7 +7894,7 @@ exports[`Storyshots 5. Components|Forms/Checkbox Group 1`] = `
       </div>
        
       <div
-        class="checkbox"
+        class="o-checkbox"
       >
         <input
           id="checkbox_basic_2"
@@ -7789,7 +7907,7 @@ exports[`Storyshots 5. Components|Forms/Checkbox Group 1`] = `
       </div>
        
       <div
-        class="checkbox"
+        class="o-checkbox"
       >
         <input
           id="checkbox_basic_3"
@@ -7802,7 +7920,7 @@ exports[`Storyshots 5. Components|Forms/Checkbox Group 1`] = `
       </div>
        
       <div
-        class="checkbox is-disabled"
+        class="o-checkbox is-disabled"
       >
         <input
           disabled="disabled"
@@ -7817,7 +7935,7 @@ exports[`Storyshots 5. Components|Forms/Checkbox Group 1`] = `
     </div>
      
     <div
-      class="form__description"
+      class="o-form__description"
     >
       Description text
     </div>
@@ -7830,7 +7948,7 @@ exports[`Storyshots 5. Components|Forms/Checkbox Tryout - Basic 1`] = `
   class="p-4"
 >
   <div
-    class="checkbox"
+    class="o-checkbox"
   >
     <input
       id="checkbox_basic_tryout"
@@ -7849,19 +7967,19 @@ exports[`Storyshots 5. Components|Forms/Checkbox Tryout - Group 1`] = `
   class="p-4"
 >
   <div
-    class="form__item"
+    class="o-form__item"
   >
     <div
-      class="checkbox-group"
+      class="o-checkbox-group"
     >
       <div
-        class="checkbox-group__label"
+        class="o-checkbox-group__label"
       >
         Group label
       </div>
        
       <div
-        class="checkbox"
+        class="o-checkbox"
       >
         <input
           id="checkbox_basic_tryout_1"
@@ -7874,7 +7992,7 @@ exports[`Storyshots 5. Components|Forms/Checkbox Tryout - Group 1`] = `
       </div>
        
       <div
-        class="checkbox"
+        class="o-checkbox"
       >
         <input
           id="checkbox_basic_tryout_2"
@@ -7887,7 +8005,7 @@ exports[`Storyshots 5. Components|Forms/Checkbox Tryout - Group 1`] = `
       </div>
        
       <div
-        class="checkbox is-checked"
+        class="o-checkbox is-checked"
       >
         <input
           id="checkbox_basic_tryout_3"
@@ -7900,7 +8018,7 @@ exports[`Storyshots 5. Components|Forms/Checkbox Tryout - Group 1`] = `
       </div>
        
       <div
-        class="checkbox is-checked"
+        class="o-checkbox is-checked"
       >
         <input
           id="checkbox_basic_tryout_4"
@@ -7914,7 +8032,7 @@ exports[`Storyshots 5. Components|Forms/Checkbox Tryout - Group 1`] = `
     </div>
      
     <div
-      class="form__description"
+      class="o-form__description"
     >
       Description text
     </div>
@@ -7933,25 +8051,25 @@ exports[`Storyshots 5. Components|Forms/Dropdown Basic with strings 1`] = `
       class="form__item"
     >
       <div
-        class="form-dropdown"
+        class="o-form-dropdown"
         id="form_dropdown_basic"
       >
         <label
-          class="form-dropdown__label"
+          class="o-form-dropdown__label"
           for="form_dropdown_basic"
         >
           Dropdown label
         </label>
          
         <input
-          class="form-dropdown__input"
+          class="o-form-dropdown__input"
           id="form_dropdown_basic"
           name="form_dropdown_basic"
           type="text"
         />
          
         <div
-          class="form-dropdown__text"
+          class="o-form-dropdown__text"
         >
           
       placeholder
@@ -7959,7 +8077,7 @@ exports[`Storyshots 5. Components|Forms/Dropdown Basic with strings 1`] = `
         </div>
          
         <div
-          class="form-dropdown__icon"
+          class="o-form-dropdown__icon"
         >
           <svg
             viewBox="0 0 24 24"
@@ -7981,10 +8099,10 @@ exports[`Storyshots 5. Components|Forms/Dropdown Basic with strings 1`] = `
         </div>
          
         <div
-          class="form-dropdown__content"
+          class="o-form-dropdown__content"
         >
           <ul
-            class="form-dropdown__menu"
+            class="o-form-dropdown__menu"
           >
             <li
               class=""
@@ -8021,7 +8139,7 @@ exports[`Storyshots 5. Components|Forms/Dropdown Basic with strings 1`] = `
       </div>
        
       <div
-        class="form__description"
+        class="o-form__description"
       >
         Description of the dropdown field
       </div>
@@ -8041,25 +8159,25 @@ exports[`Storyshots 5. Components|Forms/Dropdown Large with objects 1`] = `
       class="form__item"
     >
       <div
-        class="form-dropdown"
+        class="o-form-dropdown"
         id="form_dropdown_basic"
       >
         <label
-          class="form-dropdown__label"
+          class="o-form-dropdown__label"
           for="form_dropdown_basic"
         >
           Dropdown label
         </label>
          
         <input
-          class="form-dropdown__input"
+          class="o-form-dropdown__input"
           id="form_dropdown_basic"
           name="form_dropdown_basic"
           type="text"
         />
          
         <div
-          class="form-dropdown__text"
+          class="o-form-dropdown__text"
         >
           
       placeholder
@@ -8067,7 +8185,7 @@ exports[`Storyshots 5. Components|Forms/Dropdown Large with objects 1`] = `
         </div>
          
         <div
-          class="form-dropdown__icon"
+          class="o-form-dropdown__icon"
         >
           <svg
             viewBox="0 0 24 24"
@@ -8089,10 +8207,10 @@ exports[`Storyshots 5. Components|Forms/Dropdown Large with objects 1`] = `
         </div>
          
         <div
-          class="form-dropdown__content"
+          class="o-form-dropdown__content"
         >
           <ul
-            class="form-dropdown__menu"
+            class="o-form-dropdown__menu"
           >
             <li
               class=""
@@ -8129,7 +8247,7 @@ exports[`Storyshots 5. Components|Forms/Dropdown Large with objects 1`] = `
       </div>
        
       <div
-        class="form__description"
+        class="o-form__description"
       >
         Description of the dropdown field
       </div>
@@ -8150,25 +8268,25 @@ exports[`Storyshots 5. Components|Forms/Dropdown Tryout 1`] = `
         class="form__item"
       >
         <div
-          class="form-dropdown"
+          class="o-form-dropdown"
           id="form_dropdown_tryout"
         >
           <label
-            class="form-dropdown__label"
+            class="o-form-dropdown__label"
             for="form_dropdown_tryout"
           >
             Label
           </label>
            
           <input
-            class="form-dropdown__input"
+            class="o-form-dropdown__input"
             id="form_dropdown_tryout"
             name="form_dropdown_tryout"
             type="text"
           />
            
           <div
-            class="form-dropdown__text"
+            class="o-form-dropdown__text"
           >
             
       Placeholder
@@ -8176,7 +8294,7 @@ exports[`Storyshots 5. Components|Forms/Dropdown Tryout 1`] = `
           </div>
            
           <div
-            class="form-dropdown__icon"
+            class="o-form-dropdown__icon"
           >
             <svg
               viewBox="0 0 24 24"
@@ -8198,10 +8316,10 @@ exports[`Storyshots 5. Components|Forms/Dropdown Tryout 1`] = `
           </div>
            
           <div
-            class="form-dropdown__content"
+            class="o-form-dropdown__content"
           >
             <ul
-              class="form-dropdown__menu"
+              class="o-form-dropdown__menu"
             >
               <li
                 class=""
@@ -8238,7 +8356,7 @@ exports[`Storyshots 5. Components|Forms/Dropdown Tryout 1`] = `
         </div>
          
         <div
-          class="form__description"
+          class="o-form__description"
         >
           Description of the dropdown field
         </div>
@@ -8264,23 +8382,23 @@ exports[`Storyshots 5. Components|Forms/Input Basic 1`] = `
     class="form"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <!---->
        
       <div
-        class="form__input-wrapper"
+        class="o-form__input-wrapper"
       >
         <input
           autocomplete="off"
-          class="form__input"
+          class="o-form__input"
           id="form_basic"
           name="form_basic"
           type="text"
         />
          
         <label
-          class="form__label"
+          class="o-form__label"
           for="form_basic"
         >
           Label
@@ -8290,7 +8408,7 @@ exports[`Storyshots 5. Components|Forms/Input Basic 1`] = `
       <!---->
        
       <p
-        class="form__description"
+        class="o-form__description"
       >
         Description text
       </p>
@@ -8307,23 +8425,23 @@ exports[`Storyshots 5. Components|Forms/Input Large - Basic 1`] = `
     class="form form--large"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <!---->
        
       <div
-        class="form__input-wrapper"
+        class="o-form__input-wrapper"
       >
         <input
           autocomplete="off"
-          class="form__input"
+          class="o-form__input"
           id="form_basic"
           name="form_basic"
           type="text"
         />
          
         <label
-          class="form__label"
+          class="o-form__label"
           for="form_basic"
         >
           Large
@@ -8333,7 +8451,7 @@ exports[`Storyshots 5. Components|Forms/Input Large - Basic 1`] = `
       <!---->
        
       <p
-        class="form__description"
+        class="o-form__description"
       >
         Description text
       </p>
@@ -8350,16 +8468,16 @@ exports[`Storyshots 5. Components|Forms/Input Large - Read-only 1`] = `
     class="form form--large"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <!---->
        
       <div
-        class="form__input-wrapper"
+        class="o-form__input-wrapper"
       >
         <input
           autocomplete="off"
-          class="form__input has-value"
+          class="o-form__input has-value"
           id="form_basic"
           name="form_basic"
           readonly="readonly"
@@ -8367,7 +8485,7 @@ exports[`Storyshots 5. Components|Forms/Input Large - Read-only 1`] = `
         />
          
         <label
-          class="form__label"
+          class="o-form__label"
           for="form_basic"
         >
           Label
@@ -8377,7 +8495,7 @@ exports[`Storyshots 5. Components|Forms/Input Large - Read-only 1`] = `
       <!---->
        
       <p
-        class="form__description"
+        class="o-form__description"
       >
         Description text
       </p>
@@ -8394,14 +8512,14 @@ exports[`Storyshots 5. Components|Forms/Input Large - Read-only with action/extr
     class="form form--large"
   >
     <div
-      class="form__item has-extras has-action"
+      class="o-form__item has-extras has-action"
     >
       <div
-        class="form__action"
+        class="o-form__action"
       >
         <div>
           <button
-            class="button button--primary button--small"
+            class="o-button o-button--primary o-button--small"
             type="button"
           >
             copy to clipboard 
@@ -8411,11 +8529,11 @@ exports[`Storyshots 5. Components|Forms/Input Large - Read-only with action/extr
       </div>
        
       <div
-        class="form__input-wrapper"
+        class="o-form__input-wrapper"
       >
         <input
           autocomplete="off"
-          class="form__input has-value"
+          class="o-form__input has-value"
           id="form_basic"
           name="form_basic"
           readonly="readonly"
@@ -8423,7 +8541,7 @@ exports[`Storyshots 5. Components|Forms/Input Large - Read-only with action/extr
         />
          
         <label
-          class="form__label"
+          class="o-form__label"
           for="form_basic"
         >
           Your phone number
@@ -8433,23 +8551,23 @@ exports[`Storyshots 5. Components|Forms/Input Large - Read-only with action/extr
       <!---->
        
       <p
-        class="form__description"
+        class="o-form__description"
       >
         To change your API key please contact support
       </p>
     </div>
      
     <div
-      class="form__item has-extras has-action"
+      class="o-form__item has-extras has-action"
     >
       <!---->
        
       <div
-        class="form__input-wrapper"
+        class="o-form__input-wrapper"
       >
         <input
           autocomplete="off"
-          class="form__input has-value"
+          class="o-form__input has-value"
           id="form_basic_2"
           name="form_basic_2"
           readonly="readonly"
@@ -8457,7 +8575,7 @@ exports[`Storyshots 5. Components|Forms/Input Large - Read-only with action/extr
         />
          
         <label
-          class="form__label"
+          class="o-form__label"
           for="form_basic_2"
         >
           Your API key
@@ -8465,11 +8583,11 @@ exports[`Storyshots 5. Components|Forms/Input Large - Read-only with action/extr
       </div>
        
       <div
-        class="form__action"
+        class="o-form__action"
       >
         <div>
           <button
-            class="button button--primary button--small"
+            class="o-button o-button--primary o-button--small"
             type="button"
           >
             copy to clipboard 
@@ -8479,7 +8597,7 @@ exports[`Storyshots 5. Components|Forms/Input Large - Read-only with action/extr
       </div>
        
       <p
-        class="form__description"
+        class="o-form__description"
       >
         To change your API key please contact support
       </p>
@@ -8496,10 +8614,10 @@ exports[`Storyshots 5. Components|Forms/Input Large - With action/extras 1`] = `
     class="form form--large"
   >
     <div
-      class="form__item has-extras has-action"
+      class="o-form__item has-extras has-action"
     >
       <div
-        class="form__action"
+        class="o-form__action"
       >
         <div>
           
@@ -8509,18 +8627,18 @@ exports[`Storyshots 5. Components|Forms/Input Large - With action/extras 1`] = `
       </div>
        
       <div
-        class="form__input-wrapper"
+        class="o-form__input-wrapper"
       >
         <input
           autocomplete="off"
-          class="form__input"
+          class="o-form__input"
           id="form_basic"
           name="form_basic"
           type="text"
         />
          
         <label
-          class="form__label"
+          class="o-form__label"
           for="form_basic"
         >
           Your phone number
@@ -8530,30 +8648,30 @@ exports[`Storyshots 5. Components|Forms/Input Large - With action/extras 1`] = `
       <!---->
        
       <p
-        class="form__description"
+        class="o-form__description"
       >
         Description text
       </p>
     </div>
      
     <div
-      class="form__item has-extras has-action"
+      class="o-form__item has-extras has-action"
     >
       <!---->
        
       <div
-        class="form__input-wrapper"
+        class="o-form__input-wrapper"
       >
         <input
           autocomplete="off"
-          class="form__input"
+          class="o-form__input"
           id="form_basic_2"
           name="form_basic_2"
           type="text"
         />
          
         <label
-          class="form__label"
+          class="o-form__label"
           for="form_basic_2"
         >
           https://example.com
@@ -8561,7 +8679,7 @@ exports[`Storyshots 5. Components|Forms/Input Large - With action/extras 1`] = `
       </div>
        
       <div
-        class="form__action"
+        class="o-form__action"
       >
         <div>
           
@@ -8571,7 +8689,7 @@ exports[`Storyshots 5. Components|Forms/Input Large - With action/extras 1`] = `
       </div>
        
       <p
-        class="form__description"
+        class="o-form__description"
       >
         Description text
       </p>
@@ -8588,16 +8706,16 @@ exports[`Storyshots 5. Components|Forms/Input Read-only 1`] = `
     class="form"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <!---->
        
       <div
-        class="form__input-wrapper"
+        class="o-form__input-wrapper"
       >
         <input
           autocomplete="off"
-          class="form__input has-value"
+          class="o-form__input has-value"
           id="form_basic"
           name="form_basic"
           readonly="readonly"
@@ -8605,7 +8723,7 @@ exports[`Storyshots 5. Components|Forms/Input Read-only 1`] = `
         />
          
         <label
-          class="form__label"
+          class="o-form__label"
           for="form_basic"
         >
           Label
@@ -8615,7 +8733,7 @@ exports[`Storyshots 5. Components|Forms/Input Read-only 1`] = `
       <!---->
        
       <p
-        class="form__description"
+        class="o-form__description"
       >
         Description text
       </p>
@@ -8632,14 +8750,14 @@ exports[`Storyshots 5. Components|Forms/Input Read-only with action/extras 1`] =
     class="form"
   >
     <div
-      class="form__item has-extras has-action"
+      class="o-form__item has-extras has-action"
     >
       <div
-        class="form__action"
+        class="o-form__action"
       >
         <div>
           <button
-            class="button button--primary button--small"
+            class="o-button o-button--primary o-button--small"
             type="button"
           >
             copy to clipboard 
@@ -8649,11 +8767,11 @@ exports[`Storyshots 5. Components|Forms/Input Read-only with action/extras 1`] =
       </div>
        
       <div
-        class="form__input-wrapper"
+        class="o-form__input-wrapper"
       >
         <input
           autocomplete="off"
-          class="form__input has-value"
+          class="o-form__input has-value"
           id="form_basic"
           name="form_basic"
           readonly="readonly"
@@ -8661,7 +8779,7 @@ exports[`Storyshots 5. Components|Forms/Input Read-only with action/extras 1`] =
         />
          
         <label
-          class="form__label"
+          class="o-form__label"
           for="form_basic"
         >
           Your phone number
@@ -8671,23 +8789,23 @@ exports[`Storyshots 5. Components|Forms/Input Read-only with action/extras 1`] =
       <!---->
        
       <p
-        class="form__description"
+        class="o-form__description"
       >
         To change your API key please contact support
       </p>
     </div>
      
     <div
-      class="form__item has-extras has-action"
+      class="o-form__item has-extras has-action"
     >
       <!---->
        
       <div
-        class="form__input-wrapper"
+        class="o-form__input-wrapper"
       >
         <input
           autocomplete="off"
-          class="form__input has-value"
+          class="o-form__input has-value"
           id="form_basic_2"
           name="form_basic_2"
           readonly="readonly"
@@ -8695,7 +8813,7 @@ exports[`Storyshots 5. Components|Forms/Input Read-only with action/extras 1`] =
         />
          
         <label
-          class="form__label"
+          class="o-form__label"
           for="form_basic_2"
         >
           Your API key
@@ -8703,11 +8821,11 @@ exports[`Storyshots 5. Components|Forms/Input Read-only with action/extras 1`] =
       </div>
        
       <div
-        class="form__action"
+        class="o-form__action"
       >
         <div>
           <button
-            class="button button--primary button--small"
+            class="o-button o-button--primary o-button--small"
             type="button"
           >
             copy to clipboard 
@@ -8717,7 +8835,7 @@ exports[`Storyshots 5. Components|Forms/Input Read-only with action/extras 1`] =
       </div>
        
       <p
-        class="form__description"
+        class="o-form__description"
       >
         To change your API key please contact support
       </p>
@@ -8734,14 +8852,14 @@ exports[`Storyshots 5. Components|Forms/Input Tryout 1`] = `
     class="form"
   >
     <div
-      class="form__item has-extras has-action"
+      class="o-form__item has-extras has-action"
     >
       <div
-        class="form__action"
+        class="o-form__action"
       >
         <div>
           <button
-            class="button button--primary button--small"
+            class="o-button o-button--primary o-button--small"
             type="button"
           >
             copy to clipboard 
@@ -8751,18 +8869,18 @@ exports[`Storyshots 5. Components|Forms/Input Tryout 1`] = `
       </div>
        
       <div
-        class="form__input-wrapper"
+        class="o-form__input-wrapper"
       >
         <input
           autocomplete="off"
-          class="form__input"
+          class="o-form__input"
           id="form_basic"
           name="form_basic"
           type="text"
         />
          
         <label
-          class="form__label"
+          class="o-form__label"
           for="form_basic"
         >
           Label
@@ -8772,7 +8890,7 @@ exports[`Storyshots 5. Components|Forms/Input Tryout 1`] = `
       <!---->
        
       <p
-        class="form__description"
+        class="o-form__description"
       >
         Description text
       </p>
@@ -8789,10 +8907,10 @@ exports[`Storyshots 5. Components|Forms/Input With action/extras 1`] = `
     class="form"
   >
     <div
-      class="form__item has-extras has-action"
+      class="o-form__item has-extras has-action"
     >
       <div
-        class="form__action"
+        class="o-form__action"
       >
         <div>
           
@@ -8802,18 +8920,18 @@ exports[`Storyshots 5. Components|Forms/Input With action/extras 1`] = `
       </div>
        
       <div
-        class="form__input-wrapper"
+        class="o-form__input-wrapper"
       >
         <input
           autocomplete="off"
-          class="form__input"
+          class="o-form__input"
           id="form_basic"
           name="form_basic"
           type="text"
         />
          
         <label
-          class="form__label"
+          class="o-form__label"
           for="form_basic"
         >
           Your phone number
@@ -8823,30 +8941,30 @@ exports[`Storyshots 5. Components|Forms/Input With action/extras 1`] = `
       <!---->
        
       <p
-        class="form__description"
+        class="o-form__description"
       >
         Description text
       </p>
     </div>
      
     <div
-      class="form__item has-extras has-action"
+      class="o-form__item has-extras has-action"
     >
       <!---->
        
       <div
-        class="form__input-wrapper"
+        class="o-form__input-wrapper"
       >
         <input
           autocomplete="off"
-          class="form__input"
+          class="o-form__input"
           id="form_basic_2"
           name="form_basic_2"
           type="text"
         />
          
         <label
-          class="form__label"
+          class="o-form__label"
           for="form_basic_2"
         >
           https://example.com
@@ -8854,7 +8972,7 @@ exports[`Storyshots 5. Components|Forms/Input With action/extras 1`] = `
       </div>
        
       <div
-        class="form__action"
+        class="o-form__action"
       >
         <div>
           
@@ -8864,7 +8982,7 @@ exports[`Storyshots 5. Components|Forms/Input With action/extras 1`] = `
       </div>
        
       <p
-        class="form__description"
+        class="o-form__description"
       >
         Description text
       </p>
@@ -8878,7 +8996,7 @@ exports[`Storyshots 5. Components|Forms/Radio Basic 1`] = `
   class="p-4"
 >
   <div
-    class="radio"
+    class="o-radio"
   >
     <input
       id="radio_basic"
@@ -8901,19 +9019,19 @@ exports[`Storyshots 5. Components|Forms/Radio Group 1`] = `
   class="p-4"
 >
   <div
-    class="form__item"
+    class="o-form__item"
   >
     <div
-      class="radio-group"
+      class="o-radio-group"
     >
       <div
-        class="radio-group__label"
+        class="o-radio-group__label"
       >
         Group label
       </div>
        
       <div
-        class="radio"
+        class="o-radio"
       >
         <input
           id="radio_basic_1"
@@ -8930,7 +9048,7 @@ exports[`Storyshots 5. Components|Forms/Radio Group 1`] = `
       </div>
        
       <div
-        class="radio"
+        class="o-radio"
       >
         <input
           id="radio_basic_2"
@@ -8947,7 +9065,7 @@ exports[`Storyshots 5. Components|Forms/Radio Group 1`] = `
       </div>
        
       <div
-        class="radio"
+        class="o-radio"
       >
         <input
           id="radio_basic_3"
@@ -8964,7 +9082,7 @@ exports[`Storyshots 5. Components|Forms/Radio Group 1`] = `
       </div>
        
       <div
-        class="radio is-disabled"
+        class="o-radio is-disabled"
       >
         <input
           disabled="disabled"
@@ -8983,7 +9101,7 @@ exports[`Storyshots 5. Components|Forms/Radio Group 1`] = `
     </div>
      
     <div
-      class="form__description"
+      class="o-form__description"
     >
       Description text
     </div>
@@ -8996,7 +9114,7 @@ exports[`Storyshots 5. Components|Forms/Radio Tryout - Basic 1`] = `
   class="p-4"
 >
   <div
-    class="radio"
+    class="o-radio"
   >
     <input
       id="radio_basic_tryout"
@@ -9019,19 +9137,19 @@ exports[`Storyshots 5. Components|Forms/Radio Tryout - Group 1`] = `
   class="p-4"
 >
   <div
-    class="form__item"
+    class="o-form__item"
   >
     <div
-      class="radio-group"
+      class="o-radio-group"
     >
       <div
-        class="radio-group__label"
+        class="o-radio-group__label"
       >
         Group label
       </div>
        
       <div
-        class="radio"
+        class="o-radio"
       >
         <input
           id="radio_basic_tryout_1"
@@ -9048,7 +9166,7 @@ exports[`Storyshots 5. Components|Forms/Radio Tryout - Group 1`] = `
       </div>
        
       <div
-        class="radio"
+        class="o-radio"
       >
         <input
           id="radio_basic_tryout_2"
@@ -9065,7 +9183,7 @@ exports[`Storyshots 5. Components|Forms/Radio Tryout - Group 1`] = `
       </div>
        
       <div
-        class="radio"
+        class="o-radio"
       >
         <input
           id="radio_basic_tryout_3"
@@ -9082,7 +9200,7 @@ exports[`Storyshots 5. Components|Forms/Radio Tryout - Group 1`] = `
       </div>
        
       <div
-        class="radio"
+        class="o-radio"
       >
         <input
           id="radio_basic_tryout_4"
@@ -9100,7 +9218,7 @@ exports[`Storyshots 5. Components|Forms/Radio Tryout - Group 1`] = `
     </div>
      
     <div
-      class="form__description"
+      class="o-form__description"
     >
       Description text
     </div>
@@ -9116,24 +9234,24 @@ exports[`Storyshots 5. Components|Forms/Textarea Auto expand 1`] = `
     class="form"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <textarea
-        class="form__textarea"
+        class="o-form__textarea"
         id="form_basic"
         name="form_basic"
         rows="3"
       />
        
       <label
-        class="form__label"
+        class="o-form__label"
         for="form_basic"
       >
         Label
       </label>
        
       <div
-        class="form__description"
+        class="o-form__description"
       >
         Description text
       </div>
@@ -9150,10 +9268,10 @@ exports[`Storyshots 5. Components|Forms/Textarea Disabled 1`] = `
     class="form"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <textarea
-        class="form__textarea"
+        class="o-form__textarea"
         disabled="disabled"
         id="form_basic"
         name="form_basic"
@@ -9161,14 +9279,14 @@ exports[`Storyshots 5. Components|Forms/Textarea Disabled 1`] = `
       />
        
       <label
-        class="form__label"
+        class="o-form__label"
         for="form_basic"
       >
         Label
       </label>
        
       <div
-        class="form__description"
+        class="o-form__description"
       >
         Description text
       </div>
@@ -9185,24 +9303,24 @@ exports[`Storyshots 5. Components|Forms/Textarea Large - Basic 1`] = `
     class="form form--large"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <textarea
-        class="form__textarea"
+        class="o-form__textarea"
         id="form_basic"
         name="form_basic"
         rows="3"
       />
        
       <label
-        class="form__label"
+        class="o-form__label"
         for="form_basic"
       >
         Label
       </label>
        
       <div
-        class="form__description"
+        class="o-form__description"
       >
         Description text
       </div>
@@ -9219,10 +9337,10 @@ exports[`Storyshots 5. Components|Forms/Textarea Large - Read-only 1`] = `
     class="form form--large"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <textarea
-        class="form__textarea has-value"
+        class="o-form__textarea has-value"
         id="form_basic"
         name="form_basic"
         readonly="readonly"
@@ -9230,14 +9348,14 @@ exports[`Storyshots 5. Components|Forms/Textarea Large - Read-only 1`] = `
       />
        
       <label
-        class="form__label"
+        class="o-form__label"
         for="form_basic"
       >
         Label
       </label>
        
       <div
-        class="form__description"
+        class="o-form__description"
       >
         Description text
       </div>
@@ -9254,10 +9372,10 @@ exports[`Storyshots 5. Components|Forms/Textarea Read-only with rows 1`] = `
     class="form"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <textarea
-        class="form__textarea has-value"
+        class="o-form__textarea has-value"
         id="form_basic"
         name="form_basic"
         readonly="readonly"
@@ -9265,14 +9383,14 @@ exports[`Storyshots 5. Components|Forms/Textarea Read-only with rows 1`] = `
       />
        
       <label
-        class="form__label"
+        class="o-form__label"
         for="form_basic"
       >
         Label
       </label>
        
       <div
-        class="form__description"
+        class="o-form__description"
       >
         Description text
       </div>
@@ -9289,24 +9407,24 @@ exports[`Storyshots 5. Components|Forms/Textarea Tryout 1`] = `
     class="form"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <textarea
-        class="form__textarea"
+        class="o-form__textarea"
         id="form_basic"
         name="form_basic"
         rows="3"
       />
        
       <label
-        class="form__label"
+        class="o-form__label"
         for="form_basic"
       >
         Label
       </label>
        
       <div
-        class="form__description"
+        class="o-form__description"
       >
         Description text
       </div>
@@ -9323,22 +9441,22 @@ exports[`Storyshots 5. Components|Forms/Toggle Basic 1`] = `
     class="form"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
-        class="toggle"
+        class="o-toggle"
       >
         <div
-          class="toggle__button"
+          class="o-toggle__button"
         >
           <input
-            class="toggle__input"
+            class="o-toggle__input"
             id="toggle_tryout"
             type="checkbox"
           />
            
           <label
-            class="toggle__label"
+            class="o-toggle__label"
           >
             <span>
               
@@ -9363,22 +9481,22 @@ exports[`Storyshots 5. Components|Forms/Toggle Colors 1`] = `
     class="form"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
-        class="toggle toggle--color-primary is-checked"
+        class="o-toggle o-toggle--color-primary is-checked"
       >
         <div
-          class="toggle__button"
+          class="o-toggle__button"
         >
           <input
-            class="toggle__input"
+            class="o-toggle__input"
             id="toggle_tryout"
             type="checkbox"
           />
            
           <label
-            class="toggle__label"
+            class="o-toggle__label"
           >
             <span>
               
@@ -9392,22 +9510,22 @@ exports[`Storyshots 5. Components|Forms/Toggle Colors 1`] = `
       <!---->
     </div>
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
-        class="toggle toggle--color-secondary is-checked"
+        class="o-toggle o-toggle--color-secondary is-checked"
       >
         <div
-          class="toggle__button"
+          class="o-toggle__button"
         >
           <input
-            class="toggle__input"
+            class="o-toggle__input"
             id="toggle_tryout"
             type="checkbox"
           />
            
           <label
-            class="toggle__label"
+            class="o-toggle__label"
           >
             <span>
               
@@ -9421,22 +9539,22 @@ exports[`Storyshots 5. Components|Forms/Toggle Colors 1`] = `
       <!---->
     </div>
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
-        class="toggle toggle--color-red is-checked"
+        class="o-toggle o-toggle--color-red is-checked"
       >
         <div
-          class="toggle__button"
+          class="o-toggle__button"
         >
           <input
-            class="toggle__input"
+            class="o-toggle__input"
             id="toggle_tryout"
             type="checkbox"
           />
            
           <label
-            class="toggle__label"
+            class="o-toggle__label"
           >
             <span>
               
@@ -9450,22 +9568,22 @@ exports[`Storyshots 5. Components|Forms/Toggle Colors 1`] = `
       <!---->
     </div>
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
-        class="toggle toggle--color-orange is-checked"
+        class="o-toggle o-toggle--color-orange is-checked"
       >
         <div
-          class="toggle__button"
+          class="o-toggle__button"
         >
           <input
-            class="toggle__input"
+            class="o-toggle__input"
             id="toggle_tryout"
             type="checkbox"
           />
            
           <label
-            class="toggle__label"
+            class="o-toggle__label"
           >
             <span>
               
@@ -9479,22 +9597,22 @@ exports[`Storyshots 5. Components|Forms/Toggle Colors 1`] = `
       <!---->
     </div>
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
-        class="toggle toggle--color-yellow is-checked"
+        class="o-toggle o-toggle--color-yellow is-checked"
       >
         <div
-          class="toggle__button"
+          class="o-toggle__button"
         >
           <input
-            class="toggle__input"
+            class="o-toggle__input"
             id="toggle_tryout"
             type="checkbox"
           />
            
           <label
-            class="toggle__label"
+            class="o-toggle__label"
           >
             <span>
               
@@ -9508,22 +9626,22 @@ exports[`Storyshots 5. Components|Forms/Toggle Colors 1`] = `
       <!---->
     </div>
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
-        class="toggle toggle--color-green is-checked"
+        class="o-toggle o-toggle--color-green is-checked"
       >
         <div
-          class="toggle__button"
+          class="o-toggle__button"
         >
           <input
-            class="toggle__input"
+            class="o-toggle__input"
             id="toggle_tryout"
             type="checkbox"
           />
            
           <label
-            class="toggle__label"
+            class="o-toggle__label"
           >
             <span>
               
@@ -9537,22 +9655,22 @@ exports[`Storyshots 5. Components|Forms/Toggle Colors 1`] = `
       <!---->
     </div>
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
-        class="toggle toggle--color-indigo is-checked"
+        class="o-toggle o-toggle--color-indigo is-checked"
       >
         <div
-          class="toggle__button"
+          class="o-toggle__button"
         >
           <input
-            class="toggle__input"
+            class="o-toggle__input"
             id="toggle_tryout"
             type="checkbox"
           />
            
           <label
-            class="toggle__label"
+            class="o-toggle__label"
           >
             <span>
               
@@ -9566,22 +9684,22 @@ exports[`Storyshots 5. Components|Forms/Toggle Colors 1`] = `
       <!---->
     </div>
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
-        class="toggle toggle--color-blue is-checked"
+        class="o-toggle o-toggle--color-blue is-checked"
       >
         <div
-          class="toggle__button"
+          class="o-toggle__button"
         >
           <input
-            class="toggle__input"
+            class="o-toggle__input"
             id="toggle_tryout"
             type="checkbox"
           />
            
           <label
-            class="toggle__label"
+            class="o-toggle__label"
           >
             <span>
               
@@ -9595,22 +9713,22 @@ exports[`Storyshots 5. Components|Forms/Toggle Colors 1`] = `
       <!---->
     </div>
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
-        class="toggle toggle--color-violet is-checked"
+        class="o-toggle o-toggle--color-violet is-checked"
       >
         <div
-          class="toggle__button"
+          class="o-toggle__button"
         >
           <input
-            class="toggle__input"
+            class="o-toggle__input"
             id="toggle_tryout"
             type="checkbox"
           />
            
           <label
-            class="toggle__label"
+            class="o-toggle__label"
           >
             <span>
               
@@ -9624,22 +9742,22 @@ exports[`Storyshots 5. Components|Forms/Toggle Colors 1`] = `
       <!---->
     </div>
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
-        class="toggle toggle--color-black is-checked"
+        class="o-toggle o-toggle--color-black is-checked"
       >
         <div
-          class="toggle__button"
+          class="o-toggle__button"
         >
           <input
-            class="toggle__input"
+            class="o-toggle__input"
             id="toggle_tryout"
             type="checkbox"
           />
            
           <label
-            class="toggle__label"
+            class="o-toggle__label"
           >
             <span>
               
@@ -9653,22 +9771,22 @@ exports[`Storyshots 5. Components|Forms/Toggle Colors 1`] = `
       <!---->
     </div>
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
-        class="toggle toggle--color-gray is-checked"
+        class="o-toggle o-toggle--color-gray is-checked"
       >
         <div
-          class="toggle__button"
+          class="o-toggle__button"
         >
           <input
-            class="toggle__input"
+            class="o-toggle__input"
             id="toggle_tryout"
             type="checkbox"
           />
            
           <label
-            class="toggle__label"
+            class="o-toggle__label"
           >
             <span>
               
@@ -9693,22 +9811,22 @@ exports[`Storyshots 5. Components|Forms/Toggle Custom value names 1`] = `
     class="form"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
-        class="toggle toggle--label toggle--large"
+        class="o-toggle o-toggle--label o-toggle--large"
       >
         <div
-          class="toggle__button"
+          class="o-toggle__button"
         >
           <input
-            class="toggle__input"
+            class="o-toggle__input"
             id="toggle_tryout"
             type="checkbox"
           />
            
           <label
-            class="toggle__label"
+            class="o-toggle__label"
           >
             <!---->
           </label>
@@ -9716,13 +9834,13 @@ exports[`Storyshots 5. Components|Forms/Toggle Custom value names 1`] = `
          
         <div>
           <label
-            class="toggle__text"
+            class="o-toggle__text"
           >
             Custom value
           </label>
            
           <div
-            class="toggle__value toggle__value--disabled"
+            class="o-toggle__value o-toggle__value--disabled"
           >
             
         Custom Disabled Value Text
@@ -9745,22 +9863,22 @@ exports[`Storyshots 5. Components|Forms/Toggle Large 1`] = `
     class="form"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
-        class="toggle toggle--label toggle--large"
+        class="o-toggle o-toggle--label o-toggle--large"
       >
         <div
-          class="toggle__button"
+          class="o-toggle__button"
         >
           <input
-            class="toggle__input"
+            class="o-toggle__input"
             id="toggle_tryout"
             type="checkbox"
           />
            
           <label
-            class="toggle__label"
+            class="o-toggle__label"
           >
             <!---->
           </label>
@@ -9768,13 +9886,13 @@ exports[`Storyshots 5. Components|Forms/Toggle Large 1`] = `
          
         <div>
           <label
-            class="toggle__text"
+            class="o-toggle__text"
           >
             Label
           </label>
            
           <div
-            class="toggle__value toggle__value--disabled"
+            class="o-toggle__value o-toggle__value--disabled"
           >
             
         Disabled
@@ -9797,22 +9915,22 @@ exports[`Storyshots 5. Components|Forms/Toggle Tryout 1`] = `
     class="form"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
-        class="toggle toggle--label toggle--color-secondary"
+        class="o-toggle o-toggle--label o-toggle--color-secondary"
       >
         <div
-          class="toggle__button"
+          class="o-toggle__button"
         >
           <input
-            class="toggle__input"
+            class="o-toggle__input"
             id="toggle_tryout"
             type="checkbox"
           />
            
           <label
-            class="toggle__label"
+            class="o-toggle__label"
           >
             <span>
               Label
@@ -9824,7 +9942,7 @@ exports[`Storyshots 5. Components|Forms/Toggle Tryout 1`] = `
       </div>
        
       <div
-        class="form__description"
+        class="o-form__description"
       >
         Description text
       </div>
@@ -9841,22 +9959,22 @@ exports[`Storyshots 5. Components|Forms/Toggle With label 1`] = `
     class="form"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
-        class="toggle toggle--label"
+        class="o-toggle o-toggle--label"
       >
         <div
-          class="toggle__button"
+          class="o-toggle__button"
         >
           <input
-            class="toggle__input"
+            class="o-toggle__input"
             id="toggle_tryout"
             type="checkbox"
           />
            
           <label
-            class="toggle__label"
+            class="o-toggle__label"
           >
             <span>
               Label
@@ -9970,7 +10088,7 @@ exports[`Storyshots 6. Utilities|Align Usage 1`] = `
   class="p-4"
 >
   <table
-    class="table table--compact table--celled"
+    class="o-table o-table--compact o-table--celled"
   >
     <thead>
       <tr>
@@ -10124,7 +10242,7 @@ exports[`Storyshots 6. Utilities|Border Radius Usage 1`] = `
   class="p-4"
 >
   <table
-    class="table table--compact table--celled"
+    class="o-table o-table--compact o-table--celled"
   >
     <thead>
       <tr>
@@ -10254,7 +10372,7 @@ exports[`Storyshots 6. Utilities|Box Shadow Usage 1`] = `
   class="p-4"
 >
   <table
-    class="table table--compact table--celled"
+    class="o-table o-table--compact o-table--celled"
   >
     <thead>
       <tr>
@@ -10508,7 +10626,7 @@ exports[`Storyshots 6. Utilities|Display Responsive Usage 1`] = `
   class="p-4"
 >
   <table
-    class="table table--fixed table--compact table--definition table--border-bottom"
+    class="o-table o-table--fixed o-table--compact o-table--definition o-table--border-bottom"
   >
     <thead>
       <th />
@@ -10804,7 +10922,7 @@ exports[`Storyshots 6. Utilities|Spacings Responsive Usage 1`] = `
   class="p-4"
 >
   <table
-    class="table table--fixed table--compact table--definition table--border-bottom"
+    class="o-table o-table--fixed o-table--compact o-table--definition o-table--border-bottom"
   >
     <thead>
       <th />

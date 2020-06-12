@@ -10,7 +10,7 @@ import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
 
 Add stylesheets and scripts to all your pages via Node Js.
 
-The latest release can be found at https://github.com/orangeui/orange.
+The latest release can be found at https://github.com/orangeui/orange/tree/master/storybook/vue.
 
 <hr/>
 
@@ -29,7 +29,7 @@ The latest release can be found at https://github.com/orangeui/orange.
  * Import Orange Styles
  * */
 
-import "@orange-ui/orange/dist/css/orange.min.css";
+import "@orange-ui/vue/dist/orangevue.css";
 ```
 
 ```js
@@ -60,12 +60,47 @@ Vue.use(OrangeVue);
   }}
 </Story>
 
+
+
+
 ```css
 /*
  * Import Orange Styles
  * */
 
-import "@orange-ui/orange/src/scss/src/styles.scss";
+import "@orange-ui/vue/src/scss/src/styles.scss";
+
+
+/** It is possible to import styles for each component by it self
+* for all components check @orange-ui/vue/src/scss/src/main.scss
+--------------------------------------------------*/
+
+/** Orange (example configuration) */
+
+/** Core (required) */
+@import '~@orange-ui/vue/src/scss/src/_functions';
+@import '~@orange-ui/vue/src/scss/src/_variables';
+@import '~@orange-ui/vue/src/scss/src/_typography';
+@import '~@orange-ui/vue/src/scss/src/_global';
+
+/** Icons (required) */
+@import "~@orange-ui/vue/src/scss/src/icons/fontello";
+@import "~@orange-ui/vue/src/scss/src/icons/fontello-reset";
+
+/** Utilities (optional) */
+@import '~@orange-ui/vue/src/scss/src/utilities/_spacings';
+@import '~@orange-ui/vue/src/scss/src/utilities/_colors';
+// @import '~@orange-ui/vue/src/scss/src/utilities/_shadows';
+// @import '~@orange-ui/vue/src/scss/src/utilities/_text';
+
+/** Components (optional) */
+@import '~@orange-ui/vue/src/scss/src/components/_avatar';
+@import '~@orange-ui/vue/src/scss/src/components/_breadcrumbs';
+@import '~@orange-ui/vue/src/scss/src/components/_card';
+// @import '~@orange-ui/vue/src/scss/src/components/_checkbox';
+// @import '~@orange-ui/vue/src/scss/src/components/_empty-state';
+...
+
 ```
 
 ```js

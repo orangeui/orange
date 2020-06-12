@@ -28,3 +28,49 @@ yarn serve
 cd lib/
 npm publish
 ```
+
+---
+
+# Storybook
+Orange Vue documentation is based on [Storybook](https://storybook.js.org/) where you can get all informations about components and their props.
+
+Most of our components have ability to be tried as Tryout / Live Example of applying different props.
+
+## Development
+
+### Setup
+
+Git clone [Orange repository](https://github.com/orangeui/orange) and change directory to `storybook/vue` and run.
+
+```
+yarn install
+```
+
+### Development
+For active Storybook development run.
+
+```
+yarn storybook
+```
+
+### Production
+After we are done with it we will generate static files.
+
+```
+yarn build-storybook
+```
+
+### Unit tests
+We need to run tests to check Storybook snapshots if anything changed. If we changed something we need to manually check it out. 
+When we are sure that all is fine we will run the command below with `-u` to update them.
+
+```
+yarn test:unit
+```
+
+### Linting
+Using linting to have consistent code styles.
+
+```
+yarn lint
+```

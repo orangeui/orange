@@ -2,9 +2,11 @@
 <html>
 <head>
   <title>Form Example</title>
-  <link rel="stylesheet" href="../dist/css/orange.css" />
-  <script type="text/javascript" src="../dist/js/orange.js"></script>
+  <!-- <link rel="stylesheet" href="../dist/css/orange.css" />
+  <script type="text/javascript" src="../dist/js/orange.js"></script> -->
   
+  <link rel="stylesheet" href="https://cdn.orangecss.com/1.5.0/css/orange.min.css">
+  <script src="https://cdn.orangecss.com/1.5.0/js/orange.min.js"></script>
 </head>
   
 
@@ -17,7 +19,7 @@
   </style>
 
   <body>
-    <div class='container'>
+    <div class="container">
       <div class="o-card">
         <div class="o-card__header">
           <h2 class="o-card__title">Example Form</h2>
@@ -93,7 +95,7 @@
           </form>
     
 
-          <form class='form form--large'>
+          <form class="o-form o-form--large">
             <div class="o-form__item">
               <div class="o-form__wrapper">
                 <div class="o-form__input-wrapper">
@@ -240,11 +242,11 @@
             <div class="o-form__item">
               <div class="o-toggle o-toggle--label o-toggle--large">
                 <div class="o-toggle__button">
-                  <input id='toggle_1' type="checkbox" class="o-toggle__input" checked>
+                  <input id="toggle_1" type="checkbox" class="o-toggle__input" checked>
                   <label class="o-toggle__label"></label>
                 </div>
                 <div>
-                  <label for='toggle_1' class="o-toggle__text">Label</label>
+                  <label for="toggle_1" class="o-toggle__text">Label</label>
                   <div class="o-toggle__value">Enabled</div>
                 </div>
               </div>
@@ -259,7 +261,7 @@
                 </div>
                 <div>
                   <label for="toggle_2" class="o-toggle__text">Custom Labels</label>
-                  <div class="o-toggle__value" data-enabled='Enabled' data-disabled='Disabled'>
+                  <div class="o-toggle__value" data-enabled="Enabled" data-disabled="Disabled">
                   </div>
                 </div>
               </div>
@@ -271,7 +273,7 @@
                 <div class="o-toggle__button">
                   <input id="toggle_3" type="checkbox" id="toggle" class="o-toggle__input">
                   <label for="toggle_3" class="o-toggle__label">
-                    <span class='ml-3'>Toggle Label</span>
+                    <span class="ml-3">Toggle Label</span>
                   </label>
                 </div>
               </div>

@@ -30,7 +30,7 @@ You can find this package listed on npm, under the name [@orange-ui/vue](https:/
 ###### Installation
 
 ``` sh
-yarn add @orange-ui/orange
+yarn add @orange-ui/vue
 ```
 
 ###### Styles and components
@@ -75,8 +75,8 @@ Next, comment out anything you don't need.
 @import '~@orange-ui/vue/src/scss/src/_global';
 
 /** Icons (required) */
-@import "icons/fontello";
-@import "icons/fontello-reset";
+@import "~@orange-ui/vue/src/scss/src/icons/fontello";
+@import "~@orange-ui/vue/src/scss/src/icons/fontello-reset";
 
 /** Utilities (optional) */
 @import '~@orange-ui/vue/src/scss/src/utilities/_spacings';
@@ -102,6 +102,10 @@ Make a copy of [_variables.scss](https://github.com/orangeui/orange/blob/master/
 ```
 Remove all `!default` modifiers from your newely created file - this will allow values you set to override the defaults.
 
+Most likely you will need to fix path to icon font to something like
+```scss
+$o-font-icon-url: '~@orange-ui/vue/src/fonts';
+```
 
 ---
 
@@ -117,7 +121,7 @@ Read the [MIT license](https://github.com/orangeui/orange/blob/master/LICENSE).
 ---
 
 # Storybook
-Orange Vue documentation is based on [Storybook](https://storybook.js.org/) where you can get all informations about components and their props.
+Orange Vue documentation is based on [Storybook](https://storybook.js.org/) where you can get all the informations about components and their props.
 
 Most of our components have ability to be tried as Tryout / Live Example of applying different props.
 
