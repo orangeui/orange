@@ -8,7 +8,7 @@
     "test:unit": "vue-cli-service test:unit --no-cache",
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -c .storybook -o ../../docs && cp public/favicon.ico ../../docs"
   },
   "dependencies": {
     "core-js": "^3.6.4",

@@ -30,7 +30,7 @@ You can find this package listed on npm, under the name [@orange-ui/vue](https:/
 ###### Installation
 
 ``` sh
-yarn add @orange-ui/orange
+yarn add @orange-ui/vue
 ```
 
 ###### Styles and components
@@ -75,8 +75,8 @@ Next, comment out anything you don't need.
 @import '~@orange-ui/vue/src/scss/src/_global';
 
 /** Icons (required) */
-@import "icons/fontello";
-@import "icons/fontello-reset";
+@import "~@orange-ui/vue/src/scss/src/icons/fontello";
+@import "~@orange-ui/vue/src/scss/src/icons/fontello-reset";
 
 /** Utilities (optional) */
 @import '~@orange-ui/vue/src/scss/src/utilities/_spacings';
@@ -102,6 +102,10 @@ Make a copy of [_variables.scss](https://github.com/orangeui/orange/blob/master/
 ```
 Remove all `!default` modifiers from your newely created file - this will allow values you set to override the defaults.
 
+Most likely you will need to fix path to icon font to something like
+```scss
+$o-font-icon-url: '~@orange-ui/vue/src/fonts';
+```
 
 ---
 
@@ -112,4 +116,5 @@ Write code? [Open an issue](https://github.com/orangeui/orange/issues) on GitHub
 
 ## License
 Read the [MIT license](https://github.com/orangeui/orange/blob/master/LICENSE).
+
 
