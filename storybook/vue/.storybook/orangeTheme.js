@@ -32,6 +32,6 @@ export default create({
   // inputBorderRadius: 4,
 
   brandTitle: 'Orange Vue',
-  brandUrl: 'https://orangecss.com',
+  brandUrl: 'https://vue.orangecss.com',
   // brandImage: 'https://orangecss.com/images/logo.svg',
 });
