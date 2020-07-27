@@ -9,7 +9,7 @@
       <div slot="body">
         <p>A list is <mark>a container</mark> that <mark>groups items</mark>.</p>
 
-        <p>When wrapping a list with a <code>.card</code> element use the <code>no_gutter</code> attribute that overflows card's body gutter. This makes the list take full width of it's parent card.</p>
+        <p>When wrapping a list with a <code>.o-card</code> element use the <code>no_gutter</code> attribute that overflows card's body gutter. This makes the list take full width of it's parent card.</p>
 
         <p>You can add horizontal dividers between list items by specifying <code>divide</code> attribute.</p>
 
@@ -498,11 +498,11 @@
 
     <!-- Inside a Card -->
     <docs-item title="Inside a card, divided, hover, pointer" :code="list_no_gutter_html" v-if="is_html">
-      <div class="card" slot="body">
-        <div class="card__header">
+      <div class="o-card" slot="body">
+        <div class="o-card__header">
           <h3>List title</h3>
         </div>
-        <div class="card__body">
+        <div class="o-card__body">
           <ul class="o-list o-list--large o-list--divide o-list--no-gutter o-list--hover o-list--pointer">
             <li>
               <div>
@@ -511,7 +511,7 @@
               </div>
 
               <div class="o-list__action">
-                <button type="button" class="o-button o-button--small o-button--icon-only"><i class="icon-remove"></i></button>
+                <button type="button" class="o-button o-button--small o-button--icon-only"><i class="o-icon-remove"></i></button>
               </div>
             </li>
             <li>
@@ -521,7 +521,7 @@
               </div>
 
               <div class="o-list__action">
-                <button type="button" class="o-button o-button--small o-button--icon-only"><i class="icon-remove"></i></button>
+                <button type="button" class="o-button o-button--small o-button--icon-only"><i class="o-icon-remove"></i></button>
               </div>
             </li>
             <li>
@@ -531,7 +531,7 @@
               </div>
 
               <div class="o-list__action">
-                <button type="button" class="o-button o-button--small o-button--icon-only"><i class="icon-remove"></i></button>
+                <button type="button" class="o-button o-button--small o-button--icon-only"><i class="o-icon-remove"></i></button>
               </div>
             </li>
           </ul>
@@ -1179,11 +1179,11 @@ export default {
     </list>
   </o-card-body>
 </o-card>`,
-        list_no_gutter_html: `<div class="card">
-  <div class="card__header">
+        list_no_gutter_html: `<div class="o-card">
+  <div class="o-card__header">
     <h3>List title</h3>
   </div>
-  <div class="card__body">
+  <div class="o-card__body">
     <ul class="o-list o-list--large o-list--divide o-list--no-gutter o-list--hover o-list--pointer">
       <li>
         <div>
@@ -1192,7 +1192,7 @@ export default {
         </div>
 
         <div class="o-list__action">
-          <button type="button" class="o-button o-button--small o-button--icon-only"><i class="icon-remove"></i></button>
+          <button type="button" class="o-button o-button--small o-button--icon-only"><i class="o-icon-remove"></i></button>
         </div>
       </li>
 
@@ -1203,7 +1203,7 @@ export default {
         </div>
 
         <div class="o-list__action">
-          <button type="button" class="o-button o-button--small o-button--icon-only"><i class="icon-remove"></i></button>
+          <button type="button" class="o-button o-button--small o-button--icon-only"><i class="o-icon-remove"></i></button>
         </div>
       </li>
 
@@ -1214,7 +1214,7 @@ export default {
         </div>
 
         <div class="o-list__action">
-          <button type="button" class="o-button o-button--small o-button--icon-only"><i class="icon-remove"></i></button>
+          <button type="button" class="o-button o-button--small o-button--icon-only"><i class="o-icon-remove"></i></button>
         </div>
       </li>
     </ul>
