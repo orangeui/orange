@@ -74,6 +74,38 @@
       </form>
     </docs-item>
 
+    <!-- Search  -->
+    <docs-item title="Search" :code="dropdown_search_html">
+      <form class="o-form o-form--large" slot="body">
+        <div class="o-form__item">
+          <div class="o-form-dropdown o-form-dropdown--search">
+            <label for="form_dropdown_search" class="o-form-dropdown__label">Label</label>
+            <input id="form_dropdown_search" type="text" name="form_dropdown_search" class="o-form-dropdown__input" autocomplete="off">
+
+            <div class="o-form-dropdown__text o-form-dropdown__search-text"></div>
+            <div class="o-form-dropdown__icon">
+              <svg viewBox="0 0 24 24">
+                <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+              </svg>
+              <svg viewBox="0 0 24 24">
+                <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+              </svg>
+            </div>
+            <div class="o-form-dropdown__content">
+              <ul class="o-form-dropdown__menu">
+                <li>Google</li>
+                <li>Word</li>
+                <li>Advertisement</li>
+                <li>Competitor</li>
+                <li>Other</li>
+              </ul>
+            </div>
+          </div>
+          <div class="o-form__description">Description of the dropdown field</div>
+        </div>
+      </form>
+    </docs-item>
+
     <!-- Usage  -->
     <docs-item title="Usage">
       <table class="o-table o-table--compact o-table--celled" slot="body">
@@ -100,6 +132,18 @@
           <td>disabled</td>
           <td>Set with <code>.is-disabled</code> on <code>.o-form-dropdown</code></td>
           <td><code>disabled</code></td>
+          <td>string</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>search</td>
+          <td>
+            2 modifications required: <br>
+            Set with <code>.o-form-dropdown--search</code> on <code>.o-form-dropdown</code><br/>
+            Set with <code>.o-form-dropdown__search-text</code> on <code>.o-form-dropdown__text</code><br/>
+          </td>
+          <td><code>search</code> and <code>search-text</code></td>
           <td>string</td>
           <td>-</td>
           <td>-</td>
@@ -155,6 +199,34 @@ export default {
       <input id="form_dropdown_large" type="text" name="form_dropdown_large" class="o-form-dropdown__input">
 
       <div class="o-form-dropdown__text">Placeholder</div>
+      <div class="o-form-dropdown__icon">
+        <svg viewBox="0 0 24 24">
+          <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+        </svg>
+        <svg viewBox="0 0 24 24">
+          <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+        </svg>
+      </div>
+      <div class="o-form-dropdown__content">
+        <ul class="o-form-dropdown__menu">
+          <li>Google</li>
+          <li>Word</li>
+          <li>Advertisement</li>
+          <li>Competitor</li>
+          <li>Other</li>
+        </ul>
+      </div>
+    </div>
+    <div class="o-form__description">Description of the dropdown field</div>
+  </div>
+</form>`,
+      dropdown_search_html: `<form class="o-form o-form--large">
+  <div class="o-form__item">
+    <div class="o-form-dropdown o-form-dropdown--search">
+      <label for="form_dropdown_search" class="o-form-dropdown__label">Label</label>
+      <input id="form_dropdown_search" type="text" name="form_dropdown_search" class="o-form-dropdown__input" autocomplete="off">
+
+      <div class="o-form-dropdown__text o-form-dropdown__search-text"></div>
       <div class="o-form-dropdown__icon">
         <svg viewBox="0 0 24 24">
           <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
