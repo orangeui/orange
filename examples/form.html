@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>Form Example</title>
-  <!-- <link rel="stylesheet" href="../dist/css/orange.css" />
-  <script type="text/javascript" src="../dist/js/orange.js"></script> -->
+  <link rel="stylesheet" href="../dist/css/orange.css" />
+  <!-- <script type="text/javascript" src="../dist/js/orange.js"></script> -->
   
-  <link rel="stylesheet" href="https://cdn.orangecss.com/1.5.0/css/orange.min.css">
-  <script src="https://cdn.orangecss.com/1.5.0/js/orange.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdn.orangecss.com/1.5.0/css/orange.min.css">
+   <script src="https://cdn.orangecss.com/1.5.0/js/orange.min.js"></script> -->
 </head>
   
 
@@ -216,7 +216,7 @@
             <div class="o-form__item">
               <div id="form_dropdown_2" class="o-form-dropdown">
                 <label for="form_dropdown_2" class="o-form-dropdown__label">Label</label>
-                <input id="form_dropdown_2" type="text" name="form_dropdown_2" class="o-form-dropdown__input">
+                <input id="form_dropdown_2" type="text" name="form_dropdown_2" class="o-form-dropdown__input" value="sine">
                 <div class="o-form-dropdown__text">Placeholder</div>
                 <div class="o-form-dropdown__icon">
                   <svg viewBox="0 0 24 24">
@@ -237,6 +237,33 @@
               </div>
               <div class="o-form__description">Description of the dropdown field</div>
             </div>
+            
+
+            <div class="o-form__item">
+              <div id="form_dropdown_search" class="o-form-dropdown o-form-dropdown--search">
+                <label for="form_dropdown_search" class="o-form-dropdown__label">Label</label>
+                <input id="form_dropdown_search" type="text" name="form_dropdown_search" class="o-form-dropdown__input" autocomplete="off">
+                <div class="o-form-dropdown__text o-form-dropdown__search-text"></div>
+                <div class="o-form-dropdown__icon">
+                  <svg viewBox="0 0 24 24">
+                    <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+                  </svg>
+                </div>
+                <div class="o-form-dropdown__content">
+                  <ul class="o-form-dropdown__menu">
+                    <li class="">Option 2-1</li>
+                    <li class="">Option 2-2</li>
+                    <li class="">Option 2-3</li>
+                    <li class="">Option 2-4</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="o-form__description">Description of the dropdown field</div>
+            </div>
+
           
             <!-- Toggles -->
             <div class="o-form__item">
@@ -284,6 +311,6 @@
       </div>
     </div>
     
-    <!-- <script src="../dist/js/orange.min.js"></script> -->
+    <script src="../dist/js/orange.js"></script>
   </body>
 </html>
