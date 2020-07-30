@@ -3,3 +3,4 @@ import './dropdown.js';
 import './toggle.js';
 import './input.js';
 import './textarea.js';
+import './progress-bar.js';

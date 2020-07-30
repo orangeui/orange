@@ -44,6 +44,7 @@
     top: 0;
     height: 100%;
     background-color: color('secondary');
+    background-color: currentColor;
     line-height: 1;
     white-space: nowrap;
     display: flex;
@@ -62,6 +63,10 @@
     &.o-progress-bar__line-innerText--below {
       transform: translateX(calc(100% + 10px));
       color: currentColor;
+
+      .o-progress-bar__custom-text {
+        color: currentColor;
+      }
     }
 
     .o-progress-bar__custom-text {
