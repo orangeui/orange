@@ -121,9 +121,10 @@ const ProgressBar = (function() {
 //   Toggle.activateToggles()
 // }
 
-console.log('all', ProgressBar.all_line_progress_bars)
-
-ProgressBar.checkProgressBars();
+console.log(ProgressBar.all_line_progress_bars)
+if (ProgressBar.all_line_progress_bars.length) {
+  ProgressBar.checkProgressBars();
+}
 
 // Add click event
 // document.addEventListener('click', function (event) {
