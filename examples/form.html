@@ -307,9 +307,17 @@
             </div>
 
           </form>
-          
-          <h2>Progress bar</h2>
+        </div>
+      </div>
 
+      <div class="o-card mt-4">
+        <div class="o-card__header">
+          <h2 class="o-card__title">Example Form</h2>
+          <button type="button" class="o-button">Save
+            <span class="icon-tick"></span>
+          </button>
+        </div>
+        <div class="o-card__body">
           <div
             class="o-progress-bar o-progress-bar--line mt-4"
             style="color: #f00;"
@@ -346,6 +354,61 @@
                 </div>
               </div>
             </div>
+          </div>
+
+          <hr>
+          
+          <div class="o-progress-bar o-progress-bar--circle"
+              data-width="250"
+              data-stroke-width="20"
+              aria-valuenow="30"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="color: #474BA5;">
+            <div class="o-progress-bar__circle">
+              <svg viewBox="0 0 100 100">
+                <path class="o-progress-bar__circle-track" fill="none"></path>
+                <path class="o-progress-bar__circle-path"stroke-linecap="square" stroke="currentColor" fill="none"></path>
+              </svg>
+            </div>
+          </div>
+
+
+          <div class="o-progress-bar o-progress-bar--circle"
+              data-width="170"
+              data-stroke-width="5"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="color: green;">
+            <div class="o-progress-bar__circle">
+              <svg viewBox="0 0 100 100">
+                <path class="o-progress-bar__circle-track" fill="none"></path>
+                <path class="o-progress-bar__circle-path" stroke-linecap="square" stroke="currentColor" fill="none"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="o-progress-bar o-progress-bar--circle"
+              data-width="170"
+              data-stroke-width="5"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="color: green;">
+            <div class="o-progress-bar__circle">
+              <svg viewBox="0 0 100 100">
+                <path class="o-progress-bar__circle-track" stroke-width="8" fill="none"></path>
+                <path class="o-progress-bar__circle-path" stroke-linecap="square" stroke="currentColor" fill="none"></path>
+              </svg>
+            </div>
+
+            <div class="o-progress-bar__text" style="font-size: 20px;" :style="{fontSize: progress_text_size + 'px'}">
+              <span class="fs-alpha font-extrabold">50</span>
+              <span class="fs-gamma font-extrabold">%</span>
+              <span class="o-progress-bar__custom-text">Custom text</span>
+            </template>
+          </div>
           </div>
         </div>
       </div>
