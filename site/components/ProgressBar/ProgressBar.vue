@@ -5,12 +5,12 @@
 
 <template>
   <div
-    class="progress-bar"
+    class="o-progress-bar"
     :class="[
-      'progress-bar--' + type,
+      'o-progress-bar--' + type,
       {
-        'progress-bar--without-text': !show_text,
-        'progress-bar--text-inside': text_inside,
+        'o-progress-bar--without-text': !show_text,
+        'o-progress-bar--text-inside': text_inside,
       }
     ]"
     :style="{color: color_convert}"
@@ -19,25 +19,26 @@
     aria-valuemin="0"
     aria-valuemax="100"
   >
-    <div class="progress-bar__line" v-if="type === 'line'">
-      <div class="progress-bar__line-outer" :style="{height: stroke_width + 'px'}">
-        <div class="progress-bar__line-inner" :style="bar_style">
-          <div class="progress-bar__line-innerText" :class="{ 'progress-bar__line-innerText--below': percentage < 50 }" v-if="show_text && text_inside">
+    <div class="o-progress-bar__line" v-if="type === 'line'">
+      <div class="o-progress-bar__line-outer" :style="{height: stroke_width + 'px'}">
+        <div class="o-progress-bar__line-inner" :style="bar_style">
+          <div class="o-progress-bar__line-innerText" :class="{ 'o-progress-bar__line-innerText--below': percentage < 50 }" v-if="show_text && text_inside">
             {{percentage}}%
-            <span class="progress-bar__custom-text" v-if="custom_text !== null">{{ custom_text }}</span>
+            <span class="o-progress-bar__custom-text" v-if="custom_text !== null">{{ custom_text }}</span>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="progress-bar__circle" :style="{height: width + 'px', width: width + 'px'}" v-else>
+    <div class="o-progress-bar__circle" :style="{height: width + 'px', width: width + 'px'}" v-else>
       <svg viewBox="0 0 100 100">
-        <path class="progress-bar__circle-track" :d="track_path" stroke="#F3F3F3" :stroke-width="relative_stroke_width" fill="none"></path>
-        <path class="progress-bar__circle-path" :d="track_path" stroke-linecap="square" :stroke="stroke" :stroke-width="relative_stroke_width" fill="none" :style="circle_path_style"></path>
+        <path class="o-progress-bar__circle-track" :d="track_path" stroke="#F3F3F3" :stroke-width="relative_stroke_width" fill="none"></path>
+        <path class="o-progress-bar__circle-path" :d="track_path" stroke-linecap="square" :stroke="stroke" :stroke-width="relative_stroke_width" fill="none" :style="circle_path_style"></path>
       </svg>
     </div>
+
     <div
-      class="progress-bar__text"
+      class="o-progress-bar__text"
       v-if="show_text && !text_inside && !custom_text_array"
       :style="{fontSize: progress_text_size + 'px'}"
     >
@@ -45,11 +46,11 @@
         <span :class="{ 'fs-alpha font-extrabold':type === 'circle'}">
           {{percentage}}</span><span :class="{ 'fs-gamma font-extrabold':type === 'circle'}">%</span>
 
-          <span class="progress-bar__custom-text" v-if="custom_text !== null">{{ custom_text }}</span>
+          <span class="o-progress-bar__custom-text" v-if="custom_text !== null">{{ custom_text }}</span>
       </template>
     </div>
 
-    <div v-if="show_text && custom_text_array" class="progress-bar__text mt12">
+    <div v-if="show_text && custom_text_array" class="o-progress-bar__text mt12">
       <div class="flex flex--justify-space-between">
         <span v-for="item in custom_text_array" :key="item" class="color-gray-light fs-zeta">
           {{ item | formatNumber }}
@@ -114,6 +115,9 @@ export default {
     },
     track_path () {
       const radius = parseInt(50 - parseFloat(this.relative_stroke_width) / 2, 10)
+
+      console.log(this.relative_stroke_width)
+
       return `M 50 50 m 0 -${radius} a ${radius} ${radius} 0 1 1 0 ${radius * 2} a ${radius} ${radius} 0 1 1 0 -${radius * 2}`
     },
     perimeter () {

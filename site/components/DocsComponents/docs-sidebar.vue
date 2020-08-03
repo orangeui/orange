@@ -76,6 +76,7 @@
             <li><router-link :to="{ name: 'docs-components-custom-empty-state'}"><span>Empty State</span></router-link></li>
             <li><router-link :to="{ name: 'docs-components-custom-image'}"><span>Image</span></router-link></li>
             <li><router-link :to="{ name: 'docs-components-custom-message'}"><span>Message</span></router-link></li>
+            <li><router-link :to="{ name: 'docs-components-custom-progress-bar'}"><span>Progress Bar</span></router-link></li>
           </ul>
         </li>
 
