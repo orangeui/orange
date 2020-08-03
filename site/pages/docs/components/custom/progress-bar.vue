@@ -148,6 +148,41 @@
       </div>
     </docs-item>
 
+    <docs-item title="Disabled" :code="progress_bar_disabled_html" v-if="is_html">
+      <div slot="body">
+        <div
+          class="o-progress-bar o-progress-bar--line is-disabled"
+          style="color: red;"
+          role="progressbar"
+          aria-valuenow="60"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div class="o-progress-bar__line">
+            <div class="o-progress-bar__line-outer">
+              <div class="o-progress-bar__line-inner" style="width: 60%;"> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="o-progress-bar o-progress-bar--circle is-disabled mt-4" data-width="100" data-stroke-width="10" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="color: red;">
+          <div class="o-progress-bar__circle" style="width: 100px; height: 100px;">
+            <svg viewBox="0 0 100 100">
+              <path class="o-progress-bar__circle-track" fill="none" d="M 50 50 m 0 -45 a 45 45 0 1 1 0 90 a 45 45 0 1 1 0 -90" stroke-width="10.0"></path>
+              <path class="o-progress-bar__circle-path" stroke-linecap="square" stroke="currentColor" fill="none" d="M 50 50 m 0 -45 a 45 45 0 1 1 0 90 a 45 45 0 1 1 0 -90" stroke-width="10.0" style="stroke-dasharray: 282.743px, 282.743px; stroke-dashoffset: 141.372px; transition: stroke-dashoffset 0.6s ease 0s, stroke 0.6s ease 0s;"></path>
+            </svg>
+          </div>
+          <div class="o-progress-bar__text" style="font-size: 13.1111px; padding: 0px 15px;">
+            <span class="o-progress-bar__text-number">50</span>
+            <span class="o-progress-bar__text-percentage">%</span>
+            <span class="o-progress-bar__custom-text">Custom text</span>
+          </div>
+        </div>
+        
+      </div>
+    </docs-item>
+
     <!-- Progress bar usage  -->
     <docs-item title="Usage" v-if="is_html">
       <table class="o-table o-table--compact o-table--celled" slot="body">
@@ -412,6 +447,41 @@ export default {
 </div>
 
 <div class="o-progress-bar o-progress-bar--circle"
+  data-width="100"
+  data-stroke-width="10"
+  aria-valuenow="50"
+  aria-valuemin="0"
+  aria-valuemax="100"
+  style="color: red;">
+  <div class="o-progress-bar__circle">
+    <svg viewBox="0 0 100 100">
+      <path class="o-progress-bar__circle-track" fill="none"></path>
+      <path class="o-progress-bar__circle-path" stroke-linecap="square" stroke="currentColor" fill="none"></path>
+    </svg>
+  </div>
+
+  <div class="o-progress-bar__text">
+    <span class="o-progress-bar__text-number">50</span>
+    <span class="o-progress-bar__text-percentage">%</span>
+    <span class="o-progress-bar__custom-text">Custom text</span>
+  </div>
+</div>`,
+      progress_bar_disabled_html: `<div class="o-progress-bar o-progress-bar--line is-disabled"
+  style="color: red;"
+  role="progressbar"
+  aria-valuenow="60"
+  aria-valuemin="0"
+  aria-valuemax="100"
+>
+  <div class="o-progress-bar__line">
+    <div class="o-progress-bar__line-outer">
+      <div class="o-progress-bar__line-inner" style="width: 60%;"> 
+      </div>
+    </div>
+  </div>
+</div>
+      
+<div class="o-progress-bar o-progress-bar--circle is-disabled"
   data-width="100"
   data-stroke-width="10"
   aria-valuenow="50"
