@@ -79,6 +79,16 @@
   }
 }
 
+.o-progress-bar__text-number {
+  font-size: 2em;
+  font-weight: fontWeight('extrabold');
+}
+
+.o-progress-bar__text-percentage {
+  font-size: 1em;
+  font-weight: fontWeight('extrabold');
+}
+
 .o-progress-bar__custom-text {
   color: color('gray', 'light');
 }

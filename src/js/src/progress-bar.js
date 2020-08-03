@@ -22,6 +22,7 @@ const ProgressBar = (function() {
     _progress_bar_line: ".o-progress-bar--line",
     _progress_bar_circle: ".o-progress-bar--circle",
     _progress_bar_line_text: ".o-progress-bar__line-innerText",
+    _progress_bar_line_color_wrapper: ".o-progress-bar__line-outer",
     _progress_bar_circle_inner: ".o-progress-bar__circle",
     _progress_bar_circle_path: ".o-progress-bar__circle-path",
     _progress_bar_text: ".o-progress-bar__text"
@@ -41,26 +42,34 @@ const ProgressBar = (function() {
   * Private
   */
 
-  function _setLineTextClass(progress_bar) {
-    let current_value = progress_bar.ariaValueNow
-    let text_wrapper = progress_bar.querySelector(Selectors._progress_bar_line_text)
+  function _setLineTextClass (progress_bar) {
+    const current_value = progress_bar.ariaValueNow
+    const text_wrapper = progress_bar.querySelector(Selectors._progress_bar_line_text)
 
-    current_value > 49 ? text_wrapper.classList.remove(Classes._line_inner_text_below) : text_wrapper.classList.add(Classes._line_inner_text_below)
+    if (text_wrapper) {
+      current_value > 49 ? text_wrapper.classList.remove(Classes._line_inner_text_below) : text_wrapper.classList.add(Classes._line_inner_text_below)
+    }
+  }
+
+  function _setLineHeight (progress_bar) {
+    const height = progress_bar.dataset.strokeWidth
+    const color_wrapper = progress_bar.querySelector(Selectors._progress_bar_line_color_wrapper)
+    
+    color_wrapper.style.height = height + 'px';
   }
 
   /** Circle private functions
   --------------------------------------------------*/
   function _setProgressBarWidthHeight (progress_bar) {
-    let width = progress_bar.dataset.width
-    let circle_element = progress_bar.querySelector(Selectors._progress_bar_circle_inner)
+    const width = progress_bar.dataset.width
+    const circle_element = progress_bar.querySelector(Selectors._progress_bar_circle_inner)
 
-    console.log(circle_element)
     Object.assign(circle_element.style, { width: width + 'px', height: width + 'px' })
   }
   
   function _relative_stroke_width (progress_bar) {
-    let width = progress_bar.dataset.width
-    let stroke_width = progress_bar.dataset.strokeWidth
+    const width = progress_bar.dataset.width
+    const stroke_width = progress_bar.dataset.strokeWidth
 
     return (stroke_width / width * 100).toFixed(1)
   }
@@ -77,7 +86,7 @@ const ProgressBar = (function() {
   }
 
   function _circle_path_style (progress_bar) {
-    let current_value = progress_bar.ariaValueNow
+    const current_value = progress_bar.ariaValueNow
     const perimeter = _perimeter(_relative_stroke_width(progress_bar))
 
     return {
@@ -88,14 +97,19 @@ const ProgressBar = (function() {
   }
 
   function _set_custom_text_font_size (progress_bar) {
-    let width = progress_bar.dataset.width
-    let custom_text = progress_bar.querySelector(Selectors._progress_bar_text)
-
+    const width = progress_bar.dataset.width
+    const custom_text = progress_bar.querySelector(Selectors._progress_bar_text)
+    const stroke_width = parseInt(_relative_stroke_width(progress_bar)) + 5
 
     if (custom_text) {
-      console.log(custom_text, width)
+      const text_size = (width * 0.111111 + 2) + 'px';
+      const text_style = {
+        fontSize: text_size,
+        padding: `0px ${stroke_width}px`,
+      }
+
+      Object.assign(custom_text.style, text_style);
     }
-    // this.width * 0.111111 + 2 
   }
 
   // Function to assign value to toggle
@@ -130,6 +144,7 @@ const ProgressBar = (function() {
       let progress_bar = all_line_progress_bars[i]
 
       _setLineTextClass(progress_bar)
+      _setLineHeight(progress_bar)
     }
   }
 
