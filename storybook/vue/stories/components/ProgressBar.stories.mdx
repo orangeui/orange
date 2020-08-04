@@ -1,0 +1,117 @@
+<!-- Storybook Addon imports -->
+import { action } from '@storybook/addon-actions';
+import { withKnobs, object, text, select, boolean, number } from '@storybook/addon-knobs';
+import { Preview, Meta, Story, Props } from '@storybook/addon-docs/blocks';
+
+<!-- Component import -->
+import OProgressBar from '../../src/components/ProgressBar/ProgressBar';
+
+
+<Meta title='5. Components|Custom/ProgressBar' />
+
+# Progress Bar
+
+A progress bar informs users about the progression of a running task, and can contextually mark the current point in a period.
+
+The Progress Bar component is a custom component and comes in line and circular style, both of which offer different levels of data exposure.
+
+<hr/>
+
+
+# Tryout
+
+Tryout is for live example of progress bar on **Canvas** tab and bottom tab **Knobs**
+
+<Story name='Tryout'>
+  {{
+    components: { OProgressBar },
+    template: `<o-progress-bar class="mb-4" :percentage="percentage" :type="type" :color="color" :text_inside="text_inside" :show_text="show_text" :custom_text="custom_text" :stroke_width="stroke_width" :disabled="disabled"></o-progress-bar>`,
+    props: {
+      type: {
+        default: select('Type', ['line', 'circle'], 'line')
+      },
+      percentage: {
+        default: number('Percentage', '15')
+      },
+      text_inside: {
+        default: boolean('Text inside', false)
+      },
+      show_text: {
+        default: boolean('Show text', false)
+      },
+      custom_text: {
+        default: text('Custom text', 'some text')
+      },
+      color: {
+        default: text('Color', 'green')
+      },
+      stroke_width: {
+        default: number('Stroke width', 8)
+      },
+      disabled: {
+        default: boolean('Disabled', false)
+      }
+    },
+  }}
+</Story>
+
+<hr/>
+
+
+# Line
+
+<Preview>
+  <Story name='Line'>
+    {{
+      components: { OProgressBar },
+      template: `<div>
+        <o-progress-bar class="mb-4" :percentage="60"></o-progress-bar>
+        <o-progress-bar class="mb-4" :text_inside="false" :show_text="true" :custom_text="'with custom text'" :stroke_width="15" :percentage="33" color="#474ba5"></o-progress-bar>
+        <o-progress-bar class="mb-4" :text_inside="true" :show_text="true" :stroke_width="18" :percentage="30" color="red" custom_text="custom text"></o-progress-bar>
+        <o-progress-bar class="mb-4" :text_inside="true" :show_text="true" :stroke_width="18" :percentage="60" color="red" custom_text="custom text"></o-progress-bar>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Circle
+
+<Preview>
+  <Story name='Circle'>
+    {{
+      components: { OProgressBar },
+      template: `<div>
+        <o-progress-bar class="mb-4" type="circle" :percentage="60" color="#474BA5" :width="250" :stroke_width="20"></o-progress-bar>
+        <o-progress-bar class="mb-4" type="circle" :percentage="60" color="green" :width="170" :stroke_width="5"></o-progress-bar>
+        <o-progress-bar class="mb-4" type="circle" :percentage="50" color="red" :width="100" :stroke_width="10" custom_text="custom text" :show_text="true"></o-progress-bar>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+# Disabled
+
+<Preview>
+  <Story name='Disabled'>
+    {{
+      components: { OProgressBar },
+      template: `<div>
+        <o-progress-bar class="mb-4" type="circle" :percentage="60" color="#474BA5" :width="250" :stroke_width="20" :disabled="true" custom_text="custom text" :show_text="true"></o-progress-bar>
+        <o-progress-bar class="mb-4" :percentage="60" color="green" :width="170" :stroke_width="10" :text_inside="false" :show_text="true" :custom_text="'with custom text'" :disabled="true"></o-progress-bar>
+      </div>`,
+    }}
+  </Story>
+</Preview>
+
+<hr/>
+
+
+## Progress Bar Props
+
+<Props of={OProgressBar} />
