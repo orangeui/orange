@@ -5,6 +5,7 @@
 .o-progress-bar {
   position: relative;
   line-height: 1;
+  color: color('secondary');
 
   .o-progress-bar__text {
     font-size: fontSize('zeta');

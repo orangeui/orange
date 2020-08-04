@@ -105,7 +105,7 @@
 
     <docs-item title="Circle" :code="progress_bar_circle_html" v-if="is_html">
       <div slot="body">
-        <div class="o-progress-bar o-progress-bar--circle" data-width="250" data-stroke-width="20" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="color: #474BA5;">
+        <div class="o-progress-bar o-progress-bar--circle" data-width="250" data-stroke-width="20" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
           <div class="o-progress-bar__circle" style="width: 250px; height: 250px;">
             <svg viewBox="0 0 100 100">
               <path class="o-progress-bar__circle-track" fill="none" d="M 50 50 m 0 -46 a 46 46 0 1 1 0 92 a 46 46 0 1 1 0 -92" stroke-width="8.0"></path>
@@ -197,53 +197,39 @@
         </thead>
         <tbody>
           <tr>
-            <td>type</td>
-            <td>Type of progress bar. Possible value <code>line</code>, <code>circle</code>. </td>
-            <td>String</td>
+            <td>value</td>
+            <td>Set with data attribute <code>aria-valuenow</code>. Note: Set value as text if you have it.</td>
+            <td>Number</td>
             <td>-</td>
-            <td>line</td>
+            <td>-</td>
           </tr>
           <tr>
-            <td>stroke_width</td>
-            <td>Stroke width.</td>
+            <td>stroke-width</td>
+            <td>Set with data attribute <code>data-stroke-width</code>.</td>
             <td>Number</td>
             <td>-</td>
             <td>8</td>
           </tr>
           <tr>
-            <td>text_inside</td>
-            <td>Display text inside <code>line</code> bar. Make sure that <code>stroke_width</code> is high enough.</td>
-            <td>Boolean</td>
-            <td>-</td>
-            <td>false</td>
-          </tr>
-          <tr>
             <td>width</td>
-            <td>Change width and height of progress bar type <code>circle</code>.</td>
+            <td>Change width and height of progress bar type <code>circle</code> by setting data attribute <code>data-width</code>.</td>
             <td>Number</td>
             <td>-</td>
             <td>170</td>
           </tr>
           <tr>
-            <td>show_text</td>
-            <td>Display percentage text inside/outside progress bar.</td>
-            <td>Boolean</td>
-            <td>-</td>
-            <td>false</td>
-          </tr>
-          <tr>
-            <td>custom_text</td>
-            <td>Display extra custom text next/below percentage text progress bar.</td>
-            <td>String</td>
-            <td>-</td>
-            <td>null</td>
-          </tr>
-          <tr>
             <td>color</td>
-            <td>Color of progress bar and text. Possible values <code>sapphire</code>, <code>green</code>. Will add more when needed.</td>
+            <td>Color of progress bar and text. Set style <code>color</code> attribute.</td>
             <td>String</td>
             <td>-</td>
-            <td>sapphire</td>
+            <td>secondary</td>
+          </tr>
+          <tr>
+            <td>disabled</td>
+            <td>Set with <code>is-disabled</code> class on <code>.o-progress-bar</code></td>
+            <td>String</td>
+            <td>-</td>
+            <td>-</td>
           </tr>
         </tbody>
       </table>
