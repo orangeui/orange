@@ -61,7 +61,7 @@
           <div class="o-progress-bar__line">
             <div class="o-progress-bar__line-outer" style="height:18px;">
               <div class="o-progress-bar__line-inner" style="width: 30%;">
-                <div class="o-progress-bar__line-innerText">
+                <div class="o-progress-bar__line-innerText o-progress-bar__line-innerText--below">
                   30% Custom text
                 </div>
               </div>
