@@ -40,8 +40,59 @@ $flex-align-selfs: (
   'baseline': baseline
 );
 
+.row {
+  margin-left: -$o-grid-gap / 2;
+  margin-right: -$o-grid-gap / 2;
+  flex-wrap: wrap;
+
+  /** COLUMNS
+  --------------------------------------------------*/
+  @for $column from 1 through $o-grid-column-number {
+    .col-#{$column} {
+      width: (100% / $o-grid-column-number * $column);
+      flex-basis: (100% / $o-grid-column-number * $column);
+      padding-left: $o-grid-gap / 2;
+      padding-right: $o-grid-gap / 2;
+      flex: 0 0 auto;
+    }
+  }
+
+  /** Responsive */
+  @each $breakpoint-key, $breakpoint-value in $o-breakpoints {
+    @for $column from 1 through $o-grid-column-number {
+      @include breakpoint-and-up($breakpoint-key) {
+        .#{$breakpoint-key}\:col-#{$column} {
+          width: (100% / $o-grid-column-number * $column);
+          flex-basis: (100% / $o-grid-column-number * $column);
+          padding-left: $o-grid-gap / 2;
+          padding-right: $o-grid-gap / 2;
+          flex: 0 0 auto;
+        }
+      }
+    }
+  }
+
+  /* Create offsets from sizes 1-12 */
+  @for $column from 1 through $o-grid-column-number {
+    .offset-#{$column} {
+      margin-left: (100% / $o-grid-column-number * $column);
+    }
+  }
+
+  @each $breakpoint-key, $breakpoint-value in $o-breakpoints {
+    @for $column from 1 through $o-grid-column-number {
+      @include breakpoint-and-up($breakpoint-key) {
+        .#{$breakpoint-key}\:offset-#{$column} {
+          margin-left: (100% / $o-grid-column-number * $column);
+        }
+      }
+    }
+  }
+}
+
 .flex,
-.d-flex {
+.d-flex,
+.row {
   /**
    * Properties for parents - containers
    * Direction of displayed flex items
@@ -52,16 +103,6 @@ $flex-align-selfs: (
     }
   }
 
-  /*@each $class, $point in $breakpoints-up {
-    @media #{$point} {
-      @each $direction in $flex-directions {
-        &--#{$direction}-#{$class} {
-          flex-direction: $direction;
-        }
-      }
-    }
-  }*/
-
   /*
     Flex wrapping items
   */
@@ -70,16 +111,6 @@ $flex-align-selfs: (
       flex-wrap: $wrap;
     }
   }
-
-  /*@each $class, $point in $breakpoints-up {
-    @media #{$point} {
-      @each $wrap in $flex-wrap-items {
-        &--#{$wrap}-#{$class} {
-          flex-wrap: $wrap;
-        }
-      }
-    }
-  }*/
 
   /*
     Content alignment on main axis - X axis
@@ -90,16 +121,6 @@ $flex-align-selfs: (
     }
   }
 
-  /*@each $class, $point in $breakpoints-up {
-    @media #{$point} {
-      @each $prefix, $meaning in $flex-justify-contents {
-        &--justify-#{$prefix}-#{$class} {
-          justify-content: $meaning;
-        }
-      }
-    }
-  }*/
-
   /*
     Content alignment on cross axis - Y axis
   */
@@ -109,16 +130,6 @@ $flex-align-selfs: (
     }
   }
 
-  /*@each $class, $point in $breakpoints-up {
-    @media #{$point} {
-      @each $prefix, $meaning in $flex-align-items {
-        &--align-#{$prefix}-#{$class} {
-          align-items: $meaning;
-        }
-      }
-    }
-  }*/
-
   /*
     Content alignment on cross axis - Y axis, but only when there are multiple lines and extra space in container - Y axis
   */
@@ -127,16 +138,6 @@ $flex-align-selfs: (
       align-content: $meaning;
     }
   }
-
-  /*@each $class, $point in $breakpoints-up {
-    @media #{$point} {
-      @each $prefix, $meaning in $flex-align-contents {
-        &--#{$prefix}-#{$class} {
-          align-content: $meaning;
-        }
-      }
-    }
-  }*/
 
   /*
     Properties for children - flex items
@@ -148,7 +149,7 @@ $flex-align-selfs: (
     }
   }
 
-  /*@each $class, $point in $breakpoints-up {
+  @each $class, $point in $o-breakpoints-up {
     @media #{$point} {
       @each $prefix, $meaning in $flex-align-selfs {
         &__item-#{$prefix}-#{$class} {
@@ -156,10 +157,96 @@ $flex-align-selfs: (
         }
       }
     }
-  }*/
+  }
 
   /* Fill Gap */
   &__fill-gap {
     flex: 1;
+  }
+}
+
+/**
+ * Properties for parents - containers
+ * Direction of displayed flex items
+ */
+@each $breakpoint-key, $breakpoint-value in $o-breakpoints {
+  @each $direction in $flex-directions {
+    @include breakpoint-and-up($breakpoint-key) {
+      .#{$breakpoint-key}\:flex--#{$direction},
+      .#{$breakpoint-key}\:row--#{$direction} {
+        flex-direction: $direction;
+      }
+    }
+  }
+}
+
+/*
+  Flex wrapping items
+ */
+@each $breakpoint-key, $breakpoint-value in $o-breakpoints {
+  @each $wrap in $flex-wrap-items {
+    @include breakpoint-and-up($breakpoint-key) {
+      .#{$breakpoint-key}\:flex--#{$wrap},
+      .#{$breakpoint-key}\:row--#{$wrap} {
+        flex-wrap: $wrap;
+      }
+    }
+  }
+}
+
+/*
+  Content alignment on main axis - X axis
+ */
+@each $breakpoint-key, $breakpoint-value in $o-breakpoints {
+  @each $prefix, $meaning in $flex-justify-contents {
+    @include breakpoint-and-up($breakpoint-key) {
+      .#{$breakpoint-key}\:flex--justify-#{$prefix},
+      .#{$breakpoint-key}\:row--justify-#{$prefix} {
+        justify-content: $meaning;
+      }
+    }
+  }
+}
+
+/*
+  Content alignment on cross axis - Y axis
+ */
+@each $breakpoint-key, $breakpoint-value in $o-breakpoints {
+  @each $prefix, $meaning in $flex-align-items {
+    @include breakpoint-and-up($breakpoint-key) {
+      .#{$breakpoint-key}\:flex--align-#{$prefix},
+      .#{$breakpoint-key}\:row--align-#{$prefix} {
+        align-items: $meaning;
+      }
+    }
+  }
+}
+
+/*
+  Content alignment on cross axis - Y axis, but only when there are multiple lines and extra space in container - Y axis
+ */
+@each $breakpoint-key, $breakpoint-value in $o-breakpoints {
+  @each $prefix, $meaning in $flex-align-contents {
+    @include breakpoint-and-up($breakpoint-key) {
+      .#{$breakpoint-key}\:flex--#{$prefix},
+      .#{$breakpoint-key}\:row--#{$prefix} {
+        align-content: $meaning;
+      }
+    }
+  }
+}
+
+/*
+  Properties for children - flex items
+ */
+/* Align Self */
+@each $breakpoint-key, $breakpoint-value in $o-breakpoints {
+  @each $prefix, $meaning in $flex-align-selfs {
+    @include breakpoint-and-up($breakpoint-key) {
+      .#{$breakpoint-key}\:flex__item--#{$prefix},
+      .#{$breakpoint-key}\:row__item--#{$prefix} {
+        align-self: $meaning;
+      }
+    }
   }
 }
