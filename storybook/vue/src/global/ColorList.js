@@ -223,8 +223,8 @@ export default [
         hex: "#ccc"
       },
       {
-        name: "Gray Light",
-        slug: "gray-light",
+        name: "Gray Lightest",
+        slug: "gray-lightest",
         hex: "#ebebeb"
       }
     ]
