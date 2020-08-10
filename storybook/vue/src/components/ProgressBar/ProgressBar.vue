@@ -44,14 +44,13 @@
       :style="{fontSize: progress_text_size + 'px'}"
     >
       <template>
-        <span :class="{ 'fs-alpha font-extrabold':type === 'circle'}">
-          {{percentage}}</span><span :class="{ 'fs-gamma font-extrabold':type === 'circle'}">%</span>
-
-          <span class="o-progress-bar__custom-text" v-if="custom_text !== null">{{ custom_text }}</span>
+        <span class="o-progress-bar__text-number">{{ percentage }}</span>
+        <span class="o-progress-bar__text-percentage">%</span>
+        <span class="o-progress-bar__custom-text" v-if="custom_text !== null">{{ custom_text }}</span>
       </template>
     </div>
 
-    <div v-if="show_text && custom_text_array" class="o-progress-bar__text mt12">
+    <div v-if="show_text && custom_text_array" class="o-progress-bar__text mt-3">
       <div class="flex flex--justify-space-between">
         <span v-for="item in custom_text_array" :key="item" class="color-gray-light fs-zeta">
           {{ item | formatNumber }}
@@ -64,50 +63,102 @@
 export default {
   name: 'ProgressBar',
   props: {
+    /**
+     * Progress Bar Type
+     *
+     * Possible values: Line and Circle
+     */
     type: {
       type: String,
       default: 'line',
       validator: val => ['line', 'circle'].indexOf(val) > -1
     },
+
+    /**
+     * Progress Bar Percentage / Value
+     */
     percentage: {
       type: [String, Number],
       default: 0,
       required: true,
       validator: val => val >= 0 && val <= 100
     },
+
+    /**
+     * Stroke width
+     */
     stroke_width: {
       type: Number,
       default: 8
     },
-    text_inside: {
-      type: Boolean,
-      default: false
-    },
-    width: {
-      type: Number,
-      default: 170
-    },
-    show_text: {
-      type: Boolean,
-      default: false
-    },
-    custom_text: {
-      type: String,
-      default: null
-    },
-    custom_text_array: {
-      type: Array,
-      default: null
-    },
+
+    /**
+     * Progress Bar color
+     *
+     * Possible values: HEX code or predefined values (green, red, sapphire)
+     */
     color: {
       type: String,
       default: 'sapphire'
     },
+
+    /**
+     * Display text inside Progress Bar
+     */
+    text_inside: {
+      type: Boolean,
+      default: false
+    },
+
+    /**
+     * Progress Bar width (only for type of Circle)
+     */
+    width: {
+      type: Number,
+      default: 170
+    },
+
+    /**
+     * Display percentage and custom text
+     */
+    show_text: {
+      type: Boolean,
+      default: false
+    },
+
+    /**
+     * Custom text next to percentage
+     */
+    custom_text: {
+      type: String,
+      default: null
+    },
+
+    /**
+     * Display custom text from array merged to one string
+     */
+    custom_text_array: {
+      type: Array,
+      default: null
+    },
+
+    /**
+     * Disabled
+     */
     disabled: {
       type: Boolean,
       default: false
     }
   },
+
+  filters: {
+    formatNumber: function (value) {
+      if (value || value === 0) {
+        return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      }
+    }
+  },
+
   computed: {
     bar_style () {
       const style = {}
@@ -120,8 +171,6 @@ export default {
     },
     track_path () {
       const radius = parseInt(50 - parseFloat(this.relative_stroke_width) / 2, 10)
-
-      console.log(this.relative_stroke_width)
 
       return `M 50 50 m 0 -${radius} a ${radius} ${radius} 0 1 1 0 ${radius * 2} a ${radius} ${radius} 0 1 1 0 -${radius * 2}`
     },
@@ -162,7 +211,7 @@ export default {
           color = '#474BA5'
           break
         default:
-          color = '#A8A8A8'
+          this.color ? color = this.color : color = '#A8A8A8'
       }
 
       return color

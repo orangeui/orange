@@ -142,6 +142,7 @@ const Dropdown = function () {
   };
   const Selectors = {
     dropdown: '.o-form-dropdown',
+    dropdownSearch: 'o-form-dropdown--search',
     _input: '.o-form-dropdown__input',
     _option: '.o-form-dropdown__menu li',
     _text: '.o-form-dropdown__text'
@@ -181,6 +182,7 @@ const Dropdown = function () {
 
   function getDropdowns() {
     dropdowns = document.querySelectorAll(Selectors.dropdown);
+    return dropdowns;
   } // Function to activate all dropdowns
 
 
