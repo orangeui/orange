@@ -114,11 +114,11 @@ $o-colors: (
     'base': adjust-color(#000000, $lightness: 0%),
   ),
   'gray': (
-    'darkest': adjust-color(#000000, $lightness: 20%),
-    'dark': adjust-color(#000000, $lightness: 42%),
-    'base': adjust-color(#000000, $lightness: 60%),
-    'light': adjust-color(#000000, $lightness: 80%),
-    'lightest': adjust-color(#000000, $lightness: 92%),
+    'darkest': adjust-color(#000000, $lightness: 30%),
+    'dark': adjust-color(#000000, $lightness: 50%),
+    'base': adjust-color(#000000, $lightness: 75%),
+    'light': adjust-color(#000000, $lightness: 92%),
+    'lightest': adjust-color(#000000, $lightness: 98%),
   ),
   'white': (
     'base': adjust-color(#000000, $lightness: 100%),

@@ -276,31 +276,31 @@ export default {
         {
           title: 'Gray darkest',
           variable: 'gray-darkest',
-          hex: '#333',
+          hex: '#4d4d4d',
           class: 'bg-gray-darkest'
         },
         {
           title: 'Gray dark',
           variable: 'gray-dark',
-          hex: '#6b6b6b',
+          hex: '#808080',
           class: 'bg-gray-dark'
         },
         {
           title: 'Gray',
           variable: 'gray',
-          hex: '#999',
+          hex: '#bfbfbf',
           class: 'bg-gray'
         },
         {
           title: 'Gray light',
           variable: 'gray-light',
-          hex: '#ccc',
+          hex: '#ebebeb',
           class: 'bg-gray-light'
         },
         {
           title: 'Gray lightest',
           variable: 'gray-lightest',
-          hex: '#ebebeb',
+          hex: '#fafafa',
           class: 'bg-gray-lightest'
         }
       ],
