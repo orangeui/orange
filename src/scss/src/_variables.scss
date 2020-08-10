@@ -149,7 +149,7 @@ $o-spacing-extra-large: $o-spacing-base * 3 !default;
 /** Global properties
 --------------------------------------------------*/
 
-$o-border: 1px solid color('gray', 'lightest') !default;
+$o-border: 1px solid color('gray') !default;
 $o-border-radius-main: 3px !default;
 $o-border-radius-medium: 6px !default;
 $o-border-radius-full: 9999px !default;
@@ -230,13 +230,13 @@ $o-button-icon-only-padding: 0 1px 0 0 !default;
 
 /** Basic */
 $o-button-basic-color: color('gray') !default;
-$o-button-basic-background-color: color('gray', 'lightest') !default;
+$o-button-basic-background-color: color('gray', 'light') !default;
 $o-button-basic-action-color: color('white') !default;
 $o-button-basic-action-background-color: transparentize(color('primary'), 0.33) !default;
 
 // Secondary
 $o-button-basic-secondary-background-color: transparent !default;
-$o-button-basic-secondary-border-color: color('gray', 'lightest') !default;
+$o-button-basic-secondary-border-color: color('gray', 'light') !default;
 $o-button-basic-secondary-action-background-color: transparentize(color('primary'), 0.33) !default;
 $o-button-basic-secondary-action-border-color: transparent !default;
 $o-button-basic-secondary-action-color: color('white') !default;
@@ -412,7 +412,7 @@ $o-breadcrumbs-button-disabled-opacity: $o-breadcrumbs-link-disabled-transparenc
 $o-callout-font-size: fontSize('zeta') !default;
 $o-callout-text-color: color('black') !default;
 $o-callout-link-color: color('black') !default;
-$o-callout-background-color: color('gray', 'lightest') !default;
+$o-callout-background-color: color('gray', 'light') !default;
 $o-callout-padding: $o-spacing-small !default;
 $o-callout-border-radius: $o-border-radius-main !default;
 $o-callout-margin-bottom: $o-spacing-base / 2 !default;
@@ -494,7 +494,7 @@ $o-card-footer-empty-border-top: 0 !default;
 // Click
 $o-card-footer-click-color: color('gray') !default;
 $o-card-footer-click-hover-color: $o-card-footer-click-color !default;
-$o-card-footer-click-hover-background-color: color('gray', 'lightest') !default;
+$o-card-footer-click-hover-background-color: color('gray', 'light') !default;
 
 /**
  * Empty State
@@ -566,7 +566,7 @@ $o-input-color: color('secondary') !default;
 $o-input-border-radius: $o-border-radius-main !default;
 $o-input-border: $o-border !default;
 
-$o-input-webkit-autofill-border-color: color('gray', 'lightest') !important !default;
+$o-input-webkit-autofill-border-color: color('gray') !important !default;
 $o-input-webkit-autofill-text-fill-color: color('secondary') !important !default;
 
 /** Large */
@@ -624,7 +624,7 @@ $o-input-label-margin: ($o-spacing-base / 2 - 1px) $o-spacing-base / 2 !default;
 $o-input-label-font-size: fontSize('delta') !default;
 $o-input-label-font-weight: fontWeight('normal') !default;
 $o-input-label-line-height: fontSize('delta') !default;
-$o-input-label-color: color('gray', 'light') !default;
+$o-input-label-color: color('gray') !default;
 
 /** Action / Extras */ // This action does not stand for focus and hover, but for action/extras elements inside of input
 $o-input-action-padding: 0 $o-spacing-base / 4 !default;
@@ -640,7 +640,7 @@ $o-input-message-font-size: fontSize('zeta') !default;
 $o-input-message-color: color('red') !default;
 
 /** Description */
-$o-input-description-color: color('gray', 'light') !default;
+$o-input-description-color: color('gray') !default;
 $o-input-description-font-size: fontSize('zeta') !default;
 $o-input-description-margin-top: $o-spacing-small !default;
 $o-input-description-margin-bottom: 0 !default;
@@ -685,7 +685,7 @@ $o-checkbox-label-checked-opacity: 1 !default;
  * Dropdown
  */
 /** Label */
-$o-dropdown-label-color: color('gray', 'light') !default;
+$o-dropdown-label-color: color('gray') !default;
 $o-dropdown-label-min-width: $o-spacing-base * 10 !default;
 $o-dropdown-label-border: $o-border !default;
 $o-dropdown-label-line-height: $o-line-height !default;
@@ -734,7 +734,7 @@ $o-dropdown-action-label-padding: ($o-spacing-base / 4) ($o-spacing-base / 2) 0 
 /** Open */
 // Label
 $o-dropdown-open-label-border-color: color('secondary', 'light') !default;
-$o-dropdown-open-label-border-bottom-color: color('gray', 'lightest') !default;
+$o-dropdown-open-label-border-bottom-color: color('gray') !default;
 
 // Text
 $o-dropdown-open-text-border-color: color('secondary', 'light') !default;
@@ -763,7 +763,7 @@ $o-dropdown-action-text-opacity: 1 !default;
 
 /** Open */
 // Text
-$o-dropdown-open-text-border-bottom-color: color('gray', 'lightest') !default;
+$o-dropdown-open-text-border-bottom-color: color('gray') !default;
 
 // Icon
 $o-dropdown-open-icon-fill: $o-dropdown-icon-fill !default;
@@ -773,7 +773,7 @@ $o-dropdown-open-content-opacity: 1 !default;
 
 /** Disabled */
 // Label
-$o-dropdown-disabled-label-border-color: color('gray', 'lightest') !default;
+$o-dropdown-disabled-label-border-color: color('gray') !default;
 
 // Text
 $o-dropdown-disabled-text-color: color('gray') !default;
@@ -783,7 +783,7 @@ $o-dropdown-disabled-icon-fill: color('gray') !default;
 
 /** Content */
 $o-dropdown-content-border-radius: $o-border-radius-main !default;
-$o-dropdown-content-border: 1px solid color('secondary', 'light') !default;
+$o-dropdown-content-border: 1px solid color('secondary') !default;
 $o-dropdown-content-padding-top: $o-dropdown-label-height !default;
 $o-dropdown-content-shadow: shadow('input') !default;
 $o-dropdown-content-background-color: color('white') !default;
@@ -793,13 +793,13 @@ $o-dropdown-menu-margin: ($o-spacing-base / 4) 0 !default;
 $o-dropdown-menu-max-height: 200px !default;
 
 /** Item */
-$o-dropdown-item-color: color('gray', 'light') !default;
+$o-dropdown-item-color: color('gray') !default;
 $o-dropdown-item-font-size: fontSize('zeta') !default;
 $o-dropdown-item-padding: ($o-spacing-base / 4) ($o-spacing-base / 2) !default;
 
 // Hover
 $o-dropdown-item-hover-color: color('secondary') !default;
-$o-dropdown-item-hover-background-color: color('gray', 'lightest') !default;
+$o-dropdown-item-hover-background-color: color('gray', 'light') !default;
 
 // Selected
 $o-dropdown-item-selected-color: color('gray') !default;
@@ -845,7 +845,7 @@ $o-list-item-horizontal-padding: $o-spacing-base !default;
 $o-list-item-disabled-background-color: darken(color('white'), 3) !default;
 
 // Description
-$o-list-item-description-color: color('gray', 'light') !default;
+$o-list-item-description-color: color('gray') !default;
 $o-list-item-description-font-size: 90% !default;
 
 /** Divide */
@@ -922,7 +922,7 @@ $o-table-bottom-border: $o-border !default;
 
 /** Table Head */
 $o-table-head-cell-font-weight: fontWeight('normal') !default;
-$o-table-head-cell-text-color: color('gray', 'light') !default;
+$o-table-head-cell-text-color: color('gray') !default;
 $o-table-head-cell-padding: $o-spacing-small !default;
 $o-table-head-cell-first-left-padding: $o-spacing-base !default;
 
@@ -937,7 +937,7 @@ $o-table-body-cell-first-padding-left: $o-spacing-base !default;
 $o-table-celled-border: $o-border !default;
 
 $o-table-celled-head-cell-border-left: $o-border !default;
-$o-table-celled-head-cell-background-color: transparentize(color('gray', 'lightest'), 0.5) !default;
+$o-table-celled-head-cell-background-color: transparentize(color('gray', 'light'), 0.5) !default;
 $o-table-celled-head-cell-text-color: color('black') !default;
 $o-table-celled-head-cell-font-weight: fontWeight('bold') !default;
 $o-table-celled-head-cell-first-border-color: transparent !default;

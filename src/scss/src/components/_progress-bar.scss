@@ -76,12 +76,12 @@
   }
 
   & + .o-progress-bar__text {
-    color: color('gray', 'light') !important;
+    color: color('gray') !important;
   }
 }
 
 .o-progress-bar__custom-text {
-  color: color('gray', 'light');
+  color: color('gray');
 }
 
 @keyframes progress {
@@ -194,6 +194,6 @@
   }
 
   .o-progress-bar__text {
-    color: color('gray', 'light');
+    color: color('gray');
   }
 }
