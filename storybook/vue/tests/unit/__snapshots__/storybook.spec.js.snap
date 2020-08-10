@@ -896,7 +896,7 @@ exports[`Storyshots 2. Global|Colors List 1`] = `
               gray-darkest
             <br />
             
-              #333
+              #4d4d4d
             
           </p>
         </li>
@@ -913,7 +913,7 @@ exports[`Storyshots 2. Global|Colors List 1`] = `
               gray-dark
             <br />
             
-              #6b6b6b
+              #808080
             
           </p>
         </li>
@@ -930,24 +930,7 @@ exports[`Storyshots 2. Global|Colors List 1`] = `
               gray
             <br />
             
-              #999
-            
-          </p>
-        </li>
-        <li>
-          <div
-            class="docs__bg-color-item bg-gray-light"
-          />
-           
-          <p>
-            
-              Gray Light
-            <br />
-            
-              gray-light
-            <br />
-            
-              #ccc
+              #bfbfbf
             
           </p>
         </li>
@@ -965,6 +948,23 @@ exports[`Storyshots 2. Global|Colors List 1`] = `
             <br />
             
               #ebebeb
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-gray-lightest"
+          />
+           
+          <p>
+            
+              Gray Lightest
+            <br />
+            
+              gray-lightest
+            <br />
+            
+              #fafafa
             
           </p>
         </li>
@@ -8203,7 +8203,7 @@ exports[`Storyshots 5. Components|Custom/ProgressBar Line 1`] = `
       aria-valuenow="30"
       class="o-progress-bar mb-4 o-progress-bar--line o-progress-bar--text-inside"
       role="progressbar"
-      style="color: rgb(255, 114, 123);"
+      style="color: blue;"
     >
       <div
         class="o-progress-bar__line"
@@ -8214,7 +8214,7 @@ exports[`Storyshots 5. Components|Custom/ProgressBar Line 1`] = `
         >
           <div
             class="o-progress-bar__line-inner"
-            style="width: 30%; background-color: rgb(255, 114, 123);"
+            style="width: 30%; background-color: blue;"
           >
             <div
               class="o-progress-bar__line-innerText o-progress-bar__line-innerText--below"
