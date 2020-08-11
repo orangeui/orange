@@ -118,7 +118,7 @@ $o-colors: (
     'dark': adjust-color(#000000, $lightness: 50%),
     'base': adjust-color(#000000, $lightness: 75%),
     'light': adjust-color(#000000, $lightness: 92%),
-    'lightest': adjust-color(#000000, $lightness: 98%),
+    'lightest': adjust-color(#000000, $lightness: 96%),
   ),
   'white': (
     'base': adjust-color(#000000, $lightness: 100%),
@@ -149,7 +149,7 @@ $o-spacing-extra-large: $o-spacing-base * 3 !default;
 /** Global properties
 --------------------------------------------------*/
 
-$o-border: 1px solid color('gray') !default;
+$o-border: 1px solid color('gray', 'light') !default;
 $o-border-radius-main: 3px !default;
 $o-border-radius-medium: 6px !default;
 $o-border-radius-full: 9999px !default;
@@ -229,8 +229,8 @@ $o-button-disabled-opacity: 0.5 !default;
 $o-button-icon-only-padding: 0 1px 0 0 !default;
 
 /** Basic */
-$o-button-basic-color: color('gray') !default;
-$o-button-basic-background-color: color('gray', 'light') !default;
+$o-button-basic-color: color('gray', 'dark') !default;
+$o-button-basic-background-color: color('gray', 'lightest') !default;
 $o-button-basic-action-color: color('white') !default;
 $o-button-basic-action-background-color: transparentize(color('primary'), 0.33) !default;
 
@@ -799,7 +799,7 @@ $o-dropdown-item-padding: ($o-spacing-base / 4) ($o-spacing-base / 2) !default;
 
 // Hover
 $o-dropdown-item-hover-color: color('secondary') !default;
-$o-dropdown-item-hover-background-color: color('gray', 'light') !default;
+$o-dropdown-item-hover-background-color: color('gray', 'lightest') !default;
 
 // Selected
 $o-dropdown-item-selected-color: color('gray') !default;

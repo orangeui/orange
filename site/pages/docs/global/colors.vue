@@ -300,7 +300,7 @@ export default {
         {
           title: 'Gray lightest',
           variable: 'gray-lightest',
-          hex: '#fafafa',
+          hex: '#f5f5f5',
           class: 'bg-gray-lightest'
         }
       ],

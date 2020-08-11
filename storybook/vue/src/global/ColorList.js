@@ -225,7 +225,7 @@ export default [
       {
         name: "Gray Lightest",
         slug: "gray-lightest",
-        hex: "#fafafa"
+        hex: "#f7f7f7"
       }
     ]
   },
