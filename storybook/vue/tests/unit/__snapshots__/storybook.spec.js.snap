@@ -896,7 +896,7 @@ exports[`Storyshots 2. Global|Colors List 1`] = `
               gray-darkest
             <br />
             
-              #333
+              #4d4d4d
             
           </p>
         </li>
@@ -913,7 +913,7 @@ exports[`Storyshots 2. Global|Colors List 1`] = `
               gray-dark
             <br />
             
-              #6b6b6b
+              #808080
             
           </p>
         </li>
@@ -930,24 +930,7 @@ exports[`Storyshots 2. Global|Colors List 1`] = `
               gray
             <br />
             
-              #999
-            
-          </p>
-        </li>
-        <li>
-          <div
-            class="docs__bg-color-item bg-gray-light"
-          />
-           
-          <p>
-            
-              Gray Light
-            <br />
-            
-              gray-light
-            <br />
-            
-              #ccc
+              #bfbfbf
             
           </p>
         </li>
@@ -965,6 +948,23 @@ exports[`Storyshots 2. Global|Colors List 1`] = `
             <br />
             
               #ebebeb
+            
+          </p>
+        </li>
+        <li>
+          <div
+            class="docs__bg-color-item bg-gray-lightest"
+          />
+           
+          <p>
+            
+              Gray Lightest
+            <br />
+            
+              gray-lightest
+            <br />
+            
+              #fafafa
             
           </p>
         </li>
@@ -7841,6 +7841,476 @@ exports[`Storyshots 5. Components|Custom/Message With an avatar 1`] = `
         <!---->
       </button>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/ProgressBar Circle 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="60"
+      class="o-progress-bar mb-4 o-progress-bar--circle o-progress-bar--without-text"
+      role="progressbar"
+      style="color: rgb(71, 75, 165);"
+    >
+      <div
+        class="o-progress-bar__circle"
+        style="height: 250px; width: 250px;"
+      >
+        <svg
+          viewBox="0 0 100 100"
+        >
+          <path
+            class="o-progress-bar__circle-track"
+            d="M 50 50 m 0 -46 a 46 46 0 1 1 0 92 a 46 46 0 1 1 0 -92"
+            fill="none"
+            stroke="#F3F3F3"
+            stroke-width="8.0"
+          />
+           
+          <path
+            class="o-progress-bar__circle-path"
+            d="M 50 50 m 0 -46 a 46 46 0 1 1 0 92 a 46 46 0 1 1 0 -92"
+            fill="none"
+            stroke="#474BA5"
+            stroke-linecap="square"
+            stroke-width="8.0"
+            style="stroke-dasharray: 289.02652413026095px,289.02652413026095px; stroke-dashoffset: 115.61060965210439px; transition: stroke-dashoffset 0.6s ease 0s, stroke 0.6s ease;"
+          />
+        </svg>
+      </div>
+       
+      <!---->
+       
+      <!---->
+    </div>
+     
+    <div
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="60"
+      class="o-progress-bar mb-4 o-progress-bar--circle o-progress-bar--without-text"
+      role="progressbar"
+      style="color: rgb(20, 183, 47);"
+    >
+      <div
+        class="o-progress-bar__circle"
+        style="height: 170px; width: 170px;"
+      >
+        <svg
+          viewBox="0 0 100 100"
+        >
+          <path
+            class="o-progress-bar__circle-track"
+            d="M 50 50 m 0 -48 a 48 48 0 1 1 0 96 a 48 48 0 1 1 0 -96"
+            fill="none"
+            stroke="#F3F3F3"
+            stroke-width="2.9"
+          />
+           
+          <path
+            class="o-progress-bar__circle-path"
+            d="M 50 50 m 0 -48 a 48 48 0 1 1 0 96 a 48 48 0 1 1 0 -96"
+            fill="none"
+            stroke="#14B72F"
+            stroke-linecap="square"
+            stroke-width="2.9"
+            style="stroke-dasharray: 305.0486466635689px,305.0486466635689px; stroke-dashoffset: 122.01945866542756px; transition: stroke-dashoffset 0.6s ease 0s, stroke 0.6s ease;"
+          />
+        </svg>
+      </div>
+       
+      <!---->
+       
+      <!---->
+    </div>
+     
+    <div
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="50"
+      class="o-progress-bar mb-4 o-progress-bar--circle"
+      role="progressbar"
+      style="color: rgb(255, 114, 123);"
+    >
+      <div
+        class="o-progress-bar__circle"
+        style="height: 100px; width: 100px;"
+      >
+        <svg
+          viewBox="0 0 100 100"
+        >
+          <path
+            class="o-progress-bar__circle-track"
+            d="M 50 50 m 0 -45 a 45 45 0 1 1 0 90 a 45 45 0 1 1 0 -90"
+            fill="none"
+            stroke="#F3F3F3"
+            stroke-width="10.0"
+          />
+           
+          <path
+            class="o-progress-bar__circle-path"
+            d="M 50 50 m 0 -45 a 45 45 0 1 1 0 90 a 45 45 0 1 1 0 -90"
+            fill="none"
+            stroke="#FF727B"
+            stroke-linecap="square"
+            stroke-width="10.0"
+            style="stroke-dasharray: 282.7433388230814px,282.7433388230814px; stroke-dashoffset: 141.3716694115407px; transition: stroke-dashoffset 0.6s ease 0s, stroke 0.6s ease;"
+          />
+        </svg>
+      </div>
+       
+      <div
+        class="o-progress-bar__text"
+        style="font-size: 13.1111px;"
+      >
+        <span
+          class="o-progress-bar__text-number"
+        >
+          50
+        </span>
+         
+        <span
+          class="o-progress-bar__text-percentage"
+        >
+          %
+        </span>
+         
+        <span
+          class="o-progress-bar__custom-text"
+        >
+          custom text
+        </span>
+      </div>
+       
+      <!---->
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/ProgressBar Disabled 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="60"
+      class="o-progress-bar mb-4 o-progress-bar--circle is-disabled"
+      role="progressbar"
+      style="color: rgb(71, 75, 165);"
+    >
+      <div
+        class="o-progress-bar__circle"
+        style="height: 250px; width: 250px;"
+      >
+        <svg
+          viewBox="0 0 100 100"
+        >
+          <path
+            class="o-progress-bar__circle-track"
+            d="M 50 50 m 0 -46 a 46 46 0 1 1 0 92 a 46 46 0 1 1 0 -92"
+            fill="none"
+            stroke="#F3F3F3"
+            stroke-width="8.0"
+          />
+           
+          <path
+            class="o-progress-bar__circle-path"
+            d="M 50 50 m 0 -46 a 46 46 0 1 1 0 92 a 46 46 0 1 1 0 -92"
+            fill="none"
+            stroke="#474BA5"
+            stroke-linecap="square"
+            stroke-width="8.0"
+            style="stroke-dasharray: 289.02652413026095px,289.02652413026095px; stroke-dashoffset: 115.61060965210439px; transition: stroke-dashoffset 0.6s ease 0s, stroke 0.6s ease;"
+          />
+        </svg>
+      </div>
+       
+      <div
+        class="o-progress-bar__text"
+        style="font-size: 29.77775px;"
+      >
+        <span
+          class="o-progress-bar__text-number"
+        >
+          60
+        </span>
+         
+        <span
+          class="o-progress-bar__text-percentage"
+        >
+          %
+        </span>
+         
+        <span
+          class="o-progress-bar__custom-text"
+        >
+          custom text
+        </span>
+      </div>
+       
+      <!---->
+    </div>
+     
+    <div
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="60"
+      class="o-progress-bar mb-4 o-progress-bar--line is-disabled"
+      role="progressbar"
+      style="color: rgb(20, 183, 47);"
+    >
+      <div
+        class="o-progress-bar__line"
+      >
+        <div
+          class="o-progress-bar__line-outer"
+          style="height: 10px;"
+        >
+          <div
+            class="o-progress-bar__line-inner"
+            style="width: 60%; background-color: rgb(20, 183, 47);"
+          >
+            <!---->
+          </div>
+        </div>
+      </div>
+       
+      <div
+        class="o-progress-bar__text"
+        style="font-size: 16px;"
+      >
+        <span
+          class="o-progress-bar__text-number"
+        >
+          60
+        </span>
+         
+        <span
+          class="o-progress-bar__text-percentage"
+        >
+          %
+        </span>
+         
+        <span
+          class="o-progress-bar__custom-text"
+        >
+          with custom text
+        </span>
+      </div>
+       
+      <!---->
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/ProgressBar Line 1`] = `
+<div
+  class="p-4"
+>
+  <div>
+    <div
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="60"
+      class="o-progress-bar mb-4 o-progress-bar--line o-progress-bar--without-text"
+      role="progressbar"
+      style="color: rgb(71, 75, 165);"
+    >
+      <div
+        class="o-progress-bar__line"
+      >
+        <div
+          class="o-progress-bar__line-outer"
+          style="height: 8px;"
+        >
+          <div
+            class="o-progress-bar__line-inner"
+            style="width: 60%; background-color: rgb(71, 75, 165);"
+          >
+            <!---->
+          </div>
+        </div>
+      </div>
+       
+      <!---->
+       
+      <!---->
+    </div>
+     
+    <div
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="33"
+      class="o-progress-bar mb-4 o-progress-bar--line"
+      role="progressbar"
+      style="color: rgb(71, 75, 165);"
+    >
+      <div
+        class="o-progress-bar__line"
+      >
+        <div
+          class="o-progress-bar__line-outer"
+          style="height: 15px;"
+        >
+          <div
+            class="o-progress-bar__line-inner"
+            style="width: 33%; background-color: rgb(71, 75, 165);"
+          >
+            <!---->
+          </div>
+        </div>
+      </div>
+       
+      <div
+        class="o-progress-bar__text"
+        style="font-size: 18px;"
+      >
+        <span
+          class="o-progress-bar__text-number"
+        >
+          33
+        </span>
+         
+        <span
+          class="o-progress-bar__text-percentage"
+        >
+          %
+        </span>
+         
+        <span
+          class="o-progress-bar__custom-text"
+        >
+          with custom text
+        </span>
+      </div>
+       
+      <!---->
+    </div>
+     
+    <div
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="30"
+      class="o-progress-bar mb-4 o-progress-bar--line o-progress-bar--text-inside"
+      role="progressbar"
+      style="color: blue;"
+    >
+      <div
+        class="o-progress-bar__line"
+      >
+        <div
+          class="o-progress-bar__line-outer"
+          style="height: 18px;"
+        >
+          <div
+            class="o-progress-bar__line-inner"
+            style="width: 30%; background-color: blue;"
+          >
+            <div
+              class="o-progress-bar__line-innerText o-progress-bar__line-innerText--below"
+            >
+              
+          30%
+          
+              <span
+                class="o-progress-bar__custom-text"
+              >
+                custom text
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+      <!---->
+       
+      <!---->
+    </div>
+     
+    <div
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="60"
+      class="o-progress-bar mb-4 o-progress-bar--line o-progress-bar--text-inside"
+      role="progressbar"
+      style="color: rgb(255, 114, 123);"
+    >
+      <div
+        class="o-progress-bar__line"
+      >
+        <div
+          class="o-progress-bar__line-outer"
+          style="height: 18px;"
+        >
+          <div
+            class="o-progress-bar__line-inner"
+            style="width: 60%; background-color: rgb(255, 114, 123);"
+          >
+            <div
+              class="o-progress-bar__line-innerText"
+            >
+              
+          60%
+          
+              <span
+                class="o-progress-bar__custom-text"
+              >
+                custom text
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+      <!---->
+       
+      <!---->
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 5. Components|Custom/ProgressBar Tryout 1`] = `
+<div
+  class="p-4"
+>
+  <div
+    aria-valuemax="100"
+    aria-valuemin="0"
+    aria-valuenow="15"
+    class="o-progress-bar mb-4 o-progress-bar--line o-progress-bar--without-text"
+    role="progressbar"
+    style="color: rgb(20, 183, 47);"
+  >
+    <div
+      class="o-progress-bar__line"
+    >
+      <div
+        class="o-progress-bar__line-outer"
+        style="height: 8px;"
+      >
+        <div
+          class="o-progress-bar__line-inner"
+          style="width: 15%; background-color: rgb(20, 183, 47);"
+        >
+          <!---->
+        </div>
+      </div>
+    </div>
+     
+    <!---->
+     
+    <!---->
   </div>
 </div>
 `;

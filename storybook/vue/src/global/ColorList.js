@@ -205,27 +205,27 @@ export default [
       {
         name: "Gray darkest",
         slug: "gray-darkest",
-        hex: "#333"
+        hex: "#4d4d4d"
       },
       {
         name: "Gray dark",
         slug: "gray-dark",
-        hex: "#6b6b6b"
+        hex: "#808080"
       },
       {
         name: "Gray",
         slug: "gray",
-        hex: "#999"
-      },
-      {
-        name: "Gray Light",
-        slug: "gray-light",
-        hex: "#ccc"
+        hex: "#bfbfbf"
       },
       {
         name: "Gray Light",
         slug: "gray-light",
         hex: "#ebebeb"
+      },
+      {
+        name: "Gray Lightest",
+        slug: "gray-lightest",
+        hex: "#fafafa"
       }
     ]
   },

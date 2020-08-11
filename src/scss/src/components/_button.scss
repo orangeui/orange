@@ -65,7 +65,7 @@ a.o-button {
   /** Loading state */
   &.is-loading {
     &:before {
-      background-color: color('gray', 'lightest');
+      background-color: color('gray', 'light');
     }
 
     &::after {

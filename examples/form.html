@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>Form Example</title>
-  <!-- <link rel="stylesheet" href="../dist/css/orange.css" />
-  <script type="text/javascript" src="../dist/js/orange.js"></script> -->
+  <link rel="stylesheet" href="../dist/css/orange.css" />
+  <!-- <script type="text/javascript" src="../dist/js/orange.js"></script> -->
   
-  <link rel="stylesheet" href="https://cdn.orangecss.com/1.5.0/css/orange.min.css">
-  <script src="https://cdn.orangecss.com/1.5.0/js/orange.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://cdn.orangecss.com/1.5.0/css/orange.min.css">
+   <script src="https://cdn.orangecss.com/1.5.0/js/orange.min.js"></script> -->
 </head>
   
 
@@ -216,7 +216,7 @@
             <div class="o-form__item">
               <div id="form_dropdown_2" class="o-form-dropdown">
                 <label for="form_dropdown_2" class="o-form-dropdown__label">Label</label>
-                <input id="form_dropdown_2" type="text" name="form_dropdown_2" class="o-form-dropdown__input">
+                <input id="form_dropdown_2" type="text" name="form_dropdown_2" class="o-form-dropdown__input" value="sine">
                 <div class="o-form-dropdown__text">Placeholder</div>
                 <div class="o-form-dropdown__icon">
                   <svg viewBox="0 0 24 24">
@@ -228,15 +228,44 @@
                 </div>
                 <div class="o-form-dropdown__content">
                   <ul class="o-form-dropdown__menu">
-                    <li class="">Option 2-1</li>
-                    <li class="">Option 2-2</li>
-                    <li class="">Option 2-3</li>
-                    <li class="">Option 2-4</li>
+                    <li>Google</li>
+                    <li>Word</li>
+                    <li>Advertisement</li>
+                    <li>Competitor</li>
+                    <li>Other</li>
                   </ul>
                 </div>
               </div>
               <div class="o-form__description">Description of the dropdown field</div>
             </div>
+            
+
+            <div class="o-form__item">
+              <div id="form_dropdown_search" class="o-form-dropdown o-form-dropdown--search">
+                <label for="form_dropdown_search" class="o-form-dropdown__label">Label</label>
+                <input id="form_dropdown_search" type="text" name="form_dropdown_search" class="o-form-dropdown__input" autocomplete="off">
+                <div class="o-form-dropdown__text o-form-dropdown__search-text"></div>
+                <div class="o-form-dropdown__icon">
+                  <svg viewBox="0 0 24 24">
+                    <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <path fill="#000000" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path>
+                  </svg>
+                </div>
+                <div class="o-form-dropdown__content">
+                  <ul class="o-form-dropdown__menu">
+                    <li>Google</li>
+                    <li>Word</li>
+                    <li>Advertisement</li>
+                    <li>Competitor</li>
+                    <li>Other</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="o-form__description">Description of the dropdown field</div>
+            </div>
+
           
             <!-- Toggles -->
             <div class="o-form__item">
@@ -282,8 +311,161 @@
           </form>
         </div>
       </div>
+
+      <div class="o-card mt-4">
+        <div class="o-card__header">
+          <h2 class="o-card__title">Example Progress Bar</h2>
+        </div>
+
+        <section class="o-card__section">
+          <div class="o-card__header">
+            <h4>Line Progress Bar</h4>
+          </div>
+          <div class="o-card__body">
+            <div
+              class="o-progress-bar o-progress-bar--line"
+              style="color: #f00;"
+              data-stroke-width="18"
+              role="progressbar"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="o-progress-bar__line">
+                <div class="o-progress-bar__line-outer">
+                  <div class="o-progress-bar__line-inner" style="width: 50%;">
+                    <div class="o-progress-bar__line-innerText o-progress-bar__line-innerText--below">
+                      50% Custom text
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="o-progress-bar o-progress-bar--line mt-4"
+              style="color: blue;"
+              data-stroke-width="12"
+              role="progressbar"
+              aria-valuenow="30"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="o-progress-bar__line">
+                <div class="o-progress-bar__line-outer">
+                  <div class="o-progress-bar__line-inner" style="width: 30%;">
+                    <div class="o-progress-bar__line-innerText o-progress-bar__line-innerText--below">
+                      30% Custom text
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="o-progress-bar o-progress-bar--line is-disabled mt-4"
+              style="color: #00bcd4;"
+              data-stroke-width="5"
+              role="progressbar"
+              aria-valuenow="20"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="o-progress-bar__line">
+                <div class="o-progress-bar__line-outer">
+                  <div class="o-progress-bar__line-inner" style="width: 20%;"></div>
+                </div>
+              </div>
+              <div class="o-progress-bar__text">
+                <span>20%</span>
+                <span class="o-progress-bar__custom-text">with custom text</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="o-card__section">
+          <div class="o-card__header">
+            <h4>Circle Progress Bar</h4>
+          </div>
+          <div class="o-card__body">
+            <div class="o-progress-bar o-progress-bar--circle"
+                data-width="250"
+                data-stroke-width="20"
+                aria-valuenow="30"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="color: #474BA5;">
+              <div class="o-progress-bar__circle">
+                <svg viewBox="0 0 100 100">
+                  <path class="o-progress-bar__circle-track" fill="none"></path>
+                  <path class="o-progress-bar__circle-path"stroke-linecap="square" stroke="currentColor" fill="none"></path>
+                </svg>
+              </div>
+            </div>
+
+
+            <div class="o-progress-bar o-progress-bar--circle"
+                data-width="170"
+                data-stroke-width="5"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="color: green;">
+              <div class="o-progress-bar__circle">
+                <svg viewBox="0 0 100 100">
+                  <path class="o-progress-bar__circle-track" fill="none"></path>
+                  <path class="o-progress-bar__circle-path" stroke-linecap="square" stroke="currentColor" fill="none"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="o-progress-bar o-progress-bar--circle"
+                data-width="100"
+                data-stroke-width="10"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="color: red;">
+              <div class="o-progress-bar__circle">
+                <svg viewBox="0 0 100 100">
+                  <path class="o-progress-bar__circle-track" fill="none"></path>
+                  <path class="o-progress-bar__circle-path" stroke-linecap="square" stroke="currentColor" fill="none"></path>
+                </svg>
+              </div>
+
+              <div class="o-progress-bar__text">
+                <span class="o-progress-bar__text-number">50</span>
+                <span class="o-progress-bar__text-percentage">%</span>
+                <span class="o-progress-bar__custom-text">Custom text</span>
+              </div>
+            </div>
+
+            <!-- <div class="o-progress-bar o-progress-bar--circle is-disabled"
+                data-width="200"
+                data-stroke-width="10"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="color: green;">
+              <div class="o-progress-bar__circle">
+                <svg viewBox="0 0 100 100">
+                  <path class="o-progress-bar__circle-track" fill="none"></path>
+                  <path class="o-progress-bar__circle-path" stroke-linecap="square" stroke="currentColor" fill="none"></path>
+                </svg>
+              </div>
+
+              <div class="o-progress-bar__text">
+                <span class="o-progress-bar__text-number">80</span>
+                <span class="o-progress-bar__text-percentage">%</span>
+                <span class="o-progress-bar__custom-text">Disabled circle</span>
+              </div>
+            </div> -->
+          </section>
+        </div>
+      </div>
     </div>
     
-    <!-- <script src="../dist/js/orange.min.js"></script> -->
+    <script src="../dist/js/orange.js"></script>
   </body>
 </html>

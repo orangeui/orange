@@ -43,6 +43,8 @@ import OMessage from "./components/Message/Message";
 import ONavigation from "./components/Navigation/Navigation";
 import ONavigationItem from "./components/Navigation/NavigationItem";
 
+import OProgressBar from "./components/ProgressBar/ProgressBar";
+
 import ORadio from "./components/Radio/Radio";
 import ORadioGroup from "./components/Radio/RadioGroup";
 
@@ -89,6 +91,8 @@ Vue.component("o-message", OMessage);
 Vue.component("o-navigation", ONavigation);
 Vue.component("o-navigation-item", ONavigationItem);
 
+Vue.component("o-progress-bar", OProgressBar);
+
 Vue.component("o-radio", ORadio);
 Vue.component("o-radio-group", ORadioGroup);
 
@@ -97,6 +101,7 @@ Vue.component("o-table-wrapper", OTableWrapper);
 
 Vue.component("o-form-textarea", OTextarea);
 Vue.component("o-toggle", OToggle);
+
 
 Vue.config.productionTip = false;
 

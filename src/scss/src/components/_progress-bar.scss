@@ -5,6 +5,7 @@
 .o-progress-bar {
   position: relative;
   line-height: 1;
+  color: color('secondary');
 
   .o-progress-bar__text {
     font-size: fontSize('zeta');
@@ -44,6 +45,7 @@
     top: 0;
     height: 100%;
     background-color: color('secondary');
+    background-color: currentColor;
     line-height: 1;
     white-space: nowrap;
     display: flex;
@@ -62,6 +64,10 @@
     &.o-progress-bar__line-innerText--below {
       transform: translateX(calc(100% + 10px));
       color: currentColor;
+
+      .o-progress-bar__custom-text {
+        color: currentColor;
+      }
     }
 
     .o-progress-bar__custom-text {
@@ -70,12 +76,12 @@
   }
 
   & + .o-progress-bar__text {
-    color: color('gray', 'light') !important;
+    color: color('gray') !important;
   }
 }
 
 .o-progress-bar__custom-text {
-  color: color('gray', 'light');
+  color: color('gray');
 }
 
 @keyframes progress {
@@ -125,6 +131,16 @@
 
   .o-progress-bar__custom-text {
     display: block;
+  }
+
+  .o-progress-bar__text-number {
+    font-size: 2em;
+    font-weight: fontWeight('extrabold');
+  }
+
+  .o-progress-bar__text-percentage {
+    font-size: 1em;
+    font-weight: fontWeight('extrabold');
   }
 }
 
@@ -178,6 +194,6 @@
   }
 
   .o-progress-bar__text {
-    color: color('gray', 'light');
+    color: color('gray');
   }
 }
