@@ -8522,7 +8522,7 @@ exports[`Storyshots 5. Components|Forms/Dropdown Basic with strings 1`] = `
     class="o-form"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
         class="o-form-dropdown"
@@ -8630,7 +8630,7 @@ exports[`Storyshots 5. Components|Forms/Dropdown Large with objects 1`] = `
     class="o-form o-form--large"
   >
     <div
-      class="form__item"
+      class="o-form__item"
     >
       <div
         class="o-form-dropdown"
@@ -8739,7 +8739,7 @@ exports[`Storyshots 5. Components|Forms/Dropdown Tryout 1`] = `
       class="o-form o-form--large"
     >
       <div
-        class="form__item"
+        class="o-form__item"
       >
         <div
           class="o-form-dropdown"

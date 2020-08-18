@@ -34,6 +34,15 @@ import "@orange-ui/vue/dist/orangevue.css";
 
 ```js
 /*
+ * Import Vue and other dependencies globally
+ * */
+
+import Vue from "vue";
+
+import _ from "lodash";
+Vue.prototype._ = _;
+
+/*
  * Import Orange Compiled Components
  * */
 
@@ -104,6 +113,15 @@ import "@orange-ui/vue/src/scss/src/styles.scss";
 ```
 
 ```js
+/*
+ * Import Vue and other dependencies globally
+ * */
+
+import Vue from "vue";
+
+import _ from "lodash";
+Vue.prototype._ = _;
+
 /*
  * Import Orange Compiled Components
  * */

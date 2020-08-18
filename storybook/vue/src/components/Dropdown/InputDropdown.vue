@@ -1,5 +1,5 @@
 <template>
-  <div class="form__item">
+  <div class="o-form__item">
     <div
       :id="id"
       v-on-clickaway="closeMenu"
@@ -59,7 +59,7 @@
         <ul class="o-form-dropdown__menu">
           <li
             v-for="item in !search ? dropdown_items : dropdown_items_search"
-            :key="item.id ? item.id : item"
+            :key="item[value_property] ? item[value_property] : item"
             :class="{ 'is-selected': item.is_selected }"
             @click="updateValue(item)"
           >
@@ -67,7 +67,7 @@
               item[title_property]
             }}</template>
             <template v-else>{{ item }}</template>
-            <o-icon v-if="item.is_selected" symbol="yes" />
+            <o-icon v-if="item.is_selected" symbol="tick"></o-icon>
           </li>
         </ul>
       </div>
@@ -78,7 +78,7 @@
 </template>
 
 <script>
-import Vue from "vue";
+import Vue from 'vue';
 import _ from "lodash";
 Vue.prototype._ = _;
 

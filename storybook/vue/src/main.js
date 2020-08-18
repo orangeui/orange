@@ -1,6 +1,9 @@
 import Vue from "vue";
 import App from "./App.vue";
 
+import _ from "lodash";
+Vue.prototype._ = _;
+
 /*
  * Import Orange styles
  * */

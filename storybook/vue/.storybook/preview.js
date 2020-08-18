@@ -3,6 +3,9 @@ import "!style-loader!css-loader!sass-loader!../../../site/assets/styles/styles.
 
 import Vue from'vue';
 
+import _ from "lodash";
+Vue.prototype._ = _;
+
 // Import Storybook addons
 import { addParameters, addDecorator } from "@storybook/vue";
 import { withA11y } from '@storybook/addon-a11y';
