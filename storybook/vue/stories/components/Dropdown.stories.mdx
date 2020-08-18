@@ -25,7 +25,7 @@ Tryout is for live example of Dropdown on **Canvas** tab and bottom tab **Knobs*
   {{
     components: { OFormDropdown },
     template: `<div>
-      <form class="form form--large">
+      <form class="o-form o-form--large">
         <o-form-dropdown 
           id="form_dropdown_tryout"
           :label="label"
@@ -37,7 +37,7 @@ Tryout is for live example of Dropdown on **Canvas** tab and bottom tab **Knobs*
           :title_property="title_property"
           :value_as_object="value_as_object"
           :search="search"
-          :disabled="disabled" />
+          :disabled="disabled"></o-form-dropdown>
       </form>
       <code class="d-block mt-4">
         Return value: {{ form_model_value }}
@@ -117,14 +117,14 @@ Tryout is for live example of Dropdown on **Canvas** tab and bottom tab **Knobs*
   <Story name='Basic with strings'>
     {{
       components: { OFormDropdown },
-      template: `<form class="form">
+      template: `<form class="o-form">
         <o-form-dropdown 
           id="form_dropdown_basic"
           label="Dropdown label"
           v-model="form_model_value"
           :items="dropdown_items_strings"
           placeholder="placeholder"
-          description="Description of the dropdown field" />
+          description="Description of the dropdown field"></o-form-dropdown>
       </form>`,
       data() {
         return {
@@ -145,7 +145,7 @@ Tryout is for live example of Dropdown on **Canvas** tab and bottom tab **Knobs*
   <Story name='Large with objects'>
     {{
       components: { OFormDropdown },
-      template: `<form class="form form--large">
+      template: `<form class="o-form o-form--large">
         <o-form-dropdown 
           id="form_dropdown_basic"
           label="Dropdown label"
@@ -153,7 +153,7 @@ Tryout is for live example of Dropdown on **Canvas** tab and bottom tab **Knobs*
           :items="dropdown_items_objects"
           placeholder="placeholder"
           description="Description of the dropdown field"
-          :value_as_object="true" />
+          :value_as_object="true"></o-form-dropdown>
       </form>`,
       data() {
         return {

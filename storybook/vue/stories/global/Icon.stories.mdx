@@ -11,7 +11,7 @@ import IconList from '../../src/components/Icon/IconList';
 import ColorSlugs from '../../src/global/ColorSlugs.js';
 
 
-<Meta title='2. Global|Icon' component={ OIcon } />
+<Meta title='2. Global|Icon' component={ OIcon }></Meta>
 
 
 # Icon
@@ -29,7 +29,7 @@ Tryout is for live example of Icon on **Canvas** tab and bottom tab **Knobs**
 <Story name='Tryout'>
   {{
     components: { OIcon },
-    template: `<o-icon :symbol="symbol" :color="color" />`,
+    template: `<o-icon :symbol="symbol" :color="color"></o-icon>`,
     props: {
       symbol: {
         default: select('Icon', IconList, IconList[0])
@@ -51,10 +51,10 @@ Tryout is for live example of Icon on **Canvas** tab and bottom tab **Knobs**
     {{
       components: { OIcon },
       template: `<div>
-        <o-icon symbol="arrow-down" />
-        <o-icon symbol="arrow-left" color="primary" />
-        <o-icon symbol="arrow-right" color="secondary" />
-        <o-icon symbol="arrow-up" color="secondary" />
+        <o-icon symbol="arrow-down"></o-icon>
+        <o-icon symbol="arrow-left" color="primary"></o-icon>
+        <o-icon symbol="arrow-right" color="secondary"></o-icon>
+        <o-icon symbol="arrow-up" color="secondary"></o-icon>
       </div>`
     }}
   </Story>
@@ -72,7 +72,7 @@ All possible icons we provide
   template: `<ul class="docs__simple-list">
     <li class="docs__icons-list">
       <div class="docs__icons-item" v-for="icon in icons">
-        <o-icon :symbol="icon" />
+        <o-icon :symbol="icon"></o-icon>
         <span class="docs__icons-text">{{ icon }}</span>
       </div>
     </li>
@@ -91,4 +91,4 @@ All possible icons we provide
 
 ## Props
 
-<Props of={OIcon} />
+<Props of={OIcon}></Props>

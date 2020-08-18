@@ -23,7 +23,7 @@ Tryout is for live example of Checkbox on **Canvas** tab and bottom tab **Knobs*
 <Story name='Tryout - Basic'>
   {{
     components: { OCheckbox },
-    template: `<o-checkbox v-model="form_model_checkbox_basic_tryout" id="checkbox_basic_tryout" :label="label" :disabled="disabled" @input="handleClick" />`,
+    template: `<o-checkbox v-model="form_model_checkbox_basic_tryout" id="checkbox_basic_tryout" :label="label" :disabled="disabled" @input="handleClick"></o-checkbox>`,
     methods: { handleClick: action('click') },
     props: {
       label: {
@@ -52,10 +52,10 @@ Tryout is for live example of Checkbox in group on **Canvas** tab and bottom tab
   {{
     components: { OCheckbox, OCheckboxGroup },
     template: `<o-checkbox-group :label="group_label" :description="group_description">
-      <o-checkbox v-model="form_model_checkbox_tryout_1" id="checkbox_basic_tryout_1" label="First label" @input="handleClick" />
-      <o-checkbox v-model="form_model_checkbox_tryout_2" id="checkbox_basic_tryout_2" label="Second label" @input="handleClick" />
-      <o-checkbox v-model="form_model_checkbox_tryout_3" id="checkbox_basic_tryout_3" label="Third label" @input="handleClick" />
-      <o-checkbox v-model="form_model_checkbox_tryout_4" id="checkbox_basic_tryout_4" label="Forth label" @input="handleClick" :disabled="disabled" />
+      <o-checkbox v-model="form_model_checkbox_tryout_1" id="checkbox_basic_tryout_1" label="First label" @input="handleClick"></o-checkbox>
+      <o-checkbox v-model="form_model_checkbox_tryout_2" id="checkbox_basic_tryout_2" label="Second label" @input="handleClick"></o-checkbox>
+      <o-checkbox v-model="form_model_checkbox_tryout_3" id="checkbox_basic_tryout_3" label="Third label" @input="handleClick"></o-checkbox>
+      <o-checkbox v-model="form_model_checkbox_tryout_4" id="checkbox_basic_tryout_4" label="Forth label" @input="handleClick" :disabled="disabled"></o-checkbox>
     </o-checkbox-group>`,
     methods: { handleClick: action('click') },
     props: {
@@ -89,7 +89,7 @@ Tryout is for live example of Checkbox in group on **Canvas** tab and bottom tab
   <Story name='Basic'>
     {{
       components: { OCheckbox },
-      template: `<o-checkbox v-model="form_model_checkbox_basic" id="checkbox_basic" label="Label"  @input="handleClick" />`,
+      template: `<o-checkbox v-model="form_model_checkbox_basic" id="checkbox_basic" label="Label"  @input="handleClick"></o-checkbox>`,
       methods: { handleClick: action('click') },
       data() {
         return {
@@ -111,10 +111,10 @@ Tryout is for live example of Checkbox in group on **Canvas** tab and bottom tab
     {{
       components: { OCheckbox, OCheckboxGroup },
       template: `<o-checkbox-group label="Group label" description="Description text">
-        <o-checkbox v-model="form_model_checkbox_1" id="checkbox_basic_1" label="First label" @input="handleClick" />
-        <o-checkbox v-model="form_model_checkbox_2" id="checkbox_basic_2" label="Second label" @input="handleClick" />
-        <o-checkbox v-model="form_model_checkbox_3" id="checkbox_basic_3" label="Third label" @input="handleClick" />
-        <o-checkbox v-model="form_model_checkbox_4" id="checkbox_basic_4" label="Forth label" @input="handleClick" :disabled="true" />
+        <o-checkbox v-model="form_model_checkbox_1" id="checkbox_basic_1" label="First label" @input="handleClick"></o-checkbox>
+        <o-checkbox v-model="form_model_checkbox_2" id="checkbox_basic_2" label="Second label" @input="handleClick"></o-checkbox>
+        <o-checkbox v-model="form_model_checkbox_3" id="checkbox_basic_3" label="Third label" @input="handleClick"></o-checkbox>
+        <o-checkbox v-model="form_model_checkbox_4" id="checkbox_basic_4" label="Forth label" @input="handleClick" :disabled="true"></o-checkbox>
       </o-checkbox-group>`,
       methods: { handleClick: action('click') },
       data() {

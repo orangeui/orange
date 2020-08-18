@@ -3386,6 +3386,7 @@ exports[`Storyshots 5. Components|Basic/Button Icon 1`] = `
         class="o-icon-remove"
       />
     </button>
+     
     <hr />
      
     <button
@@ -3439,6 +3440,7 @@ exports[`Storyshots 5. Components|Basic/Button Roles 1`] = `
       Primary 
       <!---->
     </button>
+     
     <hr />
      
     <button
@@ -3464,6 +3466,7 @@ exports[`Storyshots 5. Components|Basic/Button Sizes 1`] = `
       Large 
       <!---->
     </button>
+     
     <hr />
      
     <button
@@ -3473,6 +3476,7 @@ exports[`Storyshots 5. Components|Basic/Button Sizes 1`] = `
       Regular 
       <!---->
     </button>
+     
     <hr />
      
     <button
@@ -8515,7 +8519,7 @@ exports[`Storyshots 5. Components|Forms/Dropdown Basic with strings 1`] = `
   class="p-4"
 >
   <form
-    class="form"
+    class="o-form"
   >
     <div
       class="form__item"
@@ -8623,7 +8627,7 @@ exports[`Storyshots 5. Components|Forms/Dropdown Large with objects 1`] = `
   class="p-4"
 >
   <form
-    class="form form--large"
+    class="o-form o-form--large"
   >
     <div
       class="form__item"
@@ -8732,7 +8736,7 @@ exports[`Storyshots 5. Components|Forms/Dropdown Tryout 1`] = `
 >
   <div>
     <form
-      class="form form--large"
+      class="o-form o-form--large"
     >
       <div
         class="form__item"
@@ -8849,7 +8853,7 @@ exports[`Storyshots 5. Components|Forms/Input Basic 1`] = `
   class="p-4"
 >
   <form
-    class="form"
+    class="o-form"
   >
     <div
       class="o-form__item"
@@ -8892,7 +8896,7 @@ exports[`Storyshots 5. Components|Forms/Input Large - Basic 1`] = `
   class="p-4"
 >
   <form
-    class="form form--large"
+    class="o-form o-form--large"
   >
     <div
       class="o-form__item"
@@ -8935,7 +8939,7 @@ exports[`Storyshots 5. Components|Forms/Input Large - Read-only 1`] = `
   class="p-4"
 >
   <form
-    class="form form--large"
+    class="o-form o-form--large"
   >
     <div
       class="o-form__item"
@@ -8979,7 +8983,7 @@ exports[`Storyshots 5. Components|Forms/Input Large - Read-only with action/extr
   class="p-4"
 >
   <form
-    class="form form--large"
+    class="o-form o-form--large"
   >
     <div
       class="o-form__item has-extras has-action"
@@ -9081,7 +9085,7 @@ exports[`Storyshots 5. Components|Forms/Input Large - With action/extras 1`] = `
   class="p-4"
 >
   <form
-    class="form form--large"
+    class="o-form o-form--large"
   >
     <div
       class="o-form__item has-extras has-action"
@@ -9173,7 +9177,7 @@ exports[`Storyshots 5. Components|Forms/Input Read-only 1`] = `
   class="p-4"
 >
   <form
-    class="form"
+    class="o-form"
   >
     <div
       class="o-form__item"
@@ -9217,7 +9221,7 @@ exports[`Storyshots 5. Components|Forms/Input Read-only with action/extras 1`] =
   class="p-4"
 >
   <form
-    class="form"
+    class="o-form"
   >
     <div
       class="o-form__item has-extras has-action"
@@ -9319,7 +9323,7 @@ exports[`Storyshots 5. Components|Forms/Input Tryout 1`] = `
   class="p-4"
 >
   <form
-    class="form"
+    class="o-form"
   >
     <div
       class="o-form__item has-extras has-action"
@@ -9374,7 +9378,7 @@ exports[`Storyshots 5. Components|Forms/Input With action/extras 1`] = `
   class="p-4"
 >
   <form
-    class="form"
+    class="o-form"
   >
     <div
       class="o-form__item has-extras has-action"
@@ -9701,7 +9705,7 @@ exports[`Storyshots 5. Components|Forms/Textarea Auto expand 1`] = `
   class="p-4"
 >
   <form
-    class="form"
+    class="o-form"
   >
     <div
       class="o-form__item"
@@ -9735,7 +9739,7 @@ exports[`Storyshots 5. Components|Forms/Textarea Disabled 1`] = `
   class="p-4"
 >
   <form
-    class="form"
+    class="o-form"
   >
     <div
       class="o-form__item"
@@ -9770,7 +9774,7 @@ exports[`Storyshots 5. Components|Forms/Textarea Large - Basic 1`] = `
   class="p-4"
 >
   <form
-    class="form form--large"
+    class="o-form o-form--large"
   >
     <div
       class="o-form__item"
@@ -9804,7 +9808,7 @@ exports[`Storyshots 5. Components|Forms/Textarea Large - Read-only 1`] = `
   class="p-4"
 >
   <form
-    class="form form--large"
+    class="o-form o-form--large"
   >
     <div
       class="o-form__item"
@@ -9839,7 +9843,7 @@ exports[`Storyshots 5. Components|Forms/Textarea Read-only with rows 1`] = `
   class="p-4"
 >
   <form
-    class="form"
+    class="o-form"
   >
     <div
       class="o-form__item"
@@ -9874,7 +9878,7 @@ exports[`Storyshots 5. Components|Forms/Textarea Tryout 1`] = `
   class="p-4"
 >
   <form
-    class="form"
+    class="o-form"
   >
     <div
       class="o-form__item"
@@ -9908,7 +9912,7 @@ exports[`Storyshots 5. Components|Forms/Toggle Basic 1`] = `
   class="p-4"
 >
   <form
-    class="form"
+    class="o-form"
   >
     <div
       class="o-form__item"
@@ -9948,7 +9952,7 @@ exports[`Storyshots 5. Components|Forms/Toggle Colors 1`] = `
   class="p-4"
 >
   <form
-    class="form"
+    class="o-form"
   >
     <div
       class="o-form__item"
@@ -10278,7 +10282,7 @@ exports[`Storyshots 5. Components|Forms/Toggle Custom value names 1`] = `
   class="p-4"
 >
   <form
-    class="form"
+    class="o-form"
   >
     <div
       class="o-form__item"
@@ -10330,7 +10334,7 @@ exports[`Storyshots 5. Components|Forms/Toggle Large 1`] = `
   class="p-4"
 >
   <form
-    class="form"
+    class="o-form"
   >
     <div
       class="o-form__item"
@@ -10382,7 +10386,7 @@ exports[`Storyshots 5. Components|Forms/Toggle Tryout 1`] = `
   class="p-4"
 >
   <form
-    class="form"
+    class="o-form"
   >
     <div
       class="o-form__item"
@@ -10426,7 +10430,7 @@ exports[`Storyshots 5. Components|Forms/Toggle With label 1`] = `
   class="p-4"
 >
   <form
-    class="form"
+    class="o-form"
   >
     <div
       class="o-form__item"

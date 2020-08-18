@@ -26,7 +26,7 @@ Tryout is for live example of Toggle on **Canvas** tab and bottom tab **Knobs**
 <Story name='Tryout'>
   {{
     components: { OFormToggle },
-    template: `<form class="form">
+    template: `<form class="o-form">
       <o-form-toggle 
         v-model="toggle_model"
         id="toggle_tryout"
@@ -35,7 +35,7 @@ Tryout is for live example of Toggle on **Canvas** tab and bottom tab **Knobs**
         :disabled="disabled"
         :size="size"
         :color="color"
-        @input="handleClick" />
+        @input="handleClick"></o-form-toggle>
     </form>`,
     methods: { handleClick: action('change') },
     props: {
@@ -78,10 +78,10 @@ Tryout is for live example of Toggle on **Canvas** tab and bottom tab **Knobs**
   <Story name='Basic'>
     {{
       components: { OFormToggle },
-      template: `<form class="form">
+      template: `<form class="o-form">
         <o-form-toggle 
           v-model="toggle_model"
-          id="toggle_tryout" />
+          id="toggle_tryout"></o-form-toggle>
       </form>`,
       data() {
         return {
@@ -101,11 +101,11 @@ Tryout is for live example of Toggle on **Canvas** tab and bottom tab **Knobs**
   <Story name='With label'>
     {{
       components: { OFormToggle },
-      template: `<form class="form">
+      template: `<form class="o-form">
         <o-form-toggle 
           v-model="toggle_model"
           id="toggle_tryout"
-          label="Label" />
+          label="Label"></o-form-toggle>
       </form>`,
       data() {
         return {
@@ -125,12 +125,12 @@ Tryout is for live example of Toggle on **Canvas** tab and bottom tab **Knobs**
   <Story name='Large'>
     {{
       components: { OFormToggle },
-      template: `<form class="form">
+      template: `<form class="o-form">
         <o-form-toggle 
           v-model="toggle_model"
           id="toggle_tryout"
           label="Label"
-          size="large" />
+          size="large"></o-form-toggle>
       </form>`,
       data() {
         return {
@@ -150,14 +150,14 @@ Tryout is for live example of Toggle on **Canvas** tab and bottom tab **Knobs**
   <Story name='Custom value names'>
     {{
       components: { OFormToggle },
-      template: `<form class="form">
+      template: `<form class="o-form">
         <o-form-toggle 
           v-model="toggle_model"
           id="toggle_tryout"
           label="Custom value"
           valueText="Custom Value Text"
           valueTextDisabled="Custom Disabled Value Text"
-          size="large" />
+          size="large"></o-form-toggle>
       </form>`,
       data() {
         return {
@@ -177,13 +177,13 @@ Tryout is for live example of Toggle on **Canvas** tab and bottom tab **Knobs**
   <Story name='Colors'>
     {{
       components: { OFormToggle },
-      template: `<form class="form">
+      template: `<form class="o-form">
         <o-form-toggle 
           v-model="toggle_model"
           id="toggle_tryout"
           v-for="color, index in colors"
           :key="index"
-          :color="color" />
+          :color="color"></o-form-toggle>
       </form>`,
       data() {
         return {

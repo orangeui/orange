@@ -25,7 +25,7 @@ Tryout is for live example of label on **Canvas** tab and bottom tab **Knobs**
 <Story name='Tryout'>
   {{
     components: { OLabel },
-    template: `<o-label @click="handleRegularClick" @dismissClick="handleDismissClick" :text="text" :icon="icon" :size="size" :color="color" :dismiss="dismiss" />`,
+    template: `<o-label @click="handleRegularClick" @dismissClick="handleDismissClick" :text="text" :icon="icon" :size="size" :color="color" :dismiss="dismiss"></o-label>`,
     methods: { 
       handleRegularClick: action('click'),
       handleDismissClick: action('dismiss-click')
@@ -58,7 +58,7 @@ Tryout is for live example of label on **Canvas** tab and bottom tab **Knobs**
 <Preview>
   <Story name='Basic'>{{
     components: { OLabel },
-    template: `<o-label text="Basic" />`
+    template: `<o-label text="Basic"></o-label>`
   }}</Story>
 </Preview>
 
@@ -71,8 +71,8 @@ Tryout is for live example of label on **Canvas** tab and bottom tab **Knobs**
   <Story name='Colors'>{{
     components: { OLabel },
     template: `<div>
-      <o-label text="Basic" /> <hr />
-      <o-label text="Primary" color="primary" /> <o-label text="Secondary" color="secondary" />
+      <o-label text="Basic"></o-label> <hr />
+      <o-label text="Primary" color="primary"></o-label> <o-label text="Secondary" color="secondary"></o-label>
     </div>`
   }}</Story>
 </Preview>
@@ -86,8 +86,8 @@ Tryout is for live example of label on **Canvas** tab and bottom tab **Knobs**
   <Story name='With an icon'>{{
     components: { OLabel },
     template: `<div>
-      <o-label text="More" icon="more" /> <hr />
-      <o-label text="Add" icon="plus" color="primary" /> <o-label text="Secondary" icon="arrow-skip" color="secondary" />
+      <o-label text="More" icon="more"></o-label> <hr />
+      <o-label text="Add" icon="plus" color="primary"></o-label> <o-label text="Secondary" icon="arrow-skip" color="secondary"></o-label>
     </div>`
   }}</Story>
 </Preview>
@@ -102,7 +102,7 @@ It will force to use <mark>X</mark> icon and add ability to <mark>click</mark> e
 <Preview>
   <Story name='Dismissible'>{{
     components: { OLabel },
-    template: `<o-label text="Dismissible" @dismissClick="handleDismissClick" :dismiss="true" />`,
+    template: `<o-label text="Dismissible" @dismissClick="handleDismissClick" :dismiss="true"></o-label>`,
     methods: {
       handleDismissClick: action('dismiss-click')
     },
@@ -118,17 +118,17 @@ It will force to use <mark>X</mark> icon and add ability to <mark>click</mark> e
   <Story name='Size'>{{
     components: { OLabel },
     template: `<div>
-      <o-label text="Small" size="small" />
-      <o-label text="Small" size="small" color="primary" />
-      <o-label text="Small" size="small" color="secondary" />
+      <o-label text="Small" size="small"></o-label>
+      <o-label text="Small" size="small" color="primary"></o-label>
+      <o-label text="Small" size="small" color="secondary"></o-label>
       <hr />
-      <o-label size="pill" />
-      <o-label size="pill" color="primary" />
-      <o-label size="pill" color="secondary" />
+      <o-label size="pill"></o-label>
+      <o-label size="pill" color="primary"></o-label>
+      <o-label size="pill" color="secondary"></o-label>
       <hr />
-      <o-label size="dot" />
-      <o-label size="dot" color="primary" />
-      <o-label size="dot" color="secondary" />
+      <o-label size="dot"></o-label>
+      <o-label size="dot" color="primary"></o-label>
+      <o-label size="dot" color="secondary"></o-label>
     </div>`
   }}</Story>
 </Preview>

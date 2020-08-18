@@ -23,7 +23,7 @@ Tryout is for live example of Radio on **Canvas** tab and bottom tab **Knobs**
 <Story name='Tryout - Basic'>
   {{
     components: { ORadio },
-    template: `<o-radio v-model="form_model_radio_basic_tryout" name="form_radio_tryout_name" id="radio_basic_tryout" :label="label" :disabled="disabled" @input="handleClick" />`,
+    template: `<o-radio v-model="form_model_radio_basic_tryout" name="form_radio_tryout_name" id="radio_basic_tryout" :label="label" :disabled="disabled" @input="handleClick"></o-radio>`,
     methods: { handleClick: action('click') },
     props: {
       label: {
@@ -52,10 +52,10 @@ Tryout is for live example of Radio in group on **Canvas** tab and bottom tab **
   {{
     components: { ORadio, ORadioGroup },
     template: `<o-radio-group :label="group_label" :description="group_description">
-      <o-radio v-model="form_model_radio_tryout" name="form_radio_group_tryout_name" id="radio_basic_tryout_1" label="First label" @input="handleClick" />
-      <o-radio v-model="form_model_radio_tryout" name="form_radio_group_tryout_name" id="radio_basic_tryout_2" label="Second label" @input="handleClick" />
-      <o-radio v-model="form_model_radio_tryout" name="form_radio_group_tryout_name" id="radio_basic_tryout_3" label="Third label" @input="handleClick" />
-      <o-radio v-model="form_model_radio_tryout" name="form_radio_group_tryout_name" id="radio_basic_tryout_4" label="Forth label" @input="handleClick" :disabled="disabled" />
+      <o-radio v-model="form_model_radio_tryout" name="form_radio_group_tryout_name" id="radio_basic_tryout_1" label="First label" @input="handleClick"></o-radio>
+      <o-radio v-model="form_model_radio_tryout" name="form_radio_group_tryout_name" id="radio_basic_tryout_2" label="Second label" @input="handleClick"></o-radio>
+      <o-radio v-model="form_model_radio_tryout" name="form_radio_group_tryout_name" id="radio_basic_tryout_3" label="Third label" @input="handleClick"></o-radio>
+      <o-radio v-model="form_model_radio_tryout" name="form_radio_group_tryout_name" id="radio_basic_tryout_4" label="Forth label" @input="handleClick" :disabled="disabled"></o-radio>
     </o-radio-group>`,
     methods: { handleClick: action('click') },
     props: {
@@ -86,7 +86,7 @@ Tryout is for live example of Radio in group on **Canvas** tab and bottom tab **
   <Story name='Basic'>
     {{
       components: { ORadio },
-      template: `<o-radio v-model="form_model_radio_basic" name="form_radio_name" id="radio_basic" label="Label"  @input="handleClick" />`,
+      template: `<o-radio v-model="form_model_radio_basic" name="form_radio_name" id="radio_basic" label="Label"  @input="handleClick"></o-radio>`,
       methods: { handleClick: action('click') },
       data() {
         return {
@@ -108,10 +108,10 @@ Tryout is for live example of Radio in group on **Canvas** tab and bottom tab **
     {{
       components: { ORadio, ORadioGroup },
       template: `<o-radio-group label="Group label" description="Description text">
-        <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_1" label="First label" @input="handleClick" />
-        <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_2" label="Second label" @input="handleClick" />
-        <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_3" label="Third label" @input="handleClick" />
-        <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_4" label="Forth label" @input="handleClick" :disabled="true" />
+        <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_1" label="First label" @input="handleClick"></o-radio>
+        <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_2" label="Second label" @input="handleClick"></o-radio>
+        <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_3" label="Third label" @input="handleClick"></o-radio>
+        <o-radio v-model="form_model_radio" name="form_radio_group_name" id="radio_basic_4" label="Forth label" @input="handleClick" :disabled="true"></o-radio>
       </o-radio-group>`,
       methods: { handleClick: action('click') },
       data() {

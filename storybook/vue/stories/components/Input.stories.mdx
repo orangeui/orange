@@ -27,7 +27,7 @@ Tryout is for live example of Input on **Canvas** tab and bottom tab **Knobs**
 <Story name='Tryout'>
   {{
     components: { OFormInput, OButton },
-    template: `<form class="form" :class="size_class">
+    template: `<form class="o-form" :class="size_class">
       <o-form-input id="form_basic" 
         v-model="form_model" 
         :label="label"
@@ -36,7 +36,7 @@ Tryout is for live example of Input on **Canvas** tab and bottom tab **Knobs**
         :read_only="read_only"
         :action_position="action_position">
         <div slot="action">
-          <o-button text="copy to clipboard" size="small" />
+          <o-button text="copy to clipboard" size="small"></o-button>
         </div>
       </o-form-input>
     </form>`,
@@ -82,11 +82,11 @@ Tryout is for live example of Input on **Canvas** tab and bottom tab **Knobs**
   <Story name='Basic'>
     {{
       components: { OFormInput },
-      template: `<form class="form">
+      template: `<form class="o-form">
         <o-form-input id="form_basic" 
           v-model="form_model" 
           label="Label"
-          description="Description text" />
+          description="Description text"></o-form-input>
       </form>`,
       data() {
         return {
@@ -106,12 +106,12 @@ Tryout is for live example of Input on **Canvas** tab and bottom tab **Knobs**
   <Story name='Read-only'>
     {{
       components: { OFormInput },
-      template: `<form class="form">
+      template: `<form class="o-form">
         <o-form-input id="form_basic" 
           v-model="form_model" 
           label="Label"
           description="Description text"
-          :read_only="true" />
+          :read_only="true"></o-form-input>
       </form>`,
       data() {
         return {
@@ -131,7 +131,7 @@ Tryout is for live example of Input on **Canvas** tab and bottom tab **Knobs**
   <Story name='With action/extras'>
     {{
       components: { OFormInput },
-      template: `<form class="form">
+      template: `<form class="o-form">
         <o-form-input id="form_basic" 
           v-model="form_model" 
           label="Your phone number"
@@ -169,14 +169,14 @@ Tryout is for live example of Input on **Canvas** tab and bottom tab **Knobs**
   <Story name='Read-only with action/extras'>
     {{
       components: { OFormInput, OButton },
-      template: `<form class="form">
+      template: `<form class="o-form">
         <o-form-input id="form_basic" 
           v-model="form_model" 
           label="Your phone number"
           description="To change your API key please contact support"
           :read_only="true">
           <div slot="action">
-            <o-button text="copy to clipboard" size="small" />
+            <o-button text="copy to clipboard" size="small"></o-button>
           </div>
         </o-form-input>
         <o-form-input id="form_basic_2" 
@@ -186,7 +186,7 @@ Tryout is for live example of Input on **Canvas** tab and bottom tab **Knobs**
           :read_only="true"
           action_position="right">
           <div slot="action">
-            <o-button text="copy to clipboard" size="small" />
+            <o-button text="copy to clipboard" size="small"></o-button>
           </div>
         </o-form-input>
       </form>`,
@@ -209,11 +209,11 @@ Tryout is for live example of Input on **Canvas** tab and bottom tab **Knobs**
   <Story name='Large - Basic'>
     {{
       components: { OFormInput },
-      template: `<form class="form form--large">
+      template: `<form class="o-form o-form--large">
         <o-form-input id="form_basic" 
           v-model="form_model" 
           label="Large"
-          description="Description text" />
+          description="Description text"></o-form-input>
       </form>`,
       data() {
         return {
@@ -233,12 +233,12 @@ Tryout is for live example of Input on **Canvas** tab and bottom tab **Knobs**
   <Story name='Large - Read-only'>
     {{
       components: { OFormInput },
-      template: `<form class="form form--large">
+      template: `<form class="o-form o-form--large">
         <o-form-input id="form_basic" 
           v-model="form_model" 
           label="Label"
           description="Description text"
-          :read_only="true" />
+          :read_only="true"></o-form-input>
       </form>`,
       data() {
         return {
@@ -258,7 +258,7 @@ Tryout is for live example of Input on **Canvas** tab and bottom tab **Knobs**
   <Story name='Large - With action/extras'>
     {{
       components: { OFormInput },
-      template: `<form class="form form--large">
+      template: `<form class="o-form o-form--large">
         <o-form-input id="form_basic" 
           v-model="form_model" 
           label="Your phone number"
@@ -296,14 +296,14 @@ Tryout is for live example of Input on **Canvas** tab and bottom tab **Knobs**
   <Story name='Large - Read-only with action/extras'>
     {{
       components: { OFormInput, OButton },
-      template: `<form class="form form--large">
+      template: `<form class="o-form o-form--large">
         <o-form-input id="form_basic" 
           v-model="form_model" 
           label="Your phone number"
           description="To change your API key please contact support"
           :read_only="true">
           <div slot="action">
-            <o-button text="copy to clipboard" size="small" />
+            <o-button text="copy to clipboard" size="small"></o-button>
           </div>
         </o-form-input>
         <o-form-input id="form_basic_2" 
@@ -313,7 +313,7 @@ Tryout is for live example of Input on **Canvas** tab and bottom tab **Knobs**
           :read_only="true"
           action_position="right">
           <div slot="action">
-            <o-button text="copy to clipboard" size="small" />
+            <o-button text="copy to clipboard" size="small"></o-button>
           </div>
         </o-form-input>
       </form>`,
