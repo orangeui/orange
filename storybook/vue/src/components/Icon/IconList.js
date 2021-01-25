@@ -42,5 +42,7 @@ export default [
   "team",
   "theme",
   "tick",
-  "x"
+  "x",
+  "help",
+  "edit"
 ];

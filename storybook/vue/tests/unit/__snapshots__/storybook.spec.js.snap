@@ -1631,6 +1631,32 @@ exports[`Storyshots 2. Global|Icon Symbols 1`] = `
           x
         </span>
       </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-help"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          help
+        </span>
+      </div>
+      <div
+        class="docs__icons-item"
+      >
+        <span
+          class="o-icon-edit"
+        />
+         
+        <span
+          class="docs__icons-text"
+        >
+          edit
+        </span>
+      </div>
     </li>
   </ul>
 </div>

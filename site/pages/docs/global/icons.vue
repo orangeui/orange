@@ -194,6 +194,14 @@
             <span class="o-icon-play"></span>
             <span class="docs__icons-text">play</span>
           </div>
+          <div class="docs__icons-item">
+            <span class="o-icon-help"></span>
+            <span class="docs__icons-text">help</span>
+          </div>
+          <div class="docs__icons-item">
+            <span class="o-icon-edit"></span>
+            <span class="docs__icons-text">edit</span>
+          </div>
         </li>
       </ul>
     </docs-item>
