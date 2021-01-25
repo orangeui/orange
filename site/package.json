@@ -15,7 +15,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/style-resources": "^0.1.2",
     "cleave.js": "^1.5.0",
-    "highlight.js": "^9.15.8",
+    "highlight.js": "^10.4.1",
     "lodash": "^4.17.13",
     "nuxt": "^2.0.0",
     "vee-validate": "^2.2.10",
