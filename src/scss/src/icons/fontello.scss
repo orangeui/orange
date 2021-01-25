@@ -2,7 +2,6 @@
 	font-family: "orange-icons";
 	src: url("#{$o-font-icon-url}/orange-icons.eot");
 	src: url("#{$o-font-icon-url}/orange-icons.eot") format("embedded-opentype"),
-		url("#{$o-font-icon-url}/orange-icons.woff2") format("woff2"),
 		url("#{$o-font-icon-url}/orange-icons.woff") format("woff"),
 		url("#{$o-font-icon-url}/orange-icons.ttf") format("truetype"),
 		url("#{$o-font-icon-url}/orange-icons.svg") format("svg");
@@ -28,7 +27,6 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
 
 .o-icon-caret-up:before { content: '\e800'; } /* '' */
 .o-icon-code:before { content: '\e801'; } /* '' */
@@ -74,3 +72,5 @@
 .o-icon-circles:before { content: '\e82c'; } /* '' */
 .o-icon-eye:before { content: '\e82d'; } /* '' */
 .o-icon-play:before { content: '\e83b'; } /* '' */
+.o-icon-edit:before { content: '\e900'; }
+.o-icon-help:before { content: '\e901'; }
